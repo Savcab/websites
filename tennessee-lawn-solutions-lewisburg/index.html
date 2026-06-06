@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tennessee Lawn Solutions | Lawn Care &amp; Underbrush Clearing in Lewisburg, TN</title>
-<meta name="description" content="Tennessee Lawn Solutions — professional lawn mowing and underbrush clearing in Lewisburg, TN. 5.0-star rated. Call (931) 993-3543 for a fast, fair quote.">
+<meta name="description" content="Tennessee Lawn Solutions — lawn mowing, yard maintenance and underbrush clearing across Lewisburg, Cornersville, Chapel Hill &amp; Columbia, TN. 5.0-star rated. Call or text (931) 993-3543 for a fast, fair quote.">
 <link rel="canonical" href="https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/">
 <meta property="og:title" content="Tennessee Lawn Solutions | Lewisburg, TN">
-<meta property="og:description" content="Professional lawn mowing &amp; underbrush clearing in Lewisburg, TN. 5.0-star rated. Call (931) 993-3543.">
+<meta property="og:description" content="Lawn mowing, yard maintenance &amp; underbrush clearing in Lewisburg, TN. 5.0-star rated. Call (931) 993-3543.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/">
 <script>document.documentElement.classList.add('js');</script>
@@ -19,67 +19,63 @@
 tailwind.config = {
   theme: {
     extend: {
-      fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+      fontFamily: { sans: ['"Plus Jakarta Sans"','system-ui','sans-serif'] },
       colors: {
+        ink: '#0F172A',
+        slate2: '#475569',
+        mist: '#F5F7F4',
         grass: '#16A34A',
         grassdk: '#15803D',
-        ink: '#0F172A',
-        mist: '#F7F8FA',
+        leaf: '#DCFCE7'
       }
     }
   }
 }
 </script>
 <style>
-  html, body { -webkit-font-smoothing: antialiased; }
-  .ic { width: 1.25rem; height: 1.25rem; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  .ic-lg { width: 1.6rem; height: 1.6rem; }
-  section[id] { scroll-margin-top: 5rem; }
-  .navlink.active { color: #15803D; }
-  @media (prefers-reduced-motion: no-preference){
-    .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
-    .js .reveal.in{opacity:1;transform:none;}
-  }
+  html,body{ -webkit-font-smoothing:antialiased; }
+  .ic{ width:1.4rem; height:1.4rem; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .ic-sm{ width:1.1rem; height:1.1rem; }
+  section[id]{ scroll-margin-top:5rem; }
+  .navlink.active{ color:#15803D; }
+  .js .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+  .js .reveal.in{ opacity:1; transform:none; }
 </style>
 </head>
 <body class="font-sans text-ink bg-white antialiased">
 
-<!-- ICON SPRITE -->
-<svg width="0" height="0" class="hidden" aria-hidden="true">
-  <defs>
-    <g id="i-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></g>
-    <g id="i-scissors"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></g>
-    <g id="i-trees"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></g>
-    <g id="i-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></g>
-    <g id="i-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></g>
-    <g id="i-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></g>
-    <g id="i-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></g>
-    <g id="i-check"><polyline points="20 6 9 17 4 12"/></g>
-    <g id="i-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g>
-    <g id="i-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></g>
-    <g id="i-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></g>
-    <g id="i-truck"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></g>
-    <g id="i-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></g>
-    <g id="i-menu"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></g>
-  </defs>
-</svg>
+<svg width="0" height="0" class="hidden" aria-hidden="true"><defs>
+  <g id="i-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+  <g id="i-mower"><path d="M3 14h7l2-3h4"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="3"/><path d="M2 14v-2a1 1 0 0 1 1-1h2"/><path d="M16 11l1-5h3"/></g>
+  <g id="i-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></g>
+  <g id="i-scissors"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></g>
+  <g id="i-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></g>
+  <g id="i-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></g>
+  <g id="i-check"><polyline points="20 6 9 17 4 12"/></g>
+  <g id="i-arrow"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g>
+  <g id="i-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></g>
+  <g id="i-phone-call"><path d="M13 2a9 9 0 0 1 9 9"/><path d="M13 6a5 5 0 0 1 5 5"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+  <g id="i-thumbsup"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></g>
+  <g id="i-map"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></g>
+  <g id="i-quote"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .25-1 1.5V20c0 .75.25 1 1 1z"/><path d="M14 21c3 0 7-1 7-8V5c0-1.25-.757-2-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 .75.25 1 1 1z"/></g>
+  <g id="i-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></g>
+</defs></svg>
 
 <!-- TOP BAR -->
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-ink/10">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
     <a href="#home" class="flex items-center gap-2.5 shrink-0">
       <span class="grid place-items-center w-9 h-9 rounded-xl bg-grass text-white"><svg class="ic"><use href="#i-leaf"></use></svg></span>
-      <span class="font-extrabold tracking-tight leading-none text-[15px] sm:text-base">Tennessee Lawn Solutions</span>
+      <span class="font-bold tracking-tight leading-none text-[15px] sm:text-base">Tennessee Lawn Solutions</span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+    <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate2">
       <a href="#services" class="navlink hover:text-grassdk">Services</a>
-      <a href="#process" class="navlink hover:text-grassdk">How It Works</a>
-      <a href="#about" class="navlink hover:text-grassdk">About</a>
+      <a href="#how" class="navlink hover:text-grassdk">How It Works</a>
       <a href="#reviews" class="navlink hover:text-grassdk">Reviews</a>
       <a href="#contact" class="navlink hover:text-grassdk">Contact</a>
     </nav>
-    <a href="tel:+19319933543" class="inline-flex items-center gap-2 rounded-full bg-grass hover:bg-grassdk text-white font-semibold text-sm px-4 py-2.5 shadow-sm">
-      <svg class="ic"><use href="#i-phone"></use></svg><span class="hidden sm:inline">(931) 993-3543</span><span class="sm:hidden">Call</span>
+    <a href="tel:+19319933543" class="inline-flex items-center gap-2 rounded-full bg-grass hover:bg-grassdk text-white font-semibold text-sm px-4 py-2.5 shadow-sm shadow-grass/30">
+      <svg class="ic ic-sm"><use href="#i-phone"></use></svg><span class="hidden sm:inline">(931) 993-3543</span><span class="sm:hidden">Call</span>
     </a>
   </div>
 </header>
@@ -89,57 +85,56 @@ tailwind.config = {
 <!-- HERO -->
 <section class="relative overflow-hidden bg-mist">
   <div class="absolute inset-0 -z-10" style="background:
-      radial-gradient(900px 400px at 85% -10%, rgba(22,163,74,.14), transparent 60%),
-      radial-gradient(700px 500px at -10% 110%, rgba(21,128,61,.10), transparent 60%);"></div>
-  <div class="max-w-6xl mx-auto px-5 pt-14 md:pt-20 pb-16 md:pb-24 grid lg:grid-cols-12 gap-10 items-center">
+    radial-gradient(680px 420px at 90% 0%, rgba(22,163,74,.12), transparent 60%),
+    radial-gradient(520px 360px at 0% 100%, rgba(22,163,74,.08), transparent 60%);"></div>
+  <div class="max-w-6xl mx-auto px-5 pt-14 md:pt-20 pb-16 md:pb-24 grid lg:grid-cols-12 gap-12 items-center">
     <div class="lg:col-span-7">
-      <span class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-200 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-grassdk shadow-sm">
-        <svg class="ic" style="width:.95rem;height:.95rem"><use href="#i-pin"></use></svg> Lewisburg, Tennessee
+      <span class="inline-flex items-center gap-2 rounded-full bg-leaf text-grassdk text-xs font-bold uppercase tracking-wide px-3 py-1">
+        <svg class="ic ic-sm"><use href="#i-pin"></use></svg> Lewisburg, Tennessee
       </span>
       <h1 class="mt-5 text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold leading-[1.05] tracking-tight">
-        A sharp, clean yard <span class="text-grass">without the wait.</span>
+        A sharp, healthy yard &mdash; <span class="text-grass">without the hassle.</span>
       </h1>
-      <p class="mt-5 text-lg text-slate-600 max-w-xl leading-relaxed">
-        Tennessee Lawn Solutions handles mowing and the heavy stuff most crews skip &mdash; clearing
-        overgrown underbrush and reclaiming the edges of your property &mdash; for homes around Lewisburg.
-        Fast response, fair pricing, work done right.
+      <p class="mt-5 text-lg text-slate2 max-w-xl leading-relaxed">
+        Tennessee Lawn Solutions handles the mowing, yard upkeep, and overgrown-underbrush clearing
+        for homes around Lewisburg. Fast to respond, fair on price, and the work speaks for itself.
       </p>
-      <div class="mt-7 flex flex-wrap items-center gap-3">
+      <div class="mt-8 flex flex-wrap items-center gap-3">
         <a href="tel:+19319933543" class="inline-flex items-center gap-2 rounded-full bg-grass hover:bg-grassdk text-white font-semibold px-6 py-3.5 shadow-lg shadow-grass/25">
-          <svg class="ic"><use href="#i-phone"></use></svg> Call for a quote
+          <svg class="ic"><use href="#i-phone"></use></svg> Get a free quote
         </a>
-        <a href="#services" class="inline-flex items-center gap-2 rounded-full bg-white border border-slate-300 hover:border-grass text-ink font-semibold px-6 py-3.5">
-          See what we do <svg class="ic"><use href="#i-arrow"></use></svg>
+        <a href="#services" class="inline-flex items-center gap-2 rounded-full border border-ink/20 hover:border-grass text-ink font-semibold px-6 py-3.5">
+          What we do <svg class="ic ic-sm"><use href="#i-arrow"></use></svg>
         </a>
       </div>
-      <div class="mt-7 flex items-center gap-3 text-sm">
-        <div class="flex text-grass" aria-label="5.0 out of 5 stars">
-          <svg class="ic" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
-          <svg class="ic" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
-          <svg class="ic" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
-          <svg class="ic" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
-          <svg class="ic" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
+      <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+        <div class="flex items-center gap-2">
+          <div class="flex text-grass" aria-label="5.0 out of 5 stars">
+            <svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
+          </div>
+          <span class="text-sm font-semibold"><span class="text-ink">5.0</span> <span class="text-slate2">&middot; 8 reviews</span></span>
         </div>
-        <span class="font-semibold text-ink">5.0</span>
-        <span class="text-slate-500">from 8 verified reviews</span>
+        <span class="hidden sm:block w-px h-5 bg-ink/15"></span>
+        <span class="text-sm text-slate2 font-medium">Locally owned &middot; quick response</span>
       </div>
     </div>
     <div class="lg:col-span-5">
-      <div class="relative rounded-3xl bg-white border border-slate-200 shadow-xl shadow-slate-200/60 p-6 sm:p-7">
-        <p class="text-xs font-bold uppercase tracking-wider text-grassdk">Get on the schedule</p>
-        <p class="mt-2 text-2xl font-extrabold leading-tight">Text or call Bradley</p>
-        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Tell us your address and what the yard needs &mdash; we'll give you a straight, fair price.</p>
-        <a href="tel:+19319933543" class="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-grass hover:bg-grassdk text-white font-bold text-lg px-5 py-4">
-          <svg class="ic ic-lg"><use href="#i-phone"></use></svg> (931) 993-3543
-        </a>
-        <div class="mt-5 grid grid-cols-2 gap-3 text-center">
-          <div class="rounded-2xl bg-mist py-3">
-            <p class="text-2xl font-extrabold text-grassdk">5.0</p>
-            <p class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Star rating</p>
-          </div>
-          <div class="rounded-2xl bg-mist py-3">
-            <p class="text-2xl font-extrabold text-grassdk">Local</p>
-            <p class="text-[11px] font-semibold uppercase tracking-wide text-slate-500">Lewisburg owned</p>
+      <div class="rounded-3xl bg-white shadow-xl shadow-ink/5 border border-ink/5 p-6 sm:p-8">
+        <p class="text-xs font-bold uppercase tracking-wide text-grassdk">Serving</p>
+        <h2 class="mt-1 text-lg font-bold">Lewisburg &amp; nearby towns</h2>
+        <ul class="mt-4 grid grid-cols-2 gap-2.5 text-sm">
+          <li class="flex items-center gap-2"><svg class="ic ic-sm text-grass"><use href="#i-check"></use></svg> Lewisburg</li>
+          <li class="flex items-center gap-2"><svg class="ic ic-sm text-grass"><use href="#i-check"></use></svg> Cornersville</li>
+          <li class="flex items-center gap-2"><svg class="ic ic-sm text-grass"><use href="#i-check"></use></svg> Chapel Hill</li>
+          <li class="flex items-center gap-2"><svg class="ic ic-sm text-grass"><use href="#i-check"></use></svg> Columbia</li>
+        </ul>
+        <div class="mt-6 rounded-2xl bg-mist p-5">
+          <div class="flex items-center gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-full bg-grass text-white"><svg class="ic"><use href="#i-phone-call"></use></svg></span>
+            <div>
+              <p class="text-xs text-slate2 font-medium">Call or text for a quote</p>
+              <a href="tel:+19319933543" class="text-lg font-extrabold text-ink hover:text-grassdk">(931) 993-3543</a>
+            </div>
           </div>
         </div>
       </div>
@@ -148,232 +143,204 @@ tailwind.config = {
 </section>
 
 <!-- TRUST STRIP -->
-<section class="border-y border-slate-200 bg-white">
-  <div class="max-w-6xl mx-auto px-5 py-6 grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-4">
-    <div class="flex items-center gap-3"><span class="text-grass"><svg class="ic ic-lg"><use href="#i-star"></use></svg></span><div><p class="font-bold leading-none">5.0 rated</p><p class="text-xs text-slate-500 mt-1">Perfect score</p></div></div>
-    <div class="flex items-center gap-3"><span class="text-grass"><svg class="ic ic-lg"><use href="#i-shield"></use></svg></span><div><p class="font-bold leading-none">Fair pricing</p><p class="text-xs text-slate-500 mt-1">No surprises</p></div></div>
-    <div class="flex items-center gap-3"><span class="text-grass"><svg class="ic ic-lg"><use href="#i-clock"></use></svg></span><div><p class="font-bold leading-none">Fast response</p><p class="text-xs text-slate-500 mt-1">Quick to quote</p></div></div>
-    <div class="flex items-center gap-3"><span class="text-grass"><svg class="ic ic-lg"><use href="#i-pin"></use></svg></span><div><p class="font-bold leading-none">Lewisburg, TN</p><p class="text-xs text-slate-500 mt-1">&amp; surrounding</p></div></div>
+<section class="border-y border-ink/10 bg-white">
+  <div class="max-w-6xl mx-auto px-5 py-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+    <div><p class="text-2xl font-extrabold text-grass">5.0</p><p class="text-xs text-slate2 font-medium mt-0.5">Star rating</p></div>
+    <div><p class="text-2xl font-extrabold text-grass">8</p><p class="text-xs text-slate2 font-medium mt-0.5">Happy reviews</p></div>
+    <div><p class="text-2xl font-extrabold text-grass">4</p><p class="text-xs text-slate2 font-medium mt-0.5">Towns served</p></div>
+    <div><p class="text-2xl font-extrabold text-grass">Fast</p><p class="text-xs text-slate2 font-medium mt-0.5">Quote response</p></div>
   </div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="max-w-6xl mx-auto px-5 py-16 md:py-24">
-  <div class="max-w-2xl reveal">
-    <p class="text-grassdk text-sm font-bold uppercase tracking-wider">What we do</p>
-    <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Mowing, and the jobs most crews won't touch</h2>
-    <p class="mt-4 text-slate-600 leading-relaxed">We keep it simple and do it well: keep your lawn sharp through the season, and clear the overgrowth that's taking over the edges of your property.</p>
+  <div class="reveal max-w-2xl">
+    <span class="text-xs font-bold uppercase tracking-wide text-grassdk">What we do</span>
+    <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Lawn care that keeps your place looking its best</h2>
+    <p class="mt-3 text-slate2">Straightforward, dependable yard work for homeowners around Lewisburg. Here's what we take care of.</p>
   </div>
-  <div class="mt-10 grid sm:grid-cols-2 gap-5">
-    <div class="reveal group rounded-3xl border border-slate-200 p-7 hover:border-grass hover:shadow-lg hover:shadow-slate-200/60 transition">
-      <span class="grid place-items-center w-12 h-12 rounded-2xl bg-grass/10 text-grassdk"><svg class="ic ic-lg"><use href="#i-scissors"></use></svg></span>
-      <h3 class="mt-4 text-xl font-bold">Lawn Mowing &amp; Maintenance</h3>
-      <p class="mt-2 text-slate-600 leading-relaxed">Clean, even cuts on a schedule that keeps your yard looking its best &mdash; with the trimmings cleaned up every visit.</p>
-    </div>
-    <div class="reveal group rounded-3xl border border-slate-200 p-7 hover:border-grass hover:shadow-lg hover:shadow-slate-200/60 transition">
-      <span class="grid place-items-center w-12 h-12 rounded-2xl bg-grass/10 text-grassdk"><svg class="ic ic-lg"><use href="#i-trees"></use></svg></span>
-      <h3 class="mt-4 text-xl font-bold">Underbrush &amp; Overgrowth Clearing</h3>
-      <p class="mt-2 text-slate-600 leading-relaxed">Reclaim the parts of your property that have gotten away from you &mdash; thick brush, overgrowth and weeds cleared back fast.</p>
-    </div>
+  <div class="mt-10 grid sm:grid-cols-3 gap-5">
+    <article class="reveal rounded-2xl border border-ink/10 bg-white p-7 hover:shadow-lg hover:shadow-ink/5 hover:-translate-y-0.5 transition-all">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-leaf text-grassdk"><svg class="ic"><use href="#i-mower"></use></svg></span>
+      <h3 class="mt-5 text-lg font-bold">Lawn Mowing</h3>
+      <p class="mt-2 text-sm text-slate2 leading-relaxed">Clean, even cuts on a schedule that fits your yard &mdash; edged, trimmed, and tidied every visit.</p>
+    </article>
+    <article class="reveal rounded-2xl border border-ink/10 bg-white p-7 hover:shadow-lg hover:shadow-ink/5 hover:-translate-y-0.5 transition-all">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-leaf text-grassdk"><svg class="ic"><use href="#i-leaf"></use></svg></span>
+      <h3 class="mt-5 text-lg font-bold">Yard Maintenance</h3>
+      <p class="mt-2 text-sm text-slate2 leading-relaxed">Ongoing upkeep to keep the whole property neat &mdash; the kind of regular care that makes a yard pop.</p>
+    </article>
+    <article class="reveal rounded-2xl border border-ink/10 bg-white p-7 hover:shadow-lg hover:shadow-ink/5 hover:-translate-y-0.5 transition-all">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-leaf text-grassdk"><svg class="ic"><use href="#i-scissors"></use></svg></span>
+      <h3 class="mt-5 text-lg font-bold">Underbrush Clearing</h3>
+      <p class="mt-2 text-sm text-slate2 leading-relaxed">Overgrown areas cleared out and brought back &mdash; reclaim the parts of your lot that got away from you.</p>
+    </article>
   </div>
-  <p class="mt-6 text-sm text-slate-500">Not sure if we cover what you need? <a href="tel:+19319933543" class="text-grassdk font-semibold underline underline-offset-2">Give us a call</a> &mdash; if we can help, we'll tell you straight.</p>
 </section>
 
-<!-- PROCESS -->
-<section id="process" class="bg-mist border-y border-slate-200">
+<!-- HOW IT WORKS -->
+<section id="how" class="bg-mist">
   <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
-    <div class="max-w-2xl reveal">
-      <p class="text-grassdk text-sm font-bold uppercase tracking-wider">How it works</p>
-      <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Three steps, no runaround</h2>
+    <div class="reveal max-w-2xl">
+      <span class="text-xs font-bold uppercase tracking-wide text-grassdk">How it works</span>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Three steps to a yard you're proud of</h2>
     </div>
-    <div class="mt-10 grid md:grid-cols-3 gap-5">
-      <div class="reveal rounded-3xl bg-white border border-slate-200 p-7">
-        <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full bg-grass text-white font-bold">1</span><svg class="ic ic-lg text-grassdk"><use href="#i-phone"></use></svg></div>
-        <h3 class="mt-4 text-lg font-bold">Call or text</h3>
-        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Tell us your address and what the yard needs. We respond fast.</p>
+    <div class="mt-10 grid sm:grid-cols-3 gap-6">
+      <div class="reveal relative rounded-2xl bg-white border border-ink/10 p-7">
+        <span class="absolute -top-3 left-7 grid place-items-center w-8 h-8 rounded-full bg-grass text-white text-sm font-bold">1</span>
+        <svg class="ic text-grass mt-2"><use href="#i-phone-call"></use></svg>
+        <h3 class="mt-4 font-bold">Call or text</h3>
+        <p class="mt-2 text-sm text-slate2 leading-relaxed">Tell us about your yard. We respond fast and give you a fair, no-pressure quote.</p>
       </div>
-      <div class="reveal rounded-3xl bg-white border border-slate-200 p-7">
-        <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full bg-grass text-white font-bold">2</span><svg class="ic ic-lg text-grassdk"><use href="#i-clipboard"></use></svg></div>
-        <h3 class="mt-4 text-lg font-bold">Get a fair quote</h3>
-        <p class="mt-2 text-slate-600 text-sm leading-relaxed">A straight price for the work &mdash; no guessing, no upsell.</p>
+      <div class="reveal relative rounded-2xl bg-white border border-ink/10 p-7">
+        <span class="absolute -top-3 left-7 grid place-items-center w-8 h-8 rounded-full bg-grass text-white text-sm font-bold">2</span>
+        <svg class="ic text-grass mt-2"><use href="#i-clock"></use></svg>
+        <h3 class="mt-4 font-bold">We schedule it</h3>
+        <p class="mt-2 text-sm text-slate2 leading-relaxed">Pick a one-time job or regular service. We show up when we say we will.</p>
       </div>
-      <div class="reveal rounded-3xl bg-white border border-slate-200 p-7">
-        <div class="flex items-center gap-3"><span class="grid place-items-center w-9 h-9 rounded-full bg-grass text-white font-bold">3</span><svg class="ic ic-lg text-grassdk"><use href="#i-check"></use></svg></div>
-        <h3 class="mt-4 text-lg font-bold">Done right</h3>
-        <p class="mt-2 text-slate-600 text-sm leading-relaxed">We show up on time, do the work well, and clean up after.</p>
+      <div class="reveal relative rounded-2xl bg-white border border-ink/10 p-7">
+        <span class="absolute -top-3 left-7 grid place-items-center w-8 h-8 rounded-full bg-grass text-white text-sm font-bold">3</span>
+        <svg class="ic text-grass mt-2"><use href="#i-thumbsup"></use></svg>
+        <h3 class="mt-4 font-bold">Enjoy the result</h3>
+        <p class="mt-2 text-sm text-slate2 leading-relaxed">Come home to a sharp, well-kept yard &mdash; the reason our reviews are all 5 stars.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
-  <div class="reveal">
-    <p class="text-grassdk text-sm font-bold uppercase tracking-wider">About us</p>
-    <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Locally owned, and earning every star</h2>
-    <p class="mt-4 text-slate-600 leading-relaxed">Tennessee Lawn Solutions is a Lewisburg-based lawn care business run by Bradley. We're newer than the
-      20-year outfits in town &mdash; and we've earned a perfect 5.0 the only way that counts: by showing up,
-      doing fair-priced work, and leaving every property better than we found it.</p>
-    <p class="mt-4 text-slate-600 leading-relaxed">From a routine mow to clearing back years of overgrowth, we take the kind of jobs that make a real
-      difference to how your place looks &mdash; and we do them the way we'd want our own yard done.</p>
-    <a href="tel:+19319933543" class="mt-6 inline-flex items-center gap-2 rounded-full bg-grass hover:bg-grassdk text-white font-semibold px-6 py-3.5 shadow-lg shadow-grass/25">
-      <svg class="ic"><use href="#i-phone"></use></svg> Talk to Bradley
-    </a>
-  </div>
-  <!-- HONEST no-gallery: no business-owned project photos available; point to their real Facebook instead of faking work photos -->
-  <div class="reveal rounded-3xl border border-slate-200 bg-mist p-8 text-center">
-    <span class="inline-grid place-items-center w-14 h-14 rounded-2xl bg-grass/10 text-grassdk mx-auto"><svg class="ic ic-lg"><use href="#i-facebook"></use></svg></span>
-    <h3 class="mt-4 text-xl font-bold">See our work</h3>
-    <p class="mt-2 text-slate-600 leading-relaxed max-w-sm mx-auto">We post recent jobs &mdash; mowing and underbrush clearing around Lewisburg &mdash; on our Facebook page. Take a look, then give us a call.</p>
-    <a href="https://www.facebook.com/TennesseeLawnSolutionsLLC/" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-full bg-white border border-slate-300 hover:border-grass text-ink font-semibold px-6 py-3">
-      <svg class="ic"><use href="#i-facebook"></use></svg> Visit our Facebook
-    </a>
-  </div>
-</section>
-
-<!-- REVIEWS (aggregate only — no fabricated quotes) -->
-<section id="reviews" class="bg-grassdk text-white">
-  <div class="max-w-4xl mx-auto px-5 py-16 md:py-20 text-center">
-    <div class="flex justify-center text-white mb-4" aria-label="5.0 out of 5 stars">
-      <svg class="ic ic-lg" style="fill:#fff;stroke:#fff"><use href="#i-star"></use></svg>
-      <svg class="ic ic-lg" style="fill:#fff;stroke:#fff"><use href="#i-star"></use></svg>
-      <svg class="ic ic-lg" style="fill:#fff;stroke:#fff"><use href="#i-star"></use></svg>
-      <svg class="ic ic-lg" style="fill:#fff;stroke:#fff"><use href="#i-star"></use></svg>
-      <svg class="ic ic-lg" style="fill:#fff;stroke:#fff"><use href="#i-star"></use></svg>
+<!-- REVIEWS -->
+<section id="reviews" class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+  <div class="reveal flex items-end justify-between flex-wrap gap-4 mb-10">
+    <div class="max-w-xl">
+      <span class="text-xs font-bold uppercase tracking-wide text-grassdk">Reviews</span>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">A perfect 5.0, in their words</h2>
     </div>
-    <p class="text-5xl font-extrabold">5.0</p>
-    <p class="mt-2 text-white/80">A perfect rating across 8 verified customer reviews.</p>
-    <p class="mt-5 text-lg text-white/90 max-w-xl mx-auto leading-relaxed">Homeowners around Lewisburg consistently call out the fair pricing, fast turnaround, and quality of the finished job.</p>
-    <a href="https://reviews.birdeye.com/tennessee-lawn-solutions-170471059872680" target="_blank" rel="noopener" class="mt-7 inline-flex items-center gap-2 rounded-full bg-white text-grassdk font-semibold px-6 py-3.5 hover:bg-mist">
-      Read the reviews <svg class="ic"><use href="#i-arrow"></use></svg>
-    </a>
+    <div class="flex items-center gap-2">
+      <div class="flex text-grass">
+        <svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg><svg class="ic ic-sm" style="fill:#16A34A;stroke:#16A34A"><use href="#i-star"></use></svg>
+      </div>
+      <span class="text-sm font-semibold text-slate2">5.0 &middot; 8 reviews</span>
+    </div>
   </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <figure class="reveal rounded-2xl border border-ink/10 bg-white p-7">
+      <svg class="text-leaf" style="fill:#DCFCE7;stroke:#16A34A;width:1.8rem;height:1.8rem"><use href="#i-quote"></use></svg>
+      <blockquote class="mt-3 leading-relaxed">Bradley and his assistant did great work clearing out underbrush around my house which had become overgrown. They got a lot of work done in a good amount of time. His price was fair and I'm very happy with how great everything looks!</blockquote>
+      <figcaption class="mt-5 flex items-center gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-leaf text-grassdk font-bold text-sm">SS</span>
+        <div><p class="font-semibold text-sm">Susan Seaton</p><p class="text-xs text-slate2">Google review</p></div>
+      </figcaption>
+    </figure>
+    <figure class="reveal rounded-2xl border border-ink/10 bg-white p-7">
+      <svg class="text-leaf" style="fill:#DCFCE7;stroke:#16A34A;width:1.8rem;height:1.8rem"><use href="#i-quote"></use></svg>
+      <blockquote class="mt-3 leading-relaxed">I would like to recommend Bradley and company for the great job they have done on my property. A fair price and operated in a timely manner.</blockquote>
+      <figcaption class="mt-5 flex items-center gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-leaf text-grassdk font-bold text-sm">SB</span>
+        <div><p class="font-semibold text-sm">Steve Baird</p><p class="text-xs text-slate2">Google review</p></div>
+      </figcaption>
+    </figure>
+    <figure class="reveal rounded-2xl border border-ink/10 bg-white p-7">
+      <svg class="text-leaf" style="fill:#DCFCE7;stroke:#16A34A;width:1.8rem;height:1.8rem"><use href="#i-quote"></use></svg>
+      <blockquote class="mt-3 leading-relaxed">Professional! Fast response! Superb Service!</blockquote>
+      <figcaption class="mt-5 flex items-center gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-leaf text-grassdk font-bold text-sm">CC</span>
+        <div><p class="font-semibold text-sm">Candy Clayton</p><p class="text-xs text-slate2">Google review</p></div>
+      </figcaption>
+    </figure>
+    <figure class="reveal rounded-2xl border border-ink/10 bg-white p-7">
+      <svg class="text-leaf" style="fill:#DCFCE7;stroke:#16A34A;width:1.8rem;height:1.8rem"><use href="#i-quote"></use></svg>
+      <blockquote class="mt-3 leading-relaxed">My yard very much needed a cut and Bradley did a great job and made it look good.</blockquote>
+      <figcaption class="mt-5 flex items-center gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-leaf text-grassdk font-bold text-sm">AF</span>
+        <div><p class="font-semibold text-sm">Aj Fralix</p><p class="text-xs text-slate2">Google review</p></div>
+      </figcaption>
+    </figure>
+  </div>
+  <p class="mt-5 text-xs text-slate2">Real customer reviews from Tennessee Lawn Solutions' Google / Birdeye listing. 5.0 average across 8 reviews.</p>
 </section>
 
-<!-- CONTACT + MAP + HOURS -->
-<section id="contact" class="max-w-6xl mx-auto px-5 py-16 md:py-24">
-  <div class="grid lg:grid-cols-2 gap-10">
+<!-- CONTACT / LOCATION -->
+<section id="contact" class="bg-mist">
+  <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-10 items-stretch">
     <div class="reveal">
-      <p class="text-grassdk text-sm font-bold uppercase tracking-wider">Get in touch</p>
-      <h2 class="mt-2 text-3xl md:text-4xl font-extrabold tracking-tight">Ready when you are</h2>
-      <p class="mt-4 text-slate-600 leading-relaxed">Call or text for a fast, fair quote on mowing or clearing. We serve Lewisburg and the surrounding area.</p>
-      <div class="mt-7 space-y-4">
-        <a href="tel:+19319933543" class="flex items-center gap-4 rounded-2xl border border-slate-200 p-4 hover:border-grass transition">
-          <span class="grid place-items-center w-11 h-11 rounded-xl bg-grass/10 text-grassdk"><svg class="ic ic-lg"><use href="#i-phone"></use></svg></span>
-          <span><span class="block text-xs font-semibold uppercase tracking-wide text-slate-500">Call or text</span><span class="block text-lg font-bold">(931) 993-3543</span></span>
+      <span class="text-xs font-bold uppercase tracking-wide text-grassdk">Get in touch</span>
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold tracking-tight">Ready for a sharper yard?</h2>
+      <p class="mt-4 text-slate2 max-w-md leading-relaxed">Call or text and we'll get you a fast, fair quote for mowing, maintenance, or clearing that overgrowth.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+19319933543" class="flex items-center gap-4 rounded-2xl bg-grass hover:bg-grassdk text-white px-6 py-4 shadow-lg shadow-grass/25 transition-colors">
+          <svg class="ic"><use href="#i-phone"></use></svg><span class="font-bold text-lg">(931) 993-3543</span>
         </a>
-        <div class="flex items-center gap-4 rounded-2xl border border-slate-200 p-4">
-          <span class="grid place-items-center w-11 h-11 rounded-xl bg-grass/10 text-grassdk"><svg class="ic ic-lg"><use href="#i-pin"></use></svg></span>
-          <span><span class="block text-xs font-semibold uppercase tracking-wide text-slate-500">Based in</span><span class="block text-lg font-bold">1454 St Anne St, Lewisburg, TN 37091</span></span>
+        <div class="flex items-start gap-4 rounded-2xl bg-white border border-ink/10 px-6 py-4">
+          <svg class="ic text-grass mt-0.5"><use href="#i-pin"></use></svg>
+          <div><p class="font-semibold text-sm">Based in Lewisburg, TN</p><p class="text-sm text-slate2">Serving Lewisburg, Cornersville, Chapel Hill &amp; Columbia</p></div>
         </div>
-      </div>
-      <!-- HOURS (from record) -->
-      <div class="mt-7 rounded-2xl border border-slate-200 overflow-hidden">
-        <div class="flex items-center gap-2 bg-mist px-5 py-3 border-b border-slate-200"><svg class="ic text-grassdk"><use href="#i-clock"></use></svg><span class="font-bold">Hours</span></div>
-        <dl class="px-5 py-3 text-sm divide-y divide-slate-100">
-          <div class="flex justify-between py-1.5"><dt class="text-slate-600">Monday &ndash; Friday</dt><dd class="font-semibold">8:00 AM &ndash; 8:00 PM</dd></div>
-          <div class="flex justify-between py-1.5"><dt class="text-slate-600">Saturday</dt><dd class="font-semibold">8:00 AM &ndash; 8:00 PM</dd></div>
-          <div class="flex justify-between py-1.5"><dt class="text-slate-600">Sunday</dt><dd class="font-semibold">Closed</dd></div>
-        </dl>
+        <div class="flex items-start gap-4 rounded-2xl bg-white border border-ink/10 px-6 py-4">
+          <svg class="ic text-grass mt-0.5"><use href="#i-clock"></use></svg>
+          <div><p class="font-semibold text-sm">Hours</p><a href="tel:+19319933543" class="text-sm text-grassdk font-medium hover:underline">Call or text for hours &amp; availability</a></div>
+        </div>
+        <a href="https://www.facebook.com/TennesseeLawnSolutionsLLC/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold text-slate2 hover:text-grassdk pt-1">
+          <svg class="ic ic-sm"><use href="#i-facebook"></use></svg> Visit us on Facebook
+        </a>
       </div>
     </div>
-    <div class="reveal">
-      <div class="rounded-3xl overflow-hidden border border-slate-200 shadow-lg shadow-slate-200/60 h-full min-h-[360px]">
-        <iframe title="Map of Tennessee Lawn Solutions, Lewisburg TN" class="w-full h-full min-h-[360px]" loading="lazy"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=-86.7949%2C35.4430%2C-86.7829%2C35.4550&layer=mapnik&marker=35.4490%2C-86.7889"></iframe>
-      </div>
-      <a href="https://www.openstreetmap.org/directions?to=35.4490%2C-86.7889" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-grassdk hover:underline">
-        <svg class="ic"><use href="#i-pin"></use></svg> Get directions
-      </a>
+    <div class="reveal rounded-3xl overflow-hidden border border-ink/10 shadow-lg shadow-ink/5 min-h-[340px]">
+      <iframe title="Map of Tennessee Lawn Solutions service area, Lewisburg TN" class="w-full h-full min-h-[340px]" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-86.7949%2C35.4430%2C-86.7829%2C35.4550&layer=mapnik&marker=35.4490%2C-86.7889"></iframe>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="bg-mist border-t border-slate-200">
-  <div class="max-w-4xl mx-auto px-5 py-16 md:py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Let's get your yard handled.</h2>
-    <p class="mt-3 text-slate-600 text-lg">Fast quotes, fair prices, 5-star work. Call Tennessee Lawn Solutions today.</p>
-    <a href="tel:+19319933543" class="mt-7 inline-flex items-center gap-2 rounded-full bg-grass hover:bg-grassdk text-white font-bold text-lg px-8 py-4 shadow-lg shadow-grass/25">
-      <svg class="ic ic-lg"><use href="#i-phone"></use></svg> (931) 993-3543
+<!-- FINAL CTA BAND -->
+<section class="bg-grass text-white">
+  <div class="max-w-6xl mx-auto px-5 py-14 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+    <div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Let's get your yard on the schedule.</h2>
+      <p class="mt-2 text-white/85">Fast quotes, fair prices, 5-star work around Lewisburg.</p>
+    </div>
+    <a href="tel:+19319933543" class="inline-flex items-center gap-3 rounded-full bg-white text-grassdk font-bold px-8 py-4 shadow-lg hover:bg-leaf transition-colors">
+      <svg class="ic"><use href="#i-phone"></use></svg> (931) 993-3543
     </a>
   </div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-white border-t border-slate-200">
-  <div class="max-w-6xl mx-auto px-5 py-10 grid sm:grid-cols-3 gap-8 text-sm">
-    <div>
-      <div class="flex items-center gap-2.5">
-        <span class="grid place-items-center w-9 h-9 rounded-xl bg-grass text-white"><svg class="ic"><use href="#i-leaf"></use></svg></span>
-        <span class="font-extrabold">Tennessee Lawn Solutions</span>
-      </div>
-      <p class="mt-3 text-slate-500 leading-relaxed">Lawn mowing &amp; underbrush clearing for Lewisburg, TN and the surrounding area.</p>
+<footer class="bg-ink text-white/70">
+  <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+    <div class="flex items-center gap-2.5">
+      <span class="grid place-items-center w-9 h-9 rounded-xl bg-grass text-white"><svg class="ic ic-sm"><use href="#i-leaf"></use></svg></span>
+      <span class="font-bold text-white">Tennessee Lawn Solutions</span>
     </div>
-    <div>
-      <p class="font-bold">Contact</p>
-      <ul class="mt-3 space-y-2 text-slate-600">
-        <li><a href="tel:+19319933543" class="hover:text-grassdk font-semibold">(931) 993-3543</a></li>
-        <li>1454 St Anne St, Lewisburg, TN 37091</li>
-        <li><a href="https://www.facebook.com/TennesseeLawnSolutionsLLC/" target="_blank" rel="noopener" class="hover:text-grassdk">Facebook</a></li>
-      </ul>
-    </div>
-    <div>
-      <p class="font-bold">Hours</p>
-      <ul class="mt-3 space-y-1.5 text-slate-600">
-        <li>Mon &ndash; Sat: 8:00 AM &ndash; 8:00 PM</li>
-        <li>Sunday: Closed</li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-slate-200">
-    <p class="max-w-6xl mx-auto px-5 py-5 text-xs text-slate-400">&copy; 2026 Tennessee Lawn Solutions. Lewisburg, TN. &middot; Preview site.</p>
+    <p>Lewisburg, TN &middot; <a href="tel:+19319933543" class="text-white hover:text-leaf font-medium">(931) 993-3543</a></p>
   </div>
 </footer>
 
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "LandscapingBusiness",
-  "name": "Tennessee Lawn Solutions",
-  "image": "https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/",
-  "telephone": "+19319933543",
-  "url": "https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1454 St Anne St",
-    "addressLocality": "Lewisburg",
-    "addressRegion": "TN",
-    "postalCode": "37091",
-    "addressCountry": "US"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 35.449, "longitude": -86.7889 },
-  "areaServed": "Lewisburg, TN",
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "8", "bestRating": "5" },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "20:00" }
-  ]
+  "@context":"https://schema.org",
+  "@type":"LandscapingBusiness",
+  "name":"Tennessee Lawn Solutions",
+  "image":"https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/",
+  "url":"https://savcab.github.io/websites/tennessee-lawn-solutions-lewisburg/",
+  "telephone":"+19319933543",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"1454 St Anne St","addressLocality":"Lewisburg","addressRegion":"TN","postalCode":"37091","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":35.4490,"longitude":-86.7889},
+  "areaServed":["Lewisburg, TN","Cornersville, TN","Chapel Hill, TN","Columbia, TN"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"8"}
 }
 </script>
-
 <script>
-  // active-section nav highlight
-  const links = [...document.querySelectorAll('.navlink')];
-  const map = {};
-  links.forEach(l => { const id = l.getAttribute('href').slice(1); const s = document.getElementById(id); if (s) map[id] = l; });
-  const obs = new IntersectionObserver((es) => {
-    es.forEach(e => { if (e.isIntersecting) { links.forEach(l=>l.classList.remove('active')); const l = map[e.target.id]; if (l) l.classList.add('active'); } });
-  }, { rootMargin: '-45% 0px -50% 0px' });
-  Object.keys(map).forEach(id => obs.observe(document.getElementById(id)));
-  // reveal on scroll (progressive enhancement: html.js hides until revealed; failsafe reveals anything still hidden)
-  const reveals = [...document.querySelectorAll('.reveal')];
-  const ro = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
-  reveals.forEach(el=>ro.observe(el));
-  // any element still hidden after load (e.g. headless capture) gets shown
-  window.addEventListener('load',()=>setTimeout(()=>reveals.forEach(el=>el.classList.add('in')),1200));
+(function(){
+  var revs=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  revs.forEach(function(el){io.observe(el);});
+  setTimeout(function(){revs.forEach(function(el){el.classList.add('in');});},1600);
+  var links=[].slice.call(document.querySelectorAll('.navlink'));
+  var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));});
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active');});var i=secs.indexOf(e.target);if(i>-1)links[i].classList.add('active');}})},{rootMargin:'-45% 0px -50% 0px'});
+  secs.forEach(function(s){if(s)so.observe(s);});
+})();
 </script>
 </body>
 </html>

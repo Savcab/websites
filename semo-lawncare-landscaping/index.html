@@ -38,6 +38,7 @@ tailwind.config={theme:{extend:{
   html.js .reveal.from-l{transform:translateX(-30px)}
   html.js .reveal.from-r{transform:translateX(30px)}
   html.js .reveal.zoom{transform:scale(.93)}
+  html.js .reveal.slide-in-left{transform:translateX(-46px) translateY(6px);transition-duration:1s;transition-delay:.35s;transition-timing-function:cubic-bezier(.16,.8,.3,1)}
   html.js .reveal.in{opacity:1;transform:none}
   body{font-family:'Inter',sans-serif;color:#16241B;background:#F7F5EF;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .disp{font-family:'Fraunces','Georgia',serif;font-optical-sizing:auto}
@@ -118,11 +119,11 @@ tailwind.config={theme:{extend:{
         </span>
       </a>
       <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink/75">
+        <a href="#about" class="navlink hover:text-forest">About</a>
         <a href="#services" class="navlink hover:text-forest">Services</a>
         <a href="#work" class="navlink hover:text-forest">Our Work</a>
         <a href="#pricing" class="navlink hover:text-forest">Pricing</a>
         <a href="#estimate" class="navlink hover:text-forest">Estimate</a>
-        <a href="#about" class="navlink hover:text-forest">About</a>
       </nav>
       <div class="flex items-center gap-2">
         <a href="tel:+16156649423" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-forest hover:text-moss">
@@ -150,12 +151,12 @@ tailwind.config={theme:{extend:{
       <button data-close aria-label="Close menu" class="w-10 h-10 grid place-items-center rounded-full hover:bg-ink/5"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     </div>
     <div class="flex flex-col gap-1 text-lg disp">
+      <a href="#about" data-close class="py-3 border-b border-stoneline">About</a>
       <a href="#services" data-close class="py-3 border-b border-stoneline">Services</a>
       <a href="#work" data-close class="py-3 border-b border-stoneline">Our Work</a>
       <a href="#area" data-close class="py-3 border-b border-stoneline">Service Area</a>
       <a href="#pricing" data-close class="py-3 border-b border-stoneline">Pricing</a>
       <a href="#estimate" data-close class="py-3 border-b border-stoneline">Price Estimate</a>
-      <a href="#about" data-close class="py-3 border-b border-stoneline">About</a>
       <a href="#visit" data-close class="py-3 border-b border-stoneline">Visit &amp; Hours</a>
     </div>
     <div class="mt-auto grid gap-3">
@@ -206,7 +207,7 @@ tailwind.config={theme:{extend:{
       <div class="absolute inset-0 bg-gradient-to-r from-paper via-paper/10 to-transparent lg:w-1/3"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-forest3/45 via-transparent to-transparent"></div>
       <!-- floating card -->
-      <div class="reveal glass absolute left-5 bottom-5 sm:left-7 sm:bottom-7 max-w-[19rem] border border-white/60 rounded-2xl shadow-lift p-5">
+      <div class="reveal slide-in-left glass absolute left-5 bottom-5 sm:left-7 sm:bottom-7 max-w-[19rem] border border-white/60 rounded-2xl shadow-lift p-5">
         <div class="flex items-center gap-2 text-brass3">
           <svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
           <span class="label text-[.66rem] text-ink">Our promise</span>

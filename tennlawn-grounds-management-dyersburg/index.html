@@ -10,23 +10,21 @@
 <meta property="og:description" content="Total grounds management, landscaping, hardscapes, irrigation and snow removal across Dyersburg and West Tennessee. Rated 4.6 across 14 reviews.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://savcab.github.io/websites/tennlawn-grounds-management-dyersburg/img/hero.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23111'/%3E%3Crect x='14' y='40' width='72' height='20' fill='%23FFD400'/%3E%3Ctext x='50' y='56' font-size='18' font-family='Arial Black,sans-serif' font-weight='900' fill='%23111' text-anchor='middle'%3ETL%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231f3d2b'/%3E%3Ctext x='50' y='62' font-size='44' font-family='Georgia,serif' font-weight='700' fill='%23e7d9b8' text-anchor='middle'%3ETL%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Archivo+Narrow:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
-tailwind.config={theme:{extend:{colors:{ink:'#111111',paper:'#F4F4F0',hi:'#FFD400'},fontFamily:{display:['"Archivo"','sans-serif'],cond:['"Archivo Narrow"','sans-serif'],body:['"Inter"','sans-serif']}}}}
+tailwind.config={theme:{extend:{colors:{forest:'#1f3d2b',moss:'#3c6e47',sage:'#dfe9da',cream:'#f6f3ea',sand:'#e7d9b8',bark:'#2c2a24'},fontFamily:{display:['"Fraunces"','Georgia','serif'],body:['"Inter"','sans-serif']}}}}
 </script>
 <style>
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:#F4F4F0;color:#111}
-.disp{font-family:'Archivo',sans-serif;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}
+body{font-family:'Inter',sans-serif;background:#f6f3ea;color:#2c2a24}
+.disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
 .ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.hardshadow{box-shadow:6px 6px 0 #111}
-.lift{transition:transform .15s ease}.lift:hover{transform:translate(-2px,-2px)}
-.marquee{display:flex;gap:2.5rem;white-space:nowrap;animation:m 26s linear infinite}
-@keyframes m{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.lift{transition:transform .2s ease,box-shadow .2s ease}.lift:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(31,61,43,.55)}
+.hero-grad{background:linear-gradient(120deg,#1f3d2b 0%,#274d34 55%,#3c6e47 100%)}
 </style>
 </head>
 <body class="overflow-x-clip">
@@ -46,133 +44,125 @@ body{font-family:'Inter',sans-serif;background:#F4F4F0;color:#111}
 </defs></svg>
 
 <!-- sticky call bar -->
-<header class="sticky top-0 z-50 bg-ink text-paper border-b-4 border-hi">
+<header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-forest/10">
   <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-    <a href="#top" class="disp text-xl tracking-tight">Tenn<span class="text-hi">Lawn</span></a>
-    <a href="tel:+17312870448" class="bg-hi text-ink disp text-sm px-4 py-2.5 flex items-center gap-2 lift hardshadow border-2 border-ink"><svg class="ic w-4 h-4"><use href="#i-phone"/></svg>(731) 287-0448</a>
+    <a href="#top" class="disp text-2xl font-700 text-forest">Tenn<span class="text-moss">Lawn</span></a>
+    <a href="tel:+17312870448" class="bg-forest text-cream rounded-full text-sm px-5 py-2.5 flex items-center gap-2 font-semibold lift"><svg class="ic w-4 h-4"><use href="#i-phone"/></svg>(731) 287-0448</a>
   </div>
 </header>
 
 <main id="top">
-<!-- hero: duotone-block + big type -->
-<section class="bg-ink text-paper">
-  <div class="max-w-6xl mx-auto px-4 pt-12 pb-0 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-    <div class="pb-12">
-      <p class="cond text-hi tracking-[0.25em] text-sm font-700">DYERSBURG, TENNESSEE · GROUNDS MANAGEMENT</p>
-      <h1 class="disp text-5xl sm:text-7xl leading-[0.92] mt-4">We keep the<br>grounds<br><span class="text-hi">handled.</span></h1>
-      <p class="mt-6 text-paper/80 text-lg max-w-md font-body">Commercial and residential grounds management, landscaping, hardscapes, irrigation and snow removal — one crew that shows up and keeps the property right, season after season.</p>
-      <div class="mt-7 flex flex-wrap gap-3">
-        <a href="tel:+17312870448" class="bg-hi text-ink disp px-6 py-4 flex items-center gap-2 border-2 border-paper hardshadow lift"><svg class="ic w-5 h-5"><use href="#i-phone"/></svg>Call (731) 287-0448</a>
-        <a href="sms:+17312870448" class="bg-ink text-paper disp px-6 py-4 flex items-center gap-2 border-2 border-paper lift"><svg class="ic w-5 h-5"><use href="#i-msg"/></svg>Text us</a>
+<!-- hero -->
+<section class="hero-grad text-cream">
+  <div class="max-w-6xl mx-auto px-4 pt-14 pb-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="text-sand tracking-[0.2em] text-xs font-semibold uppercase">Dyersburg, Tennessee · Grounds Management</p>
+      <h1 class="disp text-5xl sm:text-6xl font-700 leading-[1.02] mt-5">We keep the grounds <span class="text-sand italic">handled.</span></h1>
+      <p class="mt-6 text-cream/85 text-lg max-w-md">Commercial and residential grounds management, landscaping, hardscapes, irrigation and snow removal — one crew that shows up and keeps the property right, season after season.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="tel:+17312870448" class="bg-sand text-forest rounded-full px-6 py-4 flex items-center gap-2 font-semibold lift"><svg class="ic w-5 h-5"><use href="#i-phone"/></svg>Call (731) 287-0448</a>
+        <a href="sms:+17312870448" class="border border-cream/40 text-cream rounded-full px-6 py-4 flex items-center gap-2 font-semibold lift"><svg class="ic w-5 h-5"><use href="#i-msg"/></svg>Text us</a>
       </div>
-      <div class="mt-6 flex items-center gap-2">
-        <span class="flex text-hi"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5 opacity-60"><use href="#i-star"/></svg></span>
-        <span class="cond font-700">4.6 · 14 reviews</span>
+      <div class="mt-7 flex items-center gap-2">
+        <span class="flex text-sand"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg></span>
+        <span class="font-semibold text-cream/90">4.6 · 14 reviews</span>
       </div>
     </div>
-    <div class="relative h-full min-h-[320px]">
-      <img src="img/hero.jpg" alt="Commercial entrance landscaping by TennLawn — mulched bed, shrubs and stone at a Dyersburg-area plant" class="w-full h-full object-cover min-h-[320px] grayscale-[15%] border-l-0 lg:border-l-4 border-t-4 lg:border-t-0 border-hi">
+    <div class="relative">
+      <img src="img/hero.jpg" alt="Commercial entrance landscaping by TennLawn — mulched bed, shrubs and stone at a Dyersburg-area plant" class="w-full h-[340px] lg:h-[420px] object-cover rounded-3xl shadow-[0_30px_60px_-30px_rgba(0,0,0,.6)]">
     </div>
   </div>
 </section>
 
-<!-- marquee strip -->
-<div class="bg-hi text-ink border-y-4 border-ink overflow-hidden py-3">
-  <div class="marquee disp text-lg">
-    <span>GROUNDS MANAGEMENT • LANDSCAPING • HARDSCAPES • IRRIGATION • RIGHT-OF-WAY • SNOW REMOVAL • COMMERCIAL FLOWER BEDS •</span>
-    <span>GROUNDS MANAGEMENT • LANDSCAPING • HARDSCAPES • IRRIGATION • RIGHT-OF-WAY • SNOW REMOVAL • COMMERCIAL FLOWER BEDS •</span>
-  </div>
-</div>
-
-<!-- services: numbered bordered blocks -->
-<section class="max-w-6xl mx-auto px-4 py-14">
-  <h2 class="disp text-3xl sm:text-4xl">What we <span class="bg-ink text-hi px-2">do</span></h2>
-  <p class="mt-3 cond text-ink/60 text-lg">A full-service grounds crew — the kind a property manager keeps on speed dial.</p>
-  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 01</div><svg class="ic w-9 h-9 mt-2"><use href="#i-leaf"/></svg><h3 class="disp text-xl mt-3">Grounds Management</h3><p class="mt-2 text-ink/75">Ongoing maintenance for commercial and residential properties — mowing, edging, trimming and seasonal upkeep.</p></div>
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 02</div><svg class="ic w-9 h-9 mt-2"><use href="#i-brick"/></svg><h3 class="disp text-xl mt-3">Hardscapes</h3><p class="mt-2 text-ink/75">Walls, walkways and stone work that give a property structure and curb appeal.</p></div>
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 03</div><svg class="ic w-9 h-9 mt-2"><use href="#i-drop"/></svg><h3 class="disp text-xl mt-3">Irrigation</h3><p class="mt-2 text-ink/75">Sprinkler and irrigation installs and service that keep the green growing through a West Tennessee summer.</p></div>
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 04</div><svg class="ic w-9 h-9 mt-2"><use href="#i-road"/></svg><h3 class="disp text-xl mt-3">Right-of-Way / WEC</h3><p class="mt-2 text-ink/75">Vegetation management and weed/erosion control along right-of-way and commercial corridors.</p></div>
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 05</div><svg class="ic w-9 h-9 mt-2"><use href="#i-flower"/></svg><h3 class="disp text-xl mt-3">Commercial Flower Beds</h3><p class="mt-2 text-ink/75">Seasonal color and bed design that keeps a storefront or office entrance sharp year-round.</p></div>
-    <div class="bg-paper border-2 border-ink p-6 hardshadow lift"><div class="cond text-ink/40 font-700">SERVICE 06</div><svg class="ic w-9 h-9 mt-2"><use href="#i-snow"/></svg><h3 class="disp text-xl mt-3">Snow Removal</h3><p class="mt-2 text-ink/75">Winter plowing and clearing so lots and walks stay open and safe when the weather turns.</p></div>
+<!-- services -->
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="disp text-3xl sm:text-4xl font-700 text-forest">What we do</h2>
+  <p class="mt-3 text-bark/60 text-lg">A full-service grounds crew — the kind a property manager keeps on speed dial.</p>
+  <div class="mt-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-leaf"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Grounds Management</h3><p class="mt-2 text-bark/70">Ongoing maintenance for commercial and residential properties — mowing, edging, trimming and seasonal upkeep.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-brick"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Hardscapes</h3><p class="mt-2 text-bark/70">Walls, walkways and stone work that give a property structure and curb appeal.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-drop"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Irrigation</h3><p class="mt-2 text-bark/70">Sprinkler and irrigation installs and service that keep the green growing through a West Tennessee summer.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-road"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Right-of-Way / WEC</h3><p class="mt-2 text-bark/70">Vegetation management and weed/erosion control along right-of-way and commercial corridors.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-flower"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Commercial Flower Beds</h3><p class="mt-2 text-bark/70">Seasonal color and bed design that keeps a storefront or office entrance sharp year-round.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><div class="w-11 h-11 rounded-xl bg-sage text-moss flex items-center justify-center"><svg class="ic w-6 h-6"><use href="#i-snow"/></svg></div><h3 class="disp text-xl font-600 mt-4 text-forest">Snow Removal</h3><p class="mt-2 text-bark/70">Winter plowing and clearing so lots and walks stay open and safe when the weather turns.</p></div>
   </div>
 </section>
 
 <!-- our work gallery (own photos) -->
-<section class="bg-ink text-paper">
-  <div class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="disp text-3xl sm:text-4xl">Our <span class="text-hi">work</span></h2>
-    <p class="mt-3 cond text-paper/60 text-lg">Real projects across Dyersburg and West Tennessee.</p>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-      <figure class="border-2 border-hi"><img src="img/hero.jpg" alt="Commercial entrance bed with mulch, shrubs and stone at a Dyersburg-area plant" class="w-full aspect-[4/3] object-cover"><figcaption class="cond p-3 text-paper/70">Commercial entrance landscaping</figcaption></figure>
-      <figure class="border-2 border-hi"><img src="img/work1.jpg" alt="Commercial flower bed with seasonal color planted by TennLawn" class="w-full aspect-[4/3] object-cover"><figcaption class="cond p-3 text-paper/70">Commercial flower bed &amp; color</figcaption></figure>
-      <figure class="border-2 border-hi"><img src="img/work2.jpg" alt="Irrigation system running on a freshly graded commercial median" class="w-full aspect-[4/3] object-cover"><figcaption class="cond p-3 text-paper/70">Irrigation install, running</figcaption></figure>
+<section class="bg-forest text-cream">
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="disp text-3xl sm:text-4xl font-700">Our work</h2>
+    <p class="mt-3 text-cream/65 text-lg">Real projects across Dyersburg and West Tennessee.</p>
+    <div class="mt-9 grid grid-cols-1 md:grid-cols-3 gap-5">
+      <figure class="rounded-2xl overflow-hidden bg-white/5"><img src="img/hero.jpg" alt="Commercial entrance bed with mulch, shrubs and stone at a Dyersburg-area plant" class="w-full aspect-[4/3] object-cover"><figcaption class="p-3 text-cream/70 text-sm">Commercial entrance landscaping</figcaption></figure>
+      <figure class="rounded-2xl overflow-hidden bg-white/5"><img src="img/work1.jpg" alt="Commercial flower bed with seasonal color planted by TennLawn" class="w-full aspect-[4/3] object-cover"><figcaption class="p-3 text-cream/70 text-sm">Commercial flower bed &amp; color</figcaption></figure>
+      <figure class="rounded-2xl overflow-hidden bg-white/5"><img src="img/work2.jpg" alt="Irrigation system running on a freshly graded commercial median" class="w-full aspect-[4/3] object-cover"><figcaption class="p-3 text-cream/70 text-sm">Irrigation install, running</figcaption></figure>
     </div>
   </div>
 </section>
 
 <!-- review band (sourced, generic platform) -->
-<section class="max-w-6xl mx-auto px-4 py-14">
-  <h2 class="disp text-3xl sm:text-4xl mb-8">In our customers' words</h2>
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h2 class="disp text-3xl sm:text-4xl font-700 text-forest mb-8">In our customers' words</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-    <blockquote class="bg-paper border-2 border-ink p-7 hardshadow">
-      <div class="flex text-hi"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg></div>
-      <p class="mt-3 text-lg font-body">"Derek, Ricardo, and team done an amazing landscaping job for us. They were prompt and very friendly."</p>
-      <footer class="mt-4 cond font-700 text-ink/60">STEVEN HARDEN · review from our online listings</footer>
+    <blockquote class="bg-white border border-forest/10 rounded-2xl p-7">
+      <div class="flex text-moss"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg></div>
+      <p class="mt-3 text-lg">"Derek, Ricardo, and team done an amazing landscaping job for us. They were prompt and very friendly."</p>
+      <footer class="mt-4 font-semibold text-bark/55 text-sm">STEVEN HARDEN · review from our online listings</footer>
     </blockquote>
-    <blockquote class="bg-paper border-2 border-ink p-7 hardshadow">
-      <div class="flex text-hi"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg></div>
-      <p class="mt-3 text-lg font-body">"Ronnie, Derek, and staff know their stuff when it comes to landscaping and grounds maintenance!"</p>
-      <footer class="mt-4 cond font-700 text-ink/60">D COOPER · review from our online listings</footer>
+    <blockquote class="bg-white border border-forest/10 rounded-2xl p-7">
+      <div class="flex text-moss"><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg><svg class="ic w-5 h-5"><use href="#i-star"/></svg></div>
+      <p class="mt-3 text-lg">"Ronnie, Derek, and staff know their stuff when it comes to landscaping and grounds maintenance!"</p>
+      <footer class="mt-4 font-semibold text-bark/55 text-sm">D COOPER · review from our online listings</footer>
     </blockquote>
   </div>
 </section>
 
-<!-- hours + map in framed boxes -->
-<section class="bg-ink text-paper">
-  <div class="max-w-6xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-    <div class="border-2 border-hi p-7">
-      <h2 class="disp text-2xl flex items-center gap-2"><svg class="ic w-6 h-6 text-hi"><use href="#i-pin"/></svg>Find us</h2>
-      <p class="mt-4 cond text-lg">101 Pressler Rd<br>Dyersburg, TN 38024</p>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=36.0348933,-89.4146623" class="inline-flex items-center gap-1 mt-3 text-hi cond font-700">Get directions <svg class="ic w-4 h-4"><use href="#i-arrow"/></svg></a>
-      <h3 class="disp text-xl mt-7 flex items-center gap-2"><svg class="ic w-5 h-5 text-hi"><use href="#i-clock"/></svg>Hours</h3>
-      <table class="mt-3 w-full cond text-paper/85"><tbody>
-        <tr class="border-b border-paper/15"><td class="py-1.5">Mon–Fri</td><td class="py-1.5 text-right">8:00 AM – 5:00 PM</td></tr>
-        <tr class="border-b border-paper/15"><td class="py-1.5">Saturday</td><td class="py-1.5 text-right">8:00 AM – 5:00 PM</td></tr>
+<!-- hours + map -->
+<section class="bg-sage/50">
+  <div class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+    <div class="bg-white border border-forest/10 rounded-2xl p-7">
+      <h2 class="disp text-2xl font-600 text-forest flex items-center gap-2"><svg class="ic w-6 h-6 text-moss"><use href="#i-pin"/></svg>Find us</h2>
+      <p class="mt-4 text-lg text-bark/80">101 Pressler Rd<br>Dyersburg, TN 38024</p>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=36.0348933,-89.4146623" class="inline-flex items-center gap-1 mt-3 text-moss font-semibold">Get directions <svg class="ic w-4 h-4"><use href="#i-arrow"/></svg></a>
+      <h3 class="disp text-xl font-600 mt-7 text-forest flex items-center gap-2"><svg class="ic w-5 h-5 text-moss"><use href="#i-clock"/></svg>Hours</h3>
+      <table class="mt-3 w-full text-bark/80"><tbody>
+        <tr class="border-b border-forest/10"><td class="py-1.5">Mon–Fri</td><td class="py-1.5 text-right">8:00 AM – 5:00 PM</td></tr>
+        <tr class="border-b border-forest/10"><td class="py-1.5">Saturday</td><td class="py-1.5 text-right">8:00 AM – 5:00 PM</td></tr>
         <tr><td class="py-1.5">Sunday</td><td class="py-1.5 text-right">Closed</td></tr>
       </tbody></table>
     </div>
-    <div class="border-2 border-hi min-h-[320px]">
+    <div class="rounded-2xl overflow-hidden border border-forest/10 min-h-[320px]">
       <iframe title="Map to TennLawn Grounds Management, Dyersburg TN" class="w-full h-full min-h-[320px]" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-89.420662%2C36.028893%2C-89.408662%2C36.040893&layer=mapnik&marker=36.0348933%2C-89.4146623"></iframe>
     </div>
   </div>
 </section>
 
-<!-- slab CTA -->
-<section class="bg-hi text-ink border-y-4 border-ink">
+<!-- CTA -->
+<section class="hero-grad text-cream">
   <div class="max-w-4xl mx-auto px-4 py-16 text-center">
-    <h2 class="disp text-4xl sm:text-5xl">Need the grounds handled?</h2>
-    <p class="mt-4 cond text-lg text-ink/80">Call or text TennLawn and we'll come look at the property.</p>
+    <h2 class="disp text-4xl sm:text-5xl font-700">Need the grounds handled?</h2>
+    <p class="mt-4 text-lg text-cream/80">Call or text TennLawn and we'll come look at the property.</p>
     <div class="mt-8 flex flex-wrap gap-3 justify-center">
-      <a href="tel:+17312870448" class="bg-ink text-paper disp px-7 py-4 flex items-center gap-2 border-2 border-ink hardshadow lift"><svg class="ic w-5 h-5"><use href="#i-phone"/></svg>Call (731) 287-0448</a>
-      <a href="sms:+17312870448" class="bg-paper text-ink disp px-7 py-4 flex items-center gap-2 border-2 border-ink lift"><svg class="ic w-5 h-5"><use href="#i-msg"/></svg>Text us</a>
+      <a href="tel:+17312870448" class="bg-sand text-forest rounded-full px-7 py-4 flex items-center gap-2 font-semibold lift"><svg class="ic w-5 h-5"><use href="#i-phone"/></svg>Call (731) 287-0448</a>
+      <a href="sms:+17312870448" class="border border-cream/40 text-cream rounded-full px-7 py-4 flex items-center gap-2 font-semibold lift"><svg class="ic w-5 h-5"><use href="#i-msg"/></svg>Text us</a>
     </div>
   </div>
 </section>
 </main>
 
-<footer class="bg-ink text-paper/70">
+<footer class="bg-forest text-cream/70">
   <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col sm:flex-row justify-between gap-6">
     <div>
-      <div class="disp text-xl text-paper">Tenn<span class="text-hi">Lawn</span> Grounds Management</div>
-      <p class="cond mt-2">101 Pressler Rd, Dyersburg, TN 38024</p>
-      <p class="cond mt-1 text-paper/50">Serving Dyersburg &amp; West Tennessee · commercial &amp; residential</p>
+      <div class="disp text-xl text-cream font-600">Tenn<span class="text-sand">Lawn</span> Grounds Management</div>
+      <p class="mt-2">101 Pressler Rd, Dyersburg, TN 38024</p>
+      <p class="mt-1 text-cream/50">Serving Dyersburg &amp; West Tennessee · commercial &amp; residential</p>
     </div>
-    <div class="cond">
-      <a href="tel:+17312870448" class="flex items-center gap-2 text-paper font-700"><svg class="ic w-4 h-4 text-hi"><use href="#i-phone"/></svg>(731) 287-0448</a>
+    <div>
+      <a href="tel:+17312870448" class="flex items-center gap-2 text-cream font-semibold"><svg class="ic w-4 h-4 text-sand"><use href="#i-phone"/></svg>(731) 287-0448</a>
     </div>
   </div>
-  <div class="border-t border-paper/10 py-4 text-center cond text-xs text-paper/40">© 2026 TennLawn Grounds Management · Dyersburg, Tennessee</div>
+  <div class="border-t border-cream/10 py-4 text-center text-xs text-cream/40">© 2026 TennLawn Grounds Management · Dyersburg, Tennessee</div>
 </footer>
 
 <script type="application/ld+json">

@@ -10,130 +10,119 @@
 <meta property="og:description" content="Irrigation, sod & yard maintenance in Pampa, Texas. Rated 5.0 across 15 reviews. Call or text (806) 662-6698.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231B2A41'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23C8A24B' stroke-width='5'/%3E%3Ctext x='50' y='66' font-size='46' font-family='Georgia,serif' font-weight='700' fill='%23C8A24B' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231f3d2b'/%3E%3Ctext x='50' y='66' font-size='52' font-family='Georgia,serif' font-weight='700' fill='%23e7d9b8' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script>
-tailwind.config={theme:{extend:{colors:{navy:'#1B2A41',navy2:'#15212f',cream:'#F3E9D2',cream2:'#ece0c4',redv:'#C1272D',gold:'#C8A24B'},fontFamily:{slab:['"Alfa Slab One"','serif'],cond:['Oswald','sans-serif'],body:['"Work Sans"','sans-serif']}}}}
+tailwind.config={theme:{extend:{colors:{forest:'#1f3d2b',moss:'#3c6e47',sage:'#dfe9da',cream:'#f6f3ea',sand:'#cf9d4d',clay:'#b15a3a',bark:'#2c2a24'},fontFamily:{display:['"Fraunces"','Georgia','serif'],body:['"Inter"','sans-serif']}}}}
 </script>
 <style>
 html{scroll-behavior:smooth}
-body{font-family:'Work Sans',sans-serif;color:#1B2A41;background:#F3E9D2}
-.cond{font-family:'Oswald',sans-serif}
-.slab{font-family:'Alfa Slab One',serif}
+body{font-family:'Inter',sans-serif;color:#2c2a24;background:#f6f3ea}
+.disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
 .ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 section{scroll-margin-top:4.5rem}
-.paper{background-image:radial-gradient(rgba(27,42,65,.04) 1px,transparent 1px);background-size:14px 14px}
-.navlink.active{color:#C1272D}
-.starburst{clip-path:polygon(50% 0%,61% 10%,75% 6%,79% 21%,94% 25%,90% 40%,100% 50%,90% 60%,94% 75%,79% 79%,75% 94%,61% 90%,50% 100%,39% 90%,25% 94%,21% 79%,6% 75%,10% 60%,0% 50%,10% 40%,6% 25%,21% 21%,25% 6%,39% 10%)}
+.hero-grad{background:linear-gradient(125deg,#1f3d2b 0%,#274d34 55%,#3c6e47 100%)}
+.navlink.active{color:#cf9d4d}
+.lift{transition:transform .2s ease,box-shadow .2s ease}.lift:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(31,61,43,.5)}
 </style>
 </head>
-<body class="overflow-x-clip paper">
+<body class="overflow-x-clip">
 
-<header class="fixed top-0 inset-x-0 z-50 bg-navy text-cream border-b-4 border-gold">
+<header class="fixed top-0 inset-x-0 z-50 bg-cream/95 backdrop-blur border-b border-forest/10">
   <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
     <a href="#top" class="flex items-center gap-2.5">
-      <span class="w-9 h-9 rounded-full border-2 border-gold grid place-items-center slab text-gold text-sm">M</span>
-      <span class="cond font-700 uppercase tracking-wide text-lg leading-none">Mendoza Services</span>
+      <span class="disp font-700 text-xl text-forest leading-none">Mendoza <span class="text-moss">Services</span></span>
     </a>
-    <nav class="hidden lg:flex items-center gap-7 text-sm cond font-600 uppercase tracking-wider text-cream/70">
-      <a href="#services" class="navlink hover:text-gold">Services</a>
-      <a href="#reviews" class="navlink hover:text-gold">Reviews</a>
-      <a href="#hours" class="navlink hover:text-gold">Hours</a>
-      <a href="#contact" class="navlink hover:text-gold">Contact</a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-bark/60">
+      <a href="#services" class="navlink hover:text-moss">Services</a>
+      <a href="#reviews" class="navlink hover:text-moss">Reviews</a>
+      <a href="#hours" class="navlink hover:text-moss">Hours</a>
+      <a href="#contact" class="navlink hover:text-moss">Contact</a>
     </nav>
-    <a href="tel:+18066626698" class="inline-flex items-center gap-1.5 px-4 py-2 bg-redv text-cream text-sm cond font-600 uppercase tracking-wide border-2 border-gold hover:bg-gold hover:text-navy">
+    <a href="tel:+18066626698" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-forest text-cream rounded-full text-sm font-semibold lift">
       <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
       <span class="hidden sm:inline">(806) 662-6698</span><span class="sm:hidden">Call</span>
     </a>
   </div>
 </header>
 
-<section id="top" class="pt-16 bg-navy text-cream relative overflow-hidden">
-  <div class="absolute inset-0 opacity-[.07]" style="background-image:repeating-linear-gradient(45deg,#C8A24B 0 1px,transparent 1px 16px)"></div>
-  <div class="max-w-4xl mx-auto px-4 pt-14 pb-16 md:pt-20 md:pb-20 relative text-center">
-    <div class="mx-auto w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-gold grid place-items-center relative bg-navy2">
-      <div class="absolute inset-2 rounded-full border border-gold/40"></div>
-      <div class="text-center px-3">
-        <div class="cond uppercase tracking-[.2em] text-gold text-[10px] md:text-xs">Pampa · Texas</div>
-        <div class="slab text-gold text-2xl md:text-3xl leading-none mt-1">MENDOZA</div>
-        <div class="cond uppercase tracking-[.3em] text-cream/80 text-[10px] md:text-xs mt-1">Services</div>
-      </div>
-    </div>
-    <h1 class="mt-8 slab text-3xl sm:text-4xl md:text-6xl leading-[1.05] text-cream">Irrigation, Sod &amp;<br><span class="text-gold">Yard Work</span> in Pampa</h1>
-    <p class="mt-5 max-w-2xl mx-auto text-cream/80 text-lg body">Sprinkler systems installed, fresh sod laid, and yards kept up — done right by a Pampa crew Antonio runs himself. Call or text for a quote.</p>
-    <div class="mt-7 flex flex-wrap justify-center gap-3">
-      <a href="tel:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-redv text-cream cond font-600 uppercase tracking-wide border-2 border-gold hover:bg-gold hover:text-navy">
+<section id="top" class="pt-16 hero-grad text-cream relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 pt-16 pb-16 md:pt-20 md:pb-20 relative text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-sand text-xs font-semibold uppercase tracking-[.2em]">Pampa · Texas</div>
+    <h1 class="mt-7 disp text-4xl sm:text-5xl md:text-6xl font-700 leading-[1.05] text-cream">Irrigation, Sod &amp;<br><span class="text-sand italic">Yard Work</span> in Pampa</h1>
+    <p class="mt-6 max-w-2xl mx-auto text-cream/85 text-lg">Sprinkler systems installed, fresh sod laid, and yards kept up — done right by a Pampa crew Antonio runs himself. Call or text for a quote.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="tel:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-sand text-forest rounded-full font-semibold lift">
         <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
         Call for an Estimate
       </a>
-      <a href="sms:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream cond font-600 uppercase tracking-wide border-2 border-cream/40 hover:border-gold hover:text-gold">
+      <a href="sms:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream rounded-full font-semibold border border-cream/40 hover:border-sand hover:text-sand">
         <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Text Us
       </a>
     </div>
-    <div class="mt-8 inline-flex items-center gap-2 text-sm cond uppercase tracking-wide">
-      <span class="flex text-gold" aria-hidden="true">
+    <div class="mt-8 inline-flex items-center gap-2 text-sm">
+      <span class="flex text-sand" aria-hidden="true">
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
       </span>
-      <span class="text-gold font-700">5.0</span><span class="text-cream/70">· 15 reviews · Pampa, TX</span>
+      <span class="text-sand font-700">5.0</span><span class="text-cream/75">· 15 reviews · Pampa, TX</span>
     </div>
   </div>
-  <div class="bg-gold text-navy border-t-4 border-navy/20 py-2.5 overflow-hidden">
-    <div class="cond font-600 uppercase tracking-wider text-sm text-center">Irrigation Installation · Sod Installation · Yard Maintenance · Pampa, Texas</div>
+  <div class="bg-sand text-forest py-2.5 overflow-hidden">
+    <div class="font-semibold uppercase tracking-wider text-sm text-center">Irrigation Installation · Sod Installation · Yard Maintenance · Pampa, Texas</div>
   </div>
 </section>
 
 <section id="services" class="max-w-5xl mx-auto px-4 py-16 md:py-24">
   <div class="text-center">
-    <div class="cond uppercase tracking-[.3em] text-redv text-xs">— The Work —</div>
-    <h2 class="mt-3 slab text-3xl md:text-5xl text-navy">What We Do</h2>
-    <p class="mt-4 text-navy/70 body max-w-xl mx-auto">The services Mendoza Services runs around Pampa — sprinklers, sod, and keeping yards in shape.</p>
+    <div class="uppercase tracking-[.3em] text-clay text-xs font-semibold">The Work</div>
+    <h2 class="mt-3 disp text-3xl md:text-5xl font-700 text-forest">What We Do</h2>
+    <p class="mt-4 text-bark/65 max-w-xl mx-auto">The services Mendoza Services runs around Pampa — sprinklers, sod, and keeping yards in shape.</p>
   </div>
   <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <div class="bg-cream2 border-2 border-navy/15 rounded-sm p-7 text-center relative">
-      <div class="mx-auto w-14 h-14 rounded-full bg-navy text-gold grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M12 2v6M12 22v-4M4.9 4.9l3 3M16.1 16.1l1.5 1.5M2 12h5M22 12h-4M4.9 19.1l3-3M16.1 7.9l1.5-1.5"/><circle cx="12" cy="12" r="2"/></svg></div>
-      <h3 class="cond font-700 uppercase tracking-wide text-xl text-navy">Irrigation Installation</h3>
-      <p class="mt-2 text-navy/70 body text-sm">Full sprinkler systems installed so your yard gets watered evenly — no more dragging a hose around.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 text-center lift">
+      <div class="mx-auto w-14 h-14 rounded-2xl bg-sage text-moss grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M12 2v6M12 22v-4M4.9 4.9l3 3M16.1 16.1l1.5 1.5M2 12h5M22 12h-4M4.9 19.1l3-3M16.1 7.9l1.5-1.5"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <h3 class="disp font-600 text-xl text-forest">Irrigation Installation</h3>
+      <p class="mt-2 text-bark/65 text-sm">Full sprinkler systems installed so your yard gets watered evenly — no more dragging a hose around.</p>
     </div>
-    <div class="bg-cream2 border-2 border-navy/15 rounded-sm p-7 text-center">
-      <div class="mx-auto w-14 h-14 rounded-full bg-navy text-gold grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3 3-5 9-5s9 2 9 5M7 12V8m4 4V6m4 6V9"/></svg></div>
-      <h3 class="cond font-700 uppercase tracking-wide text-xl text-navy">Sod Installation</h3>
-      <p class="mt-2 text-navy/70 body text-sm">Fresh sod laid for an instant green lawn — graded and rolled so it roots in clean.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 text-center lift">
+      <div class="mx-auto w-14 h-14 rounded-2xl bg-sage text-moss grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3 3-5 9-5s9 2 9 5M7 12V8m4 4V6m4 6V9"/></svg></div>
+      <h3 class="disp font-600 text-xl text-forest">Sod Installation</h3>
+      <p class="mt-2 text-bark/65 text-sm">Fresh sod laid for an instant green lawn — graded and rolled so it roots in clean.</p>
     </div>
-    <div class="bg-cream2 border-2 border-navy/15 rounded-sm p-7 text-center">
-      <div class="mx-auto w-14 h-14 rounded-full bg-navy text-gold grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M3 21l4-1 11-11-3-3L4 17z"/></svg></div>
-      <h3 class="cond font-700 uppercase tracking-wide text-xl text-navy">Yard Maintenance</h3>
-      <p class="mt-2 text-navy/70 body text-sm">Ongoing upkeep to keep the property looking sharp through the season. Ask what we can take on.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 text-center lift">
+      <div class="mx-auto w-14 h-14 rounded-2xl bg-sage text-moss grid place-items-center mb-4"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M3 21l4-1 11-11-3-3L4 17z"/></svg></div>
+      <h3 class="disp font-600 text-xl text-forest">Yard Maintenance</h3>
+      <p class="mt-2 text-bark/65 text-sm">Ongoing upkeep to keep the property looking sharp through the season. Ask what we can take on.</p>
     </div>
   </div>
 </section>
 
-<section id="reviews" class="bg-navy text-cream border-y-4 border-gold relative overflow-hidden">
-  <div class="absolute inset-0 opacity-[.06]" style="background-image:repeating-linear-gradient(-45deg,#C8A24B 0 1px,transparent 1px 18px)"></div>
+<section id="reviews" class="hero-grad text-cream relative overflow-hidden">
   <div class="max-w-3xl mx-auto px-4 py-16 md:py-24 relative text-center">
-    <div class="cond uppercase tracking-[.3em] text-gold text-xs">— From Our Customers —</div>
+    <div class="uppercase tracking-[.3em] text-sand text-xs font-semibold">From Our Customers</div>
     <div class="mt-5 flex items-center justify-center gap-3">
-      <span class="flex text-gold" aria-hidden="true">
+      <span class="flex text-sand" aria-hidden="true">
         <svg class="ic w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-6 h-6" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
       </span>
-      <span class="slab text-2xl text-gold">5.0</span>
-      <span class="cond uppercase tracking-wide text-cream/70">across 15 reviews</span>
+      <span class="disp font-700 text-2xl text-sand">5.0</span>
+      <span class="text-cream/70">across 15 reviews</span>
     </div>
     <figure class="mt-9 max-w-2xl mx-auto">
-      <svg class="w-9 h-9 mx-auto text-gold/60" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v4c0 3-2 5-5 5V14c1 0 2-1 2-2H7zm8 0h4v4c0 3-2 5-5 5v-2c1 0 2-1 2-2h-3z"/></svg>
-      <blockquote class="mt-4 text-cream/90 text-xl md:text-2xl body italic leading-relaxed">"We are 1000% satisfied with irrigation installation, sod installation, and yard maintenance. Also, installed a 20' fiberglass flagpole. Antonio is great to work with and very accommodating."</blockquote>
-      <figcaption class="mt-5 cond uppercase tracking-wide text-gold text-sm">Reb Rackley<span class="text-cream/50"> · review from our online listings</span></figcaption>
+      <svg class="w-9 h-9 mx-auto text-sand/60" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7 7h4v4c0 3-2 5-5 5V14c1 0 2-1 2-2H7zm8 0h4v4c0 3-2 5-5 5v-2c1 0 2-1 2-2h-3z"/></svg>
+      <blockquote class="mt-4 text-cream/90 text-xl md:text-2xl italic leading-relaxed">"We are 1000% satisfied with irrigation installation, sod installation, and yard maintenance. Also, installed a 20' fiberglass flagpole. Antonio is great to work with and very accommodating."</blockquote>
+      <figcaption class="mt-5 uppercase tracking-wide text-sand text-sm font-semibold">Reb Rackley<span class="text-cream/50"> · review from our online listings</span></figcaption>
     </figure>
   </div>
 </section>
@@ -141,28 +130,28 @@ section{scroll-margin-top:4.5rem}
 <section id="hours" class="max-w-5xl mx-auto px-4 py-16 md:py-24">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
     <div>
-      <div class="cond uppercase tracking-[.3em] text-redv text-xs">— Open Board —</div>
-      <h2 class="mt-3 slab text-3xl md:text-4xl text-navy">Hours</h2>
-      <div class="mt-6 bg-navy text-cream rounded-sm border-2 border-gold overflow-hidden">
-        <div class="bg-gold text-navy text-center cond font-700 uppercase tracking-[.2em] py-2 text-sm">Open</div>
-        <dl class="divide-y divide-cream/10 text-sm body">
-          <div class="flex justify-between px-5 py-2.5"><dt>Monday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Tuesday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Wednesday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Thursday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Friday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Saturday</dt><dd class="text-gold">8:00 AM – 6:00 PM</dd></div>
-          <div class="flex justify-between px-5 py-2.5"><dt>Sunday</dt><dd class="text-cream/50">Closed</dd></div>
+      <div class="uppercase tracking-[.3em] text-clay text-xs font-semibold">Open Hours</div>
+      <h2 class="mt-3 disp text-3xl md:text-4xl font-700 text-forest">Hours</h2>
+      <div class="mt-6 bg-white rounded-2xl border border-forest/10 overflow-hidden">
+        <div class="bg-forest text-cream text-center font-semibold uppercase tracking-[.2em] py-2.5 text-sm">Open</div>
+        <dl class="divide-y divide-forest/10 text-sm">
+          <div class="flex justify-between px-5 py-2.5"><dt>Monday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Tuesday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Wednesday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Thursday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Friday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Saturday</dt><dd class="text-moss font-semibold">8:00 AM – 6:00 PM</dd></div>
+          <div class="flex justify-between px-5 py-2.5"><dt>Sunday</dt><dd class="text-bark/40">Closed</dd></div>
         </dl>
       </div>
     </div>
     <div>
-      <div class="cond uppercase tracking-[.3em] text-redv text-xs">— Find Us —</div>
-      <h2 class="mt-3 slab text-3xl md:text-4xl text-navy">Pampa, TX</h2>
-      <div class="mt-6 rounded-sm border-2 border-navy/20 overflow-hidden">
+      <div class="uppercase tracking-[.3em] text-clay text-xs font-semibold">Find Us</div>
+      <h2 class="mt-3 disp text-3xl md:text-4xl font-700 text-forest">Pampa, TX</h2>
+      <div class="mt-6 rounded-2xl border border-forest/10 overflow-hidden">
         <iframe title="Map to Mendoza Services, Pampa, TX" class="w-full h-72" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-100.968585%2C35.521639%2C-100.956585%2C35.533639&layer=mapnik&marker=35.5276387%2C-100.962585"></iframe>
       </div>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=35.5276387,-100.962585" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-2 cond uppercase tracking-wide text-sm text-redv hover:underline">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=35.5276387,-100.962585" target="_blank" rel="noopener" class="mt-3 inline-flex items-center gap-2 text-sm text-moss font-semibold hover:underline">
         <svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         625 S West St, Pampa, TX 79065 · Get directions
       </a>
@@ -170,17 +159,17 @@ section{scroll-margin-top:4.5rem}
   </div>
 </section>
 
-<section id="contact" class="bg-redv text-cream border-y-4 border-gold">
+<section id="contact" class="bg-clay text-cream">
   <div class="max-w-3xl mx-auto px-4 py-16 text-center">
-    <div class="cond uppercase tracking-[.3em] text-cream/80 text-xs">— Get a Quote —</div>
-    <h2 class="mt-3 slab text-3xl md:text-5xl">Let's Talk About Your Yard</h2>
-    <p class="mt-4 body text-cream/90 text-lg max-w-xl mx-auto">Sprinklers, sod, or season-long upkeep in Pampa — call or text and we'll get you a price.</p>
+    <div class="uppercase tracking-[.3em] text-cream/80 text-xs font-semibold">Get a Quote</div>
+    <h2 class="mt-3 disp text-3xl md:text-5xl font-700">Let's Talk About Your Yard</h2>
+    <p class="mt-4 text-cream/90 text-lg max-w-xl mx-auto">Sprinklers, sod, or season-long upkeep in Pampa — call or text and we'll get you a price.</p>
     <div class="mt-8 flex flex-wrap justify-center gap-3">
-      <a href="tel:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-navy text-gold cond font-600 uppercase tracking-wide border-2 border-gold hover:bg-cream hover:text-navy">
+      <a href="tel:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-cream text-clay rounded-full font-semibold lift">
         <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
         (806) 662-6698
       </a>
-      <a href="sms:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream cond font-600 uppercase tracking-wide border-2 border-cream/50 hover:bg-navy hover:border-navy">
+      <a href="sms:+18066626698" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream rounded-full font-semibold border border-cream/50 hover:bg-cream hover:text-clay">
         <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Text Us
       </a>
@@ -188,26 +177,23 @@ section{scroll-margin-top:4.5rem}
   </div>
 </section>
 
-<footer class="bg-navy text-cream/70">
-  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm body">
+<footer class="bg-forest text-cream/70">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
     <div>
-      <div class="flex items-center gap-2.5">
-        <span class="w-8 h-8 rounded-full border-2 border-gold grid place-items-center slab text-gold text-xs">M</span>
-        <span class="cond font-700 uppercase tracking-wide text-cream text-base">Mendoza Services</span>
-      </div>
+      <div class="disp font-600 text-cream text-base">Mendoza Services</div>
       <p class="mt-3">Irrigation, sod &amp; yard maintenance in Pampa, Texas.</p>
     </div>
     <div>
-      <div class="cond font-600 uppercase tracking-wide text-cream">Contact</div>
-      <p class="mt-3"><a href="tel:+18066626698" class="hover:text-gold">(806) 662-6698</a> · <a href="sms:+18066626698" class="hover:text-gold">Text</a></p>
+      <div class="font-semibold uppercase tracking-wide text-cream">Contact</div>
+      <p class="mt-3"><a href="tel:+18066626698" class="hover:text-sand">(806) 662-6698</a> · <a href="sms:+18066626698" class="hover:text-sand">Text</a></p>
       <p class="mt-1">625 S West St, Pampa, TX 79065</p>
     </div>
     <div>
-      <div class="cond font-600 uppercase tracking-wide text-cream">Find Us</div>
-      <p class="mt-3"><a href="https://www.yelp.com/biz/mendoza-services-pampa-2" rel="nofollow noopener" target="_blank" class="hover:text-gold">Yelp →</a></p>
+      <div class="font-semibold uppercase tracking-wide text-cream">Find Us</div>
+      <p class="mt-3"><a href="https://www.yelp.com/biz/mendoza-services-pampa-2" rel="nofollow noopener" target="_blank" class="hover:text-sand">Yelp →</a></p>
     </div>
   </div>
-  <div class="border-t border-cream/10"><div class="max-w-6xl mx-auto px-4 py-4 text-xs text-cream/40 cond uppercase tracking-wide">© 2026 Mendoza Services · Pampa, TX</div></div>
+  <div class="border-t border-cream/10"><div class="max-w-6xl mx-auto px-4 py-4 text-xs text-cream/40 uppercase tracking-wide">© 2026 Mendoza Services · Pampa, TX</div></div>
 </footer>
 
 <script type="application/ld+json">

@@ -10,83 +10,83 @@
 <meta property="og:description" content="Lawn, landscape, tree work & 24/7 snow removal in Kirksville. Licensed & insured since 2007. Rated 4.7 across 12 reviews. Call or text (660) 988-0148.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23121212'/%3E%3Crect x='10' y='10' width='80' height='80' fill='none' stroke='%23FFD400' stroke-width='8'/%3E%3Ctext x='50' y='70' font-size='54' font-family='Arial Black,sans-serif' font-weight='900' fill='%23FFD400' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231f3d2b'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Georgia,serif' font-weight='700' fill='%23e7d9b8' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Archivo+Narrow:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>
-tailwind.config={theme:{extend:{colors:{ink:'#121212',ink2:'#1c1c1c',bone:'#F4F4F0',amber2:'#FFD400',hazard:'#FF5A1F',ice:'#2FA8E0'},fontFamily:{disp:['Archivo','sans-serif'],narrow:['"Archivo Narrow"','sans-serif'],mono:['"Space Mono"','monospace']},boxShadow:{hard:'6px 6px 0 #121212',hardy:'6px 6px 0 #FFD400'}}}}
+tailwind.config={theme:{extend:{colors:{forest:'#1f3d2b',moss:'#3c6e47',sage:'#dfe9da',cream:'#f6f3ea',sand:'#cf9d4d',ice:'#3a7ca5',bark:'#2c2a24'},fontFamily:{display:['"Fraunces"','Georgia','serif'],body:['"Inter"','sans-serif']}}}}
 </script>
 <style>
 html{scroll-behavior:smooth}
-body{font-family:'Archivo',sans-serif;color:#121212;background:#F4F4F0}
-h1,h2,h3,.disp{font-family:'Archivo',sans-serif;text-transform:uppercase;letter-spacing:-.01em}
+body{font-family:'Inter',sans-serif;color:#2c2a24;background:#f6f3ea}
+.disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
 .ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 section{scroll-margin-top:4.5rem}
-.label{font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.hero-grad{background:linear-gradient(125deg,#1f3d2b 0%,#274d34 55%,#3c6e47 100%)}
+.snow-grad{background:linear-gradient(130deg,#15303f 0%,#1f3d2b 100%)}
+.navlink.active{color:#cf9d4d}
+.lift{transition:transform .2s ease,box-shadow .2s ease}.lift:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(31,61,43,.5)}
 .marquee{display:flex;gap:0;white-space:nowrap;animation:scroll 26s linear infinite}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.navlink.active{color:#FF5A1F}
 </style>
 </head>
 <body class="overflow-x-clip">
 
-<header class="fixed top-0 inset-x-0 z-50 bg-bone border-b-4 border-ink">
+<header class="fixed top-0 inset-x-0 z-50 bg-cream/95 backdrop-blur border-b border-forest/10">
   <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
-    <a href="#top" class="flex items-center gap-2.5 font-disp font-900 text-lg">
-      <span class="w-9 h-9 bg-ink text-amber2 grid place-items-center font-900 border-2 border-amber2">A</span>
-      ANDY'S LAWN &amp; LANDSCAPE
+    <a href="#top" class="flex items-center gap-2.5 disp font-700 text-lg text-forest">
+      Andy's <span class="text-moss">Lawn &amp; Landscape</span>
     </a>
-    <nav class="hidden lg:flex items-center gap-7 text-sm font-narrow font-600 uppercase tracking-wide text-ink/70">
-      <a href="#services" class="navlink hover:text-hazard">Services</a>
-      <a href="#snow" class="navlink hover:text-hazard">24/7 Snow</a>
-      <a href="#about" class="navlink hover:text-hazard">About</a>
-      <a href="#contact" class="navlink hover:text-hazard">Contact</a>
+    <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-bark/60">
+      <a href="#services" class="navlink hover:text-moss">Services</a>
+      <a href="#snow" class="navlink hover:text-moss">24/7 Snow</a>
+      <a href="#about" class="navlink hover:text-moss">About</a>
+      <a href="#contact" class="navlink hover:text-moss">Contact</a>
     </nav>
-    <a href="tel:+16609880148" class="inline-flex items-center gap-1.5 px-4 py-2 bg-amber2 text-ink text-sm font-900 border-2 border-ink hover:bg-ink hover:text-amber2">
+    <a href="tel:+16609880148" class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-forest text-cream rounded-full text-sm font-semibold lift">
       <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-      <span class="hidden sm:inline">(660) 988-0148</span><span class="sm:hidden">CALL</span>
+      <span class="hidden sm:inline">(660) 988-0148</span><span class="sm:hidden">Call</span>
     </a>
   </div>
 </header>
 
-<section id="top" class="pt-16 bg-ink text-bone relative overflow-hidden">
-  <div class="absolute inset-0 opacity-[.06]" style="background-image:repeating-linear-gradient(45deg,#FFD400 0 2px,transparent 2px 22px)"></div>
-  <div class="max-w-6xl mx-auto px-4 pt-12 pb-14 md:pt-16 md:pb-20 relative">
-    <span class="inline-block label text-amber2 text-xs border border-amber2/50 px-3 py-1">KIRKSVILLE, MO · EST. 2007 · LICENSED &amp; INSURED</span>
-    <h1 class="mt-6 font-disp font-900 text-[1.9rem] sm:text-5xl md:text-7xl leading-[.98] sm:leading-[.92]">
-      LAWNS IN SUMMER.<br><span class="text-amber2">SNOW IN WINTER.</span><br>ONE KIRKSVILLE CREW.
+<section id="top" class="pt-16 hero-grad text-cream relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 pt-14 pb-14 md:pt-16 md:pb-20 relative">
+    <span class="inline-block text-sand text-xs font-semibold uppercase tracking-[.2em] border border-sand/40 rounded-full px-4 py-1.5">Kirksville, MO · Est. 2007 · Licensed &amp; Insured</span>
+    <h1 class="mt-6 disp font-700 text-4xl sm:text-5xl md:text-6xl leading-[1.04]">
+      Lawns in summer.<br><span class="text-sand italic">Snow in winter.</span><br>One Kirksville crew.
     </h1>
-    <p class="mt-6 max-w-2xl text-bone/75 text-lg font-narrow">
+    <p class="mt-6 max-w-2xl text-cream/85 text-lg">
       Andy's Lawn &amp; Landscape runs both seasons — lawn care, landscaping and tree work through the summer,
       and a 24/7 snow removal &amp; de-icing team when the weather turns. Licensed, insured, and at it in Kirksville since 2007.
     </p>
-    <div class="mt-8 flex flex-wrap gap-0">
-      <a href="tel:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-amber2 text-ink font-900 border-4 border-amber2 hover:bg-ink hover:text-amber2">
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="tel:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-sand text-forest rounded-full font-semibold lift">
         <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-        CALL FOR AN ESTIMATE
+        Call for an Estimate
       </a>
-      <a href="sms:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-bone font-900 border-4 border-bone/40 hover:border-amber2 hover:text-amber2">
+      <a href="sms:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream rounded-full font-semibold border border-cream/40 hover:border-sand hover:text-sand">
         <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        TEXT US
+        Text us
       </a>
     </div>
-    <div class="mt-8 flex items-center gap-3 text-sm font-narrow">
-      <div class="flex text-amber2" aria-hidden="true">
+    <div class="mt-8 flex items-center gap-3 text-sm">
+      <div class="flex text-sand" aria-hidden="true">
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         <svg class="ic w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        <svg class="ic w-5 h-5 text-amber2/35" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        <svg class="ic w-5 h-5 text-cream/25" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
       </div>
-      <span class="font-900">4.7</span><span class="text-bone/55">/ 12 REVIEWS · KIRKSVILLE, MO</span>
+      <span class="font-700">4.7</span><span class="text-cream/60">/ 12 reviews · Kirksville, MO</span>
     </div>
   </div>
-  <div class="bg-amber2 text-ink border-y-4 border-ink overflow-hidden py-2.5">
-    <div class="marquee label font-700 text-sm">
-      <span class="px-6">MOWING</span><span class="px-2">/</span><span class="px-6">LANDSCAPING</span><span class="px-2">/</span><span class="px-6">TREE REMOVAL &amp; PRUNING</span><span class="px-2">/</span><span class="px-6">24/7 SNOW REMOVAL</span><span class="px-2">/</span><span class="px-6">DE-ICING</span><span class="px-2">/</span><span class="px-6">POWER WASHING</span><span class="px-2">/</span>
-      <span class="px-6">MOWING</span><span class="px-2">/</span><span class="px-6">LANDSCAPING</span><span class="px-2">/</span><span class="px-6">TREE REMOVAL &amp; PRUNING</span><span class="px-2">/</span><span class="px-6">24/7 SNOW REMOVAL</span><span class="px-2">/</span><span class="px-6">DE-ICING</span><span class="px-2">/</span><span class="px-6">POWER WASHING</span><span class="px-2">/</span>
+  <div class="bg-sand text-forest overflow-hidden py-2.5">
+    <div class="marquee font-semibold uppercase tracking-wide text-sm">
+      <span class="px-6">Mowing</span><span class="px-2">·</span><span class="px-6">Landscaping</span><span class="px-2">·</span><span class="px-6">Tree Removal &amp; Pruning</span><span class="px-2">·</span><span class="px-6">24/7 Snow Removal</span><span class="px-2">·</span><span class="px-6">De-icing</span><span class="px-2">·</span><span class="px-6">Power Washing</span><span class="px-2">·</span>
+      <span class="px-6">Mowing</span><span class="px-2">·</span><span class="px-6">Landscaping</span><span class="px-2">·</span><span class="px-6">Tree Removal &amp; Pruning</span><span class="px-2">·</span><span class="px-6">24/7 Snow Removal</span><span class="px-2">·</span><span class="px-6">De-icing</span><span class="px-2">·</span><span class="px-6">Power Washing</span><span class="px-2">·</span>
     </div>
   </div>
 </section>
@@ -94,65 +94,64 @@ section{scroll-margin-top:4.5rem}
 <section id="services" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
   <div class="flex items-end justify-between flex-wrap gap-4">
     <div>
-      <span class="label text-hazard text-xs">// THE WORK</span>
-      <h2 class="mt-2 font-disp font-900 text-4xl md:text-5xl">EVERYTHING YOUR PROPERTY NEEDS.</h2>
+      <span class="text-moss text-xs font-semibold uppercase tracking-[.2em]">The Work</span>
+      <h2 class="mt-2 disp font-700 text-3xl md:text-5xl text-forest">Everything your property needs.</h2>
     </div>
-    <p class="text-ink/60 font-narrow max-w-sm">Each one is a service Andy's actually runs in Kirksville — pick what you need and call.</p>
+    <p class="text-bark/60 max-w-sm">Each one is a service Andy's actually runs in Kirksville — pick what you need and call.</p>
   </div>
-  <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-t-4 border-l-4 border-ink">
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-bone hover:bg-amber2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ink"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3 3-5 9-5s9 2 9 5M7 12V8m4 4V6m4 6V9"/></svg></span><span class="label text-ink/40 text-xs">01</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl">LAWN CARE</h3>
-      <p class="mt-2 text-ink/70 text-sm font-narrow">Mowing, dethatching, fertilization, weed control, aeration and seasonal cleanups.</p>
+  <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3 3-5 9-5s9 2 9 5M7 12V8m4 4V6m4 6V9"/></svg></span><span class="text-bark/30 text-sm font-semibold">01</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-forest">Lawn Care</h3>
+      <p class="mt-2 text-bark/65 text-sm">Mowing, dethatching, fertilization, weed control, aeration and seasonal cleanups.</p>
     </div>
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-bone hover:bg-amber2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ink"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M3 21l4-1 11-11-3-3L4 17z"/></svg></span><span class="label text-ink/40 text-xs">02</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl">LANDSCAPING</h3>
-      <p class="mt-2 text-ink/70 text-sm font-narrow">Landscape installation, beds and hardscape work to build out your yard.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l6-6M3 21l4-1 11-11-3-3L4 17z"/></svg></span><span class="text-bark/30 text-sm font-semibold">02</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-forest">Landscaping</h3>
+      <p class="mt-2 text-bark/65 text-sm">Landscape installation, beds and hardscape work to build out your yard.</p>
     </div>
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-bone hover:bg-amber2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ink"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22v-9"/></svg></span><span class="label text-ink/40 text-xs">03</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl">TREE REMOVAL &amp; PRUNING</h3>
-      <p class="mt-2 text-ink/70 text-sm font-narrow">Taking down problem trees and pruning the ones worth keeping.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/><path d="M12 22v-9"/></svg></span><span class="text-bark/30 text-sm font-semibold">03</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-forest">Tree Removal &amp; Pruning</h3>
+      <p class="mt-2 text-bark/65 text-sm">Taking down problem trees and pruning the ones worth keeping.</p>
     </div>
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-bone hover:bg-amber2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ink"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M2 12h20M6 12V7m0 5v5M18 12V7m0 5v5M12 4v16"/></svg></span><span class="label text-ink/40 text-xs">04</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl">LAWN APPLICATIONS</h3>
-      <p class="mt-2 text-ink/70 text-sm font-narrow">Fertilizer, weed control and overseeding to keep the turf thick and green.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M2 12h20M6 12V7m0 5v5M18 12V7m0 5v5M12 4v16"/></svg></span><span class="text-bark/30 text-sm font-semibold">04</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-forest">Lawn Applications</h3>
+      <p class="mt-2 text-bark/65 text-sm">Fertilizer, weed control and overseeding to keep the turf thick and green.</p>
     </div>
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-bone hover:bg-amber2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ink"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-2 4 2 4M17 8l2 4-2 4M12 3v18"/></svg></span><span class="label text-ink/40 text-xs">05</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl">POWER WASHING</h3>
-      <p class="mt-2 text-ink/70 text-sm font-narrow">Pressure washing drives, walks and exteriors to strip off the grime.</p>
+    <div class="bg-white border border-forest/10 rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M3 12h18M7 8l-2 4 2 4M17 8l2 4-2 4M12 3v18"/></svg></span><span class="text-bark/30 text-sm font-semibold">05</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-forest">Power Washing</h3>
+      <p class="mt-2 text-bark/65 text-sm">Pressure washing drives, walks and exteriors to strip off the grime.</p>
     </div>
-    <div class="border-b-4 border-r-4 border-ink p-7 bg-ink text-bone hover:bg-ink2 transition-colors">
-      <div class="flex items-center justify-between"><span class="text-ice"><svg class="ic w-8 h-8" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></svg></span><span class="label text-bone/40 text-xs">06</span></div>
-      <h3 class="mt-5 font-disp font-800 text-xl text-amber2">24/7 SNOW &amp; DE-ICING</h3>
-      <p class="mt-2 text-bone/70 text-sm font-narrow">Snow plowing, de-icing and snow hauling — see the winter section below.</p>
+    <div class="snow-grad text-cream rounded-2xl p-7 lift">
+      <div class="flex items-center justify-between"><span class="w-11 h-11 rounded-xl bg-white/10 text-ice grid place-items-center"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></svg></span><span class="text-cream/40 text-sm font-semibold">06</span></div>
+      <h3 class="mt-5 disp font-600 text-xl text-sand">24/7 Snow &amp; De-icing</h3>
+      <p class="mt-2 text-cream/70 text-sm">Snow plowing, de-icing and snow hauling — see the winter section below.</p>
     </div>
   </div>
 </section>
 
-<section id="snow" class="bg-ink text-bone relative overflow-hidden border-y-4 border-ink">
-  <div class="absolute inset-0 opacity-[.05]" style="background-image:repeating-linear-gradient(-45deg,#2FA8E0 0 2px,transparent 2px 24px)"></div>
+<section id="snow" class="snow-grad text-cream relative overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
-      <span class="label text-ice text-xs border border-ice/50 px-3 py-1">WINTER LINE</span>
-      <h2 class="mt-5 font-disp font-900 text-4xl md:text-5xl">THE ONLY PREDICTABLE THING<br><span class="text-ice">ABOUT WINTER.</span></h2>
-      <p class="mt-5 text-bone/75 font-narrow text-lg">Andy's runs a 24/7 snow removal &amp; de-icing team through Kirksville winters — snow plowing, de-icing, and snow hauling &amp; relocation. When the storm hits, you've got a number to call.</p>
-      <div class="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-0 border-t-2 border-l-2 border-bone/20 max-w-md">
-        <div class="border-b-2 border-r-2 border-bone/20 p-4"><div class="font-disp font-900 text-2xl text-ice">24/7</div><div class="label text-bone/50 text-[10px] mt-1">STORM RESPONSE</div></div>
-        <div class="border-b-2 border-r-2 border-bone/20 p-4"><div class="font-disp font-900 text-2xl text-ice">PLOW</div><div class="label text-bone/50 text-[10px] mt-1">&amp; DE-ICE</div></div>
-        <div class="border-b-2 border-r-2 border-bone/20 p-4"><div class="font-disp font-900 text-2xl text-ice">HAUL</div><div class="label text-bone/50 text-[10px] mt-1">&amp; RELOCATE</div></div>
+      <span class="text-ice text-xs font-semibold uppercase tracking-[.2em] border border-ice/50 rounded-full px-4 py-1.5">Winter Line</span>
+      <h2 class="mt-5 disp font-700 text-3xl md:text-5xl">The only predictable thing<br><span class="text-ice italic">about winter.</span></h2>
+      <p class="mt-5 text-cream/80 text-lg">Andy's runs a 24/7 snow removal &amp; de-icing team through Kirksville winters — snow plowing, de-icing, and snow hauling &amp; relocation. When the storm hits, you've got a number to call.</p>
+      <div class="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-md">
+        <div class="bg-white/5 rounded-xl p-4"><div class="disp font-700 text-2xl text-ice">24/7</div><div class="text-cream/50 text-[11px] mt-1 uppercase tracking-wide">Storm response</div></div>
+        <div class="bg-white/5 rounded-xl p-4"><div class="disp font-700 text-2xl text-ice">Plow</div><div class="text-cream/50 text-[11px] mt-1 uppercase tracking-wide">&amp; de-ice</div></div>
+        <div class="bg-white/5 rounded-xl p-4"><div class="disp font-700 text-2xl text-ice">Haul</div><div class="text-cream/50 text-[11px] mt-1 uppercase tracking-wide">&amp; relocate</div></div>
       </div>
-      <a href="tel:+16609880148" class="mt-7 inline-flex items-center gap-2 px-7 py-4 bg-ice text-ink font-900 border-4 border-ice hover:bg-ink hover:text-ice">
+      <a href="tel:+16609880148" class="mt-7 inline-flex items-center gap-2 px-7 py-4 bg-ice text-cream rounded-full font-semibold lift">
         <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-        CALL WHEN IT SNOWS
+        Call when it snows
       </a>
     </div>
-    <div class="relative grid place-items-center aspect-square border-4 border-ice/30" style="background:radial-gradient(120% 100% at 50% 0%,#173a4a 0%,#0e2430 60%,#0b1c26 100%)">
+    <div class="relative grid place-items-center aspect-square rounded-3xl" style="background:radial-gradient(120% 100% at 50% 0%,#1d4658 0%,#15303f 60%,#10262f 100%)">
       <svg class="w-40 h-40 text-ice/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15M12 5l-3 2 3 2 3-2zM12 19l-3-2 3-2 3 2zM5 12l2-3 2 3-2 3zM19 12l-2-3-2 3 2 3z"/></svg>
-      <span class="absolute bottom-4 label text-ice/60 text-xs">KIRKSVILLE · 24/7</span>
+      <span class="absolute bottom-4 text-ice/60 text-xs uppercase tracking-wide">Kirksville · 24/7</span>
     </div>
   </div>
 </section>
@@ -160,87 +159,87 @@ section{scroll-margin-top:4.5rem}
 <section id="about" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
     <div class="md:col-span-2">
-      <span class="label text-hazard text-xs">// ABOUT</span>
-      <h2 class="mt-2 font-disp font-900 text-4xl md:text-5xl">EXPERIENCED. LICENSED. INSURED.</h2>
-      <p class="mt-5 text-ink/75 text-lg font-narrow leading-relaxed">Andy established Andy's Lawn &amp; Landscape in Kirksville in 2007. It's a licensed and insured operation covering lawn care, landscaping, tree work and a 24/7 snow-and-de-icing line — both seasons, one local crew.</p>
-      <p class="mt-4 text-ink/55 text-sm font-narrow italic">No stock photos on this page — just the real services Andy's runs in Kirksville. Call to see the work for your own property.</p>
+      <span class="text-moss text-xs font-semibold uppercase tracking-[.2em]">About</span>
+      <h2 class="mt-2 disp font-700 text-3xl md:text-5xl text-forest">Experienced. Licensed. Insured.</h2>
+      <p class="mt-5 text-bark/75 text-lg leading-relaxed">Andy established Andy's Lawn &amp; Landscape in Kirksville in 2007. It's a licensed and insured operation covering lawn care, landscaping, tree work and a 24/7 snow-and-de-icing line — both seasons, one local crew.</p>
+      <p class="mt-4 text-bark/55 text-sm italic">No stock photos on this page — just the real services Andy's runs in Kirksville. Call to see the work for your own property.</p>
     </div>
-    <div class="bg-ink text-bone p-7 shadow-hard border-4 border-ink">
-      <h3 class="font-disp font-800 text-lg text-amber2">SPEC SHEET</h3>
-      <dl class="mt-4 space-y-3 text-sm font-narrow">
-        <div class="flex justify-between gap-4 border-b border-bone/15 pb-2"><dt class="text-bone/55">OWNER</dt><dd class="font-700">Andy</dd></div>
-        <div class="flex justify-between gap-4 border-b border-bone/15 pb-2"><dt class="text-bone/55">ESTABLISHED</dt><dd class="font-700">2007</dd></div>
-        <div class="flex justify-between gap-4 border-b border-bone/15 pb-2"><dt class="text-bone/55">RATING</dt><dd class="font-700">4.7 · 12 reviews</dd></div>
-        <div class="flex justify-between gap-4 border-b border-bone/15 pb-2"><dt class="text-bone/55">LICENSED</dt><dd class="font-700 text-amber2">YES</dd></div>
-        <div class="flex justify-between gap-4"><dt class="text-bone/55">INSURED</dt><dd class="font-700 text-amber2">YES</dd></div>
+    <div class="bg-forest text-cream p-7 rounded-2xl">
+      <h3 class="disp font-600 text-lg text-sand">At a glance</h3>
+      <dl class="mt-4 space-y-3 text-sm">
+        <div class="flex justify-between gap-4 border-b border-cream/15 pb-2"><dt class="text-cream/55">Owner</dt><dd class="font-semibold">Andy</dd></div>
+        <div class="flex justify-between gap-4 border-b border-cream/15 pb-2"><dt class="text-cream/55">Established</dt><dd class="font-semibold">2007</dd></div>
+        <div class="flex justify-between gap-4 border-b border-cream/15 pb-2"><dt class="text-cream/55">Rating</dt><dd class="font-semibold">4.7 · 12 reviews</dd></div>
+        <div class="flex justify-between gap-4 border-b border-cream/15 pb-2"><dt class="text-cream/55">Licensed</dt><dd class="font-semibold text-sand">Yes</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-cream/55">Insured</dt><dd class="font-semibold text-sand">Yes</dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section id="contact" class="bg-bone border-t-4 border-ink">
+<section id="contact" class="bg-sage/50 border-t border-forest/10">
   <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
     <div>
-      <span class="label text-hazard text-xs">// CONTACT</span>
-      <h2 class="mt-2 font-disp font-900 text-4xl md:text-5xl">GET A QUOTE.</h2>
-      <p class="mt-4 text-ink/70 text-lg font-narrow">Summer lawn job or a winter storm — call or text Andy's and we'll get you a price.</p>
-      <div class="mt-7 space-y-0 border-t-4 border-l-4 border-ink">
-        <a href="tel:+16609880148" class="flex items-center gap-4 border-b-4 border-r-4 border-ink p-4 bg-amber2 hover:bg-ink hover:text-amber2">
-          <span class="w-11 h-11 bg-ink text-amber2 grid place-items-center border-2 border-ink"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
-          <div><div class="label text-xs text-ink/55">CALL</div><div class="font-disp font-900 text-lg">(660) 988-0148</div></div>
+      <span class="text-moss text-xs font-semibold uppercase tracking-[.2em]">Contact</span>
+      <h2 class="mt-2 disp font-700 text-3xl md:text-5xl text-forest">Get a quote.</h2>
+      <p class="mt-4 text-bark/70 text-lg">Summer lawn job or a winter storm — call or text Andy's and we'll get you a price.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+16609880148" class="flex items-center gap-4 rounded-2xl p-4 bg-forest text-cream lift">
+          <span class="w-11 h-11 rounded-xl bg-white/10 text-sand grid place-items-center"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <div><div class="text-xs text-cream/60 uppercase tracking-wide">Call</div><div class="disp font-600 text-lg">(660) 988-0148</div></div>
         </a>
-        <a href="sms:+16609880148" class="flex items-center gap-4 border-b-4 border-r-4 border-ink p-4 bg-bone hover:bg-amber2">
-          <span class="w-11 h-11 bg-ink text-amber2 grid place-items-center border-2 border-ink"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-          <div><div class="label text-xs text-ink/55">TEXT</div><div class="font-disp font-900 text-lg">(660) 988-0148</div></div>
+        <a href="sms:+16609880148" class="flex items-center gap-4 rounded-2xl p-4 bg-white border border-forest/10 lift">
+          <span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div><div class="text-xs text-bark/55 uppercase tracking-wide">Text</div><div class="disp font-600 text-lg text-forest">(660) 988-0148</div></div>
         </a>
-        <div class="flex items-center gap-4 border-b-4 border-r-4 border-ink p-4 bg-bone">
-          <span class="w-11 h-11 bg-ink text-amber2 grid place-items-center border-2 border-ink"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <div><div class="label text-xs text-ink/55">VISIT</div><div class="font-700 font-narrow">210 E Jefferson St #90, Kirksville, MO 63501</div></div>
+        <div class="flex items-center gap-4 rounded-2xl p-4 bg-white border border-forest/10">
+          <span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="text-xs text-bark/55 uppercase tracking-wide">Visit</div><div class="font-semibold text-bark/80">210 E Jefferson St #90, Kirksville, MO 63501</div></div>
         </div>
-        <div class="flex items-center gap-4 border-b-4 border-r-4 border-ink p-4 bg-bone">
-          <span class="w-11 h-11 bg-ink text-amber2 grid place-items-center border-2 border-ink"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <div><div class="label text-xs text-ink/55">HOURS</div><a href="tel:+16609880148" class="font-700 font-narrow text-hazard hover:underline">Call for hours</a></div>
+        <div class="flex items-center gap-4 rounded-2xl p-4 bg-white border border-forest/10">
+          <span class="w-11 h-11 rounded-xl bg-sage text-moss grid place-items-center"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><div class="text-xs text-bark/55 uppercase tracking-wide">Hours</div><a href="tel:+16609880148" class="font-semibold text-moss hover:underline">Call for hours</a></div>
         </div>
       </div>
     </div>
-    <div class="border-4 border-ink shadow-hard overflow-hidden min-h-[360px]">
+    <div class="rounded-2xl border border-forest/10 overflow-hidden min-h-[360px]">
       <iframe title="Map to Andy's Lawn & Landscape, Kirksville, MO" class="w-full h-full min-h-[360px]" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-92.5872%2C40.1868%2C-92.5752%2C40.1988&layer=mapnik&marker=40.1927782%2C-92.5811849"></iframe>
     </div>
   </div>
 </section>
 
-<section class="bg-amber2 border-y-4 border-ink">
-  <div class="max-w-4xl mx-auto px-4 py-14 text-center text-ink">
-    <h2 class="font-disp font-900 text-4xl md:text-5xl">BOTH SEASONS. ONE CALL.</h2>
-    <p class="mt-3 font-narrow text-ink/80 text-lg">Lawn, landscape, tree work and 24/7 snow — Kirksville's two-season crew.</p>
-    <div class="mt-7 flex flex-wrap justify-center gap-0">
-      <a href="tel:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-ink text-amber2 font-900 border-4 border-ink hover:bg-bone hover:text-ink">
+<section class="hero-grad text-cream">
+  <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+    <h2 class="disp font-700 text-3xl md:text-5xl">Both seasons. One call.</h2>
+    <p class="mt-3 text-cream/80 text-lg">Lawn, landscape, tree work and 24/7 snow — Kirksville's two-season crew.</p>
+    <div class="mt-7 flex flex-wrap justify-center gap-3">
+      <a href="tel:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-sand text-forest rounded-full font-semibold lift">
         <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>(660) 988-0148
       </a>
-      <a href="sms:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-ink font-900 border-4 border-ink hover:bg-ink hover:text-amber2">
-        <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>TEXT
+      <a href="sms:+16609880148" class="inline-flex items-center gap-2 px-7 py-4 bg-transparent text-cream rounded-full font-semibold border border-cream/40 hover:bg-cream hover:text-forest">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text
       </a>
     </div>
   </div>
 </section>
 
-<footer class="bg-ink text-bone/65">
-  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm font-narrow">
+<footer class="bg-forest text-cream/65">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
     <div>
-      <div class="flex items-center gap-2 font-disp font-900 text-bone text-lg"><span class="w-7 h-7 bg-amber2 text-ink grid place-items-center border-2 border-amber2">A</span>ANDY'S LAWN &amp; LANDSCAPE</div>
+      <div class="disp font-600 text-cream text-lg">Andy's Lawn &amp; Landscape</div>
       <p class="mt-3">Lawn, landscape, tree work &amp; 24/7 snow removal in Kirksville, Missouri. Licensed &amp; insured, est. 2007.</p>
     </div>
     <div>
-      <div class="font-disp font-800 text-bone">CONTACT</div>
-      <p class="mt-3"><a href="tel:+16609880148" class="hover:text-amber2">(660) 988-0148</a> · <a href="sms:+16609880148" class="hover:text-amber2">Text</a></p>
+      <div class="font-semibold uppercase tracking-wide text-cream">Contact</div>
+      <p class="mt-3"><a href="tel:+16609880148" class="hover:text-sand">(660) 988-0148</a> · <a href="sms:+16609880148" class="hover:text-sand">Text</a></p>
       <p class="mt-1">210 E Jefferson St #90, Kirksville, MO 63501</p>
     </div>
     <div>
-      <div class="font-disp font-800 text-bone">FIND US</div>
-      <p class="mt-3"><a href="https://www.facebook.com/AndysLawn/" rel="nofollow noopener" target="_blank" class="hover:text-amber2">Facebook →</a></p>
+      <div class="font-semibold uppercase tracking-wide text-cream">Find Us</div>
+      <p class="mt-3"><a href="https://www.facebook.com/AndysLawn/" rel="nofollow noopener" target="_blank" class="hover:text-sand">Facebook →</a></p>
     </div>
   </div>
-  <div class="border-t border-bone/10"><div class="max-w-6xl mx-auto px-4 py-4 text-xs text-bone/40 label">© 2026 ANDY'S LAWN &amp; LANDSCAPE · KIRKSVILLE, MO</div></div>
+  <div class="border-t border-cream/10"><div class="max-w-6xl mx-auto px-4 py-4 text-xs text-cream/40 uppercase tracking-wide">© 2026 Andy's Lawn &amp; Landscape · Kirksville, MO</div></div>
 </footer>
 
 <script type="application/ld+json">

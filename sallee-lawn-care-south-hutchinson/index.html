@@ -12,19 +12,21 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <script>
   tailwind.config = { theme: { extend: {
-    fontFamily: { display: ['Archivo','system-ui','sans-serif'], sans: ['Inter','system-ui','sans-serif'], mono: ['"Roboto Mono"','monospace'] },
-    colors: { paper: '#F4F4F0', ink: '#101010', fire: '#E10600' },
+    fontFamily: { display: ['Fraunces','Georgia','serif'], sans: ['Inter','system-ui','sans-serif'] },
+    colors: { cream: '#F6F3EA', forest: '#1f3d2b', moss: '#3c6e47', sage:'#dfe9da', sand:'#cf9d4d', bark:'#2c2a24' },
   } } };
 </script>
 <style>
-  .hard-shadow { box-shadow: 6px 6px 0 #101010; }
-  .grid-bg { background-image: linear-gradient(#10101010 1px, transparent 1px), linear-gradient(90deg, #10101010 1px, transparent 1px); background-size: 40px 40px; }
+  body{font-family:'Inter',sans-serif}
+  .disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
+  .hero-grad{background:linear-gradient(125deg,#1f3d2b 0%,#274d34 55%,#3c6e47 100%)}
+  .lift{transition:transform .2s ease,box-shadow .2s ease}.lift:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(31,61,43,.5)}
 </style>
 </head>
-<body class="bg-paper font-sans text-ink overflow-x-clip antialiased">
+<body class="bg-cream text-bark overflow-x-clip antialiased">
 
 <svg width="0" height="0" class="hidden" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></symbol>
@@ -37,77 +39,77 @@
   <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
 </svg>
 
-<header class="sticky top-0 z-50 bg-ink text-paper border-b-4 border-fire">
+<header class="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-forest/10">
   <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
-    <span class="font-display font-900 uppercase tracking-tight text-lg sm:text-xl">Sallee <span class="text-fire">Lawn Care</span></span>
+    <span class="disp font-700 text-lg sm:text-xl text-forest">Sallee <span class="text-moss">Lawn Care</span></span>
     <div class="flex items-center gap-2">
-      <a href="sms:+16206658698" class="hidden sm:inline-flex items-center gap-2 border-2 border-paper px-3 py-2 font-display font-700 text-sm uppercase hover:bg-paper hover:text-ink transition"><svg class="w-4 h-4"><use href="#i-msg"/></svg> Text</a>
-      <a href="tel:+16206658698" class="inline-flex items-center gap-2 bg-fire text-paper px-4 py-2 font-display font-900 text-sm sm:text-base uppercase"><svg class="w-5 h-5"><use href="#i-phone"/></svg> (620) 665-8698</a>
+      <a href="sms:+16206658698" class="hidden sm:inline-flex items-center gap-2 border border-forest/20 rounded-full px-4 py-2 font-semibold text-sm text-forest hover:bg-sage transition"><svg class="w-4 h-4"><use href="#i-msg"/></svg> Text</a>
+      <a href="tel:+16206658698" class="inline-flex items-center gap-2 bg-forest text-cream rounded-full px-5 py-2.5 font-semibold text-sm sm:text-base lift"><svg class="w-5 h-5"><use href="#i-phone"/></svg> (620) 665-8698</a>
     </div>
   </div>
 </header>
 
-<section class="relative bg-ink text-paper overflow-hidden grid-bg">
+<section class="relative hero-grad text-cream overflow-hidden">
   <div class="relative max-w-6xl mx-auto px-4 py-16 sm:py-24">
-    <p class="font-mono text-fire text-xs sm:text-sm uppercase tracking-[0.25em] mb-4">South Hutchinson, Kansas</p>
-    <h1 class="font-display font-900 uppercase leading-[0.92] text-4xl sm:text-6xl lg:text-7xl max-w-4xl">Lawn care that shows up &amp; gets it done</h1>
-    <p class="mt-6 max-w-2xl text-base sm:text-lg text-paper/80">Sallee Lawn Care keeps Reno County properties cut, clean and sharp. A 4.7 from 20 customers who keep calling back.</p>
+    <p class="text-sand text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] mb-4">South Hutchinson, Kansas</p>
+    <h1 class="disp font-700 leading-[1.02] text-4xl sm:text-6xl lg:text-6xl max-w-4xl">Lawn care that shows up &amp; gets it done</h1>
+    <p class="mt-6 max-w-2xl text-base sm:text-lg text-cream/85">Sallee Lawn Care keeps Reno County properties cut, clean and sharp. A 4.7 from 20 customers who keep calling back.</p>
     <div class="mt-8 flex flex-col sm:flex-row gap-3">
-      <a href="tel:+16206658698" class="inline-flex items-center justify-center gap-2 bg-fire text-paper px-6 py-4 font-display font-900 uppercase text-lg hard-shadow"><svg class="w-6 h-6"><use href="#i-phone"/></svg> Call (620) 665-8698</a>
-      <a href="sms:+16206658698" class="inline-flex items-center justify-center gap-2 border-2 border-paper px-6 py-4 font-display font-700 uppercase text-lg hover:bg-paper hover:text-ink transition"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text for a quote</a>
+      <a href="tel:+16206658698" class="inline-flex items-center justify-center gap-2 bg-sand text-forest rounded-full px-6 py-4 font-semibold text-lg lift"><svg class="w-6 h-6"><use href="#i-phone"/></svg> Call (620) 665-8698</a>
+      <a href="sms:+16206658698" class="inline-flex items-center justify-center gap-2 border border-cream/40 rounded-full px-6 py-4 font-semibold text-lg hover:border-sand hover:text-sand transition"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text for a quote</a>
     </div>
-    <div class="mt-8 flex items-center gap-2 text-fire">
+    <div class="mt-8 flex items-center gap-2 text-sand">
       <svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg>
-      <span class="text-paper/80 font-mono text-sm ml-1">4.7 · 20 reviews</span>
+      <span class="text-cream/80 text-sm ml-1">4.7 · 20 reviews</span>
     </div>
   </div>
 </section>
 
 <section class="max-w-6xl mx-auto px-4 py-16 sm:py-20">
-  <p class="font-mono text-fire text-xs uppercase tracking-[0.25em] mb-2">Services</p>
-  <h2 class="font-display font-900 uppercase text-3xl sm:text-4xl mb-10">What we handle</h2>
+  <p class="text-moss text-xs font-semibold uppercase tracking-[0.25em] mb-2">Services</p>
+  <h2 class="disp font-700 text-3xl sm:text-4xl text-forest mb-10">What we handle</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-    <div class="bg-white border-4 border-ink p-6 hard-shadow"><span class="font-mono text-xs text-ink/50">01</span><svg class="w-9 h-9 text-fire my-3"><use href="#i-leaf"/></svg><h3 class="font-display font-700 uppercase text-lg mb-1">Lawn Mowing</h3><p class="text-sm text-ink/70">Mowing, edging and trimming on schedule.</p></div>
-    <div class="bg-white border-4 border-ink p-6 hard-shadow"><span class="font-mono text-xs text-ink/50">02</span><svg class="w-9 h-9 text-fire my-3"><use href="#i-shovel"/></svg><h3 class="font-display font-700 uppercase text-lg mb-1">Landscaping</h3><p class="text-sm text-ink/70">Beds, planting and yard improvements.</p></div>
-    <div class="bg-white border-4 border-ink p-6 hard-shadow"><span class="font-mono text-xs text-ink/50">03</span><svg class="w-9 h-9 text-fire my-3"><use href="#i-tree"/></svg><h3 class="font-display font-700 uppercase text-lg mb-1">Tree &amp; Shrub</h3><p class="text-sm text-ink/70">Trimming, shaping and shrub care.</p></div>
-    <div class="bg-white border-4 border-ink p-6 hard-shadow"><span class="font-mono text-xs text-ink/50">04</span><svg class="w-9 h-9 text-fire my-3"><use href="#i-broom"/></svg><h3 class="font-display font-700 uppercase text-lg mb-1">Cleanups</h3><p class="text-sm text-ink/70">Seasonal and one-time yard clean-ups.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><span class="text-bark/40 text-xs font-semibold">01</span><svg class="w-9 h-9 text-moss my-3"><use href="#i-leaf"/></svg><h3 class="disp font-600 text-lg text-forest mb-1">Lawn Mowing</h3><p class="text-sm text-bark/65">Mowing, edging and trimming on schedule.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><span class="text-bark/40 text-xs font-semibold">02</span><svg class="w-9 h-9 text-moss my-3"><use href="#i-shovel"/></svg><h3 class="disp font-600 text-lg text-forest mb-1">Landscaping</h3><p class="text-sm text-bark/65">Beds, planting and yard improvements.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><span class="text-bark/40 text-xs font-semibold">03</span><svg class="w-9 h-9 text-moss my-3"><use href="#i-tree"/></svg><h3 class="disp font-600 text-lg text-forest mb-1">Tree &amp; Shrub</h3><p class="text-sm text-bark/65">Trimming, shaping and shrub care.</p></div>
+    <div class="bg-white border border-forest/10 rounded-2xl p-6 lift"><span class="text-bark/40 text-xs font-semibold">04</span><svg class="w-9 h-9 text-moss my-3"><use href="#i-broom"/></svg><h3 class="disp font-600 text-lg text-forest mb-1">Cleanups</h3><p class="text-sm text-bark/65">Seasonal and one-time yard clean-ups.</p></div>
   </div>
 </section>
 
-<section class="bg-ink text-paper">
-  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-px bg-paper/10">
-    <div class="bg-ink p-6 text-center"><div class="font-display font-900 text-4xl text-fire">4.7</div><div class="font-mono text-xs uppercase tracking-wider text-paper/60 mt-1">Rating</div></div>
-    <div class="bg-ink p-6 text-center"><div class="font-display font-900 text-4xl text-fire">20</div><div class="font-mono text-xs uppercase tracking-wider text-paper/60 mt-1">Reviews</div></div>
-    <div class="bg-ink p-6 text-center"><div class="font-display font-900 text-4xl text-fire">KS</div><div class="font-mono text-xs uppercase tracking-wider text-paper/60 mt-1">Reno County</div></div>
+<section class="hero-grad text-cream">
+  <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="bg-white/5 rounded-2xl p-6 text-center"><div class="disp font-700 text-4xl text-sand">4.7</div><div class="text-xs uppercase tracking-wider text-cream/60 mt-1">Rating</div></div>
+    <div class="bg-white/5 rounded-2xl p-6 text-center"><div class="disp font-700 text-4xl text-sand">20</div><div class="text-xs uppercase tracking-wider text-cream/60 mt-1">Reviews</div></div>
+    <div class="bg-white/5 rounded-2xl p-6 text-center"><div class="disp font-700 text-4xl text-sand">KS</div><div class="text-xs uppercase tracking-wider text-cream/60 mt-1">Reno County</div></div>
   </div>
 </section>
 
-<section class="border-y-4 border-ink bg-[#E9E9E3]">
+<section class="bg-sage/50 border-y border-forest/10">
   <div class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
     <div>
-      <p class="font-mono text-fire text-xs uppercase tracking-[0.25em] mb-2">Hours</p>
-      <h2 class="font-display font-900 uppercase text-3xl sm:text-4xl mb-6">When we're working</h2>
-      <table class="w-full max-w-md text-sm font-mono">
-        <tbody class="divide-y divide-ink/15">
-          <tr><td class="py-2.5 text-ink/60">Mon</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Tue</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Wed</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Thu</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Fri</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Sat</td><td class="py-2.5 text-right font-semibold">8:00 AM – 12:00 PM</td></tr>
-          <tr><td class="py-2.5 text-ink/60">Sun</td><td class="py-2.5 text-right font-semibold">Closed</td></tr>
+      <p class="text-moss text-xs font-semibold uppercase tracking-[0.25em] mb-2">Hours</p>
+      <h2 class="disp font-700 text-3xl sm:text-4xl text-forest mb-6">When we're working</h2>
+      <table class="w-full max-w-md text-sm">
+        <tbody class="divide-y divide-forest/10">
+          <tr><td class="py-2.5 text-bark/55">Mon</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Tue</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Wed</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Thu</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Fri</td><td class="py-2.5 text-right font-semibold">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Sat</td><td class="py-2.5 text-right font-semibold">8:00 AM – 12:00 PM</td></tr>
+          <tr><td class="py-2.5 text-bark/55">Sun</td><td class="py-2.5 text-right font-semibold">Closed</td></tr>
         </tbody>
       </table>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="tel:+16206658698" class="inline-flex items-center gap-2 bg-fire text-paper px-5 py-3 font-display font-900 uppercase text-sm hard-shadow"><svg class="w-5 h-5"><use href="#i-phone"/></svg> Call</a>
-        <a href="sms:+16206658698" class="inline-flex items-center gap-2 border-2 border-ink px-5 py-3 font-display font-700 uppercase text-sm"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text</a>
+        <a href="tel:+16206658698" class="inline-flex items-center gap-2 bg-forest text-cream rounded-full px-5 py-3 font-semibold text-sm lift"><svg class="w-5 h-5"><use href="#i-phone"/></svg> Call</a>
+        <a href="sms:+16206658698" class="inline-flex items-center gap-2 border border-forest/20 rounded-full px-5 py-3 font-semibold text-sm text-forest hover:bg-white transition"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text</a>
       </div>
     </div>
     <div>
-      <p class="font-mono text-fire text-xs uppercase tracking-[0.25em] mb-2">Find us</p>
-      <h2 class="font-display font-900 uppercase text-2xl mb-4">South Hutchinson, KS</h2>
-      <p class="flex items-start gap-3 font-mono text-sm mb-4"><svg class="w-5 h-5 text-fire shrink-0 mt-0.5"><use href="#i-pin"/></svg> 340 N Walnut St, South Hutchinson, KS 67505</p>
-      <div class="border-4 border-ink hard-shadow bg-white">
+      <p class="text-moss text-xs font-semibold uppercase tracking-[0.25em] mb-2">Find us</p>
+      <h2 class="disp font-600 text-2xl text-forest mb-4">South Hutchinson, KS</h2>
+      <p class="flex items-start gap-3 text-sm mb-4"><svg class="w-5 h-5 text-moss shrink-0 mt-0.5"><use href="#i-pin"/></svg> 340 N Walnut St, South Hutchinson, KS 67505</p>
+      <div class="rounded-2xl border border-forest/10 overflow-hidden bg-white">
         <iframe title="Map showing Sallee Lawn Care in South Hutchinson, KS" class="w-full h-64" loading="lazy"
           src="https://www.openstreetmap.org/export/embed.html?bbox=-97.9494%2C38.0229%2C-97.9374%2C38.0349&layer=mapnik&marker=38.0289%2C-97.9434"></iframe>
       </div>
@@ -115,21 +117,21 @@
   </div>
 </section>
 
-<section class="bg-fire text-paper">
+<section class="hero-grad text-cream">
   <div class="max-w-4xl mx-auto px-4 py-16 text-center">
-    <h2 class="font-display font-900 uppercase text-3xl sm:text-5xl">Get on the schedule</h2>
-    <p class="mt-3 text-paper/90 max-w-lg mx-auto">A 4.7-star Reno County crew, a call away. Reach Sallee Lawn Care today.</p>
+    <h2 class="disp font-700 text-3xl sm:text-5xl">Get on the schedule</h2>
+    <p class="mt-3 text-cream/85 max-w-lg mx-auto">A 4.7-star Reno County crew, a call away. Reach Sallee Lawn Care today.</p>
     <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="tel:+16206658698" class="inline-flex items-center justify-center gap-2 bg-ink text-paper px-7 py-4 font-display font-900 uppercase text-lg"><svg class="w-6 h-6"><use href="#i-phone"/></svg> (620) 665-8698</a>
-      <a href="sms:+16206658698" class="inline-flex items-center justify-center gap-2 border-2 border-paper px-7 py-4 font-display font-700 uppercase text-lg hover:bg-paper hover:text-fire transition"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text us</a>
+      <a href="tel:+16206658698" class="inline-flex items-center justify-center gap-2 bg-sand text-forest rounded-full px-7 py-4 font-semibold text-lg lift"><svg class="w-6 h-6"><use href="#i-phone"/></svg> (620) 665-8698</a>
+      <a href="sms:+16206658698" class="inline-flex items-center justify-center gap-2 border border-cream/40 rounded-full px-7 py-4 font-semibold text-lg hover:bg-cream hover:text-forest transition"><svg class="w-5 h-5"><use href="#i-msg"/></svg> Text us</a>
     </div>
   </div>
 </section>
 
-<footer class="bg-ink text-paper/60 border-t-4 border-fire">
-  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between gap-4 text-sm font-mono">
-    <div><p class="font-display font-900 uppercase text-paper text-base">Sallee Lawn Care</p><p class="mt-1">340 N Walnut St, South Hutchinson, KS 67505</p></div>
-    <div class="sm:text-right"><p><a href="tel:+16206658698" class="text-fire">(620) 665-8698</a></p><p class="mt-1">South Hutchinson &amp; Reno County, KS</p></div>
+<footer class="bg-forest text-cream/65">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between gap-4 text-sm">
+    <div><p class="disp font-600 text-cream text-base">Sallee Lawn Care</p><p class="mt-1">340 N Walnut St, South Hutchinson, KS 67505</p></div>
+    <div class="sm:text-right"><p><a href="tel:+16206658698" class="text-sand">(620) 665-8698</a></p><p class="mt-1">South Hutchinson &amp; Reno County, KS</p></div>
   </div>
 </footer>
 

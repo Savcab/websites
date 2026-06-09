@@ -10,32 +10,33 @@
 <meta property="og:title" content="Murguia's Auto Care & Repair — Oakland, CA">
 <meta property="og:description" content="Brakes, timing belts, 30/60/90K, diagnostics, gas & diesel — explained honestly. BBB A+ accredited since 2008, family-run since 2005. Call (510) 532-2162.">
 <meta property="og:url" content="https://savcab.github.io/websites/murguias-auto-care-oakland/">
-<meta name="theme-color" content="#2563EB">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='7' fill='%232563EB'/><g fill='none' stroke='white' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'><path d='M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z'/><path d='M9 12l2 2 4-4'/></g></svg>">
+<meta name="theme-color" content="#14110E">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='5' fill='%23161310'/><g fill='none' stroke='%23F2782B' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='3'/><path d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z'/></g></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: {
       extend: {
-        colors: { slatebg:"#F7F8FA", ink:"#0F172A", blue:"#2563EB", bluedk:"#1D4ED8", mute:"#475569" },
-        fontFamily: { sans:["Manrope","ui-sans-serif","system-ui","sans-serif"] },
+        colors: { coal:"#14110E", steel:"#1f1b16", graph:"#2a251f", bone:"#F4F1EC", amber2:"#F2782B", amberd:"#d9631c", mute:"#A89E92" },
+        fontFamily: { head:["Oswald","sans-serif"], sans:["Barlow","ui-sans-serif","system-ui","sans-serif"] },
         maxWidth: { shell:"76rem" },
-        boxShadow: { soft:"0 18px 40px -24px rgba(15,23,42,.28)", card:"0 10px 30px -18px rgba(15,23,42,.20)" },
       },
     },
   };
 </script>
 <style>
   html{scroll-behavior:smooth;}
-  body{font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;background:#fff;color:#0F172A;}
+  body{font-family:"Barlow",ui-sans-serif,system-ui,sans-serif;background:#14110E;color:#F4F1EC;}
+  .head{font-family:"Oswald",sans-serif;letter-spacing:.01em;text-transform:uppercase;}
   .ic{display:inline-block;width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.125em;flex:none;}
   .ic-lg{width:1.35rem;height:1.35rem;}.ic-xl{width:1.6rem;height:1.6rem;}
   .stars .ic{fill:currentColor;stroke:none;}
-  .lift{transition:transform .2s ease, box-shadow .2s ease;}
-  .lift:hover{transform:translateY(-3px);box-shadow:0 22px 44px -22px rgba(15,23,42,.26);}
+  .lift{transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;}
+  .lift:hover{transform:translateY(-3px);border-color:rgba(242,120,43,.5);}
+  .hazard{background-image:repeating-linear-gradient(45deg,#F2782B 0 14px,#14110E 14px 28px);}
 </style>
 <script type="application/ld+json">
 {
@@ -72,64 +73,65 @@
 </svg>
 
 <!-- TOP UTILITY BAR -->
-<div class="bg-ink text-white">
+<div class="bg-black text-bone">
   <div class="mx-auto max-w-shell px-4 py-2 flex items-center justify-between gap-3 text-sm">
-    <span class="hidden sm:inline text-white/70">4217 International Blvd, Oakland</span>
-    <a href="tel:+15105322162" class="ml-auto inline-flex items-center gap-2 font-600"><svg class="ic ic-lg text-blue"><use href="#i-phone"/></svg> (510) 532-2162</a>
+    <span class="hidden sm:inline text-mute">4217 International Blvd, Oakland · Gas &amp; Diesel</span>
+    <a href="tel:+15105322162" class="ml-auto inline-flex items-center gap-2 font-600"><svg class="ic ic-lg text-amber2"><use href="#i-phone"/></svg> (510) 532-2162</a>
   </div>
 </div>
 
 <!-- NAV -->
-<header class="bg-white/90 backdrop-blur border-b border-ink/10 sticky top-0 z-50">
+<header class="bg-coal/95 backdrop-blur border-b border-white/10 sticky top-0 z-50">
   <div class="mx-auto max-w-shell px-4 py-4 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2.5">
-      <span class="grid place-items-center w-10 h-10 rounded-xl bg-blue text-white"><svg class="ic ic-xl"><use href="#i-shield-check"/></svg></span>
-      <span class="font-800 text-lg tracking-tight">Murguia’s Auto Care</span>
+      <span class="grid place-items-center w-10 h-10 rounded-lg bg-amber2 text-coal"><svg class="ic ic-xl"><use href="#i-cog"/></svg></span>
+      <span class="head font-700 text-xl tracking-tight">Murguia’s Auto Care</span>
     </a>
     <nav class="hidden md:flex items-center gap-7 text-sm font-600 text-mute">
-      <a href="#how" class="hover:text-ink">How it works</a>
-      <a href="#services" class="hover:text-ink">Services</a>
-      <a href="#visit" class="hover:text-ink">Hours &amp; location</a>
-      <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-blue hover:bg-bluedk text-white px-4 py-2 rounded-full transition-colors"><svg class="ic ic-lg"><use href="#i-phone"/></svg> Call</a>
+      <a href="#how" class="hover:text-bone">How it works</a>
+      <a href="#services" class="hover:text-bone">Services</a>
+      <a href="#visit" class="hover:text-bone">Hours &amp; location</a>
+      <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-amber2 hover:bg-amberd text-coal font-700 px-4 py-2 rounded-md transition-colors"><svg class="ic ic-lg"><use href="#i-phone"/></svg> Call</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="top" class="bg-slatebg">
+<section id="top" class="bg-coal relative">
+  <div class="hazard h-1.5 w-full"></div>
   <div class="mx-auto max-w-shell px-4 py-16 sm:py-20 grid lg:grid-cols-12 gap-12 items-center">
     <div class="lg:col-span-7">
-      <span class="inline-flex items-center gap-2 bg-blue/10 text-bluedk font-700 text-xs px-3 py-1.5 rounded-full"><svg class="ic ic-lg"><use href="#i-award"/></svg> BBB-Accredited (A+) since 2008</span>
-      <h1 class="font-800 leading-[1.05] tracking-tight mt-5 text-4xl sm:text-5xl lg:text-6xl">Honest auto repair in Oakland — explained, not upsold.</h1>
-      <p class="mt-5 text-lg text-mute max-w-xl">A family-run shop on International Blvd since 2005. From brakes to timing belts to diagnostics, we tell you straight what your car needs — and what it doesn’t.</p>
+      <span class="inline-flex items-center gap-2 bg-amber2/15 text-amber2 head font-600 text-xs px-3 py-1.5 rounded-md tracking-wide"><svg class="ic ic-lg"><use href="#i-award"/></svg> BBB-Accredited (A+) since 2008</span>
+      <h1 class="head font-700 leading-[1.02] mt-5 text-4xl sm:text-5xl lg:text-6xl">Honest auto repair in Oakland — <span class="text-amber2">explained, not upsold.</span></h1>
+      <p class="mt-5 text-lg text-mute max-w-xl">Run by Jesus Murguia and family on International Blvd since 2005. From brakes to timing belts to diagnostics, we tell you straight what your car needs — and what it doesn’t.</p>
       <div class="mt-8 flex flex-wrap items-center gap-4">
-        <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-blue hover:bg-bluedk text-white font-700 text-lg px-7 py-4 rounded-full shadow-soft transition-colors"><svg class="ic ic-xl"><use href="#i-phone"/></svg> Call (510) 532-2162</a>
-        <a href="#visit" class="inline-flex items-center gap-2 text-ink font-700 border border-ink/15 px-7 py-4 rounded-full hover:bg-white transition-colors"><svg class="ic ic-lg text-blue"><use href="#i-navigation"/></svg> Get directions</a>
+        <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-amber2 hover:bg-amberd text-coal head font-600 text-lg px-7 py-4 rounded-md transition-colors"><svg class="ic ic-xl"><use href="#i-phone"/></svg> Call (510) 532-2162</a>
+        <a href="#visit" class="inline-flex items-center gap-2 text-bone font-700 border border-white/20 px-7 py-4 rounded-md hover:border-amber2 transition-colors"><svg class="ic ic-lg text-amber2"><use href="#i-navigation"/></svg> Get directions</a>
       </div>
       <div class="mt-7 inline-flex items-center gap-3">
-        <span class="stars text-blue inline-flex">
+        <span class="stars text-amber2 inline-flex">
           <svg class="ic ic-lg"><use href="#i-star"/></svg><svg class="ic ic-lg"><use href="#i-star"/></svg><svg class="ic ic-lg"><use href="#i-star"/></svg><svg class="ic ic-lg"><use href="#i-star"/></svg><svg class="ic ic-lg"><use href="#i-star"/></svg>
         </span>
         <span class="text-sm font-600 text-mute">4.7 on Google · 30 reviews</span>
       </div>
     </div>
     <div class="lg:col-span-5">
-      <div class="bg-white rounded-3xl p-7 shadow-soft border border-ink/5">
+      <div class="bg-steel rounded-2xl p-7 border border-white/10">
         <div class="grid grid-cols-2 gap-4">
-          <div class="rounded-2xl bg-slatebg p-5 text-center">
-            <div class="font-800 text-3xl text-blue">A+</div>
+          <div class="rounded-xl bg-graph p-5 text-center">
+            <div class="head font-700 text-3xl text-amber2">A+</div>
             <div class="text-xs text-mute mt-1 uppercase tracking-wide">BBB rating</div>
           </div>
-          <div class="rounded-2xl bg-slatebg p-5 text-center">
-            <div class="font-800 text-3xl">2005</div>
+          <div class="rounded-xl bg-graph p-5 text-center">
+            <div class="head font-700 text-3xl">2005</div>
             <div class="text-xs text-mute mt-1 uppercase tracking-wide">Family-run since</div>
           </div>
-          <div class="rounded-2xl bg-slatebg p-5 text-center">
-            <div class="font-800 text-3xl">4.7★</div>
+          <div class="rounded-xl bg-graph p-5 text-center">
+            <div class="head font-700 text-3xl">4.7★</div>
             <div class="text-xs text-mute mt-1 uppercase tracking-wide">Google · 30 reviews</div>
           </div>
-          <div class="rounded-2xl bg-slatebg p-5 text-center">
-            <div class="font-800 text-3xl">Gas<span class="text-mute text-lg">+</span>Diesel</div>
+          <div class="rounded-xl bg-graph p-5 text-center">
+            <div class="head font-700 text-3xl">Gas<span class="text-mute text-lg">+</span>Diesel</div>
             <div class="text-xs text-mute mt-1 uppercase tracking-wide">Service &amp; repair</div>
           </div>
         </div>
@@ -140,37 +142,37 @@
 </section>
 
 <!-- TRUST BADGES -->
-<section class="bg-white border-b border-ink/5">
+<section class="bg-steel border-y border-white/10">
   <div class="mx-auto max-w-shell px-4 py-7 grid grid-cols-2 sm:grid-cols-4 gap-5 text-center">
-    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-blue"><use href="#i-award"/></svg><span class="text-sm font-600">BBB A+ Accredited</span></div>
-    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-blue"><use href="#i-shield-check"/></svg><span class="text-sm font-600">Family-run since 2005</span></div>
-    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-blue"><use href="#i-truck"/></svg><span class="text-sm font-600">Cars · Trucks · SUVs</span></div>
-    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-blue"><use href="#i-star"/></svg><span class="text-sm font-600">4.7-star Google rating</span></div>
+    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-amber2"><use href="#i-award"/></svg><span class="text-sm font-600">BBB A+ Accredited</span></div>
+    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-amber2"><use href="#i-shield-check"/></svg><span class="text-sm font-600">Family-run since 2005</span></div>
+    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-amber2"><use href="#i-truck"/></svg><span class="text-sm font-600">Cars · Trucks · SUVs</span></div>
+    <div class="flex flex-col items-center gap-2"><svg class="ic ic-xl text-amber2"><use href="#i-star"/></svg><span class="text-sm font-600">4.7-star Google rating</span></div>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section id="how" class="bg-slatebg">
+<section id="how" class="bg-coal">
   <div class="mx-auto max-w-shell px-4 py-16">
-    <p class="text-bluedk font-700 uppercase tracking-[0.16em] text-xs">How it works</p>
-    <h2 class="font-800 text-3xl sm:text-4xl mt-2">Straightforward, every step.</h2>
+    <p class="text-amber2 head font-600 tracking-[0.16em] text-xs">How it works</p>
+    <h2 class="head font-700 text-3xl sm:text-4xl mt-2">Straightforward, every step.</h2>
     <div class="grid sm:grid-cols-3 gap-6 mt-10">
-      <div class="bg-white rounded-2xl p-7 shadow-card">
-        <div class="font-800 text-blue text-sm">Step 1</div>
-        <div class="mt-3 grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-phone"/></svg></div>
-        <h3 class="font-700 text-lg mt-4">Call &amp; tell us what’s up</h3>
+      <div class="bg-steel rounded-xl p-7 border border-white/10">
+        <div class="head font-600 text-amber2 text-sm">Step 1</div>
+        <div class="mt-3 grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-phone"/></svg></div>
+        <h3 class="head font-600 text-lg mt-4">Call &amp; tell us what’s up</h3>
         <p class="text-mute mt-2 text-[15px]">Describe the symptom — a noise, a light, a service that’s due — and we’ll talk you through it.</p>
       </div>
-      <div class="bg-white rounded-2xl p-7 shadow-card">
-        <div class="font-800 text-blue text-sm">Step 2</div>
-        <div class="mt-3 grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-activity"/></svg></div>
-        <h3 class="font-700 text-lg mt-4">We diagnose it honestly</h3>
+      <div class="bg-steel rounded-xl p-7 border border-white/10">
+        <div class="head font-600 text-amber2 text-sm">Step 2</div>
+        <div class="mt-3 grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-activity"/></svg></div>
+        <h3 class="head font-600 text-lg mt-4">We diagnose it honestly</h3>
         <p class="text-mute mt-2 text-[15px]">We find the real cause and explain it plainly — including when something isn’t worth fixing.</p>
       </div>
-      <div class="bg-white rounded-2xl p-7 shadow-card">
-        <div class="font-800 text-blue text-sm">Step 3</div>
-        <div class="mt-3 grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-check"/></svg></div>
-        <h3 class="font-700 text-lg mt-4">Fixed right, no surprises</h3>
+      <div class="bg-steel rounded-xl p-7 border border-white/10">
+        <div class="head font-600 text-amber2 text-sm">Step 3</div>
+        <div class="mt-3 grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-check"/></svg></div>
+        <h3 class="head font-600 text-lg mt-4">Fixed right, no surprises</h3>
         <p class="text-mute mt-2 text-[15px]">The work gets done by a shop that’s answered to the same neighborhood — and the BBB — for two decades.</p>
       </div>
     </div>
@@ -178,85 +180,85 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="bg-white">
+<section id="services" class="bg-steel">
   <div class="mx-auto max-w-shell px-4 py-16">
-    <p class="text-bluedk font-700 uppercase tracking-[0.16em] text-xs">Services</p>
-    <h2 class="font-800 text-3xl sm:text-4xl mt-2">Everything your car needs, in one shop.</h2>
+    <p class="text-amber2 head font-600 tracking-[0.16em] text-xs">Services</p>
+    <h2 class="head font-700 text-3xl sm:text-4xl mt-2">Everything your car needs, in one shop.</h2>
     <p class="text-mute mt-3 max-w-2xl">American &amp; foreign cars, trucks and SUVs — gasoline and diesel.</p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-disc"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">Brakes</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-disc"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">Brakes</h3>
         <p class="text-mute mt-2 text-[15px]">Brake inspection, pads and full brake service so you stop safely and quietly.</p>
       </div>
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-cog"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">Timing Belts</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-cog"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">Timing Belts</h3>
         <p class="text-mute mt-2 text-[15px]">Timing belt replacement on schedule — done before it becomes the expensive kind of problem.</p>
       </div>
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-wrench"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">30K / 60K / 90K Service</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-wrench"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">30K / 60K / 90K Service</h3>
         <p class="text-mute mt-2 text-[15px]">Scheduled maintenance — fluids, filters, plugs, inspection — to keep your car running and your warranty intact.</p>
       </div>
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-activity"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">Computer Diagnostics</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-activity"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">Computer Diagnostics</h3>
         <p class="text-mute mt-2 text-[15px]">Check-engine light on? We read the codes and find the real cause before you spend a dollar.</p>
       </div>
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-droplet"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">Engine, Transmission &amp; Diesel</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-droplet"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">Engine, Transmission &amp; Diesel</h3>
         <p class="text-mute mt-2 text-[15px]">Engine and transmission repair plus gasoline &amp; diesel service — including head gaskets and clutch work.</p>
       </div>
-      <div class="rounded-2xl border border-ink/8 p-7 lift bg-white shadow-card">
-        <span class="grid place-items-center w-12 h-12 rounded-xl bg-blue/10 text-blue"><svg class="ic ic-xl"><use href="#i-cog"/></svg></span>
-        <h3 class="font-700 text-lg mt-4">Electrical, A/C &amp; Suspension</h3>
+      <div class="rounded-xl border border-white/10 p-7 lift bg-graph">
+        <span class="grid place-items-center w-12 h-12 rounded-lg bg-amber2/15 text-amber2"><svg class="ic ic-xl"><use href="#i-cog"/></svg></span>
+        <h3 class="head font-600 text-lg mt-4">Electrical, A/C &amp; Suspension</h3>
         <p class="text-mute mt-2 text-[15px]">Electrical systems, fuel injection, A/C repair and suspension work — the everyday fixes, handled.</p>
       </div>
     </div>
-    <div class="mt-8 rounded-2xl bg-slatebg p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="mt-8 rounded-xl bg-graph p-6 sm:p-7 flex flex-col sm:flex-row items-center justify-between gap-4 border border-white/10">
       <p class="text-mute text-[15px]">Don’t see your service, or not sure what’s wrong? Give us a call — we’ll tell you straight.</p>
-      <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-blue hover:bg-bluedk text-white font-700 px-6 py-3 rounded-full transition-colors whitespace-nowrap"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
+      <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-amber2 hover:bg-amberd text-coal head font-600 px-6 py-3 rounded-md transition-colors whitespace-nowrap"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
     </div>
   </div>
 </section>
 
 <!-- WHY / ABOUT BAND -->
-<section class="bg-bluedk text-white">
+<section class="bg-coal border-y border-white/10">
   <div class="mx-auto max-w-shell px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
     <div>
-      <p class="text-white/70 font-700 uppercase tracking-[0.16em] text-xs">The Murguia’s difference</p>
-      <h2 class="font-800 text-3xl sm:text-4xl mt-2">Two decades of telling people the truth about their cars.</h2>
-      <p class="mt-5 text-white/85 text-lg">Owner Jesus Murguia has run the shop since 2005, and the family has built its name on a simple thing: honest answers. If a repair isn’t worth it, you’ll hear that too.</p>
+      <p class="text-amber2 head font-600 tracking-[0.16em] text-xs">The Murguia’s difference</p>
+      <h2 class="head font-700 text-3xl sm:text-4xl mt-2">Two decades of telling people the truth about their cars.</h2>
+      <p class="mt-5 text-mute text-lg">Owner Jesus Murguia has run the shop since 2005, and the family has built its name on a simple thing: honest answers. If a repair isn’t worth it, you’ll hear that too.</p>
     </div>
     <div class="grid sm:grid-cols-2 gap-4">
-      <div class="bg-white/10 rounded-2xl p-6"><svg class="ic ic-xl text-white"><use href="#i-award"/></svg><h3 class="font-700 mt-3">BBB A+ since 2008</h3><p class="text-white/75 mt-1 text-sm">Accredited by the Better Business Bureau on 9/19/2008.</p></div>
-      <div class="bg-white/10 rounded-2xl p-6"><svg class="ic ic-xl text-white"><use href="#i-shield-check"/></svg><h3 class="font-700 mt-3">Family-owned</h3><p class="text-white/75 mt-1 text-sm">The same family on International Blvd since 2005.</p></div>
-      <div class="bg-white/10 rounded-2xl p-6"><svg class="ic ic-xl text-white"><use href="#i-message"/></svg><h3 class="font-700 mt-3">Plain explanations</h3><p class="text-white/75 mt-1 text-sm">We explain what’s wrong in language that makes sense.</p></div>
-      <div class="bg-white/10 rounded-2xl p-6"><svg class="ic ic-xl text-white"><use href="#i-star"/></svg><h3 class="font-700 mt-3">4.7 stars</h3><p class="text-white/75 mt-1 text-sm">From 30 Google reviews and counting.</p></div>
+      <div class="bg-steel border border-white/10 rounded-xl p-6"><svg class="ic ic-xl text-amber2"><use href="#i-award"/></svg><h3 class="head font-600 mt-3">BBB A+ since 2008</h3><p class="text-mute mt-1 text-sm">Accredited by the Better Business Bureau on 9/19/2008.</p></div>
+      <div class="bg-steel border border-white/10 rounded-xl p-6"><svg class="ic ic-xl text-amber2"><use href="#i-shield-check"/></svg><h3 class="head font-600 mt-3">Family-owned</h3><p class="text-mute mt-1 text-sm">The same family on International Blvd since 2005.</p></div>
+      <div class="bg-steel border border-white/10 rounded-xl p-6"><svg class="ic ic-xl text-amber2"><use href="#i-message"/></svg><h3 class="head font-600 mt-3">Plain explanations</h3><p class="text-mute mt-1 text-sm">We explain what’s wrong in language that makes sense.</p></div>
+      <div class="bg-steel border border-white/10 rounded-xl p-6"><svg class="ic ic-xl text-amber2"><use href="#i-star"/></svg><h3 class="head font-600 mt-3">4.7 stars</h3><p class="text-mute mt-1 text-sm">From 30 Google reviews and counting.</p></div>
     </div>
   </div>
 </section>
 
 <!-- HOURS + MAP -->
-<section id="visit" class="bg-slatebg">
+<section id="visit" class="bg-steel">
   <div class="mx-auto max-w-shell px-4 py-16 grid lg:grid-cols-2 gap-8 items-stretch">
-    <div class="rounded-3xl bg-white p-8 shadow-soft border border-ink/5">
-      <p class="text-bluedk font-700 uppercase tracking-[0.16em] text-xs">Visit us</p>
-      <h2 class="font-800 text-3xl mt-2">Hours &amp; location</h2>
+    <div class="rounded-2xl bg-coal p-8 border border-white/10">
+      <p class="text-amber2 head font-600 tracking-[0.16em] text-xs">Visit us</p>
+      <h2 class="head font-700 text-3xl mt-2">Hours &amp; location</h2>
       <p class="mt-6 text-[15px] text-mute">Call ahead for current hours — we'll let you know the soonest we can get you in.</p>
-      <a href="tel:+15105322162" class="mt-3 inline-flex items-center gap-2 text-bluedk font-800 text-lg"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
-      <div class="mt-6 border-t border-ink/8 pt-5">
-        <p class="font-700">Murguia’s Auto Care &amp; Repair</p>
+      <a href="tel:+15105322162" class="mt-3 inline-flex items-center gap-2 text-amber2 head font-600 text-lg"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
+      <div class="mt-6 border-t border-white/10 pt-5">
+        <p class="head font-600">Murguia’s Auto Care &amp; Repair</p>
         <p class="text-mute mt-1">4217 International Blvd, Oakland, CA 94601</p>
         <div class="mt-4 flex flex-wrap gap-3">
-          <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-blue hover:bg-bluedk text-white font-700 px-5 py-3 rounded-full transition-colors"><svg class="ic ic-lg"><use href="#i-phone"/></svg> Call</a>
-          <a href="https://www.openstreetmap.org/directions?to=37.7693%2C-122.2186" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-ink/15 font-700 px-5 py-3 rounded-full hover:bg-slatebg transition-colors"><svg class="ic ic-lg text-blue"><use href="#i-navigation"/></svg> Directions</a>
+          <a href="tel:+15105322162" class="inline-flex items-center gap-2 bg-amber2 hover:bg-amberd text-coal head font-600 px-5 py-3 rounded-md transition-colors"><svg class="ic ic-lg"><use href="#i-phone"/></svg> Call</a>
+          <a href="https://www.openstreetmap.org/directions?to=37.7693%2C-122.2186" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-white/20 head font-600 px-5 py-3 rounded-md hover:border-amber2 transition-colors"><svg class="ic ic-lg text-amber2"><use href="#i-navigation"/></svg> Directions</a>
         </div>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden border border-ink/10 min-h-[360px] shadow-soft">
+    <div class="rounded-2xl overflow-hidden border border-white/10 min-h-[360px]">
       <iframe title="Map to Murguia's Auto Care, 4217 International Blvd, Oakland" class="w-full h-full min-h-[360px]" loading="lazy"
         src="https://www.openstreetmap.org/export/embed.html?bbox=-122.2246%2C37.7633%2C-122.2126%2C37.7753&layer=mapnik&marker=37.7693%2C-122.2186"></iframe>
     </div>
@@ -264,35 +266,35 @@
 </section>
 
 <!-- FINAL CTA -->
-<section class="bg-white">
+<section class="bg-coal">
   <div class="mx-auto max-w-shell px-4 py-16">
-    <div class="rounded-3xl bg-blue text-white px-8 py-12 sm:py-14 text-center shadow-soft">
-      <h2 class="font-800 text-3xl sm:text-5xl">Ready when your car is.</h2>
-      <p class="mt-4 text-white/85 max-w-xl mx-auto text-lg">Call Murguia’s and get an honest answer — from a BBB-accredited family shop Oakland has trusted since 2005.</p>
-      <a href="tel:+15105322162" class="mt-8 inline-flex items-center gap-2 bg-white text-bluedk font-800 text-xl px-9 py-5 rounded-full"><svg class="ic ic-xl"><use href="#i-phone"/></svg> (510) 532-2162</a>
+    <div class="rounded-2xl bg-amber2 text-coal px-8 py-12 sm:py-14 text-center">
+      <h2 class="head font-700 text-3xl sm:text-5xl">Ready when your car is.</h2>
+      <p class="mt-4 text-coal/80 max-w-xl mx-auto text-lg font-500">Call Murguia’s and get an honest answer — from a BBB-accredited family shop Oakland has trusted since 2005.</p>
+      <a href="tel:+15105322162" class="mt-8 inline-flex items-center gap-2 bg-coal text-amber2 head font-600 text-xl px-9 py-5 rounded-md"><svg class="ic ic-xl"><use href="#i-phone"/></svg> (510) 532-2162</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-ink text-white/75">
+<footer class="bg-black text-mute">
   <div class="mx-auto max-w-shell px-4 py-10 grid sm:grid-cols-3 gap-6">
     <div>
-      <div class="text-white font-800 text-lg">Murguia’s Auto Care &amp; Repair</div>
+      <div class="text-bone head font-600 text-lg">Murguia’s Auto Care &amp; Repair</div>
       <p class="mt-2 text-sm">Family-run, BBB-accredited auto repair on International Blvd, Oakland — since 2005.</p>
     </div>
     <div class="text-sm">
-      <p class="font-600 text-white">Visit</p>
+      <p class="font-600 text-bone">Visit</p>
       <p class="mt-2">4217 International Blvd<br>Oakland, CA 94601</p>
     </div>
     <div class="text-sm">
-      <p class="font-600 text-white">Contact</p>
-      <a href="tel:+15105322162" class="mt-2 inline-flex items-center gap-2 text-blue font-600"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
-      <p class="mt-2">Mon–Fri 8–6 · Sat 8–3</p>
+      <p class="font-600 text-bone">Contact</p>
+      <a href="tel:+15105322162" class="mt-2 inline-flex items-center gap-2 text-amber2 font-600"><svg class="ic ic-lg"><use href="#i-phone"/></svg> (510) 532-2162</a>
+      <p class="mt-2">Call for current hours</p>
     </div>
   </div>
   <div class="border-t border-white/10">
-    <div class="mx-auto max-w-shell px-4 py-4 text-xs text-white/45">© <span id="yr"></span> Murguia’s Auto Care &amp; Repair, Oakland CA. Rating from Google; BBB accreditation per bbb.org.</div>
+    <div class="mx-auto max-w-shell px-4 py-4 text-xs text-mute/70">© <span id="yr"></span> Murguia’s Auto Care &amp; Repair, Oakland CA. Rating from Google; BBB accreditation per bbb.org.</div>
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>

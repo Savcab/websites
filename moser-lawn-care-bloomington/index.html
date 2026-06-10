@@ -70,28 +70,34 @@ tailwind.config = {
 <main id="top">
 <!-- HERO -->
 <section class="hero-grad border-b border-line">
-  <div class="max-w-6xl mx-auto px-4 py-20 sm:py-28">
-    <p class="eyebrow text-lime text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] mb-6">Bloomington · Rural Monroe County, Indiana</p>
-    <h1 class="font-extrabold tracking-tight leading-[0.95] text-5xl sm:text-7xl max-w-4xl">
-      From the front lawn to the <span class="text-lime">back acreage.</span>
-    </h1>
-    <p class="mt-7 text-lg sm:text-xl text-neutral-300 max-w-2xl leading-relaxed">
-      Moser Lawn Care and Landscaping does the work most lawn crews won't — mowing, large-acreage
-      mowing, tree removal, and excavating — for rural property owners around Bloomington.
-    </p>
-    <div class="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
-      <a href="tel:+18126063939" class="inline-flex items-center justify-center gap-2 bg-lime text-base font-bold px-7 py-4 rounded-full hover:bg-limedk transition-colors">
-        <svg class="w-5 h-5"><use href="#i-phone"/></svg> Call Rick for a free quote
-      </a>
-      <a href="sms:+18126063939" class="inline-flex items-center justify-center gap-2 border border-neutral-600 text-neutral-100 font-bold px-7 py-4 rounded-full hover:border-lime hover:text-lime transition-colors">
-        <svg class="w-5 h-5"><use href="#i-message"/></svg> Text the shop
-      </a>
+  <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="eyebrow text-lime text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] mb-6">Bloomington · Rural Monroe County, Indiana</p>
+      <h1 class="font-extrabold tracking-tight leading-[0.95] text-5xl sm:text-6xl max-w-2xl">
+        From the front lawn to the <span class="text-lime">back acreage.</span>
+      </h1>
+      <p class="mt-7 text-lg text-neutral-300 max-w-xl leading-relaxed">
+        Moser Lawn Care and Landscaping does the work most lawn crews won't — mowing, large-acreage
+        mowing, tree removal, and excavating — for rural property owners around Bloomington.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="tel:+18126063939" class="inline-flex items-center justify-center gap-2 bg-lime text-base font-bold px-7 py-4 rounded-full hover:bg-limedk transition-colors">
+          <svg class="w-5 h-5"><use href="#i-phone"/></svg> Call Rick for a free quote
+        </a>
+        <a href="sms:+18126063939" class="inline-flex items-center justify-center gap-2 border border-neutral-600 text-neutral-100 font-bold px-7 py-4 rounded-full hover:border-lime hover:text-lime transition-colors">
+          <svg class="w-5 h-5"><use href="#i-message"/></svg> Text the shop
+        </a>
+      </div>
+      <div class="mt-9 inline-flex items-center gap-3 bg-panel border border-line rounded-full px-4 py-2.5">
+        <span class="flex text-lime">
+          <svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg>
+        </span>
+        <span class="text-sm text-neutral-300"><span class="font-semibold text-white">5.0</span> · 10 Google reviews</span>
+      </div>
     </div>
-    <div class="mt-9 inline-flex items-center gap-3 bg-panel border border-line rounded-full px-4 py-2.5">
-      <span class="flex text-lime">
-        <svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg><svg class="w-5 h-5"><use href="#i-star"/></svg>
-      </span>
-      <span class="text-sm text-neutral-300"><span class="font-semibold text-white">5.0</span> · 10 Google reviews</span>
+    <div class="relative rounded-2xl overflow-hidden border border-line shadow-2xl">
+      <img src="img/hero.jpg" alt="Moser Lawn Care and Landscaping — Bloomington, IN" class="w-full h-full object-cover aspect-[4/3]">
+      <div class="absolute inset-0 bg-gradient-to-t from-base/60 to-transparent"></div>
     </div>
   </div>
 </section>
@@ -165,19 +171,6 @@ tailwind.config = {
         <p class="text-base/80 text-sm leading-relaxed mb-4">Call and tell Rick what you're dealing with — he'll let you know how he can help.</p>
         <a href="tel:+18126063939" class="inline-flex items-center gap-2 font-bold"><svg class="w-5 h-5"><use href="#i-phone"/></svg> (812) 606-3939</a>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- OUR WORK -->
-<section class="border-y border-line bg-base">
-  <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24">
-    <p class="eyebrow text-lime text-xs font-semibold uppercase tracking-[0.18em] mb-3">Our work</p>
-    <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-10">Out on the property</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-      <div class="rounded-2xl overflow-hidden aspect-[4/3] border border-line"><img src="img/cover.jpg" alt="A large Monroe County lawn mowed by Moser Lawn Care" class="w-full h-full object-cover" loading="lazy"></div>
-      <div class="rounded-2xl overflow-hidden aspect-[4/3] border border-line"><img src="img/g1.jpg" alt="Lawn and acreage work by Moser Lawn Care, Bloomington IN" class="w-full h-full object-cover" loading="lazy"></div>
-      <div class="rounded-2xl overflow-hidden aspect-[4/3] border border-line"><img src="img/g2.jpg" alt="Property work by Moser Lawn Care, Bloomington IN" class="w-full h-full object-cover" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -262,7 +255,7 @@ tailwind.config = {
   "name": "Moser Lawn Care and Landscaping",
   "url": "https://savcab.github.io/websites/moser-lawn-care-bloomington/",
   "telephone": "+1-812-606-3939",
-  "image": "https://savcab.github.io/websites/moser-lawn-care-bloomington/img/cover.jpg",
+  "image": "https://savcab.github.io/websites/moser-lawn-care-bloomington/",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "9664 W Elwren Rd",

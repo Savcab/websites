@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G.O.A.T. Lawncare Services — Lawn Care &amp; Landscaping in Morehead, KY</title>
+<meta name="description" content="Full-service lawn care and landscaping in Morehead, Kentucky — mowing, seeding, river rock, shrub trimming, pressure washing and more, for homes and commercial properties. Call or text (606) 548-2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230C0C0C'/%3E%3Ctext x='8' y='12' text-anchor='middle' font-family='Georgia' font-size='11' fill='%23C9A24A'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://savcab.github.io/websites/goat-lawncare-services-morehead/">
+<meta property="og:title" content="G.O.A.T. Lawncare Services — Morehead, KY">
+<meta property="og:description" content="Lawn care and landscaping kept to a gold standard, for homes and commercial properties across Morehead and surrounding areas. Call or text (606) 548-2027.">
+<meta property="og:url" content="https://savcab.github.io/websites/goat-lawncare-services-morehead/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0C0C0C',
+        coal: '#121110',
+        bone: '#EDE8E0',
+        gold: '#C9A24A',
+      },
+      fontFamily: {
+        display: ['"Cormorant Garamond"', 'serif'],
+        body: ['Jost', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #0C0C0C; color: #EDE8E0; font-family: 'Jost', sans-serif; font-weight: 300; }
+  ::selection { background: #C9A24A; color: #0C0C0C; }
+  .hero-field {
+    background:
+      radial-gradient(ellipse 90rem 40rem at 50% -12rem, rgba(201,162,74,0.13), transparent 62%),
+      radial-gradient(ellipse 60rem 32rem at 18% 110%, rgba(64,72,52,0.20), transparent 70%),
+      linear-gradient(180deg, #0C0C0C 0%, #121110 58%, #0C0C0C 100%);
+  }
+  .contours {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420'%3E%3Cg fill='none' stroke='%23C9A24A' stroke-width='0.6'%3E%3Cpath d='M-30 330 C 90 240 150 360 270 290 S 460 320 480 250'/%3E%3Cpath d='M-30 360 C 90 280 160 390 280 325 S 460 350 480 290'/%3E%3Cpath d='M-30 295 C 80 205 145 320 265 255 S 450 285 480 215'/%3E%3Cpath d='M-30 130 C 70 60 180 170 290 100 S 440 120 480 60'/%3E%3Cpath d='M-30 95 C 70 25 175 135 285 70 S 440 85 480 25'/%3E%3Cpath d='M-30 165 C 80 95 185 205 295 135 S 445 155 480 95'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 420px 420px;
+  }
+  .grain { position: relative; }
+  .grain::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");
+  }
+  .rule-gold { display:block; width: 2.75rem; height: 1px; background: #C9A24A; }
+  .eyebrow { letter-spacing: .38em; text-transform: uppercase; font-size: 11px; font-weight: 400; color: #C9A24A; }
+  .hairline { border-color: rgba(237,232,224,0.10); }
+  .menu-row { border-bottom: 1px solid rgba(237,232,224,0.10); transition: background-color .35s ease, padding-left .35s ease; }
+  .menu-row:hover { background: rgba(201,162,74,0.05); padding-left: .75rem; }
+  .frame-gold { border: 1px solid rgba(201,162,74,0.45); padding: .65rem; }
+  .btn-gold { background: #C9A24A; color: #0C0C0C; transition: background-color .3s ease, transform .3s ease; }
+  .btn-gold:hover { background: #D8B563; transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid rgba(201,162,74,0.45); color: #C9A24A; transition: border-color .3s ease, background-color .3s ease; }
+  .btn-ghost:hover { border-color: #C9A24A; background: rgba(201,162,74,0.07); }
+  .rise { opacity: 0; transform: translateY(22px); transition: opacity .9s cubic-bezier(.22,.6,.2,1), transform .9s cubic-bezier(.22,.6,.2,1); }
+  .rise.in { opacity: 1; transform: none; }
+  @keyframes heroUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  .hero-up { opacity: 0; animation: heroUp 1s cubic-bezier(.22,.6,.2,1) forwards; }
+  .num { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise { opacity: 1; transform: none; transition: none; }
+    .hero-up { opacity: 1; animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "G.O.A.T. Lawncare Services",
+  "description": "Full-service lawn care and landscaping for homes and commercial properties in Morehead, Kentucky and surrounding areas.",
+  "url": "https://savcab.github.io/websites/goat-lawncare-services-morehead/",
+  "telephone": "+16065482027",
+  "image": "https://savcab.github.io/websites/goat-lawncare-services-morehead/assets/grounds.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3060 Cranston Rd",
+    "addressLocality": "Morehead",
+    "addressRegion": "KY",
+    "postalCode": "40351",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 38.2381246, "longitude": -83.4484525 },
+  "areaServed": "Morehead, KY and surrounding areas",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "27" }
+}
+</script>
+</head>
+<body class="bg-ink text-bone font-body antialiased grain">
+
+<!-- icon defs -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26" fill="currentColor"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 7h10v10M7 17 17 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- sticky bar -->
+<header class="fixed top-0 inset-x-0 z-50 bg-ink/85 backdrop-blur border-b hairline">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between gap-4">
+    <a href="#top" class="font-display text-lg sm:text-xl tracking-wide text-bone whitespace-nowrap">G.O.A.T. <span class="text-gold">Lawncare</span></a>
+    <nav class="hidden md:flex items-center gap-8 text-[12px] uppercase tracking-[0.22em] text-bone/70">
+      <a href="#services" class="hover:text-gold transition-colors">Services</a>
+      <a href="#commercial" class="hover:text-gold transition-colors">Commercial</a>
+      <a href="#grounds" class="hover:text-gold transition-colors">The Grounds</a>
+      <a href="#reviews" class="hover:text-gold transition-colors">Reviews</a>
+      <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+    </nav>
+    <a href="tel:+16065482027" class="btn-gold flex items-center gap-2 px-4 sm:px-5 py-2 text-[12px] uppercase tracking-[0.18em] font-normal whitespace-nowrap">
+      <svg class="w-3.5 h-3.5"><use href="#i-phone"/></svg>(606) 548-2027
+    </a>
+  </div>
+  <nav class="md:hidden border-t hairline flex items-center justify-center gap-6 py-2.5 text-[10px] uppercase tracking-[0.2em] text-bone/65" aria-label="Sections">
+    <a href="#services" class="hover:text-gold transition-colors">Services</a>
+    <a href="#commercial" class="hover:text-gold transition-colors">Commercial</a>
+    <a href="#reviews" class="hover:text-gold transition-colors">Reviews</a>
+    <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+  </nav>
+</header>
+
+<!-- hero -->
+<section id="top" class="hero-field relative overflow-hidden">
+  <div class="contours absolute inset-0 opacity-[0.05]" aria-hidden="true"></div>
+  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 pt-36 pb-24 sm:pt-44 sm:pb-32 text-center">
+    <p class="eyebrow hero-up" style="animation-delay:.05s">Morehead &middot; Rowan County &middot; Kentucky</p>
+    <span class="rule-gold mx-auto mt-5 hero-up" style="animation-delay:.15s"></span>
+    <h1 class="hero-up font-display text-5xl sm:text-6xl md:text-7xl leading-[1.05] mt-7 font-medium" style="animation-delay:.25s">Lawn care, kept<br class="hidden sm:block"> to a gold standard.</h1>
+    <p class="hero-up mt-7 text-bone/75 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mx-auto" style="animation-delay:.4s">Full-service lawn care and landscaping for Morehead and the counties around it — from a weekly cut on a small yard to commercial grounds kept on a schedule.</p>
+    <div class="hero-up mt-10 flex flex-col sm:flex-row items-center justify-center gap-4" style="animation-delay:.55s">
+      <a href="tel:+16065482027" class="btn-gold w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-3.5 text-[13px] uppercase tracking-[0.18em]">
+        <svg class="w-4 h-4"><use href="#i-phone"/></svg>Call (606) 548-2027
+      </a>
+      <a href="sms:+16065482027" class="btn-ghost w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-3.5 text-[13px] uppercase tracking-[0.18em]">
+        <svg class="w-4 h-4"><use href="#i-message"/></svg>Text us instead
+      </a>
+    </div>
+    <div class="hero-up mt-10 flex items-center justify-center gap-3" style="animation-delay:.7s">
+      <span class="flex gap-1 text-gold" aria-hidden="true">
+        <svg class="w-3.5 h-3.5"><use href="#i-star"/></svg><svg class="w-3.5 h-3.5"><use href="#i-star"/></svg><svg class="w-3.5 h-3.5"><use href="#i-star"/></svg><svg class="w-3.5 h-3.5"><use href="#i-star"/></svg><svg class="w-3.5 h-3.5"><use href="#i-star"/></svg>
+      </span>
+      <p class="text-sm text-bone/70 tracking-wide"><span class="num text-gold text-base">4.9</span> across <span class="num text-gold text-base">27 reviews</span> on Google</p>
+    </div>
+  </div>
+</section>
+
+<!-- stat band -->
+<section class="border-y hairline bg-coal">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4">
+    <div class="rise text-center py-10 px-4 border-r hairline">
+      <p class="num text-4xl text-gold">4.9</p>
+      <p class="mt-2 text-[11px] uppercase tracking-[0.28em] text-bone/55">Google rating</p>
+    </div>
+    <div class="rise text-center py-10 px-4 lg:border-r hairline" style="transition-delay:.08s">
+      <p class="num text-4xl text-gold">27</p>
+      <p class="mt-2 text-[11px] uppercase tracking-[0.28em] text-bone/55">Google reviews</p>
+    </div>
+    <div class="rise text-center py-10 px-4 border-r hairline border-t lg:border-t-0" style="transition-delay:.16s">
+      <p class="font-display text-2xl text-bone leading-[2.5rem]">Licensed<span class="text-gold"> &amp; </span>insured</p>
+      <p class="mt-2 text-[11px] uppercase tracking-[0.28em] text-bone/55">On every job</p>
+    </div>
+    <div class="rise text-center py-10 px-4 border-t lg:border-t-0 hairline" style="transition-delay:.24s">
+      <p class="font-display text-2xl text-bone leading-[2.5rem]">Homes <span class="text-gold">&amp;</span> commercial</p>
+      <p class="mt-2 text-[11px] uppercase tracking-[0.28em] text-bone/55">One number for both</p>
+    </div>
+  </div>
+</section>
+
+<!-- services menu -->
+<section id="services" class="max-w-6xl mx-auto px-5 sm:px-8 pt-24 sm:pt-32 pb-20">
+  <div class="rise text-center">
+    <p class="eyebrow">The service list</p>
+    <span class="rule-gold mx-auto mt-5"></span>
+    <h2 class="font-display text-4xl sm:text-5xl mt-7 font-medium">Everything the grounds ask for</h2>
+    <p class="mt-5 text-bone/65 max-w-xl mx-auto font-light">Fourteen services, one crew, one phone number. If the work happens outside your walls, chances are it is on this list.</p>
+  </div>
+
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-x-16">
+    <div class="rise">
+      <h3 class="font-display text-2xl text-gold italic">The Lawn</h3>
+      <div class="mt-4 border-t hairline">
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Mowing</p><p class="text-sm text-bone/55 font-light sm:text-right">Scheduled cuts through the growing season</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Weed Eating</p><p class="text-sm text-bone/55 font-light sm:text-right">String-trim along fences, walks, and beds</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Aeration</p><p class="text-sm text-bone/55 font-light sm:text-right">Open the soil so water and seed reach roots</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Seeding</p><p class="text-sm text-bone/55 font-light sm:text-right">Overseeding and bare-spot repair</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Soil Testing</p><p class="text-sm text-bone/55 font-light sm:text-right">Know what the yard needs before feeding it</p></div>
+      </div>
+
+      <h3 class="font-display text-2xl text-gold italic mt-12">The Seasons</h3>
+      <div class="mt-4 border-t hairline">
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Spring Cleanup</p><p class="text-sm text-bone/55 font-light sm:text-right">Beds and winter debris, cleared out</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Leaf Removal</p><p class="text-sm text-bone/55 font-light sm:text-right">Cleared off and hauled away each fall</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Brush Removal</p><p class="text-sm text-bone/55 font-light sm:text-right">Overgrowth cut back and carried off</p></div>
+      </div>
+    </div>
+
+    <div class="rise" style="transition-delay:.1s">
+      <h3 class="font-display text-2xl text-gold italic mt-12 md:mt-0">The Grounds</h3>
+      <div class="mt-4 border-t hairline">
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Landscaping</p><p class="text-sm text-bone/55 font-light sm:text-right">Beds, plantings, and borders, built and kept</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">River Rock Delivery</p><p class="text-sm text-bone/55 font-light sm:text-right">Delivered and spread where you want it</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Topsoil Delivery</p><p class="text-sm text-bone/55 font-light sm:text-right">For grading, fill, and new beds</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Outdoor Lighting</p><p class="text-sm text-bone/55 font-light sm:text-right">Paths and facades, lit after dark</p></div>
+      </div>
+
+      <h3 class="font-display text-2xl text-gold italic mt-12">The Exterior</h3>
+      <div class="mt-4 border-t hairline">
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Shrub Trimming</p><p class="text-sm text-bone/55 font-light sm:text-right">Shaped by hand, cleaned up after</p></div>
+        <div class="menu-row py-4 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-6"><p class="text-bone tracking-wide">Pressure Washing</p><p class="text-sm text-bone/55 font-light sm:text-right">Walks, siding, and concrete brought back</p></div>
+      </div>
+      <p class="rise mt-10 text-sm text-bone/55 font-light">Not sure where your job fits? <a href="sms:+16065482027" class="text-gold border-b border-gold/40 hover:border-gold transition-colors">Text us a photo</a> — we will tell you straight.</p>
+    </div>
+  </div>
+</section>
+
+<!-- commercial band -->
+<section id="commercial" class="border-y hairline bg-coal">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20">
+    <div class="rise">
+      <p class="eyebrow">Property managers &middot; Landlords</p>
+      <span class="rule-gold mt-5"></span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-7 font-medium leading-tight">One crew for the whole portfolio</h2>
+      <p class="mt-6 text-bone/70 font-light leading-relaxed">A property-management group writes in our Google reviews that they run multiple properties through us — single-family homes to multi-family buildings, across multiple counties. That is the work we are built for: a schedule you do not have to chase, and grounds your tenants stop calling about.</p>
+      <p class="mt-4 text-bone/70 font-light leading-relaxed">If you manage units in or around Rowan County, this page is the one to forward — what we do, where we work, and the number that answers.</p>
+      <a href="tel:+16065482027" class="btn-ghost inline-flex items-center gap-2.5 px-7 py-3 mt-8 text-[13px] uppercase tracking-[0.18em]">
+        <svg class="w-4 h-4"><use href="#i-phone"/></svg>Talk through your properties
+      </a>
+    </div>
+    <figure class="rise self-center" style="transition-delay:.12s">
+      <blockquote class="frame-gold p-8 sm:p-10 relative">
+        <span class="font-display text-gold text-7xl leading-none absolute -top-5 left-6 select-none" aria-hidden="true">&ldquo;</span>
+        <p class="font-display text-xl sm:text-2xl italic leading-relaxed text-bone/90 mt-3">We have been using G.O.A.T Lawncare Services for multiple properties, ranging from single family homes to multi family property across multiple counties, and they have been nothing but fantastic.</p>
+        <figcaption class="mt-6 flex items-center justify-between gap-4">
+          <div>
+            <p class="text-sm tracking-wide text-bone">Zachariah Gray</p>
+            <p class="text-[11px] uppercase tracking-[0.22em] text-bone/50 mt-1">360 Management Group &middot; Google review</p>
+          </div>
+          <span class="flex gap-1 text-gold" aria-hidden="true">
+            <svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg>
+          </span>
+        </figcaption>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<!-- the grounds / about -->
+<section id="grounds" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-14 md:gap-16 items-center">
+    <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-5 gap-6 items-start">
+      <figure class="rise frame-gold sm:col-span-3">
+        <img src="assets/grounds.jpg" alt="Sculpted shrubs and river-rock beds beside a columned brick home" width="560" height="628" class="w-full h-auto block">
+        <figcaption class="pt-3 pb-1 text-[11px] uppercase tracking-[0.22em] text-bone/50 text-center">Shrub sculpting &amp; river-rock beds</figcaption>
+      </figure>
+      <figure class="rise frame-gold sm:col-span-2 sm:mt-16" style="transition-delay:.12s">
+        <img src="assets/gutter-work.jpg" alt="Leaf and gutter-line work photographed from the roof" width="1100" height="1467" class="w-full h-auto block">
+        <figcaption class="pt-3 pb-1 text-[11px] uppercase tracking-[0.22em] text-bone/50 text-center">Leaf removal, to the gutter line</figcaption>
+      </figure>
+    </div>
+    <div class="rise md:col-span-2" style="transition-delay:.1s">
+      <p class="eyebrow">Local &middot; On Cranston Rd</p>
+      <span class="rule-gold mt-5"></span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-7 font-medium leading-tight">The grounds we keep</h2>
+      <p class="mt-6 text-bone/70 font-light leading-relaxed">We are based on Cranston Rd in Morehead and work Morehead and the surrounding areas. The photos here are ours — the kind of grounds work we do, from sculpted beds to the gutters above them.</p>
+      <p class="mt-4 text-bone/70 font-light leading-relaxed">What you can expect is plain enough. We answer the phone. The date we give you is the date we show up. And the place looks better when the trailer pulls out than it did when it pulled in.</p>
+      <div class="mt-8 frame-gold inline-flex items-center gap-5 px-6 py-4">
+        <p class="num text-5xl text-gold">4.9</p>
+        <div>
+          <span class="flex gap-1 text-gold" aria-hidden="true">
+            <svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg>
+          </span>
+          <p class="text-[11px] uppercase tracking-[0.22em] text-bone/55 mt-1.5">27 reviews on Google</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section id="reviews" class="border-y hairline bg-coal">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="rise text-center">
+      <p class="eyebrow">In their words</p>
+      <span class="rule-gold mx-auto mt-5"></span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-7 font-medium">What Morehead says</h2>
+    </div>
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <figure class="rise border hairline p-8 sm:p-10 bg-ink">
+        <span class="flex gap-1 text-gold" aria-hidden="true">
+          <svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg>
+        </span>
+        <blockquote class="font-display text-lg sm:text-xl italic leading-relaxed text-bone/85 mt-5">&ldquo;It has been quite the odyssey, finding reliable lawn care in our area. G.O.A.T. was worth the wait! They are great at communicating, show up on time, work hard and fast, and do a fantastic job&hellip; I cannot more highly recommend them for all your lawn care needs.&rdquo;</blockquote>
+        <figcaption class="mt-6">
+          <p class="text-sm tracking-wide text-bone">Clan Sharik</p>
+          <p class="text-[11px] uppercase tracking-[0.22em] text-bone/50 mt-1">Google review</p>
+        </figcaption>
+      </figure>
+      <figure class="rise border hairline p-8 sm:p-10 bg-ink" style="transition-delay:.12s">
+        <span class="flex gap-1 text-gold" aria-hidden="true">
+          <svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg><svg class="w-3 h-3"><use href="#i-star"/></svg>
+        </span>
+        <blockquote class="font-display text-lg sm:text-xl italic leading-relaxed text-bone/85 mt-5">&ldquo;Amazing work! Easy to communicate with. I am so happy with this service.&rdquo;</blockquote>
+        <figcaption class="mt-6">
+          <p class="text-sm tracking-wide text-bone">Jennifer Courtier</p>
+          <p class="text-[11px] uppercase tracking-[0.22em] text-bone/50 mt-1">Google review</p>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="rise text-center mt-10">
+      <a href="https://maps.google.com/?cid=5114413154860202041" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.22em] text-gold border-b border-gold/40 hover:border-gold transition-colors pb-1">
+        Read all 27 reviews on Google<svg class="w-3.5 h-3.5"><use href="#i-arrow"/></svg>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- where we work -->
+<section id="contact" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 sm:py-32">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-stretch">
+    <div class="rise">
+      <p class="eyebrow">Where we work</p>
+      <span class="rule-gold mt-5"></span>
+      <h2 class="font-display text-4xl sm:text-5xl mt-7 font-medium leading-tight">Morehead &amp; surrounding areas</h2>
+      <div class="mt-10 space-y-7">
+        <div class="flex items-start gap-4">
+          <svg class="w-5 h-5 text-gold mt-1 shrink-0"><use href="#i-pin"/></svg>
+          <div>
+            <p class="text-bone tracking-wide">3060 Cranston Rd, Morehead, KY 40351</p>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=3060+Cranston+Rd%2C+Morehead%2C+KY+40351" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[12px] uppercase tracking-[0.2em] text-gold mt-2 border-b border-gold/40 hover:border-gold transition-colors pb-0.5">Get directions<svg class="w-3 h-3"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <svg class="w-5 h-5 text-gold mt-1 shrink-0"><use href="#i-clock"/></svg>
+          <p class="text-bone/70 font-light">Call for hours — <a href="tel:+16065482027" class="text-gold hover:text-bone transition-colors">(606) 548-2027</a></p>
+        </div>
+        <div class="flex items-start gap-4">
+          <svg class="w-5 h-5 text-gold mt-1 shrink-0"><use href="#i-phone"/></svg>
+          <div>
+            <p class="text-bone/70 font-light">One number, call or text:</p>
+            <a href="tel:+16065482027" class="font-display text-3xl text-bone hover:text-gold transition-colors">(606) 548-2027</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4">
+        <a href="tel:+16065482027" class="btn-gold flex items-center justify-center gap-2.5 px-7 py-3.5 text-[13px] uppercase tracking-[0.18em]"><svg class="w-4 h-4"><use href="#i-phone"/></svg>Call now</a>
+        <a href="sms:+16065482027" class="btn-ghost flex items-center justify-center gap-2.5 px-7 py-3.5 text-[13px] uppercase tracking-[0.18em]"><svg class="w-4 h-4"><use href="#i-message"/></svg>Send a text</a>
+      </div>
+    </div>
+    <div class="rise frame-gold self-center w-full" style="transition-delay:.12s">
+      <iframe title="Map — G.O.A.T. Lawncare Services, 3060 Cranston Rd, Morehead, KY" class="w-full block" style="height:30rem; filter: grayscale(1) invert(0.88) contrast(0.85) brightness(1.12);" src="https://www.openstreetmap.org/export/embed.html?bbox=-83.4544525%2C38.2321246%2C-83.4424525%2C38.2441246&amp;layer=mapnik&amp;marker=38.2381246%2C-83.4484525"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- final CTA -->
+<section class="hero-field border-t hairline relative overflow-hidden">
+  <div class="contours absolute inset-0 opacity-[0.05]" aria-hidden="true"></div>
+  <div class="relative max-w-3xl mx-auto px-5 sm:px-8 py-24 sm:py-32 text-center">
+    <p class="rise eyebrow">Free quote &middot; No runaround</p>
+    <span class="rise rule-gold mx-auto mt-5"></span>
+    <h2 class="rise font-display text-4xl sm:text-6xl mt-7 font-medium leading-tight">Tell us about your place.</h2>
+    <p class="rise mt-6 text-bone/70 font-light text-lg leading-relaxed max-w-xl mx-auto">Call or text and describe the property — we will come take a look and give you a straight quote. Mowing season or brush season, the number is the same.</p>
+    <div class="rise mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="tel:+16065482027" class="btn-gold w-full sm:w-auto flex items-center justify-center gap-2.5 px-9 py-4 text-[13px] uppercase tracking-[0.18em]"><svg class="w-4 h-4"><use href="#i-phone"/></svg>(606) 548-2027</a>
+      <a href="sms:+16065482027" class="btn-ghost w-full sm:w-auto flex items-center justify-center gap-2.5 px-9 py-4 text-[13px] uppercase tracking-[0.18em]"><svg class="w-4 h-4"><use href="#i-message"/></svg>Text the crew</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="border-t hairline">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+    <div>
+      <p class="font-display text-xl tracking-wide">G.O.A.T. <span class="text-gold">Lawncare Services</span></p>
+      <p class="text-[12px] text-bone/50 font-light mt-2 tracking-wide">3060 Cranston Rd, Morehead, KY 40351 &middot; Serving Morehead &amp; surrounding areas</p>
+    </div>
+    <div class="text-[12px] text-bone/50 font-light tracking-wide sm:text-right">
+      <a href="tel:+16065482027" class="text-gold hover:text-bone transition-colors">(606) 548-2027</a>
+      <p class="mt-2">&copy; 2026 G.O.A.T. Lawncare Services</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rise').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

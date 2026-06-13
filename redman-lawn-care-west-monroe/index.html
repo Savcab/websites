@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redman Lawn Care — West Monroe, LA</title>
+  <meta name="description" content="Redman Lawn Care serves West Monroe, LA and the surrounding area. Lawn mowing, hedge trimming, mulch and bed care. Call or text (318) 914-2372." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red:    '#C1272D',
+            cream:  '#F3E9D2',
+            navy:   '#1B2A41',
+            gold:   '#C8A24B',
+            darkred:'#9A1E22',
+          },
+          fontFamily: {
+            display: ['"Alfa Slab One"', 'serif'],
+            condensed: ['Anton', 'sans-serif'],
+            body: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Paper / halftone texture overlay */
+    body {
+      background-color: #F3E9D2;
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      overflow-x: clip;
+    }
+
+    /* Subtle halftone dot pattern via CSS */
+    .halftone {
+      position: relative;
+    }
+    .halftone::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px);
+      background-size: 6px 6px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Paper grain on sections */
+    .paper-texture {
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    }
+
+    /* Double rule */
+    .double-rule {
+      border-top: 3px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      padding-top: 3px;
+    }
+    .double-rule-b {
+      border-bottom: 3px solid currentColor;
+      border-top: 1px solid currentColor;
+      padding-bottom: 3px;
+    }
+
+    /* Starburst shape */
+    .starburst {
+      clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+      );
+    }
+
+    /* Menu board item */
+    .menu-item {
+      border-bottom: 1px dashed rgba(200,162,75,0.5);
+    }
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    /* Stamp effect */
+    .stamp {
+      border: 3px solid currentColor;
+      border-radius: 4px;
+      box-shadow: inset 0 0 0 2px currentColor;
+      opacity: 0.85;
+    }
+
+    /* Hours board */
+    .hours-board {
+      background-color: #1B2A41;
+      border: 4px solid #C8A24B;
+      box-shadow: 4px 4px 0 #9A1E22;
+    }
+
+    /* Hero photo */
+    .hero-photo {
+      position: relative;
+    }
+    .hero-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(193,39,45,0.72) 0%, rgba(27,42,65,0.55) 100%);
+      pointer-events: none;
+    }
+
+    /* Retro card */
+    .retro-card {
+      background: #F3E9D2;
+      border: 3px solid #1B2A41;
+      box-shadow: 5px 5px 0 #C1272D;
+    }
+
+    /* Gallery grid responsive images */
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Scrollable horizontal on very small screens for gallery */
+    @media (max-width: 480px) {
+      .gallery-scroll {
+        overflow-x: auto;
+      }
+    }
+
+    .font-display { font-family: 'Alfa Slab One', serif; }
+    .font-condensed { font-family: 'Anton', sans-serif; }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Redman Lawn Care",
+    "telephone": "+13189142372",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "110 Wall Williams Rd",
+      "addressLocality": "West Monroe",
+      "addressRegion": "LA",
+      "postalCode": "71291",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.5572333,
+      "longitude": -92.158853100000016
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "17",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"17:00"}
+    ],
+    "url": "https://savcab.github.io/websites/redman-lawn-care-west-monroe/"
+  }
+  </script>
+</head>
+
+<body class="bg-cream text-navy paper-texture">
+
+  <!-- ===== STICKY CALL BAR ===== -->
+  <div class="fixed top-0 left-0 right-0 z-50 bg-[#C1272D] text-cream py-2 px-4 flex items-center justify-between" style="border-bottom:3px solid #C8A24B;">
+    <span class="font-condensed tracking-wide text-sm uppercase">Redman Lawn Care &mdash; West Monroe, LA</span>
+    <a href="tel:+13189142372" class="font-condensed text-sm uppercase tracking-wider bg-[#C8A24B] text-[#1B2A41] px-4 py-1 hover:bg-cream hover:text-[#C1272D] transition-colors" style="border:2px solid #1B2A41;">
+      Call (318) 914-2372
+    </a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="relative pt-10 hero-photo min-h-[70vh] flex items-center" style="min-height: 520px;">
+    <img src="assets/photo_2.jpg" alt="Freshly mowed striped lawn by Redman Lawn Care in West Monroe, LA" class="absolute inset-0 w-full h-full object-cover object-center" />
+
+    <!-- Overlay content -->
+    <div class="relative z-10 w-full px-4 sm:px-8 py-12">
+      <div class="max-w-2xl mx-auto text-center">
+
+        <!-- SVG Badge / Shop Sign Lockup -->
+        <div class="inline-block mb-4">
+          <svg viewBox="0 0 340 220" width="340" height="220" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;height:auto;" aria-label="Redman Lawn Care — West Monroe, Louisiana">
+            <!-- Outer badge frame -->
+            <rect x="6" y="6" width="328" height="208" rx="10" ry="10" fill="#1B2A41" stroke="#C8A24B" stroke-width="4"/>
+            <rect x="14" y="14" width="312" height="192" rx="7" ry="7" fill="none" stroke="#C8A24B" stroke-width="1.5"/>
+            <!-- Top banner -->
+            <rect x="6" y="6" width="328" height="52" rx="10" ry="10" fill="#C1272D" stroke="#C8A24B" stroke-width="4"/>
+            <rect x="6" y="40" width="328" height="18" fill="#C1272D"/>
+            <!-- Top banner text -->
+            <text x="170" y="40" text-anchor="middle" font-family="'Anton', sans-serif" font-size="22" fill="#F3E9D2" letter-spacing="4">LAWN CARE</text>
+            <!-- Main name -->
+            <text x="170" y="108" text-anchor="middle" font-family="'Alfa Slab One', serif" font-size="46" fill="#F3E9D2">REDMAN</text>
+            <!-- Divider lines -->
+            <line x1="30" y1="118" x2="310" y2="118" stroke="#C8A24B" stroke-width="2"/>
+            <line x1="30" y1="123" x2="310" y2="123" stroke="#C8A24B" stroke-width="0.75"/>
+            <!-- City line -->
+            <text x="170" y="148" text-anchor="middle" font-family="'Anton', sans-serif" font-size="16" fill="#C8A24B" letter-spacing="3">WEST MONROE, LOUISIANA</text>
+            <!-- Bottom rule -->
+            <line x1="30" y1="160" x2="310" y2="160" stroke="#C8A24B" stroke-width="1.5"/>
+            <!-- Stars row -->
+            <text x="170" y="185" text-anchor="middle" font-family="serif" font-size="18" fill="#C8A24B">&#9733; &#9733; &#9733; &#9733; &#9733;</text>
+            <text x="170" y="202" text-anchor="middle" font-family="'Anton', sans-serif" font-size="11" fill="#F3E9D2" letter-spacing="2">5.0 &middot; 17 GOOGLE REVIEWS</text>
+          </svg>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+          <a href="tel:+13189142372"
+             class="font-condensed text-lg uppercase tracking-wider px-8 py-3 text-cream hover:bg-darkred transition-colors"
+             style="background:#C1272D;border:3px solid #C8A24B;box-shadow:4px 4px 0 #1B2A41;">
+            Call (318) 914-2372
+          </a>
+          <a href="sms:+13189142372"
+             class="font-condensed text-lg uppercase tracking-wider px-8 py-3 text-navy hover:opacity-90 transition-opacity"
+             style="background:#C8A24B;border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+            Text Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RETRO OPEN / TRUST STAMP ROW ===== -->
+  <div class="bg-[#1B2A41] text-cream py-4 px-4" style="border-top:4px solid #C8A24B;border-bottom:4px solid #C8A24B;">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 text-center">
+      <!-- Open sign -->
+      <div class="flex items-center gap-3">
+        <div class="w-3 h-3 rounded-full bg-[#C8A24B] animate-pulse"></div>
+        <span class="font-condensed text-base uppercase tracking-widest text-[#C8A24B]">Open 7 Days a Week</span>
+        <div class="w-3 h-3 rounded-full bg-[#C8A24B] animate-pulse"></div>
+      </div>
+      <span class="hidden sm:block text-[#C8A24B] text-lg">&#9679;</span>
+      <!-- Rating stamp -->
+      <div class="font-condensed text-sm uppercase tracking-widest text-cream">
+        <span class="text-[#C8A24B] text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        &nbsp;5.0 &middot; 17 Google Reviews
+      </div>
+      <span class="hidden sm:block text-[#C8A24B] text-lg">&#9679;</span>
+      <!-- Service area -->
+      <div class="font-condensed text-sm uppercase tracking-widest text-cream">
+        West Monroe &amp; Surrounding Area
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== H1 / TAGLINE ===== -->
+  <section class="bg-cream py-10 px-4 text-center" style="border-bottom:4px solid #1B2A41;">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="font-display text-3xl sm:text-4xl md:text-5xl text-[#C1272D] leading-tight mb-3">
+        Lawn Care Done Right,<br>Every Single Week
+      </h1>
+      <p class="font-body text-[#1B2A41] text-lg sm:text-xl leading-relaxed">
+        We keep West Monroe yards looking sharp — mowing, trimming, cleanup, and more.
+        Call or text us and we'll take care of the rest.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== VINTAGE MENU BOARD — SERVICES ===== -->
+  <section class="py-12 px-4 halftone" style="background:#1B2A41;">
+    <div class="max-w-2xl mx-auto relative z-10">
+
+      <!-- Board header -->
+      <div class="text-center mb-6">
+        <div class="inline-block px-6 py-1 font-condensed text-sm uppercase tracking-widest text-[#1B2A41] bg-[#C8A24B]" style="border:2px solid #F3E9D2;">
+          Our Services
+        </div>
+        <div class="mt-2 border-t-2 border-b border-[#C8A24B] pt-1 border-collapse"></div>
+      </div>
+
+      <!-- Menu board box -->
+      <div class="p-6 sm:p-8" style="background:#0f1c2e;border:3px solid #C8A24B;box-shadow:6px 6px 0 #C1272D;">
+        <ul class="space-y-0 divide-y divide-dashed divide-[#C8A24B]/40">
+
+          <li class="menu-item py-4 flex items-center gap-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 17l4-8 4 4 4-6 4 8"/><line x1="3" y1="21" x2="21" y2="21"/>
+            </svg>
+            <div>
+              <div class="font-condensed text-lg uppercase tracking-wide text-[#F3E9D2]">Lawn Mowing</div>
+              <div class="font-body text-sm text-[#C8A24B]/80">Regular cuts with clean stripe patterns</div>
+            </div>
+          </li>
+
+          <li class="menu-item py-4 flex items-center gap-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2C6 2 2 7 2 12s4 10 10 10 10-5 10-10S18 2 12 2z"/><path d="M12 8v8M8 12h8"/>
+            </svg>
+            <div>
+              <div class="font-condensed text-lg uppercase tracking-wide text-[#F3E9D2]">Hedge &amp; Shrub Trimming</div>
+              <div class="font-body text-sm text-[#C8A24B]/80">Shaped edges, clean cuts, tidy results</div>
+            </div>
+          </li>
+
+          <li class="menu-item py-4 flex items-center gap-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+            </svg>
+            <div>
+              <div class="font-condensed text-lg uppercase tracking-wide text-[#F3E9D2]">Lawn Cleanup</div>
+              <div class="font-body text-sm text-[#C8A24B]/80">Leaves, clippings, debris removal</div>
+            </div>
+          </li>
+
+          <li class="py-4 flex items-center gap-4">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22V12M12 12C12 7 7 3 2 5c0 5 4 9 10 7zM12 12C12 7 17 3 22 5c0 5-4 9-10 7z"/>
+            </svg>
+            <div>
+              <div class="font-condensed text-lg uppercase tracking-wide text-[#F3E9D2]">Mulch &amp; Bed Care</div>
+              <div class="font-body text-sm text-[#C8A24B]/80">Fresh mulch, edged beds, planted borders</div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Menu board footer stamp -->
+      <div class="mt-4 text-center">
+        <span class="font-condensed text-xs uppercase tracking-widest text-[#C8A24B]/60">West Monroe, LA &amp; Surrounding Area</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHOTO GALLERY ===== -->
+  <section class="py-12 px-4 bg-cream" style="border-top:4px solid #1B2A41;border-bottom:4px solid #1B2A41;">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <div class="inline-block px-5 py-1 font-condensed text-sm uppercase tracking-widest bg-[#C1272D] text-cream mb-2" style="border:2px solid #1B2A41;">
+          Our Work
+        </div>
+        <div class="w-20 mx-auto border-t-2 border-b border-[#C1272D] pt-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="overflow-hidden" style="border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+          <img src="assets/photo_1.jpg" alt="Mowed lawn with neat hedges in West Monroe" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden" style="border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+          <img src="assets/photo_4.jpg" alt="Trimmed hedge row along home exterior in West Monroe" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden" style="border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+          <img src="assets/photo_6.jpg" alt="Mulch bed planting and edging at brick home" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden" style="border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+          <img src="assets/photo_7.jpg" alt="Mowed lawn with trimmed shrubs at home exterior" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="overflow-hidden sm:col-span-2 md:col-span-1" style="border:3px solid #1B2A41;box-shadow:4px 4px 0 #C1272D;">
+          <img src="assets/photo_10.jpg" alt="Precisely trimmed round shrubs at brick home" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="py-12 px-4" style="background:#F3E9D2;">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <div class="inline-block px-5 py-1 font-condensed text-sm uppercase tracking-widest bg-[#1B2A41] text-cream mb-2" style="border:2px solid #C8A24B;">
+          What Customers Say
+        </div>
+        <p class="font-body text-[#1B2A41]/70 text-sm mt-1">5.0 &middot; 17 Google reviews</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="p-5" style="background:#fff8ee;border:2px solid #1B2A41;box-shadow:4px 4px 0 #C8A24B;">
+          <div class="text-[#C8A24B] text-lg mb-3" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="font-body text-[#1B2A41] text-sm leading-relaxed mb-4">"I saw Trace mowing down the street, so I pulled over and asked could he do mine and now 3 yrs later still doing it."</p>
+          <div class="font-condensed text-xs uppercase tracking-wide text-[#C1272D]">Marty Verhagen</div>
+          <div class="font-body text-xs text-[#1B2A41]/50">Google Review</div>
+        </div>
+
+        <div class="p-5" style="background:#fff8ee;border:2px solid #1B2A41;box-shadow:4px 4px 0 #C8A24B;">
+          <div class="text-[#C8A24B] text-lg mb-3" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="font-body text-[#1B2A41] text-sm leading-relaxed mb-4">"Trase has taken care of my yard for 4 years. He does an excellent job. Very personable, considerate, and conscientious."</p>
+          <div class="font-condensed text-xs uppercase tracking-wide text-[#C1272D]">Angela Hathcock</div>
+          <div class="font-body text-xs text-[#1B2A41]/50">Google Review</div>
+        </div>
+
+        <div class="p-5" style="background:#fff8ee;border:2px solid #1B2A41;box-shadow:4px 4px 0 #C8A24B;">
+          <div class="text-[#C8A24B] text-lg mb-3" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="font-body text-[#1B2A41] text-sm leading-relaxed mb-4">"Trace Redmond has been working for me for approximately 2-3 years mowing my yard. He's consistently on time and always does a great job!"</p>
+          <div class="font-condensed text-xs uppercase tracking-wide text-[#C1272D]">Yvonne Caire</div>
+          <div class="font-body text-xs text-[#1B2A41]/50">Google Review</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS + MAP ===== -->
+  <section class="py-12 px-4 bg-cream" style="border-top:4px solid #C1272D;">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+        <!-- Hours Board -->
+        <div>
+          <div class="text-center mb-4">
+            <div class="inline-block px-5 py-1 font-condensed text-sm uppercase tracking-widest bg-[#C1272D] text-cream" style="border:2px solid #1B2A41;">
+              Hours of Operation
+            </div>
+          </div>
+
+          <div class="hours-board p-6 text-cream">
+            <!-- OPEN sign header -->
+            <div class="text-center mb-4">
+              <div class="inline-block font-display text-3xl text-[#C8A24B] px-6 py-1" style="border:3px solid #C8A24B;letter-spacing:0.15em;">
+                OPEN
+              </div>
+            </div>
+            <!-- Double rule -->
+            <div class="border-t-2 border-b border-[#C8A24B] pt-1 mb-4"></div>
+            <!-- Days table -->
+            <table class="w-full font-body text-sm">
+              <tbody>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Monday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Tuesday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Wednesday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Thursday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Friday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr class="border-b border-[#C8A24B]/20">
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Saturday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+                <tr>
+                  <td class="py-2 font-condensed uppercase tracking-wide text-[#C8A24B]">Sunday</td>
+                  <td class="py-2 text-right text-cream">7:00 AM &ndash; 5:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Bottom rule -->
+            <div class="border-t border-b-2 border-[#C8A24B] pb-1 mt-4"></div>
+            <p class="text-center text-xs font-body text-[#C8A24B]/70 mt-3 uppercase tracking-widest">West Monroe, LA &amp; Surrounding Area</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <div class="text-center mb-4">
+            <div class="inline-block px-5 py-1 font-condensed text-sm uppercase tracking-widest bg-[#1B2A41] text-cream" style="border:2px solid #C8A24B;">
+              Find Us
+            </div>
+          </div>
+          <div style="border:4px solid #1B2A41;box-shadow:5px 5px 0 #C1272D;">
+            <iframe
+              title="Redman Lawn Care location map"
+              width="100%"
+              height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-92.17885310000002,32.5452333,-92.13885310000002,32.5692333&layer=mapnik&marker=32.5572333,-92.158853100000016"
+              style="display:block;">
+            </iframe>
+          </div>
+          <p class="font-body text-xs text-[#1B2A41]/60 mt-2 text-center">110 Wall Williams Rd, West Monroe, LA 71291</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STARBURST CTA ===== -->
+  <section class="py-16 px-4 halftone" style="background:#C1272D;">
+    <div class="max-w-3xl mx-auto relative z-10 text-center">
+      <!-- Double rule top -->
+      <div class="border-t-4 border-b border-cream pt-1 mb-8 mx-auto w-2/3"></div>
+
+      <div class="font-display text-2xl sm:text-3xl md:text-4xl text-cream mb-2 leading-tight">
+        Ready for a Yard<br>You&rsquo;ll Be Proud Of?
+      </div>
+      <p class="font-body text-cream/90 text-base sm:text-lg mb-8">
+        Call or text and we&rsquo;ll get your lawn on our schedule.
+      </p>
+
+      <!-- Starburst CTA visual element -->
+      <div class="relative inline-block mb-8">
+        <svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="100,5 120,40 158,18 155,60 195,65 170,95 195,125 155,130 158,172 120,150 100,185 80,150 42,172 45,130 5,125 30,95 5,65 45,60 42,18 80,40" fill="#C8A24B" stroke="#1B2A41" stroke-width="2"/>
+          <text x="100" y="90" text-anchor="middle" font-family="'Alfa Slab One', serif" font-size="18" fill="#1B2A41">CALL</text>
+          <text x="100" y="112" text-anchor="middle" font-family="'Alfa Slab One', serif" font-size="12" fill="#1B2A41">OR TEXT</text>
+          <text x="100" y="132" text-anchor="middle" font-family="'Alfa Slab One', serif" font-size="11" fill="#1B2A41">TODAY</text>
+        </svg>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+13189142372"
+           class="font-condensed text-xl uppercase tracking-wider px-10 py-4 text-cream hover:opacity-90 transition-opacity"
+           style="background:#1B2A41;border:3px solid #C8A24B;box-shadow:5px 5px 0 #9A1E22;">
+          Call (318) 914-2372
+        </a>
+        <a href="sms:+13189142372"
+           class="font-condensed text-xl uppercase tracking-wider px-10 py-4 text-[#1B2A41] hover:opacity-90 transition-opacity"
+           style="background:#C8A24B;border:3px solid #1B2A41;box-shadow:5px 5px 0 #9A1E22;">
+          Text Us Instead
+        </a>
+      </div>
+
+      <!-- Double rule bottom -->
+      <div class="border-t border-b-4 border-cream pb-1 mt-8 mx-auto w-2/3"></div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-8 px-4 text-center" style="background:#1B2A41;border-top:4px solid #C8A24B;">
+    <div class="max-w-4xl mx-auto">
+      <div class="font-display text-xl text-[#C8A24B] mb-2">Redman Lawn Care</div>
+      <div class="font-body text-sm text-cream/70 mb-1">West Monroe, LA &amp; Surrounding Area</div>
+      <a href="tel:+13189142372" class="font-condensed text-base uppercase tracking-widest text-[#C8A24B] hover:text-cream transition-colors">
+        (318) 914-2372
+      </a>
+      <div class="mt-4 border-t border-[#C8A24B]/30 pt-4">
+        <p class="font-body text-xs text-cream/40">
+          &copy; Redman Lawn Care. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

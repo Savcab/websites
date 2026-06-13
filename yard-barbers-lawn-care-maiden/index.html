@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yard Barbers Lawn Care, LLC — Maiden, NC</title>
+  <meta name="description" content="Lawn care and mowing in Maiden, NC and the surrounding area. Same-day service available. Call or text (828) 999-0882." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:   '#FBF7F0',
+            'cream-dark': '#F3EDE2',
+            charcoal: '#23201B',
+            'charcoal-light': '#3D3830',
+            rust:    '#B85C38',
+            'rust-light': '#D4764F',
+            forest:  '#3D5A40',
+            'forest-light': '#4E7353',
+            mustard: '#C8972A',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body { background-color: #FBF7F0; color: #23201B; overflow-x: clip; }
+    .hero-overlay { background: linear-gradient(to bottom, rgba(35,32,27,0.18) 0%, rgba(35,32,27,0.55) 100%); }
+    .star-svg { display:inline-block; vertical-align:middle; }
+    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(35,32,27,0.10); }
+    .gallery-img { object-fit: cover; width: 100%; height: 100%; }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Yard Barbers Lawn Care, LLC",
+    "telephone": "+18289990882",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3437 S US 321 Hwy",
+      "addressLocality": "Maiden",
+      "addressRegion": "NC",
+      "postalCode": "28650",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.594697,
+      "longitude": -81.2179683
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "18",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "20:00" }
+    ],
+    "url": "https://savcab.github.io/websites/yard-barbers-lawn-care-maiden/",
+    "description": "Lawn care and mowing serving Maiden, NC and the surrounding area."
+  }
+  </script>
+</head>
+<body class="font-body">
+
+  <!-- Sticky call bar -->
+  <div class="sticky top-0 z-50 bg-charcoal text-cream shadow-md">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <span class="font-display font-semibold text-base tracking-tight">Yard Barbers Lawn Care</span>
+      <div class="flex items-center gap-2">
+        <a href="sms:+18289990882"
+           class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-cream/30 text-cream text-sm font-medium hover:bg-cream/10 transition-colors">
+          <svg class="star-svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Text Us
+        </a>
+        <a href="tel:+18289990882"
+           class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-rust text-white text-sm font-semibold hover:bg-rust-light transition-colors">
+          <svg class="star-svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.55a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          (828) 999-0882
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero — full-bleed editorial photo -->
+  <section class="relative min-h-[92vh] flex items-end" aria-label="Hero">
+    <img
+      src="assets/photo_8.jpg"
+      alt="Freshly mowed and striped lawn at golden hour — finished work by Yard Barbers Lawn Care"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-5 pb-14 md:pb-20">
+      <!-- Eyebrow -->
+      <p class="text-cream/70 text-xs font-medium uppercase tracking-widest mb-3">Maiden, NC &amp; the Surrounding Area</p>
+
+      <h1 class="font-display font-semibold text-4xl sm:text-5xl md:text-6xl text-white leading-tight max-w-xl mb-5">
+        Your lawn, cut right — whenever you need it.
+      </h1>
+
+      <div class="flex items-center gap-2 mb-7">
+        <!-- Stars -->
+        <span class="flex items-center gap-0.5">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </span>
+        <span class="text-white font-semibold text-sm">5.0 · 18 Google reviews</span>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="tel:+18289990882"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-rust text-white font-semibold text-base hover:bg-rust-light transition-colors shadow-lg">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.55a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call (828) 999-0882
+        </a>
+        <a href="sms:+18289990882"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-white/70 text-white font-semibold text-base hover:bg-white/10 transition-colors">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Text Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust stat band -->
+  <section class="bg-cream-dark border-y border-charcoal/10 py-8" aria-label="At a glance">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid grid-cols-2 gap-6 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center sm:gap-16">
+        <div class="text-center">
+          <p class="font-display text-4xl font-semibold text-charcoal leading-none">5.0</p>
+          <p class="text-sm text-charcoal-light mt-1">Google Rating</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-4xl font-semibold text-charcoal leading-none">18</p>
+          <p class="text-sm text-charcoal-light mt-1">Google Reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why neighbors choose us -->
+  <section class="py-16 md:py-24 bg-cream" aria-label="Why choose us">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <!-- Left: prose -->
+        <div>
+          <p class="text-rust text-xs font-semibold uppercase tracking-widest mb-3">What sets us apart</p>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-charcoal leading-snug mb-5">
+            A lawn crew that actually shows up when you call.
+          </h2>
+          <p class="text-charcoal-light text-base leading-relaxed mb-6">
+            We know life doesn't always give you two weeks' notice. When the grass gets out of hand and you need it handled fast, we make same-day service happen. We serve Maiden and the surrounding area with the kind of attention a good lawn deserves.
+          </p>
+          <p class="text-charcoal-light text-base leading-relaxed">
+            Whether it's a regular mow schedule or a one-off cleanup, we handle it right — clean stripes, trimmed edges, no mess left behind.
+          </p>
+        </div>
+
+        <!-- Right: icon cards -->
+        <div class="grid grid-cols-1 gap-4">
+          <div class="card-hover flex items-start gap-4 p-5 rounded-2xl bg-cream-dark border border-charcoal/8">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-rust/10 flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="#B85C38" stroke-width="1.8" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-charcoal text-sm mb-0.5">Same-day service</p>
+              <p class="text-charcoal-light text-sm leading-relaxed">Call or text in the morning, get your lawn handled that day — even on short notice.</p>
+            </div>
+          </div>
+
+          <div class="card-hover flex items-start gap-4 p-5 rounded-2xl bg-cream-dark border border-charcoal/8">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-forest/10 flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="#3D5A40" stroke-width="1.8" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-charcoal text-sm mb-0.5">Residential lawn care</p>
+              <p class="text-charcoal-light text-sm leading-relaxed">Mowing, edging, and cleanup for homes across Maiden and the surrounding communities.</p>
+            </div>
+          </div>
+
+          <div class="card-hover flex items-start gap-4 p-5 rounded-2xl bg-cream-dark border border-charcoal/8">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-mustard/10 flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="#C8972A" stroke-width="1.8" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-charcoal text-sm mb-0.5">Responsive &amp; reliable</p>
+              <p class="text-charcoal-light text-sm leading-relaxed">Available 7 days a week, 8 AM to 8 PM. Reach us by call or text — we get back to you.</p>
+            </div>
+          </div>
+
+          <div class="card-hover flex items-start gap-4 p-5 rounded-2xl bg-cream-dark border border-charcoal/8">
+            <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-rust/10 flex items-center justify-center">
+              <svg width="20" height="20" fill="none" stroke="#B85C38" stroke-width="1.8" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-semibold text-charcoal text-sm mb-0.5">Pest treatment too</p>
+              <p class="text-charcoal-light text-sm leading-relaxed">Fire ant and pest treatment available alongside your regular lawn service — ask us when you call.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services grid -->
+  <section class="py-16 bg-cream-dark border-y border-charcoal/10" aria-label="Services">
+    <div class="max-w-5xl mx-auto px-5">
+      <p class="text-rust text-xs font-semibold uppercase tracking-widest mb-2 text-center">What we do</p>
+      <h2 class="font-display text-3xl font-semibold text-charcoal text-center mb-10">Our services</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-2xl mx-auto">
+        <div class="card-hover p-6 bg-cream rounded-2xl border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-forest/10 flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#3D5A40" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z" stroke="none" fill="#3D5A40" opacity="0.15"/>
+              <path d="M2 6c4 0 7-3 10-3s6 3 10 3"/>
+              <path d="M2 12c4 0 7-3 10-3s6 3 10 3"/>
+              <line x1="3" y1="3" x2="3" y2="21"/><line x1="21" y1="3" x2="21" y2="21"/>
+            </svg>
+          </div>
+          <p class="font-semibold text-charcoal mb-1">Lawn Mowing</p>
+          <p class="text-sm text-charcoal-light leading-relaxed">Regular and one-time mowing with clean stripes and properly trimmed edges.</p>
+        </div>
+
+        <div class="card-hover p-6 bg-cream rounded-2xl border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-rust/10 flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#B85C38" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9zM12 12C12 7 17 3 22 3c0 5-4 9-10 9z"/>
+            </svg>
+          </div>
+          <p class="font-semibold text-charcoal mb-1">Lawn Cleanup</p>
+          <p class="text-sm text-charcoal-light leading-relaxed">Edging, debris removal, and a clean finish — leaving your yard looking its best.</p>
+        </div>
+
+        <div class="card-hover p-6 bg-cream rounded-2xl border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-mustard/10 flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#C8972A" stroke-width="1.8" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <p class="font-semibold text-charcoal mb-1">Last-Minute Scheduling</p>
+          <p class="text-sm text-charcoal-light leading-relaxed">Need your lawn done today? We take last-minute calls and make it happen.</p>
+        </div>
+
+        <div class="card-hover p-6 bg-cream rounded-2xl border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-forest/10 flex items-center justify-center mb-4">
+            <svg width="20" height="20" fill="none" stroke="#3D5A40" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <p class="font-semibold text-charcoal mb-1">Fire Ant Treatment</p>
+          <p class="text-sm text-charcoal-light leading-relaxed">Pest treatment for fire ants available alongside your lawn service — just ask when you call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-16 md:py-20 bg-cream" aria-label="Our work">
+    <div class="max-w-5xl mx-auto px-5">
+      <p class="text-rust text-xs font-semibold uppercase tracking-widest mb-2 text-center">Our work</p>
+      <h2 class="font-display text-3xl font-semibold text-charcoal text-center mb-10">Lawns we've cared for</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-cream-dark">
+          <img src="assets/photo_1.jpg" alt="Striped lawn with brick home — finished mowing work" class="gallery-img" loading="lazy" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-cream-dark">
+          <img src="assets/photo_2.jpg" alt="Perfectly striped lawn closeup — finished mowing work" class="gallery-img" loading="lazy" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-cream-dark">
+          <img src="assets/photo_3.jpg" alt="Fall season lawn and shrub trim — finished landscaping work" class="gallery-img" loading="lazy" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-cream-dark">
+          <img src="assets/photo_6.jpg" alt="Striped front lawn — finished mowing work" class="gallery-img" loading="lazy" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-cream-dark">
+          <img src="assets/photo_9.jpg" alt="Morning striped lawn — finished mowing work" class="gallery-img" loading="lazy" />
+        </div>
+        <!-- 6th tile: decorative fill with a cream card for layout balance -->
+        <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-forest/8 flex items-center justify-center p-6">
+          <div class="text-center">
+            <svg width="36" height="36" fill="none" stroke="#3D5A40" stroke-width="1.4" viewBox="0 0 24 24" class="mx-auto mb-3">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <p class="font-display text-charcoal text-lg font-semibold">5.0 stars</p>
+            <p class="text-charcoal-light text-sm mt-1">18 Google reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-16 bg-charcoal" aria-label="Reviews">
+    <div class="max-w-5xl mx-auto px-5">
+      <p class="text-cream/60 text-xs font-semibold uppercase tracking-widest mb-2 text-center">What customers say</p>
+      <h2 class="font-display text-3xl font-semibold text-cream text-center mb-10">Google reviews</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Review 1 -->
+        <blockquote class="card-hover bg-charcoal-light rounded-2xl p-7 border border-cream/10">
+          <div class="flex items-center gap-0.5 mb-4">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-cream/90 text-base leading-relaxed mb-5 font-display italic">
+            "Called for an estimate and received same day service! Which is beyond amazing for such short notice!"
+          </p>
+          <footer class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-rust/30 flex items-center justify-center text-rust text-xs font-semibold">D</div>
+            <div>
+              <p class="text-cream text-sm font-medium">Dallas Payne</p>
+              <p class="text-cream/50 text-xs">Google review</p>
+            </div>
+          </footer>
+        </blockquote>
+
+        <!-- Review 2 -->
+        <blockquote class="card-hover bg-charcoal-light rounded-2xl p-7 border border-cream/10">
+          <div class="flex items-center gap-0.5 mb-4">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#C8972A" class="star-svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-cream/90 text-base leading-relaxed mb-5 font-display italic">
+            "Anytime we have needed a mow last minute, Yard Barbers has came through... This time we needed fire ant killer put down too. Devin said he was able to help."
+          </p>
+          <footer class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full bg-forest/30 flex items-center justify-center text-forest-light text-xs font-semibold">A</div>
+            <div>
+              <p class="text-cream text-sm font-medium">Angel Riggan</p>
+              <p class="text-cream/50 text-xs">Google review</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours + Map -->
+  <section class="py-16 md:py-20 bg-cream" aria-label="Hours and location">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <!-- Hours -->
+        <div>
+          <p class="text-rust text-xs font-semibold uppercase tracking-widest mb-2">When we're available</p>
+          <h2 class="font-display text-3xl font-semibold text-charcoal mb-6">Hours</h2>
+
+          <table class="w-full text-sm" aria-label="Business hours">
+            <tbody class="divide-y divide-charcoal/8">
+              <tr class="py-2">
+                <td class="py-2.5 text-charcoal font-medium pr-4">Monday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Tuesday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Wednesday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Thursday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Friday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Saturday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 text-charcoal font-medium pr-4">Sunday</td>
+                <td class="py-2.5 text-charcoal-light">8:00 AM – 8:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="mt-6 p-4 rounded-xl bg-cream-dark border border-charcoal/8">
+            <p class="text-sm text-charcoal-light">
+              <span class="font-medium text-charcoal">Serving Maiden, NC</span> and the surrounding area.<br />
+              Call or text anytime during business hours for a fast response.
+            </p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <p class="text-rust text-xs font-semibold uppercase tracking-widest mb-2">Where we are</p>
+          <h2 class="font-display text-3xl font-semibold text-charcoal mb-6">Location</h2>
+
+          <div class="rounded-2xl overflow-hidden border border-charcoal/10 shadow-sm">
+            <iframe
+              title="Yard Barbers Lawn Care location map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-81.2379683,35.582697,-81.1979683,35.606697&layer=mapnik&marker=35.594697,-81.2179683"
+              width="100%"
+              height="280"
+              style="border:0; display:block;"
+              loading="lazy"
+              aria-label="Map showing location in Maiden, NC"
+            ></iframe>
+          </div>
+
+          <p class="text-sm text-charcoal-light mt-3">
+            3437 S US 321 Hwy, Maiden, NC 28650
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 bg-forest" aria-label="Call to action">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold text-cream leading-snug mb-4">
+        Ready for a lawn that looks the part?
+      </h2>
+      <p class="text-cream/75 text-base mb-8 max-w-md mx-auto">
+        Call or text us — we're available 7 days a week and we can often get to you same day.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:+18289990882"
+           class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-rust text-white font-semibold text-base hover:bg-rust-light transition-colors shadow-lg">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.55a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call (828) 999-0882
+        </a>
+        <a href="sms:+18289990882"
+           class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-cream/50 text-cream font-semibold text-base hover:bg-cream/10 transition-colors">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal py-10" aria-label="Footer">
+    <div class="max-w-5xl mx-auto px-5">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <p class="font-display text-cream font-semibold text-lg">Yard Barbers Lawn Care, LLC</p>
+          <p class="text-cream/50 text-sm mt-0.5">Maiden, NC 28650</p>
+        </div>
+        <div class="flex flex-col sm:items-end gap-1">
+          <a href="tel:+18289990882" class="text-cream/80 hover:text-cream text-sm transition-colors">(828) 999-0882</a>
+          <p class="text-cream/40 text-xs">Mon–Sun, 8:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-cream/10">
+        <p class="text-cream/30 text-xs text-center">
+          &copy; 2026 Yard Barbers Lawn Care, LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

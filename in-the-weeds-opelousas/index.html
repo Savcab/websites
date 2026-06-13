@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In The Weeds LLC — Landscaping · Opelousas, LA</title>
+  <meta name="description" content="In The Weeds LLC — Professional landscaping, garden bed design & installation, and irrigation repair in Opelousas, LA. 5.0 stars · 11 Google reviews. Call or text (337) 331-3915." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:  '#F3E9D2',
+            'cream-dark': '#E8D9B8',
+            gold:   '#C8A24B',
+            'gold-dark': '#A8832B',
+            navy:   '#1B2A41',
+            red:    '#C1272D',
+            'red-dark': '#9E1E23',
+          },
+          fontFamily: {
+            display: ['"Alfa Slab One"', 'serif'],
+            condensed: ['Anton', 'sans-serif'],
+            body: ['"Source Sans 3"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Paper / halftone texture overlay */
+    body { background-color: #F3E9D2; overflow-x: clip; }
+    .paper-texture {
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(27,42,65,0.06) 1px, transparent 0);
+      background-size: 18px 18px;
+    }
+    .halftone {
+      background-image:
+        radial-gradient(circle at 2px 2px, rgba(200,162,75,0.12) 2px, transparent 0);
+      background-size: 22px 22px;
+    }
+    /* Double-rule border utility */
+    .double-rule-top {
+      border-top: 4px double #1B2A41;
+    }
+    .double-rule-bottom {
+      border-bottom: 4px double #1B2A41;
+    }
+    .double-rule-gold-top {
+      border-top: 4px double #C8A24B;
+    }
+    .double-rule-gold-bottom {
+      border-bottom: 4px double #C8A24B;
+    }
+    /* Starburst SVG CTA shape */
+    .starburst-btn {
+      position: relative;
+      display: inline-block;
+    }
+    /* Stamp effect */
+    .stamp-ring {
+      border: 3px solid #C1272D;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #F3E9D2, 0 0 0 5px #C1272D;
+    }
+    /* Vintage badge border */
+    .badge-border {
+      border: 3px solid #C8A24B;
+      box-shadow: inset 0 0 0 1px #C8A24B, 0 0 0 1px #C8A24B;
+    }
+    /* Aged paper section */
+    .aged-paper {
+      background-color: #EDD9A3;
+    }
+    /* Menu board row */
+    .menu-row {
+      border-bottom: 1px dashed #A8832B;
+    }
+    .menu-row:last-child {
+      border-bottom: none;
+    }
+    /* Hours board */
+    .hours-board {
+      background-color: #1B2A41;
+      border: 4px solid #C8A24B;
+      box-shadow: 6px 6px 0 #C8A24B44;
+    }
+    /* Open sign glow */
+    .open-sign {
+      background-color: #C1272D;
+      border: 3px solid #F3E9D2;
+      box-shadow: 0 0 0 3px #C1272D, 4px 4px 0 #9E1E23;
+    }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "In The Weeds LLC",
+    "telephone": "+13373313915",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5367 Interstate 49 South Service Rd",
+      "addressLocality": "Opelousas",
+      "addressRegion": "LA",
+      "postalCode": "70570",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.5035109,
+      "longitude": -92.0721083
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "11"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "17:00" }
+    ],
+    "areaServed": "Opelousas, LA and the surrounding area"
+  }
+  </script>
+</head>
+
+<body class="font-body text-navy paper-texture">
+
+  <!-- ===== STICKY CALL BAR ===== -->
+  <div class="sticky top-0 z-50 bg-navy double-rule-gold-bottom" style="border-bottom:3px solid #C8A24B;">
+    <div class="max-w-5xl mx-auto px-4 py-2 flex items-center justify-between gap-3">
+      <span class="font-condensed text-cream text-sm tracking-widest uppercase">In The Weeds LLC — Opelousas, LA</span>
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="tel:+13373313915"
+           class="bg-red text-cream font-condensed text-sm uppercase tracking-widest px-4 py-1.5 hover:bg-red-dark transition-colors"
+           style="border:2px solid #F3E9D2;">
+          Call (337) 331-3915
+        </a>
+        <a href="sms:+13373313915"
+           class="bg-gold text-navy font-condensed text-sm uppercase tracking-widest px-4 py-1.5 hover:bg-gold-dark transition-colors hidden sm:inline-block"
+           style="border:2px solid #1B2A41;">
+          Text Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO — BADGE + PHOTO ===== -->
+  <section class="relative min-h-[480px] md:min-h-[560px] flex items-center justify-center overflow-hidden">
+    <!-- Hero photo background -->
+    <img src="assets/photo_1.jpg" alt="Completed garden bed installation with colorful plantings and flagstone pathway in Opelousas, LA"
+         class="absolute inset-0 w-full h-full object-cover" />
+    <!-- Dark navy overlay for text legibility -->
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(27,42,65,0.72) 0%, rgba(27,42,65,0.55) 60%, rgba(27,42,65,0.80) 100%);"></div>
+    <!-- Halftone overlay -->
+    <div class="absolute inset-0 halftone opacity-30"></div>
+
+    <!-- Badge / shop-sign lockup -->
+    <div class="relative z-10 text-center px-6 py-8">
+      <!-- Outer double-rule ring -->
+      <div class="inline-block" style="border:3px solid #C8A24B; padding:3px;">
+        <div style="border:1px solid #C8A24B; padding:2px;">
+          <div class="px-8 py-8 md:px-14 md:py-10" style="background: rgba(27,42,65,0.70);">
+
+            <!-- Top rule -->
+            <div class="flex items-center gap-3 mb-4 justify-center">
+              <div class="h-px flex-1 bg-gold" style="max-width:60px;"></div>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 0L11 7H18L12 11L14 18L9 14L4 18L6 11L0 7H7Z" fill="#C8A24B"/>
+              </svg>
+              <div class="h-px flex-1 bg-gold" style="max-width:60px;"></div>
+            </div>
+
+            <!-- Business name -->
+            <h1 class="font-display text-cream leading-none mb-2" style="font-size: clamp(2rem, 7vw, 3.6rem); text-shadow: 2px 3px 0 rgba(0,0,0,0.5);">
+              IN THE WEEDS
+            </h1>
+            <div class="font-condensed text-gold tracking-[0.25em] text-base md:text-lg uppercase mb-3">LLC</div>
+
+            <!-- Bottom divider rule -->
+            <div class="flex items-center justify-center gap-2 mb-3">
+              <div class="h-px bg-gold opacity-60" style="width:40px;"></div>
+              <div class="w-2 h-2 rounded-full bg-gold opacity-70"></div>
+              <div class="h-px bg-gold opacity-60" style="width:40px;"></div>
+            </div>
+
+            <!-- City label -->
+            <div class="font-condensed text-cream tracking-[0.3em] text-sm uppercase mb-4">Opelousas, Louisiana</div>
+
+            <!-- Service descriptor -->
+            <div class="font-condensed text-gold text-xs tracking-[0.2em] uppercase" style="letter-spacing:0.22em;">
+              Landscape Design &amp; Installation
+            </div>
+
+            <!-- Bottom rule -->
+            <div class="flex items-center gap-3 mt-4 justify-center">
+              <div class="h-px flex-1 bg-gold" style="max-width:60px;"></div>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="4" stroke="#C8A24B" stroke-width="1.5" fill="none"/>
+                <circle cx="7" cy="7" r="1.5" fill="#C8A24B"/>
+              </svg>
+              <div class="h-px flex-1 bg-gold" style="max-width:60px;"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Rating below badge -->
+      <div class="mt-5 inline-flex items-center gap-2 px-5 py-2 bg-navy" style="border:2px solid #C8A24B;">
+        <div class="flex gap-0.5">
+          <!-- 5 stars -->
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+        </div>
+        <span class="font-condensed text-cream text-sm tracking-wide">5.0 &middot; 11 Google reviews</span>
+      </div>
+
+      <!-- Hero CTAs -->
+      <div class="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="tel:+13373313915"
+           class="font-condensed text-cream uppercase tracking-widest px-8 py-3 text-base transition-colors"
+           style="background:#C1272D; border:3px solid #F3E9D2; box-shadow:4px 4px 0 #9E1E23;">
+          Call (337) 331-3915
+        </a>
+        <a href="sms:+13373313915"
+           class="font-condensed text-navy uppercase tracking-widest px-8 py-3 text-base transition-colors"
+           style="background:#C8A24B; border:3px solid #1B2A41; box-shadow:4px 4px 0 #A8832B;">
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STAMP ROW ===== -->
+  <section class="bg-navy double-rule-gold-top double-rule-gold-bottom" style="border-top:3px solid #C8A24B; border-bottom:3px solid #C8A24B;">
+    <div class="max-w-5xl mx-auto px-4 py-6">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <!-- Stamp 1 -->
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-14 h-14 stamp-ring flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1z"/>
+            </svg>
+          </div>
+          <div class="font-display text-gold text-xl leading-none">5.0</div>
+          <div class="font-condensed text-cream text-xs tracking-widest uppercase">Google Rating</div>
+        </div>
+        <!-- Stamp 2 -->
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-14 h-14 stamp-ring flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="font-display text-gold text-xl leading-none">11</div>
+          <div class="font-condensed text-cream text-xs tracking-widest uppercase">Verified Reviews</div>
+        </div>
+        <!-- Stamp 3 -->
+        <div class="flex flex-col items-center gap-2">
+          <div class="w-14 h-14 stamp-ring flex items-center justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="font-display text-gold text-xl leading-none">Opelousas</div>
+          <div class="font-condensed text-cream text-xs tracking-widest uppercase">Louisiana</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES — VINTAGE MENU BOARD ===== -->
+  <section class="aged-paper double-rule-top double-rule-bottom py-12 px-4" style="background:#EDD9A3;">
+    <div class="max-w-3xl mx-auto">
+      <!-- Section header -->
+      <div class="text-center mb-8">
+        <div class="font-condensed text-navy text-xs tracking-[0.3em] uppercase mb-2">Our Services</div>
+        <div class="font-display text-navy text-3xl md:text-4xl leading-tight mb-3">What We Do</div>
+        <div class="flex items-center justify-center gap-3">
+          <div class="h-px bg-navy opacity-30 flex-1" style="max-width:80px;"></div>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="#1B2A41" xmlns="http://www.w3.org/2000/svg"><path d="M8 0l2.3 5.7H16l-4.8 3.5 1.8 5.8L8 11.8 3 15l1.8-5.8L0 5.7h5.7z"/></svg>
+          <div class="h-px bg-navy opacity-30 flex-1" style="max-width:80px;"></div>
+        </div>
+      </div>
+
+      <!-- Menu board container -->
+      <div style="background:#1B2A41; border:4px solid #C8A24B; box-shadow:6px 6px 0 #A8832B;">
+        <!-- Board header stripe -->
+        <div class="text-center py-3 px-4" style="border-bottom:2px solid #C8A24B; background:#C8A24B;">
+          <span class="font-condensed text-navy tracking-[0.3em] uppercase text-sm">Service Menu</span>
+        </div>
+        <!-- Service lines -->
+        <div class="px-6 py-4">
+          <!-- Row 1 -->
+          <div class="menu-row flex items-center gap-4 py-4" style="border-bottom:1px dashed #C8A24B44;">
+            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center" style="border:1px solid #C8A24B; border-radius:2px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 10 10H2A10 10 0 0 1 12 2z"/><path d="M2 12h20"/><path d="M12 12v10"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-condensed text-cream text-lg uppercase tracking-wider leading-none mb-0.5">Landscape Design</div>
+              <div class="text-gold text-xs font-body opacity-80">Custom designs tailored to your style and property</div>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flex items-center gap-4 py-4" style="border-bottom:1px dashed #C8A24B44;">
+            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center" style="border:1px solid #C8A24B; border-radius:2px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-condensed text-cream text-lg uppercase tracking-wider leading-none mb-0.5">Garden Bed Installation</div>
+              <div class="text-gold text-xs font-body opacity-80">Front and back beds, new construction &amp; renovations</div>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="flex items-center gap-4 py-4" style="border-bottom:1px dashed #C8A24B44;">
+            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center" style="border:1px solid #C8A24B; border-radius:2px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-condensed text-cream text-lg uppercase tracking-wider leading-none mb-0.5">Plant Selection &amp; Care</div>
+              <div class="text-gold text-xs font-body opacity-80">Expert advice on plantings and ongoing care guidance</div>
+            </div>
+          </div>
+          <!-- Row 4 -->
+          <div class="flex items-center gap-4 py-4" style="border-bottom:1px dashed #C8A24B44;">
+            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center" style="border:1px solid #C8A24B; border-radius:2px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12M12 12C12 7 7 2 2 2s0 10 5 10M12 12c0-5 5-10 10-10s0 10-5 10"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-condensed text-cream text-lg uppercase tracking-wider leading-none mb-0.5">Irrigation System Repair</div>
+              <div class="text-gold text-xs font-body opacity-80">Irrigation diagnostics and system restoration</div>
+            </div>
+          </div>
+          <!-- Row 5 -->
+          <div class="flex items-center gap-4 py-4">
+            <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center" style="border:1px solid #C8A24B; border-radius:2px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 17v-3a9 9 0 0 1 9-9 9 9 0 0 1 9 9v3"/><path d="M2 17h20"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-condensed text-cream text-lg uppercase tracking-wider leading-none mb-0.5">Lawn Care</div>
+              <div class="text-gold text-xs font-body opacity-80">Lawn maintenance for Opelousas and the surrounding area</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK PHOTO + ABOUT SPLIT ===== -->
+  <section class="py-12 px-4 paper-texture" style="background:#F3E9D2;">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Photo side -->
+        <div>
+          <div style="border:5px solid #1B2A41; box-shadow:8px 8px 0 #C8A24B;">
+            <img src="assets/photo_2.jpg" alt="Completed flagstone patio with garden plantings in Opelousas, LA"
+                 class="w-full block" style="display:block;" />
+          </div>
+        </div>
+        <!-- Text side -->
+        <div>
+          <div class="font-condensed text-red text-xs tracking-[0.3em] uppercase mb-2">Our Work</div>
+          <div class="font-display text-navy text-3xl md:text-4xl leading-tight mb-4 double-rule-bottom pb-3">
+            Outdoor Spaces Built to Last
+          </div>
+          <p class="text-navy text-base leading-relaxed mb-4">
+            We serve Opelousas and the surrounding area with landscape design, garden bed installation, planting expertise, and irrigation repair. Every project starts with understanding what you want — then we execute it.
+          </p>
+          <p class="text-navy text-base leading-relaxed">
+            From new construction landscaping to restoring tired beds, we work with residential and commercial properties throughout the region.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="py-12 px-4" style="background:#EDD9A3;">
+    <div class="max-w-5xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <div class="font-condensed text-red text-xs tracking-[0.3em] uppercase mb-2">What Customers Say</div>
+        <div class="font-display text-navy text-3xl md:text-4xl leading-tight">Straight From Google</div>
+        <div class="mt-2 inline-flex items-center gap-2 px-4 py-1.5 bg-navy">
+          <div class="flex gap-0.5">
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+          </div>
+          <span class="font-condensed text-cream text-xs tracking-wide">5.0 &middot; 11 Google reviews</span>
+        </div>
+      </div>
+
+      <!-- Review cards grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Review 1 -->
+        <div style="background:#F3E9D2; border:3px solid #1B2A41; box-shadow:5px 5px 0 #C8A24B;">
+          <div class="px-6 py-5">
+            <div class="flex gap-0.5 mb-3">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            </div>
+            <!-- Opening quote mark -->
+            <div class="font-display text-gold text-5xl leading-none mb-1" style="line-height:0.8;">&ldquo;</div>
+            <p class="text-navy text-sm leading-relaxed mb-4">
+              [Beth] did the landscaping on my new construction home four years ago. She spent time going over what I wanted and gave me a design that matched my style, then executed it perfectly. I am still totally happy with it. I had both front and back beds along the length of the house installed. She was very easy to work with, extremely helpful, reliable, knowledgeable, and reasonable.
+            </p>
+            <div class="double-rule-top pt-3 flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full flex items-center justify-center text-cream font-condensed text-xs" style="background:#1B2A41;">BL</div>
+              <div>
+                <div class="font-condensed text-navy text-xs tracking-wide uppercase">Becky Lalumia</div>
+                <div class="text-navy text-xs opacity-60">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div style="background:#F3E9D2; border:3px solid #1B2A41; box-shadow:5px 5px 0 #C8A24B;">
+          <div class="px-6 py-5">
+            <div class="flex gap-0.5 mb-3">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            </div>
+            <div class="font-display text-gold text-5xl leading-none mb-1" style="line-height:0.8;">&ldquo;</div>
+            <p class="text-navy text-sm leading-relaxed mb-4">
+              [The owner] is so knowledgeable and informative but also professional and kind. She has a great eye on all things landscaping and her skills are unmatched! I am so happy with the services she provided and the continued advice she gives for all things landscaping!
+            </p>
+            <div class="double-rule-top pt-3 flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full flex items-center justify-center text-cream font-condensed text-xs" style="background:#1B2A41;">MC</div>
+              <div>
+                <div class="font-condensed text-navy text-xs tracking-wide uppercase">Megan Callegari</div>
+                <div class="text-navy text-xs opacity-60">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 — spans full width on md -->
+        <div class="md:col-span-2" style="background:#F3E9D2; border:3px solid #1B2A41; box-shadow:5px 5px 0 #C8A24B;">
+          <div class="px-6 py-5">
+            <div class="flex gap-0.5 mb-3">
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 14 14" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.7 5.3L7 10.8 2.9 14l1.7-5.3L0 5.4h5.2z"/></svg>
+            </div>
+            <div class="font-display text-gold text-5xl leading-none mb-1" style="line-height:0.8;">&ldquo;</div>
+            <p class="text-navy text-sm leading-relaxed mb-4">
+              I have nothing but positive things to say about these folks. Elizabeth is so knowledgeable about plantings and their care. My beds were a mess and now they are beautiful. They also fixed my irrigation systems. I only had to ask for something and it was done. I look forward to a long relationship with them. Can't recommend them enough.
+            </p>
+            <div class="double-rule-top pt-3 flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full flex items-center justify-center text-cream font-condensed text-xs" style="background:#1B2A41;">EC</div>
+              <div>
+                <div class="font-condensed text-navy text-xs tracking-wide uppercase">Ednadeen Corley</div>
+                <div class="text-navy text-xs opacity-60">Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS + MAP ===== -->
+  <section class="py-12 px-4 paper-texture" style="background:#F3E9D2;">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <div class="font-condensed text-red text-xs tracking-[0.3em] uppercase mb-2">Find Us</div>
+        <div class="font-display text-navy text-3xl md:text-4xl leading-tight">Hours &amp; Location</div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+        <!-- Hours board -->
+        <div>
+          <div class="hours-board p-0 overflow-hidden">
+            <!-- Header -->
+            <div class="px-6 py-3 flex items-center justify-between" style="background:#C8A24B; border-bottom:2px solid #F3E9D2;">
+              <span class="font-condensed text-navy tracking-[0.25em] uppercase text-sm">Business Hours</span>
+              <div class="open-sign px-3 py-1">
+                <span class="font-condensed text-cream text-xs tracking-widest uppercase">Weekdays</span>
+              </div>
+            </div>
+            <!-- Hours rows -->
+            <div class="px-6 py-4">
+              <table class="w-full text-sm">
+                <tbody>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Monday</td>
+                    <td class="text-cream text-right py-2.5">7:00 AM &ndash; 5:00 PM</td>
+                  </tr>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Tuesday</td>
+                    <td class="text-cream text-right py-2.5">7:00 AM &ndash; 5:00 PM</td>
+                  </tr>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Wednesday</td>
+                    <td class="text-cream text-right py-2.5">7:00 AM &ndash; 5:00 PM</td>
+                  </tr>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Thursday</td>
+                    <td class="text-cream text-right py-2.5">7:00 AM &ndash; 5:00 PM</td>
+                  </tr>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Friday</td>
+                    <td class="text-cream text-right py-2.5">7:00 AM &ndash; 5:00 PM</td>
+                  </tr>
+                  <tr class="border-b" style="border-color:#C8A24B33;">
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Saturday</td>
+                    <td class="text-cream text-right py-2.5 opacity-50">Closed</td>
+                  </tr>
+                  <tr>
+                    <td class="font-condensed text-gold uppercase tracking-wide py-2.5 pr-4">Sunday</td>
+                    <td class="text-cream text-right py-2.5 opacity-50">Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Address footer -->
+            <div class="px-6 py-3" style="border-top:2px solid #C8A24B44; background:#0D1E30;">
+              <div class="flex gap-2 items-start">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 flex-shrink-0">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span class="text-cream text-xs opacity-70 leading-relaxed">5367 Interstate 49 South Service Rd, Opelousas, LA 70570</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div style="border:5px solid #1B2A41; box-shadow:6px 6px 0 #C8A24B;">
+          <iframe
+            title="In The Weeds LLC location map"
+            width="100%"
+            height="320"
+            style="display:block; border:0;"
+            loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-92.0921083,30.4915109,-92.0521083,30.5155109&layer=mapnik&marker=30.5035109,-92.0721083">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STARBURST CTA ===== -->
+  <section class="bg-navy py-14 px-4 relative overflow-hidden" style="border-top:4px double #C8A24B; border-bottom:4px double #C8A24B;">
+    <!-- Halftone texture -->
+    <div class="absolute inset-0 halftone opacity-20 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-2xl mx-auto text-center">
+      <!-- Starburst decoration -->
+      <div class="flex justify-center mb-6">
+        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <!-- 16-point starburst -->
+            <polygon points="45,2 47.5,35 52,2 51,35.5 58,4 54,36.5 63,8 56.5,38 72,14 60,40 79,22 63.5,42.5 86,32 66.5,45 86,58 63.5,47.5 79,68 60,50 72,76 56.5,52 63,82 54,53.5 58,86 51,54.5 52,88 47.5,55 45,88 42.5,55 38,88 39,54.5 32,86 36,53.5 27,82 33.5,52 18,76 30,50 11,68 26.5,47.5 4,58 23.5,45 4,32 26.5,42.5 11,22 27.5,40 18,14 33.5,38 27,8 36,36.5 32,4 39,35.5 38,2 42.5,35" fill="#C8A24B" opacity="0.25"/>
+            <!-- Inner circle -->
+            <circle cx="45" cy="45" r="28" fill="#C1272D" stroke="#F3E9D2" stroke-width="2"/>
+            <circle cx="45" cy="45" r="24" fill="none" stroke="#F3E9D2" stroke-width="1" stroke-dasharray="3 3"/>
+            <text x="45" y="40" text-anchor="middle" font-family="Anton, sans-serif" font-size="10" fill="#F3E9D2" letter-spacing="1">CALL OR</text>
+            <text x="45" y="54" text-anchor="middle" font-family="Anton, sans-serif" font-size="10" fill="#F3E9D2" letter-spacing="1">TEXT US</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="font-condensed text-gold text-xs tracking-[0.3em] uppercase mb-3">Ready to Get Started?</div>
+      <div class="font-display text-cream text-3xl md:text-4xl leading-tight mb-3">
+        Let&rsquo;s Talk About Your Yard
+      </div>
+      <p class="text-cream text-base opacity-75 mb-8 max-w-lg mx-auto leading-relaxed">
+        We serve Opelousas and the surrounding area. Call or text us during business hours — Monday through Friday, 7 AM to 5 PM.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+13373313915"
+           class="font-condensed text-cream uppercase tracking-widest px-10 py-4 text-lg transition-all"
+           style="background:#C1272D; border:3px solid #F3E9D2; box-shadow:5px 5px 0 #9E1E23;">
+          Call (337) 331-3915
+        </a>
+        <a href="sms:+13373313915"
+           class="font-condensed text-navy uppercase tracking-widest px-10 py-4 text-lg transition-all"
+           style="background:#C8A24B; border:3px solid #1B2A41; box-shadow:5px 5px 0 #A8832B;">
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-navy px-4 py-8" style="border-top:3px solid #C8A24B44;">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-center sm:text-left">
+          <div class="font-display text-cream text-xl mb-1">In The Weeds LLC</div>
+          <div class="font-condensed text-gold text-xs tracking-widest uppercase">Opelousas, Louisiana</div>
+        </div>
+        <div class="text-center">
+          <a href="tel:+13373313915" class="font-condensed text-cream text-sm tracking-wide hover:text-gold transition-colors">
+            (337) 331-3915
+          </a>
+          <div class="text-gold text-xs opacity-60 mt-1">Mon &ndash; Fri &nbsp;7 AM &ndash; 5 PM</div>
+        </div>
+      </div>
+      <div class="mt-6 pt-4 text-center" style="border-top:1px solid #C8A24B33;">
+        <div class="text-cream text-xs opacity-40">&copy; 2026 In The Weeds LLC. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

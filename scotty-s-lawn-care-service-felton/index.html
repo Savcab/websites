@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scotty's Lawn Care Service LLC — Felton, DE</title>
+  <meta name="description" content="Scotty's Lawn Care Service LLC in Felton, DE. Lawn mowing, mulch installation, shrub trimming, weed control, and hardscape work. Call or text (302) 331-0767." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Anton"', 'sans-serif'],
+            body: ['"Oswald"', 'sans-serif'],
+            mono: ['"Share Tech Mono"', 'monospace'],
+          },
+          colors: {
+            orange: '#E85D04',
+            'orange-dark': '#C44D03',
+            ink: '#0A0A0A',
+            offwhite: '#F4F4F0',
+            gray: '#D1D1CC',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <style>
+    body { overflow-x: hidden; }
+    .border-ink { border-color: #0A0A0A; }
+    .shadow-brutal { box-shadow: 6px 6px 0 #0A0A0A; }
+    .shadow-brutal-sm { box-shadow: 4px 4px 0 #0A0A0A; }
+    .shadow-brutal-lg { box-shadow: 8px 8px 0 #0A0A0A; }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track { animation: marquee 22s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+  </style>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Scotty's Lawn Care Service LLC",
+    "telephone": "+13023310767",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "662 Tall Oak Dr",
+      "addressLocality": "Felton",
+      "addressRegion": "DE",
+      "postalCode": "19943",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.011329499999995,
+      "longitude": -75.5436141
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "19",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:30", "closes": "14:00" }
+    ],
+    "areaServed": {
+      "@type": "Place",
+      "name": "Felton, DE and the surrounding area"
+    },
+    "url": "https://savcab.github.io/websites/scotty-s-lawn-care-service-felton/"
+  }
+  </script>
+</head>
+<body class="bg-offwhite font-body overflow-x-hidden">
+
+  <!-- NAV -->
+  <nav class="bg-ink border-b-4 border-ink sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex flex-col">
+        <span class="font-display text-offwhite text-xl leading-none tracking-wide uppercase">SCOTTY'S</span>
+        <span class="font-mono text-[#E85D04] text-xs tracking-widest uppercase">LAWN CARE SERVICE LLC</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="sms:+13023310767"
+           class="hidden sm:inline-flex items-center gap-2 border-2 border-[#E85D04] text-[#E85D04] font-body font-semibold uppercase text-sm px-4 py-2 tracking-wider hover:bg-[#E85D04] hover:text-ink transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          TEXT US
+        </a>
+        <a href="tel:+13023310767"
+           class="inline-flex items-center gap-2 bg-[#E85D04] text-ink font-body font-bold uppercase text-sm px-5 py-2 border-2 border-ink shadow-brutal-sm tracking-wider hover:bg-[#C44D03] transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.08 6.08l1.12-1.12a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          CALL NOW
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative bg-ink overflow-hidden">
+    <div class="relative">
+      <img
+        src="assets/photo_1.jpg"
+        alt="Completed deck and paver patio with gravel surround by Scotty's Lawn Care Service LLC"
+        class="w-full object-cover"
+        style="height: clamp(340px, 55vw, 600px); object-position: center;"
+        loading="eager"
+      />
+      <!-- dark overlay bottom half -->
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.3) 50%, rgba(10,10,10,0.05) 100%);"></div>
+      <!-- Orange slab -->
+      <div class="absolute bottom-0 left-0 right-0 pb-6 px-4 md:px-10">
+        <div class="max-w-6xl mx-auto">
+          <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase block mb-2">FELTON, DELAWARE</span>
+          <h1 class="font-display text-offwhite uppercase leading-none mb-4" style="font-size: clamp(2.5rem, 8vw, 5.5rem); letter-spacing: 0.01em;">
+            SCOTTY'S<br/>LAWN CARE<br/>SERVICE
+          </h1>
+          <div class="flex flex-wrap items-center gap-4 mb-6">
+            <div class="flex items-center gap-2 bg-[#E85D04] border-2 border-ink px-4 py-2 shadow-brutal-sm">
+              <div class="flex gap-0.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A0A0A" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A0A0A" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A0A0A" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A0A0A" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A0A0A" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="font-body font-bold text-ink text-sm tracking-wide">5.0 · 19 Google reviews</span>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="tel:+13023310767"
+               class="inline-flex items-center gap-2 bg-[#E85D04] text-ink font-body font-bold uppercase text-base px-7 py-3 border-2 border-ink shadow-brutal tracking-wider hover:bg-[#C44D03] transition-colors">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.08 6.08l1.12-1.12a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              CALL (302) 331-0767
+            </a>
+            <a href="sms:+13023310767"
+               class="inline-flex items-center gap-2 border-2 border-offwhite text-offwhite font-body font-semibold uppercase text-base px-7 py-3 tracking-wider hover:bg-offwhite hover:text-ink transition-colors">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              OR TEXT US
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE SERVICES STRIP -->
+  <div class="bg-[#E85D04] border-y-4 border-ink overflow-hidden py-3">
+    <div class="flex whitespace-nowrap marquee-track">
+      <!-- doubled for seamless loop -->
+      <span class="font-mono text-ink text-sm tracking-widest uppercase inline-flex items-center gap-6 px-6">
+        LAWN MOWING
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        MULCH INSTALLATION
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        SHRUB TRIMMING
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        WEED CONTROL
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        FLOWER BED CLEANUP
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        HARDSCAPE WORK
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        FELTON, DE &amp; SURROUNDING AREA
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+      </span>
+      <span class="font-mono text-ink text-sm tracking-widest uppercase inline-flex items-center gap-6 px-6">
+        LAWN MOWING
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        MULCH INSTALLATION
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        SHRUB TRIMMING
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        WEED CONTROL
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        FLOWER BED CLEANUP
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        HARDSCAPE WORK
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+        FELTON, DE &amp; SURROUNDING AREA
+        <span class="inline-block w-3 h-3 bg-ink rotate-45"></span>
+      </span>
+    </div>
+  </div>
+
+  <!-- SERVICES GRID -->
+  <section class="bg-offwhite py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10">
+        <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase">WHAT WE DO</span>
+        <h2 class="font-display text-ink uppercase text-4xl md:text-5xl mt-1 leading-none">OUR SERVICES</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- SERVICE 01 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-offwhite hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-[#E85D04] text-xs tracking-widest block mb-3">SERVICE 01</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">LAWN MOWING</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Regular cuts that keep your yard sharp. Same-day availability when schedules allow — call and we get it done.</p>
+        </div>
+
+        <!-- SERVICE 02 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-[#E85D04] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-ink text-xs tracking-widest block mb-3">SERVICE 02</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">MULCH INSTALLATION</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Old mulch removed, new material laid clean. Black, red, or natural — installed right the first time.</p>
+        </div>
+
+        <!-- SERVICE 03 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-offwhite hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-[#E85D04] text-xs tracking-widest block mb-3">SERVICE 03</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><path d="M12 22V12m0 0C9 9 6 6 2 6c0 4 2.5 7.5 6 9"/><path d="M12 12c3-3 6-6 10-6 0 4-2.5 7.5-6 9"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">SHRUB TRIMMING</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Precision shaping and full removal when needed. We handle overgrown shrubs that have taken over your beds.</p>
+        </div>
+
+        <!-- SERVICE 04 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-offwhite hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-[#E85D04] text-xs tracking-widest block mb-3">SERVICE 04</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">WEED CONTROL</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Crabgrass infestations, invasive weeds, overgrown beds — we clear it and restore your lawn's curb appeal.</p>
+        </div>
+
+        <!-- SERVICE 05 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-[#E85D04] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-ink text-xs tracking-widest block mb-3">SERVICE 05</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><rect x="3" y="3" width="18" height="18" rx="0" ry="0"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">FLOWER BED CLEANUP</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Edging, cleanup, and planting to turn neglected flower beds into the highlight of your property.</p>
+        </div>
+
+        <!-- SERVICE 06 -->
+        <div class="border-4 border-ink p-6 shadow-brutal bg-offwhite hover:translate-x-[-2px] hover:translate-y-[-2px] transition-transform">
+          <span class="font-mono text-[#E85D04] text-xs tracking-widest block mb-3">SERVICE 06</span>
+          <div class="w-10 h-10 border-2 border-ink mb-4 flex items-center justify-center bg-ink">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E85D04" stroke-width="2" stroke-linecap="square"><rect x="2" y="7" width="20" height="14"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <h3 class="font-display text-ink uppercase text-2xl leading-tight mb-2">HARDSCAPE WORK</h3>
+          <p class="font-body text-ink text-sm leading-relaxed font-light">Paver patios, walkways, and gravel installations. Outdoor spaces built solid to last.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT GRID -->
+  <section class="bg-ink border-y-4 border-ink py-14 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-0">
+        <div class="border-4 border-[#E85D04] p-10 flex flex-col items-start">
+          <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase mb-3">GOOGLE RATING</span>
+          <span class="font-display text-offwhite uppercase leading-none" style="font-size: clamp(4rem, 12vw, 7rem);">5.0</span>
+          <div class="flex gap-1 mt-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+        </div>
+        <div class="border-4 border-[#E85D04] border-l-0 sm:border-l-4 p-10 flex flex-col items-start border-t-0 sm:border-t-4">
+          <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase mb-3">GOOGLE REVIEWS</span>
+          <span class="font-display text-offwhite uppercase leading-none" style="font-size: clamp(4rem, 12vw, 7rem);">19</span>
+          <span class="font-body text-[#D1D1CC] text-sm uppercase tracking-wider mt-3">Verified Google Reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="bg-offwhite py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase">OUR WORK</span>
+          <h2 class="font-display text-ink uppercase text-4xl md:text-5xl mt-1 leading-none">RECENT JOBS</h2>
+        </div>
+        <span class="font-mono text-ink text-xs tracking-widest uppercase border-b-2 border-[#E85D04] pb-1">FELTON, DE + SURROUNDING AREA</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_2.jpg" alt="Manicured shrubs and mulched flower bed" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_3.jpg" alt="Stone-bordered mulch bed around mailbox" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_5.jpg" alt="Fresh black mulch bed with plantings" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_6.jpg" alt="Red gravel mulch bed with paver edge" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_7.jpg" alt="Trimmed shrubs with fresh mulch, curb appeal" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+        <div class="border-4 border-ink overflow-hidden shadow-brutal">
+          <img src="assets/photo_9.jpg" alt="White gravel with boxwood balls and paver walkway" class="w-full h-56 object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="bg-ink py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10">
+        <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase">WHAT CUSTOMERS SAY</span>
+        <h2 class="font-display text-offwhite uppercase text-4xl md:text-5xl mt-1 leading-none">GOOGLE REVIEWS</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="border-4 border-[#E85D04] p-8 shadow-[6px_6px_0_#E85D04]">
+          <div class="flex gap-1 mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="font-body text-offwhite text-base leading-relaxed font-light mb-6">"I called on a Saturday and Scotty was there by Sunday with a reasonable quote. He took care of a disaster infestation of crab grass, removed some shrubs, and completely removed all my old mulch. My flowerbed is no longer a sight for sore eyes. He is extremely knowledgeable and easy to work with. I will definitely be using him again."</p>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="font-body font-semibold text-offwhite uppercase tracking-wide text-sm">William Jenkins</span>
+              <span class="font-mono text-[#E85D04] text-xs tracking-widest block">GOOGLE REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-4 border-[#E85D04] p-8 shadow-[6px_6px_0_#E85D04]">
+          <div class="flex gap-1 mb-4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#E85D04" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="font-body text-offwhite text-base leading-relaxed font-light mb-6">"Fast service, great work performed! Called around 11 am yard cut the same day! Would definitely recommend!!!"</p>
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="font-body font-semibold text-offwhite uppercase tracking-wide text-sm">Gregory Cutts</span>
+              <span class="font-mono text-[#E85D04] text-xs tracking-widest block">GOOGLE REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + MAP -->
+  <section class="bg-offwhite py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-10">
+        <span class="font-mono text-[#E85D04] text-xs tracking-[0.3em] uppercase">WHEN WE'RE OPEN</span>
+        <h2 class="font-display text-ink uppercase text-4xl md:text-5xl mt-1 leading-none">HOURS &amp; LOCATION</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Hours table -->
+        <div class="border-4 border-ink shadow-brutal bg-offwhite">
+          <div class="bg-ink px-6 py-3">
+            <span class="font-mono text-[#E85D04] text-xs tracking-widest uppercase">SCHEDULE</span>
+          </div>
+          <table class="w-full">
+            <tbody class="font-body text-sm">
+              <tr class="border-b-2 border-ink">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Monday</td>
+                <td class="px-6 py-3 text-right text-ink">9:00 AM – 5:00 PM</td>
+              </tr>
+              <tr class="border-b-2 border-ink bg-[#E85D04]/10">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Tuesday</td>
+                <td class="px-6 py-3 text-right text-ink">8:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b-2 border-ink">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Wednesday</td>
+                <td class="px-6 py-3 text-right text-ink">8:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b-2 border-ink bg-[#E85D04]/10">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Thursday</td>
+                <td class="px-6 py-3 text-right text-ink">8:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b-2 border-ink">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Friday</td>
+                <td class="px-6 py-3 text-right text-ink">8:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b-2 border-ink bg-[#E85D04]/10">
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Saturday</td>
+                <td class="px-6 py-3 text-right text-ink">8:00 AM – 2:30 PM</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 font-semibold uppercase tracking-wide text-ink">Sunday</td>
+                <td class="px-6 py-3 text-right text-ink">9:30 AM – 2:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="border-t-4 border-ink px-6 py-4 bg-ink">
+            <p class="font-mono text-[#E85D04] text-xs tracking-widest uppercase">662 TALL OAK DR, FELTON, DE 19943</p>
+            <p class="font-body text-offwhite text-sm mt-1">Serving Felton and the surrounding area</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="border-4 border-ink shadow-brutal overflow-hidden" style="min-height: 360px;">
+          <iframe
+            title="Scotty's Lawn Care Service LLC location map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-75.5636141,38.999329499999995,-75.5236141,39.023329499999995&layer=mapnik&marker=39.011329499999995,-75.5436141"
+            class="w-full h-full"
+            style="min-height: 360px; border: none;"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SLAB CTA -->
+  <section class="bg-[#E85D04] border-y-4 border-ink py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="font-mono text-ink text-xs tracking-[0.3em] uppercase block mb-4">READY TO GET STARTED?</span>
+      <h2 class="font-display text-ink uppercase leading-none mb-6" style="font-size: clamp(2.5rem, 7vw, 5rem);">GET A QUOTE TODAY</h2>
+      <p class="font-body text-ink text-lg mb-10 max-w-xl mx-auto font-light">Call or text us — we respond fast and get the job done right.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+13023310767"
+           class="inline-flex items-center justify-center gap-3 bg-ink text-offwhite font-body font-bold uppercase text-lg px-10 py-4 border-2 border-ink shadow-brutal-lg tracking-widest hover:bg-[#222] transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.08 6.08l1.12-1.12a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          CALL (302) 331-0767
+        </a>
+        <a href="sms:+13023310767"
+           class="inline-flex items-center justify-center gap-3 bg-transparent text-ink font-body font-semibold uppercase text-lg px-10 py-4 border-2 border-ink tracking-widest hover:bg-ink hover:text-offwhite transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          SEND A TEXT
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink border-t-4 border-[#E85D04] py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <span class="font-display text-offwhite text-2xl uppercase block leading-none">SCOTTY'S LAWN CARE</span>
+        <span class="font-mono text-[#E85D04] text-xs tracking-widest uppercase block mt-1">SERVICE LLC — FELTON, DE</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
+        <a href="tel:+13023310767" class="font-body text-offwhite hover:text-[#E85D04] transition-colors text-sm uppercase tracking-wider">(302) 331-0767</a>
+        <span class="hidden sm:block text-[#E85D04]">|</span>
+        <span class="font-body text-[#D1D1CC] text-sm">662 Tall Oak Dr, Felton, DE 19943</span>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t-2 border-[#222]">
+      <p class="font-mono text-[#D1D1CC] text-xs tracking-wide">&copy; 2026 Scotty's Lawn Care Service LLC. Felton, DE and the surrounding area.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

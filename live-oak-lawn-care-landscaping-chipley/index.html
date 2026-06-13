@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Oak Lawn Care &amp; Landscaping — Chipley, FL</title>
+<meta name="description" content="Lawn mowing, weed eating, fence clearing, and overgrown property cleanup in Chipley, FL. 5-star rated. Call or text (850) 703-9649.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        retro: {
+          red:   '#C1272D',
+          cream: '#F3E9D2',
+          navy:  '#1B2A41',
+          gold:  '#C8A24B',
+          darkred: '#8B1A1E',
+          parchment: '#E8D9B8',
+        }
+      },
+      fontFamily: {
+        slab:   ['"Alfa Slab One"', 'serif'],
+        condensed: ['"Oswald"', 'sans-serif'],
+        body:   ['"Source Serif 4"', 'Georgia', 'serif'],
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  /* Paper/halftone texture overlay */
+  body {
+    background-color: #F3E9D2;
+    overflow-x: clip;
+  }
+  .paper-texture {
+    position: relative;
+  }
+  .paper-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
+    background-size: 4px 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .double-rule {
+    border-top: 3px solid #1B2A41;
+    border-bottom: 1px solid #1B2A41;
+    padding-top: 3px;
+  }
+  .double-rule-bottom {
+    border-top: 1px solid #1B2A41;
+    border-bottom: 3px solid #1B2A41;
+    padding-bottom: 3px;
+  }
+  .double-rule-gold {
+    border-top: 3px solid #C8A24B;
+    border-bottom: 1px solid #C8A24B;
+    padding-top: 3px;
+  }
+  .stamp-border {
+    border: 3px solid #1B2A41;
+    box-shadow: 4px 4px 0 #1B2A41;
+  }
+  .stamp-border-red {
+    border: 3px solid #C1272D;
+    box-shadow: 4px 4px 0 #8B1A1E;
+  }
+  .halftone-bg {
+    background-color: #1B2A41;
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 6px 6px;
+  }
+  .starburst {
+    clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%,
+      79% 91%, 50% 70%, 21% 91%, 32% 57%,
+      2% 35%, 39% 35%
+    );
+  }
+  /* Vintage badge SVG seal */
+  .badge-seal {
+    filter: drop-shadow(2px 2px 0px rgba(27,42,65,0.4));
+  }
+  .menu-item {
+    border-bottom: 1px dashed #1B2A41;
+  }
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  /* Retro open sign */
+  .open-sign {
+    background: #C1272D;
+    border: 4px solid #8B1A1E;
+    box-shadow: inset 0 0 0 2px #F3E9D2, 3px 3px 0 #8B1A1E;
+  }
+  /* Hours board */
+  .hours-board {
+    background: #1B2A41;
+    border: 3px solid #C8A24B;
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+  }
+  .hours-row {
+    border-bottom: 1px solid rgba(200,162,75,0.3);
+  }
+  .hours-row:last-child {
+    border-bottom: none;
+  }
+  /* Photo gallery stamp frames */
+  .photo-frame {
+    border: 4px solid #1B2A41;
+    box-shadow: 6px 6px 0 #C8A24B;
+  }
+  /* Star rating vintage style */
+  .star-gold {
+    color: #C8A24B;
+  }
+  /* Quote card */
+  .quote-card {
+    background: #E8D9B8;
+    border-left: 5px solid #C1272D;
+    border: 2px solid #1B2A41;
+    box-shadow: 3px 3px 0 #C8A24B;
+  }
+  /* Starburst CTA */
+  .burst-cta {
+    position: relative;
+    display: inline-block;
+  }
+  .burst-bg {
+    background: #C1272D;
+    transform: rotate(-2deg);
+    border: 3px solid #8B1A1E;
+    box-shadow: 4px 4px 0 #8B1A1E;
+  }
+</style>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Live Oak Lawn Care & Landscaping LLC",
+  "telephone": "+18507039649",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2186 Bonnett Pond Rd",
+    "addressLocality": "Chipley",
+    "addressRegion": "FL",
+    "postalCode": "32428",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.672953399999997,
+    "longitude": -85.6365266
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "11",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "05:00",
+      "closes": "21:00"
+    }
+  ],
+  "areaServed": {
+    "@type": "City",
+    "name": "Chipley, FL and the surrounding area"
+  }
+}
+</script>
+</head>
+
+<body class="font-body bg-retro-cream">
+
+<!-- ============================================================
+     STICKY CALL BAR
+============================================================ -->
+<div class="sticky top-0 z-50 halftone-bg py-2 px-4">
+  <div class="max-w-5xl mx-auto flex items-center justify-between gap-3">
+    <span class="font-condensed text-retro-cream text-sm tracking-widest uppercase opacity-80">Live Oak Lawn Care &amp; Landscaping</span>
+    <div class="flex items-center gap-2">
+      <a href="tel:+18507039649"
+         class="inline-flex items-center gap-1.5 bg-retro-red text-retro-cream font-condensed font-bold text-sm px-4 py-1.5 tracking-wider uppercase"
+         style="border: 2px solid #8B1A1E; box-shadow: 2px 2px 0 #8B1A1E;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.63 3.47 2 2 0 013.6 1.27h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.87a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (850) 703-9649
+      </a>
+      <a href="sms:+18507039649"
+         class="inline-flex items-center gap-1.5 bg-retro-gold text-retro-navy font-condensed font-bold text-sm px-3 py-1.5 tracking-wider uppercase hidden sm:inline-flex"
+         style="border: 2px solid #8B6B20; box-shadow: 2px 2px 0 #8B6B20;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Text Us
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HERO — SVG BADGE / SHOP SIGN + PHOTO
+============================================================ -->
+<section class="relative paper-texture overflow-hidden" style="min-height: 560px;">
+  <!-- Background hero photo -->
+  <div class="absolute inset-0">
+    <img src="assets/photo_1.jpg" alt="Neatly mowed residential lawn in Chipley, FL"
+         class="w-full h-full object-cover object-center" style="filter: brightness(0.38) sepia(0.2);">
+    <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(27,42,65,0.55) 0%, rgba(27,42,65,0.75) 100%);"></div>
+  </div>
+
+  <!-- Double rule top bar -->
+  <div class="relative z-10 pt-4 px-4">
+    <div class="max-w-3xl mx-auto double-rule-gold"></div>
+  </div>
+
+  <!-- Badge / Shop Sign lockup -->
+  <div class="relative z-10 flex flex-col items-center justify-center px-4 py-10 md:py-14">
+    <!-- SVG Seal Badge -->
+    <div class="badge-seal mb-4">
+      <svg viewBox="0 0 320 320" width="300" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Live Oak Lawn Care and Landscaping shop sign badge">
+        <!-- Outer gear ring -->
+        <circle cx="160" cy="160" r="148" fill="#1B2A41" stroke="#C8A24B" stroke-width="4"/>
+        <circle cx="160" cy="160" r="138" fill="none" stroke="#C8A24B" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <!-- Decorative notches on outer ring -->
+        <circle cx="160" cy="160" r="128" fill="#C1272D" stroke="#8B1A1E" stroke-width="2"/>
+        <!-- Inner cream field -->
+        <circle cx="160" cy="160" r="112" fill="#F3E9D2" stroke="#1B2A41" stroke-width="3"/>
+        <circle cx="160" cy="160" r="106" fill="none" stroke="#C8A24B" stroke-width="1.5"/>
+
+        <!-- Top arc text: CHIPLEY, FLORIDA -->
+        <path id="topArc" d="M 70,160 A 90,90 0 0,1 250,160" fill="none"/>
+        <text font-family="Oswald, sans-serif" font-weight="700" font-size="13" fill="#1B2A41" letter-spacing="3">
+          <textPath href="#topArc" startOffset="50%" text-anchor="middle">CHIPLEY, FLORIDA</textPath>
+        </text>
+
+        <!-- Bottom arc text: LAWN CARE & LANDSCAPING -->
+        <path id="bottomArc" d="M 68,170 A 92,92 0 0,0 252,170" fill="none"/>
+        <text font-family="Oswald, sans-serif" font-weight="700" font-size="11" fill="#1B2A41" letter-spacing="2">
+          <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">LAWN CARE &amp; LANDSCAPING</textPath>
+        </text>
+
+        <!-- Horizontal dividers -->
+        <line x1="75" y1="120" x2="245" y2="120" stroke="#C8A24B" stroke-width="1.5"/>
+        <line x1="75" y1="200" x2="245" y2="200" stroke="#C8A24B" stroke-width="1.5"/>
+
+        <!-- Small decorative leaf icons -->
+        <path d="M 75 160 Q 78 154 84 156 Q 78 162 75 160Z" fill="#C8A24B"/>
+        <path d="M 245 160 Q 242 154 236 156 Q 242 162 245 160Z" fill="#C8A24B"/>
+
+        <!-- Star row -->
+        <text x="160" y="135" text-anchor="middle" font-size="12" fill="#C8A24B" letter-spacing="4" font-family="serif">&#9733; &#9733; &#9733; &#9733; &#9733;</text>
+
+        <!-- Main business name — two lines -->
+        <text x="160" y="162" text-anchor="middle"
+              font-family="'Alfa Slab One', serif" font-size="24"
+              fill="#1B2A41" letter-spacing="0">LIVE OAK</text>
+        <text x="160" y="190" text-anchor="middle"
+              font-family="'Alfa Slab One', serif" font-size="15"
+              fill="#C1272D" letter-spacing="1">LAWN CARE</text>
+
+        <!-- Small dots decoration -->
+        <circle cx="105" cy="160" r="3" fill="#C8A24B"/>
+        <circle cx="215" cy="160" r="3" fill="#C8A24B"/>
+      </svg>
+    </div>
+
+    <h1 class="font-slab text-retro-cream text-3xl md:text-4xl text-center leading-tight mb-2"
+        style="text-shadow: 2px 2px 0 rgba(0,0,0,0.5);">
+      Chipley's Trusted<br>Lawn &amp; Landscape Crew
+    </h1>
+    <p class="font-condensed text-retro-gold text-base tracking-widest uppercase mb-6">
+      Chipley, FL &amp; the Surrounding Area
+    </p>
+
+    <!-- Star rating row -->
+    <div class="flex items-center gap-2 mb-6">
+      <span class="star-gold text-lg tracking-tight" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="font-condensed text-retro-cream font-bold text-base">5.0 &middot; 11 Google reviews</span>
+    </div>
+
+    <!-- Dual CTA -->
+    <div class="flex flex-col sm:flex-row items-center gap-3">
+      <a href="tel:+18507039649"
+         class="inline-flex items-center gap-2 bg-retro-red text-retro-cream font-condensed font-bold text-lg px-8 py-3 tracking-wider uppercase"
+         style="border: 3px solid #8B1A1E; box-shadow: 5px 5px 0 #8B1A1E;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.63 3.47 2 2 0 013.6 1.27h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.87a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call (850) 703-9649
+      </a>
+      <a href="sms:+18507039649"
+         class="inline-flex items-center gap-2 bg-retro-gold text-retro-navy font-condensed font-bold text-lg px-8 py-3 tracking-wider uppercase"
+         style="border: 3px solid #8B6B20; box-shadow: 5px 5px 0 #8B6B20;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Send a Text
+      </a>
+    </div>
+  </div>
+
+  <!-- Double rule bottom bar -->
+  <div class="relative z-10 pb-4 px-4">
+    <div class="max-w-3xl mx-auto double-rule-gold"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STAMPED TRUST ROW
+============================================================ -->
+<section class="bg-retro-navy py-6 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+
+      <div class="flex flex-col items-center gap-1 py-3 px-4"
+           style="border: 2px solid rgba(200,162,75,0.4);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span class="font-slab text-retro-gold text-xl">5.0</span>
+        <span class="font-condensed text-retro-cream text-xs tracking-widest uppercase opacity-80">Star Rating</span>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 py-3 px-4"
+           style="border: 2px solid rgba(200,162,75,0.4);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <span class="font-slab text-retro-gold text-xl">11</span>
+        <span class="font-condensed text-retro-cream text-xs tracking-widest uppercase opacity-80">Google Reviews</span>
+      </div>
+
+      <div class="flex flex-col items-center gap-1 py-3 px-4"
+           style="border: 2px solid rgba(200,162,75,0.4);">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <span class="font-slab text-retro-gold text-xl">Call or Text</span>
+        <span class="font-condensed text-retro-cream text-xs tracking-widest uppercase opacity-80">Quick Response</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Double rule separator -->
+<div class="bg-retro-cream px-4 pt-3">
+  <div class="max-w-4xl mx-auto double-rule"></div>
+</div>
+
+<!-- ============================================================
+     VINTAGE MENU-BOARD SERVICES
+============================================================ -->
+<section class="bg-retro-cream px-4 py-10">
+  <div class="max-w-3xl mx-auto">
+
+    <!-- Section header -->
+    <div class="text-center mb-6">
+      <p class="font-condensed text-retro-red text-xs tracking-widest uppercase mb-1">What We Do</p>
+      <h2 class="font-slab text-retro-navy text-3xl md:text-4xl">Our Services</h2>
+    </div>
+
+    <!-- Menu board -->
+    <div class="stamp-border bg-retro-navy p-1 max-w-xl mx-auto">
+      <!-- Board header -->
+      <div class="bg-retro-red py-3 px-6 text-center mb-1">
+        <span class="font-condensed text-retro-cream text-lg font-bold tracking-widest uppercase">
+          Services Menu
+        </span>
+      </div>
+      <!-- Board body -->
+      <div class="bg-retro-parchment px-6 py-4" style="background-color: #E8D9B8;">
+        <div class="menu-item flex items-center gap-3 py-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="flex-shrink-0"><path d="M12 2a10 10 0 010 20"/><path d="M12 2a10 10 0 000 20"/><path d="M2 12h20"/></svg>
+          <span class="font-condensed text-retro-navy text-lg font-semibold tracking-wide">Lawn Mowing &amp; Lawn Care</span>
+        </div>
+        <div class="menu-item flex items-center gap-3 py-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="flex-shrink-0"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <span class="font-condensed text-retro-navy text-lg font-semibold tracking-wide">Weed Eating</span>
+        </div>
+        <div class="menu-item flex items-center gap-3 py-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="flex-shrink-0"><path d="M3 3l18 18M3 21l18-18"/></svg>
+          <span class="font-condensed text-retro-navy text-lg font-semibold tracking-wide">Fence Line Clearing</span>
+        </div>
+        <div class="menu-item flex items-center gap-3 py-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="flex-shrink-0"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <span class="font-condensed text-retro-navy text-lg font-semibold tracking-wide">Overgrown Property Cleanup</span>
+        </div>
+        <div class="flex items-center gap-3 py-3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C1272D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="flex-shrink-0"><path d="M17 8C8 10 5.9 16.17 3.82 19.11 A1 1 0 004.65 20h15.7a1 1 0 00.79-1.6C19.04 16.09 17 10 8 8"/><path d="M12 20v-8"/></svg>
+          <span class="font-condensed text-retro-navy text-lg font-semibold tracking-wide">Tree Care &amp; Removal</span>
+        </div>
+      </div>
+      <!-- Board footer -->
+      <div class="bg-retro-gold py-2 px-6 text-center mt-1">
+        <span class="font-condensed text-retro-navy text-sm font-bold tracking-widest uppercase">
+          Call or Text for a Quote
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Double rule separator -->
+<div class="bg-retro-cream px-4 pb-3">
+  <div class="max-w-4xl mx-auto double-rule-bottom"></div>
+</div>
+
+<!-- ============================================================
+     OUR WORK — PHOTO GALLERY
+============================================================ -->
+<section class="halftone-bg px-4 py-10">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-center mb-8">
+      <p class="font-condensed text-retro-gold text-xs tracking-widest uppercase mb-1">Real Results</p>
+      <h2 class="font-slab text-retro-cream text-3xl">Our Work in Chipley</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div class="photo-frame overflow-hidden">
+        <img src="assets/photo_3.jpg"
+             alt="Spacious mowed lawn with mature trees, Chipley FL"
+             class="w-full h-56 object-cover object-center">
+      </div>
+      <div class="photo-frame overflow-hidden">
+        <img src="assets/photo_5.jpg"
+             alt="Clean mowed lawn beside rural home, Washington County FL"
+             class="w-full h-56 object-cover object-center">
+      </div>
+      <div class="photo-frame overflow-hidden">
+        <img src="assets/photo_6.jpg"
+             alt="Lush manicured lawn with shaded trees"
+             class="w-full h-56 object-cover object-center">
+      </div>
+      <div class="photo-frame overflow-hidden">
+        <img src="assets/photo_7.jpg"
+             alt="Neat mowed property with live oak trees, Chipley area"
+             class="w-full h-56 object-cover object-center">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT CUSTOMERS SAY — REVIEWS
+============================================================ -->
+<section class="bg-retro-cream px-4 py-10">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-center mb-8">
+      <!-- Double rule around heading -->
+      <div class="double-rule mb-4 max-w-xs mx-auto"></div>
+      <p class="font-condensed text-retro-red text-xs tracking-widest uppercase mb-1">From Our Customers</p>
+      <h2 class="font-slab text-retro-navy text-3xl">What They're Saying</h2>
+      <div class="double-rule-bottom mt-4 max-w-xs mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+      <div class="quote-card p-5" style="border-left: 5px solid #C1272D;">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="star-gold text-base" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <blockquote class="font-body text-retro-navy text-sm leading-relaxed mb-4">
+          "Live Oak Lawn Care and Landscaping does a phenomenal job at an affordable price. [Their crew is] professional and efficient, and they have gone above and beyond doing weedeating and fence clearing for me on my overgrown property. They are the BEST!"
+        </blockquote>
+        <div class="border-t border-retro-navy border-opacity-20 pt-3">
+          <p class="font-condensed text-retro-navy font-semibold text-sm tracking-wide">Sally Brock</p>
+          <p class="font-condensed text-retro-navy text-xs opacity-60 tracking-wide uppercase">Google Review</p>
+        </div>
+      </div>
+
+      <div class="quote-card p-5" style="border-left: 5px solid #C1272D;">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="star-gold text-base" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <blockquote class="font-body text-retro-navy text-sm leading-relaxed mb-4">
+          "Live Oak Lawn Care &amp; Landscaping has done a fantastic job revitalizing my yard. They cleared my overgrown fence all the way around! Professional and polite service!"
+        </blockquote>
+        <div class="border-t border-retro-navy border-opacity-20 pt-3">
+          <p class="font-condensed text-retro-navy font-semibold text-sm tracking-wide">Phillip Thompson</p>
+          <p class="font-condensed text-retro-navy text-xs opacity-60 tracking-wide uppercase">Google Review</p>
+        </div>
+      </div>
+
+      <div class="quote-card p-5" style="border-left: 5px solid #C1272D;">
+        <div class="flex items-center gap-1 mb-3">
+          <span class="star-gold text-base" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <blockquote class="font-body text-retro-navy text-sm leading-relaxed mb-4">
+          "They always do an absolute fantastic job on my yard! Every time I've call[ed], he always fits me in his schedule! Even took care of this tree for me!"
+        </blockquote>
+        <div class="border-t border-retro-navy border-opacity-20 pt-3">
+          <p class="font-condensed text-retro-navy font-semibold text-sm tracking-wide">Dana Douglas</p>
+          <p class="font-condensed text-retro-navy text-xs opacity-60 tracking-wide uppercase">Google Review</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Rating attribution -->
+    <p class="text-center mt-6 font-condensed text-retro-navy text-xs opacity-50 tracking-wide uppercase">
+      5.0 &middot; 11 reviews on Google
+    </p>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     HOURS + MAP
+============================================================ -->
+<section class="bg-retro-cream px-4 py-10">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-center mb-8">
+      <p class="font-condensed text-retro-red text-xs tracking-widest uppercase mb-1">Find Us</p>
+      <h2 class="font-slab text-retro-navy text-3xl">Hours &amp; Location</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+      <!-- Hours Board -->
+      <div>
+        <!-- OPEN sign -->
+        <div class="open-sign text-center py-2 mb-4 max-w-xs mx-auto md:mx-0">
+          <span class="font-slab text-retro-cream text-2xl tracking-widest">OPEN</span>
+        </div>
+
+        <div class="hours-board p-5 max-w-xs mx-auto md:mx-0">
+          <div class="text-center mb-3">
+            <span class="font-condensed text-retro-gold text-xs tracking-widest uppercase">Hours of Operation</span>
+          </div>
+          <table class="w-full" aria-label="Business hours">
+            <tbody>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Monday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Tuesday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Wednesday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Thursday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Friday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Saturday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+              <tr>
+                <td class="font-condensed text-retro-cream text-sm tracking-wide py-2">Sunday</td>
+                <td class="font-condensed text-retro-gold text-sm font-semibold text-right py-2">5:00 AM – 9:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Address -->
+        <div class="mt-5 max-w-xs mx-auto md:mx-0 stamp-border p-4 bg-retro-parchment" style="background-color: #E8D9B8;">
+          <p class="font-condensed text-retro-navy text-xs tracking-widest uppercase mb-1 opacity-60">Address</p>
+          <p class="font-body text-retro-navy text-sm leading-snug">
+            2186 Bonnett Pond Rd<br>Chipley, FL 32428
+          </p>
+          <p class="font-condensed text-retro-navy text-xs opacity-50 mt-2 tracking-wide">Serving Chipley and the surrounding area</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="stamp-border overflow-hidden" style="min-height: 320px;">
+        <iframe
+          title="Live Oak Lawn Care &amp; Landscaping location map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-85.6565266,30.660953399999997,-85.6165266,30.684953399999997&layer=mapnik&marker=30.672953399999997,-85.6365266"
+          width="100%"
+          height="320"
+          style="border:0; display:block;"
+          loading="lazy"
+          aria-label="Map showing location in Chipley, FL">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STARBURST CTA BAND
+============================================================ -->
+<section class="bg-retro-navy px-4 py-12 paper-texture" style="position:relative;">
+  <div class="max-w-3xl mx-auto text-center relative z-10">
+
+    <!-- Double rule top -->
+    <div class="double-rule-gold max-w-sm mx-auto mb-8"></div>
+
+    <!-- Starburst decorative element (CSS) -->
+    <div class="relative inline-block mb-6">
+      <div class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,5 67,42 100,20 77,47 115,52 80,65 105,92 70,80 72,118 60,87 48,118 50,80 15,92 40,65 5,52 43,47 20,20 53,42" fill="#C8A24B" opacity="0.18"/>
+        </svg>
+      </div>
+      <span class="relative font-condensed text-retro-gold text-sm tracking-widest uppercase">Ready to Get Started?</span>
+    </div>
+
+    <h2 class="font-slab text-retro-cream text-3xl md:text-4xl mb-4">
+      Call or Text Us Today
+    </h2>
+    <p class="font-body text-retro-cream opacity-80 text-base mb-8 max-w-md mx-auto">
+      We serve Chipley and the surrounding area. Reach us by phone or text — we'll get you on the schedule.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="tel:+18507039649"
+         class="burst-bg inline-flex items-center gap-2 text-retro-cream font-condensed font-bold text-xl px-10 py-4 tracking-wider uppercase"
+         style="background: #C1272D; transform: rotate(-1deg); border: 3px solid #8B1A1E; box-shadow: 5px 5px 0 #8B1A1E;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.63 3.47 2 2 0 013.6 1.27h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.87a16 16 0 006.29 6.29l1.77-1.77a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (850) 703-9649
+      </a>
+      <a href="sms:+18507039649"
+         class="inline-flex items-center gap-2 text-retro-navy font-condensed font-bold text-xl px-10 py-4 tracking-wider uppercase"
+         style="background: #C8A24B; border: 3px solid #8B6B20; box-shadow: 5px 5px 0 #8B6B20;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Send a Text
+      </a>
+    </div>
+
+    <!-- Double rule bottom -->
+    <div class="double-rule-gold max-w-sm mx-auto mt-8"></div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="bg-retro-navy px-4 py-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="border-t border-retro-gold border-opacity-30 pt-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-center md:text-left">
+          <p class="font-slab text-retro-cream text-lg">Live Oak Lawn Care &amp; Landscaping</p>
+          <p class="font-condensed text-retro-gold text-xs tracking-widest uppercase opacity-70 mt-1">Chipley, FL 32428</p>
+        </div>
+        <div class="text-center">
+          <a href="tel:+18507039649" class="font-condensed text-retro-gold font-bold text-base tracking-wide hover:underline">
+            (850) 703-9649
+          </a>
+          <br>
+          <a href="sms:+18507039649" class="font-condensed text-retro-cream text-xs tracking-widest uppercase opacity-60 hover:opacity-100">
+            Text Us
+          </a>
+        </div>
+      </div>
+      <p class="text-center font-condensed text-retro-cream text-xs opacity-30 tracking-wide mt-4">
+        &copy; 2025 Live Oak Lawn Care &amp; Landscaping LLC. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

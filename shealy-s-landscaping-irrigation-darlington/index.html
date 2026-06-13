@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shealy's Landscaping &amp; Irrigation — Darlington, SC</title>
+  <meta name="description" content="Premium landscaping and irrigation services in Darlington, SC and the surrounding area. 4.8 stars on Google. Call or text (843) 861-6307.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0C0C0C',
+            'noir-light': '#161616',
+            'noir-mid': '#1E1E1E',
+            gold: '#C9A24A',
+            'gold-dim': '#A07C30',
+            cream: '#EDE8E0',
+            'cream-dim': '#B8B0A4',
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Jost', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: {
+            widest2: '0.25em',
+            widest3: '0.35em',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #0C0C0C; color: #EDE8E0; overflow-x: hidden; }
+    .gold-rule { border-color: #C9A24A; }
+    .hero-img { object-position: center 30%; }
+    .gallery-img { transition: transform 0.4s ease; }
+    .gallery-img:hover { transform: scale(1.03); }
+    .card-border { border: 1px solid rgba(201,162,74,0.25); }
+    .card-border:hover { border-color: rgba(201,162,74,0.6); }
+    .quote-border { border-left: 1px solid #C9A24A; }
+    .hours-row:nth-child(even) { background-color: rgba(255,255,255,0.03); }
+    @media (max-width: 639px) { .hero-text-xl { font-size: 2.8rem; line-height: 1.1; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Shealy's Landscaping & Irrigation LLC",
+    "telephone": "+18438616307",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "204 Orange St",
+      "addressLocality": "Darlington",
+      "addressRegion": "SC",
+      "postalCode": "29532",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.302661,
+      "longitude": -79.8745768
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "21",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "17:00" }
+    ],
+    "areaServed": "Darlington, SC and the surrounding area",
+    "url": "https://savcab.github.io/websites/shealy-s-landscaping-irrigation-darlington/"
+  }
+  </script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- STICKY CALL BAR -->
+  <div class="fixed top-0 left-0 right-0 z-50 bg-noir border-b border-gold border-opacity-30 py-3 px-4 flex items-center justify-between">
+    <span class="font-display text-cream text-lg tracking-wide">Shealy's Landscaping <span class="text-gold">&amp;</span> Irrigation</span>
+    <div class="flex items-center gap-3">
+      <a href="tel:+18438616307" class="flex items-center gap-2 bg-gold text-noir px-4 py-1.5 text-xs font-sans font-500 tracking-widest2 uppercase transition-opacity hover:opacity-80">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.06 2.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        Call
+      </a>
+      <a href="sms:+18438616307" class="flex items-center gap-2 border border-gold text-gold px-4 py-1.5 text-xs font-sans font-500 tracking-widest2 uppercase transition-opacity hover:opacity-70">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        </svg>
+        Text
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="relative w-full h-screen min-h-[600px] flex items-end pt-16">
+    <img src="assets/photo_3.jpg" alt="Manicured estate lawn with trimmed shrubs and black mulch beds, Darlington SC" class="absolute inset-0 w-full h-full object-cover hero-img">
+    <!-- Gradient overlay — bottom deepening -->
+    <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/60 to-noir/20"></div>
+    <!-- Content -->
+    <div class="relative z-10 w-full text-center pb-16 px-6">
+      <p class="text-gold text-xs tracking-widest3 uppercase mb-5 font-sans font-300">Darlington, South Carolina</p>
+      <div class="w-16 h-px bg-gold mx-auto mb-6"></div>
+      <h1 class="font-display text-cream font-300 italic leading-tight mb-4 hero-text-xl" style="font-size:clamp(2.6rem,6vw,4.5rem);">
+        Estate Grounds &amp;<br>Irrigation Care
+      </h1>
+      <p class="font-display text-cream-dim font-300 text-xl md:text-2xl mb-8 max-w-xl mx-auto leading-relaxed">
+        Premium landscaping for properties that make an impression.
+      </p>
+      <div class="w-16 h-px bg-gold mx-auto mb-8"></div>
+      <!-- Rating inline -->
+      <div class="flex items-center justify-center gap-3 mb-10">
+        <div class="flex gap-0.5">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="font-sans text-cream text-sm tracking-wide">4.8 &middot; 21 Google reviews</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+18438616307" class="inline-flex items-center justify-center gap-2 bg-gold text-noir px-8 py-3.5 text-xs tracking-widest2 uppercase font-sans font-500 hover:opacity-80 transition-opacity">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.06 2.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call (843) 861-6307
+        </a>
+        <a href="sms:+18438616307" class="inline-flex items-center justify-center gap-2 border border-gold text-gold px-8 py-3.5 text-xs tracking-widest2 uppercase font-sans font-500 hover:bg-gold hover:text-noir transition-all">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-gold text-xs tracking-widest3 uppercase font-sans font-300 mb-4">What We Do</p>
+      <div class="w-12 h-px bg-gold mx-auto mb-6"></div>
+      <h2 class="font-display text-cream font-300 text-3xl md:text-4xl">Our Services</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-gold bg-opacity-20">
+      <!-- Landscaping -->
+      <div class="card-border bg-noir-light p-8 flex flex-col gap-4 transition-colors">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22v-7"/>
+            <path d="M12 15C6.5 15 3 11 3 7c0 0 4 0 6 2 0-3 2-6 3-7 1 1 3 4 3 7 2-2 6-2 6-2 0 4-3.5 8-9 8z"/>
+          </svg>
+        </div>
+        <p class="text-gold text-xs tracking-widest2 uppercase font-sans font-300">01</p>
+        <h3 class="font-display text-cream text-2xl font-400">Landscaping</h3>
+        <p class="text-cream-dim text-sm font-sans font-300 leading-relaxed">
+          Full-service grounds design and maintenance — lawn care, planting, pruning, bed edging, and seasonal cleanup for estates and residential properties.
+        </p>
+      </div>
+
+      <!-- Irrigation -->
+      <div class="card-border bg-noir-light p-8 flex flex-col gap-4 transition-colors">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+          </svg>
+        </div>
+        <p class="text-gold text-xs tracking-widest2 uppercase font-sans font-300">02</p>
+        <h3 class="font-display text-cream text-2xl font-400">Irrigation</h3>
+        <p class="text-cream-dim text-sm font-sans font-300 leading-relaxed">
+          Installation and service of irrigation systems — ensuring your lawn and gardens receive precise, efficient watering for lasting health and curb appeal.
+        </p>
+      </div>
+
+      <!-- Hardscape / Tear-Out -->
+      <div class="card-border bg-noir-light p-8 flex flex-col gap-4 transition-colors">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+            <line x1="12" y1="12" x2="12" y2="16"/>
+            <line x1="10" y1="14" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <p class="text-gold text-xs tracking-widest2 uppercase font-sans font-300">03</p>
+        <h3 class="font-display text-cream text-2xl font-400">Hardscape &amp; Tear-Out</h3>
+        <p class="text-cream-dim text-sm font-sans font-300 leading-relaxed">
+          Removal of overgrown or unwanted plantings and hardscape preparation — clearing the way for a refined, well-structured property layout.
+        </p>
+      </div>
+
+      <!-- Storm Cleanup -->
+      <div class="card-border bg-noir-light p-8 flex flex-col gap-4 transition-colors">
+        <div class="w-10 h-10 flex items-center justify-center">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C9A24A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 14l-2-2m0 0l-2-2m2 2l2-2m-2 2l2 2"/>
+            <path d="M20 14.58A5 5 0 0018 5h-1.26A8 8 0 104 15.25"/>
+            <line x1="4" y1="22" x2="8" y2="18"/>
+            <line x1="8" y1="22" x2="12" y2="18"/>
+            <line x1="12" y1="22" x2="16" y2="18"/>
+          </svg>
+        </div>
+        <p class="text-gold text-xs tracking-widest2 uppercase font-sans font-300">04</p>
+        <h3 class="font-display text-cream text-2xl font-400">Storm Tree-Limb Removal</h3>
+        <p class="text-cream-dim text-sm font-sans font-300 leading-relaxed">
+          Swift, safe removal of downed limbs and storm debris — restoring the appearance and safety of your property after severe weather.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="pb-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-gold text-xs tracking-widest3 uppercase font-sans font-300 mb-4">Our Work</p>
+      <div class="w-12 h-px bg-gold mx-auto mb-6"></div>
+      <h2 class="font-display text-cream font-300 text-3xl md:text-4xl">Completed Projects</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div class="overflow-hidden aspect-[4/3]">
+        <img src="assets/photo_5.jpg" alt="Completed flower and shrub bed landscaping in Darlington SC" class="gallery-img w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden aspect-[4/3]">
+        <img src="assets/photo_6.jpg" alt="Fresh mulch foundation bed installation at a Darlington area home" class="gallery-img w-full h-full object-cover">
+      </div>
+      <div class="overflow-hidden aspect-[4/3]">
+        <img src="assets/photo_7.jpg" alt="Palm tree planting with mulch around pool area in South Carolina" class="gallery-img w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="py-20 bg-noir-light border-t border-b border-gold border-opacity-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-gold text-xs tracking-widest3 uppercase font-sans font-300 mb-4">Client Reviews</p>
+        <div class="w-12 h-px bg-gold mx-auto mb-6"></div>
+        <h2 class="font-display text-cream font-300 text-3xl md:text-4xl">What Our Clients Say</h2>
+      </div>
+
+      <!-- Rating card -->
+      <div class="border border-gold border-opacity-40 p-8 text-center mb-12 max-w-xs mx-auto">
+        <p class="font-display text-gold text-5xl font-300 mb-2">4.8</p>
+        <div class="flex justify-center gap-1 mb-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9A24A"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="text-cream-dim font-sans text-xs tracking-widest uppercase">21 Google reviews</p>
+      </div>
+
+      <!-- Quote blocks -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <blockquote class="quote-border pl-6">
+          <p class="font-display text-cream font-300 italic text-xl leading-relaxed mb-4">
+            "I started working with [them] a couple of years ago in Florence South Carolina and they turned my jungle of a backyard into a show place!"
+          </p>
+          <footer>
+            <p class="text-gold text-xs tracking-widest uppercase font-sans font-300">Beth Schaeffer</p>
+            <p class="text-cream-dim text-xs font-sans font-300 mt-1">Google &middot; January 2025</p>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote-border pl-6">
+          <p class="font-display text-cream font-300 italic text-xl leading-relaxed mb-4">
+            "Just the best landscaper... trustworthy and consistent and dependable... been a client a few years now and I would recommend Shealey's to everyone."
+          </p>
+          <footer>
+            <p class="text-gold text-xs tracking-widest uppercase font-sans font-300">Claudia Washington</p>
+            <p class="text-cream-dim text-xs font-sans font-300 mt-1">Google &middot; December 2024</p>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + MAP -->
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="text-gold text-xs tracking-widest3 uppercase font-sans font-300 mb-4">Hours &amp; Location</p>
+      <div class="w-12 h-px bg-gold mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Hours table -->
+      <div class="border border-gold border-opacity-30 p-8">
+        <h2 class="font-display text-cream text-2xl font-300 mb-6">Business Hours</h2>
+        <table class="w-full text-sm font-sans font-300">
+          <tbody>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Monday</td>
+              <td class="py-2.5 text-cream text-right">8:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Tuesday</td>
+              <td class="py-2.5 text-cream text-right">8:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Wednesday</td>
+              <td class="py-2.5 text-cream text-right">8:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Thursday</td>
+              <td class="py-2.5 text-cream text-right">8:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Friday</td>
+              <td class="py-2.5 text-cream-dim text-right">Closed</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Saturday</td>
+              <td class="py-2.5 text-cream-dim text-right">Closed</td>
+            </tr>
+            <tr class="hours-row">
+              <td class="py-2.5 text-cream-dim tracking-wide">Sunday</td>
+              <td class="py-2.5 text-cream-dim text-right">Closed</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mt-6 pt-6 border-t border-gold border-opacity-20">
+          <p class="text-cream-dim text-xs font-sans font-300 leading-relaxed">Serving Darlington and the surrounding area.</p>
+          <p class="text-cream text-sm font-sans font-300 mt-3">204 Orange St, Darlington, SC 29532</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="border border-gold border-opacity-30 overflow-hidden">
+        <iframe
+          title="Shealy's Landscaping location map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-79.8945768,34.2906610,-79.8545768,34.3146610&layer=mapnik&marker=34.302661,-79.8745768"
+          width="100%"
+          height="340"
+          style="border:0; display:block; filter: grayscale(30%) brightness(0.85);"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-20 bg-noir-light border-t border-gold border-opacity-20">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <p class="text-gold text-xs tracking-widest3 uppercase font-sans font-300 mb-4">Get Started</p>
+      <div class="w-12 h-px bg-gold mx-auto mb-8"></div>
+      <h2 class="font-display text-cream font-300 text-3xl md:text-4xl mb-6">
+        Ready to Transform Your Property?
+      </h2>
+      <p class="text-cream-dim font-sans font-300 text-base leading-relaxed mb-10">
+        Call or text us directly — we serve Darlington and the surrounding area and are ready to discuss your landscaping and irrigation needs.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+18438616307" class="inline-flex items-center justify-center gap-2 bg-gold text-noir px-8 py-4 text-xs tracking-widest2 uppercase font-sans font-500 hover:opacity-80 transition-opacity">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.06 2.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call (843) 861-6307
+        </a>
+        <a href="sms:+18438616307" class="inline-flex items-center justify-center gap-2 border border-gold text-gold px-8 py-4 text-xs tracking-widest2 uppercase font-sans font-500 hover:bg-gold hover:text-noir transition-all">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 px-6 border-t border-gold border-opacity-20">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-display text-cream text-lg">Shealy's Landscaping <span class="text-gold">&amp;</span> Irrigation LLC</p>
+        <p class="text-cream-dim text-xs font-sans font-300 mt-1">204 Orange St, Darlington, SC 29532</p>
+      </div>
+      <div class="text-right">
+        <a href="tel:+18438616307" class="text-cream text-sm font-sans font-300 hover:text-gold transition-colors">(843) 861-6307</a>
+        <p class="text-cream-dim text-xs font-sans font-300 mt-1">Mon–Thu 8 AM – 5 PM</p>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto mt-6 pt-6 border-t border-gold border-opacity-10 text-center">
+      <p class="text-cream-dim text-xs font-sans font-300 tracking-wide">&copy; 2025 Shealy's Landscaping &amp; Irrigation LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

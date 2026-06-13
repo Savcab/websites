@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walsh Landscaping LLC — Madbury, NH</title>
+  <meta name="description" content="Walsh Landscaping LLC serves Madbury, NH and the surrounding area. Lawn care, garden beds, seasonal cleanup, and mulching. Call or text (603) 952-9002.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FBF7F0',
+            charcoal: '#23201B',
+            olive: '#4A5C3A',
+            'olive-light': '#6B7D58',
+            'olive-dark': '#39482D',
+            'cream-dark': '#EDE5D8',
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #FBF7F0; color: #23201B; overflow-x: clip; }
+    .hero-overlay { background: linear-gradient(to right, rgba(35,32,27,0.72) 0%, rgba(35,32,27,0.40) 55%, rgba(35,32,27,0.10) 100%); }
+    .hero-overlay-mobile { background: linear-gradient(to bottom, rgba(35,32,27,0.20) 0%, rgba(35,32,27,0.65) 60%, rgba(35,32,27,0.85) 100%); }
+    .divider-leaf { color: #4A5C3A; }
+    .gallery-img { aspect-ratio: 4/3; object-fit: cover; }
+    .before-after-img { aspect-ratio: 3/2; object-fit: cover; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Walsh Landscaping LLC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "24A Nute Rd",
+      "addressLocality": "Madbury",
+      "addressRegion": "NH",
+      "postalCode": "03823",
+      "addressCountry": "US"
+    },
+    "telephone": "+16039529002",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.182142,
+      "longitude": -70.9659204
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "10",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "areaServed": {
+      "@type": "Place",
+      "name": "Madbury, NH and surrounding area"
+    }
+  }
+  </script>
+</head>
+<body class="font-sans">
+
+  <!-- Sticky call bar -->
+  <div class="fixed top-0 left-0 right-0 z-50 bg-charcoal/95 backdrop-blur-sm">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <span class="font-serif text-cream text-lg font-semibold tracking-tight">Walsh Landscaping</span>
+      <div class="flex items-center gap-3">
+        <a href="sms:+16039529002" class="hidden sm:flex items-center gap-1.5 text-cream/80 text-sm hover:text-cream transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text
+        </a>
+        <a href="tel:+16039529002" class="flex items-center gap-2 bg-olive hover:bg-olive-dark text-cream text-sm font-medium px-4 py-2 rounded-full transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (603) 952-9002
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-end pt-14">
+    <img
+      src="assets/photo_1.jpg"
+      alt="Freshly mowed striped lawn with fall foliage — Walsh Landscaping LLC, Madbury NH"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+    <!-- Desktop overlay: text on left -->
+    <div class="hero-overlay absolute inset-0 hidden md:block"></div>
+    <!-- Mobile overlay: text at bottom -->
+    <div class="hero-overlay-mobile absolute inset-0 md:hidden"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pb-16 md:pb-20 w-full">
+      <div class="md:max-w-xl">
+        <!-- Eyebrow -->
+        <p class="text-cream/70 text-xs font-medium tracking-widest uppercase mb-4">Madbury, NH &amp; surrounding area</p>
+
+        <h1 class="font-serif text-cream text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-5">
+          Lawn care<br>
+          <em class="font-light italic">done right,</em><br>
+          every time.
+        </h1>
+
+        <p class="text-cream/85 text-base md:text-lg leading-relaxed mb-8 max-w-md">
+          Walsh Landscaping LLC brings careful attention to every property — mowing, garden beds, seasonal cleanup, and more.
+        </p>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-3 mb-8">
+          <div class="flex items-center gap-1">
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span class="text-cream text-sm font-medium">5.0 &middot; 10 Google reviews</span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:+16039529002" class="inline-flex items-center gap-2 bg-olive hover:bg-olive-dark text-cream font-medium px-6 py-3 rounded-full transition-colors text-sm">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call us
+          </a>
+          <a href="sms:+16039529002" class="inline-flex items-center gap-2 border border-cream/50 hover:border-cream text-cream font-medium px-6 py-3 rounded-full transition-colors text-sm">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust stat band -->
+  <section class="bg-olive py-10">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-2 gap-6 text-center">
+        <div>
+          <p class="font-serif text-cream text-4xl font-semibold">5.0</p>
+          <p class="text-cream/75 text-sm mt-1">Average Google rating</p>
+        </div>
+        <div>
+          <p class="font-serif text-cream text-4xl font-semibold">10</p>
+          <p class="text-cream/75 text-sm mt-1">Google reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why neighbors choose us -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <!-- Left: editorial prose -->
+        <div>
+          <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">Why neighbors choose us</p>
+          <h2 class="font-serif text-charcoal text-3xl md:text-4xl font-semibold leading-tight mb-6">
+            The kind of work your yard deserves.
+          </h2>
+          <p class="text-charcoal/75 text-base leading-relaxed mb-4">
+            From a freshly striped lawn to a well-kept garden bed, we take the details seriously. Clients in Madbury and the surrounding area call us for work done thoroughly and on time.
+          </p>
+          <p class="text-charcoal/75 text-base leading-relaxed">
+            We communicate clearly, show up when we say we will, and leave your property looking sharp — season after season.
+          </p>
+        </div>
+
+        <!-- Right: icon cards -->
+        <div class="grid grid-cols-1 gap-5">
+          <div class="flex gap-4 items-start">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-charcoal text-lg font-semibold mb-1">Thorough work</h3>
+              <p class="text-charcoal/65 text-sm leading-relaxed">Every job is finished completely — we don't cut corners or leave the hard parts for another day.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-start">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-charcoal text-lg font-semibold mb-1">Clear communication</h3>
+              <p class="text-charcoal/65 text-sm leading-relaxed">We're easy to reach and keep you informed. Text or call — we respond.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-start">
+            <div class="shrink-0 w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center">
+              <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-charcoal text-lg font-semibold mb-1">Efficient on-site</h3>
+              <p class="text-charcoal/65 text-sm leading-relaxed">We work diligently and respect your time — thorough without dragging out the job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-20 bg-cream-dark">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">Services</p>
+      <h2 class="font-serif text-charcoal text-3xl md:text-4xl font-semibold leading-tight mb-10">What we do</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <!-- Lawn mowing -->
+        <div class="bg-cream rounded-2xl p-6 border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="font-serif text-charcoal text-xl font-semibold mb-2">Lawn mowing &amp; care</h3>
+          <p class="text-charcoal/65 text-sm leading-relaxed">Clean, precise mowing with professional striping. We keep your lawn looking its best all season.</p>
+        </div>
+
+        <!-- Garden beds -->
+        <div class="bg-cream rounded-2xl p-6 border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12m0 0C12 7 7 4 2 6c0 5 4 8 10 6zm0 0c0-5 5-8 10-6-1 5-5 8-10 6"/></svg>
+          </div>
+          <h3 class="font-serif text-charcoal text-xl font-semibold mb-2">Garden bed planting</h3>
+          <p class="text-charcoal/65 text-sm leading-relaxed">Planting, cleanup, and refresh of garden beds — tidy edges and healthy plantings that hold up season to season.</p>
+        </div>
+
+        <!-- Seasonal cleanup -->
+        <div class="bg-cream rounded-2xl p-6 border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+          </div>
+          <h3 class="font-serif text-charcoal text-xl font-semibold mb-2">Seasonal cleanup</h3>
+          <p class="text-charcoal/65 text-sm leading-relaxed">Fall leaf removal and spring cleanup that restores your property's appearance when it matters most.</p>
+        </div>
+
+        <!-- Mulching -->
+        <div class="bg-cream rounded-2xl p-6 border border-charcoal/8">
+          <div class="w-10 h-10 rounded-xl bg-olive/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="font-serif text-charcoal text-xl font-semibold mb-2">Mulching</h3>
+          <p class="text-charcoal/65 text-sm leading-relaxed">Fresh mulch applied evenly to beds for a clean, finished look that also protects plant roots.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our work gallery -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">Our work</p>
+      <h2 class="font-serif text-charcoal text-3xl md:text-4xl font-semibold leading-tight mb-10">Results you can see.</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="assets/photo_2.jpg" alt="Striped lawn with stone border and lake view — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover">
+        <img src="assets/photo_4.jpg" alt="Before and after garden bed planting — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover">
+        <img src="assets/photo_5.jpg" alt="Mulch bed with hostas and shrubs alongside house — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover">
+        <img src="assets/photo_7.jpg" alt="Before and after leaf cleanup revealing striped lawn — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover">
+        <img src="assets/photo_8.jpg" alt="Before and after fall leaf removal — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover sm:col-span-2 md:col-span-1">
+        <img src="assets/photo_9.jpg" alt="Before and after leaf cleanup by lake property — Walsh Landscaping LLC" class="gallery-img w-full rounded-2xl object-cover hidden md:block">
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-20 bg-cream-dark">
+    <div class="max-w-5xl mx-auto px-6">
+      <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">What clients say</p>
+      <div class="flex items-baseline gap-4 mb-10">
+        <p class="font-serif text-charcoal text-3xl md:text-4xl font-semibold">5.0 on Google</p>
+        <div class="flex items-center gap-1">
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="text-charcoal/50 text-sm">10 reviews</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Quote 1 -->
+        <div class="bg-cream rounded-2xl p-7 border border-charcoal/8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="font-serif text-charcoal text-base leading-relaxed italic mb-5">
+            "We are so pleased with having Gavin from Walsh Landscaping... He is a very diligent young man, who works hard. He communicates well with his clients."
+          </blockquote>
+          <div>
+            <p class="text-charcoal font-medium text-sm">Kaly Washington</p>
+            <p class="text-charcoal/45 text-xs mt-0.5">Google review</p>
+          </div>
+        </div>
+
+        <!-- Quote 2 -->
+        <div class="bg-cream rounded-2xl p-7 border border-charcoal/8">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="font-serif text-charcoal text-base leading-relaxed italic mb-5">
+            "I had a great experience working with Gavin and his crew! They were efficient and thorough."
+          </blockquote>
+          <div>
+            <p class="text-charcoal font-medium text-sm">Margaret Trier Connally</p>
+            <p class="text-charcoal/45 text-xs mt-0.5">Google review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours + Map -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <!-- Hours -->
+        <div>
+          <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">Hours</p>
+          <h2 class="font-serif text-charcoal text-2xl md:text-3xl font-semibold mb-6">When we're available</h2>
+
+          <table class="w-full text-sm">
+            <tbody class="divide-y divide-charcoal/8">
+              <tr class="py-2">
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium w-28">Monday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Tuesday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Wednesday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Thursday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Friday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Saturday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-charcoal/60 font-medium">Sunday</td>
+                <td class="py-2.5 text-charcoal">9:00 AM &ndash; 5:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="mt-6 pt-6 border-t border-charcoal/8">
+            <p class="text-charcoal/60 text-sm mb-3">Serving Madbury, NH and the surrounding area</p>
+            <p class="text-charcoal text-sm font-medium">24A Nute Rd, Madbury, NH 03823</p>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <p class="text-olive text-xs font-medium tracking-widest uppercase mb-3">Location</p>
+          <h2 class="font-serif text-charcoal text-2xl md:text-3xl font-semibold mb-6">Find us</h2>
+          <div class="rounded-2xl overflow-hidden border border-charcoal/10">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-70.9859204,43.170142,-70.9459204,43.194142&layer=mapnik&marker=43.182142,-70.9659204"
+              width="100%"
+              height="300"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              title="Walsh Landscaping LLC location map"
+              loading="lazy"
+              style="border:0;"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20 bg-olive">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-cream/70 text-xs font-medium tracking-widest uppercase mb-4">Ready to get started?</p>
+      <h2 class="font-serif text-cream text-3xl md:text-4xl font-semibold leading-tight mb-5">
+        Let's take care of your yard.
+      </h2>
+      <p class="text-cream/75 text-base mb-8 max-w-md mx-auto">
+        Call or text us to schedule service in Madbury and the surrounding area.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:+16039529002" class="inline-flex items-center gap-2 bg-cream hover:bg-cream-dark text-olive font-semibold px-8 py-3.5 rounded-full transition-colors text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (603) 952-9002
+        </a>
+        <a href="sms:+16039529002" class="inline-flex items-center gap-2 border-2 border-cream/60 hover:border-cream text-cream font-semibold px-8 py-3.5 rounded-full transition-colors text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text (603) 952-9002
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal py-10">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <p class="font-serif text-cream text-lg font-semibold">Walsh Landscaping LLC</p>
+        <p class="text-cream/50 text-sm mt-1">Madbury, NH 03823</p>
+      </div>
+      <div class="text-right">
+        <a href="tel:+16039529002" class="text-cream/75 hover:text-cream text-sm transition-colors block">(603) 952-9002</a>
+        <a href="sms:+16039529002" class="text-cream/50 hover:text-cream/75 text-xs transition-colors block mt-1">Text us</a>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 pt-6 mt-6 border-t border-cream/10">
+      <p class="text-cream/30 text-xs">Walsh Landscaping LLC &middot; Madbury, NH &middot; Serving Madbury and the surrounding area</p>
+    </div>
+  </footer>
+
+</body>
+</html>

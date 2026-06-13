@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glenn's Lawn Care LLC — Spartanburg, SC</title>
+  <meta name="description" content="Professional lawn care and landscaping in Spartanburg, SC and the surrounding area. Call or text (864) 266-2290." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            base: '#0D0D0D',
+            surface: '#161616',
+            panel: '#1E1E1E',
+            amber: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          keyframes: {
+            'lift': { '0%,100%': { transform: 'translateY(0)' } }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { background-color: #0D0D0D; color: #ffffff; overflow-x: clip; }
+    .hero-img {
+      background-image: url('assets/photo_3.jpg');
+      background-size: cover;
+      background-position: center 40%;
+    }
+    .hero-gradient {
+      background: linear-gradient(
+        to bottom,
+        rgba(13,13,13,0.35) 0%,
+        rgba(13,13,13,0.2) 30%,
+        rgba(13,13,13,0.65) 70%,
+        rgba(13,13,13,0.97) 100%
+      );
+    }
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(245,158,11,0.15);
+    }
+    .star-amber { color: #F59E0B; }
+    .accent-border { border-color: #F59E0B; }
+    .accent-text { color: #F59E0B; }
+    .accent-bg { background-color: #F59E0B; }
+    .sticky-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(13,13,13,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #2a2a2a;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Glenn's Lawn Care LLC",
+    "telephone": "+18642662290",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "349 Robinson Dr",
+      "addressLocality": "Spartanburg",
+      "addressRegion": "SC",
+      "postalCode": "29301",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.9180022,
+      "longitude": -82.0716514
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "23",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:30",
+        "closes": "17:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "07:30",
+        "closes": "13:30"
+      }
+    ],
+    "url": "https://savcab.github.io/websites/glenn-s-lawn-care-spartanburg/"
+  }
+  </script>
+</head>
+<body class="antialiased">
+
+  <!-- STICKY CALL BAR -->
+  <div class="sticky-bar">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <span class="text-white font-bold text-sm tracking-wide truncate">Glenn's Lawn Care LLC</span>
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <a href="tel:+18642662290"
+           class="flex items-center gap-1.5 px-4 py-2 rounded-xl accent-bg text-black font-700 text-sm font-bold hover:bg-amber-400 transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.67 12 19.79 19.79 0 0 1 1.6 3.47 2 2 0 0 1 3.56 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.9-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call
+        </a>
+        <a href="sms:+18642662290"
+           class="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-amber-500 text-amber-500 font-bold text-sm hover:bg-amber-500 hover:text-black transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Text
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-img relative min-h-screen flex flex-col justify-end pt-16">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pb-20 w-full">
+      <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-4">Spartanburg, SC</p>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[0.95] tracking-tight mb-6 max-w-2xl">
+        Lawn Care<br/>Done Right.
+      </h1>
+      <p class="text-lg text-gray-300 mb-8 max-w-lg leading-relaxed">
+        Dependable lawn mowing, mulching, trimming, and full landscaping for Spartanburg and the surrounding area.
+      </p>
+      <!-- Star row -->
+      <div class="flex items-center gap-3 mb-10">
+        <div class="flex items-center gap-0.5">
+          <svg class="w-5 h-5 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <span class="text-white font-bold text-lg">5.0</span>
+        <span class="text-gray-400 text-sm">· 23 Google reviews</span>
+      </div>
+      <!-- Dual CTA -->
+      <div class="flex flex-wrap gap-3">
+        <a href="tel:+18642662290"
+           class="inline-flex items-center gap-2 px-7 py-4 rounded-2xl accent-bg text-black font-black text-base hover:bg-amber-400 transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.67 12 19.79 19.79 0 0 1 1.6 3.47 2 2 0 0 1 3.56 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.9-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call Now
+        </a>
+        <a href="sms:+18642662290"
+           class="inline-flex items-center gap-2 px-7 py-4 rounded-2xl border-2 border-amber-500 text-amber-500 font-black text-base hover:bg-amber-500 hover:text-black transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STAT ROW -->
+  <section class="bg-surface border-y border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-2 gap-6 max-w-xs mx-auto sm:max-w-none sm:flex sm:items-center sm:justify-center sm:gap-16">
+        <div class="text-center">
+          <p class="text-4xl font-black accent-text">5.0</p>
+          <p class="text-xs uppercase tracking-widest text-gray-400 mt-1 font-semibold">Star Rating</p>
+        </div>
+        <div class="w-px h-10 bg-white/10 hidden sm:block"></div>
+        <div class="text-center">
+          <p class="text-4xl font-black text-white">23</p>
+          <p class="text-xs uppercase tracking-widest text-gray-400 mt-1 font-semibold">Google Reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US CARDS -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-3">Why Choose Us</p>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-12 max-w-xl leading-tight">The kind of service your yard actually deserves.</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <!-- Card 1 -->
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(245,158,11,0.12)">
+          <svg class="w-5 h-5 accent-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3 class="text-white font-bold text-lg mb-2">Dependable, Every Visit</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">We show up when we say we will. Consistent scheduling means your lawn always looks its best.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(245,158,11,0.12)">
+          <svg class="w-5 h-5 accent-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="text-white font-bold text-lg mb-2">Quality Results</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Precision cuts, clean edges, and finished-work you'll be proud to show the neighbors.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style="background:rgba(245,158,11,0.12)">
+          <svg class="w-5 h-5 accent-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <h3 class="text-white font-bold text-lg mb-2">Fair, Reasonable Pricing</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Straight-forward pricing with no hidden fees. Call or text for a free quote on your property.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-3">What We Do</p>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-12 leading-tight">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Lawn Mowing</h3>
+          <p class="text-gray-400 text-sm">Regular cuts with crisp, professional striping for residential and commercial properties.</p>
+        </div>
+      </div>
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Mulch Installation</h3>
+          <p class="text-gray-400 text-sm">Fresh mulch beds that hold moisture, suppress weeds, and sharpen curb appeal.</p>
+        </div>
+      </div>
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Shrub Trimming</h3>
+          <p class="text-gray-400 text-sm">Clean, shaped cuts that keep your hedges and bushes looking intentional year-round.</p>
+        </div>
+      </div>
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 6l4-4 4 4"/><path d="M12 2v10"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Planting &amp; Landscape Beds</h3>
+          <p class="text-gray-400 text-sm">New plants, edged beds, and seasonal installs designed to complement your property.</p>
+        </div>
+      </div>
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Detail Mowing &amp; Striping</h3>
+          <p class="text-gray-400 text-sm">Precision patterns and edge work for a lawn that stands out on the block.</p>
+        </div>
+      </div>
+
+      <div class="card-hover bg-panel rounded-2xl p-6 border border-white/5 hover:border-amber-500/30 flex gap-4 items-start">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center accent-bg">
+          <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-1">Drainage &amp; Stone Work</h3>
+          <p class="text-gray-400 text-sm">Stone drainage channels and hardscape accents to manage runoff and add structure.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-3">Our Work</p>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-10 leading-tight">Real Properties. Real Results.</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="assets/photo_1.jpg" alt="Mulch bed with stone edging and shrubs installed at Spartanburg home" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_2.jpg" alt="Manicured lawn with landscaping beds at Spartanburg property" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_5.jpg" alt="Fresh mulch bed with plantings along brick home" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_6.jpg" alt="Trimmed shrubs and shaped beds at Spartanburg residence" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_8.jpg" alt="Mulch bed with cypress trees installed along carport" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_9.jpg" alt="Striped mowed lawn with mature tree canopy framing" class="w-full h-56 object-cover rounded-2xl" loading="lazy" />
+      <img src="assets/photo_10.jpg" alt="Completed privacy hedge planting and patio landscaping" class="w-full h-56 object-cover rounded-2xl md:col-span-1 sm:col-span-2 md:col-span-1" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- REVIEWS BLOCK -->
+  <section class="py-20 bg-surface border-y border-white/5">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-3 text-center">Reviews</p>
+      <h2 class="text-3xl sm:text-4xl font-black text-white mb-12 text-center leading-tight">What Customers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Review 1 -->
+        <div class="card-hover bg-panel rounded-2xl p-7 border border-white/5 hover:border-amber-500/20">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-gray-300 text-base leading-relaxed mb-5 italic">
+            "Levante does a great job with our yard! We have used him for about 4 yrs. He is very dependable and reasonable."
+          </blockquote>
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-white font-semibold text-sm">Paul Murphree</p>
+              <p class="text-gray-500 text-xs">Google Review</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="card-hover bg-panel rounded-2xl p-7 border border-white/5 hover:border-amber-500/20">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 star-amber" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-gray-300 text-base leading-relaxed mb-5 italic">
+            "For the past 12 months I have been a client of Glenn's Lawn Care. Not only is Lavante dependable, but he's also an outstanding person."
+          </blockquote>
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-white font-semibold text-sm">Terry Peters</p>
+              <p class="text-gray-500 text-xs">Google Review</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + MAP -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-3">Find Us</p>
+    <h2 class="text-3xl sm:text-4xl font-black text-white mb-12 leading-tight">Hours &amp; Location</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Hours table -->
+      <div class="bg-panel rounded-2xl p-8 border border-white/5">
+        <h3 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+          <svg class="w-5 h-5 accent-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          Hours of Operation
+        </h3>
+        <table class="w-full text-sm">
+          <tbody class="divide-y divide-white/5">
+            <tr class="py-3">
+              <td class="py-3 text-gray-400">Monday</td>
+              <td class="py-3 text-white font-medium text-right">7:30 AM – 5:30 PM</td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-400">Tuesday</td>
+              <td class="py-3 text-white font-medium text-right">7:30 AM – 5:30 PM</td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-400">Wednesday</td>
+              <td class="py-3 text-white font-medium text-right">7:30 AM – 5:30 PM</td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-400">Thursday</td>
+              <td class="py-3 text-white font-medium text-right">7:30 AM – 5:30 PM</td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-400">Friday</td>
+              <td class="py-3 text-white font-medium text-right">7:30 AM – 5:30 PM</td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-400">Saturday</td>
+              <td class="py-3 accent-text font-medium">7:30 AM – 1:30 PM</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="py-3 text-gray-500">Sunday</td>
+              <td class="py-3 text-gray-500 text-right">Closed</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mt-6 pt-6 border-t border-white/5">
+          <p class="text-gray-400 text-sm">
+            <span class="accent-text font-semibold">Spartanburg, SC</span> and the surrounding area
+          </p>
+          <p class="text-gray-500 text-sm mt-1">349 Robinson Dr, Spartanburg, SC 29301</p>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="rounded-2xl overflow-hidden border border-white/5 h-80 md:h-full min-h-64">
+        <iframe
+          title="Glenn's Lawn Care LLC location map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-82.0916514,34.9060022,-82.0516514,34.9300022&layer=mapnik&marker=34.9180022,-82.0716514"
+          width="100%"
+          height="100%"
+          style="min-height:320px; border:0; filter:invert(0.9) hue-rotate(180deg) brightness(0.85) contrast(0.95);"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-24 px-6" style="background:linear-gradient(135deg,#0D0D0D 0%,#1a1200 50%,#0D0D0D 100%)">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.2em] accent-text mb-4">Get Started Today</p>
+      <h2 class="text-4xl sm:text-5xl font-black text-white mb-6 leading-tight">
+        Ready for a yard<br/>you're proud of?
+      </h2>
+      <p class="text-gray-400 text-lg mb-10 max-w-md mx-auto">
+        Call or text us for a free quote. We serve Spartanburg and the surrounding area.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="tel:+18642662290"
+           class="inline-flex items-center gap-2 px-8 py-5 rounded-2xl accent-bg text-black font-black text-lg hover:bg-amber-400 transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.67 12 19.79 19.79 0 0 1 1.6 3.47 2 2 0 0 1 3.56 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.9-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          (864) 266-2290
+        </a>
+        <a href="sms:+18642662290"
+           class="inline-flex items-center gap-2 px-8 py-5 rounded-2xl border-2 border-amber-500 text-amber-500 font-black text-lg hover:bg-amber-500 hover:text-black transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Send a Text
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-base border-t border-white/5 py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="text-white font-bold">Glenn's Lawn Care LLC</p>
+        <p class="text-gray-500 text-sm mt-1">349 Robinson Dr, Spartanburg, SC 29301</p>
+      </div>
+      <div class="text-center sm:text-right">
+        <a href="tel:+18642662290" class="text-amber-500 font-bold hover:text-amber-400 transition-colors">(864) 266-2290</a>
+        <p class="text-gray-600 text-xs mt-2">Serving Spartanburg and the surrounding area</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

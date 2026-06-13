@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BH Lawn and Landscape LLC — Oneida, NY</title>
+<meta name="description" content="BH Lawn and Landscape LLC serves Oneida, NY and the surrounding area with lawn care, mulch beds, shrub work, rock landscaping, and snow removal. 5.0 stars · 28 Google reviews.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        retro: {
+          red:   '#C1272D',
+          cream: '#F3E9D2',
+          navy:  '#1B2A41',
+          gold:  '#C8A24B',
+          dark:  '#0F1B29',
+        }
+      },
+      fontFamily: {
+        display: ['"Alfa Slab One"', 'serif'],
+        slab:    ['"Roboto Slab"', 'serif'],
+        body:    ['"Source Sans 3"', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@400;700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body { overflow-x: clip; }
+
+  /* Paper / halftone texture overlay */
+  .paper-texture {
+    position: relative;
+  }
+  .paper-texture::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+    background-size: 6px 6px;
+    z-index: 1;
+  }
+
+  /* Double-rule border utility */
+  .double-rule-t {
+    border-top: 3px double;
+  }
+  .double-rule-b {
+    border-bottom: 3px double;
+  }
+  .double-rule {
+    border-top: 3px double;
+    border-bottom: 3px double;
+  }
+
+  /* Aged paper background */
+  .aged-cream {
+    background-color: #F3E9D2;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  /* Starburst shape */
+  .starburst {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(
+      50% 0%, 61% 35%, 98% 35%, 68% 57%,
+      79% 91%, 50% 70%, 21% 91%, 32% 57%,
+      2% 35%, 39% 35%
+    );
+  }
+
+  /* Vintage badge ring */
+  .badge-ring {
+    border: 4px solid #C8A24B;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #C1272D, 0 0 0 6px #C8A24B;
+  }
+
+  /* Offset card shadow */
+  .stamp-shadow {
+    box-shadow: 4px 4px 0 #1B2A41;
+  }
+
+  /* Menu board row */
+  .menu-row {
+    border-bottom: 1px dashed #C8A24B;
+  }
+  .menu-row:last-child {
+    border-bottom: none;
+  }
+
+  /* Retro open sign flicker */
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    92% { opacity: 1; }
+    93% { opacity: 0.85; }
+    94% { opacity: 1; }
+    97% { opacity: 0.9; }
+    98% { opacity: 1; }
+  }
+  .open-sign {
+    animation: flicker 4s infinite;
+  }
+
+  /* Gallery grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  @media (min-width: 640px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "BH Lawn and Landscape LLC",
+  "telephone": "+13159801090",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3rd St W",
+    "addressLocality": "Oneida",
+    "addressRegion": "NY",
+    "postalCode": "13421",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.0808792,
+    "longitude": -75.6341681
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "28",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "16:00"
+    }
+  ],
+  "url": "https://savcab.github.io/websites/bh-lawn-and-landscape-oneida/",
+  "sameAs": ["https://www.facebook.com/profile.php?id=100083569870108"]
+}
+</script>
+</head>
+
+<body class="aged-cream font-body text-retro-navy">
+
+<!-- ===== STICKY CALL BAR ===== -->
+<div class="fixed top-0 left-0 right-0 z-50 bg-retro-red double-rule border-retro-gold py-2 px-4 flex items-center justify-between">
+  <span class="font-display text-retro-cream text-sm tracking-wide uppercase">BH Lawn &amp; Landscape LLC</span>
+  <div class="flex gap-2">
+    <a href="tel:+13159801090"
+       class="bg-retro-gold text-retro-navy font-slab font-bold text-sm px-3 py-1 stamp-shadow hover:bg-retro-cream transition-colors">
+      Call (315) 980-1090
+    </a>
+    <a href="sms:+13159801090"
+       class="border-2 border-retro-gold text-retro-gold font-slab font-bold text-sm px-3 py-1 hover:bg-retro-gold hover:text-retro-navy transition-colors hidden sm:inline-block">
+      Text Us
+    </a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="pt-12 relative min-h-screen flex flex-col paper-texture">
+  <!-- Full-bleed hero photo -->
+  <div class="relative flex-1">
+    <img
+      src="assets/photo_3.jpg"
+      alt="Freshly mowed lawn with crisp stripe pattern, Oneida NY"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+    <!-- Deep overlay for text legibility -->
+    <div class="absolute inset-0 bg-gradient-to-b from-retro-dark/80 via-retro-dark/50 to-retro-dark/85"></div>
+
+    <!-- Hero content: SVG Badge Lockup -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-48px)] px-4 py-12 text-center">
+
+      <!-- SVG Badge / Seal -->
+      <div class="mb-6">
+        <svg viewBox="0 0 340 340" class="w-72 h-72 md:w-96 md:h-96 drop-shadow-2xl" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer ring -->
+          <circle cx="170" cy="170" r="160" stroke="#C8A24B" stroke-width="5" fill="none"/>
+          <!-- Inner ring -->
+          <circle cx="170" cy="170" r="148" stroke="#C8A24B" stroke-width="2" fill="none"/>
+          <!-- Background fill -->
+          <circle cx="170" cy="170" r="147" fill="#1B2A41" fill-opacity="0.92"/>
+          <!-- Red band top -->
+          <path d="M 170 23 A 147 147 0 0 1 317 170" stroke="#C1272D" stroke-width="22" fill="none"/>
+          <!-- Red band bottom -->
+          <path d="M 170 317 A 147 147 0 0 1 23 170" stroke="#C1272D" stroke-width="22" fill="none"/>
+          <!-- Starburst dots on rings -->
+          <circle cx="170" cy="23" r="5" fill="#C8A24B"/>
+          <circle cx="317" cy="170" r="5" fill="#C8A24B"/>
+          <circle cx="170" cy="317" r="5" fill="#C8A24B"/>
+          <circle cx="23" cy="170" r="5" fill="#C8A24B"/>
+          <!-- Top arc text path -->
+          <path id="topArc" d="M 40 170 A 130 130 0 0 1 300 170" fill="none"/>
+          <text font-family="'Alfa Slab One', serif" font-size="18" fill="#C8A24B" letter-spacing="3">
+            <textPath href="#topArc" startOffset="50%" text-anchor="middle">BH LAWN &amp; LANDSCAPE</textPath>
+          </text>
+          <!-- Bottom arc text path -->
+          <path id="botArc" d="M 55 185 A 130 130 0 0 0 285 185" fill="none"/>
+          <text font-family="'Source Sans 3', sans-serif" font-size="15" fill="#C8A24B" letter-spacing="2">
+            <textPath href="#botArc" startOffset="50%" text-anchor="middle">ONEIDA, NEW YORK</textPath>
+          </text>
+          <!-- Center: leaf icon -->
+          <g transform="translate(140, 110)">
+            <!-- Simplified leaf SVG icon -->
+            <path d="M30 80 C10 60 0 30 20 10 C40 -10 70 5 70 40 C70 65 50 80 30 80Z" fill="#C8A24B" opacity="0.9"/>
+            <line x1="30" y1="80" x2="45" y2="20" stroke="#1B2A41" stroke-width="2"/>
+          </g>
+          <!-- LLC text -->
+          <text x="170" y="225" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="13" fill="#F3E9D2" letter-spacing="6">LLC</text>
+          <!-- Double rule lines in center -->
+          <line x1="80" y1="238" x2="260" y2="238" stroke="#C8A24B" stroke-width="1.5"/>
+          <line x1="80" y1="244" x2="260" y2="244" stroke="#C8A24B" stroke-width="0.5"/>
+        </svg>
+      </div>
+
+      <!-- H1 -->
+      <h1 class="font-display text-retro-cream text-4xl md:text-6xl leading-none mb-3 uppercase tracking-wide drop-shadow-lg">
+        BH Lawn &amp;<br>Landscape
+      </h1>
+
+      <!-- Tagline -->
+      <p class="font-slab text-retro-gold text-lg md:text-xl mb-2 tracking-widest uppercase">Oneida, NY &amp; Surrounding Area</p>
+
+      <!-- Double rule separator -->
+      <div class="w-48 my-4 border-t-2 border-b border-retro-gold opacity-80"></div>
+
+      <!-- Rating -->
+      <div class="flex items-center gap-2 mb-6">
+        <div class="flex">
+          <svg class="w-5 h-5 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-5 h-5 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <span class="font-slab text-retro-cream font-bold">5.0</span>
+        <span class="text-retro-cream/70 text-sm">· 28 Google reviews</span>
+      </div>
+
+      <!-- Dual CTA -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="tel:+13159801090"
+           class="bg-retro-red text-retro-cream font-slab font-bold text-lg px-8 py-3 uppercase tracking-wider stamp-shadow border-2 border-retro-gold hover:bg-retro-cream hover:text-retro-red transition-colors">
+          Call (315) 980-1090
+        </a>
+        <a href="sms:+13159801090"
+           class="border-2 border-retro-gold text-retro-gold font-slab font-bold text-lg px-8 py-3 uppercase tracking-wider hover:bg-retro-gold hover:text-retro-navy transition-colors">
+          Text Us
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STAT STRIP ===== -->
+<div class="bg-retro-red double-rule border-retro-gold py-6 px-4">
+  <div class="max-w-3xl mx-auto grid grid-cols-2 gap-4 text-center">
+    <div class="border-r border-retro-gold/40">
+      <div class="font-display text-retro-gold text-4xl">5.0</div>
+      <div class="font-body text-retro-cream text-sm uppercase tracking-widest mt-1">Star Rating</div>
+    </div>
+    <div>
+      <div class="font-display text-retro-gold text-4xl">28</div>
+      <div class="font-body text-retro-cream text-sm uppercase tracking-widest mt-1">Google Reviews</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== VINTAGE MENU BOARD — SERVICES ===== -->
+<section class="aged-cream py-14 px-4">
+  <div class="max-w-2xl mx-auto">
+
+    <!-- Section header with double rules -->
+    <div class="text-center mb-8">
+      <div class="double-rule border-retro-gold py-3 inline-block px-8">
+        <span class="font-display text-retro-navy text-xs uppercase tracking-widest">Our Services</span>
+      </div>
+      <h2 class="font-display text-retro-navy text-3xl md:text-4xl mt-4 uppercase">
+        What We Do
+      </h2>
+    </div>
+
+    <!-- Menu board -->
+    <div class="bg-retro-navy border-4 border-retro-gold stamp-shadow p-1">
+      <!-- Board header -->
+      <div class="bg-retro-red py-3 px-4 text-center mb-0">
+        <span class="font-display text-retro-cream text-xl uppercase tracking-widest">
+          Service Menu
+        </span>
+      </div>
+      <!-- Double rule under header -->
+      <div class="border-t-2 border-b border-retro-gold/60 mx-4 my-0"></div>
+
+      <!-- Menu items -->
+      <div class="px-6 py-4 space-y-0">
+
+        <div class="menu-row flex items-center gap-4 py-4">
+          <svg class="w-7 h-7 text-retro-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C7 3 3 7.5 3 12s4 9 9 9 9-4.5 9-9c0-1-.2-2-.5-2.9"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 3s1 3-1 5-5 1-5 1"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18"/>
+          </svg>
+          <div>
+            <div class="font-slab text-retro-gold font-bold uppercase tracking-wide">Lawn Mowing &amp; Maintenance</div>
+            <div class="font-body text-retro-cream/80 text-sm">Precise cuts, clean edges, a yard that stands out</div>
+          </div>
+        </div>
+
+        <div class="menu-row flex items-center gap-4 py-4">
+          <svg class="w-7 h-7 text-retro-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+          </svg>
+          <div>
+            <div class="font-slab text-retro-gold font-bold uppercase tracking-wide">Mulch Beds &amp; Planting</div>
+            <div class="font-body text-retro-cream/80 text-sm">Fresh mulch, planting beds shaped and installed clean</div>
+          </div>
+        </div>
+
+        <div class="menu-row flex items-center gap-4 py-4">
+          <svg class="w-7 h-7 text-retro-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/>
+          </svg>
+          <div>
+            <div class="font-slab text-retro-gold font-bold uppercase tracking-wide">Shrub Removal &amp; Trimming</div>
+            <div class="font-body text-retro-cream/80 text-sm">Area left clean and tidy every time</div>
+          </div>
+        </div>
+
+        <div class="menu-row flex items-center gap-4 py-4">
+          <svg class="w-7 h-7 text-retro-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+          </svg>
+          <div>
+            <div class="font-slab text-retro-gold font-bold uppercase tracking-wide">Rock &amp; Gravel Landscaping</div>
+            <div class="font-body text-retro-cream/80 text-sm">Low-maintenance beds, stone borders, and feature installations</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 py-4">
+          <svg class="w-7 h-7 text-retro-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 5l-2 2m16-2l2 2"/>
+          </svg>
+          <div>
+            <div class="font-slab text-retro-gold font-bold uppercase tracking-wide">Snow Removal &amp; Plowing</div>
+            <div class="font-body text-retro-cream/80 text-sm">Reliable winter service when you need it most</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Board footer -->
+      <div class="border-t border-retro-gold/40 mx-4"></div>
+      <div class="bg-retro-dark py-2 px-4 text-center">
+        <span class="font-body text-retro-gold/70 text-xs uppercase tracking-widest">Serving Oneida, NY &amp; the surrounding area</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR WORK — GALLERY ===== -->
+<section class="bg-retro-navy py-14 px-4 paper-texture">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-8">
+      <div class="double-rule border-retro-gold py-3 inline-block px-8">
+        <span class="font-display text-retro-gold text-xs uppercase tracking-widest">Finished Work</span>
+      </div>
+      <h2 class="font-display text-retro-cream text-3xl md:text-4xl mt-4 uppercase">Our Work</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_1.jpg" alt="Mulch planting bed with ornamental tree at house corner" class="w-full h-56 object-cover">
+      </div>
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_2.jpg" alt="Rock and gravel landscaping bed with rounded boulders and shrubs" class="w-full h-56 object-cover">
+      </div>
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_4.jpg" alt="Mulch bed with decorative shrubs along house foundation" class="w-full h-56 object-cover">
+      </div>
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_5.jpg" alt="Mulch bed with flowering shrubs and ornamental plantings" class="w-full h-56 object-cover">
+      </div>
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_7.jpg" alt="Clean mulch edging along arborvitae hedge row" class="w-full h-56 object-cover">
+      </div>
+      <div class="border-2 border-retro-gold overflow-hidden stamp-shadow">
+        <img src="assets/photo_10.jpg" alt="Circular rock bed installation with flag pole" class="w-full h-56 object-cover">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="aged-cream py-14 px-4">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <div class="double-rule border-retro-gold py-3 inline-block px-8">
+        <span class="font-display text-retro-navy text-xs uppercase tracking-widest">From Google</span>
+      </div>
+      <h2 class="font-display text-retro-navy text-3xl md:text-4xl mt-4 uppercase">What Customers Say</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Review 1 -->
+      <div class="bg-retro-navy border-2 border-retro-gold stamp-shadow p-6">
+        <div class="flex mb-3">
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <blockquote class="font-body text-retro-cream/90 italic leading-relaxed mb-4">
+          "I have used Ben's services for both lawn care and snow plow removal. As a returning customer this year... reliable, efficient and professional."
+        </blockquote>
+        <div class="border-t border-retro-gold/30 pt-3">
+          <span class="font-slab text-retro-gold font-bold text-sm">Meghan D</span>
+          <span class="font-body text-retro-cream/50 text-xs ml-2">· Google · Nov 2025</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-retro-navy border-2 border-retro-gold stamp-shadow p-6">
+        <div class="flex mb-3">
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg class="w-4 h-4 text-retro-gold" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <blockquote class="font-body text-retro-cream/90 italic leading-relaxed mb-4">
+          "I hired Ben with BH Lawn &amp; Landscape for shrub removal, and he did an excellent job! He was professional, efficient, and left the area clean and tidy."
+        </blockquote>
+        <div class="border-t border-retro-gold/30 pt-3">
+          <span class="font-slab text-retro-gold font-bold text-sm">Karie Zeller</span>
+          <span class="font-body text-retro-cream/50 text-xs ml-2">· Google · Sep 2024</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View all on Google -->
+    <div class="text-center mt-6">
+      <a href="https://maps.google.com/?cid=2684725974081380906" target="_blank" rel="noopener noreferrer"
+         class="font-slab text-retro-red text-sm uppercase tracking-wider hover:underline">
+        View all 28 reviews on Google &rarr;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== HOURS + MAP ===== -->
+<section class="bg-retro-navy py-14 px-4">
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+    <!-- Retro OPEN board / Hours -->
+    <div>
+      <div class="double-rule border-retro-gold mb-6 py-2 text-center">
+        <span class="font-display text-retro-gold text-xs uppercase tracking-widest">Hours of Operation</span>
+      </div>
+
+      <!-- OPEN sign -->
+      <div class="flex justify-center mb-5">
+        <div class="open-sign bg-retro-red border-4 border-retro-gold px-6 py-2 stamp-shadow">
+          <span class="font-display text-retro-cream text-3xl tracking-widest uppercase">Open</span>
+        </div>
+      </div>
+
+      <!-- Hours table -->
+      <div class="bg-retro-dark border-2 border-retro-gold">
+        <table class="w-full text-sm">
+          <tbody>
+            <tr class="border-b border-retro-gold/20">
+              <td class="font-slab text-retro-gold font-bold px-4 py-2 uppercase tracking-wide">Mon – Fri</td>
+              <td class="font-body text-retro-cream px-4 py-2 text-right">8:00 AM – 5:00 PM</td>
+            </tr>
+            <tr class="border-b border-retro-gold/20">
+              <td class="font-slab text-retro-gold font-bold px-4 py-2 uppercase tracking-wide">Saturday</td>
+              <td class="font-body text-retro-cream px-4 py-2 text-right">9:00 AM – 4:00 PM</td>
+            </tr>
+            <tr>
+              <td class="font-slab text-retro-gold/50 font-bold px-4 py-2 uppercase tracking-wide">Sunday</td>
+              <td class="font-body text-retro-cream/40 px-4 py-2 text-right">Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Contact line -->
+      <div class="mt-5 text-center">
+        <p class="font-body text-retro-cream/70 text-sm mb-2 uppercase tracking-wide">Call or text anytime</p>
+        <a href="tel:+13159801090" class="font-display text-retro-gold text-2xl hover:text-retro-cream transition-colors">(315) 980-1090</a>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div>
+      <div class="double-rule border-retro-gold mb-6 py-2 text-center">
+        <span class="font-display text-retro-gold text-xs uppercase tracking-widest">Service Area</span>
+      </div>
+      <div class="border-2 border-retro-gold stamp-shadow overflow-hidden">
+        <iframe
+          title="BH Lawn and Landscape LLC location map, Oneida NY"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-75.6541681,43.0688792,-75.6141681,43.0928792&layer=mapnik&marker=43.0808792,-75.6341681"
+          width="100%"
+          height="280"
+          style="border:0;display:block;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p class="font-body text-retro-cream/60 text-xs text-center mt-2">Oneida, NY and the surrounding area</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== STARBURST CTA ===== -->
+<section class="bg-retro-red py-14 px-4 paper-texture relative overflow-hidden">
+  <!-- Decorative starburst shapes -->
+  <div class="absolute left-4 top-1/2 -translate-y-1/2 w-32 h-32 opacity-10" aria-hidden="true">
+    <svg viewBox="0 0 100 100" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35"/>
+    </svg>
+  </div>
+  <div class="absolute right-4 top-1/2 -translate-y-1/2 w-32 h-32 opacity-10" aria-hidden="true">
+    <svg viewBox="0 0 100 100" fill="#C8A24B" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35"/>
+    </svg>
+  </div>
+
+  <div class="max-w-xl mx-auto text-center relative z-10">
+    <div class="double-rule border-retro-gold inline-block px-8 py-2 mb-6">
+      <span class="font-display text-retro-gold text-xs uppercase tracking-widest">Ready to get started?</span>
+    </div>
+    <h2 class="font-display text-retro-cream text-4xl md:text-5xl uppercase mb-4">
+      Get a Free Quote
+    </h2>
+    <p class="font-body text-retro-cream/80 text-lg mb-8">
+      Serving Oneida and the surrounding area. Call or text — we're here Monday through Saturday.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:+13159801090"
+         class="bg-retro-gold text-retro-navy font-slab font-bold text-xl px-10 py-4 uppercase tracking-wider stamp-shadow hover:bg-retro-cream transition-colors">
+        Call (315) 980-1090
+      </a>
+      <a href="sms:+13159801090"
+         class="border-2 border-retro-gold text-retro-gold font-slab font-bold text-xl px-10 py-4 uppercase tracking-wider hover:bg-retro-gold hover:text-retro-navy transition-colors">
+        Text Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-retro-dark py-8 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="double-rule border-retro-gold/40 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left">
+        <div class="font-display text-retro-gold text-lg uppercase tracking-widest">BH Lawn &amp; Landscape LLC</div>
+        <div class="font-body text-retro-cream/60 text-sm mt-1">3rd St W, Oneida, NY 13421</div>
+        <a href="tel:+13159801090" class="font-body text-retro-cream/60 text-sm hover:text-retro-gold transition-colors">(315) 980-1090</a>
+      </div>
+
+      <div class="flex flex-col items-center gap-2">
+        <div class="flex gap-4 text-sm">
+          <a href="https://www.facebook.com/profile.php?id=100083569870108" target="_blank" rel="noopener noreferrer"
+             class="font-body text-retro-cream/50 hover:text-retro-gold transition-colors uppercase tracking-wide text-xs">
+            Facebook
+          </a>
+        </div>
+        <div class="flex gap-4 text-xs text-retro-cream/30 mt-1">
+          <span>Mon–Fri 8am–5pm</span>
+          <span>&bull;</span>
+          <span>Sat 9am–4pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="font-body text-retro-cream/25 text-xs">&copy; 2026 BH Lawn and Landscape LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

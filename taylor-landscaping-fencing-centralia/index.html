@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taylor Landscaping &amp; Fencing LLC — Centralia, WA</title>
+<meta name="description" content="Fencing, lawn care, retaining walls, sod installation, yard overhauls and more in Centralia, WA and the surrounding area. Call or text (253) 282-5334.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream:   '#F3E9D2',
+          'cream-dark': '#E8D9BA',
+          red:     '#C1272D',
+          'red-dark': '#9E1F24',
+          navy:    '#1B2A41',
+          gold:    '#C8A24B',
+          'gold-light': '#DEC07A',
+        },
+        fontFamily: {
+          display: ['"Alfa Slab One"', 'serif'],
+          condensed: ['"Oswald"', 'sans-serif'],
+          body: ['"Source Serif 4"', 'Georgia', 'serif'],
+        },
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { overflow-x: hidden; }
+
+  /* Paper / halftone texture */
+  .texture-paper {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%23F3E9D2'/%3E%3Ccircle cx='1' cy='1' r='0.4' fill='%23C8A24B' opacity='0.18'/%3E%3Ccircle cx='3' cy='3' r='0.4' fill='%23C8A24B' opacity='0.18'/%3E%3C/svg%3E");
+  }
+
+  .texture-navy {
+    background-color: #1B2A41;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%231B2A41'/%3E%3Ccircle cx='1' cy='1' r='0.35' fill='%23C8A24B' opacity='0.12'/%3E%3Ccircle cx='3' cy='3' r='0.35' fill='%23C8A24B' opacity='0.12'/%3E%3C/svg%3E");
+  }
+
+  /* Double-rule border */
+  .double-rule-top {
+    border-top: 3px solid #C1272D;
+    box-shadow: 0 5px 0 0 #C8A24B, 0 8px 0 0 #C1272D;
+    padding-top: 12px;
+  }
+  .double-rule-bottom {
+    border-bottom: 3px solid #C1272D;
+    box-shadow: 0 3px 0 0 #C8A24B;
+    padding-bottom: 12px;
+  }
+
+  /* Stamp / badge style */
+  .stamp {
+    border: 3px solid #C8A24B;
+    box-shadow: inset 0 0 0 2px #C1272D;
+    transform: rotate(-1.5deg);
+  }
+
+  /* Retro menu board */
+  .menu-board {
+    background: #1B2A41;
+    border: 4px solid #C8A24B;
+    box-shadow: 6px 6px 0 #9E1F24;
+  }
+  .menu-item {
+    border-bottom: 1px dashed rgba(200,162,75,0.4);
+  }
+  .menu-item:last-child { border-bottom: none; }
+
+  /* Hours board */
+  .hours-board {
+    background: #1B2A41;
+    border: 4px solid #C8A24B;
+    box-shadow: 6px 6px 0 #9E1F24;
+  }
+
+  /* Starburst */
+  .starburst-wrap { position: relative; display: inline-block; }
+  .starburst-wrap svg { display: block; }
+
+  /* Gallery hover */
+  .gallery-img {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .gallery-img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(27,42,65,0.35);
+  }
+
+  /* Trust stamp */
+  .trust-stamp {
+    border: 2px solid #C8A24B;
+    box-shadow: 3px 3px 0 #C1272D;
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Taylor landscaping & Fencing LLC",
+  "telephone": "+12532825334",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1115 Marion St",
+    "addressLocality": "Centralia",
+    "addressRegion": "WA",
+    "postalCode": "98531",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 46.728877399999995,
+    "longitude": -122.93761680000001
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "17",
+    "bestRating": "5"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"18:00"}
+  ],
+  "areaServed": "Centralia, WA and the surrounding area"
+}
+</script>
+</head>
+<body class="texture-paper font-body text-navy">
+
+<!-- ===== STICKY CALL BAR ===== -->
+<div class="sticky top-0 z-50 bg-red text-cream py-2 px-4 flex items-center justify-between shadow-md" style="border-bottom: 3px solid #C8A24B;">
+  <span class="font-condensed font-bold tracking-widest uppercase text-sm">Taylor Landscaping &amp; Fencing</span>
+  <div class="flex gap-2">
+    <a href="tel:+12532825334" class="flex items-center gap-1.5 bg-cream text-red font-condensed font-bold text-sm px-3 py-1 uppercase tracking-wider" style="border: 2px solid #C8A24B;">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.5C2 6.5 5.5 3 8 5l2.5 2.5c.5.5.5 1.5 0 2L9 11c1 1.5 3 3.5 4.5 4.5l1.5-1.5c.5-.5 1.5-.5 2 0L19.5 16.5c2 2.5-1.5 6-1.5 6C8 24.5 0 12 2 6.5z"/></svg>
+      Call
+    </a>
+    <a href="sms:+12532825334" class="flex items-center gap-1.5 bg-navy text-cream font-condensed font-bold text-sm px-3 py-1 uppercase tracking-wider" style="border: 2px solid #C8A24B;">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      Text
+    </a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="relative min-h-[92vh] flex flex-col items-center justify-center overflow-hidden" style="background-color:#1B2A41;">
+
+  <!-- Full-bleed photo -->
+  <img src="assets/photo_1.jpg" alt="Completed white vinyl and split-rail fence installation in Centralia WA" class="absolute inset-0 w-full h-full object-cover object-center" style="opacity:0.38;">
+
+  <!-- Bottom deepen gradient -->
+  <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(27,42,65,0.55) 0%, rgba(27,42,65,0.7) 60%, rgba(27,42,65,0.92) 100%);"></div>
+
+  <div class="relative z-10 flex flex-col items-center text-center px-4 py-16 max-w-3xl mx-auto">
+
+    <!-- Double-rule top ornament -->
+    <div class="w-48 mb-6" style="border-top: 3px solid #C8A24B; box-shadow: 0 5px 0 0 #C1272D, 0 8px 0 0 #C8A24B; padding-top: 0; height: 8px; background: transparent;"></div>
+
+    <!-- SVG Badge / Shop Sign lockup -->
+    <div class="mb-6">
+      <svg viewBox="0 0 460 280" class="w-full max-w-[460px]" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Outer badge border -->
+        <rect x="4" y="4" width="452" height="272" rx="8" fill="#1B2A41" stroke="#C8A24B" stroke-width="3"/>
+        <rect x="10" y="10" width="440" height="260" rx="6" fill="none" stroke="#C1272D" stroke-width="1.5"/>
+        <!-- Corner ornaments -->
+        <circle cx="30" cy="30" r="8" fill="#C8A24B" opacity="0.7"/>
+        <circle cx="430" cy="30" r="8" fill="#C8A24B" opacity="0.7"/>
+        <circle cx="30" cy="250" r="8" fill="#C8A24B" opacity="0.7"/>
+        <circle cx="430" cy="250" r="8" fill="#C8A24B" opacity="0.7"/>
+        <!-- Star ornament top center -->
+        <polygon points="230,22 232.5,29.5 240,29.5 234,34.5 236.5,42 230,37.5 223.5,42 226,34.5 220,29.5 227.5,29.5" fill="#C8A24B"/>
+        <!-- TAYLOR text -->
+        <text x="230" y="95" font-family="'Alfa Slab One', serif" font-size="62" fill="#F3E9D2" text-anchor="middle" letter-spacing="2">TAYLOR</text>
+        <!-- Red rule -->
+        <rect x="40" y="104" width="380" height="4" rx="2" fill="#C1272D"/>
+        <rect x="40" y="110" width="380" height="1.5" rx="1" fill="#C8A24B"/>
+        <!-- LANDSCAPING & FENCING -->
+        <text x="230" y="148" font-family="'Oswald', sans-serif" font-size="26" font-weight="600" fill="#C8A24B" text-anchor="middle" letter-spacing="4">LANDSCAPING &amp; FENCING</text>
+        <!-- LLC -->
+        <text x="230" y="170" font-family="'Oswald', sans-serif" font-size="13" font-weight="400" fill="#F3E9D2" text-anchor="middle" letter-spacing="6" opacity="0.75">L L C</text>
+        <!-- Bottom rule -->
+        <rect x="40" y="183" width="380" height="1.5" rx="1" fill="#C8A24B"/>
+        <rect x="40" y="186" width="380" height="4" rx="2" fill="#C1272D"/>
+        <!-- CENTRALIA · WA -->
+        <text x="230" y="222" font-family="'Oswald', sans-serif" font-size="18" font-weight="500" fill="#C8A24B" text-anchor="middle" letter-spacing="8">CENTRALIA · WA</text>
+        <!-- Service area sub-line -->
+        <text x="230" y="248" font-family="'Oswald', sans-serif" font-size="12" font-weight="400" fill="#F3E9D2" text-anchor="middle" letter-spacing="3" opacity="0.65">FENCING · LANDSCAPING · LAWN CARE</text>
+        <!-- Bottom star -->
+        <polygon points="230,258 232.5,265.5 240,265.5 234,270.5 236.5,278 230,273.5 223.5,278 226,270.5 220,265.5 227.5,265.5" fill="#C8A24B"/>
+      </svg>
+    </div>
+
+    <!-- H1 — visually hidden but present for SEO -->
+    <h1 class="sr-only">Taylor Landscaping &amp; Fencing LLC — Centralia, WA</h1>
+
+    <!-- Rating row -->
+    <div class="flex items-center gap-2 mb-6 bg-navy bg-opacity-70 px-4 py-2" style="border: 2px solid #C8A24B;">
+      <div class="flex gap-0.5">
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+      </div>
+      <span class="font-condensed font-semibold text-cream tracking-wide text-sm">4.8 · 17 Google reviews</span>
+    </div>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-3 items-center">
+      <a href="tel:+12532825334" class="flex items-center gap-2 bg-red text-cream font-condensed font-bold uppercase tracking-widest px-7 py-3 text-lg" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #9E1F24;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.5C2 6.5 5.5 3 8 5l2.5 2.5c.5.5.5 1.5 0 2L9 11c1 1.5 3 3.5 4.5 4.5l1.5-1.5c.5-.5 1.5-.5 2 0L19.5 16.5c2 2.5-1.5 6-1.5 6C8 24.5 0 12 2 6.5z"/></svg>
+        (253) 282-5334
+      </a>
+      <a href="sms:+12532825334" class="flex items-center gap-2 bg-cream text-navy font-condensed font-semibold uppercase tracking-widest px-6 py-3 text-lg" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #1B2A41;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        Send a Text
+      </a>
+    </div>
+
+    <!-- Bottom rule -->
+    <div class="w-48 mt-8" style="border-top: 3px solid #C8A24B; box-shadow: 0 5px 0 0 #C1272D, 0 8px 0 0 #C8A24B; padding-top: 0; height: 8px; background: transparent;"></div>
+  </div>
+</section>
+
+<!-- ===== TRUST STAMP ROW ===== -->
+<div class="texture-paper py-6 px-4" style="border-top: 3px solid #C8A24B; border-bottom: 3px solid #C8A24B;">
+  <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 items-center justify-items-center text-center">
+
+    <div class="trust-stamp px-4 py-3 flex flex-col items-center gap-1 w-full">
+      <svg class="w-6 h-6 text-red" fill="none" stroke="#C1272D" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+      <span class="font-condensed font-bold text-red tracking-wider text-sm uppercase">4.8 Stars</span>
+      <span class="font-body text-navy text-xs opacity-75">17 Google Reviews</span>
+    </div>
+
+    <div class="trust-stamp px-4 py-3 flex flex-col items-center gap-1 w-full">
+      <svg class="w-6 h-6" fill="none" stroke="#C1272D" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#C1272D" stroke-width="2"/><path stroke-linecap="round" d="M16 2v4M8 2v4M3 10h18"/></svg>
+      <span class="font-condensed font-bold text-red tracking-wider text-sm uppercase">Mon – Sat</span>
+      <span class="font-body text-navy text-xs opacity-75">7:00 AM – 6:00 PM</span>
+    </div>
+
+    <div class="trust-stamp px-4 py-3 flex flex-col items-center gap-1 w-full">
+      <svg class="w-6 h-6" fill="none" stroke="#C1272D" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <span class="font-condensed font-bold text-red tracking-wider text-sm uppercase">Centralia, WA</span>
+      <span class="font-body text-navy text-xs opacity-75">and surrounding area</span>
+    </div>
+
+    <div class="trust-stamp px-4 py-3 flex flex-col items-center gap-1 w-full">
+      <svg class="w-6 h-6" fill="none" stroke="#C1272D" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      <span class="font-condensed font-bold text-red tracking-wider text-sm uppercase">Call or Text</span>
+      <span class="font-body text-navy text-xs opacity-75">(253) 282-5334</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== VINTAGE MENU BOARD — SERVICES ===== -->
+<section class="py-16 px-4 texture-paper">
+  <div class="max-w-3xl mx-auto">
+
+    <!-- Section heading -->
+    <div class="text-center mb-10">
+      <div class="inline-block mb-3">
+        <span class="font-condensed font-semibold text-red uppercase tracking-[0.3em] text-sm">What We Do</span>
+      </div>
+      <h2 class="font-display text-4xl md:text-5xl text-navy mb-3">Our Services</h2>
+      <div class="flex items-center justify-center gap-2">
+        <div class="h-px flex-1 bg-gold max-w-[80px]"></div>
+        <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="#C8A24B"><polygon points="12,2 14.5,9.5 22,9.5 16,14.5 18.5,22 12,17.5 5.5,22 8,14.5 2,9.5 9.5,9.5"/></svg>
+        <div class="h-px flex-1 bg-gold max-w-[80px]"></div>
+      </div>
+    </div>
+
+    <!-- Menu board -->
+    <div class="menu-board p-0 overflow-hidden">
+      <!-- Board header -->
+      <div class="bg-red py-3 px-6 text-center" style="border-bottom: 3px solid #C8A24B;">
+        <span class="font-condensed font-bold text-cream uppercase tracking-[0.4em] text-base">Full Service Menu</span>
+      </div>
+
+      <!-- Items -->
+      <div class="p-6 flex flex-col gap-0">
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Fencing</div>
+            <div class="font-body text-cream text-sm opacity-70">Vinyl, cedar privacy, chain-link, split-rail, gates</div>
+          </div>
+        </div>
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Lawn Care &amp; Mowing</div>
+            <div class="font-body text-cream text-sm opacity-70">Mowing, trimming, weeding, ivy control</div>
+          </div>
+        </div>
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 00-1-1h-2a1 1 0 00-1 1v5m4 0H9"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Retaining Walls &amp; Hardscape</div>
+            <div class="font-body text-cream text-sm opacity-70">Block walls, concrete steps, stone edging</div>
+          </div>
+        </div>
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Sod Installation &amp; Lawn Repair</div>
+            <div class="font-body text-cream text-sm opacity-70">Fresh sod, lawn restoration, grading</div>
+          </div>
+        </div>
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Landscape &amp; Gravel Work</div>
+            <div class="font-body text-cream text-sm opacity-70">Landscape fabric, bark spreading, gravel borders</div>
+          </div>
+        </div>
+
+        <div class="menu-item flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Yard Overhauls &amp; Cleanup</div>
+            <div class="font-body text-cream text-sm opacity-70">Full-property clearing and restoration</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 py-4">
+          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#C8A24B" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <div>
+            <div class="font-condensed font-bold text-cream uppercase tracking-wider text-base">Roof &amp; Gutter Cleaning</div>
+            <div class="font-body text-cream text-sm opacity-70">Debris removal, gutter clearing, roof moss control</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Board footer -->
+      <div class="bg-navy py-3 px-6 text-center" style="border-top: 3px solid #C8A24B;">
+        <span class="font-condensed text-gold tracking-wider text-sm">Call or text for a free quote &mdash; (253) 282-5334</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PHOTO GALLERY ===== -->
+<section class="py-16 px-4 texture-navy">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="text-center mb-10">
+      <span class="font-condensed font-semibold text-gold uppercase tracking-[0.3em] text-sm">Real Work, Real Results</span>
+      <h2 class="font-display text-4xl text-cream mt-2 mb-3">Our Work</h2>
+      <div class="flex items-center justify-center gap-2">
+        <div class="h-px flex-1 bg-red max-w-[80px]"></div>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#C1272D"><polygon points="12,2 14.5,9.5 22,9.5 16,14.5 18.5,22 12,17.5 5.5,22 8,14.5 2,9.5 9.5,9.5"/></svg>
+        <div class="h-px flex-1 bg-red max-w-[80px]"></div>
+      </div>
+    </div>
+
+    <!-- Gallery grid: 1 col mobile, 2 col sm, 3 col md -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="gallery-img overflow-hidden" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #C1272D;">
+        <img src="assets/photo_2.jpg" alt="Cedar privacy fence with lattice top, completed installation" class="w-full h-56 object-cover">
+      </div>
+      <div class="gallery-img overflow-hidden" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #C1272D;">
+        <img src="assets/photo_3.jpg" alt="Retaining wall with concrete steps and lawn landscaping" class="w-full h-56 object-cover">
+      </div>
+      <div class="gallery-img overflow-hidden" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #C1272D;">
+        <img src="assets/photo_6.jpg" alt="Chain-link fence with gate, completed installation" class="w-full h-56 object-cover">
+      </div>
+      <div class="gallery-img overflow-hidden sm:col-span-1 md:col-span-1" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #C1272D;">
+        <img src="assets/photo_7.jpg" alt="Crushed rock pathway and gravel border alongside house" class="w-full h-56 object-cover">
+      </div>
+      <div class="gallery-img overflow-hidden sm:col-span-1 md:col-span-2" style="border: 3px solid #C8A24B; box-shadow: 4px 4px 0 #C1272D;">
+        <img src="assets/photo_10.jpg" alt="Gravel landscape border with shrubs and wooden fence" class="w-full h-56 object-cover object-center">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CUSTOMER REVIEWS ===== -->
+<section class="py-16 px-4 texture-paper">
+  <div class="max-w-4xl mx-auto">
+
+    <div class="text-center mb-10">
+      <span class="font-condensed font-semibold text-red uppercase tracking-[0.3em] text-sm">What Neighbors Say</span>
+      <h2 class="font-display text-4xl text-navy mt-2 mb-3">Customer Reviews</h2>
+      <div class="flex items-center justify-center gap-2">
+        <div class="h-px flex-1 bg-gold max-w-[80px]"></div>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#C8A24B"><polygon points="12,2 14.5,9.5 22,9.5 16,14.5 18.5,22 12,17.5 5.5,22 8,14.5 2,9.5 9.5,9.5"/></svg>
+        <div class="h-px flex-1 bg-gold max-w-[80px]"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- Review 1 -->
+      <div class="bg-cream p-6 flex flex-col gap-4" style="border: 3px solid #C8A24B; box-shadow: 5px 5px 0 #C1272D;">
+        <div class="flex gap-1 mb-1">
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        </div>
+        <!-- Decorative quote mark -->
+        <svg class="w-8 h-8 text-gold opacity-40" fill="#C8A24B" viewBox="0 0 32 32"><path d="M10 8C5.6 8 2 11.6 2 16v8h8v-8H6c0-2.2 1.8-4 4-4V8zm14 0c-4.4 0-8 3.6-8 8v8h8v-8h-4c0-2.2 1.8-4 4-4V8z"/></svg>
+        <p class="font-body text-navy text-base leading-relaxed italic">"Long overdue review for Cruz and crew! We hired him off Thumbtack for fencing 2 years ago and he's been our go-to for everything outdoors ever since. Incredibly nice guy who is super punctual and communicative. The work is always top notch and very reasonably priced."</p>
+        <div class="mt-auto pt-3" style="border-top: 1px dashed #C8A24B;">
+          <span class="font-condensed font-semibold text-red uppercase tracking-wider text-sm">Kenna Long</span>
+          <span class="font-body text-navy opacity-60 text-xs ml-2">— Google</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-cream p-6 flex flex-col gap-4" style="border: 3px solid #C8A24B; box-shadow: 5px 5px 0 #C1272D;">
+        <div class="flex gap-1 mb-1">
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+          <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        </div>
+        <svg class="w-8 h-8 text-gold opacity-40" fill="#C8A24B" viewBox="0 0 32 32"><path d="M10 8C5.6 8 2 11.6 2 16v8h8v-8H6c0-2.2 1.8-4 4-4V8zm14 0c-4.4 0-8 3.6-8 8v8h8v-8h-4c0-2.2 1.8-4 4-4V8z"/></svg>
+        <p class="font-body text-navy text-base leading-relaxed italic">"Arturo Cruz and his team at Taylor Landscaping and Fencing have been giving us excellent service for 18 months and counting. We have had them do yard overhauls, lawn repair, sod installation, roof and gutter cleaning, pruning, landscape fabric installation, bark spreading, weeding, ivy control, and mowing and trimming. Cruz is a good communicator, always on time, polite, and do[es great work]."</p>
+        <div class="mt-auto pt-3" style="border-top: 1px dashed #C8A24B;">
+          <span class="font-condensed font-semibold text-red uppercase tracking-wider text-sm">C&amp;D Richardson</span>
+          <span class="font-body text-navy opacity-60 text-xs ml-2">— Google</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== RETRO OPEN / HOURS BOARD + MAP ===== -->
+<section class="py-16 px-4 texture-paper">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+    <!-- Hours board -->
+    <div>
+      <div class="text-center mb-6">
+        <span class="font-condensed font-semibold text-red uppercase tracking-[0.3em] text-sm">When We Work</span>
+        <h2 class="font-display text-4xl text-navy mt-2">Hours &amp; Location</h2>
+      </div>
+
+      <div class="hours-board overflow-hidden">
+        <!-- OPEN badge -->
+        <div class="bg-red py-4 text-center" style="border-bottom: 4px solid #C8A24B;">
+          <span class="font-display text-cream text-5xl tracking-widest">OPEN</span>
+        </div>
+
+        <!-- Days table -->
+        <div class="p-0">
+          <table class="w-full text-left">
+            <tbody>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Monday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Tuesday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Wednesday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Thursday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Friday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr class="border-b border-gold border-opacity-30">
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Saturday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm">7:00 AM – 6:00 PM</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-3 font-condensed font-semibold text-gold uppercase tracking-wider text-sm">Sunday</td>
+                <td class="px-6 py-3 font-condensed text-cream text-sm opacity-50">Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Address footer -->
+        <div class="bg-navy py-3 px-6 text-center" style="border-top: 4px solid #C8A24B;">
+          <p class="font-condensed text-gold text-sm tracking-wider">1115 Marion St, Centralia, WA 98531</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="flex flex-col gap-4">
+      <div style="border: 4px solid #C8A24B; box-shadow: 6px 6px 0 #C1272D; overflow: hidden;">
+        <iframe
+          title="Taylor Landscaping &amp; Fencing — Centralia WA map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-122.95761680000001,46.716877399999995,-122.91761680000001,46.740877399999995&layer=mapnik&marker=46.728877399999995,-122.93761680000001"
+          width="100%"
+          height="320"
+          loading="lazy"
+          style="border:0; display:block;">
+        </iframe>
+      </div>
+      <p class="font-condensed text-navy text-sm text-center tracking-wide">Serving Centralia, WA and the surrounding area</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== STARBURST CTA ===== -->
+<section class="texture-navy py-20 px-4" style="border-top: 4px solid #C8A24B; border-bottom: 4px solid #C8A24B;">
+  <div class="max-w-2xl mx-auto flex flex-col items-center text-center gap-6">
+
+    <!-- Starburst SVG -->
+    <div class="relative flex items-center justify-center w-56 h-56 mx-auto">
+      <svg viewBox="0 0 220 220" class="absolute inset-0 w-full h-full" aria-hidden="true">
+        <!-- Starburst spikes -->
+        <polygon points="110,5 116,85 130,10 128,90 148,18 138,95 162,30 143,100 180,48 153,107 198,68 163,113 212,92 170,118 218,120 170,136 212,150 163,128 196,172 153,135 178,185 143,142 160,200 128,148 138,202 116,152 122,210 110,157 98,210 104,152 82,202 92,148 60,200 77,142 42,185 67,135 24,172 57,128 8,150 50,118 2,120 50,113 14,92 60,107 22,68 67,100 40,48 77,95 58,30 72,100 92,18 102,95 82,10 94,90 104,18 104,85" fill="#C8A24B" opacity="0.25"/>
+        <!-- Inner circle -->
+        <circle cx="110" cy="110" r="78" fill="#C1272D" stroke="#C8A24B" stroke-width="3"/>
+        <circle cx="110" cy="110" r="70" fill="none" stroke="#F3E9D2" stroke-width="1.5" stroke-dasharray="4 3"/>
+      </svg>
+      <div class="relative z-10 flex flex-col items-center text-center px-4">
+        <span class="font-condensed font-bold text-cream uppercase tracking-widest text-xs">Free</span>
+        <span class="font-display text-cream text-2xl leading-none">Quote</span>
+        <span class="font-condensed text-gold text-xs uppercase tracking-widest mt-1">Call or Text</span>
+      </div>
+    </div>
+
+    <h2 class="font-display text-4xl md:text-5xl text-cream leading-tight">Ready to Get<br>Your Project Done?</h2>
+    <p class="font-body text-cream opacity-80 text-base max-w-md">We serve Centralia and the surrounding area. Call or send a text — we'll get back to you promptly.</p>
+
+    <div class="flex flex-col sm:flex-row gap-4 items-center mt-2">
+      <a href="tel:+12532825334" class="flex items-center gap-2 bg-red text-cream font-condensed font-bold uppercase tracking-widest px-8 py-4 text-xl" style="border: 3px solid #C8A24B; box-shadow: 5px 5px 0 #9E1F24;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2 6.5C2 6.5 5.5 3 8 5l2.5 2.5c.5.5.5 1.5 0 2L9 11c1 1.5 3 3.5 4.5 4.5l1.5-1.5c.5-.5 1.5-.5 2 0L19.5 16.5c2 2.5-1.5 6-1.5 6C8 24.5 0 12 2 6.5z"/></svg>
+        (253) 282-5334
+      </a>
+      <a href="sms:+12532825334" class="flex items-center gap-2 bg-cream text-navy font-condensed font-semibold uppercase tracking-widest px-7 py-4 text-xl" style="border: 3px solid #C8A24B; box-shadow: 5px 5px 0 #1B2A41;">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        Send a Text
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="texture-navy py-10 px-4" style="border-top: 3px solid #C8A24B;">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+    <div class="flex flex-col items-center md:items-start gap-1">
+      <span class="font-display text-cream text-xl">Taylor Landscaping &amp; Fencing LLC</span>
+      <span class="font-condensed text-gold text-sm tracking-widest uppercase">Centralia, WA</span>
+    </div>
+
+    <div class="flex flex-col items-center gap-2 text-center">
+      <a href="tel:+12532825334" class="font-condensed font-bold text-cream text-lg hover:text-gold transition-colors">(253) 282-5334</a>
+      <a href="sms:+12532825334" class="font-condensed text-gold text-sm hover:text-cream transition-colors uppercase tracking-wider">Text us</a>
+      <span class="font-body text-cream text-xs opacity-50">1115 Marion St, Centralia, WA 98531</span>
+    </div>
+
+    <div class="flex flex-col items-center md:items-end gap-1">
+      <div class="flex gap-0.5 mb-1">
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+        <svg class="w-4 h-4" fill="#C8A24B" viewBox="0 0 20 20"><path d="M10 1l2.4 7H19l-5.7 4.1 2.2 6.9L10 15l-5.5 4 2.2-6.9L1 9h6.6z"/></svg>
+      </div>
+      <span class="font-condensed text-cream text-sm">4.8 · 17 Google reviews</span>
+    </div>
+
+  </div>
+
+  <div class="max-w-5xl mx-auto mt-8 pt-6 flex flex-col items-center gap-2" style="border-top: 1px solid rgba(200,162,75,0.3);">
+    <div class="h-px w-32 bg-red mb-1"></div>
+    <span class="font-condensed text-cream opacity-40 text-xs uppercase tracking-widest">Taylor Landscaping &amp; Fencing LLC &copy; 2024</span>
+  </div>
+</footer>
+
+</body>
+</html>

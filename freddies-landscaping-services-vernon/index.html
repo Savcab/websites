@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Freddie's Landscaping Services LLC — Vernon, CT</title>
+<meta name="description" content="Freddie's Landscaping Services in Vernon, CT — new-lawn installation, landscape design with trees & shrubs, tree work, and yard cleanups. Call or text Fred." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: "#FBF7F0",
+          charcoal: "#23201B",
+          forest: "#2F5D44",
+        },
+        fontFamily: {
+          serif: ['Fraunces', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          warm: "0 18px 40px -18px rgba(35,32,27,0.28)",
+          warmsm: "0 8px 22px -12px rgba(35,32,27,0.22)",
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .serif { font-family: 'Fraunces', Georgia, serif; }
+  .link-underline { text-underline-offset: 4px; text-decoration-thickness: 1px; }
+</style>
+</head>
+<body class="bg-cream text-charcoal overflow-x-clip antialiased">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-charcoal/10">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="serif text-xl sm:text-2xl font-600 tracking-tight text-charcoal">
+        Freddie's<span class="text-forest">.</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-500 text-charcoal/70">
+        <a href="#why" class="hover:text-forest transition-colors">Why us</a>
+        <a href="#services" class="hover:text-forest transition-colors">Services</a>
+        <a href="#work" class="hover:text-forest transition-colors">Our work</a>
+        <a href="#reviews" class="hover:text-forest transition-colors">Reviews</a>
+      </nav>
+      <a href="tel:+18606800538" class="inline-flex items-center gap-2 rounded-full bg-forest px-4 py-2 text-sm font-600 text-cream shadow-warmsm hover:bg-forest/90 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hidden sm:inline">(860) 680-0538</span>
+        <span class="sm:hidden">Call</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative">
+    <div class="absolute inset-0">
+      <img src="assets/hero.jpg" alt="Garden bed with a stone retaining wall, daffodils and fresh mulch installed by Freddie's Landscaping" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/40 to-charcoal/85"></div>
+    </div>
+    <div class="relative mx-auto max-w-6xl px-5 sm:px-8 pt-24 pb-20 sm:pt-32 sm:pb-28">
+      <div class="max-w-2xl">
+        <p class="serif italic text-forest-100 text-cream/80 text-sm sm:text-base tracking-wide mb-5">
+          <span class="inline-flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Vernon, Connecticut
+          </span>
+        </p>
+        <h1 class="serif text-4xl sm:text-6xl font-600 leading-[1.05] text-cream">
+          Landscapes your neighbors notice — built by Freddie's.
+        </h1>
+        <p class="mt-6 text-lg text-cream/85 max-w-xl">
+          New lawns, planted gardens, trees and clean yards — done right and explained clearly. Call or text Fred to talk through your project.
+        </p>
+
+        <!-- rating -->
+        <div class="mt-7 inline-flex items-center gap-3 rounded-full bg-cream/95 px-4 py-2 shadow-warmsm">
+          <span class="flex items-center gap-0.5 text-forest" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><defs><linearGradient id="half"><stop offset="60%" stop-color="currentColor"/><stop offset="60%" stop-color="rgba(47,93,68,0.25)"/></linearGradient></defs><path fill="url(#half)" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+          </span>
+          <span class="text-sm font-600 text-charcoal">4.6</span>
+          <span class="h-4 w-px bg-charcoal/20"></span>
+          <span class="text-sm font-500 text-charcoal/70">43 reviews</span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="tel:+18606800538" class="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-base font-600 text-cream shadow-warm hover:bg-forest/90 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Fred
+          </a>
+          <a href="sms:+18606800538" class="inline-flex items-center gap-2 rounded-full bg-cream/95 px-6 py-3 text-base font-600 text-charcoal shadow-warm hover:bg-cream transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text Fred
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+      <div>
+        <p class="serif italic text-forest text-sm tracking-wide mb-4">Why neighbors choose us</p>
+        <h2 class="serif text-3xl sm:text-4xl font-600 leading-tight">
+          We do the work, and we explain it.
+        </h2>
+        <p class="mt-6 text-charcoal/75 text-lg leading-relaxed">
+          Freddie's takes on the projects that change how a yard feels — fresh lawns on tough new-construction soil, planting beds chosen to your colors, and the heavy tree and cleanup work in between. We talk you through what we're doing and how to keep it looking good after we leave.
+        </p>
+        <div class="mt-8">
+          <a href="tel:+18606800538" class="serif italic text-forest link-underline underline decoration-forest/40 hover:decoration-forest text-lg">
+            Talk it through with Fred &rarr;
+          </a>
+        </div>
+      </div>
+      <ul class="space-y-6">
+        <li class="flex gap-4">
+          <span class="mt-0.5 shrink-0 grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7Z"/><path d="M9 21h6"/></svg>
+          </span>
+          <div>
+            <h3 class="serif text-lg font-600">Clear guidance, not jargon</h3>
+            <p class="mt-1 text-charcoal/70">We explain every detail — soil, seeding, and how to care for your lawn once it's in.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="mt-0.5 shrink-0 grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.97 0 9-4.03 9-9 0-4.97-4.03-9-9-9"/><path d="M12 4C7.03 4 3 8.03 3 13c0 1.66.45 3.21 1.24 4.55"/><path d="M12 13l3-3"/><path d="M12 13v9"/></svg>
+          </span>
+          <div>
+            <h3 class="serif text-lg font-600">Plants picked for your space</h3>
+            <p class="mt-1 text-charcoal/70">Trees and shrubs are professionally selected — with your choice of colors.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="mt-0.5 shrink-0 grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <div>
+            <h3 class="serif text-lg font-600">Finished, not just started</h3>
+            <p class="mt-1 text-charcoal/70">From new lawns to backyards turned into something you'll actually use.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-charcoal text-cream">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
+      <div class="max-w-2xl">
+        <p class="serif italic text-cream/60 text-sm tracking-wide mb-4">What we do</p>
+        <h2 class="serif text-3xl sm:text-4xl font-600 leading-tight">A short list, done well.</h2>
+        <p class="mt-5 text-cream/70 text-lg">The work we take on most — and the work our reviews are built on.</p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <article class="rounded-2xl bg-cream/5 ring-1 ring-cream/10 p-7 hover:bg-cream/10 transition-colors">
+          <span class="grid place-items-center h-12 w-12 rounded-xl bg-forest/30 text-cream mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M4 19c0-4 2-8 8-8s8 4 8 8"/><path d="M12 11V5"/><path d="M9 7l3-2 3 2"/></svg>
+          </span>
+          <h3 class="serif text-xl font-600">New-lawn installation</h3>
+          <p class="mt-2 text-cream/70">Topsoil, seeding and fertilizing — including tough new-construction lots where the soil needs help.</p>
+        </article>
+        <article class="rounded-2xl bg-cream/5 ring-1 ring-cream/10 p-7 hover:bg-cream/10 transition-colors">
+          <span class="grid place-items-center h-12 w-12 rounded-xl bg-forest/30 text-cream mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 1 1 6 0c0 1.5-1 2-1.5 3.5"/><path d="M5 13a3 3 0 1 0 3-5"/><path d="M19 13a3 3 0 1 1-3-5"/></svg>
+          </span>
+          <h3 class="serif text-xl font-600">Landscape design</h3>
+          <p class="mt-2 text-cream/70">Trees, shrubs and planting beds — professionally selected and laid out to your colors.</p>
+        </article>
+        <article class="rounded-2xl bg-cream/5 ring-1 ring-cream/10 p-7 hover:bg-cream/10 transition-colors">
+          <span class="grid place-items-center h-12 w-12 rounded-xl bg-forest/30 text-cream mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M8 16h8"/><path d="M12 16c-3 0-5-2-5-5a5 5 0 0 1 10 0c0 3-2 5-5 5Z"/><path d="m15 4 2-2"/></svg>
+          </span>
+          <h3 class="serif text-xl font-600">Tree work &amp; removal</h3>
+          <p class="mt-2 text-cream/70">Taking down and clearing trees so the rest of your project has room to come together.</p>
+        </article>
+        <article class="rounded-2xl bg-cream/5 ring-1 ring-cream/10 p-7 hover:bg-cream/10 transition-colors">
+          <span class="grid place-items-center h-12 w-12 rounded-xl bg-forest/30 text-cream mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l-3 9"/><path d="M11 13 4 20"/><path d="M9 11l6-6a2.83 2.83 0 0 1 4 4l-6 6"/><path d="M17 17h4v4"/></svg>
+          </span>
+          <h3 class="serif text-xl font-600">Yard cleanups</h3>
+          <p class="mt-2 text-cream/70">Clearing, hauling and tidying so your property is ready for what's next.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / GALLERY -->
+  <section id="work" class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
+    <div class="max-w-2xl mb-12">
+      <p class="serif italic text-forest text-sm tracking-wide mb-4">Finished work</p>
+      <h2 class="serif text-3xl sm:text-4xl font-600 leading-tight">A few yards we're proud of.</h2>
+      <p class="mt-5 text-charcoal/70 text-lg">Real projects from around Vernon — gardens, lawns and the heavy lifting in between.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
+      <figure class="group relative overflow-hidden rounded-2xl shadow-warm sm:row-span-2">
+        <img src="assets/lawn.jpg" alt="Large freshly finished lawn at a house, installed by Freddie's Landscaping" class="h-72 sm:h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/80 to-transparent p-5 text-cream serif text-lg">New lawn installation</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-2xl shadow-warm">
+        <img src="assets/garden-bed.jpg" alt="Planted shrub and flower garden bed with fresh mulch" class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/80 to-transparent p-5 text-cream serif text-lg">Planted garden bed</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-2xl shadow-warm">
+        <img src="assets/raised-beds.jpg" alt="Newly built raised garden beds" class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/80 to-transparent p-5 text-cream serif text-lg">Raised garden beds</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-2xl shadow-warm sm:col-span-2">
+        <img src="assets/tree-work.jpg" alt="Cut tree logs from a tree removal job by Freddie's Landscaping" class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/80 to-transparent p-5 text-cream serif text-lg">Tree work &amp; removal</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="bg-forest/[0.06]">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
+      <div class="max-w-2xl mb-12">
+        <p class="serif italic text-forest text-sm tracking-wide mb-4">In their words</p>
+        <h2 class="serif text-3xl sm:text-4xl font-600 leading-tight">What Vernon neighbors say.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <figure class="rounded-2xl bg-cream p-8 shadow-warm ring-1 ring-charcoal/5">
+          <span class="flex items-center gap-0.5 text-forest mb-5" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+          </span>
+          <blockquote class="serif text-xl leading-relaxed text-charcoal">
+            &ldquo;Freddie did a fantastic job putting down topsoil, seeding, and fertilizer at my new construction home, where I had issues with the soil. He took the time to explain every detail about how to care for my lawn.&rdquo;
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-3 text-sm">
+            <span class="grid place-items-center h-9 w-9 rounded-full bg-forest/15 text-forest serif font-600">J</span>
+            <span><span class="font-600 text-charcoal">Ji Ho</span><br /><span class="text-charcoal/60">Google review</span></span>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-cream p-8 shadow-warm ring-1 ring-charcoal/5">
+          <span class="flex items-center gap-0.5 text-forest mb-5" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+          </span>
+          <blockquote class="serif text-xl leading-relaxed text-charcoal">
+            &ldquo;Fred and his crew turned my backyard into a beautiful park with trees and shrubs that were professionally selected, with my choice of colors.&rdquo;
+          </blockquote>
+          <figcaption class="mt-6 flex items-center gap-3 text-sm">
+            <span class="grid place-items-center h-9 w-9 rounded-full bg-forest/15 text-forest serif font-600">E</span>
+            <span><span class="font-600 text-charcoal">Elizabeth O'Donnell</span><br /><span class="text-charcoal/60">Google review</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAND -->
+  <section class="bg-charcoal text-cream">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="serif text-3xl font-600 flex items-center justify-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="text-forest" style="color:#7FB69B"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            4.6
+          </div>
+          <p class="mt-1 text-cream/60 text-sm">average rating</p>
+        </div>
+        <div>
+          <div class="serif text-3xl font-600">43 reviews</div>
+          <p class="mt-1 text-cream/60 text-sm">on Google</p>
+        </div>
+        <div>
+          <div class="serif text-3xl font-600">Vernon, CT</div>
+          <p class="mt-1 text-cream/60 text-sm">and surrounding towns</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / BRAND + MAP -->
+  <section class="mx-auto max-w-6xl px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="overflow-hidden rounded-2xl shadow-warm ring-1 ring-charcoal/5">
+        <img src="assets/truck.jpg" alt="Freddie's Landscaping branded work truck" class="w-full h-72 sm:h-80 object-cover" />
+      </div>
+      <div>
+        <p class="serif italic text-forest text-sm tracking-wide mb-4">Serving Vernon &amp; nearby</p>
+        <h2 class="serif text-3xl sm:text-4xl font-600 leading-tight">Reach Fred directly.</h2>
+        <p class="mt-5 text-charcoal/75 text-lg">
+          Freddie's Landscaping Services works across Vernon, CT and the surrounding area. The fastest way to start a project is a call or a quick text.
+        </p>
+        <div class="mt-7 space-y-3">
+          <a href="tel:+18606800538" class="flex items-center gap-3 text-charcoal font-600">
+            <span class="grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            (860) 680-0538 <span class="font-400 text-charcoal/55 text-sm">· Call for hours</span>
+          </a>
+          <a href="sms:+18606800538" class="flex items-center gap-3 text-charcoal font-600">
+            <span class="grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            Text (860) 680-0538
+          </a>
+          <p class="flex items-center gap-3 text-charcoal/75">
+            <span class="grid place-items-center h-10 w-10 rounded-full bg-forest/10 text-forest">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            Vernon, CT 06066
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 overflow-hidden rounded-2xl shadow-warm ring-1 ring-charcoal/10">
+      <iframe
+        title="Map showing Freddie's Landscaping service area in Vernon, CT"
+        class="w-full h-72 sm:h-80"
+        loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-72.4934%2C41.802%2C-72.4534%2C41.822&layer=mapnik&marker=41.812%2C-72.4734">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative overflow-hidden">
+    <div class="bg-forest text-cream">
+      <div class="mx-auto max-w-6xl px-5 sm:px-8 py-16 sm:py-20 text-center">
+        <h2 class="serif text-3xl sm:text-5xl font-600 leading-tight max-w-3xl mx-auto">
+          Got a yard project in mind? Let's talk it through.
+        </h2>
+        <p class="mt-5 text-cream/85 text-lg max-w-xl mx-auto">
+          New lawn, planting beds, a tree that has to come down, or a cleanup — call or text Fred and we'll figure out the plan.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="tel:+18606800538" class="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3.5 text-base font-600 text-forest shadow-warm hover:bg-cream/90 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (860) 680-0538
+          </a>
+          <a href="sms:+18606800538" class="inline-flex items-center gap-2 rounded-full bg-forest ring-2 ring-cream/60 px-7 py-3.5 text-base font-600 text-cream hover:bg-forest/80 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text Fred
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-charcoal text-cream/80">
+    <div class="mx-auto max-w-6xl px-5 sm:px-8 py-14">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
+        <div>
+          <p class="serif text-2xl font-600 text-cream">Freddie's<span class="text-forest" style="color:#7FB69B">.</span></p>
+          <p class="mt-3 text-sm text-cream/60 max-w-xs">Freddie's Landscaping Services LLC — lawns, gardens, trees and cleanups in Vernon, Connecticut.</p>
+        </div>
+        <div>
+          <p class="serif text-cream font-600 mb-3">Get in touch</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="tel:+18606800538" class="link-underline underline decoration-cream/30 hover:decoration-cream">Call (860) 680-0538</a></li>
+            <li><a href="sms:+18606800538" class="link-underline underline decoration-cream/30 hover:decoration-cream">Text (860) 680-0538</a></li>
+            <li class="text-cream/60">Call for hours</li>
+          </ul>
+        </div>
+        <div>
+          <p class="serif text-cream font-600 mb-3">Service area</p>
+          <p class="text-sm text-cream/60">Vernon, CT 06066<br />and surrounding towns</p>
+          <p class="mt-4 text-sm text-cream/60 flex items-center gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="color:#7FB69B"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            4.6 · 43 reviews
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-cream/50">
+        <p>&copy; 2026 Freddie's Landscaping Services LLC</p>
+        <p class="serif italic text-cream/70">Thanks for stopping by — give Fred a call.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapingBusiness",
+    "name": "Freddie's Landscaping Services LLC",
+    "image": "assets/hero.jpg",
+    "telephone": "+18606800538",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vernon",
+      "addressRegion": "CT",
+      "postalCode": "06066",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.812,
+      "longitude": -72.4734
+    },
+    "areaServed": "Vernon, CT",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "43"
+    }
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocky Mountain Mowing LLC — Lawn Care & Snow Removal in Helena, MT</title>
+<meta name="description" content="Rocky Mountain Mowing LLC — 5.0-star lawn care and snow removal in Helena, Montana. Call or text (406) 202-5251.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter','system-ui','sans-serif'] },
+      colors: { ink: '#0D0D0D', panel: '#161616', acc: '#4ADE54', accd: '#22C55E' },
+      borderWidth: { '3': '3px' }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0D0D0D; }
+  .hero-grad { background: linear-gradient(180deg, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.55) 45%, rgba(13,13,13,0.96) 100%); }
+  .lift { transition: transform .2s ease, border-color .2s ease; }
+  .lift:hover { transform: translateY(-4px); border-color:#4ADE54; }
+</style>
+</head>
+<body class="bg-ink text-white font-sans antialiased overflow-x-clip">
+
+<!-- sticky call bar -->
+<div class="fixed bottom-0 inset-x-0 z-50 bg-panel/95 backdrop-blur border-t border-white/10 px-4 py-3 flex gap-3 sm:hidden">
+  <a href="tel:+14062025251" class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-acc text-ink font-bold py-3">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="sms:+14062025251" class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl border-2 border-white/25 text-white font-bold py-3">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Text
+  </a>
+</div>
+
+<!-- nav -->
+<header class="absolute top-0 inset-x-0 z-40">
+  <div class="max-w-6xl mx-auto px-5 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-2.5">
+      <span class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-acc text-ink">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20V8l5-4 5 4v12"/><path d="M3 20h18"/><path d="M11 12h2"/></svg>
+      </span>
+      <span class="font-extrabold tracking-tight text-lg leading-none">Rocky Mountain Mowing</span>
+    </div>
+    <a href="tel:+14062025251" class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-acc text-ink font-bold px-4 py-2.5 text-sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (406) 202-5251
+    </a>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="relative min-h-[100svh] flex items-end">
+  <img src="assets/photo_4.jpg" alt="Freshly striped green lawn mowed by Rocky Mountain Mowing in Helena, Montana" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-grad"></div>
+  <div class="relative max-w-6xl mx-auto px-5 pb-28 sm:pb-20 pt-32 w-full">
+    <p class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-acc mb-5">
+      <span class="w-6 h-px bg-acc"></span>Helena, Montana
+    </p>
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.02] tracking-tight max-w-3xl">
+      A sharper lawn,<br>and snow off the drive<br>when the season turns.
+    </h1>
+    <p class="mt-6 text-white/80 text-lg max-w-xl">
+      Dependable lawn care and snow removal across Helena and the surrounding area — the crew Helena keeps calling back.
+    </p>
+    <div class="mt-7 flex items-center gap-4 flex-wrap">
+      <div class="inline-flex items-center gap-2">
+        <span class="flex">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+        </span>
+        <span class="text-sm font-semibold text-white/90">5.0 · 18 Google reviews</span>
+      </div>
+    </div>
+    <div class="mt-7 flex gap-3 flex-wrap">
+      <a href="tel:+14062025251" class="inline-flex items-center gap-2 rounded-xl bg-acc text-ink font-bold px-6 py-3.5 text-base hover:bg-accd transition-colors">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (406) 202-5251
+      </a>
+      <a href="sms:+14062025251" class="inline-flex items-center gap-2 rounded-xl border-2 border-white/25 text-white font-bold px-6 py-3.5 text-base hover:border-acc transition-colors">
+        Text us a question
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- trust stat row -->
+<section class="border-y border-white/10 bg-panel">
+  <div class="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+    <div>
+      <div class="text-3xl sm:text-4xl font-black text-acc">5.0</div>
+      <div class="text-xs sm:text-sm text-white/60 mt-1 uppercase tracking-wide">Average rating</div>
+    </div>
+    <div>
+      <div class="text-3xl sm:text-4xl font-black text-acc">18</div>
+      <div class="text-xs sm:text-sm text-white/60 mt-1 uppercase tracking-wide">Google reviews</div>
+    </div>
+    <div class="col-span-2 md:col-span-1">
+      <div class="text-3xl sm:text-4xl font-black text-acc">Year-round</div>
+      <div class="text-xs sm:text-sm text-white/60 mt-1 uppercase tracking-wide">Mowing &amp; snow</div>
+    </div>
+  </div>
+</section>
+
+<!-- why us -->
+<section class="max-w-6xl mx-auto px-5 py-16 sm:py-24">
+  <p class="text-xs font-bold tracking-[0.2em] uppercase text-acc mb-3">Why Helena calls us back</p>
+  <h2 class="text-3xl sm:text-4xl font-black tracking-tight max-w-2xl mb-12">The kind of crew that shows up — and answers the phone.</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="lift rounded-2xl bg-panel border border-white/10 p-7">
+      <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-acc/15 text-acc mb-5">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </span>
+      <h3 class="font-bold text-lg mb-2">Shows up on schedule</h3>
+      <p class="text-white/65 text-sm leading-relaxed">"Came when they said they would, did a great job." Reliable, on-time service week after week.</p>
+    </div>
+    <div class="lift rounded-2xl bg-panel border border-white/10 p-7">
+      <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-acc/15 text-acc mb-5">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </span>
+      <h3 class="font-bold text-lg mb-2">Easy to reach</h3>
+      <p class="text-white/65 text-sm leading-relaxed">Reviewers note we "answered the phone right away" and follow up fast. Call or text and you'll get a straight answer.</p>
+    </div>
+    <div class="lift rounded-2xl bg-panel border border-white/10 p-7">
+      <span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-acc/15 text-acc mb-5">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+      </span>
+      <h3 class="font-bold text-lg mb-2">Every season covered</h3>
+      <p class="text-white/65 text-sm leading-relaxed">Lawn care through the green months, snow plowing and removal when winter hits — one crew, no matter the season.</p>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+<section class="bg-panel border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-16 sm:py-24">
+    <p class="text-xs font-bold tracking-[0.2em] uppercase text-acc mb-3">What we do</p>
+    <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-12">Services for Helena properties</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div class="rounded-2xl bg-ink border border-white/10 p-7 flex gap-5">
+        <span class="shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-acc/15 text-acc">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M5 17V9a2 2 0 0 1 2-2h2l2-3h2"/><circle cx="7" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/></svg>
+        </span>
+        <div>
+          <h3 class="font-bold text-lg mb-1.5">Lawn mowing &amp; care</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Clean, striped mowing and routine lawn upkeep that keeps your yard looking pristine all season.</p>
+        </div>
+      </div>
+      <div class="rounded-2xl bg-ink border border-white/10 p-7 flex gap-5">
+        <span class="shrink-0 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-acc/15 text-acc">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m4.9 4.9 14.2 14.2"/><path d="m19.1 4.9-14.2 14.2"/></svg>
+        </span>
+        <div>
+          <h3 class="font-bold text-lg mb-1.5">Snow plowing &amp; removal</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Driveways and lots cleared through the Montana winter, so you're not stuck in after the next storm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- our work gallery -->
+<section class="max-w-6xl mx-auto px-5 py-16 sm:py-24">
+  <p class="text-xs font-bold tracking-[0.2em] uppercase text-acc mb-3">Our work</p>
+  <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-12">Lawns we've cut around Helena</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+    <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[4/5]">
+      <img src="assets/photo_1.jpg" alt="Striped freshly mowed front lawn in Helena" class="w-full h-full object-cover" loading="lazy">
+    </div>
+    <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[4/5]">
+      <img src="assets/photo_2.jpg" alt="Large mowed lawn at dusk in Helena, Montana" class="w-full h-full object-cover" loading="lazy">
+    </div>
+    <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[4/5]">
+      <img src="assets/photo_3.jpg" alt="Spring lawn with mowing stripes and mountain backdrop near Helena" class="w-full h-full object-cover" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="bg-panel border-y border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-16 sm:py-24">
+    <p class="text-xs font-bold tracking-[0.2em] uppercase text-acc mb-3">In their words</p>
+    <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-12">5.0 · 18 Google reviews</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <figure class="rounded-2xl bg-ink border border-white/10 p-7">
+        <div class="flex mb-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+        </div>
+        <blockquote class="text-white/80 text-sm leading-relaxed">"They take care of our lawn care and snow plowing... their service is outstanding... they go above and beyond to make sure everything looks pristine, no matter the season."</blockquote>
+        <figcaption class="mt-4 text-xs text-white/50">— Uncommon Ground, Google</figcaption>
+      </figure>
+      <figure class="rounded-2xl bg-ink border border-white/10 p-7">
+        <div class="flex mb-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+        </div>
+        <blockquote class="text-white/80 text-sm leading-relaxed">"Answered the phone right away. He was willing to give advice saving me a lot of money. They will be on the top of my list to call when I need work done."</blockquote>
+        <figcaption class="mt-4 text-xs text-white/50">— Chris Bullard, Google</figcaption>
+      </figure>
+      <figure class="rounded-2xl bg-ink border border-white/10 p-7">
+        <div class="flex mb-4">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#4ADE54"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.169L12 18.896l-7.335 3.857 1.401-8.169L.132 9.21l8.2-1.192z"/></svg>
+        </div>
+        <blockquote class="text-white/80 text-sm leading-relaxed">"Came when they said they would, did a great job!!"</blockquote>
+        <figcaption class="mt-4 text-xs text-white/50">— Lynne Bennett, Google</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- hours + map -->
+<section class="max-w-6xl mx-auto px-5 py-16 sm:py-24">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+    <div class="rounded-2xl bg-panel border border-white/10 p-8">
+      <p class="text-xs font-bold tracking-[0.2em] uppercase text-acc mb-5">Hours &amp; contact</p>
+      <table class="w-full text-sm">
+        <tbody class="divide-y divide-white/10">
+          <tr><td class="py-2.5 text-white/60">Monday</td><td class="py-2.5 text-right font-medium">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-white/60">Tuesday</td><td class="py-2.5 text-right font-medium">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-white/60">Wednesday</td><td class="py-2.5 text-right font-medium">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-white/60">Thursday</td><td class="py-2.5 text-right font-medium">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-white/60">Friday</td><td class="py-2.5 text-right font-medium">8:00 AM – 5:00 PM</td></tr>
+          <tr><td class="py-2.5 text-white/60">Saturday</td><td class="py-2.5 text-right font-medium text-white/45">Closed</td></tr>
+          <tr><td class="py-2.5 text-white/60">Sunday</td><td class="py-2.5 text-right font-medium text-white/45">Closed</td></tr>
+        </tbody>
+      </table>
+      <div class="mt-6 space-y-2 text-sm">
+        <a href="tel:+14062025251" class="flex items-center gap-3 text-white hover:text-acc transition-colors"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (406) 202-5251</a>
+        <p class="flex items-center gap-3 text-white/60"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 1514 Townsend Ave, Helena, MT 59601</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden border border-white/10 min-h-[320px]">
+      <iframe title="Map to Rocky Mountain Mowing, Helena MT" class="w-full h-full min-h-[320px]" src="https://www.openstreetmap.org/export/embed.html?bbox=-112.0341354,46.5834236,-111.9941354,46.6074236&layer=mapnik&marker=46.5954236,-112.0141354" style="border:0"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- final CTA -->
+<section class="bg-acc text-ink">
+  <div class="max-w-4xl mx-auto px-5 py-16 sm:py-20 text-center">
+    <h2 class="text-3xl sm:text-5xl font-black tracking-tight">Ready for a sharper lawn?</h2>
+    <p class="mt-4 text-ink/75 text-lg max-w-xl mx-auto">Call or text Rocky Mountain Mowing and we'll take care of Helena, season after season.</p>
+    <div class="mt-8 flex gap-3 justify-center flex-wrap">
+      <a href="tel:+14062025251" class="inline-flex items-center gap-2 rounded-xl bg-ink text-white font-bold px-7 py-4 text-base">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (406) 202-5251
+      </a>
+      <a href="sms:+14062025251" class="inline-flex items-center gap-2 rounded-xl border-3 border-ink text-ink font-bold px-7 py-4 text-base">
+        Text us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-ink border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+    <div>
+      <p class="font-extrabold text-lg">Rocky Mountain Mowing LLC</p>
+      <p class="text-white/50 text-sm mt-1">Lawn care &amp; snow removal · Helena, MT and the surrounding area</p>
+    </div>
+    <div class="text-sm text-white/50">
+      <a href="tel:+14062025251" class="hover:text-acc">(406) 202-5251</a> · 1514 Townsend Ave, Helena, MT 59601
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs text-white/30">© 2026 Rocky Mountain Mowing LLC. All rights reserved.</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Rocky Mountain Mowing LLC",
+  "image": "assets/photo_4.jpg",
+  "telephone": "+14062025251",
+  "address": { "@type": "PostalAddress", "streetAddress": "1514 Townsend Ave", "addressLocality": "Helena", "addressRegion": "MT", "postalCode": "59601", "addressCountry": "US" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 46.5954236, "longitude": -112.0141354 },
+  "areaServed": "Helena, MT",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "18" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }
+  ]
+}
+</script>
+</body>
+</html>

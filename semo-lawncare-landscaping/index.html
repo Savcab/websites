@@ -11,6 +11,15 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/work-05.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEMO LawnCare &amp; Landscaping — Sikeston, MO">
+<meta name="twitter:description" content="Professional mowing &amp; landscaping for Sikeston + 45 miles. Stripe-perfect lawns, custom beds, money-back guarantee. Rated 5.0.">
+<meta name="twitter:image" content="https://savcab.github.io/websites/semo-lawncare-landscaping/assets/work-05.jpg">
+<meta property="og:url" content="https://savcab.github.io/websites/semo-lawncare-landscaping/">
+<meta property="og:site_name" content="SEMO LawnCare &amp; Landscaping">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="lawn care Sikeston MO, landscaping Sikeston, lawn mowing Scott County, Southeast Missouri landscaping, SEMO lawn care, landscaper near me, lawn care jobs Sikeston">
+<meta name="author" content="SEMO LawnCare &amp; Landscaping LLC">
+<meta name="theme-color" content="#1C3A2A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231C3A2A'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Georgia,serif' font-weight='700' fill='%23C2A36B' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +100,7 @@ tailwind.config={theme:{extend:{
   .lb img{max-width:92vw;max-height:86vh;border-radius:.4rem;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
 </style>
 </head>
-<body class="overflow-x-clip">
+<body class="overflow-x-clip pb-[78px] sm:pb-0">
 <script>document.documentElement.classList.add('js')</script>
 
 <!-- scroll progress -->
@@ -126,6 +135,7 @@ tailwind.config={theme:{extend:{
         <a href="#work" class="navlink hover:text-forest">Our Work</a>
         <a href="#pricing" class="navlink hover:text-forest">Pricing</a>
         <a href="#estimate" class="navlink hover:text-forest">Estimate</a>
+        <a href="#careers" class="navlink hover:text-forest">We're Hiring</a>
       </nav>
       <div class="flex items-center gap-2">
         <a href="tel:+16156649423" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-forest hover:text-moss">
@@ -159,6 +169,7 @@ tailwind.config={theme:{extend:{
       <a href="#area" data-close class="py-3 border-b border-stoneline">Service Area</a>
       <a href="#pricing" data-close class="py-3 border-b border-stoneline">Pricing</a>
       <a href="#estimate" data-close class="py-3 border-b border-stoneline">Price Estimate</a>
+      <a href="#careers" data-close class="py-3 border-b border-stoneline">We're Hiring</a>
       <a href="#visit" data-close class="py-3 border-b border-stoneline">Visit &amp; Hours</a>
     </div>
     <div class="mt-auto grid gap-3">
@@ -588,26 +599,37 @@ tailwind.config={theme:{extend:{
     <div class="reveal">
       <span class="label text-brass3">07 — Free quote</span>
       <h2 class="disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">Tell us about<br>your yard.</h2>
-      <p class="text-inksoft mt-5 max-w-md">Send a few details and we'll get back to you — usually the same day — with a free, no-pressure quote.</p>
+      <p class="text-inksoft mt-5 max-w-md">Send a few details and we'll get back to you — usually the same day — with a free, no-pressure quote. Just your name and one way to reach you is enough.</p>
 
-      <form id="quoteform" class="mt-8 grid sm:grid-cols-2 gap-4" novalidate>
+      <!-- one-tap contact: reach us without the form -->
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="tel:+16156649423" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm hover:bg-forest hover:text-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call now</a>
+        <a href="sms:+16156649423" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm hover:bg-forest hover:text-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>Text us</a>
+        <a href="mailto:SEMOLandScaping@gmail.com" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm hover:bg-forest hover:text-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>Email</a>
+      </div>
+      <p class="text-xs text-inksoft mt-3">Or fill out the quick form below — whatever's easiest.</p>
+
+      <form id="quoteform" class="mt-7 grid sm:grid-cols-2 gap-4" novalidate>
         <div class="sm:col-span-1">
           <label class="label text-[.66rem] text-inksoft" for="q-name">Name <span class="text-brass3">*</span></label>
           <input id="q-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="q-name-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Jane Doe">
           <p id="q-name-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please tell us your name.</p>
         </div>
         <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-email">Email <span class="text-brass3">*</span></label>
-          <input id="q-email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="q-email-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="you@email.com">
-          <p id="q-email-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid email so we can send your quote.</p>
+          <label class="label text-[.66rem] text-inksoft" for="q-phone">Phone</label>
+          <input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="(573) 000-0000">
+          <p id="q-phone-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid phone number.</p>
         </div>
         <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-phone">Phone <span class="text-brass3">*</span></label>
-          <input id="q-phone" name="phone" type="tel" autocomplete="tel" required aria-required="true" aria-describedby="q-phone-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="(573) 000-0000">
-          <p id="q-phone-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Add a valid phone number so we can text your quote.</p>
+          <label class="label text-[.66rem] text-inksoft" for="q-email">Email</label>
+          <input id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="you@email.com">
+          <p id="q-email-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid email address.</p>
+        </div>
+        <div class="sm:col-span-2">
+          <p id="q-contact-err" class="hidden -mt-1 text-xs font-medium" style="color:#a83b22">Please add a phone or email so we can reach you.</p>
         </div>
         <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-service">Service</label>
+          <label class="label text-[.66rem] text-inksoft" for="q-service">Service <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
           <select id="q-service" name="service" class="field w-full mt-1.5 px-4 py-3 text-sm text-ink">
             <option>Lawn mowing</option>
             <option>Landscaping</option>
@@ -617,11 +639,11 @@ tailwind.config={theme:{extend:{
           </select>
         </div>
         <div class="sm:col-span-2">
-          <label class="label text-[.66rem] text-inksoft" for="q-address">Property address</label>
+          <label class="label text-[.66rem] text-inksoft" for="q-address">Property address <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
           <input id="q-address" name="address" type="text" autocomplete="street-address" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Street, City, ZIP">
         </div>
         <div class="sm:col-span-2">
-          <label class="label text-[.66rem] text-inksoft" for="q-message">What are you looking for?</label>
+          <label class="label text-[.66rem] text-inksoft" for="q-message">What are you looking for? <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
           <textarea id="q-message" name="message" rows="4" class="field w-full mt-1.5 px-4 py-3 text-sm resize-none" placeholder="Acreage, the look you're after, timing — anything helps."></textarea>
         </div>
         <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-4 mt-1">
@@ -681,6 +703,73 @@ tailwind.config={theme:{extend:{
   </div>
 </section>
 
+<!-- CAREERS / HIRING -->
+<section id="careers" class="bg-forest text-paper relative overflow-hidden">
+  <div class="absolute inset-0 grain opacity-40 pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    <!-- pitch -->
+    <div class="reveal">
+      <span class="label text-brass">08 — We're hiring</span>
+      <h2 class="disp font-light text-4xl lg:text-5xl mt-3 leading-tight">Join the SEMO crew.</h2>
+      <p class="text-paper/70 mt-5 max-w-md leading-relaxed">We're a growing, locally owned LLC serving Sikeston and the surrounding 45 miles. We're looking for dependable people who take pride in a sharp, finished property — for both seasonal and full-time lawn &amp; landscape roles.</p>
+      <ul class="mt-7 space-y-3 text-sm text-paper/85 max-w-md">
+        <li class="flex gap-3"><svg class="ic w-5 h-5 text-brass shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Seasonal &amp; full-time openings on mowing and landscape crews</li>
+        <li class="flex gap-3"><svg class="ic w-5 h-5 text-brass shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Local work, no long hauls — everything within 45 miles of Sikeston</li>
+        <li class="flex gap-3"><svg class="ic w-5 h-5 text-brass shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Hands-on training — no experience required to get started</li>
+        <li class="flex gap-3"><svg class="ic w-5 h-5 text-brass shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>A small team that treats you right and pays fairly</li>
+      </ul>
+      <p class="text-paper/60 text-sm mt-7 max-w-md">Prefer to reach out directly? Call or text <a href="tel:+16156649423" class="text-brass font-semibold underline-grow">(615) 664-9423</a> or email <a href="mailto:SEMOLandScaping@gmail.com?subject=Job%20application" class="text-brass font-semibold underline-grow break-all">SEMOLandScaping@gmail.com</a>.</p>
+    </div>
+    <!-- apply form -->
+    <div class="reveal rounded-3xl bg-paper text-ink p-7 sm:p-9 shadow-lift">
+      <h3 class="disp text-2xl text-ink">Apply in 30 seconds</h3>
+      <p class="text-inksoft text-sm mt-2">Tell us a little about you and we'll be in touch.</p>
+      <form id="applyform" class="mt-6 grid sm:grid-cols-2 gap-4" novalidate>
+        <div class="sm:col-span-1">
+          <label class="label text-[.66rem] text-inksoft" for="a-name">Name <span class="text-brass3">*</span></label>
+          <input id="a-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="a-name-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Your name">
+          <p id="a-name-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please tell us your name.</p>
+        </div>
+        <div class="sm:col-span-1">
+          <label class="label text-[.66rem] text-inksoft" for="a-phone">Phone <span class="text-brass3">*</span></label>
+          <input id="a-phone" name="phone" type="tel" autocomplete="tel" required aria-required="true" aria-describedby="a-phone-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="(573) 000-0000">
+          <p id="a-phone-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid phone number.</p>
+        </div>
+        <div class="sm:col-span-1">
+          <label class="label text-[.66rem] text-inksoft" for="a-email">Email <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
+          <input id="a-email" name="email" type="email" autocomplete="email" aria-describedby="a-email-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="you@email.com">
+          <p id="a-email-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid email address.</p>
+        </div>
+        <div class="sm:col-span-1">
+          <label class="label text-[.66rem] text-inksoft" for="a-position">Position</label>
+          <select id="a-position" name="position" class="field w-full mt-1.5 px-4 py-3 text-sm text-ink">
+            <option>Lawn / mowing crew</option>
+            <option>Landscape crew</option>
+            <option>Seasonal help</option>
+            <option>Full-time</option>
+            <option>Open to anything</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="label text-[.66rem] text-inksoft" for="a-message">A bit about you <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
+          <textarea id="a-message" name="message" rows="3" class="field w-full mt-1.5 px-4 py-3 text-sm resize-none" placeholder="Experience, availability, anything you'd like us to know."></textarea>
+        </div>
+        <div class="sm:col-span-2">
+          <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full btn-pri px-7 py-4 font-semibold w-full sm:w-auto">
+            Apply now
+            <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </form>
+      <div id="applysuccess" class="hidden mt-6 rounded-2xl bg-forest text-paper p-6 text-center">
+        <div class="w-12 h-12 rounded-full bg-white/10 text-brass grid place-items-center mx-auto"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg></div>
+        <h4 class="disp text-xl mt-4">Thanks — application received.</h4>
+        <p class="text-paper/70 mt-2 text-sm" id="applysuccessmsg">We'll reach out soon. For anything urgent, call or text (615) 664-9423.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- NEWSLETTER -->
 <section class="bg-paper2 border-t border-stoneline">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14">
@@ -700,7 +789,7 @@ tailwind.config={theme:{extend:{
 </section>
 
 <!-- FOOTER -->
-<footer class="relative bg-forest3 text-paper/70 overflow-hidden pb-24 lg:pb-0">
+<footer class="relative bg-forest3 text-paper/70 overflow-hidden pb-24 sm:pb-0">
   <!-- fresh-cut stripe edge (brand motif) -->
   <div class="h-2.5" style="background-image:repeating-linear-gradient(115deg,#1C3A2A 0 18px,#2b513c 18px 36px)"></div>
   <!-- oversized wordmark watermark -->
@@ -755,10 +844,10 @@ tailwind.config={theme:{extend:{
 </footer>
 </main>
 
-<!-- MOBILE STICKY CTA (reveals after the hero) -->
-<div id="mcta" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-paper/95 backdrop-blur border-t border-stoneline px-4 py-3 flex gap-3 translate-y-full transition-transform duration-300" style="padding-bottom:max(0.75rem,env(safe-area-inset-bottom))">
-  <a href="tel:+16156649423" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold py-3 text-sm"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call</a>
-  <a href="#quote" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full btn-pri font-semibold py-3 text-sm">Free quote</a>
+<!-- MOBILE STICKY CTA (visible immediately on phones — primary "Get a Free Quote" can't be missed) -->
+<div id="mcta" class="sm:hidden fixed bottom-0 inset-x-0 z-[80] glass border-t border-stoneline shadow-lift px-4 py-3 flex gap-3" style="padding-bottom:max(0.75rem,env(safe-area-inset-bottom))">
+  <a href="tel:+16156649423" aria-label="Call SEMO LawnCare at (615) 664-9423" class="shrink-0 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call</a>
+  <a href="#quote" aria-label="Get a free quote" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full btn-pri font-semibold py-3.5 text-sm">Get a Free Quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 
 <!-- LIGHTBOX -->
@@ -786,15 +875,14 @@ tailwind.config={theme:{extend:{
   window.semoSyncChrome=syncChrome;
   syncChrome();window.addEventListener('resize',syncChrome,{passive:true});
 
-  // header scroll state + scroll-progress bar + mobile CTA reveal
-  var hdr=document.getElementById('hdrbar'),prog=document.getElementById('progbar'),mcta=document.getElementById('mcta');
+  // header scroll state + scroll-progress bar (mobile CTA is always visible on phones)
+  var hdr=document.getElementById('hdrbar'),prog=document.getElementById('progbar');
   function onScroll(){
     var y=window.scrollY;
     if(y>30){hdr.classList.add('hdr-solid');}
     else{hdr.classList.remove('hdr-solid');}
     var max=document.body.scrollHeight-window.innerHeight;
     if(prog)prog.style.transform='scaleX('+(max>0?y/max:0)+')';
-    if(mcta){if(y>520)mcta.classList.remove('translate-y-full');else mcta.classList.add('translate-y-full');}
   }
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
 
@@ -870,25 +958,39 @@ tailwind.config={theme:{extend:{
   lb.addEventListener('click',function(e){if(e.target===lb||e.target.closest('button'))closeLb();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 
-  // quote form — name, email, phone all required (so every lead is reachable)
+  // quote form — name required + at least one contact method (phone OR email); both optional individually
   var form=document.getElementById('quoteform'),success=document.getElementById('quotesuccess');
   function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
   function digits(v){return (v.match(/\d/g)||[]).length;}
-  var fields=[
-    {el:document.getElementById('q-name'),err:document.getElementById('q-name-err'),ok:function(v){return v.trim().length>=2;}},
-    {el:document.getElementById('q-email'),err:document.getElementById('q-email-err'),ok:function(v){return validEmail(v.trim());}},
-    {el:document.getElementById('q-phone'),err:document.getElementById('q-phone-err'),ok:function(v){return digits(v)>=10;}}
-  ];
-  function mark(f,bad){
-    if(bad){f.el.classList.add('err');f.el.setAttribute('aria-invalid','true');f.err.classList.remove('hidden');}
-    else{f.el.classList.remove('err');f.el.removeAttribute('aria-invalid');f.err.classList.add('hidden');}
+  var qName=document.getElementById('q-name'),qNameErr=document.getElementById('q-name-err');
+  var qPhone=document.getElementById('q-phone'),qPhoneErr=document.getElementById('q-phone-err');
+  var qEmail=document.getElementById('q-email'),qEmailErr=document.getElementById('q-email-err');
+  var qContactErr=document.getElementById('q-contact-err');
+  function setErr(el,err,bad){
+    if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err)err.classList.remove('hidden');}
+    else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.add('hidden');}
   }
-  fields.forEach(function(f){f.el.addEventListener('input',function(){if(f.ok(f.el.value))mark(f,false);});});
+  function validateQuote(){
+    var ok=true;
+    var nameOk=qName.value.trim().length>=2;setErr(qName,qNameErr,!nameOk);if(!nameOk)ok=false;
+    var phoneVal=qPhone.value.trim(),emailVal=qEmail.value.trim();
+    // a filled contact field must itself be valid
+    var phoneBad=phoneVal.length>0&&digits(phoneVal)<10;setErr(qPhone,qPhoneErr,phoneBad);if(phoneBad)ok=false;
+    var emailBad=emailVal.length>0&&!validEmail(emailVal);setErr(qEmail,qEmailErr,emailBad);if(emailBad)ok=false;
+    // need at least one contact method present
+    var hasContact=(phoneVal.length>0&&!phoneBad)||(emailVal.length>0&&!emailBad);
+    if(!hasContact){qContactErr.classList.remove('hidden');if(!phoneBad&&!emailBad){qPhone.classList.add('err');qEmail.classList.add('err');}ok=false;}
+    else{qContactErr.classList.add('hidden');}
+    return ok;
+  }
+  [qName,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
   form.addEventListener('submit',function(e){
     e.preventDefault();
-    var first=null;
-    fields.forEach(function(f){var bad=!f.ok(f.el.value);mark(f,bad);if(bad&&!first)first=f.el;});
-    if(first){first.focus();return;}
+    form.dataset.tried='1';
+    if(!validateQuote()){
+      var firstBad=form.querySelector('.err');if(firstBad)firstBad.focus();
+      return;
+    }
     var data={};new FormData(form).forEach(function(v,k){data[k]=v;});
     var name=(data.name||'').trim().split(' ')[0];
     document.getElementById('successmsg').textContent=(name?'Thanks, '+name+' — ':'Thanks — ')+"we'll text or email your free quote shortly, usually the same day. For anything urgent, call or text (615) 664-9423.";
@@ -930,6 +1032,37 @@ tailwind.config={theme:{extend:{
     try{fetch('https://formsubmit.co/ajax/SEMOLandScaping@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'New newsletter signup',Email:nlmail.value.trim()})}).catch(function(){});}catch(_){}
     nl.style.display='none';nldone.classList.remove('hidden');
   });
+
+  // careers / apply form — name + phone required, email optional but validated if present
+  var af=document.getElementById('applyform'),afSuccess=document.getElementById('applysuccess');
+  if(af){
+    var aName=document.getElementById('a-name'),aNameErr=document.getElementById('a-name-err');
+    var aPhone=document.getElementById('a-phone'),aPhoneErr=document.getElementById('a-phone-err');
+    var aEmail=document.getElementById('a-email'),aEmailErr=document.getElementById('a-email-err');
+    function aMark(el,err,bad){
+      if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err)err.classList.remove('hidden');}
+      else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.add('hidden');}
+    }
+    function validateApply(){
+      var ok=true;
+      var nameOk=aName.value.trim().length>=2;aMark(aName,aNameErr,!nameOk);if(!nameOk)ok=false;
+      var phoneOk=digits(aPhone.value)>=10;aMark(aPhone,aPhoneErr,!phoneOk);if(!phoneOk)ok=false;
+      var emailVal=aEmail.value.trim(),emailBad=emailVal.length>0&&!validEmail(emailVal);aMark(aEmail,aEmailErr,emailBad);if(emailBad)ok=false;
+      return ok;
+    }
+    [aName,aPhone,aEmail].forEach(function(el){el.addEventListener('input',function(){if(!af.dataset.tried)return;validateApply();});});
+    af.addEventListener('submit',function(e){
+      e.preventDefault();
+      af.dataset.tried='1';
+      if(!validateApply()){var fb=af.querySelector('.err');if(fb)fb.focus();return;}
+      var data={};new FormData(af).forEach(function(v,k){data[k]=v;});
+      var fn=(data.name||'').trim().split(' ')[0];
+      document.getElementById('applysuccessmsg').textContent=(fn?'Thanks, '+fn+' — ':'Thanks — ')+"we'll be in touch about the position soon. For anything urgent, call or text (615) 664-9423.";
+      try{fetch('https://formsubmit.co/ajax/SEMOLandScaping@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'New job application from your website',_template:'table',Name:data.name||'',Phone:data.phone||'',Email:data.email||'',Position:data.position||'',About:data.message||''})}).catch(function(){});}catch(_){}
+      af.style.display='none';afSuccess.classList.remove('hidden');
+      afSuccess.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  }
 })();
 </script>
 
@@ -949,6 +1082,29 @@ tailwind.config={theme:{extend:{
   ],
   "sameAs":["https://www.facebook.com/p/SEMO-LawnCare-Landscaping-61576330355672/","https://www.instagram.com/semo.lawnandlandscaping/","https://www.tiktok.com/@semo.lawnandlandscaping","https://www.youtube.com/channel/UCo2JQ_C8Y8ohmOnLDmj1Zlg"],
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"11"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"JobPosting",
+  "title":"Lawn & Landscape Crew — Seasonal & Full-Time",
+  "description":"<p>SEMO LawnCare & Landscaping LLC is hiring dependable lawn and landscape crew members in Sikeston, MO and the surrounding 45-mile area (Scott County and Southeast Missouri). Seasonal and full-time openings on mowing and landscape crews. Local work — everything within 45 miles of Sikeston. Hands-on training provided; no experience required to get started. A small, locally owned team that treats you right and pays fairly.</p>",
+  "datePosted":"2026-06-17",
+  "validThrough":"2026-12-31",
+  "employmentType":["FULL_TIME","PART_TIME","SEASONAL"],
+  "industry":"Landscaping Services",
+  "hiringOrganization":{
+    "@type":"Organization","name":"SEMO LawnCare & Landscaping LLC",
+    "sameAs":"https://savcab.github.io/websites/semo-lawncare-landscaping/",
+    "logo":"https://savcab.github.io/websites/semo-lawncare-landscaping/assets/work-05.jpg"
+  },
+  "jobLocation":{
+    "@type":"Place",
+    "address":{"@type":"PostalAddress","streetAddress":"218 Kramer Dr","addressLocality":"Sikeston","addressRegion":"MO","postalCode":"63801","addressCountry":"US"}
+  },
+  "applicantLocationRequirements":{"@type":"Country","name":"US"},
+  "directApply":true,
+  "url":"https://savcab.github.io/websites/semo-lawncare-landscaping/#careers"
 }
 </script>
 </body>

@@ -656,8 +656,9 @@ tailwind.config={theme:{extend:{
           </select>
         </div>
         <div class="sm:col-span-2">
-          <label class="label text-[.66rem] text-inksoft" for="q-address">Property address <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
-          <input id="q-address" name="address" type="text" autocomplete="street-address" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Street, City, ZIP">
+          <label class="label text-[.66rem] text-inksoft" for="q-address">Property address <span class="text-brass3">*</span></label>
+          <input id="q-address" name="address" type="text" autocomplete="street-address" required aria-required="true" aria-describedby="q-address-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Street, City, ZIP">
+          <p id="q-address-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please add the property address.</p>
         </div>
         <div class="sm:col-span-2">
           <label class="label text-[.66rem] text-inksoft" for="q-message">What are you looking for? <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
@@ -975,13 +976,14 @@ tailwind.config={theme:{extend:{
   lb.addEventListener('click',function(e){if(e.target===lb||e.target.closest('button'))closeLb();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 
-  // quote form — name required + at least one contact method (phone OR email); both optional individually
+  // quote form — name + property address required, plus at least one contact method (phone OR email)
   var form=document.getElementById('quoteform'),success=document.getElementById('quotesuccess');
   function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
   function digits(v){return (v.match(/\d/g)||[]).length;}
   var qName=document.getElementById('q-name'),qNameErr=document.getElementById('q-name-err');
   var qPhone=document.getElementById('q-phone'),qPhoneErr=document.getElementById('q-phone-err');
   var qEmail=document.getElementById('q-email'),qEmailErr=document.getElementById('q-email-err');
+  var qAddress=document.getElementById('q-address'),qAddressErr=document.getElementById('q-address-err');
   var qContactErr=document.getElementById('q-contact-err');
   function setErr(el,err,bad){
     if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err){err.setAttribute('role','alert');err.classList.remove('hidden');}}
@@ -990,6 +992,7 @@ tailwind.config={theme:{extend:{
   function validateQuote(){
     var ok=true;
     var nameOk=qName.value.trim().length>=2;setErr(qName,qNameErr,!nameOk);if(!nameOk)ok=false;
+    var addressOk=qAddress.value.trim().length>=4;setErr(qAddress,qAddressErr,!addressOk);if(!addressOk)ok=false;
     var phoneVal=qPhone.value.trim(),emailVal=qEmail.value.trim();
     // a filled contact field must itself be valid
     var phoneBad=phoneVal.length>0&&digits(phoneVal)<10;setErr(qPhone,qPhoneErr,phoneBad);if(phoneBad)ok=false;
@@ -1000,7 +1003,7 @@ tailwind.config={theme:{extend:{
     else{qContactErr.classList.add('hidden');}
     return ok;
   }
-  [qName,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
+  [qName,qAddress,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
   // submit helpers — gate success on a real delivery; never show success on a failed/blocked send
   var FS_URL='https://formsubmit.co/ajax/SEMOLandScaping@gmail.com';
   function sendForm(payload){

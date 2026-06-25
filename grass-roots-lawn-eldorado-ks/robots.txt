@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/grass-roots-lawn-eldorado-ks/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/az-apache-junction-tree-family-trimming/sitemap.xml

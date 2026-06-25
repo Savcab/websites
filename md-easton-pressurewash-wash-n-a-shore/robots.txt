@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/md-easton-pressurewash-wash-n-a-shore/sitemap.xml

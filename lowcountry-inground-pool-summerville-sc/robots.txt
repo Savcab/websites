@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/lowcountry-inground-pool-summerville-sc/sitemap.xml

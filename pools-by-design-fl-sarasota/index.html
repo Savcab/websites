@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pools by Design FL | Custom Pool Builder in Sarasota &amp; Manatee</title>
+<meta name="description" content="Pools by Design FL builds and remodels custom swimming pools across Sarasota and Manatee County. Family-owned, 12+ years, 4.9 stars on Google. Free design consultation — call (941) 951-1155." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+          display: ['Fraunces', 'Georgia', 'serif'],
+        },
+        colors: {
+          lagoon: { 50:'#eefcfb',100:'#d2f6f3',200:'#a6ece8',300:'#6fdcd7',400:'#36c2bf',500:'#16a6a4',600:'#0d8484',700:'#0f6a6a',800:'#115455',900:'#123f41',950:'#06262a' },
+          sand: { 50:'#faf7f1',100:'#f3ece0',200:'#e7dac1',300:'#d6c099',400:'#c4a26f' },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+  .hero-veil { background: linear-gradient(180deg, rgba(6,38,42,.62) 0%, rgba(6,38,42,.30) 38%, rgba(6,38,42,.55) 100%); }
+  .lift { transition: transform .35s cubic-bezier(.2,.7,.3,1), box-shadow .35s ease; }
+  .lift:hover { transform: translateY(-6px); box-shadow: 0 22px 48px -22px rgba(6,38,42,.45); }
+  .gal img { transition: transform .6s cubic-bezier(.2,.7,.3,1); }
+  .gal:hover img { transform: scale(1.06); }
+  .underline-grow { background-image: linear-gradient(currentColor, currentColor); background-position: 0 100%; background-repeat: no-repeat; background-size: 0% 1.5px; transition: background-size .3s ease; }
+  .underline-grow:hover { background-size: 100% 1.5px; }
+</style>
+</head>
+<body class="font-sans text-lagoon-950 bg-sand-50">
+
+<!-- Top utility bar -->
+<div class="bg-lagoon-950 text-lagoon-100 text-xs sm:text-sm">
+  <div class="max-w-7xl mx-auto px-5 py-2 flex flex-wrap items-center justify-between gap-y-1 gap-x-4">
+    <p class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lagoon-300"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      Serving Sarasota &amp; Manatee County
+    </p>
+    <a href="tel:+19419511155" class="flex items-center gap-2 font-medium hover:text-white transition">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-lagoon-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      (941) 951-1155
+    </a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-sand-50/90 backdrop-blur border-b border-sand-200">
+  <div class="max-w-7xl mx-auto px-5 h-[68px] flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 group">
+      <span class="grid place-items-center w-10 h-10 rounded-xl bg-lagoon-700 text-white shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M2 17c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M2 7c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/></svg>
+      </span>
+      <span class="leading-tight">
+        <span class="block font-display text-lg font-600 text-lagoon-900 tracking-tight">Pools by Design</span>
+        <span class="block text-[10px] tracking-[0.25em] uppercase text-lagoon-600 font-semibold">Sarasota &middot; Florida</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-lagoon-800">
+      <a href="#services" class="underline-grow">Services</a>
+      <a href="#portfolio" class="underline-grow">Portfolio</a>
+      <a href="#process" class="underline-grow">Process</a>
+      <a href="#reviews" class="underline-grow">Reviews</a>
+      <a href="#contact" class="underline-grow">Contact</a>
+    </nav>
+    <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-lagoon-600 hover:bg-lagoon-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-sm">
+      Free Design Consult
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="relative">
+  <img src="assets/pbd-hero.jpg" alt="Custom Pools by Design pool with travertine deck, palms and a modern Sarasota home" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="hero-veil absolute inset-0"></div>
+  <div class="relative max-w-7xl mx-auto px-5 py-24 sm:py-32 lg:py-40">
+    <div class="max-w-2xl">
+      <p class="inline-flex items-center gap-2 text-lagoon-100 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-white/10 ring-1 ring-white/20 backdrop-blur px-3 py-1.5 rounded-full">
+        <span class="w-1.5 h-1.5 rounded-full bg-lagoon-300"></span>
+        Custom Pool Builder &amp; Remodeler
+      </p>
+      <h1 class="mt-6 font-display text-white text-4xl sm:text-5xl lg:text-6xl font-500 leading-[1.05] tracking-tight">
+        Transform your backyard with&nbsp;Pools by Design
+      </h1>
+      <p class="mt-6 text-lagoon-50/90 text-lg sm:text-xl leading-relaxed max-w-xl">
+        Family-owned, Sarasota-built. For more than twelve years we have designed and constructed custom swimming pools, spas and screen enclosures across Sarasota and Manatee County.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-lagoon-500 hover:bg-lagoon-400 text-lagoon-950 text-base font-semibold px-7 py-3.5 rounded-full transition shadow-lg shadow-lagoon-900/30">
+          Start your design
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+19419511155" class="inline-flex items-center justify-center gap-2 bg-white/10 ring-1 ring-white/30 backdrop-blur hover:bg-white/20 text-white text-base font-semibold px-7 py-3.5 rounded-full transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (941) 951-1155
+        </a>
+      </div>
+      <div class="mt-8 flex items-center gap-3 text-lagoon-50">
+        <div class="flex text-lagoon-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-sm"><span class="font-semibold text-white">4.9</span> rating across <span class="font-semibold text-white">43 reviews</span> on Google</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="bg-lagoon-900 text-white">
+  <div class="max-w-7xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-center">
+    <div>
+      <p class="font-display text-3xl sm:text-4xl font-500 text-lagoon-200">12+</p>
+      <p class="mt-1 text-xs sm:text-sm text-lagoon-100/80 tracking-wide">Years building in SW Florida</p>
+    </div>
+    <div>
+      <p class="font-display text-3xl sm:text-4xl font-500 text-lagoon-200">4.9<span class="text-lagoon-400 text-2xl">&#9733;</span></p>
+      <p class="mt-1 text-xs sm:text-sm text-lagoon-100/80 tracking-wide">43 reviews on Google</p>
+    </div>
+    <div>
+      <p class="font-display text-3xl sm:text-4xl font-500 text-lagoon-200">2</p>
+      <p class="mt-1 text-xs sm:text-sm text-lagoon-100/80 tracking-wide">Counties served, Sarasota &amp; Manatee</p>
+    </div>
+    <div>
+      <p class="font-display text-3xl sm:text-4xl font-500 text-lagoon-200">Family</p>
+      <p class="mt-1 text-xs sm:text-sm text-lagoon-100/80 tracking-wide">Owned &amp; operated</p>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="max-w-7xl mx-auto px-5 py-20 sm:py-24">
+  <div class="max-w-2xl">
+    <p class="text-lagoon-600 font-semibold text-sm tracking-[0.18em] uppercase">What we build</p>
+    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-500 text-lagoon-900 tracking-tight">Designed around your lifestyle, built to last</h2>
+    <p class="mt-4 text-lagoon-800/80 text-lg leading-relaxed">Every project starts with a custom design tailored to your home and how you want to use your space. From a clean sheet of paper to a finished, screened oasis.</p>
+  </div>
+
+  <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <article class="lift bg-white rounded-2xl border border-sand-200 p-7">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-50 text-lagoon-700 ring-1 ring-lagoon-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c1.5 0 2.5-1.2 4-1.2s2.5 1.2 4 1.2 2.5-1.2 4-1.2 2.5 1.2 4 1.2 2.5-1.2 4-1.2"/><path d="M2 17c1.5 0 2.5-1.2 4-1.2s2.5 1.2 4 1.2 2.5-1.2 4-1.2 2.5 1.2 4 1.2 2.5-1.2 4-1.2"/><path d="M5 8V5a2 2 0 0 1 2-2h2"/><path d="M19 8V5a2 2 0 0 0-2-2h-2"/></svg>
+      </span>
+      <h3 class="mt-5 font-display text-xl font-600 text-lagoon-900">New Pool Construction</h3>
+      <p class="mt-2 text-lagoon-800/80 leading-relaxed">Custom in-ground swimming pools designed from scratch for your backyard — geometric, freeform, infinity edge and resort-style builds with integrated spas, sun shelves and water features.</p>
+    </article>
+
+    <article class="lift bg-white rounded-2xl border border-sand-200 p-7">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-50 text-lagoon-700 ring-1 ring-lagoon-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4 20 9.5"/><path d="m3 21 1.5-5.5L15 5l4 4L8.5 19.5 3 21Z"/><path d="m13 7 4 4"/></svg>
+      </span>
+      <h3 class="mt-5 font-display text-xl font-600 text-lagoon-900">Pool Renovation &amp; Remodel</h3>
+      <p class="mt-2 text-lagoon-800/80 leading-relaxed">Bring a dated pool back to life — resurfacing, new tile and coping, modern decking, lighting and equipment upgrades that transform an existing pool into a showpiece.</p>
+    </article>
+
+    <article class="lift bg-white rounded-2xl border border-sand-200 p-7">
+      <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-50 text-lagoon-700 ring-1 ring-lagoon-100">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18"/><path d="M9 3v18"/><path d="M15 3v18"/><path d="M3 15h18"/></svg>
+      </span>
+      <h3 class="mt-5 font-display text-xl font-600 text-lagoon-900">Screen Enclosures</h3>
+      <p class="mt-2 text-lagoon-800/80 leading-relaxed">Custom pool cages and screen enclosures built for the Florida climate — keep the bugs and debris out, extend your season, and frame your pool with a clean, durable structure.</p>
+    </article>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="bg-white border-y border-sand-200">
+  <div class="max-w-7xl mx-auto px-5 py-20 sm:py-24">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      <div class="max-w-2xl">
+        <p class="text-lagoon-600 font-semibold text-sm tracking-[0.18em] uppercase">Recent work</p>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-500 text-lagoon-900 tracking-tight">A portfolio worth a thousand pages of copy</h2>
+        <p class="mt-4 text-lagoon-800/80 text-lg leading-relaxed">Real pools we designed and built across Sarasota and Manatee County — from waterfront infinity edges to screened family backyards.</p>
+      </div>
+      <a href="#contact" class="shrink-0 inline-flex items-center gap-2 text-lagoon-700 font-semibold underline-grow">Build yours next
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+      <figure class="gal lg:row-span-2 overflow-hidden rounded-2xl aspect-[4/3] lg:aspect-auto lg:h-full">
+        <img src="assets/pbd-01.jpg" alt="Modern Sarasota backyard pool with artificial turf, pavers and lounge seating" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-02.jpg" alt="Infinity-edge pool and raised spa overlooking the water in Manatee County" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-03.jpg" alt="Waterfront infinity pool with fire bowls and travertine deck at dusk" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-04.jpg" alt="Screen-enclosed pool and spa with paver deck in Sarasota" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-05.jpg" alt="Blue-lit infinity pool glowing at night inside a screen enclosure" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-06.jpg" alt="Resort-style freeform pool and spa beside a tennis court with palms" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-07.jpg" alt="Clean screened pool with sun shelf and tropical landscaping" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+      <figure class="gal overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="assets/pbd-08.jpg" alt="Evening pool with string lights, brick deck and tropical plantings" loading="lazy" class="w-full h-full object-cover" />
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="max-w-7xl mx-auto px-5 py-20 sm:py-24">
+  <div class="max-w-2xl">
+    <p class="text-lagoon-600 font-semibold text-sm tracking-[0.18em] uppercase">How it works</p>
+    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-500 text-lagoon-900 tracking-tight">From first sketch to first swim</h2>
+    <p class="mt-4 text-lagoon-800/80 text-lg leading-relaxed">A straightforward process with honest pricing and a team that stays with you the whole way.</p>
+  </div>
+
+  <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+    <div class="flex gap-5">
+      <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-lagoon-700 text-white font-display font-600">1</span>
+      <div>
+        <h3 class="font-display text-lg font-600 text-lagoon-900">Design consultation</h3>
+        <p class="mt-1.5 text-lagoon-800/80 leading-relaxed">We meet at your home, learn how you want to use the space, and design a custom pool tailored to your lifestyle and budget.</p>
+      </div>
+    </div>
+    <div class="flex gap-5">
+      <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-lagoon-700 text-white font-display font-600">2</span>
+      <div>
+        <h3 class="font-display text-lg font-600 text-lagoon-900">Transparent proposal</h3>
+        <p class="mt-1.5 text-lagoon-800/80 leading-relaxed">A clear plan and honest pricing up front — no surprises. You know exactly what your project includes before we break ground.</p>
+      </div>
+    </div>
+    <div class="flex gap-5">
+      <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-lagoon-700 text-white font-display font-600">3</span>
+      <div>
+        <h3 class="font-display text-lg font-600 text-lagoon-900">Build &amp; construction</h3>
+        <p class="mt-1.5 text-lagoon-800/80 leading-relaxed">Our crew handles excavation, construction and finishing with care and craftsmanship, keeping you updated at every milestone.</p>
+      </div>
+    </div>
+    <div class="flex gap-5">
+      <span class="shrink-0 grid place-items-center w-11 h-11 rounded-full bg-lagoon-700 text-white font-display font-600">4</span>
+      <div>
+        <h3 class="font-display text-lg font-600 text-lagoon-900">Dive in</h3>
+        <p class="mt-1.5 text-lagoon-800/80 leading-relaxed">We hand over a finished, ready-to-enjoy pool — and we are here for the questions that come after, too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="bg-lagoon-950 text-white">
+  <div class="max-w-7xl mx-auto px-5 py-20 sm:py-24">
+    <div class="max-w-2xl">
+      <p class="text-lagoon-300 font-semibold text-sm tracking-[0.18em] uppercase">In their words</p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl font-500 tracking-tight">A 4.9 rating, earned one backyard at a time</h2>
+      <p class="mt-4 text-lagoon-100/75 text-lg leading-relaxed">A few of the 43 reviews our customers have left on Google.</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+      <!-- Featured verbatim review -->
+      <figure class="lg:col-span-2 bg-white/[0.04] ring-1 ring-white/10 rounded-2xl p-8 sm:p-10">
+        <div class="flex text-lagoon-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <blockquote class="mt-5 font-display text-2xl sm:text-3xl font-400 leading-snug text-white">&ldquo;Did exactly what they promised with honest pricing &mdash; Nate on design, Kristi at customer service, Jake ran our build and Jerry runs the show.&rdquo;</blockquote>
+        <figcaption class="mt-6 text-sm text-lagoon-200/70 font-medium">Christian D. Hoffman &middot; Google review, April 2025</figcaption>
+      </figure>
+
+      <!-- Rating panel -->
+      <div class="bg-white/[0.04] ring-1 ring-white/10 rounded-2xl p-8 flex flex-col justify-center text-center h-full">
+        <p class="font-display text-6xl font-500 text-lagoon-200">4.9</p>
+        <div class="mt-2 flex justify-center text-lagoon-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mt-3 text-lagoon-100/80">Average across <span class="font-semibold text-white">43 reviews</span> on Google</p>
+        <a href="https://maps.google.com/?cid=18277452594363864810" class="mt-6 inline-flex items-center justify-center gap-2 bg-white/10 ring-1 ring-white/20 hover:bg-white/20 text-white text-sm font-semibold px-5 py-3 rounded-full transition">
+          Read all reviews
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact / CTA -->
+<section id="contact" class="bg-sand-50">
+  <div class="max-w-7xl mx-auto px-5 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="text-lagoon-600 font-semibold text-sm tracking-[0.18em] uppercase">Get started</p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl font-500 text-lagoon-900 tracking-tight">Let&rsquo;s design your backyard</h2>
+      <p class="mt-4 text-lagoon-800/80 text-lg leading-relaxed">Tell us about your project and we&rsquo;ll set up a free design consultation. Family-owned and local — you&rsquo;ll talk to the people who actually build your pool.</p>
+
+      <div class="mt-8 space-y-5">
+        <a href="tel:+19419511155" class="flex items-center gap-4 group">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-600 text-white shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <span>
+            <span class="block text-xs uppercase tracking-wider text-lagoon-600 font-semibold">Call us</span>
+            <span class="block text-lg font-semibold text-lagoon-900 group-hover:text-lagoon-700 transition">(941) 951-1155</span>
+          </span>
+        </a>
+        <a href="mailto:Jerry@poolsbydesignfl.com" class="flex items-center gap-4 group">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-600 text-white shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </span>
+          <span>
+            <span class="block text-xs uppercase tracking-wider text-lagoon-600 font-semibold">Email</span>
+            <span class="block text-lg font-semibold text-lagoon-900 group-hover:text-lagoon-700 transition break-all">Jerry@poolsbydesignfl.com</span>
+          </span>
+        </a>
+        <div class="flex items-center gap-4">
+          <span class="grid place-items-center w-12 h-12 rounded-xl bg-lagoon-600 text-white shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span>
+            <span class="block text-xs uppercase tracking-wider text-lagoon-600 font-semibold">Visit / Serving</span>
+            <span class="block text-lg font-semibold text-lagoon-900">1520 Tallevast Rd, Sarasota, FL 34243</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-8 inline-flex flex-col gap-1 bg-white rounded-xl border border-sand-200 px-5 py-4">
+        <p class="text-xs uppercase tracking-wider text-lagoon-600 font-semibold">Office hours</p>
+        <p class="text-lagoon-900 font-medium">Monday &ndash; Friday &middot; 9:00 AM &ndash; 5:00 PM</p>
+        <p class="text-lagoon-800/70 text-sm">Saturday &amp; Sunday &middot; Closed</p>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden border border-sand-200 shadow-sm">
+      <iframe
+        title="Pools by Design FL location map — Sarasota"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-82.5557%2C27.3983%2C-82.5357%2C27.4083&amp;layer=mapnik&amp;marker=27.4033054%2C-82.5457274"
+        class="w-full h-[340px] lg:h-[520px]" loading="lazy"></iframe>
+      <div class="bg-white px-5 py-4 flex items-center justify-between gap-3">
+        <p class="text-sm text-lagoon-800/80">1520 Tallevast Rd, Sarasota, FL 34243</p>
+        <a href="https://maps.google.com/?cid=18277452594363864810" class="text-sm font-semibold text-lagoon-700 underline-grow">Open in Maps</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-lagoon-700">
+    <div class="max-w-7xl mx-auto px-5 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+      <div>
+        <h3 class="font-display text-2xl sm:text-3xl font-500 text-white">Ready to transform your backyard?</h3>
+        <p class="mt-1.5 text-lagoon-100/85">Free design consultation across Sarasota &amp; Manatee County.</p>
+      </div>
+      <a href="tel:+19419511155" class="shrink-0 inline-flex items-center gap-2 bg-white text-lagoon-800 hover:bg-lagoon-50 font-semibold px-7 py-3.5 rounded-full transition shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        (941) 951-1155
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-lagoon-950 text-lagoon-200/70">
+  <div class="max-w-7xl mx-auto px-5 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="grid place-items-center w-9 h-9 rounded-lg bg-lagoon-700 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M2 17c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/><path d="M2 7c1.5 0 2.5-1 4-1s2.5 1 4 1 2.5-1 4-1 2.5 1 4 1 2.5-1 4-1"/></svg>
+        </span>
+        <span class="font-display text-lg font-600 text-white">Pools by Design FL</span>
+      </div>
+      <p class="mt-3 text-sm leading-relaxed">Family-owned custom pool builder and remodeler serving Sarasota &amp; Manatee County for over twelve years.</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold text-sm uppercase tracking-wider">Services</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-white transition">New Pool Construction</a></li>
+        <li><a href="#services" class="hover:text-white transition">Pool Renovation &amp; Remodel</a></li>
+        <li><a href="#services" class="hover:text-white transition">Screen Enclosures</a></li>
+        <li><a href="#portfolio" class="hover:text-white transition">View Portfolio</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white font-semibold text-sm uppercase tracking-wider">Contact</p>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="tel:+19419511155" class="hover:text-white transition">(941) 951-1155</a></li>
+        <li><a href="mailto:Jerry@poolsbydesignfl.com" class="hover:text-white transition break-all">Jerry@poolsbydesignfl.com</a></li>
+        <li>1520 Tallevast Rd, Sarasota, FL 34243</li>
+        <li>Mon&ndash;Fri 9:00 AM &ndash; 5:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+      <p>&copy; 2026 Pools by Design FL, LLC. All rights reserved.</p>
+      <p>Custom pools for Sarasota &amp; Manatee County, Florida.</p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PoolContractor",
+  "name": "Pools by Design FL, LLC",
+  "image": "assets/pbd-hero.jpg",
+  "telephone": "+19419511155",
+  "email": "Jerry@poolsbydesignfl.com",
+  "url": "https://poolsbydesignfl.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1520 Tallevast Rd",
+    "addressLocality": "Sarasota",
+    "addressRegion": "FL",
+    "postalCode": "34243",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.4033054, "longitude": -82.5457274 },
+  "areaServed": ["Sarasota County, FL", "Manatee County, FL"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00", "closes": "17:00"
+  }],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "43" }
+}
+</script>
+
+</body>
+</html>

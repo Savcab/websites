@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mikes-lawn-landscaping.pages.dev/sitemap.xml

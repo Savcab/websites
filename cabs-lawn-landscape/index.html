@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Yard Cleanup in Plattsmouth, NE | CAB's Lawn</title>
+<meta name="description" content="CAB's Lawn And Landscape keeps Plattsmouth, NE yards sharp — mowing, landscape beds, and next-day cleanup &amp; hauling of cut trees and brush. Dependable, on time. Call (402) 707-1095.">
+<link rel="canonical" href="https://savcab.github.io/websites/cabs-lawn-landscape/">
+<meta name="theme-color" content="#2f5d3a">
+
+<meta property="og:title" content="CAB's Lawn And Landscape — Plattsmouth, NE">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/cabs-lawn-landscape/">
+<meta property="og:description" content="Dependable lawn care, landscaping, and next-day yard cleanup &amp; hauling in Plattsmouth, NE.">
+<meta property="og:image" content="https://savcab.github.io/websites/cabs-lawn-landscape/assets/hero-lawn-mowing-plattsmouth.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem;
+  --section-y:clamp(3.5rem,8vw,7rem);
+  --hero-y:clamp(4.5rem,11vw,9rem);
+  --container:72rem;
+  --measure:64ch;
+  --h1:clamp(2.25rem,5.2vw,3.5rem);
+  --h2:clamp(1.65rem,3.2vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.02em;
+  --ink:#1f1d1a;
+  --ink-2:#56524c;
+  --ink-3:#8a847b;
+  --line:#e6e1d8;
+  --bg:#ffffff;
+  --bg-2:#f5f2ec;
+  --bg-3:#efe9dd;
+  --brand:#2f5d3a;
+  --brand-d:#21472b;
+  --accent:#b9612f;
+  --accent-d:#9e4f24;
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(31,29,26,.06);
+  --sh-2:0 2px 4px rgba(31,29,26,.06),0 4px 10px rgba(31,29,26,.05);
+  --sh-3:0 6px 14px rgba(31,29,26,.07),0 14px 30px rgba(31,29,26,.09);
+  --sh-4:0 10px 20px rgba(31,29,26,.10),0 26px 52px rgba(31,29,26,.12);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);font-weight:600;letter-spacing:var(--track-head)}
+h1{font-size:var(--h1);font-weight:700}
+h2{font-size:var(--h2);font-weight:600}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.bg2{background:var(--bg-2)}
+.eyebrow{font-family:"Hanken Grotesk",sans-serif;font-size:var(--small);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+.lead{font-size:1.18rem;color:var(--ink-2);max-width:58ch;line-height:1.55}
+.muted{color:var(--ink-2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;font-size:1.02rem;border-radius:var(--r-pill);padding:.85rem 1.6rem;min-height:48px;transition:transform var(--t),box-shadow var(--t),background var(--t);cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(31,29,26,.22)}
+.btn-ghost:hover{background:rgba(31,29,26,.05);transform:translateY(-1px)}
+.btn-ghost-light{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.16)}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-header .bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces",serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;color:var(--ink)}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(150deg,var(--brand),var(--brand-d));display:grid;place-items:center;color:#fff;flex:none}
+.brand .mark svg{width:19px;height:19px}
+.brand small{display:block;font-family:"Hanken Grotesk",sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:-2px}
+.header-actions{display:flex;align-items:center;gap:1rem}
+.header-tel{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;color:var(--brand)}
+.header-tel svg{width:1.05em;height:1.05em}
+.header-actions .btn{padding:.6rem 1.15rem;font-size:.95rem;min-height:42px}
+.txt-link{display:none}
+
+/* hero */
+.hero{position:relative;color:#fff;isolation:isolate}
+.hero img.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,33,22,.72)0%,rgba(20,33,22,.48)45%,rgba(20,33,22,.74)100%)}
+.hero .wrap{padding-block:var(--hero-y)}
+.hero-inner{max-width:46rem}
+.hero h1{color:#fff;margin-top:1rem;text-shadow:0 2px 20px rgba(0,0,0,.25)}
+.hero .lead{color:rgba(255,255,255,.92);margin-top:1.4rem;max-width:42ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.1rem}
+.hero-trust{display:flex;align-items:center;gap:.85rem;margin-top:1.9rem;flex-wrap:wrap;color:rgba(255,255,255,.9);font-size:.93rem}
+.stars{display:inline-flex;color:#f3c969}
+.stars svg{width:1.05em;height:1.05em}
+.dot-sep{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.5)}
+
+/* trust strip */
+.trust-strip{border-bottom:1px solid var(--line);background:var(--bg)}
+.trust-strip .row{display:grid;grid-template-columns:1fr;gap:1.1rem;padding-block:1.6rem}
+.trust-item{display:flex;align-items:center;gap:.7rem}
+.trust-item svg{width:1.5rem;height:1.5rem;color:var(--brand);flex:none}
+.trust-item b{display:block;font-weight:700;font-size:.98rem}
+.trust-item span{font-size:.85rem;color:var(--ink-2)}
+@media(min-width:760px){.trust-strip .row{grid-template-columns:repeat(3,1fr);gap:2rem}}
+
+/* section heading block */
+.sec-head{max-width:40rem;margin-bottom:var(--s5)}
+.sec-head .eyebrow{margin-bottom:.8rem;display:block}
+.sec-head p{margin-top:.9rem;color:var(--ink-2);font-size:1.08rem}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc-card:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:#d9d2c5}
+.svc-card.feature{background:linear-gradient(160deg,var(--brand),var(--brand-d));color:#fff;border-color:transparent}
+.svc-ic{width:46px;height:46px;border-radius:var(--r-m);background:var(--bg-3);color:var(--brand);display:grid;place-items:center;margin-bottom:1.15rem}
+.svc-ic svg{width:23px;height:23px}
+.svc-card.feature .svc-ic{background:rgba(255,255,255,.16);color:#fff}
+.svc-card h3{margin-bottom:.5rem}
+.svc-card p{font-size:.95rem;color:var(--ink-2);max-width:36ch}
+.svc-card.feature p{color:rgba(255,255,255,.9)}
+.svc-tag{display:inline-block;margin-top:1rem;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.svc-card.feature .svc-tag{color:#f3c969}
+
+/* split / why */
+.split{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr .95fr}}
+.split.rev .media{order:-1}
+@media(min-width:900px){.split.rev .media{order:1}}
+.media img{border-radius:var(--r-l);box-shadow:var(--sh-3);width:100%}
+.why-list{list-style:none;display:grid;gap:1.35rem;margin-top:1.8rem}
+.why-list li{display:flex;gap:.95rem}
+.why-ic{width:40px;height:40px;border-radius:var(--r-m);background:var(--bg-2);color:var(--brand);display:grid;place-items:center;flex:none}
+.why-ic svg{width:20px;height:20px}
+.why-list b{display:block;font-weight:700;margin-bottom:.15rem;font-family:"Hanken Grotesk",sans-serif}
+.why-list p{font-size:.95rem;color:var(--ink-2);margin:0}
+
+/* process */
+.steps{display:grid;grid-template-columns:1fr;gap:1.4rem;counter-reset:step}
+@media(min-width:680px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{position:relative;padding-top:1.2rem;border-top:2px solid var(--brand)}
+.step .n{font-family:"Fraunces",serif;font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:.5rem}
+.step h3{font-size:1.12rem;margin-bottom:.4rem}
+.step p{font-size:.92rem;color:var(--ink-2)}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
+@media(min-width:820px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+.rev-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.9rem;box-shadow:var(--sh-1);display:flex;flex-direction:column}
+.rev-card .stars{margin-bottom:1rem}
+.rev-q{font-family:"Fraunces",serif;font-size:1.22rem;line-height:1.45;color:var(--ink);font-weight:500;max-width:none}
+.rev-by{margin-top:1.4rem;display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:var(--ink-2)}
+.rev-av{width:38px;height:38px;border-radius:50%;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;font-weight:700;font-family:"Hanken Grotesk",sans-serif;flex:none}
+.rev-by b{color:var(--ink);font-weight:700}
+.rev-foot{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:2.2rem}
+.rev-score{display:flex;align-items:center;gap:.7rem;font-size:.95rem;color:var(--ink-2)}
+.rev-score b{font-family:"Fraunces",serif;font-size:1.9rem;color:var(--ink);line-height:1}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:1fr;gap:.9rem}
+@media(min-width:560px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.gallery figure{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);background:var(--bg-3)}
+.gallery img{aspect-ratio:3/2;object-fit:cover;width:100%;transition:transform var(--t)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1rem .8rem;font-size:.82rem;font-weight:600;color:#fff;background:linear-gradient(180deg,transparent,rgba(20,33,22,.78))}
+
+/* area + map */
+.area-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3rem);align-items:start}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1fr}}
+.area-towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.chip{font-size:.88rem;font-weight:600;color:var(--brand);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.45rem 1rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-2)}
+.map-frame iframe{width:100%;height:340px;border:0;display:block}
+.nap-card{margin-top:1.6rem;display:flex;flex-direction:column;gap:.7rem;font-size:.96rem}
+.nap-card .line{display:flex;gap:.6rem;align-items:flex-start;color:var(--ink-2)}
+.nap-card .line svg{width:1.15rem;height:1.15rem;color:var(--brand);flex:none;margin-top:.15rem}
+.nap-card b{color:var(--ink)}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:820px){.faq-grid{grid-template-columns:repeat(2,1fr)}}
+.faq-item{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);padding:1.5rem 1.6rem}
+.faq-item h3{font-size:1.08rem;margin-bottom:.55rem;font-family:"Fraunces",serif}
+.faq-item p{font-size:.95rem;color:var(--ink-2);margin:0}
+
+/* CTA band */
+.cta-band{background:linear-gradient(155deg,var(--brand),var(--brand-d));color:#fff;border-radius:var(--r-l);padding:clamp(2.4rem,5vw,3.6rem);box-shadow:var(--sh-4);position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.06)}
+.cta-band h2{color:#fff;max-width:18ch;position:relative}
+.cta-band p{color:rgba(255,255,255,.9);margin-top:1rem;position:relative;max-width:46ch}
+.cta-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.9rem;position:relative}
+.cta-band .btn-primary{background:#fff;color:var(--brand-d)}
+.cta-band .btn-primary:hover{background:#f3f0e9}
+.review-note{margin-top:1.4rem;font-size:.9rem;position:relative}
+.review-note a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+/* footer */
+.site-footer{background:#171a16;color:rgba(255,255,255,.72);padding-block:clamp(2.8rem,5vw,4rem) 2rem}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:#fff;margin-bottom:.9rem}
+.foot-brand .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(150deg,var(--brand),var(--brand-d));display:grid;place-items:center;flex:none}
+.foot-brand .mark svg{width:19px;height:19px;color:#fff}
+.site-footer h4{font-family:"Hanken Grotesk",sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1rem;font-weight:700}
+.site-footer a{color:rgba(255,255,255,.8)}
+.site-footer a:hover{color:#fff}
+.foot-list{list-style:none;display:grid;gap:.6rem;font-size:.95rem}
+.foot-list .line{display:flex;gap:.55rem;align-items:flex-start}
+.foot-list svg{width:1.05rem;height:1.05rem;color:var(--brand);flex:none;margin-top:.2rem}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.6rem;padding-top:1.6rem;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+
+/* sticky mobile call bar */
+.call-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:.7rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(31,29,26,.08)}
+.call-bar .btn{flex:1;justify-content:center;font-size:.98rem;padding:.8rem 1rem}
+.call-bar .btn-call{background:var(--brand);color:#fff}
+.call-bar .btn-text{background:var(--bg-2);color:var(--brand);border:1px solid var(--line)}
+body{padding-bottom:5rem}
+@media(min-width:860px){.call-bar{display:none}body{padding-bottom:0}.txt-link{display:inline-flex}}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* scroll reveal — secondary content, first view only */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-mower" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h10l2-4h6"/><circle cx="6" cy="17" r="2.5"/><circle cx="17" cy="17" r="2.5"/><path d="M3 13v2.5M21 9v3a2 2 0 0 1-2 2h-2"/><path d="M9 9V5"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+<symbol id="i-shovel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.3 15.3-3.6-3.6"/><path d="M14.5 4.5 19 9l-6 6-4.5-4.5z"/><path d="M9 13 4.2 17.8a2.1 2.1 0 0 0 3 3L12 16"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M12 20c0-4 0-7 0-10"/><path d="M12 10C12 7 9 5 5 5c0 4 3 6 7 5Z"/><path d="M12 12c0-2.5 2.5-4.5 6-4.5 0 3.5-2.5 5-6 4.5Z"/></symbol>
+<symbol id="i-rock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18 3 12l4-5 5 2 4-3 5 6-4 6Z"/><path d="m7 7 3 5-3 6M16 6l-4 6 7 4"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7-6.2-3.8L5.4 21l1.6-7L1.6 9.5l7.1-.6z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2"/><path d="M3 7h16a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-3a2 2 0 0 1 0-4"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="CAB's Lawn And Landscape home">
+      <span class="mark"><svg><use href="#i-leaf"/></svg></span>
+      <span>CAB's Lawn<small>Lawn &amp; Landscape · Plattsmouth</small></span>
+    </a>
+    <div class="header-actions">
+      <a class="header-tel txt-link" href="tel:+14027071095"><svg><use href="#i-phone"/></svg> (402) 707-1095</a>
+      <a class="btn btn-primary" href="tel:+14027071095"><svg><use href="#i-phone"/></svg> Call Now</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero-lawn-mowing-plattsmouth.jpg" alt="Freshly mowed lawn with crisp mow stripes in Plattsmouth, NE by CAB's Lawn And Landscape" width="1600" height="900" fetchpriority="high">
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="eyebrow" style="color:#cfe6cf">Plattsmouth, Nebraska</p>
+      <h1>A sharp yard, and someone who actually shows up.</h1>
+      <p class="lead">CAB's Lawn And Landscape keeps Plattsmouth yards mowed, planted, and cleaned up — including next-day hauling of cut trees, brush, and weeds. Dependable, on time, and recommended around town.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+14027071095"><svg><use href="#i-phone"/></svg> Call (402) 707-1095</a>
+        <a class="btn btn-ghost-light" href="sms:+14027071095"><svg><use href="#i-msg"/></svg> Text for a quote</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <span><b>4.7</b> on Google · 23 reviews</span>
+        <span class="dot-sep" aria-hidden="true"></span>
+        <span>Word-of-mouth recommended</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="wrap">
+    <div class="row">
+      <div class="trust-item"><svg><use href="#i-clock"/></svg><div><b>On time, every time</b><span>"Always on time. Always thorough."</span></div></div>
+      <div class="trust-item"><svg><use href="#i-truck"/></svg><div><b>Next-day cleanup &amp; hauling</b><span>Cut trees, brush &amp; weeds gone fast</span></div></div>
+      <div class="trust-item"><svg><use href="#i-wallet"/></svg><div><b>Fair, honest pricing</b><span>"Very affordable" — local reviews</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service lawn &amp; yard care for Plattsmouth</h2>
+      <p>From the weekly mow to a one-time haul-off, it's the same dependable crew handling your property start to finish.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card feature reveal">
+        <div class="svc-ic"><svg><use href="#i-truck"/></svg></div>
+        <h3>Yard Cleanup &amp; Hauling</h3>
+        <p>Need cut-down trees, brush, or weeds loaded up and gone? This is what folks call us for — often the very next day.</p>
+        <span class="svc-tag">Most requested</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-ic"><svg><use href="#i-mower"/></svg></div>
+        <h3>Lawn Care &amp; Mowing</h3>
+        <p>Routine mowing, clean edging, and trimming that keeps your lawn sharp and even all season long.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-ic"><svg><use href="#i-shovel"/></svg></div>
+        <h3>Landscape Beds &amp; Mulch</h3>
+        <p>Fresh bed installs, mulching, and crisp edging that frame the house and lift the whole yard.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-ic"><svg><use href="#i-layers"/></svg></div>
+        <h3>Hardscape &amp; Walkways</h3>
+        <p>Paver patios, flagstone paths, and fire-pit areas built to sit level and last through Nebraska seasons.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-ic"><svg><use href="#i-sprout"/></svg></div>
+        <h3>Sod &amp; Lawn Renovation</h3>
+        <p>New sod and turf renovation to turn bare, patchy ground into a full, even lawn.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-ic"><svg><use href="#i-rock"/></svg></div>
+        <h3>Rock &amp; Low-Maintenance Beds</h3>
+        <p>Decorative rock, boulders, and easy-care beds for the corners you'd rather not mow or weed.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US (split) -->
+<section class="section bg2">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Why neighbors call CAB's</span>
+        <h2 style="margin-top:.7rem">Reliable is the whole point</h2>
+        <p class="muted" style="margin-top:1rem">Most people find us because someone they trust passed our name along. We keep it that way by doing what we say — showing up when we say we will and leaving the yard better than we found it.</p>
+        <ul class="why-list">
+          <li><div class="why-ic"><svg><use href="#i-clock"/></svg></div><div><b>We show up when we say</b><p>On-time, dependable scheduling — the reason our reviews keep using the word "always."</p></div></li>
+          <li><div class="why-ic"><svg><use href="#i-truck"/></svg></div><div><b>Quick turnarounds</b><p>When you need brush or cut trees hauled off, we work to get out there fast — often the next day.</p></div></li>
+          <li><div class="why-ic"><svg><use href="#i-heart"/></svg></div><div><b>Local and personal</b><p>You deal with the people doing the work, not a call center. Plattsmouth is home turf.</p></div></li>
+          <li><div class="why-ic"><svg><use href="#i-check"/></svg></div><div><b>Thorough, every visit</b><p>Edges, corners, and cleanup included — not just a quick pass with the mower.</p></div></li>
+        </ul>
+      </div>
+      <div class="media reveal">
+        <img src="assets/gallery-lush-backyard-lawn.jpg" alt="Lush, even backyard lawn with fresh mow stripes maintained by CAB's Lawn in Plattsmouth, NE" width="1000" height="666" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Simple to get on the schedule</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Call or text</h3><p>Tell us what the yard needs — a mow, a cleanup, beds, or a haul-off.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Quick quote</h3><p>We look it over and give you a straight, fair price. No surprises.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>We get it done</h3><p>We show up on time and do the full job — edges, corners, and cleanup included.</p></div>
+      <div class="step reveal"><div class="n">04</div><h3>Keep it sharp</h3><p>One-time or on a regular schedule — your call. We're around all season.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section bg2" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">In their words</span>
+      <h2>What Plattsmouth neighbors say</h2>
+    </div>
+    <div class="rev-grid">
+      <blockquote class="rev-card reveal">
+        <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <p class="rev-q">"I was recommended CAB's. I needed help loading up cut down trees &amp; weeds and getting rid of them. Cory was able to come the very next day."</p>
+        <div class="rev-by"><span class="rev-av">P</span><div><b>Paige Finley</b><br>Google review</div></div>
+      </blockquote>
+      <blockquote class="rev-card reveal">
+        <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <p class="rev-q">"Cory is the best lawn guy I have ever had. Always on time. Always does a thorough job. Very affordable."</p>
+        <div class="rev-by"><span class="rev-av">B</span><div><b>Bradford Dilly</b><br>Google review</div></div>
+      </blockquote>
+    </div>
+    <div class="rev-foot">
+      <div class="rev-score">
+        <b>4.7</b>
+        <div><span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><br>Rated 4.7 across 23 Google reviews</div>
+      </div>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJG9t8KW17lIcRIP5-3moss8U" target="_blank" rel="noopener"><svg><use href="#i-star"/></svg> Leave us a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Yards we've taken care of</h2>
+      <p>A few projects around Plattsmouth — beds, paths, patios, sod, and lawns kept sharp.</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal"><img src="assets/gallery-mulch-flower-bed.jpg" alt="Fresh mulch bed with flowers and clean edging along a Plattsmouth walkway" width="1000" height="666" loading="lazy"><figcaption>Mulched beds &amp; edging</figcaption></figure>
+      <figure class="reveal"><img src="assets/gallery-paver-patio-firepit.jpg" alt="Paver patio with fire pit and pergola built in a Plattsmouth backyard" width="1000" height="666" loading="lazy"><figcaption>Paver patio &amp; fire pit</figcaption></figure>
+      <figure class="reveal"><img src="assets/gallery-flagstone-path.jpg" alt="Flagstone stepping-stone path with deck and fresh sod in a backyard" width="1000" height="666" loading="lazy"><figcaption>Flagstone walkway</figcaption></figure>
+      <figure class="reveal"><img src="assets/gallery-rock-landscape-bed.jpg" alt="Decorative white-rock landscape bed with boulder feature in a front yard" width="1000" height="666" loading="lazy"><figcaption>Decorative rock bed</figcaption></figure>
+      <figure class="reveal"><img src="assets/gallery-new-sod-install.jpg" alt="New sod lawn installed at a Plattsmouth home with a wide concrete driveway" width="1000" height="666" loading="lazy"><figcaption>New sod install</figcaption></figure>
+      <figure class="reveal"><img src="assets/gallery-lush-backyard-lawn.jpg" alt="Lush green backyard lawn with mow stripes bordered by trees" width="1000" height="666" loading="lazy"><figcaption>Maintained lawn</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA + MAP -->
+<section class="section bg2" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div>
+        <span class="eyebrow">Service area</span>
+        <h2 style="margin-top:.7rem">Based in Plattsmouth, serving Cass County</h2>
+        <p class="muted" style="margin-top:1rem">We're local to Plattsmouth and take care of yards across the surrounding Cass County area. Not sure if you're in range? Just ask — we'll let you know.</p>
+        <div class="area-towns">
+          <span class="chip">Plattsmouth</span>
+          <span class="chip">Bellevue</span>
+          <span class="chip">La Vista</span>
+          <span class="chip">Papillion</span>
+          <span class="chip">Louisville</span>
+          <span class="chip">Cass County</span>
+        </div>
+        <div class="nap-card">
+          <div class="line"><svg><use href="#i-pin"/></svg><span><b>CAB's Lawn And Landscape LLC.</b><br>1324 Mark St, Plattsmouth, NE 68048</span></div>
+          <div class="line"><svg><use href="#i-phone"/></svg><span><a href="tel:+14027071095"><b>(402) 707-1095</b></a></span></div>
+          <div class="line"><svg><use href="#i-clock"/></svg><span>Open 7 days a week — call for hours</span></div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe title="Map showing CAB's Lawn And Landscape in Plattsmouth, NE" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-95.9182%2C40.9810%2C-95.8702%2C41.0050&layer=mapnik&marker=40.9930%2C-95.8942"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions we hear a lot</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal"><h3>How fast can you haul off cut trees and brush?</h3><p>It depends on the week, but cleanup and hauling is our most-requested job and we work to get out quickly — often the next day. Call or text and we'll give you a real timeframe.</p></div>
+      <div class="faq-item reveal"><h3>Do you do one-time jobs or just regular service?</h3><p>Both. We handle one-time cleanups and projects as well as regular weekly or biweekly mowing — whatever fits your yard and schedule.</p></div>
+      <div class="faq-item reveal"><h3>What does it cost?</h3><p>Every yard is different, so we give you a straight quote up front after we see what's needed. Our customers consistently call our pricing fair and affordable.</p></div>
+      <div class="faq-item reveal"><h3>What areas do you cover?</h3><p>We're based in Plattsmouth and serve the surrounding Cass County area. If you're nearby and not sure, just ask.</p></div>
+      <div class="faq-item reveal"><h3>How do I get a quote?</h3><p>The fastest way is to call or text (402) 707-1095. Tell us what the yard needs and we'll take it from there.</p></div>
+      <div class="faq-item reveal"><h3>Besides mowing, what else do you handle?</h3><p>Landscape beds and mulch, sod and lawn renovation, paver patios and walkways, decorative rock beds, and full yard cleanups.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Let's get your yard handled.</h2>
+      <p>Call or text for a fast, fair quote on mowing, landscaping, or a next-day cleanup and haul-off. We'll pick up.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="tel:+14027071095"><svg><use href="#i-phone"/></svg> Call (402) 707-1095</a>
+        <a class="btn btn-ghost-light" href="sms:+14027071095"><svg><use href="#i-msg"/></svg> Text us</a>
+      </div>
+      <p class="review-note">Happy with our work? <a href="https://search.google.com/local/writereview?placeid=ChIJG9t8KW17lIcRIP5-3moss8U" target="_blank" rel="noopener">Leave a Google review →</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><span class="mark"><svg><use href="#i-leaf"/></svg></span> CAB's Lawn And Landscape</div>
+        <p style="color:rgba(255,255,255,.7);max-width:34ch">Dependable lawn care, landscaping, and yard cleanup for Plattsmouth, NE and the surrounding Cass County area.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="foot-list">
+          <li class="line"><svg><use href="#i-pin"/></svg><span>1324 Mark St,<br>Plattsmouth, NE 68048</span></li>
+          <li class="line"><svg><use href="#i-phone"/></svg><a href="tel:+14027071095">(402) 707-1095</a></li>
+          <li class="line"><svg><use href="#i-clock"/></svg><span>7 days a week · call for hours</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="foot-list">
+          <li><a href="#services">Lawn care &amp; mowing</a></li>
+          <li><a href="#services">Yard cleanup &amp; hauling</a></li>
+          <li><a href="#services">Landscape beds &amp; mulch</a></li>
+          <li><a href="#services">Hardscape &amp; walkways</a></li>
+          <li><a href="#work">See recent work</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CAB's Lawn And Landscape LLC. · Plattsmouth, NE</span>
+      <span>Mowing · Landscaping · Cleanup &amp; Hauling</span>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky mobile call bar -->
+<div class="call-bar">
+  <a class="btn btn-call" href="tel:+14027071095"><svg><use href="#i-phone"/></svg> Call</a>
+  <a class="btn btn-text" href="sms:+14027071095"><svg><use href="#i-msg"/></svg> Text</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "CAB's Lawn And Landscape LLC.",
+  "image": "https://savcab.github.io/websites/cabs-lawn-landscape/assets/hero-lawn-mowing-plattsmouth.jpg",
+  "telephone": "+14027071095",
+  "url": "https://savcab.github.io/websites/cabs-lawn-landscape/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1324 Mark St",
+    "addressLocality": "Plattsmouth",
+    "addressRegion": "NE",
+    "postalCode": "68048",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.9930081,
+    "longitude": -95.8942222
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Plattsmouth"},
+    {"@type": "City", "name": "Bellevue"},
+    {"@type": "City", "name": "La Vista"},
+    {"@type": "City", "name": "Papillion"},
+    {"@type": "City", "name": "Louisville"}
+  ],
+  "knowsAbout": ["Lawn care", "Lawn mowing", "Yard cleanup and hauling", "Landscaping", "Mulch and bed installation", "Sod installation", "Paver patios and walkways"]
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+
+</body>
+</html>

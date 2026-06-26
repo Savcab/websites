@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tree Removal &amp; Trimming in Waxahachie, TX | Liberty Tree Service</title>
+<meta name="description" content="Liberty Tree Service is a bonded &amp; insured Waxahachie, TX tree crew rated 5.0 across 46 reviews. Tree removal, trimming, stump grinding &amp; storm cleanup. Call (972) 937-8733.">
+<link rel="canonical" href="https://savcab.github.io/websites/liberty-tree-service/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#14342a">
+<!-- Open Graph -->
+<meta property="og:title" content="Tree Removal &amp; Trimming in Waxahachie, TX | Liberty Tree Service">
+<meta property="og:description" content="Bonded &amp; insured Waxahachie tree crew rated 5.0 across 46 reviews. Removal, trimming, stump grinding &amp; storm cleanup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/liberty-tree-service/">
+<meta property="og:image" content="https://savcab.github.io/websites/liberty-tree-service/assets/hero-heritage-oak-waxahachie-tx.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700;800;900&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314342a'/%3E%3Cpath d='M16 6l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4L11.5 20l.9-5L8.8 11.3l5-.7z' fill='%23d8a72b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;--s7:6rem;--s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  --h1:clamp(2.15rem,5.2vw,3.5rem);
+  --h2:clamp(1.6rem,3.2vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.02em;
+  /* COLOR — pine green primary (from their oak foliage), Liberty gold accent (from their real signage), warm cream */
+  --ink:#1c2421;
+  --ink-2:#54605a;
+  --ink-3:#8a948e;
+  --line:#e4e1d8;
+  --bg:#fefdf9;
+  --bg-2:#f3efe4;
+  --brand:#14342a;       /* deep pine green */
+  --brand-2:#1e4a3a;     /* mid pine for accents/cards */
+  --brand-d:#0e251e;     /* darkest pine */
+  --gold:#c79220;        /* Liberty gold (toned from #f0d818 signage) */
+  --gold-2:#a9791a;      /* gold hover */
+  --gold-soft:#f2e7c8;
+  --r-s:6px;--r-m:12px;--r-l:22px;--r-pill:999px;
+  --sh-1:0 1px 2px rgba(20,30,25,.06);
+  --sh-2:0 2px 4px rgba(20,30,25,.06),0 4px 10px rgba(20,30,25,.05);
+  --sh-3:0 6px 14px rgba(20,30,25,.08),0 16px 32px rgba(20,30,25,.08);
+  --sh-4:0 10px 24px rgba(20,30,25,.10),0 28px 56px rgba(14,37,30,.14);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Libre Franklin",system-ui,sans-serif;line-height:var(--lh-head);color:var(--ink);font-weight:800}
+h1{font-size:var(--h1);letter-spacing:var(--track-head)}
+h2{font-size:var(--h2);letter-spacing:-.015em}
+h3{font-size:var(--h3);font-weight:700}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.eyebrow{font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-2)}
+.section{padding-block:var(--section-y)}
+.section--alt{background:var(--bg-2)}
+.section--dark{background:var(--brand);color:#eef2ee}
+.section--dark h2,.section--dark h3{color:#fff}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.6}
+.section--dark .lead{color:#cdd9d1}
+.center{text-align:center;margin-inline:auto}
+.center p{margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-m);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--gold);color:#241a04;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--gold-2);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.btn-dark{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-dark:hover{background:var(--brand-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-outline{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-2px)}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(254,253,249,.92);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand img{width:42px;height:42px;border-radius:9px;object-fit:cover;box-shadow:var(--sh-1)}
+.brand-txt b{font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:1.02rem;letter-spacing:-.01em;color:var(--brand);display:block;line-height:1.05}
+.brand-txt span{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.nav{display:none;align-items:center;gap:2rem}
+.nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a:hover{color:var(--brand)}
+.hdr-cta{display:none;align-items:center;gap:.9rem}
+.hdr-phone{font-family:"Libre Franklin",sans-serif;font-weight:800;color:var(--brand);font-size:1.05rem;white-space:nowrap}
+.hdr-phone small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+@media(min-width:880px){.nav{display:flex}.hdr-cta{display:flex}}
+
+/* Hero */
+.hero{position:relative;background:var(--brand-d);color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(105deg,rgba(8,20,16,.92) 0%,rgba(10,28,22,.78) 42%,rgba(12,37,30,.46) 72%,rgba(12,37,30,.30) 100%)}
+.hero-in{position:relative;padding-block:var(--hero-y);max-width:43rem}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:700;letter-spacing:.02em;padding:.42rem .8rem;border-radius:var(--r-pill);background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#eef2ee}
+.chip svg{width:14px;height:14px;color:var(--gold)}
+.chip--gold{background:rgba(199,146,32,.16);border-color:rgba(199,146,32,.5);color:#f4e2b6}
+.hero h1{color:#fff;margin-bottom:1.1rem;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--gold);position:relative;white-space:nowrap}
+.hero p{color:#d6e0d8;font-size:clamp(1.05rem,1.7vw,1.22rem);max-width:46ch;margin-bottom:2rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
+.hero-rating{display:flex;align-items:center;gap:.7rem;margin-top:2rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.14)}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.stars svg{width:18px;height:18px}
+.hero-rating b{font-family:"Libre Franklin",sans-serif;font-size:1.15rem;color:#fff}
+.hero-rating span{font-size:.92rem;color:#bccabf}
+
+/* Trust strip */
+.trust{background:var(--brand-d);border-top:1px solid rgba(255,255,255,.08)}
+.trust-in{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.08)}
+.trust-cell{background:var(--brand-d);padding:1.5rem 1.25rem;text-align:center;color:#eef2ee}
+.trust-cell svg{width:24px;height:24px;color:var(--gold);margin-bottom:.55rem}
+.trust-cell b{font-family:"Libre Franklin",sans-serif;display:block;font-size:1.05rem;color:#fff;font-weight:800;line-height:1.15}
+.trust-cell span{font-size:.82rem;color:#a9bbac}
+@media(min-width:760px){.trust-in{grid-template-columns:repeat(4,1fr)}}
+
+/* Intro split */
+.split{display:grid;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr .95fr}.split--rev .split-media{order:-1}}
+.split-media{position:relative}
+.split-media img{width:100%;border-radius:var(--r-l);box-shadow:var(--sh-4);object-fit:cover;aspect-ratio:16/9}
+.split-media .tag{position:absolute;left:1rem;bottom:1rem;background:var(--bg);color:var(--ink);font-weight:700;font-size:.82rem;padding:.55rem .9rem;border-radius:var(--r-pill);box-shadow:var(--sh-2);display:flex;align-items:center;gap:.45rem}
+.split-media .tag svg{width:15px;height:15px;color:var(--brand)}
+.split h2{margin-bottom:1.1rem}
+.split .lead{margin-bottom:1.4rem}
+.mini-list{display:grid;gap:.85rem;margin-top:1.5rem}
+.mini-list li{display:flex;gap:.7rem;align-items:flex-start;list-style:none;font-weight:600;color:var(--ink)}
+.mini-list svg{width:20px;height:20px;color:var(--brand-2);flex:none;margin-top:1px}
+.mini-list small{display:block;font-weight:500;color:var(--ink-2);font-size:.9rem;margin-top:1px}
+
+/* Section heading block */
+.sec-head{max-width:40rem;margin-bottom:clamp(2.25rem,4vw,3.25rem)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head .eyebrow{margin-bottom:.7rem;display:block}
+.sec-head h2{margin-bottom:.9rem}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
+@media(min-width:620px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d6cfbb}
+.svc .ic{width:52px;height:52px;border-radius:var(--r-m);background:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;box-shadow:var(--sh-2)}
+.svc .ic svg{width:26px;height:26px;color:var(--gold)}
+.svc.feat{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-2) 100%);color:#eef2ee;border-color:transparent}
+.svc.feat h3{color:#fff}
+.svc.feat p{color:#cdd9d1}
+.svc.feat .ic{background:rgba(255,255,255,.12)}
+.svc h3{margin-bottom:.55rem}
+.svc p{color:var(--ink-2);font-size:.97rem;line-height:1.6}
+.svc .tagline{display:inline-block;margin-top:1rem;font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-2)}
+.svc.feat .tagline{color:var(--gold-soft)}
+
+/* Emergency band */
+.emerg{background:linear-gradient(135deg,var(--brand-d) 0%,var(--brand) 100%);color:#fff;border-radius:var(--r-l);padding:clamp(2rem,4vw,3rem);display:grid;gap:1.5rem;align-items:center;box-shadow:var(--sh-4);position:relative;overflow:hidden}
+.emerg::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(199,146,32,.22),transparent 70%)}
+@media(min-width:780px){.emerg{grid-template-columns:1fr auto}}
+.emerg .ic-lg{width:54px;height:54px;border-radius:var(--r-m);background:rgba(199,146,32,.18);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.emerg .ic-lg svg{width:30px;height:30px;color:var(--gold)}
+.emerg h2{color:#fff;margin-bottom:.6rem}
+.emerg p{color:#d3ddd5;max-width:48ch}
+.emerg-cta{position:relative;z-index:1}
+
+/* Process */
+.steps{display:grid;grid-template-columns:1fr;gap:1.25rem;counter-reset:step}
+@media(min-width:680px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.8rem 1.5rem;position:relative}
+.step .num{font-family:"Libre Franklin",sans-serif;font-weight:900;font-size:2.4rem;color:var(--gold);line-height:1;opacity:.85}
+.step h3{margin:.7rem 0 .5rem}
+.step p{font-size:.93rem;color:var(--ink-2);line-height:1.55}
+.step .bar{position:absolute;left:1.5rem;right:1.5rem;bottom:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:3px}
+
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:820px){.rev-grid{grid-template-columns:1fr 1fr}}
+.rev{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.9rem;box-shadow:var(--sh-1);display:flex;flex-direction:column}
+.rev .stars{margin-bottom:1rem}
+.rev blockquote{font-size:1.06rem;line-height:1.65;color:var(--ink);font-weight:500;margin-bottom:1.3rem;flex:1}
+.rev blockquote::before{content:"“";font-family:"Libre Franklin",serif;color:var(--gold);font-size:2.6rem;line-height:0;vertical-align:-.35em;margin-right:.1em;font-weight:900}
+.rev .by{display:flex;align-items:center;gap:.75rem;border-top:1px solid var(--line);padding-top:1.1rem}
+.rev .av{width:42px;height:42px;border-radius:50%;background:var(--brand);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:1.05rem;flex:none}
+.rev .by b{font-family:"Libre Franklin",sans-serif;font-size:.97rem;display:block;line-height:1.2}
+.rev .by span{font-size:.82rem;color:var(--ink-3)}
+.rev-foot{text-align:center;margin-top:2.5rem}
+.rev-foot .stars{justify-content:center;margin-bottom:.6rem}
+.rev-foot p{margin-inline:auto;color:var(--ink-2);margin-bottom:1.3rem}
+.rev-foot b{color:var(--ink);font-weight:800;font-family:"Libre Franklin",sans-serif}
+
+/* Service area */
+.area{display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+@media(min-width:900px){.area{grid-template-columns:.92fr 1.08fr}}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);border:1px solid var(--line);background:var(--bg-2)}
+.area-map iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.92)}
+.towns{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+.towns span{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-size:.88rem;font-weight:600;color:var(--ink-2);display:inline-flex;align-items:center;gap:.4rem}
+.towns span svg{width:13px;height:13px;color:var(--brand-2)}
+
+/* FAQ */
+.faq{max-width:48rem;margin-inline:auto}
+.faq details{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:.9rem;overflow:hidden;transition:box-shadow var(--t)}
+.faq details[open]{box-shadow:var(--sh-2);border-color:#d6cfbb}
+.faq summary{cursor:pointer;list-style:none;padding:1.35rem 1.5rem;font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:1.04rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:24px;height:24px;flex:none;position:relative;transition:transform var(--t)}
+.faq summary .pm::before,.faq summary .pm::after{content:"";position:absolute;background:var(--gold-2);border-radius:2px;top:50%;left:50%;transform:translate(-50%,-50%)}
+.faq summary .pm::before{width:14px;height:2.5px}
+.faq summary .pm::after{width:2.5px;height:14px;transition:transform var(--t)}
+.faq details[open] summary .pm::after{transform:translate(-50%,-50%) scaleY(0)}
+.faq .ans{padding:0 1.5rem 1.4rem;color:var(--ink-2);line-height:1.65;font-size:.98rem}
+.faq .ans p{max-width:none}
+
+/* Final CTA */
+.final{position:relative;background:var(--brand-d);color:#fff;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 380px at 80% -10%,rgba(199,146,32,.18),transparent 60%)}
+.final-in{position:relative;display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+@media(min-width:920px){.final-in{grid-template-columns:1fr 1fr}}
+.final h2{color:#fff;font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:1rem}
+.final p{color:#cdd9d1;font-size:1.1rem;margin-bottom:1.8rem;max-width:42ch}
+.final .cta-row{display:flex;flex-wrap:wrap;gap:.85rem}
+.fcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.4rem)}
+.fcard h3{color:#fff;margin-bottom:1.3rem;font-size:1.2rem}
+.fcline{display:flex;align-items:flex-start;gap:.9rem;padding:.95rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.fcline:last-child{border-bottom:0}
+.fcline .ic{width:42px;height:42px;border-radius:var(--r-m);background:rgba(199,146,32,.16);display:flex;align-items:center;justify-content:center;flex:none}
+.fcline .ic svg{width:20px;height:20px;color:var(--gold)}
+.fcline b{font-family:"Libre Franklin",sans-serif;font-size:1.05rem;color:#fff;display:block;line-height:1.2}
+.fcline a{color:#fff}
+.fcline span{font-size:.85rem;color:#a9bbac}
+
+/* Footer */
+.ftr{background:var(--brand);color:#cdd9d1;padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+.ftr-grid{display:grid;gap:2.5rem}
+@media(min-width:760px){.ftr-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.ftr .brand-txt b{color:#fff}
+.ftr .brand-txt span{color:#9fb2a4}
+.ftr p{color:#a9bbac;font-size:.93rem;margin-top:1rem;max-width:34ch}
+.ftr h4{font-family:"Libre Franklin",sans-serif;color:#fff;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.1rem;font-weight:700}
+.ftr ul{list-style:none}
+.ftr ul li{margin-bottom:.7rem}
+.ftr ul a,.ftr address a{color:#bdcabf;font-size:.94rem;font-style:normal;transition:color var(--t)}
+.ftr ul a:hover,.ftr address a:hover{color:var(--gold)}
+.ftr address{font-style:normal;line-height:1.8;font-size:.94rem}
+.ftr address b{color:#fff;font-weight:700;display:block;margin-bottom:.3rem;font-family:"Libre Franklin",sans-serif}
+.ftr-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding-top:1.6rem;display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#8ea394}
+.ftr-bottom a{color:#8ea394}
+
+/* Sticky mobile call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--brand);border-top:1px solid rgba(255,255,255,.14);padding:.6rem .8rem;display:flex;gap:.6rem;box-shadow:0 -6px 20px rgba(14,37,30,.28)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Libre Franklin",sans-serif;font-weight:800;font-size:.98rem;padding:.85rem;border-radius:var(--r-m);min-height:48px}
+.callbar .c1{background:var(--gold);color:#241a04}
+.callbar .c2{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.callbar svg{width:18px;height:18px}
+body{padding-bottom:72px}
+@media(min-width:880px){.callbar{display:none}body{padding-bottom:0}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Liberty Tree Service home">
+      <img src="assets/liberty-tree-service-logo.jpg" alt="Liberty Tree Service logo — Waxahachie, Texas" width="42" height="42">
+      <span class="brand-txt"><b>Liberty Tree Service</b><span>Waxahachie, Texas</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="hdr-phone" href="tel:+19729378733">(972) 937-8733<small>Call or text</small></a>
+      <a class="btn btn-dark" href="#contact">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero-heritage-oak-waxahachie-tx.jpg" alt="A mature heritage oak in full fall color on a Waxahachie, Texas property cared for by Liberty Tree Service" width="1500" height="844" fetchpriority="high">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-in">
+    <div class="badge-row">
+      <span class="chip chip--gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg>5.0 Rating · 46 Reviews</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Bonded &amp; Insured</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg>Residential &amp; Commercial</span>
+    </div>
+    <h1>Waxahachie's Trusted <em>Tree&nbsp;Removal</em> &amp; Tree Care Crew</h1>
+    <p>From heritage oaks and cedars to storm-snapped limbs, Liberty Tree Service handles the cut, the haul, and the cleanup — done safely, priced up front, and left tidy.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="tel:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>Call (972) 937-8733</a>
+      <a class="btn btn-ghost" href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>Get a Free Estimate</a>
+    </div>
+    <div class="hero-rating">
+      <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg></span>
+      <span><b>5.0</b> from <b>46</b> Google reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Why homeowners call Liberty">
+  <div class="wrap"><div class="trust-in">
+    <div class="trust-cell">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg>
+      <b>5.0 / 46 Reviews</b><span>A perfect Google rating</span>
+    </div>
+    <div class="trust-cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+      <b>Bonded &amp; Insured</b><span>Protected on every job</span>
+    </div>
+    <div class="trust-cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75M22 21v-2a4 4 0 0 0-3-3.87"/></svg>
+      <b>Trade-Referred Crew</b><span>Fence &amp; builder referrals</span>
+    </div>
+    <div class="trust-cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <b>Storm Response</b><span>Local, fast, &amp; tidy</span>
+    </div>
+  </div></div>
+</section>
+
+<!-- INTRO / ABOUT -->
+<section class="section" id="about">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Waxahachie, Texas</span>
+      <h2 style="margin-top:.6rem">The crew other Waxahachie contractors hand the saw to</h2>
+      <p class="lead">Liberty Tree Service is a local, owner-run tree crew working homes and businesses across Ellis County. We earned a 5.0 across 46 Google reviews the old-fashioned way — one careful, well-cleaned-up job at a time — and a good share of that work comes from fence builders and other trades who pass our name along.</p>
+      <p style="color:var(--ink-2)">We keep the scope honest: if a tree can be saved with a good pruning, we'll tell you. If it has to come down, we drop it safely, grind the stump, and rake the yard before we leave. No surprises, no mess left behind.</p>
+      <ul class="mini-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>Oak &amp; cedar specialists<small>Native North Texas trees, trimmed and removed right</small></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Bonded &amp; insured<small>Right on our own rig — you're covered before we climb</small></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Full cleanup included<small>Wood hauled, stump ground, yard raked clean</small></span></li>
+      </ul>
+    </div>
+    <div class="split-media reveal">
+      <img src="assets/mature-canopy-tree-care-waxahachie.jpg" alt="Healthy mature tree canopy over a Waxahachie street trimmed by Liberty Tree Service" width="1400" height="788">
+      <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg>5.0 across 46 reviews</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--alt" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">What we do</span>
+      <h2>Complete tree work, start to clean finish</h2>
+      <p class="lead">From a single overgrown oak to a whole lot of cleanup after a storm — here's how we help around Waxahachie.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc feat reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M12 8 7 5M12 8l5-3M12 14l-6-3M12 14l6-3"/></svg></div>
+        <h3>Tree Removal</h3>
+        <p>Safe, controlled takedowns of dead, dying, leaning, or in-the-way trees — including tight spots near homes, fences, and power lines. We rope it down, haul the wood, and leave the area clear.</p>
+        <span class="tagline">Our most-requested job</span>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5 19 9M3 21l6-6M9 15l-2-2M21 3l-7.5 7.5"/><circle cx="6.5" cy="17.5" r="2.5"/></svg></div>
+        <h3>Trimming &amp; Pruning</h3>
+        <p>Crown thinning, deadwood removal, and shaping that keeps oaks and cedars healthy, balanced, and clear of your roofline. Pruned with the tree's long-term health in mind.</p>
+        <span class="tagline">Oak &amp; cedar specialty</span>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M12 3v2M12 19v2"/></svg></div>
+        <h3>Stump Grinding</h3>
+        <p>That leftover stump ground down below grade so you can mow over it, replant, or just be rid of the trip hazard. We grind, rake the chips, and tidy the spot.</p>
+        <span class="tagline">No more eyesore</span>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-3 7h5l-3 7"/><path d="M5 14h2M17 14h2M7 20h10"/></svg></div>
+        <h3>Storm &amp; Emergency Cleanup</h3>
+        <p>After North Texas weather, we clear fallen trees and hanging limbs off houses, driveways, and fences and get your property safe again. Call us — we'll get to you quickly.</p>
+        <span class="tagline">Fast local response</span>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22 16 8M9 5l3-3 3 3-3 3zM18 12l3 3M14 16l3 3"/></svg></div>
+        <h3>Deadwooding &amp; Limb Removal</h3>
+        <p>Targeted removal of dead, cracked, or overhanging limbs before they come down on their own — protecting your roof, vehicles, and the people under them.</p>
+        <span class="tagline">Get ahead of the next storm</span>
+      </article>
+      <article class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h0M9 13h0M9 17h0M15 9h0M15 13h0M15 17h0"/></svg></div>
+        <h3>Residential &amp; Commercial</h3>
+        <p>Homes, rentals, ranch acreage, and commercial properties around Ellis County. Whether it's one tree in the backyard or a lot full of them, we scope it and quote it honestly.</p>
+        <span class="tagline">Any size property</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BAND -->
+<section class="section">
+  <div class="wrap">
+    <div class="emerg reveal">
+      <div>
+        <div class="ic-lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+        <h2>Tree down? Limb on the house?</h2>
+        <p>Storms move fast in North Texas. When a tree comes down on your home, driveway, or fence, call Liberty — we'll prioritize getting your property safe and clear.</p>
+      </div>
+      <div class="emerg-cta">
+        <a class="btn btn-primary" href="tel:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>Call (972) 937-8733</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>Simple from first call to final rake</h2>
+      <p class="lead">No drawn-out sales pitch — just a clear quote and clean work.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="num">1</span><h3>Call or Text</h3><p>Tell us what you're looking at — a removal, some trimming, or storm damage. Send a photo if it's easier.</p><span class="bar"></span></div>
+      <div class="step reveal"><span class="num">2</span><h3>Free On-Site Quote</h3><p>We come look at the tree, talk through the safest plan, and give you an honest, up-front price.</p><span class="bar"></span></div>
+      <div class="step reveal"><span class="num">3</span><h3>We Do the Work</h3><p>Our crew handles the cut and the haul safely and efficiently, protecting your home and landscaping.</p><span class="bar"></span></div>
+      <div class="step reveal"><span class="num">4</span><h3>Cleaned &amp; Clear</h3><p>Wood removed, stump ground if you'd like, yard raked. We leave it looking better than we found it.</p><span class="bar"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">From our Google reviews</span>
+      <h2>A perfect 5.0, earned one yard at a time</h2>
+      <p class="lead">A few words from neighbors around Waxahachie. These are real, verbatim Google reviews.</p>
+    </div>
+    <div class="rev-grid">
+      <article class="rev reveal">
+        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg></span>
+        <blockquote>Our fence company recommended TJ to us, and we're so glad they did. TJ and his crew did an awesome job on both our front and backyard.</blockquote>
+        <div class="by"><span class="av">K</span><span><b>Krystin Scott</b><span>Google review · Waxahachie, TX</span></span></div>
+      </article>
+      <article class="rev reveal">
+        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg></span>
+        <blockquote>Liberty came out to trim our oak &amp; cedar trees as well as remove 2 dying rose bushes... I think there was a 4 man crew.</blockquote>
+        <div class="by"><span class="av">M</span><span><b>Mark &amp; Patty Champion</b><span>Google review · Waxahachie, TX</span></span></div>
+      </article>
+    </div>
+    <div class="rev-foot reveal">
+      <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg></span>
+      <p><b>5.0 out of 5</b> across <b>46 Google reviews</b>. We'd be grateful for yours after we've earned it.</p>
+      <a class="btn btn-outline" href="https://search.google.com/local/writereview?placeid=ChIJLWl7SiHuToYRifoAeCmBWNE" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.8l1.2-6.6L2.5 9l6.6-.9z"/></svg>Leave us a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF / RIG -->
+<section class="section section--dark">
+  <div class="wrap split split--rev">
+    <div class="split-media reveal">
+      <img src="assets/liberty-tree-service-rig-bonded-insured.jpg" alt="Liberty Tree Service trailer in Waxahachie, Texas marked Residential, Commercial, Bonded and Insured" width="1100" height="825" style="aspect-ratio:4/3">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--gold)">The real deal</span>
+      <h2 style="margin-top:.6rem">Bonded, insured, and on the road across Ellis County</h2>
+      <p class="lead">It's printed right on our rig: <strong style="color:#fff">Residential · Commercial · Bonded · Insured</strong>. That's not marketing — it's how we show up to every job, so you're protected from the first cut to the last load hauled off.</p>
+      <ul class="mini-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span style="color:#fff">Bonded &amp; insured for your protection<small style="color:#bccabf">Coverage that protects your property, not just ours</small></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><path d="M5 17H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h11l4 4h3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg><span style="color:#fff">Properly equipped crew<small style="color:#bccabf">The trucks, saws, and grinders to do it right</small></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold)"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg><span style="color:#fff">Homes &amp; businesses welcome<small style="color:#bccabf">From a single backyard tree to commercial lots</small></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area">
+  <div class="wrap area">
+    <div class="reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2 style="margin:.6rem 0 1rem">Serving Waxahachie &amp; Ellis County</h2>
+      <p class="lead">Based on E FM 875 in Waxahachie, we cover homes, ranches, and businesses across Ellis County and the surrounding North Texas communities. Not sure if you're in range? Give us a call — we probably are.</p>
+      <div class="towns">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg>Waxahachie</span>
+        <span>Midlothian</span><span>Red Oak</span><span>Ennis</span><span>Maypearl</span>
+        <span>Italy</span><span>Ovilla</span><span>Palmer</span><span>Ferris</span><span>Ellis County</span>
+      </div>
+      <a class="btn btn-dark" href="tel:+19729378733" style="margin-top:1.8rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>Check My Area</a>
+    </div>
+    <div class="area-map reveal">
+      <iframe title="Liberty Tree Service service area — Waxahachie, Texas" src="https://www.openstreetmap.org/export/embed.html?bbox=-97.05%2C32.34%2C-96.78%2C32.49&amp;layer=mapnik&amp;marker=32.4108547%2C-96.9172533" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions homeowners ask us</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do you give free estimates?<span class="pm"></span></summary><div class="ans"><p>Yes. We'll come out, look at the tree, and give you an honest, up-front price before any work begins — no obligation. Call or text us a photo to get started faster.</p></div></details>
+      <details><summary>Are you insured?<span class="pm"></span></summary><div class="ans"><p>Yes — Liberty Tree Service is bonded and insured. It's printed right on our equipment, and it means your property is protected on every job we take on.</p></div></details>
+      <details><summary>Do you grind the stump and clean up afterward?<span class="pm"></span></summary><div class="ans"><p>Cleanup is part of the job. We haul off the wood and rake the area, and we'll grind the stump down below grade whenever you'd like that done. We aim to leave your yard tidier than we found it.</p></div></details>
+      <details><summary>Can you handle storm damage or an emergency?<span class="pm"></span></summary><div class="ans"><p>Yes. When a tree or large limb comes down on your home, driveway, or fence after North Texas weather, give us a call and we'll prioritize getting your property safe and clear as quickly as we can.</p></div></details>
+      <details><summary>What kinds of trees do you work on?<span class="pm"></span></summary><div class="ans"><p>All of the common North Texas species — we do a lot of oak and cedar work in particular, from careful pruning to full removals, plus stump grinding and limb work.</p></div></details>
+      <details><summary>Do you work on commercial properties?<span class="pm"></span></summary><div class="ans"><p>We do. Liberty handles both residential and commercial work — homes, rentals, ranch acreage, and commercial lots across Waxahachie and Ellis County.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" id="contact">
+  <div class="wrap section final-in">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--gold)">Get started</span>
+      <h2>Let's take care of that tree</h2>
+      <p>Tell us what you're dealing with and we'll get you a free, no-pressure estimate. Most folks just call or text — it's the fastest way to reach the crew.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+        <a class="btn btn-ghost" href="sms:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text a Photo</a>
+      </div>
+    </div>
+    <div class="fcard reveal">
+      <h3>Reach Liberty Tree Service</h3>
+      <div class="fcline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg></div>
+        <span><b><a href="tel:+19729378733">(972) 937-8733</a></b><span>Call or text — fastest way to reach us</span></span>
+      </div>
+      <div class="fcline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <span><b>Waxahachie, TX</b><span>5236 E FM 875, Waxahachie, TX 75167 · Serving Ellis County</span></span>
+      </div>
+      <div class="fcline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <span><b>Call for hours &amp; availability</b><span>We'll work with your schedule</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Liberty Tree Service">
+          <img src="assets/liberty-tree-service-logo.jpg" alt="Liberty Tree Service logo" width="42" height="42">
+          <span class="brand-txt"><b>Liberty Tree Service</b><span>Waxahachie, Texas</span></span>
+        </a>
+        <p>Bonded &amp; insured tree removal, trimming, and stump grinding for homes and businesses across Waxahachie and Ellis County. Rated 5.0 across 46 Google reviews.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Tree Removal</a></li>
+          <li><a href="#services">Trimming &amp; Pruning</a></li>
+          <li><a href="#services">Stump Grinding</a></li>
+          <li><a href="#services">Storm &amp; Emergency</a></li>
+          <li><a href="#area">Service Area</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>
+          <b>Liberty Tree Service</b>
+          5236 E FM 875<br>
+          Waxahachie, TX 75167<br>
+          <a href="tel:+19729378733">(972) 937-8733</a><br>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJLWl7SiHuToYRifoAeCmBWNE" target="_blank" rel="noopener">Leave a Google review</a>
+        </address>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 Liberty Tree Service · Waxahachie, TX · Bonded &amp; Insured</span>
+      <span>Tree Removal · Trimming · Stump Grinding · Ellis County</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="callbar">
+  <a class="c1" href="tel:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+  <a class="c2" href="sms:+19729378733"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Us</a>
+</div>
+
+<!-- JSON-LD: HomeAndConstructionBusiness (NO review/aggregateRating per policy) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Liberty Tree Service",
+  "image":"https://savcab.github.io/websites/liberty-tree-service/assets/hero-heritage-oak-waxahachie-tx.jpg",
+  "url":"https://savcab.github.io/websites/liberty-tree-service/",
+  "telephone":"+19729378733",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"5236 E FM 875",
+    "addressLocality":"Waxahachie",
+    "addressRegion":"TX",
+    "postalCode":"75167",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":32.4108547,"longitude":-96.9172533},
+  "areaServed":[
+    {"@type":"City","name":"Waxahachie"},
+    {"@type":"City","name":"Midlothian"},
+    {"@type":"City","name":"Red Oak"},
+    {"@type":"City","name":"Ennis"},
+    {"@type":"City","name":"Maypearl"},
+    {"@type":"City","name":"Ovilla"},
+    {"@type":"City","name":"Palmer"},
+    {"@type":"City","name":"Ferris"}
+  ],
+  "sameAs":["https://www.facebook.com/libertytreeservice/"],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Removal"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Trimming and Pruning"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump Grinding"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Storm and Emergency Tree Cleanup"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    els.forEach(function(e){e.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

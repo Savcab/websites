@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Bed Cleanup in Rose Hill, KS | Alpha Outdoor</title>
+<meta name="description" content="Alpha Outdoor Services is a Rose Hill, KS lawn care &amp; landscaping crew homeowners rehire year after year — striped mowing, flower-bed cleanup, mulch &amp; weeding. Call (316) 559-6686 for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/alpha-outdoor-services/">
+<meta name="theme-color" content="#1f5135">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Lawn Care &amp; Bed Cleanup in Rose Hill, KS | Alpha Outdoor">
+<meta property="og:description" content="The Rose Hill crew homeowners rehire year after year — striped mowing, flower-bed cleanup, mulch &amp; weeding. Free estimates.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/alpha-outdoor-services/">
+<meta property="og:image" content="https://savcab.github.io/websites/alpha-outdoor-services/assets/hero-flowerbed.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: Libre Caslon Display (display) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(4.5rem,11vw,10rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --display:"Libre Caslon Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --h1:clamp(2.25rem,5.2vw,3.75rem);
+  --h2:clamp(1.75rem,3.4vw,2.5rem);
+  --h3:1.375rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.55;
+  --lh-head:1.1;
+  --track-head:-.015em;
+  /* COLOR — deep forest green + warm clay accent, warm neutral ramp */
+  --ink:#1c2420;
+  --ink-2:#545d56;
+  --ink-3:#838d85;
+  --line:#e4e3dc;
+  --bg:#ffffff;
+  --bg-2:#f5f3ec;
+  --bg-3:#eceadf;
+  --brand:#1f5135;
+  --brand-d:#143524;
+  --brand-tint:#e7efe7;
+  --accent:#a8501f;        /* warm clay — CTAs/highlights; white text = AA */
+  --accent-d:#8f4117;
+  --gold:#c98a3c;          /* small star / rating accent */
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,28,22,.06);
+  --sh-2:0 2px 4px rgba(20,28,22,.06),0 4px 10px rgba(20,28,22,.05);
+  --sh-3:0 6px 14px rgba(20,28,22,.07),0 14px 30px rgba(20,28,22,.09);
+  --sh-4:0 10px 24px rgba(20,28,22,.10),0 28px 56px rgba(20,28,22,.12);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:400}
+h1{font-size:var(--h1)}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:0}
+p{max-width:var(--measure)}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--sans);font-size:var(--small);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:clamp(1.0625rem,1.6vw,1.25rem);color:var(--ink-2);line-height:1.6}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--sans);font-weight:600;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;
+  transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-secondary{background:transparent;color:var(--brand-d);border-color:rgba(31,81,53,.32)}
+.btn-secondary:hover{background:var(--brand-tint);border-color:var(--brand);transform:translateY(-2px)}
+.btn-ghost-light{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.55);backdrop-filter:blur(4px)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-size:1.3rem;color:var(--brand-d);letter-spacing:0}
+.brand .mark{width:38px;height:38px;flex:none;display:grid;place-items:center;background:var(--brand);border-radius:var(--r-m);box-shadow:var(--sh-1)}
+.brand .mark svg{width:22px;height:22px;color:#fff}
+.brand b{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{font-family:var(--sans);font-size:.95rem;font-weight:500;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:.9rem}
+.nav-phone{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:600;color:var(--brand-d);font-size:.98rem}
+.nav-phone svg{width:17px;height:17px;color:var(--accent)}
+.nav-toggle{display:none}
+
+/* Hero */
+.hero{position:relative;color:#fff;isolation:isolate;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(15,28,20,.86) 0%,rgba(15,28,20,.66) 42%,rgba(15,28,20,.28) 72%,rgba(15,28,20,.12) 100%)}
+.hero-inner{padding-block:var(--hero-y);max-width:42rem}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:.5rem .75rem;align-items:center;margin-bottom:var(--s3)}
+.pill{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;letter-spacing:.02em;
+  padding:.4rem .8rem;border-radius:var(--r-pill);background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(3px)}
+.pill svg{width:14px;height:14px}
+.pill .stars{color:var(--gold);letter-spacing:1px}
+.hero h1{color:#fff;margin-bottom:var(--s3);text-shadow:0 2px 18px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;color:#e9d9b8}
+.hero p.lead{color:rgba(255,255,255,.92);max-width:34rem;margin-bottom:var(--s5)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.85rem}
+.hero-trust{margin-top:var(--s5);display:flex;flex-wrap:wrap;gap:1.5rem 2rem;font-size:.92rem;color:rgba(255,255,255,.85)}
+.hero-trust div{display:flex;align-items:center;gap:.55rem}
+.hero-trust svg{width:18px;height:18px;color:#bfe0c4;flex:none}
+
+/* Trust strip */
+.trust-strip{background:var(--brand-d);color:#fff}
+.trust-strip .container{display:flex;flex-wrap:wrap;justify-content:center;gap:1.25rem 3rem;padding-block:1.4rem;text-align:center}
+.trust-strip .ts-item{display:flex;align-items:center;gap:.7rem;font-size:.95rem}
+.trust-strip .ts-num{font-family:var(--display);font-size:1.5rem;line-height:1;color:#fff}
+.trust-strip .ts-lab{color:rgba(255,255,255,.78);font-size:.86rem;text-align:left;line-height:1.25}
+.trust-strip .stars{color:var(--gold);letter-spacing:1px;font-size:1rem}
+.trust-strip .divider{width:1px;height:34px;background:rgba(255,255,255,.18)}
+
+/* Section heading */
+.sec-head{max-width:46rem;margin-bottom:var(--s6)}
+.sec-head .eyebrow{display:block;margin-bottom:.75rem}
+.sec-head p{margin-top:var(--s3);color:var(--ink-2)}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:640px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.services-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s4);box-shadow:var(--sh-1);
+  transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d7d5c8}
+.svc-icon{width:52px;height:52px;border-radius:var(--r-m);display:grid;place-items:center;background:var(--brand-tint);color:var(--brand);margin-bottom:var(--s3)}
+.svc-icon svg{width:26px;height:26px}
+.svc-card h3{margin-bottom:.6rem;color:var(--ink)}
+.svc-card p{color:var(--ink-2);font-size:.98rem;max-width:none}
+.svc-card.feature{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;border-color:transparent}
+.svc-card.feature .svc-icon{background:rgba(255,255,255,.16);color:#fff}
+.svc-card.feature h3{color:#fff}
+.svc-card.feature p{color:rgba(255,255,255,.86)}
+
+/* Split / about */
+.split{display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:center}
+@media(min-width:880px){.split{grid-template-columns:1.05fr .95fr;gap:var(--s7)}.split.reverse .split-media{order:-1}}
+.split-media{position:relative}
+.split-media img{width:100%;border-radius:var(--r-l);box-shadow:var(--sh-3);aspect-ratio:4/3;object-fit:cover}
+.split-media .tag{position:absolute;bottom:-18px;left:-12px;background:#fff;border:1px solid var(--line);border-radius:var(--r-m);
+  box-shadow:var(--sh-3);padding:.85rem 1.1rem;display:flex;align-items:center;gap:.7rem;max-width:78%}
+.split-media .tag svg{width:30px;height:30px;color:var(--brand);flex:none}
+.split-media .tag b{display:block;font-family:var(--display);font-size:1.05rem;color:var(--ink)}
+.split-media .tag span{font-size:.82rem;color:var(--ink-2)}
+.split-body h2{margin-bottom:var(--s3)}
+.split-body p{color:var(--ink-2);margin-bottom:var(--s3)}
+.checklist{list-style:none;display:grid;gap:.85rem;margin-top:var(--s4)}
+.checklist li{display:flex;gap:.75rem;align-items:flex-start;font-size:1rem;color:var(--ink)}
+.checklist svg{width:22px;height:22px;color:var(--brand);flex:none;margin-top:1px}
+
+/* Why-us band */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why-item{text-align:left}
+.why-item .ico{width:48px;height:48px;border-radius:var(--r-m);background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--accent);margin-bottom:var(--s3);box-shadow:var(--sh-1)}
+.why-item .ico svg{width:24px;height:24px}
+.why-item h3{font-size:1.125rem;margin-bottom:.4rem;color:var(--ink)}
+.why-item p{font-size:.94rem;color:var(--ink-2);max-width:none}
+
+/* Process */
+.process-grid{display:grid;grid-template-columns:1fr;gap:var(--s4);counter-reset:step}
+@media(min-width:640px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.process-grid{grid-template-columns:repeat(4,1fr)}}
+.step{position:relative;padding:var(--s4);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);box-shadow:var(--sh-1)}
+.step .num{font-family:var(--display);font-size:2.5rem;color:var(--brand-tint);line-height:1;margin-bottom:.5rem;display:block}
+.step h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--ink)}
+.step p{font-size:.93rem;color:var(--ink-2);max-width:none}
+
+/* Gallery */
+.gallery{background:var(--bg-2)}
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:var(--s3)}
+@media(min-width:560px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+.gallery figure{margin:0;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);background:#ddd;position:relative}
+.gallery figure img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform 400ms ease}
+.gallery figure:hover img{transform:scale(1.045)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:.7rem .9rem;color:#fff;font-size:.82rem;font-weight:500;
+  background:linear-gradient(to top,rgba(15,28,20,.78),rgba(15,28,20,0));opacity:0;transition:opacity var(--t)}
+.gallery figure:hover figcaption{opacity:1}
+
+/* Reviews */
+.reviews-grid{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:820px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}
+.review{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s5);box-shadow:var(--sh-2);display:flex;flex-direction:column;gap:var(--s3)}
+.review .stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem}
+.review blockquote{font-family:var(--display);font-size:1.2rem;line-height:1.5;color:var(--ink);quotes:"\201C""\201D"}
+.review blockquote::before{content:open-quote;color:var(--brand-tint);font-size:2.4rem;line-height:0;vertical-align:-.35em;margin-right:.1em}
+.review .who{display:flex;align-items:center;gap:.75rem;margin-top:auto}
+.review .who .av{width:42px;height:42px;border-radius:var(--r-pill);background:var(--brand-tint);color:var(--brand-d);display:grid;place-items:center;font-weight:700;font-family:var(--sans);flex:none}
+.review .who b{display:block;font-size:.98rem;color:var(--ink);font-family:var(--sans)}
+.review .who span{font-size:.83rem;color:var(--ink-3)}
+.reviews-foot{margin-top:var(--s5);display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;justify-content:space-between}
+.reviews-foot .g{display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:var(--ink-2)}
+.reviews-foot .g .stars{color:var(--gold);letter-spacing:1px}
+
+/* Service area */
+.area-wrap{display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:center}
+@media(min-width:900px){.area-wrap{grid-template-columns:1fr 1fr;gap:var(--s7)}}
+.area-body h2{margin-bottom:var(--s3)}
+.area-body p{color:var(--ink-2);margin-bottom:var(--s4)}
+.town-list{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4)}
+.town-list span{font-size:.9rem;font-weight:500;padding:.45rem .9rem;border-radius:var(--r-pill);background:var(--bg-2);border:1px solid var(--line);color:var(--ink-2)}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.9)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:var(--s3);max-width:52rem}
+.faq-item{border:1px solid var(--line);border-radius:var(--r-m);background:var(--bg);overflow:hidden}
+.faq-item summary{cursor:pointer;list-style:none;padding:var(--s3) var(--s4);font-weight:600;font-size:1.05rem;color:var(--ink);
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color var(--t)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{color:var(--brand)}
+.faq-item summary .chev{width:20px;height:20px;color:var(--accent);transition:transform var(--t);flex:none}
+.faq-item[open] summary .chev{transform:rotate(180deg)}
+.faq-item .ans{padding:0 var(--s4) var(--s4);color:var(--ink-2);line-height:1.6}
+.faq-item .ans p{max-width:none}
+
+/* Final CTA */
+.cta{position:relative;color:#fff;isolation:isolate;overflow:hidden;background:var(--brand-d)}
+.cta::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(1100px 500px at 18% 0%,rgba(31,81,53,.85),transparent 70%),
+  radial-gradient(900px 600px at 100% 120%,rgba(168,80,31,.30),transparent 70%)}
+.cta-inner{display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:center}
+@media(min-width:920px){.cta-inner{grid-template-columns:1.1fr .9fr;gap:var(--s7)}}
+.cta h2{color:#fff;margin-bottom:var(--s3)}
+.cta p{color:rgba(255,255,255,.86);margin-bottom:var(--s4)}
+.cta-points{list-style:none;display:grid;gap:.7rem;margin-top:var(--s4)}
+.cta-points li{display:flex;gap:.6rem;align-items:center;color:rgba(255,255,255,.92);font-size:.97rem}
+.cta-points svg{width:20px;height:20px;color:#bfe0c4;flex:none}
+.quote-card{background:#fff;color:var(--ink);border-radius:var(--r-l);padding:clamp(1.5rem,3vw,2.25rem);box-shadow:var(--sh-4)}
+.quote-card h3{font-size:1.4rem;margin-bottom:.4rem;color:var(--ink)}
+.quote-card .sub{font-size:.92rem;color:var(--ink-2);margin-bottom:var(--s4)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
+.field input,.field textarea,.field select{width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);
+  padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg-2);transition:border-color var(--t),background var(--t)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand);background:#fff}
+.field-row{display:grid;grid-template-columns:1fr;gap:var(--s3)}
+@media(min-width:520px){.field-row{grid-template-columns:1fr 1fr}}
+.quote-card .btn{width:100%;justify-content:center;margin-top:.4rem}
+.quote-card .fineprint{font-size:.78rem;color:var(--ink-3);margin-top:.85rem;text-align:center}
+
+/* Footer */
+.site-footer{background:#11231a;color:rgba(255,255,255,.74);padding-block:var(--s7) var(--s5)}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:var(--s5)}
+@media(min-width:760px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-brand .brand{color:#fff;margin-bottom:var(--s3)}
+.footer-brand p{font-size:.92rem;color:rgba(255,255,255,.62);max-width:32ch}
+.footer-col h4{font-family:var(--sans);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:var(--s3)}
+.footer-col ul{list-style:none;display:grid;gap:.6rem}
+.footer-col a,.footer-col li{font-size:.94rem;color:rgba(255,255,255,.78);transition:color var(--t)}
+.footer-col a:hover{color:#fff}
+.footer-col .nap{display:flex;gap:.55rem;align-items:flex-start;line-height:1.4}
+.footer-col .nap svg{width:16px;height:16px;color:#9fc4a6;flex:none;margin-top:3px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:var(--s6);padding-top:var(--s4);
+  display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.5)}
+.footer-bottom a{color:rgba(255,255,255,.62)}
+
+/* Mobile call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  background:var(--accent);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:.6rem;padding:.95rem;color:#fff;font-weight:700;font-size:1.05rem}
+.callbar svg{width:20px;height:20px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Responsive nav */
+@media(max-width:860px){
+  .nav-links{display:none}
+  .nav-phone span{display:none}
+  .callbar{display:block}
+  body{padding-bottom:60px}
+  .hero-trust{gap:1rem 1.5rem}
+}
+@media(max-width:540px){
+  /* call bar covers phone; keep header CTA compact so it never overflows narrow screens */
+  .nav-phone{display:none}
+  .nav .btn-primary{padding:.7rem 1.1rem;font-size:.92rem}
+  .brand{font-size:1.15rem}
+  .brand .mark{width:34px;height:34px}
+}
+@media(max-width:480px){
+  .hero-actions .btn{flex:1 1 100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Alpha Outdoor Services home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 7 7 12 12 22 17 12 17 7 12 2Z"/><path d="M12 22V8"/></svg>
+      </span>
+      <span>Alpha <b>Outdoor</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+13165596686">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span>(316) 559-6686</span>
+      </a>
+      <a class="btn btn-primary" href="#quote">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<main id="top">
+<section class="hero">
+  <div class="hero-media">
+    <img src="assets/hero-flowerbed.webp" width="1600" height="900" fetchpriority="high" decoding="async"
+         alt="Alpha Outdoor crew refreshing a mulched flower bed with spring daffodils at a Rose Hill, Kansas home">
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="badge-row">
+        <span class="pill"><span class="stars" aria-hidden="true">★★★★★</span> 4.7 on Google · 13 reviews</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Locally owned in Rose Hill</span>
+      </div>
+      <h1>The Rose Hill lawn crew<br>homeowners <em>keep rehiring</em></h1>
+      <p class="lead">Crisp striped mowing, flower-bed cleanups, mulch and weeding — done right the first time by Thomas and his crew. The kind of work your neighbors notice from the curb.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+          Get a Free Estimate
+        </a>
+        <a class="btn btn-ghost-light" href="tel:+13165596686">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (316) 559-6686
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no-pressure estimates</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Repeat customers for years</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> A whole bed cleared in a day</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust strip ===== -->
+<section class="trust-strip" aria-label="At a glance">
+  <div class="container">
+    <div class="ts-item"><span class="ts-num">4.7</span><div class="ts-lab"><span class="stars" aria-hidden="true">★★★★★</span><br>13 Google reviews</div></div>
+    <div class="divider" aria-hidden="true"></div>
+    <div class="ts-item"><span class="ts-num">Rose&nbsp;Hill</span><div class="ts-lab">Locally owned<br>&amp; operated</div></div>
+    <div class="divider" aria-hidden="true"></div>
+    <div class="ts-item"><span class="ts-num">Lawn&nbsp;+&nbsp;Beds</span><div class="ts-lab">Mowing, mulch<br>&amp; cleanup</div></div>
+    <div class="divider" aria-hidden="true"></div>
+    <div class="ts-item"><span class="ts-num">Free</span><div class="ts-lab">Estimates on<br>every project</div></div>
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Lawn &amp; landscape care, start to finish</h2>
+      <p>A focused menu we actually do well — keeping Rose Hill yards mowed, edged and weed-free through every season.</p>
+    </div>
+    <div class="services-grid">
+      <article class="svc-card feature reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2.5l1.5-2 2 4 2-6 2 4h6"/><path d="M3 21h18"/><path d="M5 13V7a2 2 0 0 1 2-2h2"/></svg></div>
+        <h3>Lawn Mowing &amp; Striping</h3>
+        <p>Clean, even cuts with crisp edges and the straight stripes neighbors notice. Weekly or every-other-week, on a schedule you can count on.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4-5 6-8 6-11a6 6 0 0 0-12 0c0 3 2 6 6 11Z"/><path d="M12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></div>
+        <h3>Flower-Bed Cleanup &amp; Weeding</h3>
+        <p>We clear a full bed of weeds — often in a single visit — then tidy the edges so your plantings are the thing people see, not the overgrowth.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18l-2-6H5l-2 6Z"/><path d="M8 12V8a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Mulch &amp; Bed Refresh</h3>
+        <p>Fresh mulch laid clean and even around shrubs and borders — locking in moisture, holding back weeds and giving the whole yard a finished look.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 4 4.5 4 8a4 4 0 0 1-8 0c0-3.5 2.5-5 4-8Z"/><path d="M5 22c1.5-3 4-4 7-4s5.5 1 7 4"/></svg></div>
+        <h3>Seasonal Yard Cleanups</h3>
+        <p>Spring tune-ups and fall leaf &amp; debris cleanups that get your property reset for the season and looking cared-for again.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M7 8 6 4h12l-1 4"/><path d="M6 8v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/><path d="M10 12v3M14 12v3"/></svg></div>
+        <h3>Brush &amp; Storm Debris Removal</h3>
+        <p>Downed limbs, overgrowth and post-storm mess hauled off and the area raked clean, so your yard is usable again fast.</p>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M5 12a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2M7 12v6M11 12v6M15 12v6M19 12v6"/></svg></div>
+        <h3>Holiday Lighting</h3>
+        <p>Clean rooflines and crisp light runs installed for the season — the same careful, no-shortcuts approach we bring to the yard.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About / Split ===== -->
+<section class="section" id="about" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="split">
+      <div class="split-media reveal">
+        <img src="assets/stripes-stone-house.webp" width="1000" height="750" loading="lazy" decoding="async"
+             alt="Freshly striped green lawn beside a stone home, mowed by Alpha Outdoor Services near Rose Hill, KS">
+        <div class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 2 3 7v10l8.5 5 8.5-5V7l-8.5-5Z"/><path d="m8 12 2.5 2.5L16 9"/></svg>
+          <div><b>Years of repeat customers</b><span>Homeowners who keep calling back</span></div>
+        </div>
+      </div>
+      <div class="split-body reveal">
+        <span class="eyebrow">About Alpha Outdoor</span>
+        <h2>Run by Thomas — and the crew people keep calling back</h2>
+        <p>Alpha Outdoor Services is a locally owned lawn and landscape crew right here in Rose Hill, serving the Wichita-metro area. We&rsquo;re not the biggest outfit in town, and that&rsquo;s the point: you get the same hands on your yard each visit, and a standard of work that holds up season after season.</p>
+        <p>It&rsquo;s why so much of our work comes from the same homeowners, year after year — and from the neighbors they tell. When a crew shows up, works hard, and leaves the place looking sharp, people remember.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Customers who&rsquo;ve hired us repeatedly over the years</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Hard-working crew that can clear a whole bed in a day</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Straightforward, no-pressure free estimates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why us ===== -->
+<section class="section why">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why homeowners pick us</span>
+      <h2>Reliable, tidy, and easy to work with</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+        <h3>Work that lasts</h3>
+        <p>The same standard every visit — the reason customers keep us on for years.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Fast turnarounds</h3>
+        <p>A hard-working crew that clears a full bed of weeds in a single day.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+        <h3>Locally owned</h3>
+        <p>Based in Rose Hill, serving the neighbors and towns right around us.</p>
+      </div>
+      <div class="why-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Honest pricing</h3>
+        <p>Free estimates and clear, no-pressure quotes before any work starts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting your yard handled is simple</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step reveal"><span class="num">1</span><h3>Reach out</h3><p>Call or text us, or send the quick form. Tell us what your yard needs.</p></div>
+      <div class="step reveal"><span class="num">2</span><h3>Free estimate</h3><p>We look at the property and give you a clear, no-pressure price.</p></div>
+      <div class="step reveal"><span class="num">3</span><h3>We get to work</h3><p>The crew shows up on schedule and does the job right the first time.</p></div>
+      <div class="step reveal"><span class="num">4</span><h3>Enjoy the yard</h3><p>You come home to a sharp, cared-for property — and we keep it that way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="section gallery" id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Real Rose Hill-area yards we&rsquo;ve taken care of</h2>
+      <p>Every photo below is our own work — striped lawns, refreshed beds and clean borders around the Wichita metro.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="reveal"><img src="assets/stripes-farmhouse.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Striped freshly mowed lawn in front of a farmhouse by Alpha Outdoor Services"><figcaption>Striped mow on a sloped front lawn</figcaption></figure>
+      <figure class="reveal"><img src="assets/stripes-truck.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Crisp mowing stripes on a green front lawn with the Alpha Outdoor truck in the driveway"><figcaption>Edge-to-edge stripes, clean finish</figcaption></figure>
+      <figure class="reveal"><img src="assets/bed-border-turf.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Healthy green lawn meeting a freshly mulched planting bed with shrubs and flowers"><figcaption>Mulched bed border &amp; healthy turf</figcaption></figure>
+      <figure class="reveal"><img src="assets/mulch-beds-fence.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Freshly mulched flower beds with new plantings along a backyard fence line"><figcaption>Fresh-mulched beds along a fence line</figcaption></figure>
+      <figure class="reveal"><img src="assets/roadside-stripes.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Long striped lawn strip running along a sidewalk, mowed by Alpha Outdoor"><figcaption>Roadside strip, mowed and edged</figcaption></figure>
+      <figure class="reveal"><img src="assets/stripes-stone-house.webp" width="1000" height="750" loading="lazy" decoding="async" alt="Striped green lawn beside a stone home with a mature shade tree"><figcaption>Mow &amp; trim beside a stone home</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Reviews ===== -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">From our Google reviews</span>
+      <h2>What Rose Hill homeowners say</h2>
+      <p>A few words from real Google reviews — the full set lives on our Google Business Profile.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>I have used Thomas and his crew multiple times over the past few years&hellip; their work has always been outstanding.</blockquote>
+        <div class="who"><span class="av" aria-hidden="true">BW</span><div><b>Bill Wright</b><span>Google review</span></div></div>
+      </article>
+      <article class="review reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>These young men did a fantastic job of clearing weeds from all of my flower beds in one morning and afternoon.</blockquote>
+        <div class="who"><span class="av" aria-hidden="true">DR</span><div><b>Donna Rogers</b><span>Google review</span></div></div>
+      </article>
+    </div>
+    <div class="reviews-foot reveal">
+      <div class="g"><span class="stars" aria-hidden="true">★★★★★</span> <strong>4.7</strong>&nbsp;average across 13 Google reviews</div>
+      <a class="btn btn-secondary" href="https://search.google.com/local/writereview?placeid=ChIJ9Qbjzon3uocREHjK-7xJXn8" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z"/></svg>
+        Leave us a Google review
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Service Area ===== -->
+<section class="section" id="area" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="area-wrap">
+      <div class="area-body reveal">
+        <span class="eyebrow">Where we work</span>
+        <h2>Serving Rose Hill &amp; the Wichita metro</h2>
+        <p>We&rsquo;re based in Rose Hill and take care of yards across the surrounding southeast-Wichita communities. Not sure if you&rsquo;re in range? Give us a call — if you&rsquo;re close, we&rsquo;ll likely come take a look.</p>
+        <div class="town-list" aria-label="Towns we serve">
+          <span>Rose Hill</span><span>Derby</span><span>Mulvane</span><span>Andover</span><span>Augusta</span><span>Haysville</span><span>Wichita</span><span>Douglass</span>
+        </div>
+      </div>
+      <div class="map-frame reveal">
+        <iframe
+          title="Map of Rose Hill, Kansas — Alpha Outdoor Services area"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-97.32%2C37.48%2C-96.95%2C37.64&amp;layer=mapnik&amp;marker=37.5582671%2C-97.1350067"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-grid">
+      <details class="faq-item reveal" open>
+        <summary>How do I get a price? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans"><p>Estimates are free. Call or text (316) 559-6686, or fill out the form on this page with a little about your yard. We&rsquo;ll take a look and give you a clear, no-pressure price before any work begins.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Do you offer regular mowing, or one-time visits? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans"><p>Both. We can set you up on a weekly or every-other-week mowing schedule, or handle a one-time job like a bed cleanup, mulch refresh or seasonal cleanup. Whatever fits your yard.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Can you really clear an overgrown flower bed quickly? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans"><p>Often, yes. With a hard-working crew we can clear a full bed of weeds in a single visit — one customer noted we cleared all of her flower beds in one morning and afternoon. We&rsquo;ll give you a realistic timeline when we look at the job.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What areas do you serve? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans"><p>Rose Hill and the surrounding southeast-Wichita-metro communities — Derby, Mulvane, Andover, Augusta, Haysville, Douglass and nearby. If you&rsquo;re close by, give us a call and we&rsquo;ll let you know.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How do I reach you? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans"><p>Phone or text is easiest: (316) 559-6686. We&rsquo;re generally reachable Monday through Friday, 8:00&nbsp;AM&ndash;5:00&nbsp;PM. Leave a message anytime and we&rsquo;ll get back to you.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA / Quote ===== -->
+<section class="cta section" id="quote">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#e9c79a">Free estimate</span>
+        <h2>Let&rsquo;s get your yard looking sharp</h2>
+        <p>Tell us a little about your property and what it needs. We&rsquo;ll get back to you with a free, no-pressure estimate — usually within a day.</p>
+        <ul class="cta-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free estimates, no obligation</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Local crew, real reputation (4.7★)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Prefer to talk? Call or text (316) 559-6686</li>
+        </ul>
+      </div>
+      <div class="quote-card reveal">
+        <h3>Request your estimate</h3>
+        <p class="sub">We&rsquo;ll follow up by phone or text.</p>
+        <form novalidate onsubmit="event.preventDefault();var n=this.querySelector('.form-note');n.hidden=false;n.scrollIntoView({block:'nearest'});">
+          <div class="field-row">
+            <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="zip">ZIP code</label><input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code"></div>
+            <div class="field"><label for="service">Service needed</label>
+              <select id="service" name="service">
+                <option>Lawn mowing</option>
+                <option>Flower-bed cleanup &amp; weeding</option>
+                <option>Mulch &amp; bed refresh</option>
+                <option>Seasonal yard cleanup</option>
+                <option>Brush / storm debris</option>
+                <option>Holiday lighting</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="detail">Tell us about your yard</label><textarea id="detail" name="detail" rows="3" placeholder="Roughly how big, what you'd like done, timing…"></textarea></div>
+          <button class="btn btn-primary" type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Send my request
+          </button>
+          <p class="form-note" hidden style="background:var(--brand-tint);color:var(--brand-d);border-radius:var(--r-m);padding:.75rem .9rem;font-size:.9rem;font-weight:500;margin-top:.85rem">Thanks! This preview form isn&rsquo;t connected yet — please call or text <a href="tel:+13165596686" style="color:var(--accent-d);font-weight:700">(316) 559-6686</a> and we&rsquo;ll get you a quick estimate.</p>
+          <p class="fineprint">Or call/text (316) 559-6686 — Mon&ndash;Fri, 8&ndash;5.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C7 7 7 12 12 22 17 12 17 7 12 2Z"/><path d="M12 22V8"/></svg></span>
+          <span>Alpha <b>Outdoor</b></span>
+        </a>
+        <p>Locally owned lawn care &amp; landscaping in Rose Hill, KS — striped mowing, bed cleanups, mulch and seasonal yard care for the Wichita metro.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><a href="tel:+13165596686">(316) 559-6686</a></li>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Rose Hill, KS 67133<br><span style="color:rgba(255,255,255,.55);font-size:.85rem">Serving the Wichita metro</span></span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Monday&ndash;Friday: 8:00&nbsp;AM&ndash;5:00&nbsp;PM</li>
+          <li>Saturday: Closed</li>
+          <li>Sunday: Closed</li>
+          <li style="margin-top:.4rem"><a href="#quote">Request a free estimate &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Alpha Outdoor Services LLC. All rights reserved.</span>
+      <span>Rose Hill, Kansas · Lawn Care &amp; Landscaping</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Mobile call bar ===== -->
+<div class="callbar"><a href="tel:+13165596686"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (316) 559-6686</a></div>
+
+<!-- ===== JSON-LD: HomeAndConstructionBusiness (no review/aggregateRating) ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Alpha Outdoor Services LLC",
+  "description":"Locally owned lawn care and landscaping in Rose Hill, KS — striped mowing, flower-bed cleanup, mulch, weeding and seasonal yard care across the Wichita metro.",
+  "url":"https://savcab.github.io/websites/alpha-outdoor-services/",
+  "image":"https://savcab.github.io/websites/alpha-outdoor-services/assets/hero-flowerbed.webp",
+  "telephone":"+13165596686",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Rose Hill",
+    "addressRegion":"KS",
+    "postalCode":"67133",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":37.5582671,"longitude":-97.1350067},
+  "areaServed":[
+    {"@type":"City","name":"Rose Hill"},
+    {"@type":"City","name":"Derby"},
+    {"@type":"City","name":"Mulvane"},
+    {"@type":"City","name":"Andover"},
+    {"@type":"City","name":"Augusta"},
+    {"@type":"City","name":"Haysville"},
+    {"@type":"City","name":"Douglass"},
+    {"@type":"City","name":"Wichita"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}
+  ],
+  "priceRange":"$$",
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Lawn & Landscape Services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn Mowing & Striping"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Flower-Bed Cleanup & Weeding"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mulch & Bed Refresh"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Seasonal Yard Cleanup"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brush & Storm Debris Removal"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Holiday Lighting"}}
+    ]
+  }
+}
+</script>
+
+<script>
+// Scroll-reveal: secondary content, first view only, reduced-motion respected
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

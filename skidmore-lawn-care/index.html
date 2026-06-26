@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lawn Care &amp; Landscaping in Timberville, VA | Skidmore</title>
+<meta name="description" content="Skidmore Lawn Care &amp; Landscaping keeps Timberville &amp; Shenandoah Valley yards sharp — mowing, mulch beds, clean edging and slope rock that keeps mulch from washing out. Rated 5.0 on Google. Free estimates." />
+<link rel="canonical" href="https://savcab.github.io/websites/skidmore-lawn-care/" />
+<meta name="theme-color" content="#1f4332" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Skidmore Lawn Care &amp; Landscaping — Timberville, VA" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Meticulous lawn care, mulch beds and clean edging across the Shenandoah Valley. Rated 5.0 on Google. Free estimates — call (540) 383-6790." />
+<meta property="og:image" content="https://savcab.github.io/websites/skidmore-lawn-care/assets/hero-lawn-stripes.jpg" />
+<meta property="og:url" content="https://savcab.github.io/websites/skidmore-lawn-care/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f4332'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23e8c46b' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+
+<!-- Fonts: Bricolage Grotesque (display) + Hanken Grotesk (body) — deliberately distinct pairing -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --display:'Bricolage Grotesque', system-ui, sans-serif;
+  --body:'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --h1:clamp(2.25rem,5.4vw,3.6rem);
+  --h2:clamp(1.7rem,3.4vw,2.5rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.06;
+  --track-head:-.02em;
+  /* COLOR — deep pine green + warm wheat/gold, white ground, warm-tinted alt */
+  --ink:#1b2420;
+  --ink-2:#54605a;
+  --ink-3:#8a948e;
+  --line:#e6e8e4;
+  --bg:#ffffff;
+  --bg-2:#f4f6f1;        /* cool-green tinted neutral */
+  --bg-3:#eef1ea;
+  --brand:#1f4332;       /* deep pine */
+  --brand-d:#163026;     /* darker pine */
+  --brand-l:#2f6049;
+  --accent:#c79a3d;      /* warm wheat/gold — CTAs/highlights only */
+  --accent-d:#a87f2a;
+  /* RADIUS */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(22,32,28,.06);
+  --sh-2:0 2px 4px rgba(22,32,28,.06),0 4px 10px rgba(22,32,28,.05);
+  --sh-3:0 6px 14px rgba(22,32,28,.07),0 16px 30px rgba(22,32,28,.08);
+  --sh-4:0 10px 22px rgba(22,32,28,.10),0 28px 56px rgba(22,32,28,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700;color:var(--ink)}
+p{max-width:var(--measure)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--brand);color:#fff}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.wrap{width:100%;max-width:75rem;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand-l);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.65;max-width:60ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;min-height:52px;padding:0 1.7rem;border-radius:var(--r-pill);border:2px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#231a05;box-shadow:var(--sh-2)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--sh-3);background:#d4a747}
+.btn-ghost{background:transparent;color:var(--brand);border-color:var(--brand)}
+.btn-ghost:hover{background:var(--brand);color:#fff;transform:translateY(-2px)}
+.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost-light:hover{background:#fff;color:var(--brand-d);transform:translateY(-2px)}
+
+/* ===== Header ===== */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background var(--t),box-shadow var(--t),border-color var(--t);border-bottom:1px solid transparent}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:5rem}
+.hdr.solid{background:rgba(255,255,255,.94);backdrop-filter:saturate(140%) blur(10px);border-bottom-color:var(--line);box-shadow:0 1px 0 rgba(22,32,28,.03)}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:800;font-size:1.18rem;color:var(--ink);letter-spacing:-.02em}
+.brand .mark{width:40px;height:40px;border-radius:11px;background:var(--brand);color:var(--accent);display:grid;place-items:center;font-size:1.15rem;font-weight:800;box-shadow:var(--sh-1)}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav{display:flex;align-items:center;gap:1.9rem}
+.nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a:hover{color:var(--brand)}
+.hdr-cta{display:flex;align-items:center;gap:.9rem}
+.hdr-phone{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);font-size:.98rem}
+.hdr-phone svg{width:17px;height:17px;color:var(--brand)}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line);border-radius:11px;background:#fff;cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px;color:var(--ink)}
+
+/* Mobile drawer */
+.drawer{position:fixed;inset:0;z-index:60;background:rgba(22,32,28,.45);opacity:0;visibility:hidden;overflow:hidden;transition:opacity var(--t),visibility var(--t)}
+.drawer.open{opacity:1;visibility:visible}
+.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(84vw,360px);background:#fff;padding:1.6rem 1.5rem;display:flex;flex-direction:column;gap:.3rem;transform:translateX(100%);transition:transform var(--t)}
+.drawer.open .drawer-panel{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.drawer-close{width:44px;height:44px;border:1px solid var(--line);border-radius:11px;background:#fff;cursor:pointer;display:grid;place-items:center}
+.drawer-close svg{width:22px;height:22px}
+.drawer a.dnav{padding:.85rem .4rem;font-family:var(--display);font-weight:600;font-size:1.2rem;color:var(--ink);border-bottom:1px solid var(--line)}
+.drawer .btn{margin-top:1.1rem}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding-top:calc(5rem + var(--hero-y));padding-bottom:var(--hero-y);overflow:hidden;background:var(--brand-d)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(15,28,22,.86) 0%,rgba(18,34,26,.74) 42%,rgba(20,38,28,.40) 100%)}
+.hero-inner{position:relative;z-index:1;max-width:42rem}
+.hero h1{color:#fff;font-size:var(--h1);font-weight:800;margin-top:1.1rem}
+.hero h1 .hl{color:var(--accent)}
+.hero p.sub{color:rgba(255,255,255,.9);font-size:clamp(1.05rem,1.7vw,1.22rem);line-height:1.6;margin-top:1.3rem;max-width:38ch}
+.hero .eyebrow{color:#fff}
+.hero .eyebrow::before{background:var(--accent)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;margin-top:2.4rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.16)}
+.htile{display:flex;align-items:center;gap:.6rem;color:#fff}
+.htile .stars{color:var(--accent);letter-spacing:1px;font-size:1rem}
+.htile b{font-family:var(--display);font-size:1.45rem;font-weight:800;line-height:1}
+.htile span{font-size:.82rem;color:rgba(255,255,255,.78);line-height:1.25}
+.htile .div{width:1px;height:34px;background:rgba(255,255,255,.18)}
+
+/* ===== Trust strip ===== */
+.trust{background:var(--bg-2);border-bottom:1px solid var(--line)}
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 2.6rem;padding-block:1.4rem}
+.trust-item{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;color:var(--ink-2);font-size:.95rem}
+.trust-item svg{width:19px;height:19px;color:var(--brand-l);flex:none}
+
+/* ===== Section heads ===== */
+.shead{max-width:46rem;margin-bottom:clamp(2.2rem,4vw,3.2rem)}
+.shead.center{margin-inline:auto;text-align:center}
+.shead h2{font-size:var(--h2);font-weight:700;margin-top:.9rem}
+.shead p{margin-top:1rem;color:var(--ink-2);font-size:1.08rem}
+.shead.center p{margin-inline:auto}
+
+/* ===== Services ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.8rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d8ddd3}
+.svc-ico{width:54px;height:54px;border-radius:14px;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc-ico svg{width:26px;height:26px}
+.svc h3{font-size:1.25rem;margin-bottom:.55rem}
+.svc p{color:var(--ink-2);font-size:.98rem;line-height:1.55}
+.svc .tag{display:inline-block;margin-top:1rem;font-size:.78rem;font-weight:700;letter-spacing:.04em;color:var(--brand-l);background:var(--bg-2);padding:.34rem .7rem;border-radius:var(--r-pill)}
+
+/* ===== Feature band (erosion care) ===== */
+.feature{background:var(--bg-2)}
+.feat-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.feat-media{position:relative}
+.feat-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-l);box-shadow:var(--sh-3)}
+.feat-media .badge{position:absolute;left:-14px;bottom:-14px;background:var(--brand);color:#fff;padding:1rem 1.25rem;border-radius:var(--r-m);box-shadow:var(--sh-3);max-width:230px}
+.feat-media .badge b{display:block;font-family:var(--display);font-size:1.05rem;margin-bottom:.2rem;color:var(--accent)}
+.feat-media .badge span{font-size:.82rem;color:rgba(255,255,255,.86);line-height:1.4}
+.feat-copy h2{font-size:var(--h2);margin:.9rem 0 1.1rem}
+.feat-copy p{color:var(--ink-2);font-size:1.05rem;margin-bottom:1rem}
+.feat-list{list-style:none;margin-top:1.4rem;display:grid;gap:.85rem}
+.feat-list li{display:flex;gap:.8rem;align-items:flex-start;font-weight:500;color:var(--ink)}
+.feat-list svg{width:22px;height:22px;color:var(--brand-l);flex:none;margin-top:1px}
+
+/* ===== Why-us ===== */
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.why-card{padding:1.7rem 1.4rem;border-radius:var(--r-m);background:var(--bg-2);border:1px solid var(--line)}
+.why-card .ico{width:48px;height:48px;border-radius:12px;background:#fff;color:var(--brand);display:grid;place-items:center;margin-bottom:1rem;box-shadow:var(--sh-1)}
+.why-card .ico svg{width:24px;height:24px}
+.why-card h3{font-size:1.12rem;margin-bottom:.4rem}
+.why-card p{font-size:.93rem;color:var(--ink-2);line-height:1.5}
+
+/* ===== Process ===== */
+.process{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.process .eyebrow{color:#fff}
+.process .shead h2{color:#fff}
+.process .shead p{color:rgba(255,255,255,.78)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:step}
+.step{position:relative;padding-top:1.2rem}
+.step .num{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--accent);line-height:1;opacity:.92}
+.step h3{color:#fff;font-size:1.18rem;margin:.7rem 0 .5rem}
+.step p{color:rgba(255,255,255,.74);font-size:.95rem;line-height:1.55}
+.step::before{content:"";position:absolute;top:0;left:0;width:46px;height:3px;background:var(--accent);border-radius:3px}
+
+/* ===== Review ===== */
+.review{background:var(--bg-2)}
+.review-card{max-width:50rem;margin-inline:auto;text-align:center}
+.review .stars{color:var(--accent);font-size:1.4rem;letter-spacing:3px}
+.review blockquote{font-family:var(--display);font-weight:600;font-size:clamp(1.4rem,3vw,2rem);line-height:1.34;color:var(--ink);margin:1.5rem auto;letter-spacing:-.01em;max-width:24ch;max-width:38ch}
+.review .who{font-weight:700;color:var(--ink)}
+.review .src{color:var(--ink-3);font-size:.9rem;margin-top:.2rem}
+.review .gcred{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.6rem;font-size:.9rem;color:var(--ink-2);font-weight:600}
+.review .gcred svg{width:18px;height:18px}
+
+/* ===== Gallery ===== */
+.gallery{background:#fff}
+.gal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+.gal-item{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);background:var(--bg-3)}
+.gal-item img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 500ms cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.045)}
+.gal-cap{position:absolute;left:0;right:0;bottom:0;padding:1.4rem 1.1rem .9rem;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(15,24,18,.78));opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-within .gal-cap{opacity:1;transform:none}
+
+/* ===== Service area ===== */
+.area{background:var(--bg-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-copy h2{font-size:var(--h2);margin:.9rem 0 1.1rem}
+.area-copy p{color:var(--ink-2);font-size:1.05rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:.9rem;padding:.5rem .9rem;border-radius:var(--r-pill)}
+.chip svg{width:14px;height:14px;color:var(--brand-l)}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);aspect-ratio:4/3;background:var(--bg-3)}
+.map-frame iframe{width:100%;height:100%;border:0;display:block}
+
+/* ===== About ===== */
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.about-media img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-l);box-shadow:var(--sh-3)}
+.about-copy h2{font-size:var(--h2);margin:.9rem 0 1.1rem}
+.about-copy p{color:var(--ink-2);font-size:1.06rem;margin-bottom:1.05rem}
+.about-stats{display:flex;gap:2.4rem;margin-top:1.8rem;flex-wrap:wrap}
+.about-stats .st b{font-family:var(--display);font-weight:800;font-size:2rem;color:var(--brand);display:block;line-height:1}
+.about-stats .st span{font-size:.86rem;color:var(--ink-2);font-weight:600;letter-spacing:.02em}
+
+/* ===== FAQ ===== */
+.faq{background:var(--bg-2)}
+.faq-grid{max-width:50rem;margin-inline:auto;display:grid;gap:.9rem}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:1.3rem 1.5rem}
+.faq-item h3{font-size:1.1rem;margin-bottom:.5rem;display:flex;gap:.6rem;align-items:flex-start}
+.faq-item h3 svg{width:20px;height:20px;color:var(--brand-l);flex:none;margin-top:1px}
+.faq-item p{color:var(--ink-2);font-size:.98rem;line-height:1.6;max-width:none;padding-left:1.6rem}
+
+/* ===== Contact / quote ===== */
+.contact{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.contact .eyebrow{color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem)}
+.contact-copy h2{font-size:var(--h2);color:#fff;margin:.9rem 0 1.1rem}
+.contact-copy p{color:rgba(255,255,255,.82);font-size:1.06rem;max-width:42ch}
+.contact-list{list-style:none;margin-top:2rem;display:grid;gap:1.1rem}
+.contact-list li{display:flex;gap:.95rem;align-items:flex-start}
+.contact-list .ci{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;flex:none}
+.contact-list .ci svg{width:21px;height:21px;color:var(--accent)}
+.contact-list b{display:block;color:#fff;font-size:1.02rem}
+.contact-list a,.contact-list span{color:rgba(255,255,255,.82);font-size:.96rem}
+.contact-list a:hover{color:var(--accent)}
+.form{background:#fff;border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.3rem);box-shadow:var(--sh-4)}
+.form h3{color:var(--ink);font-size:1.4rem;margin-bottom:.3rem}
+.form .fsub{color:var(--ink-2);font-size:.95rem;margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink);margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--bg-2);border:1.5px solid var(--line);border-radius:var(--r-s);padding:.8rem .9rem;transition:border-color var(--t),background var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand-l);background:#fff}
+.field textarea{resize:vertical;min-height:96px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form .btn{width:100%;margin-top:.5rem}
+.form-note{font-size:.8rem;color:var(--ink-3);margin-top:.9rem;text-align:center}
+.form-ok{display:none;text-align:center;padding:1.5rem .5rem}
+.form-ok.show{display:block}
+.form-ok .ok-ico{width:60px;height:60px;border-radius:50%;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;margin:0 auto 1rem}
+.form-ok .ok-ico svg{width:30px;height:30px}
+.form-ok h3{color:var(--ink);margin-bottom:.4rem}
+.form-ok p{color:var(--ink-2);font-size:.97rem;margin-inline:auto}
+
+/* ===== Footer ===== */
+.footer{background:#11201a;color:rgba(255,255,255,.7);padding-block:clamp(3rem,6vw,4.5rem) 0}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem;padding-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand .brand{color:#fff}
+.foot-brand .brand .mark{background:var(--accent);color:var(--brand-d)}
+.foot-brand p{margin-top:1.1rem;font-size:.95rem;color:rgba(255,255,255,.6);line-height:1.6;max-width:34ch}
+.foot-col h4{color:#fff;font-family:var(--display);font-size:1.02rem;margin-bottom:1rem;letter-spacing:0}
+.foot-col a,.foot-col p{display:block;color:rgba(255,255,255,.66);font-size:.94rem;margin-bottom:.6rem;line-height:1.5}
+.foot-col a:hover{color:var(--accent)}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:1.6rem;font-size:.85rem;color:rgba(255,255,255,.5)}
+.foot-bottom .stars{color:var(--accent)}
+
+/* ===== Mobile sticky call bar ===== */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:.7rem;padding:.7rem .8rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);box-shadow:0 -4px 18px rgba(22,32,28,.08)}
+.callbar .btn{flex:1;min-height:50px}
+
+/* ===== Responsive ===== */
+@media (max-width:980px){
+  .nav,.hdr-phone{display:none}
+  .burger{display:inline-flex}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);gap:2rem}
+  .feat-grid,.area-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .about-media{max-width:26rem;margin-inline:auto}
+  .feat-media .badge{left:auto;right:14px}
+  .callbar.show{display:flex}
+}
+@media (max-width:620px){
+  .svc-grid,.gal-grid,.why-grid,.steps,.field-row,.foot-grid{grid-template-columns:1fr}
+  .foot-grid{gap:1.8rem}
+  .hero-trust{gap:1rem}
+  .htile .div{display:none}
+  .callbar.show{display:flex}
+  .about-stats{gap:1.6rem}
+  .hdr-cta .btn-primary{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand" aria-label="Skidmore Lawn Care and Landscaping home">
+      <span class="mark">S</span>
+      <span>Skidmore<small>Lawn Care &amp; Landscaping</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#area">Service Area</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="tel:+15403836790" class="hdr-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (540) 383-6790
+      </a>
+      <a href="#contact" class="btn btn-primary" style="min-height:46px;padding:0 1.3rem;font-size:.95rem">Free Estimate</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <span class="brand"><span class="mark">S</span><span>Skidmore</span></span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <a href="#services" class="dnav">Services</a>
+    <a href="#work" class="dnav">Our Work</a>
+    <a href="#area" class="dnav">Service Area</a>
+    <a href="#about" class="dnav">About</a>
+    <a href="#contact" class="dnav">Contact</a>
+    <a href="tel:+15403836790" class="btn btn-ghost">Call (540) 383-6790</a>
+    <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="assets/hero-lawn-stripes.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Freshly mowed lawn with crisp mowing stripes maintained by Skidmore in Timberville, Virginia" />
+  </div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Timberville &amp; the Shenandoah Valley</span>
+    <h1>A yard that looks <span class="hl">cared for</span>, down to the last edge.</h1>
+    <p class="sub">Sharp mowing, clean mulch beds, and edging done so the rock and mulch stay put — not washed down the slope after the next big rain. Honest, detail-first lawn care across the Valley.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        Get a Free Estimate
+      </a>
+      <a href="tel:+15403836790" class="btn btn-ghost-light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (540) 383-6790
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="htile">
+        <div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+        </div>
+        <div>
+          <b>5.0</b>
+        </div>
+        <span>Rated 5.0 across<br>16 Google reviews</span>
+      </div>
+      <div class="div" aria-hidden="true"></div>
+      <div class="htile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Locally based in<br>Timberville, VA</span>
+      </div>
+      <div class="div" aria-hidden="true"></div>
+      <div class="htile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Free, no-pressure<br>estimates</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap trust-row">
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Perfect 5.0 Google rating</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Detail-first, dependable crew</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Open 7 days · 6 AM–8 PM</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Residential lawns &amp; beds</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Lawn care and landscaping, done with real attention.</h2>
+      <p>A focused set of services we actually do well — not a padded menu. Every job gets the same care the reviews talk about.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-1.5 2.5-2 4-2s2.75.5 4 2"/><path d="M2 17c1.25-1.5 2.5-2 4-2s2.75.5 4 2"/><path d="M14 13V3"/><path d="M14 8h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6"/><path d="M14 3h2a4 4 0 0 1 4 4"/></svg></div>
+        <h3>Mowing &amp; Lawn Care</h3>
+        <p>Clean, consistent mowing on a schedule that fits your yard — with the crisp stripes and tidy finish your property deserves.</p>
+        <span class="tag">Weekly &amp; bi-weekly</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg></div>
+        <h3>Mulch &amp; Bed Work</h3>
+        <p>Fresh mulch, cleaned-up beds, and trimmed shrubs that frame the house and keep weeds down through the season.</p>
+        <span class="tag">Refresh &amp; install</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M5 18l3-9 4 5 3-7 4 11"/></svg></div>
+        <h3>Edging &amp; Clean Lines</h3>
+        <p>Defined edges between lawn, beds, and walkways — the detail that makes the whole yard read sharp and finished.</p>
+        <span class="tag">Beds &amp; borders</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7"/><path d="M4 12c2 3 5 5 8 5s6-2 8-5"/><circle cx="12" cy="11" r="1.5"/></svg></div>
+        <h3>Rock &amp; Erosion Control</h3>
+        <p>River rock and edging set on slopes so mulch and soil stay put instead of washing downhill after a heavy Valley rain.</p>
+        <span class="tag">Slopes &amp; drainage</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M9 20V8.5a3 3 0 0 1 6 0V20"/><path d="M5 8l7-5 7 5"/></svg></div>
+        <h3>Shrub &amp; Hedge Trimming</h3>
+        <p>Shaping and trimming that keeps shrubs and hedges healthy, in proportion, and out of the windows and walkways.</p>
+        <span class="tag">Shape &amp; tidy</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-5h6v5"/></svg></div>
+        <h3>Seasonal Cleanups</h3>
+        <p>Spring tidy-ups and fall leaf cleanup that get the yard reset and ready, so it looks its best heading into the season.</p>
+        <span class="tag">Spring &amp; fall</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE: erosion / detail care -->
+<section class="section feature" id="detail">
+  <div class="wrap feat-grid">
+    <div class="feat-media reveal">
+      <img src="assets/feature-slope-rock-edging.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Mulch bed and tan river rock set with stone edging on a wooded slope to stop washout, by Skidmore Lawn Care in the Shenandoah Valley" />
+      <div class="badge">
+        <b>Built to stay put</b>
+        <span>Edging &amp; rock set so mulch doesn't wash downhill.</span>
+      </div>
+    </div>
+    <div class="feat-copy reveal">
+      <span class="eyebrow">The detail that lasts</span>
+      <h2>We sweat the part most people skip.</h2>
+      <p>Anyone can drop mulch on a bed. The difference is what happens after the next downpour. On a slope, we set edging and lay river rock so the mulch and soil hold their place — instead of ending up at the bottom of the yard.</p>
+      <p>It's a small thing that saves you redoing the same bed every spring. That kind of attention is the whole reason our customers keep calling us back.</p>
+      <ul class="feat-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Edging set between mulch and rock to hold the line</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>River rock placed on slopes to slow runoff and washout</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Beds finished clean, so the whole yard looks intentional</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow" style="display:inline-flex">Why Skidmore</span>
+      <h2>Lawn care you don't have to think twice about.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <h3>A perfect 5.0</h3>
+        <p>Sixteen Google reviews and not a single complaint — earned one careful job at a time.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8 7 17M17 7l2.8-2.8"/></svg></div>
+        <h3>Eye for detail</h3>
+        <p>Clean edges, tidy beds, and the small finishing touches most crews rush past.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></div>
+        <h3>Local &amp; reliable</h3>
+        <p>Based right here in Timberville — we show up when we say and treat your yard like it's ours.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Honest pricing</h3>
+        <p>Free estimates and fair, upfront quotes — no surprises when the work is done.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting your yard handled is simple.</h2>
+      <p>Four easy steps from first call to a yard you're proud of.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">01</div>
+        <h3>Reach out</h3>
+        <p>Call or text us, or send the quick form. Tell us what your yard needs.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">02</div>
+        <h3>Free estimate</h3>
+        <p>We look at the property, talk through it with you, and give you a fair, clear quote.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">03</div>
+        <h3>We get to work</h3>
+        <p>We show up on schedule and do the job right — mowing, beds, edging, the details.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">04</div>
+        <h3>Yard you love</h3>
+        <p>A sharp, cared-for yard — and a crew you can keep calling all season.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW -->
+<section class="section review">
+  <div class="wrap">
+    <div class="review-card reveal">
+      <span class="eyebrow" style="display:inline-flex">From our Google reviews</span>
+      <div class="stars" aria-label="5 out of 5 stars" style="margin-top:1.2rem">★★★★★</div>
+      <blockquote>“Tanner did a great job mulching shrubs, installing edging between mulch and rocks he laid on a slope area to prevent mulch and soil from washing downhill. He is conscientious about delivering quality work.”</blockquote>
+      <div class="who">Linda Frank</div>
+      <div class="src">Verified Google review</div>
+      <a class="gcred" href="https://search.google.com/local/writereview?placeid=ChIJh0fPVGz7tIkR8mizTclaRLU" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        5.0 from 16 reviews · leave us one too
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="work">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Real yards we've taken care of.</h2>
+      <p>A look at recent lawns, beds, and slope work around the Valley — all our own projects, no stock photos.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item reveal">
+        <img src="assets/gallery-property-stripes.jpg" width="800" height="599" loading="lazy" decoding="async" alt="Striped, freshly mowed lawn across a property maintained by Skidmore in Timberville, VA" />
+        <figcaption class="gal-cap">Striped, freshly cut lawn across the property</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/gallery-mulch-bed-edge.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Fresh dark mulch bed with clean edging along a brick home, by Skidmore Lawn Care" />
+        <figcaption class="gal-cap">Fresh mulch bed with a crisp, clean edge</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/gallery-wooded-slope-mulch.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Mulch beds and edging around trees on a wooded slope, by Skidmore Lawn Care in the Shenandoah Valley" />
+        <figcaption class="gal-cap">Mulched beds and edging on a wooded slope</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/gallery-drainage-rock-strip.jpg" width="800" height="600" loading="lazy" decoding="async" alt="River rock drainage strip set along a driveway at a Valley home, by Skidmore Lawn Care" />
+        <figcaption class="gal-cap">River-rock strip set to manage runoff</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap area-grid">
+    <div class="area-copy reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2>Serving Timberville and the Shenandoah Valley.</h2>
+      <p>We're based in Timberville and take care of lawns and landscapes across the surrounding Valley towns of Rockingham County. Not sure if you're in range? Just give us a call — chances are we can help.</p>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Timberville</span>
+        <span class="chip">Broadway</span>
+        <span class="chip">New Market</span>
+        <span class="chip">Mount Jackson</span>
+        <span class="chip">Lacey Spring</span>
+        <span class="chip">Harrisonburg</span>
+        <span class="chip">Rockingham County</span>
+      </div>
+    </div>
+    <div class="map-frame reveal">
+      <iframe
+        title="Map of Skidmore Lawn Care &amp; Landscaping service area around Timberville, VA"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-78.92%2C38.55%2C-78.63%2C38.72&amp;layer=mapnik&amp;marker=38.6376%2C-78.7747"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <img src="assets/gallery-property-stripes.jpg" width="800" height="599" loading="lazy" decoding="async" alt="A cared-for Shenandoah Valley property with a freshly striped lawn maintained by Skidmore" />
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">About us</span>
+      <h2>A local crew that takes pride in the details.</h2>
+      <p>Skidmore Lawn Care &amp; Landscaping is a Timberville-based crew that handles the things that keep a Valley property looking its best — mowing, mulch and bed work, edging, shrub trimming, and the rock and slope work that keeps it all in place.</p>
+      <p>We're not the biggest outfit around, and that's the point. It means we can give your yard real attention and stand behind every job. Our customers notice — and a perfect 5.0 across our Google reviews is the proof.</p>
+      <div class="about-stats">
+        <div class="st"><b>5.0</b><span>Google rating</span></div>
+        <div class="st"><b>16</b><span>5-star reviews</span></div>
+        <div class="st"><b>7 days</b><span>Reachable a week</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow" style="display:inline-flex">Good to know</span>
+      <h2>Questions we hear a lot.</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>How do I get a quote?</h3>
+        <p>Call or text us at (540) 383-6790, or fill out the short form on this page. We'll come look at the property and give you a free, no-pressure estimate.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>What areas do you serve?</h3>
+        <p>We're based in Timberville and serve the surrounding Shenandoah Valley towns in Rockingham County. If you're nearby and not sure, just ask — we'll let you know.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>Do you do regular mowing or one-time jobs?</h3>
+        <p>Both. We can set up weekly or bi-weekly mowing to keep things consistent, or handle one-time work like a mulch refresh, cleanup, or slope and rock project.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>When can I reach you?</h3>
+        <p>We're available seven days a week, 6 AM to 8 PM. Give us a call or text during those hours and we'll get back to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / QUOTE -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal">
+      <span class="eyebrow">Get started</span>
+      <h2>Let's get your yard looking its best.</h2>
+      <p>Tell us a little about your property and what you need. We'll get back to you with a free estimate — no pressure, no obligation.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><b>Call or text</b><a href="tel:+15403836790">(540) 383-6790</a></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Based in</b><span>Timberville, VA · serving the Shenandoah Valley</span></div>
+        </li>
+        <li>
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <div><b>Hours</b><span>Open 7 days a week · 6 AM – 8 PM</span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="form reveal">
+      <form id="quoteForm" novalidate>
+        <h3>Request a free estimate</h3>
+        <p class="fsub">We'll get back to you, usually the same day.</p>
+        <div class="field">
+          <label for="qname">Name</label>
+          <input type="text" id="qname" name="name" autocomplete="name" placeholder="Your name" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="qphone">Phone</label>
+            <input type="tel" id="qphone" name="phone" autocomplete="tel" placeholder="(540) 000-0000" required />
+          </div>
+          <div class="field">
+            <label for="qzip">ZIP / Town</label>
+            <input type="text" id="qzip" name="zip" placeholder="22853" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="qservice">What do you need?</label>
+          <select id="qservice" name="service">
+            <option value="">Select a service…</option>
+            <option>Regular mowing &amp; lawn care</option>
+            <option>Mulch &amp; bed work</option>
+            <option>Edging &amp; clean-up</option>
+            <option>Rock / slope / erosion work</option>
+            <option>Shrub &amp; hedge trimming</option>
+            <option>Seasonal cleanup</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qmsg">Details (optional)</label>
+          <textarea id="qmsg" name="message" placeholder="Tell us a bit about your yard and what you're after."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Request My Free Estimate</button>
+        <p class="form-note">Prefer to talk? Call or text <a href="tel:+15403836790" style="color:var(--brand);font-weight:700">(540) 383-6790</a>.</p>
+      </form>
+      <div class="form-ok" id="formOk">
+        <div class="ok-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Thanks, <span id="okName">there</span>!</h3>
+        <p>We've got your request. We'll be in touch soon — and if it's urgent, call or text us at (540) 383-6790.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand"><span class="mark">S</span><span>Skidmore<small style="color:rgba(255,255,255,.55)">Lawn Care &amp; Landscaping</small></span></span>
+        <p>Detail-first lawn care and landscaping for Timberville and the Shenandoah Valley. Rated 5.0 on Google.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Mowing &amp; lawn care</a>
+        <a href="#services">Mulch &amp; bed work</a>
+        <a href="#services">Edging &amp; clean lines</a>
+        <a href="#detail">Rock &amp; erosion control</a>
+        <a href="#services">Seasonal cleanups</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="tel:+15403836790">(540) 383-6790</a>
+        <p>Timberville, VA<br>Serving the Shenandoah Valley</p>
+        <p>Open 7 days · 6 AM – 8 PM</p>
+        <a href="#contact">Request a free estimate</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Skidmore Lawn Care &amp; Landscaping. All rights reserved.</span>
+      <span><span class="stars">★★★★★</span> 5.0 · 16 Google reviews</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CALL BAR -->
+<div class="callbar" id="callbar">
+  <a href="tel:+15403836790" class="btn btn-primary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="#contact" class="btn btn-ghost" style="background:#fff">Free Estimate</a>
+</div>
+
+<!-- JSON-LD: HomeAndConstructionBusiness (NO review/aggregateRating per policy) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Skidmore Lawn Care & Landscaping",
+  "image": "https://savcab.github.io/websites/skidmore-lawn-care/assets/hero-lawn-stripes.jpg",
+  "url": "https://savcab.github.io/websites/skidmore-lawn-care/",
+  "telephone": "+15403836790",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15524 Evergreen Valley Rd",
+    "addressLocality": "Timberville",
+    "addressRegion": "VA",
+    "postalCode": "22853",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.6376,
+    "longitude": -78.7747
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Timberville" },
+    { "@type": "City", "name": "Broadway" },
+    { "@type": "City", "name": "New Market" },
+    { "@type": "City", "name": "Mount Jackson" },
+    { "@type": "City", "name": "Lacey Spring" },
+    { "@type": "City", "name": "Harrisonburg" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "06:00",
+      "closes": "20:00"
+    }
+  ],
+  "priceRange": "$$"
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById('hdr');
+  var burger=document.getElementById('burger');
+  var drawer=document.getElementById('drawer');
+  var drawerClose=document.getElementById('drawerClose');
+  var callbar=document.getElementById('callbar');
+
+  // year
+  var yr=document.getElementById('yr'); if(yr){yr.textContent=new Date().getFullYear();}
+
+  // header solid + sticky callbar on scroll
+  function onScroll(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    if(hdr){ hdr.classList.toggle('solid', y>12); }
+    if(callbar){ callbar.classList.toggle('show', y>560); }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  // drawer
+  function openDrawer(){ drawer.classList.add('open'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closeDrawer(){ drawer.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  if(burger){ burger.addEventListener('click',openDrawer); }
+  if(drawerClose){ drawerClose.addEventListener('click',closeDrawer); }
+  if(drawer){
+    drawer.addEventListener('click',function(e){ if(e.target===drawer){ closeDrawer(); } });
+    drawer.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',closeDrawer); });
+  }
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ closeDrawer(); } });
+
+  // reveal on scroll (secondary content, first-view only) + failsafe
+  var reveals=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.08});
+    reveals.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ reveals.forEach(function(el){ el.classList.add('in'); }); },2500);
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // quote form — validate, no real endpoint; honest local success (phone-only business, no email collection backend)
+  var form=document.getElementById('quoteForm');
+  var ok=document.getElementById('formOk');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.querySelector('#qname');
+      var phone=form.querySelector('#qphone');
+      var valid=true;
+      [name,phone].forEach(function(f){
+        if(!f.value.trim()){ f.style.borderColor='#c0392b'; f.setAttribute('aria-invalid','true'); valid=false; }
+        else { f.style.borderColor=''; f.removeAttribute('aria-invalid'); }
+      });
+      if(!valid){ return; }
+      var okName=document.getElementById('okName');
+      if(okName){ okName.textContent=(name.value.trim().split(' ')[0]||'there'); }
+      form.style.display='none';
+      if(ok){ ok.classList.add('show'); }
+    });
+  }
+})();
+</script>
+</body>
+</html>

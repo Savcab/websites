@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pool Service in Charlotte, NC | Advanced Pool Technicians</title>
+<meta name="description" content="Advanced Pool Technicians is a full-service Charlotte-area pool contractor — weekly maintenance, equipment repair, green-pool rescue, and renovation. Owner-operated since 2007. Call (704) 241-9336 for a free quote." />
+<link rel="canonical" href="https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/" />
+
+<meta property="og:title" content="Pool Service in Charlotte, NC | Advanced Pool Technicians" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/assets/hero-charlotte-pool.jpg" />
+<meta property="og:url" content="https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --navy:#0f2b8c; --navy-deep:#0a1f63; --ink:#101a3a; --ocean:#035db4;
+    --gold:#f2a104; --gold-bright:#ffcc00; --sky:#e8f1fb; --line:#dbe5f1;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:#1b2440;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ocean)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;border-radius:9px;padding:.95rem 1.5rem;transition:transform .15s ease,box-shadow .15s ease;font-size:1rem}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:#1a1300;box-shadow:0 8px 20px -8px rgba(242,161,4,.6)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+  .sec{padding:84px 0}
+  svg.ic{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:.7rem}
+  .brand .logo{font-weight:800;font-size:1.18rem;color:var(--navy);letter-spacing:-.02em;line-height:1.05}
+  .brand .logo span{display:block;font-size:.66rem;font-weight:700;letter-spacing:.18em;color:var(--gold);text-transform:uppercase}
+  .navlinks{display:flex;gap:1.6rem;align-items:center;font-weight:600;font-size:.95rem;color:#33405e}
+  .navlinks a{color:#33405e}
+  .navlinks a:hover{color:var(--navy)}
+  .nav-cta{display:flex;align-items:center;gap:1rem}
+  .nav-phone{font-weight:800;color:var(--navy);display:flex;align-items:center;gap:.45rem;font-size:1.02rem}
+  @media(max-width:860px){.navlinks{display:none}.nav-phone span{display:none}}
+
+  /* hero */
+  .hero{position:relative;color:#fff;isolation:isolate}
+  .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,rgba(8,21,70,.92) 0%,rgba(10,31,99,.78) 42%,rgba(3,93,180,.34) 100%)}
+  .hero-inner{padding:92px 0 96px;max-width:660px}
+  .hero h1{color:#fff;font-size:clamp(2.2rem,5.2vw,3.5rem);font-weight:800}
+  .hero h1 em{color:var(--gold-bright);font-style:normal}
+  .hero p.lede{margin-top:1.2rem;font-size:1.18rem;color:#dbe6fb;max-width:560px}
+  .hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.9rem}
+  .trustrow{margin-top:2.3rem;display:flex;flex-wrap:wrap;gap:1.4rem 2rem;align-items:center}
+  .trustrow .t{display:flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;color:#eaf1fc}
+  .stars{color:var(--gold-bright);letter-spacing:.05em}
+
+  /* trust bar */
+  .bar{background:var(--ink);color:#fff}
+  .bar .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding:30px 22px}
+  .bar .b{display:flex;flex-direction:column;gap:.15rem}
+  .bar .b b{font-size:1.5rem;font-weight:800;color:var(--gold-bright)}
+  .bar .b span{font-size:.86rem;color:#b9c6e6}
+  @media(max-width:680px){.bar .wrap{grid-template-columns:repeat(2,1fr);gap:1.4rem}}
+
+  /* services */
+  .head{max-width:680px;margin-bottom:54px}
+  .head h2{font-size:clamp(1.8rem,3.6vw,2.5rem);font-weight:800;margin-top:.6rem}
+  .head p{margin-top:.9rem;color:#56607e;font-size:1.08rem}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  @media(max-width:880px){.grid3{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:16px;padding:30px;background:#fff;transition:box-shadow .2s ease,transform .2s ease}
+  .card:hover{box-shadow:0 18px 40px -22px rgba(15,43,140,.4);transform:translateY(-3px)}
+  .card .ico{width:52px;height:52px;border-radius:12px;background:var(--sky);color:var(--ocean);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .card .ico svg{width:26px;height:26px}
+  .card h3{font-size:1.25rem;font-weight:700}
+  .card p{margin-top:.5rem;color:#56607e;font-size:.98rem}
+  .card ul{margin-top:.9rem;list-style:none;display:flex;flex-direction:column;gap:.4rem}
+  .card li{display:flex;gap:.5rem;font-size:.93rem;color:#41507a}
+  .card li svg{width:18px;height:18px;color:var(--gold);margin-top:.2rem}
+
+  /* why band */
+  .band{background:var(--sky)}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  @media(max-width:880px){.grid4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid4{grid-template-columns:1fr}}
+  .why{display:flex;flex-direction:column;gap:.5rem}
+  .why .ico{width:46px;height:46px;border-radius:11px;background:#fff;color:var(--navy);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px -10px rgba(15,43,140,.5)}
+  .why h3{font-size:1.08rem;font-weight:700}
+  .why p{font-size:.93rem;color:#54607f}
+
+  /* process */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:s}
+  @media(max-width:880px){.steps{grid-template-columns:1fr}}
+  .step{position:relative;padding:30px;border-radius:16px;background:#fff;border:1px solid var(--line)}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:26px;width:42px;height:42px;border-radius:11px;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 8px 18px -8px rgba(15,43,140,.6)}
+  .step h3{margin-top:1rem;font-size:1.18rem;font-weight:700}
+  .step p{margin-top:.45rem;color:#56607e;font-size:.96rem}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .gal .g{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:4/3}
+  .gal .g.wide{grid-column:span 2}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gal .g:hover img{transform:scale(1.06)}
+  @media(max-width:880px){.gal{grid-template-columns:repeat(2,1fr)}.gal .g.wide{grid-column:span 2}}
+
+  /* reviews */
+  .revs{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:880px){.revs{grid-template-columns:1fr}}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px}
+  .rev .stars{font-size:1.05rem}
+  .rev p{margin-top:.8rem;color:#2c3656;font-size:1.02rem;font-style:italic}
+  .rev .who{margin-top:1rem;font-weight:700;color:var(--navy)}
+  .rev .who span{font-weight:500;color:#7a85a3}
+
+  /* area + cta */
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:start}
+  @media(max-width:880px){.split{grid-template-columns:1fr;gap:32px}}
+  .arealist{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.2rem}
+  .arealist span{background:var(--sky);color:var(--navy);font-weight:600;font-size:.9rem;padding:.4rem .85rem;border-radius:999px}
+  .mapbox{border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 40px -24px rgba(15,43,140,.5)}
+  .mapbox iframe{display:block;width:100%;height:340px;border:0}
+
+  /* quote form */
+  .ctaband{background:linear-gradient(120deg,var(--navy-deep),var(--ocean))}
+  .ctaband .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  @media(max-width:880px){.ctaband .wrap{grid-template-columns:1fr;gap:30px}}
+  .ctaband h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.4rem);font-weight:800}
+  .ctaband p{color:#cfe0f6;margin-top:.9rem;font-size:1.05rem}
+  .ctaband .phonebig{margin-top:1.5rem;display:inline-flex;align-items:center;gap:.6rem;font-size:1.6rem;font-weight:800;color:var(--gold-bright)}
+  form{background:#fff;border-radius:18px;padding:30px}
+  form h3{font-size:1.2rem;font-weight:700;margin-bottom:1rem}
+  .field{margin-bottom:.85rem}
+  .field label{display:block;font-size:.82rem;font-weight:600;color:#41507a;margin-bottom:.3rem}
+  .field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:9px;padding:.7rem .85rem;font-family:inherit;font-size:.97rem;background:#fafbfe}
+  .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--ocean);background:#fff}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+  @media(max-width:480px){.frow{grid-template-columns:1fr}}
+  form button{width:100%;margin-top:.4rem;justify-content:center}
+  .formnote{font-size:.8rem;color:#7a85a3;margin-top:.7rem;text-align:center}
+
+  /* footer */
+  footer{background:var(--ink);color:#c3cee9;padding:60px 0 28px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:38px}
+  @media(max-width:780px){.fgrid{grid-template-columns:1fr;gap:28px}}
+  footer h4{color:#fff;font-size:.95rem;font-weight:700;letter-spacing:.04em;margin-bottom:1rem;text-transform:uppercase}
+  footer a:hover{color:#fff}
+  .fbrand .logo{font-weight:800;font-size:1.2rem;color:#fff}
+  .fbrand .logo span{display:block;font-size:.62rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-top:.15rem}
+  .fnap{margin-top:1rem;font-size:.95rem;line-height:1.9}
+  .fnap a{color:#c3cee9}
+  .reviewcta{display:inline-flex;align-items:center;gap:.5rem;margin-top:.5rem;font-weight:700;color:var(--gold-bright)}
+  .copy{margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.85rem;color:#8694b9;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
+
+  /* sticky mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:var(--navy);box-shadow:0 -4px 18px rgba(0,0,0,.25)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;color:#fff;font-weight:800;padding:.95rem;font-size:1.05rem}
+  @media(max-width:860px){.callbar{display:block}body{padding-bottom:58px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Advanced Pool Technicians home">
+      <span class="logo">Advanced Pool Technicians<span>Service · Repair · Renovation</span></span>
+    </a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+17042419336">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span>(704) 241-9336</span>
+      </a>
+      <a class="btn btn-gold" href="#quote">Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-img" src="assets/hero-charlotte-pool.jpg" alt="Custom backyard swimming pool with waterfall feature built and serviced by Advanced Pool Technicians in the Charlotte, NC area" width="1500" height="844" fetchpriority="high" />
+    <div class="wrap hero-inner">
+      <p class="eyebrow" style="color:var(--gold-bright)">Charlotte Metro · Fort Mill, SC</p>
+      <h1>The pool people Charlotte homeowners actually <em>trust</em>.</h1>
+      <p class="lede">Weekly maintenance, equipment repair, green-pool rescue, and full renovation — done right the first time by an owner-operated crew that's kept Charlotte-area pools swimmable since 2007.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="tel:+17042419336">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          Call (704) 241-9336
+        </a>
+        <a class="btn btn-ghost" href="#quote">Get a Free Quote</a>
+      </div>
+      <div class="trustrow">
+        <div class="t"><span class="stars">★★★★★</span> 4.6 on Google · 23 reviews</div>
+        <div class="t"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg> Owner-operated since 2007</div>
+        <div class="t"><svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> No long-term contracts</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="bar">
+    <div class="wrap">
+      <div class="b"><b>Since 2007</b><span>Serving the Charlotte metro</span></div>
+      <div class="b"><b>4.6 ★</b><span>Across 23 Google reviews</span></div>
+      <div class="b"><b>From $165/mo</b><span>Maintenance, no contract</span></div>
+      <div class="b"><b>Res. &amp; Comm.</b><span>Homes and commercial pools</span></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="sec" id="services">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">What we do</p>
+        <h2>Full-service pool care, all in one crew</h2>
+        <p>From the weekly skim to a complete renovation, Advanced Pool Technicians handles every part of pool ownership — so you get to enjoy the water instead of fighting it.</p>
+      </div>
+      <div class="grid3">
+
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-6 10-6 10 6 10 6-3 6-10 6-10-6-10-6Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 18c2-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Maintenance</h3>
+          <p>Weekly and biweekly service that keeps your water balanced, clean, and ready — year-round or seasonal.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly &amp; biweekly cleaning</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Water chemistry &amp; balancing</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Pool openings &amp; closings</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.3-2.3 2.8-2.7Z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Equipment</h3>
+          <p>Complete repair and replacement of pumps, filters, heaters, and salt systems — diagnosed honestly, fixed properly.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Pumps, filters &amp; heaters</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Salt &amp; chlorine systems</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Green-pool rescue &amp; cleanups</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Renovation</h3>
+          <p>New construction, resurfacing, tile, plaster, and decks — turning a tired backyard into the one your family actually uses.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> New construction &amp; remodels</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Tile, plaster &amp; resurfacing</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Decks &amp; hardscape</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="sec band" id="why">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Why Advanced Pool Technicians</p>
+        <h2>Reliable, honest, and easy to reach</h2>
+        <p>The reason our customers keep calling back is simple: we pick up the phone, we tell you the truth, and we do the work we say we'll do.</p>
+      </div>
+      <div class="grid4">
+        <div class="why">
+          <div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
+          <h3>We answer the phone</h3>
+          <p>Customers tell us the same thing again and again — we actually call back.</p>
+        </div>
+        <div class="why">
+          <div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+          <h3>Owner-operated since 2007</h3>
+          <p>Owner Bryan Beaty has cared for Charlotte-area pools for nearly two decades.</p>
+        </div>
+        <div class="why">
+          <div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3>Free, honest quotes</h3>
+          <p>We look at the job, talk through your options, and quote it fair — no pressure.</p>
+        </div>
+        <div class="why">
+          <div class="ico"><svg class="ic" viewBox="0 0 24 24"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg></div>
+          <h3>One crew, every job</h3>
+          <p>Service, repair, and renovation under one roof — no juggling subcontractors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">How it works</p>
+        <h2>Getting started takes one phone call</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Tell us about your pool</h3>
+          <p>Call or send a quick message. We'll ask a few questions about your pool and what you need.</p>
+        </div>
+        <div class="step">
+          <h3>Get a free quote</h3>
+          <p>We come look, walk you through the options, and give you a fair, upfront price — for free.</p>
+        </div>
+        <div class="step">
+          <h3>Relax and enjoy the water</h3>
+          <p>We schedule the work and keep your pool ready, so you and your family can just swim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="sec band" id="work">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Our work</p>
+        <h2>Real Charlotte-area pools we've built and serviced</h2>
+        <p>Every photo below is a project our crew completed — from travertine spa-and-pool builds to green-pool rescues.</p>
+      </div>
+      <div class="gal">
+        <div class="g wide"><img src="assets/pool-spa-combo.jpg" alt="Pool and raised spa combination with stone facing serviced by Advanced Pool Technicians" width="800" height="600" loading="lazy" /></div>
+        <div class="g"><img src="assets/travertine-spa-pool.jpg" alt="Travertine pool deck with spa and waterfall built near Charlotte NC" width="600" height="600" loading="lazy" /></div>
+        <div class="g"><img src="assets/pool-fireplace-feature.jpg" alt="Backyard pool renovation with outdoor fireplace feature in the Charlotte area" width="600" height="600" loading="lazy" /></div>
+        <div class="g"><img src="assets/rectangular-pool-renovation.jpg" alt="Rectangular pool renovation with travertine decking" width="600" height="600" loading="lazy" /></div>
+        <div class="g"><img src="assets/stone-coping-tile.jpg" alt="Stone coping and waterline tile detail on a renovated pool" width="600" height="600" loading="lazy" /></div>
+        <div class="g"><img src="assets/green-pool-rescue.jpg" alt="Green pool rescue and cleanup performed by Advanced Pool Technicians" width="600" height="600" loading="lazy" /></div>
+        <div class="g wide"><img src="assets/vinyl-liner-pool.jpg" alt="Clean vinyl-liner pool with steps after service near Fort Mill SC" width="800" height="600" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec" id="reviews">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">From our Google reviews</p>
+        <h2>What Charlotte-area customers say</h2>
+        <p><span class="stars">★★★★★</span> &nbsp;Rated 4.6 across 23 Google reviews.</p>
+      </div>
+      <div class="revs">
+        <div class="rev">
+          <div class="stars">★★★★★</div>
+          <p>"This was the best service I have ever received from a local pool company. They actually answered the phone every time I called! Bryan and the crew couldn't have been nicer."</p>
+          <div class="who">Ray <span>· Google review</span></div>
+        </div>
+        <div class="rev">
+          <div class="stars">★★★★★</div>
+          <p>"I could not even get a pool company to look at the tile falling off my spa. Bryan came and looked at it for free and discussed my options with me for about 45 minutes. He scheduled me for the next week and replaced several tiles… Bryan is great and I would recommend him to anyone who needs quality service."</p>
+          <div class="who">Mellissa <span>· Google review</span></div>
+        </div>
+      </div>
+      <div style="margin-top:30px">
+        <a class="btn btn-navy" href="https://search.google.com/local/writereview?placeid=ChIJ12fkS_yeVogRzQ7Yr3Sf9TI" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Leave us a Google review
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="sec band" id="area">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Service area</p>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.4rem);font-weight:800;margin-top:.6rem">Proudly serving the Charlotte metro</h2>
+        <p style="margin-top:.9rem;color:#56607e;font-size:1.06rem">Based in Fort Mill, SC, just south of Charlotte, we service residential and commercial pools across the metro and surrounding communities.</p>
+        <div class="arealist">
+          <span>Fort Mill</span><span>Charlotte</span><span>Tega Cay</span><span>Indian Land</span>
+          <span>Rock Hill</span><span>Pineville</span><span>Ballantyne</span><span>Waxhaw</span>
+          <span>Matthews</span><span>Weddington</span><span>Lake Wylie</span>
+        </div>
+        <p style="margin-top:1.4rem;color:#56607e">Not sure if you're in our area? <a href="tel:+17042419336" style="color:var(--ocean);font-weight:700">Give us a call</a> — we'll let you know.</p>
+      </div>
+      <div class="mapbox">
+        <iframe title="Advanced Pool Technicians service area map" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.10%2C34.88%2C-80.70%2C35.15&amp;layer=mapnik&amp;marker=35.0057075%2C-80.8985422" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / CTA -->
+  <section class="ctaband" id="quote">
+    <div class="wrap" style="padding:78px 22px">
+      <div>
+        <p class="eyebrow" style="color:var(--gold-bright)">Free quote</p>
+        <h2>Let's get your pool taken care of.</h2>
+        <p>Tell us a little about your pool and what you need. We'll get back to you with a free, no-pressure quote — usually the same day.</p>
+        <a class="phonebig" href="tel:+17042419336">
+          <svg class="ic" viewBox="0 0 24 24" style="width:28px;height:28px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (704) 241-9336
+        </a>
+        <p style="margin-top:1rem;color:#aec5e9;font-size:.95rem">Mon–Fri, 9am–5pm</p>
+      </div>
+      <form action="mailto:AdvancedPoolTechnicians@gmail.com" method="post" enctype="text/plain">
+        <h3>Request your free quote</h3>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="frow">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(704) 555-0123" required />
+          </div>
+          <div class="field">
+            <label for="zip">ZIP code</label>
+            <input id="zip" name="zip" type="text" placeholder="29707" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" />
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Weekly / biweekly maintenance</option>
+            <option>Equipment repair or replacement</option>
+            <option>Green-pool rescue / cleanup</option>
+            <option>Renovation / new construction</option>
+            <option>Pool opening or closing</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">Details</label>
+          <textarea id="msg" name="message" rows="3" placeholder="Tell us about your pool…"></textarea>
+        </div>
+        <button class="btn btn-gold" type="submit">Send my request</button>
+        <p class="formnote">Prefer to talk? Call <a href="tel:+17042419336" style="color:var(--ocean);font-weight:700">(704) 241-9336</a>.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <div class="logo">Advanced Pool Technicians<span>Service · Repair · Renovation</span></div>
+        <p style="margin-top:1rem;color:#a9b7da;max-width:330px">A full-service swimming pool contractor for the Charlotte metro — superior maintenance, repair, and renovation, with the best customer service in the region.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="fnap">
+          Advanced Pool Technicians LLC<br />
+          1165 Fort Mill Hwy<br />
+          Fort Mill, SC 29707<br />
+          <a href="tel:+17042419336">(704) 241-9336</a><br />
+          <a href="mailto:AdvancedPoolTechnicians@gmail.com">AdvancedPoolTechnicians@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <div class="fnap">
+          Monday–Friday: 9am – 5pm<br />
+          Saturday: Closed<br />
+          Sunday: Closed
+        </div>
+        <a class="reviewcta" href="https://search.google.com/local/writereview?placeid=ChIJ12fkS_yeVogRzQ7Yr3Sf9TI" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="m12 2 3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Leave a Google review
+        </a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Advanced Pool Technicians LLC. All rights reserved.</span>
+      <span>Fort Mill, SC · Serving the Charlotte metro</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+17042419336">
+    <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    Call (704) 241-9336
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Advanced Pool Technicians LLC",
+  "image":"https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/assets/hero-charlotte-pool.jpg",
+  "url":"https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/",
+  "telephone":"+1-704-241-9336",
+  "email":"AdvancedPoolTechnicians@gmail.com",
+  "priceRange":"$$",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"1165 Fort Mill Hwy",
+    "addressLocality":"Fort Mill",
+    "addressRegion":"SC",
+    "postalCode":"29707",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":35.0057075,"longitude":-80.8985422},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}
+  ],
+  "areaServed":[
+    {"@type":"City","name":"Charlotte"},
+    {"@type":"City","name":"Fort Mill"},
+    {"@type":"City","name":"Tega Cay"},
+    {"@type":"City","name":"Indian Land"},
+    {"@type":"City","name":"Rock Hill"},
+    {"@type":"City","name":"Pineville"},
+    {"@type":"City","name":"Waxhaw"},
+    {"@type":"City","name":"Matthews"},
+    {"@type":"City","name":"Lake Wylie"}
+  ]
+}
+</script>
+
+</body>
+</html>

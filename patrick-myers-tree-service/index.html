@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tree Removal in Coos Bay, OR | Patrick Myers Tree Service</title>
+<meta name="description" content="Heavy, dangerous tree removal done safely near homes and buildings on the Oregon coast. Patrick Myers Tree Service — Coos Bay removal, trimming, stump grinding & 24/7 emergency. Call (541) 756-3197." />
+<link rel="canonical" href="https://savcab.github.io/websites/patrick-myers-tree-service/" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / social -->
+<meta property="og:title" content="Tree Removal in Coos Bay, OR | Patrick Myers Tree Service" />
+<meta property="og:description" content="Heavy, dangerous tree removal done safely near homes and buildings on the Oregon coast. Removal, trimming, stump grinding & 24/7 emergency in Coos Bay." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://savcab.github.io/websites/patrick-myers-tree-service/" />
+<meta property="og:image" content="https://savcab.github.io/websites/patrick-myers-tree-service/assets/tree-service-coos-bay-hero.webp" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,11vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --h1:clamp(2.1rem,5.2vw,3.5rem);
+  --h2:clamp(1.6rem,3.4vw,2.4rem);
+  --h3:1.375rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.1;
+  --track-head:-.02em;
+  /* COLOR — from the Patrick Myers beaver+hardhat logo + PNW coast */
+  --ink:#211b14;       /* warm near-black, never #000 */
+  --ink-2:#5c5347;     /* secondary */
+  --ink-3:#8a8275;     /* captions */
+  --line:#e7e0d4;      /* hairline */
+  --bg:#ffffff;
+  --bg-2:#faf6ee;      /* warm cream alt-section */
+  --bg-3:#f3ece0;      /* deeper cream */
+  --brand:#5b3a21;     /* bark brown (beaver body) */
+  --brand-d:#3a2413;   /* dark bark (dark sections / hovers) */
+  --forest:#2f5d44;    /* PNW forest green (secondary) */
+  --forest-d:#234634;
+  --accent:#e29b12;    /* safety amber (hard-hat yellow) — CTAs/highlights only */
+  --accent-d:#c5830a;
+  --star:#e8a93a;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(33,27,20,.06);
+  --sh-2:0 2px 4px rgba(33,27,20,.06),0 4px 8px rgba(33,27,20,.05);
+  --sh-3:0 4px 8px rgba(33,27,20,.06),0 12px 24px rgba(33,27,20,.09);
+  --sh-4:0 10px 20px rgba(33,27,20,.10),0 26px 50px rgba(33,27,20,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Mulish",system-ui,-apple-system,sans-serif;
+  font-size:var(--body);line-height:var(--lh-body);color:var(--ink);
+  background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:clip;
+}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);color:var(--ink);font-weight:600}
+h1{font-size:var(--h1);letter-spacing:var(--track-head);font-weight:700}
+h2{font-size:var(--h2);letter-spacing:var(--track-head);font-weight:600}
+h3{font-size:var(--h3);font-weight:600}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+section{padding-block:var(--section-y)}
+.eyebrow{font-family:"Mulish";font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);display:inline-flex;align-items:center;gap:.5rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.lead{font-size:1.15rem;color:var(--ink-2);max-width:60ch;line-height:1.65}
+.section-head{margin-bottom:var(--s5);max-width:52ch}
+.section-head h2{margin-top:.65rem}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Mulish";font-weight:700;font-size:1rem;padding:.95rem 1.7rem;border-radius:var(--r-m);min-height:52px;cursor:pointer;border:2px solid transparent;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn-primary{background:var(--accent);color:#2a1d05;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-secondary{background:transparent;color:var(--ink);border-color:rgba(255,255,255,.55)}
+.btn-ghost{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.45);backdrop-filter:blur(4px)}
+.btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.btn-forest{background:var(--forest);color:#fff;box-shadow:var(--sh-2)}
+.btn-forest:hover{background:var(--forest-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn svg{width:19px;height:19px;flex:none}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.65rem}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:"Fraunces";font-weight:700;font-size:1.18rem;color:var(--brand-d);line-height:1.05;min-width:0}
+.brand span{min-width:0}
+.brand img{width:46px;height:46px;border-radius:10px;flex:none}
+.brand small{display:block;font-family:"Mulish";font-weight:600;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--forest)}
+.nav-links{display:none;align-items:center;gap:1.9rem;font-weight:600;font-size:.95rem}
+.nav-links a{color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:.6rem;flex:none}
+@media(max-width:400px){
+  .nav{gap:.5rem}
+  .brand{font-size:1.02rem}
+  .brand small{font-size:.6rem}
+  .nav-cta .btn{padding:.7rem 1rem;font-size:.9rem;min-height:46px}
+}
+.nav-phone{display:none;align-items:center;gap:.5rem;font-weight:800;color:var(--brand-d)}
+.nav-phone svg{width:18px;height:18px;color:var(--accent-d)}
+@media(min-width:900px){.nav-links{display:flex}.nav-phone{display:flex}}
+
+/* HERO */
+.hero{position:relative;color:#fff;isolation:isolate;padding-block:var(--hero-y)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("assets/tree-service-coos-bay-hero.webp") center/cover no-repeat;background-color:#2c3327}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(33,24,14,.86) 0%,rgba(33,24,14,.66) 46%,rgba(35,46,34,.42) 100%)}
+.hero .container{position:relative}
+.hero-inner{max-width:42rem}
+.hero h1{color:#fff;margin-block:1rem 1.1rem}
+.hero h1 em{font-style:normal;color:var(--accent);font-weight:700}
+.hero .eyebrow{color:#ffe6b0}
+.hero .eyebrow::before{background:var(--accent)}
+.hero-sub{font-size:1.18rem;color:rgba(255,255,255,.92);max-width:40ch;line-height:1.6;margin-bottom:1.9rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.9rem}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;font-size:.93rem;color:rgba(255,255,255,.92)}
+.hero-trust .stars{color:var(--star);letter-spacing:1px;font-size:1rem}
+.hero-trust b{color:#fff;font-weight:800}
+.hero-trust .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.45)}
+.hero-trust span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-trust svg{width:17px;height:17px;color:var(--accent)}
+
+/* TRUST STRIP */
+.trustbar{background:var(--brand-d);color:#fff;padding-block:0}
+.trustbar .container{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;justify-content:center;align-items:center;padding-block:1.15rem}
+.trustbar .ti{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.trustbar svg{width:22px;height:22px;color:var(--accent);flex:none}
+.trustbar b{color:#fff}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.9rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#dcd2c0}
+.svc:hover::before{transform:scaleY(1)}
+.svc-ic{width:54px;height:54px;border-radius:14px;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;margin-bottom:1.15rem}
+.svc-ic svg{width:27px;height:27px}
+.svc h3{margin-bottom:.5rem}
+.svc p{color:var(--ink-2);font-size:.99rem;line-height:1.6}
+.svc .tag{display:inline-block;margin-top:1rem;font-size:.74rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--forest);background:#eaf1ec;padding:.3rem .7rem;border-radius:var(--r-pill)}
+
+/* SPLIT (why-us) */
+.split{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr .95fr}}
+.split.rev .split-media{order:-1}
+.split-media{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);position:relative}
+.split-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.split-media figcaption{position:absolute;left:1rem;bottom:1rem;background:rgba(33,24,14,.82);color:#fff;font-size:.78rem;font-weight:600;padding:.45rem .85rem;border-radius:var(--r-pill);backdrop-filter:blur(3px)}
+.feat{display:flex;gap:1rem;margin-top:1.6rem}
+.feat:first-of-type{margin-top:2rem}
+.feat-ic{width:46px;height:46px;border-radius:12px;background:var(--forest);color:#fff;display:grid;place-items:center;flex:none}
+.feat-ic svg{width:23px;height:23px}
+.feat h4{font-family:"Fraunces";font-size:1.12rem;font-weight:600;margin-bottom:.25rem}
+.feat p{color:var(--ink-2);font-size:.97rem;line-height:1.55}
+
+/* PROCESS */
+.process{background:var(--bg-2)}
+.steps{display:grid;grid-template-columns:1fr;gap:1.4rem;counter-reset:step}
+@media(min-width:640px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);padding:1.8rem 1.5rem 1.6rem;position:relative;box-shadow:var(--sh-1)}
+.step-n{font-family:"Fraunces";font-weight:700;font-size:2.2rem;color:var(--accent);line-height:1;margin-bottom:.7rem}
+.step h4{font-family:"Fraunces";font-size:1.1rem;font-weight:600;margin-bottom:.4rem}
+.step p{color:var(--ink-2);font-size:.93rem;line-height:1.55}
+
+/* REVIEWS */
+.reviews{background:var(--brand-d);color:#fff}
+.reviews .eyebrow{color:#ffe0a3}
+.reviews h2{color:#fff}
+.rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:var(--s5)}
+.rev-rating{display:flex;align-items:center;gap:1rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-l);padding:1rem 1.3rem}
+.rev-rating .big{font-family:"Fraunces";font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1}
+.rev-rating .stars{color:var(--star);font-size:1.05rem;letter-spacing:1px}
+.rev-rating small{color:rgba(255,255,255,.8);font-size:.85rem}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:800px){.rev-grid{grid-template-columns:1fr 1fr}}
+.quote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-l);padding:1.9rem;display:flex;flex-direction:column}
+.quote .qstars{color:var(--star);letter-spacing:2px;margin-bottom:.9rem}
+.quote blockquote{font-family:"Fraunces";font-size:1.16rem;font-weight:500;line-height:1.5;color:#fff;max-width:none;font-style:italic}
+.quote .by{margin-top:1.2rem;display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:rgba(255,255,255,.85)}
+.quote .av{width:38px;height:38px;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font-family:"Mulish";font-weight:800;font-size:1rem;flex:none}
+.quote .by b{color:#fff;font-weight:700}
+.rev-cta{margin-top:var(--s4);display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.rev-cta a.gr{display:inline-flex;align-items:center;gap:.5rem;color:#ffe0a3;font-weight:700;border-bottom:1px solid rgba(255,224,163,.4);padding-bottom:2px}
+.rev-cta a.gr:hover{color:#fff}
+.rev-cta svg{width:18px;height:18px}
+
+/* GALLERY */
+.gal-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:560px){.gal-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.gal-item{border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);position:relative;background:var(--bg-3)}
+.gal-item img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform 500ms cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item .cap{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .8rem;background:linear-gradient(transparent,rgba(33,24,14,.82));color:#fff;font-size:.83rem;font-weight:600;opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.gal-item:hover .cap{opacity:1;transform:translateY(0)}
+@media(hover:none){.gal-item .cap{opacity:1;transform:none}}
+
+/* AREA + MAP */
+.area{background:var(--bg-2)}
+.area-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3rem);align-items:center}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1fr}}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.towns span{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.9rem;font-weight:600;color:var(--ink-2);display:inline-flex;align-items:center;gap:.45rem}
+.towns svg{width:15px;height:15px;color:var(--forest)}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line)}
+.map-wrap iframe{display:block;width:100%;height:380px;border:0}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.about-grid{grid-template-columns:.95fr 1.05fr}}
+.about p{color:var(--ink-2);margin-top:1rem;line-height:1.7}
+.about .lead{color:var(--ink)}
+
+/* FAQ */
+.faq{background:var(--bg-2)}
+.faq-list{max-width:50rem;margin-inline:auto}
+.faq-item{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:.9rem;overflow:hidden;box-shadow:var(--sh-1)}
+.faq-item summary{cursor:pointer;list-style:none;padding:1.3rem 1.5rem;font-family:"Fraunces";font-weight:600;font-size:1.08rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .pl{flex:none;width:24px;height:24px;border-radius:50%;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;font-size:1.2rem;font-weight:700;transition:transform var(--t),background var(--t),color var(--t)}
+.faq-item[open] summary .pl{transform:rotate(45deg);background:var(--accent);color:#2a1d05}
+.faq-item .ans{padding:0 1.5rem 1.4rem;color:var(--ink-2);line-height:1.65}
+.faq-item .ans p{max-width:none}
+
+/* FINAL CTA */
+.final{position:relative;color:#fff;isolation:isolate;background:var(--forest-d)}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,var(--forest-d),var(--brand-d))}
+.final-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,3.5rem)}
+@media(min-width:920px){.final-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.final h2{color:#fff}
+.final .eyebrow{color:#ffe0a3}
+.final p{color:rgba(255,255,255,.9);margin-top:1rem}
+.final-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.final-phone{margin-top:1.7rem;display:flex;align-items:center;gap:.8rem}
+.final-phone .pn{font-family:"Fraunces";font-size:1.7rem;font-weight:700;color:#fff}
+.final-phone svg{width:26px;height:26px;color:var(--accent)}
+.hours{margin-top:1.9rem;border-top:1px solid rgba(255,255,255,.16);padding-top:1.4rem}
+.hours h4{font-family:"Mulish";font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#ffe0a3;margin-bottom:.8rem}
+.hours ul{list-style:none;font-size:.93rem;color:rgba(255,255,255,.9)}
+.hours li{display:flex;justify-content:space-between;gap:1rem;padding:.32rem 0;border-bottom:1px dashed rgba(255,255,255,.12);max-width:22rem}
+.hours li b{color:#fff;font-weight:700}
+/* FORM */
+.form-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.3rem);box-shadow:var(--sh-4);color:var(--ink)}
+.form-card h3{font-family:"Fraunces";font-size:1.4rem;margin-bottom:.4rem}
+.form-card .fsub{color:var(--ink-2);font-size:.95rem;margin-bottom:1.4rem}
+.frow{display:grid;grid-template-columns:1fr;gap:1rem;margin-bottom:1rem}
+@media(min-width:560px){.frow.two{grid-template-columns:1fr 1fr}}
+.field label{display:block;font-size:.82rem;font-weight:700;color:var(--ink-2);margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;font-family:"Mulish";font-size:1rem;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg-2);color:var(--ink);transition:border-color var(--t),background var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:#fff}
+.field textarea{resize:vertical;min-height:96px}
+.form-card .btn{width:100%;margin-top:.4rem}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;margin-bottom:2.4rem}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+.foot-brand img{width:48px;height:48px;border-radius:10px}
+.foot-brand b{font-family:"Fraunces";font-size:1.15rem;color:#fff;font-weight:700;line-height:1.1}
+.foot-brand small{display:block;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.footer p{max-width:40ch}
+footer .fcol h5{font-family:"Mulish";color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+footer .fcol a,footer .fcol address{display:flex;gap:.6rem;color:rgba(255,255,255,.72);font-size:.93rem;margin-bottom:.7rem;font-style:normal;line-height:1.5;align-items:flex-start}
+footer .fcol a:hover{color:#fff}
+footer .fcol svg{width:16px;height:16px;color:var(--accent);flex:none;margin-top:3px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.8rem 1.5rem;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.5)}
+
+/* STICKY MOBILE CALL BAR */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;background:var(--brand-d);box-shadow:0 -4px 16px rgba(0,0,0,.22);padding:env(safe-area-inset-bottom) 0 0}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem .5rem;font-weight:800;font-size:.98rem;color:#fff}
+.callbar a.call{background:var(--accent);color:#2a1d05}
+.callbar a svg{width:19px;height:19px}
+.callbar a + a{border-left:1px solid rgba(255,255,255,.16)}
+@media(min-width:900px){.callbar{display:none}}
+body{padding-bottom:0}
+@media(max-width:899px){body{padding-bottom:58px}}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Patrick Myers Tree Service home">
+      <img src="assets/patrick-myers-tree-service-logo.webp" width="46" height="46" alt="Patrick Myers Tree Service logo" />
+      <span>Patrick Myers<small>Tree Service · Coos Bay</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#area">Service Area</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15417563197">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (541) 756-3197
+      </a>
+      <a class="btn btn-primary" href="#quote">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">Coos Bay &amp; the Oregon Coast</span>
+      <h1>Big, dangerous trees — <em>taken down safely</em> right next to your home.</h1>
+      <p class="hero-sub">Patrick Myers Tree Service is the local crew Coos Bay calls when a tall fir is leaning the wrong way. Heavy removal, careful work near structures, and full clean-up.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+15417563197">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (541) 756-3197
+        </a>
+        <a class="btn btn-ghost" href="sms:+15417563197">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text a Photo
+        </a>
+      </div>
+      <div class="hero-trust">
+        <span><span class="stars">★★★★★</span> <b>4.7</b> · 37 Google reviews</span>
+        <span class="dot"></span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Heavy &amp; dangerous removal
+        </span>
+        <span class="dot"></span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          24/7 storm &amp; emergency
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trustbar">
+  <div class="container">
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><span><b>4.7★</b> from 37 Google reviews</span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span>Full-service <b>removal &amp; clean-up</b></span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Open <b>6 days a week</b></span></div>
+    <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Locally based in <b>Coos Bay</b></span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Tree work the Oregon coast actually needs</h2>
+      <p class="lead">From a single hazard tree over the garage to a whole stand of firs, here's the work our crew does most.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14h.01M7 7h.01"/><path d="M12 2 8 8h8l-4-6z"/><path d="M9 8l-3 5h12l-3-5"/><path d="M5 13l-1 6h16l-1-6"/><path d="M12 19v3"/></svg></div>
+        <h3>Tree Removal</h3>
+        <p>Large, leaning and dangerous trees brought down in a controlled way — including tight spots beside houses, sheds and power lines. Stems are rigged down piece by piece when there's no room to drop them.</p>
+        <span class="tag">Our specialty</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12 6 6"/><path d="M12 12l6-6"/><path d="M6 6 4 3M18 6l2-3M12 12l0-4"/><circle cx="12" cy="6" r="0.5"/></svg></div>
+        <h3>Trimming &amp; Pruning</h3>
+        <p>Crown thinning, deadwood and limb removal to keep big trees healthy and clear of your roof, driveway and lines. We prune for structure and storm resistance, not just looks.</p>
+        <span class="tag">Healthier trees</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="7"/><path d="M12 13V8M12 13l4 2M12 13l-4 2"/><path d="M12 6V3"/></svg></div>
+        <h3>Stump Grinding</h3>
+        <p>Once the tree is down, we grind the stump below grade so you get your yard back — no tripping hazard, no regrowth, nothing left to mow around.</p>
+        <span class="tag">Reclaim your yard</span>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>24/7 Storm &amp; Emergency</h3>
+        <p>Coastal storms drop trees on driveways, roofs and fences. When one comes down on your property, call us — we respond fast to make the site safe and clear the way.</p>
+        <span class="tag">Fast response</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Why neighbors call us first</span>
+        <h2 style="margin-top:.65rem">Heavy removal, done without putting your home at risk</h2>
+        <p style="margin-top:1rem;color:var(--ink-2);line-height:1.7">Dropping a sixty-foot fir is the easy part. Doing it ten feet from a roofline — without a scratch on the house — is the part that takes a crew who does it every week. That's the work Coos Bay knows us for.</p>
+        <div class="feat">
+          <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div><h4>Built for the dangerous ones</h4><p>Rigging, climbing and controlled take-downs for trees that can't simply be felled — close to buildings, fences and lines.</p></div>
+        </div>
+        <div class="feat">
+          <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 14l3 3-3 3M7 4 4 7l3 3"/></svg></div>
+          <div><h4>Full clean-up included</h4><p>We chip the brush and haul the debris, so when we leave, the only sign we were there is the tree being gone.</p></div>
+        </div>
+        <div class="feat">
+          <div class="feat-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <div><h4>Professional, on-time crew</h4><p>Reviewers point to the same thing again and again: a crew that shows up when they say they will and works efficiently.</p></div>
+        </div>
+      </div>
+      <figure class="split-media reveal">
+        <img src="assets/dangerous-tree-removal-near-building.webp" width="1000" height="750" loading="lazy" alt="Patrick Myers Tree Service climber removing a tall tree directly beside a building in Coos Bay" />
+        <figcaption>Removal beside a structure · Coos Bay</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Simple from call to clean-up</span>
+      <h2>How a job works</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-n">1</div><h4>Call or text</h4><p>Tell us what's going on — or text a photo of the tree to (541) 756-3197 so we can see it right away.</p></div>
+      <div class="step reveal"><div class="step-n">2</div><h4>On-site estimate</h4><p>We come look at access, hazards and what's nearby, then give you a clear, no-pressure price.</p></div>
+      <div class="step reveal"><div class="step-n">3</div><h4>We do the work</h4><p>The crew removes or trims the tree safely, rigging it down where space is tight.</p></div>
+      <div class="step reveal"><div class="step-n">4</div><h4>Cleaned &amp; gone</h4><p>Brush chipped, debris hauled, stump ground if you'd like — your property left tidy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="rev-top">
+      <div class="reveal">
+        <span class="eyebrow">From our Google reviews</span>
+        <h2 style="margin-top:.65rem">What Coos Bay says about the crew</h2>
+      </div>
+      <div class="rev-rating reveal">
+        <div class="big">4.7</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <small>37 Google reviews</small>
+        </div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <figure class="quote reveal">
+        <div class="qstars">★★★★★</div>
+        <blockquote>"Joe, Wes, and Daniel removed over 30 large, and dangerous trees near our residential buildings. They were very professional and courteous and a pleasure to do [business with]."</blockquote>
+        <figcaption class="by"><span class="av">C</span><span>Charlie&nbsp;Day · <b>Google review</b></span></figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <div class="qstars">★★★★★</div>
+        <blockquote>"Had two trees removed. This is the second time using them. The crew are extremely professional, on time, and efficient."</blockquote>
+        <figcaption class="by"><span class="av">C</span><span>Clark&nbsp;Andersen · <b>Google review</b></span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-cta reveal">
+      <a class="gr" href="https://search.google.com/local/writereview?placeid=ChIJO0qXpqiFw1QRy6F3EYmTNFc" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Leave us a Google review
+      </a>
+      <a class="gr" href="https://maps.google.com/?cid=6283809597001540043" target="_blank" rel="noopener">Read all reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recent work</span>
+      <h2>On the job around Coos Bay</h2>
+      <p class="lead">Real photos from our crew — removals, climbs and clean-ups across the South Coast.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item reveal"><img src="assets/tree-removal-large-fir-coos-bay.webp" width="1000" height="750" loading="lazy" alt="Large fir tree felled and on the ground after removal by Patrick Myers Tree Service near Coos Bay" /><figcaption class="cap">Large fir taken down on a wooded property</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/patrick-myers-tree-service-truck.webp" width="1000" height="750" loading="lazy" alt="Patrick Myers Tree Service truck on site among tall fir trees in Coos Bay, Oregon" /><figcaption class="cap">Our crew on a coastal removal job</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/tree-removal-crew-chipper.webp" width="1000" height="750" loading="lazy" alt="Tree service crew running a wood chipper on a forest access road near Coos Bay" /><figcaption class="cap">Chipping brush after a removal</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/tree-crew-roadside-clearing.webp" width="1000" height="750" loading="lazy" alt="Two-person tree crew clearing roadside trees on rope lines in Coos Bay, Oregon" /><figcaption class="cap">Roadside clearing on rope lines</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/dangerous-tree-removal-near-building.webp" width="1000" height="750" loading="lazy" alt="Climber removing a tall tree directly beside a barn near Coos Bay" /><figcaption class="cap">Climbing a spar beside a building</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/large-tree-trimming-assessment.webp" width="1000" height="750" loading="lazy" alt="Large mature tree in a residential yard assessed for trimming in Coos Bay" /><figcaption class="cap">A big yard tree, sized up for the work</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area" id="area">
+  <div class="container">
+    <div class="area-grid">
+      <div class="reveal">
+        <span class="eyebrow">Where we work</span>
+        <h2 style="margin-top:.65rem">Serving Coos Bay &amp; the Oregon South Coast</h2>
+        <p style="margin-top:1rem;color:var(--ink-2);line-height:1.7">Based on South 2nd Street in Coos Bay, we cover the bay and the surrounding Coos County coast. If you're a short drive away and have a tree that needs to come down, give us a call.</p>
+        <div class="towns">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Coos Bay</span>
+          <span>North Bend</span>
+          <span>Charleston</span>
+          <span>Eastside</span>
+          <span>Bunker Hill</span>
+          <span>Empire</span>
+          <span>Coos County coast</span>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          title="Patrick Myers Tree Service location — 957 S 2nd St, Coos Bay, OR"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-124.2450%2C43.3437%2C-124.1850%2C43.3737&layer=mapnik&marker=43.3586752%2C-124.2150181"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid about">
+      <figure class="split-media reveal">
+        <img src="assets/tree-removal-large-fir-coos-bay.webp" width="1000" height="750" loading="lazy" alt="Patrick Myers Tree Service crew at the base of a large felled fir near Coos Bay, Oregon" />
+        <figcaption>Heavy removal · South Coast</figcaption>
+      </figure>
+      <div class="reveal">
+        <span class="eyebrow">About us</span>
+        <h2 style="margin-top:.65rem">Patrick Myers Tree Service</h2>
+        <p class="lead" style="margin-top:1rem">A Coos Bay tree crew that homeowners trust with the trees other companies would rather not touch.</p>
+        <p>We focus on the heavy, higher-risk work — large and dangerous tree removal, careful take-downs near homes and outbuildings, trimming, stump grinding and storm cleanup. Customers have had us back a second and third time, and one job had our crew safely remove more than thirty large trees near a property's buildings.</p>
+        <p>However big or close to the house the tree is, we'll take a look and tell you straight what it'll take to get it down safely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal" open><summary>Do you remove large or dangerous trees close to a house?<span class="pl">+</span></summary><div class="ans"><p>Yes — that's the work we're known for. When a tree is too big or too close to a building, shed or power line to simply fell, our crew climbs and rigs it down piece by piece so it comes apart in a controlled way, away from anything that can be damaged.</p></div></details>
+      <details class="faq-item reveal"><summary>How do I get a price?<span class="pl">+</span></summary><div class="ans"><p>Call or text us at (541) 756-3197. You're welcome to text a photo of the tree so we can get an idea right away, but for removals we'll usually come look in person — access and what's nearby make a big difference — and then give you a clear estimate.</p></div></details>
+      <details class="faq-item reveal"><summary>Do you handle emergency and storm-damaged trees?<span class="pl">+</span></summary><div class="ans"><p>Yes. Coastal storms bring trees and big limbs down on driveways, roofs and fences. We respond to emergencies to make the site safe and clear the tree. If it's urgent, call us — that's the fastest way to reach the crew.</p></div></details>
+      <details class="faq-item reveal"><summary>Do you grind the stump and clean up the debris?<span class="pl">+</span></summary><div class="ans"><p>We chip the brush and haul off the debris as part of the job, and we can grind the stump below grade so you're not left with a hazard or something to mow around. Just let us know you'd like the stump handled when you call.</p></div></details>
+      <details class="faq-item reveal"><summary>What areas do you serve?<span class="pl">+</span></summary><div class="ans"><p>We're based in Coos Bay and work throughout the bay and the surrounding Coos County coast — including North Bend, Charleston, Eastside, Empire and nearby communities. A short drive out is no problem; just ask when you call.</p></div></details>
+      <details class="faq-item reveal"><summary>When are you open?<span class="pl">+</span></summary><div class="ans"><p>Monday through Friday, 7:00&nbsp;AM to 5:00&nbsp;PM, and Saturday 10:00&nbsp;AM to 5:00&nbsp;PM. We're closed Sundays for regular work, but for genuine tree emergencies it's always best to call.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + FORM -->
+<section class="final" id="quote">
+  <div class="container">
+    <div class="final-grid">
+      <div class="reveal">
+        <span class="eyebrow">Get your free estimate</span>
+        <h2 style="margin-top:.65rem">Got a tree that needs to come down?</h2>
+        <p>Tell us about it and we'll get you a clear, no-pressure price. The fastest way to reach the crew is a call or a quick text.</p>
+        <div class="final-cta">
+          <a class="btn btn-primary" href="tel:+15417563197">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now
+          </a>
+          <a class="btn btn-ghost" href="sms:+15417563197">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text a Photo
+          </a>
+        </div>
+        <div class="final-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a class="pn" href="tel:+15417563197">(541) 756-3197</a>
+        </div>
+        <div class="hours">
+          <h4>Hours</h4>
+          <ul>
+            <li><span>Monday – Friday</span><b>7:00 AM – 5:00 PM</b></li>
+            <li><span>Saturday</span><b>10:00 AM – 5:00 PM</b></li>
+            <li><span>Sunday</span><b>Closed</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>Request a free estimate</h3>
+        <p class="fsub">We'll get back to you to set up a look at your tree.</p>
+        <form onsubmit="this.querySelector('.form-note').textContent='Thanks! For the fastest response, please also call or text (541) 756-3197.';return false;">
+          <div class="frow two">
+            <div class="field"><label for="nm">Name</label><input id="nm" name="name" type="text" autocomplete="name" required placeholder="Your name" /></div>
+            <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" autocomplete="tel" required placeholder="(541) 000-0000" /></div>
+          </div>
+          <div class="frow two">
+            <div class="field"><label for="zp">ZIP / Town</label><input id="zp" name="zip" type="text" placeholder="Coos Bay" /></div>
+            <div class="field"><label for="sv">Service</label>
+              <select id="sv" name="service">
+                <option>Tree removal</option>
+                <option>Trimming &amp; pruning</option>
+                <option>Stump grinding</option>
+                <option>Storm / emergency</option>
+                <option>Not sure — need a look</option>
+              </select>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="field"><label for="ds">Tell us about the tree</label><textarea id="ds" name="details" placeholder="How big is it, how close to the house, what's going on..."></textarea></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Request My Estimate</button>
+          <p class="form-note">Prefer to talk now? Call <a href="tel:+15417563197" style="color:var(--brand);font-weight:700">(541) 756-3197</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/patrick-myers-tree-service-logo.webp" width="48" height="48" alt="Patrick Myers Tree Service logo" />
+          <div><b>Patrick Myers Tree Service</b><small>Coos Bay, Oregon</small></div>
+        </div>
+        <p style="color:rgba(255,255,255,.66);font-size:.93rem;line-height:1.6">Heavy and dangerous tree removal, trimming, stump grinding and storm cleanup for Coos Bay and the Oregon South Coast.</p>
+        <p style="margin-top:1rem;font-size:.9rem"><span class="stars" style="color:var(--star)">★★★★★</span> <b style="color:#fff">4.7</b> · 37 Google reviews</p>
+      </div>
+      <div class="fcol">
+        <h5>Contact</h5>
+        <a href="tel:+15417563197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(541) 756-3197</a>
+        <a href="sms:+15417563197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text us a photo</a>
+        <address><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>957 S 2nd St,<br/>Coos Bay, OR 97420</address>
+      </div>
+      <div class="fcol">
+        <h5>Hours</h5>
+        <a as="span" style="cursor:default"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon–Fri: 7 AM – 5 PM<br/>Sat: 10 AM – 5 PM<br/>Sun: Closed</span></a>
+        <a href="https://maps.google.com/?cid=6283809597001540043" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>View on Google Maps</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Patrick Myers Tree Service LLC · Coos Bay, OR</span>
+      <span>Tree removal · trimming · stump grinding · emergency</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<nav class="callbar" aria-label="Quick contact">
+  <a class="call" href="tel:+15417563197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+  <a href="sms:+15417563197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Us</a>
+</nav>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Patrick Myers Tree Service LLC",
+  "description":"Heavy and dangerous tree removal, trimming, pruning, stump grinding and 24/7 storm and emergency tree work in Coos Bay and the Oregon South Coast.",
+  "url":"https://savcab.github.io/websites/patrick-myers-tree-service/",
+  "image":"https://savcab.github.io/websites/patrick-myers-tree-service/assets/tree-service-coos-bay-hero.webp",
+  "logo":"https://savcab.github.io/websites/patrick-myers-tree-service/assets/patrick-myers-tree-service-logo.webp",
+  "telephone":"+15417563197",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"957 S 2nd St",
+    "addressLocality":"Coos Bay",
+    "addressRegion":"OR",
+    "postalCode":"97420",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":43.3586752,"longitude":-124.2150181},
+  "areaServed":[
+    {"@type":"City","name":"Coos Bay"},
+    {"@type":"City","name":"North Bend"},
+    {"@type":"City","name":"Charleston"},
+    {"@type":"City","name":"Empire"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"17:00"}
+  ],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Tree Services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Removal"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Trimming & Pruning"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump Grinding"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Emergency & Storm Tree Service"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Snow Removal in Breckenridge, MN | Bryan's</title>
+<meta name="description" content="Bryan's Lawn Care &amp; Snow Removal is the year-round, one-crew go-to in Breckenridge, MN &amp; Wahpeton — mowing all summer, plowing all winter. Rated 4.8 on Google. Call or text (218) 955-0498 for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/bryans-lawn-snow/">
+<meta name="theme-color" content="#16432f">
+
+<meta property="og:title" content="Bryan's Lawn Care &amp; Snow Removal — Breckenridge, MN">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/bryans-lawn-snow/">
+<meta property="og:image" content="https://savcab.github.io/websites/bryans-lawn-snow/assets/bryans-lawn-snow-og.png">
+<meta property="og:description" content="One local crew, every season — lawn care all summer, snow removal all winter, across Breckenridge &amp; Wahpeton. Rated 4.8 on Google.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;--s7:6rem;--s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7rem);
+  --hero-y:clamp(4.5rem,10vw,9rem);
+  --container:73rem;
+  --measure:62ch;
+  /* TYPE */
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --h1:clamp(2.35rem,5.4vw,3.9rem);
+  --h2:clamp(1.7rem,3.4vw,2.5rem);
+  --h3:1.3rem;
+  --fs:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;--lh-head:1.08;
+  --track-head:-.02em;
+  /* COLOR — pine green (summer) + slate blue (winter) on warm light base */
+  --ink:#1a1d1b;
+  --ink-2:#52605a;
+  --ink-3:#8a948f;
+  --line:#e6e3dc;
+  --line-2:#d8d4ca;
+  --bg:#fbfaf6;
+  --bg-2:#f1efe7;
+  --bg-pine:#16432f;
+  --bg-pine-2:#0f3122;
+  --brand:#1f6b46;       /* pine — summer / lawn */
+  --brand-d:#16432f;
+  --brand-l:#3f9c6c;
+  --frost:#3f6f97;       /* slate blue — winter / snow */
+  --frost-d:#2c5274;
+  --frost-l:#7aa6cc;
+  --frost-bg:#e9f0f6;
+  --pine-bg:#e6f0ea;
+  --sun:#d9952f;         /* warm accent — CTAs/highlights only */
+  --sun-d:#bd7d1d;
+  --cream:#fff;
+  /* RADIUS */
+  --r-s:7px;--r-m:14px;--r-l:24px;--r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(26,29,27,.06);
+  --sh-2:0 2px 5px rgba(26,29,27,.06),0 5px 12px rgba(26,29,27,.05);
+  --sh-3:0 6px 14px rgba(26,29,27,.07),0 18px 36px rgba(22,67,47,.10);
+  --sh-4:0 12px 26px rgba(26,29,27,.10),0 30px 60px rgba(22,67,47,.16);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:var(--fs);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+svg{display:block}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head);color:var(--ink)}
+h1{font-size:var(--h1);font-weight:900}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 1.5rem}
+.sec{padding:var(--section-y) 0}
+.eyebrow{font-family:var(--body);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--brand)}
+.eyebrow.f{color:var(--frost-d)}
+.lead{font-size:1.18rem;color:var(--ink-2);line-height:1.55}
+.center{text-align:center}
+.mxa{margin-left:auto;margin-right:auto}
+.mb1{margin-bottom:.75rem}.mb2{margin-bottom:1.25rem}.mb3{margin-bottom:2.75rem}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;padding:.95rem 1.6rem;border-radius:var(--r-pill);transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px;cursor:pointer;border:0}
+.btn svg{width:18px;height:18px;stroke-width:2.2}
+.btn-pri{background:var(--sun);color:#1a1208;box-shadow:var(--sh-2)}
+.btn-pri:hover{background:var(--sun-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-pine{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-pine:hover{background:var(--brand-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-1px)}
+.btn-ghost-l{background:rgba(255,255,255,.06);color:#fff;border:1.5px solid rgba(255,255,255,.32)}
+.btn-ghost-l:hover{background:rgba(255,255,255,.14);transform:translateY(-1px)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.mark{width:44px;height:44px;border-radius:13px;background:linear-gradient(150deg,var(--brand) 0%,var(--brand-d) 58%,var(--frost-d) 100%);display:grid;place-items:center;flex:none;box-shadow:var(--sh-2)}
+.mark svg{width:25px;height:25px}
+.brand .nm{font-family:var(--display);font-weight:900;font-size:1.12rem;letter-spacing:-.02em;line-height:1.02;color:var(--ink)}
+.brand .nm small{display:block;font-family:var(--body);font-weight:700;font-size:.62rem;letter-spacing:.18em;color:var(--brand);text-transform:uppercase;margin-top:3px}
+.nav{display:flex;align-items:center;gap:1.7rem}
+.nav a.lnk{font-weight:600;font-size:.95rem;color:var(--ink-2)}
+.nav a.lnk:hover{color:var(--brand)}
+.hdr-cta{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:#fff;background:var(--brand);padding:.6rem 1.05rem;border-radius:var(--r-pill);font-size:.95rem;box-shadow:var(--sh-1)}
+.hdr-cta svg{width:16px;height:16px}
+.hdr-cta:hover{background:var(--brand-d)}
+@media(max-width:880px){.nav a.lnk{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(120% 90% at 88% 8%,var(--frost-bg) 0%,transparent 46%),
+  radial-gradient(120% 100% at 6% 96%,var(--pine-bg) 0%,transparent 50%),
+  var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;padding:var(--hero-y) 0 calc(var(--hero-y) - 1rem)}
+.season-pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.pill{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--body);font-weight:700;font-size:.8rem;letter-spacing:.01em;padding:.42rem .85rem;border-radius:var(--r-pill);border:1px solid var(--line-2);background:var(--cream)}
+.pill svg{width:15px;height:15px}
+.pill.summer{color:var(--brand-d)}.pill.summer svg{color:var(--brand)}
+.pill.winter{color:var(--frost-d)}.pill.winter svg{color:var(--frost)}
+.hero h1{margin-bottom:1.15rem}
+.hero h1 .lawn{color:var(--brand);font-style:italic}
+.hero h1 .snow{color:var(--frost-d);font-style:italic}
+.hero .sub{font-size:1.2rem;color:var(--ink-2);max-width:40ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:1.9rem}
+.hero-trust{display:flex;align-items:center;gap:1.1rem;margin-top:1.8rem;flex-wrap:wrap;color:var(--ink-2);font-size:.95rem;font-weight:600}
+.hero-trust .div{width:1px;height:18px;background:var(--line-2)}
+.stars{color:var(--sun);letter-spacing:1.5px;font-size:1rem}
+
+/* hero illustration (no real photo available — honest, non-photographic) */
+.scene{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);aspect-ratio:5/6;border:1px solid var(--line)}
+.scene svg{width:100%;height:100%;display:block}
+.scene-badge{position:absolute;left:1rem;bottom:1rem;right:1rem;display:flex;align-items:center;gap:.8rem;background:rgba(255,255,255,.95);backdrop-filter:blur(4px);border-radius:var(--r-m);padding:.85rem 1rem;box-shadow:var(--sh-3)}
+.scene-badge .ic{width:42px;height:42px;border-radius:11px;background:var(--pine-bg);display:grid;place-items:center;flex:none}
+.scene-badge .ic svg{width:22px;height:22px;color:var(--brand-d)}
+.scene-badge b{font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.1;display:block;color:var(--ink)}
+.scene-badge span{font-size:.82rem;color:var(--ink-2)}
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:2.5rem;padding:3.25rem 0 3.5rem}
+  .scene{aspect-ratio:16/11;max-width:520px}
+}
+
+/* season split band */
+.split{background:var(--bg-pine);color:#eaf3ee;position:relative}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.split .col{padding:clamp(2rem,4vw,3rem) clamp(1.75rem,3vw,2.75rem);display:flex;gap:1.1rem;align-items:flex-start}
+.split .col:first-child{border-right:1px solid rgba(255,255,255,.12)}
+.split .ic{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;flex:none;margin-top:.15rem}
+.split .ic.s{background:rgba(63,156,108,.22);color:#8fd6b1}
+.split .ic.w{background:rgba(122,166,204,.20);color:#a9cbe8}
+.split .ic svg{width:27px;height:27px}
+.split h3{color:#fff;font-size:1.22rem;margin-bottom:.35rem}
+.split p{color:#bcd3c7;font-size:.97rem;max-width:34ch}
+.split .tagrow{margin-top:.7rem;display:flex;gap:.4rem;flex-wrap:wrap}
+.split .mini{font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:.25rem .6rem;border-radius:var(--r-pill);background:rgba(255,255,255,.08);color:#cfe2d7}
+@media(max-width:760px){.split-grid{grid-template-columns:1fr}.split .col:first-child{border-right:none;border-bottom:1px solid rgba(255,255,255,.12)}}
+
+/* services */
+.sec-head{max-width:34rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.75rem}
+@media(max-width:880px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+.card{background:var(--cream);border:1px solid var(--line);border-radius:var(--r-l);padding:1.75rem 1.6rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:var(--line-2)}
+.card .ci{width:52px;height:52px;border-radius:var(--r-m);display:grid;place-items:center;margin-bottom:1.1rem}
+.card .ci.s{background:var(--pine-bg);color:var(--brand-d)}
+.card .ci.w{background:var(--frost-bg);color:var(--frost-d)}
+.card .ci svg{width:26px;height:26px;stroke-width:1.9}
+.card h3{margin-bottom:.45rem}
+.card p{font-size:.98rem;color:var(--ink-2);line-height:1.55}
+.season-tag{position:absolute;top:1.4rem;right:1.4rem;font-family:var(--body);font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:.28rem .55rem;border-radius:var(--r-s)}
+.season-tag.s{background:var(--pine-bg);color:var(--brand-d)}
+.season-tag.w{background:var(--frost-bg);color:var(--frost-d)}
+
+/* why band (light, alt bg) */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:2.75rem}
+@media(max-width:860px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.why-grid{grid-template-columns:1fr}}
+.why-item .wi{width:50px;height:50px;border-radius:13px;background:var(--cream);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:.95rem;box-shadow:var(--sh-1)}
+.why-item .wi svg{width:24px;height:24px;color:var(--brand)}
+.why-item h3{font-size:1.12rem;margin-bottom:.4rem}
+.why-item p{font-size:.95rem;color:var(--ink-2);line-height:1.5}
+
+/* stat strip */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.75rem}
+@media(max-width:680px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--cream);border:1px solid var(--line);border-radius:var(--r-m);padding:1.4rem 1rem;text-align:center;box-shadow:var(--sh-1)}
+.stat b{font-family:var(--display);display:block;font-size:2.05rem;font-weight:900;color:var(--brand-d);letter-spacing:-.02em;line-height:1}
+.stat span{font-size:.83rem;color:var(--ink-2);font-weight:600;margin-top:.4rem;display:block}
+
+/* feature band (replaces gallery — honest, no stock) */
+.feat .feat-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:840px){.feat .feat-grid{grid-template-columns:1fr;gap:2.25rem}}
+.feat ul{list-style:none;margin-top:1.6rem;display:grid;gap:1rem}
+.feat ul li{display:flex;gap:.85rem;align-items:flex-start}
+.feat ul li .ck{width:26px;height:26px;border-radius:8px;background:var(--pine-bg);display:grid;place-items:center;flex:none;margin-top:.1rem}
+.feat ul li .ck svg{width:15px;height:15px;color:var(--brand-d);stroke-width:2.6}
+.feat ul li b{font-family:var(--display);font-weight:700;font-size:1.02rem;display:block;margin-bottom:.15rem}
+.feat ul li p{font-size:.96rem;color:var(--ink-2);margin:0;line-height:1.5}
+.feat-art{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:4/3;border:1px solid var(--line)}
+.feat-art svg{width:100%;height:100%}
+
+/* process */
+.proc{background:var(--bg-pine);color:#eaf3ee}
+.proc h2{color:#fff}
+.proc .lead{color:#bcd3c7}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.75rem}
+@media(max-width:820px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.steps{grid-template-columns:1fr}}
+.step{position:relative}
+.step .n{width:46px;height:46px;border-radius:13px;background:linear-gradient(140deg,var(--brand-l),var(--frost));color:#0f2118;font-family:var(--display);font-weight:900;font-size:1.2rem;display:grid;place-items:center;margin-bottom:1rem}
+.step h3{color:#fff;font-size:1.1rem;margin-bottom:.4rem}
+.step p{color:#bcd3c7;font-size:.94rem;max-width:30ch}
+
+/* review (single, real) */
+.rev{background:var(--bg-2)}
+.rev-card{max-width:46rem;margin:2.5rem auto 0;background:var(--cream);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(2rem,4vw,3rem);box-shadow:var(--sh-2);text-align:center;position:relative}
+.rev-card .qm{font-family:var(--display);font-size:3.5rem;line-height:.6;color:var(--brand-l);opacity:.45;height:2rem}
+.rev-card .stars{font-size:1.25rem;margin:.4rem 0 1rem}
+.rev-card blockquote{font-family:var(--display);font-weight:500;font-size:clamp(1.3rem,2.6vw,1.7rem);line-height:1.4;color:var(--ink);max-width:none;font-style:italic}
+.rev-card .who{margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:.75rem}
+.rev-card .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,var(--brand),var(--frost-d));color:#fff;font-family:var(--display);font-weight:700;display:grid;place-items:center;font-size:1.05rem}
+.rev-card .who b{font-size:.98rem;display:block;font-family:var(--body)}
+.rev-card .who span{font-size:.83rem;color:var(--ink-2)}
+.rev-cta{display:flex;gap:.85rem;justify-content:center;flex-wrap:wrap;margin-top:2.25rem}
+
+/* service area */
+.area-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+@media(max-width:840px){.area-grid{grid-template-columns:1fr;gap:2.25rem}}
+.area-list{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.area-list span{background:var(--cream);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.93rem;font-weight:600;color:var(--ink-2)}
+.area-list span svg{width:13px;height:13px;color:var(--brand);vertical-align:-2px;margin-right:.35rem}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-2);line-height:0}
+.map-wrap iframe{width:100%;height:380px;border:0}
+
+/* final cta + form */
+.cta{background:
+  radial-gradient(110% 90% at 90% 0%,rgba(44,82,116,.55) 0%,transparent 55%),
+  linear-gradient(160deg,var(--bg-pine) 0%,var(--bg-pine-2) 100%);
+  color:#eaf3ee}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:820px){.cta-grid{grid-template-columns:1fr;gap:2.5rem}}
+.cta h2{color:#fff}
+.cta .sub{color:#c4d8cc;font-size:1.12rem;margin-top:.9rem}
+.cta ul{list-style:none;margin-top:1.6rem;display:grid;gap:.8rem}
+.cta ul li{display:flex;align-items:center;gap:.7rem;color:#dcebe2;font-weight:600;font-size:1rem}
+.cta ul li svg{width:19px;height:19px;color:#8fd6b1;flex:none}
+.cta .callrow{margin-top:1.9rem;display:flex;gap:.8rem;flex-wrap:wrap}
+.form{background:var(--cream);border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.25rem);box-shadow:var(--sh-4)}
+.form h3{font-size:1.4rem;margin-bottom:.3rem}
+.form .fsub{font-size:.92rem;color:var(--ink-2);margin-bottom:1.4rem}
+.fld{margin-bottom:.95rem}
+.fld label{display:block;font-size:.82rem;font-weight:700;color:var(--ink);margin-bottom:.35rem}
+.fld input,.fld select,.fld textarea{width:100%;padding:.8rem .9rem;border:1.5px solid var(--line-2);border-radius:var(--r-s);font:inherit;font-size:.96rem;color:var(--ink);background:var(--bg);font-family:var(--body)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(31,107,70,.13)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media(max-width:420px){.frow{grid-template-columns:1fr}}
+.form .btn{width:100%;margin-top:.35rem}
+.form .micro{font-size:.78rem;color:var(--ink-3);text-align:center;margin-top:.85rem}
+
+/* footer */
+.ft{background:var(--bg-pine-2);color:#a9c0b3;padding:clamp(3rem,5vw,4rem) 0 1.75rem}
+.ft-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem;margin-bottom:2.25rem}
+@media(max-width:760px){.ft-grid{grid-template-columns:1fr;gap:2rem}}
+.ft .brand{margin-bottom:1rem}
+.ft .brand .nm,.ft .brand .nm small{color:#fff}
+.ft .brand .nm small{color:#8fd6b1}
+.ft .blurb{font-size:.95rem;max-width:32ch;line-height:1.55;color:#a9c0b3}
+.ft h4{font-family:var(--body);color:#fff;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem;font-weight:800}
+.ft a.fl{display:block;color:#a9c0b3;font-size:.95rem;margin-bottom:.6rem}
+.ft a.fl:hover{color:#fff}
+.ft .nap{font-size:.95rem;line-height:1.7;color:#c2d4c9}
+.ft .nap strong{color:#fff;font-family:var(--display)}
+.ft .nap a{color:#c2d4c9}
+.ft .hrs{font-size:.86rem;color:#7e9a8c;margin-top:.85rem;line-height:1.6}
+.ft-soc{display:flex;gap:.6rem;margin-top:1.1rem}
+.ft-soc a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:grid;place-items:center}
+.ft-soc a svg{width:18px;height:18px;color:#c2d4c9}
+.ft-soc a:hover{background:var(--brand)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.1);padding-top:1.4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem;color:#7e9a8c}
+
+/* sticky mobile call bar */
+.callbar{display:none}
+@media(max-width:760px){
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:.6rem;padding:.6rem .85rem;background:rgba(15,49,34,.97);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.12)}
+  .callbar .btn{flex:1}
+  body{padding-bottom:78px}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body id="top">
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Bryan's Lawn Care &amp; Snow Removal — home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 20c1.6-3.2 4-4.8 8-4.8s6.4 1.6 8 4.8" stroke="#bdf0d4" stroke-width="1.7" stroke-linecap="round"/><path d="M12 3.5v6m0-6 2 2m-2-2-2 2M9.2 7l2.8 1.4L14.8 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11.5l1.7 1m-1.7-1-1.7 1" stroke="#bcd6ee" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="nm">Bryan's<small>Lawn &amp; Snow</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="lnk" href="#services">Services</a>
+      <a class="lnk" href="#why">Why Bryan's</a>
+      <a class="lnk" href="#reviews">Reviews</a>
+      <a class="lnk" href="#area">Service Area</a>
+      <a class="hdr-cta" href="tel:+12189550498"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(218) 955-0498</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="season-pills">
+          <span class="pill summer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>Summer · Lawn Care</span>
+          <span class="pill winter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l14 14M19 5 5 19M3 12h18M8 4l4 2 4-2M8 20l4-2 4 2M4 8l2 4-2 4M20 8l-2 4 2 4"/></svg>Winter · Snow Removal</span>
+        </div>
+        <h1>Your <span class="lawn">lawn</span> in summer.<br>Your <span class="snow">driveway</span> in winter.<br>One local crew, all year.</h1>
+        <p class="sub">Bryan's keeps Breckenridge and Wahpeton properties mowed through the green months and plowed through the snow — the same dependable go-to guy, every season.</p>
+        <div class="hero-cta">
+          <a class="btn btn-pri" href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M9 11h2"/></svg>Get a Free Estimate</a>
+          <a class="btn btn-ghost" href="tel:+12189550498"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (218) 955-0498</a>
+        </div>
+        <div class="hero-trust">
+          <span><span class="stars">★★★★★</span> 4.8 · 8 Google reviews</span>
+          <span class="div" aria-hidden="true"></span>
+          <span>Breckenridge, MN &amp; Wahpeton, ND</span>
+        </div>
+      </div>
+
+      <div class="scene" role="img" aria-label="Illustration of a year-round property — a green striped lawn under summer sun on one side, a cleared snowy driveway under falling snow on the other.">
+        <svg viewBox="0 0 500 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#cfe4f2"/><stop offset="0.5" stop-color="#e7f1f7"/><stop offset="1" stop-color="#eef4ee"/>
+            </linearGradient>
+            <linearGradient id="winterSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2c5274"/><stop offset="1" stop-color="#3f6f97"/>
+            </linearGradient>
+            <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3f9c6c"/><stop offset="1" stop-color="#1f6b46"/>
+            </linearGradient>
+            <linearGradient id="snowG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#f4f8fb"/><stop offset="1" stop-color="#dbe7f1"/>
+            </linearGradient>
+          </defs>
+          <!-- summer half (top) -->
+          <rect x="0" y="0" width="500" height="320" fill="url(#sky)"/>
+          <circle cx="392" cy="78" r="40" fill="#f0c14b"/>
+          <g stroke="#f0c14b" stroke-width="5" stroke-linecap="round" opacity="0.85">
+            <path d="M392 18v-14M392 152v14M462 78h14M308 78h14M442 28l10-10M332 138l-10 10M442 128l10 10M332 18l-10-10"/>
+          </g>
+          <!-- distant pines -->
+          <g fill="#2f7a52" opacity="0.5">
+            <path d="M70 200l24 46H46zM62 224l32 60H30z"/><path d="M150 188l28 56H122z"/>
+          </g>
+          <!-- green striped lawn -->
+          <path d="M0 246 Q250 214 500 250 L500 330 L0 330 Z" fill="url(#grass)"/>
+          <g stroke="#2a805a" stroke-width="8" opacity="0.45">
+            <path d="M-10 270 Q250 246 510 274"/><path d="M-10 292 Q250 270 510 296"/><path d="M-10 314 Q250 294 510 318"/>
+          </g>
+          <!-- a tidy shrub + house corner -->
+          <rect x="40" y="206" width="78" height="44" rx="4" fill="#e9ddc7"/>
+          <path d="M36 208l42-22 42 22z" fill="#b9543f"/>
+          <rect x="64" y="222" width="20" height="28" fill="#7c8d9a"/>
+          <circle cx="150" cy="250" r="20" fill="#2f7a52"/><circle cx="172" cy="252" r="15" fill="#37925f"/>
+          <!-- divider -->
+          <rect x="0" y="318" width="500" height="14" fill="#cdbfa6" opacity="0.6"/>
+          <!-- winter half (bottom) -->
+          <rect x="0" y="332" width="500" height="268" fill="url(#winterSky)"/>
+          <!-- snow ground + cleared driveway -->
+          <path d="M0 470 Q250 440 500 474 L500 600 L0 600 Z" fill="url(#snowG)"/>
+          <path d="M150 600 L210 472 Q250 462 300 474 L360 600 Z" fill="#9fb4c6"/>
+          <path d="M150 600 L210 472" stroke="#7e96ab" stroke-width="3"/>
+          <path d="M360 600 L300 474" stroke="#7e96ab" stroke-width="3"/>
+          <!-- snowbanks pushed aside -->
+          <path d="M120 480 q30 -26 92 -12 l-4 14 q-50 -10 -84 8 z" fill="#eaf2f9"/>
+          <path d="M300 474 q56 -8 86 18 l-10 12 q-30 -22 -80 -16 z" fill="#eaf2f9"/>
+          <!-- snowy pines -->
+          <g>
+            <path d="M70 432l26 54H44z" fill="#274d36"/><path d="M70 432l26 54H44z" fill="#fff" opacity="0.18"/>
+            <path d="M70 420l20 40H50z" fill="#2f5a40"/>
+            <ellipse cx="70" cy="486" rx="34" ry="8" fill="#dbe7f1"/>
+          </g>
+          <!-- falling snow -->
+          <g fill="#eaf2f9">
+            <circle cx="60" cy="370" r="3.5"/><circle cx="140" cy="410" r="2.6"/><circle cx="230" cy="360" r="3"/><circle cx="330" cy="400" r="2.4"/><circle cx="420" cy="372" r="3.6"/><circle cx="470" cy="420" r="2.6"/><circle cx="190" cy="450" r="2.4"/><circle cx="380" cy="448" r="3"/><circle cx="280" cy="430" r="2.4"/><circle cx="110" cy="460" r="2.6"/>
+          </g>
+        </svg>
+        <div class="scene-badge">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l14 14M19 5 5 19M3 12h18"/></svg></span>
+          <div><b>One call covers both seasons</b><span>No juggling a lawn guy and a plow guy</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASON SPLIT -->
+<div class="split">
+  <div class="wrap">
+    <div class="split-grid">
+      <div class="col">
+        <span class="ic s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18V9l4-3 4 3v9M15 18v-6l3-2 3 2v6"/></svg></span>
+        <div>
+          <h3>When the grass is growing</h3>
+          <p>Weekly mowing, trimming and edging that keeps your yard sharp from the first spring cut to the last fall clean-up.</p>
+          <div class="tagrow"><span class="mini">Mow &amp; trim</span><span class="mini">Clean-ups</span><span class="mini">Mulch &amp; beds</span></div>
+        </div>
+      </div>
+      <div class="col">
+        <span class="ic w"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l14 14M19 5 5 19M3 12h18M8 4l4 2 4-2M8 20l4-2 4 2"/></svg></span>
+        <div>
+          <h3>When the snow is falling</h3>
+          <p>Driveways and lots cleared so you can get to work — call or text any time a Red River Valley storm rolls through.</p>
+          <div class="tagrow"><span class="mini">Driveways</span><span class="mini">Lots</span><span class="mini">On-call plowing</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow mb1">Two seasons, one crew</p>
+      <h2>Everything your property needs, all&nbsp;year</h2>
+      <p class="lead" style="margin-top:.85rem">From a striped summer lawn to a plowed-out winter driveway — here's what Bryan's takes off your plate.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="card">
+        <span class="season-tag s">Summer</span>
+        <div class="ci s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18M5 18V9l4-3 4 3v9M15 18v-6l3-2 3 2v6"/></svg></div>
+        <h3>Mowing, Trimming &amp; Edging</h3>
+        <p>Clean, even cuts on a schedule you can count on, with crisp trimming and edging around every walk, bed and fence line.</p>
+      </div>
+
+      <div class="card">
+        <span class="season-tag s">Summer</span>
+        <div class="ci s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z"/><path d="M2 21c0-3 1.85-5.4 5.08-6"/></svg></div>
+        <h3>Mulch &amp; Bed Care</h3>
+        <p>Fresh mulch, weeded beds and tidy edges that frame the lawn and keep the whole yard looking finished, not just mowed.</p>
+      </div>
+
+      <div class="card">
+        <span class="season-tag s">Summer</span>
+        <div class="ci s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z"/><path d="M3 21c3-2 6-2 9-2s6 0 9 2"/></svg></div>
+        <h3>Spring &amp; Fall Clean-Up</h3>
+        <p>Leaf removal and seasonal clean-up that gets your property ready for what's next — start to finish, raked and hauled.</p>
+      </div>
+
+      <div class="card">
+        <span class="season-tag w">Winter</span>
+        <div class="ci w"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l14 14M19 5 5 19M3 12h18M8 4l4 2 4-2M8 20l4-2 4 2"/></svg></div>
+        <h3>Snow Plowing &amp; Removal</h3>
+        <p>Residential driveways and commercial lots cleared after the storm, so an overnight snowfall doesn't decide whether you make it to work.</p>
+      </div>
+
+      <div class="card">
+        <span class="season-tag w">Winter</span>
+        <div class="ci w"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16M6 17l1.5-5h9L18 17M8 12l1-3h6l1 3M10.5 9 11 6h2l.5 3"/><circle cx="8" cy="20" r="1.5"/><circle cx="16" cy="20" r="1.5"/></svg></div>
+        <h3>Walks &amp; Entryways</h3>
+        <p>Sidewalks, steps and entrances cleared along with the drive, so the path to your door is safe — not just the spot you park.</p>
+      </div>
+
+      <div class="card">
+        <span class="season-tag w">Winter</span>
+        <div class="ci w"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-5h11l3 4 2 .5V16h-2M5 16H3v-3M3 13h16M7 16h8"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+        <h3>On-Call Storm Service</h3>
+        <p>Snow doesn't keep business hours, so neither does the phone — call or text when it's coming down and Bryan's gets you on the route.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SEASON SPLIT FEATURE (replaces gallery — no real photos available, honest) -->
+<section class="sec feat">
+  <div class="wrap">
+    <div class="feat-grid">
+      <div class="feat-art" role="img" aria-label="Illustration: the same house through summer and winter, cared for in both seasons by one crew.">
+        <svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="fs" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcebf5"/><stop offset="1" stop-color="#eef4ee"/></linearGradient>
+            <linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f9c6c"/><stop offset="1" stop-color="#1f6b46"/></linearGradient>
+          </defs>
+          <!-- left = summer, right = winter, split diagonally -->
+          <rect x="0" y="0" width="480" height="360" fill="url(#fs)"/>
+          <path d="M270 0 L480 0 L480 360 L210 360 Z" fill="#34557a"/>
+          <!-- summer ground -->
+          <path d="M0 250 Q140 232 280 250 L280 360 L0 360 Z" fill="url(#fg)"/>
+          <g stroke="#2a805a" stroke-width="6" opacity="0.4"><path d="M-10 272 Q140 256 290 276"/><path d="M-10 296 Q140 280 290 300"/></g>
+          <!-- winter ground -->
+          <path d="M210 264 Q330 246 490 268 L490 360 L210 360 Z" fill="#e7eff7"/>
+          <!-- shared house in the middle -->
+          <rect x="176" y="196" width="128" height="84" fill="#ece1cb"/>
+          <path d="M168 198l72-44 72 44z" fill="#b9543f"/>
+          <path d="M240 154l72 44-1.6 2.6-70.4-43-70.4 43L168 198z" fill="#9c4534"/>
+          <rect x="200" y="222" width="26" height="34" fill="#7c8d9a"/>
+          <rect x="254" y="222" width="26" height="34" fill="#9fb6cb"/>
+          <rect x="226" y="244" width="28" height="36" fill="#6b4a32"/>
+          <!-- snow cap on right roof slope -->
+          <path d="M240 154l72 44-8 5-64-39z" fill="#f4f8fb"/>
+          <!-- summer sun -->
+          <circle cx="70" cy="64" r="26" fill="#f0c14b"/>
+          <!-- summer tree -->
+          <circle cx="96" cy="226" r="26" fill="#2f7a52"/><rect x="92" y="246" width="8" height="16" fill="#6b4a32"/>
+          <!-- winter pine -->
+          <path d="M392 232l26 40h-52z" fill="#274d36"/><path d="M392 220l20 30h-40z" fill="#2f5a40"/><rect x="388" y="270" width="8" height="14" fill="#5a4631"/>
+          <ellipse cx="392" cy="272" rx="30" ry="6" fill="#dbe7f1"/>
+          <!-- falling snow on right -->
+          <g fill="#f4f8fb"><circle cx="330" cy="70" r="3"/><circle cx="400" cy="110" r="2.4"/><circle cx="450" cy="78" r="2.8"/><circle cx="360" cy="140" r="2.2"/><circle cx="430" cy="160" r="2.6"/></g>
+        </svg>
+      </div>
+      <div>
+        <p class="eyebrow f mb1">Why one crew, both seasons</p>
+        <h2>The go-to guy who's already on your street</h2>
+        <p class="lead" style="margin-top:.85rem">Most folks line up a lawn service in spring, then scramble for a plow guy when the first storm hits. Bryan's is both — one number, one familiar truck, one person who already knows your property.</p>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>One point of contact, year round</b><p>Same person for the mow in July and the plow in January — no re-explaining your driveway every season.</p></div></li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Knows your property already</b><p>Where the beds are, where the snow goes, where not to scrape — learned once, remembered every visit.</p></div></li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Attention to detail, every time</b><p>The thing customers actually mention — work that's done carefully, not just done fast.</p></div></li>
+        </ul>
+        <div style="margin-top:1.9rem"><a class="btn btn-pine" href="#quote">Get my free estimate</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow mb1">Why Bryan's</p>
+      <h2>Reliable is the whole point</h2>
+      <p class="lead" style="margin-top:.85rem">Anyone can mow a lawn or push snow once. The reason people stay is that Bryan's shows up — carefully, and on the phone when it matters.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        <h3>Reachable when it counts</h3>
+        <p>Call or text and get a real answer — especially mid-storm, when you actually need it.</p>
+      </div>
+      <div class="why-item">
+        <span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-6h4v6"/></svg></span>
+        <h3>Local to the Valley</h3>
+        <p>Based right in Breckenridge — not a crew driving in from an hour away when the roads are bad.</p>
+      </div>
+      <div class="why-item">
+        <span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+        <h3>Detail people notice</h3>
+        <p>"Exceptional attention to detail" is how a customer put it — that's the standard, every visit.</p>
+      </div>
+      <div class="why-item">
+        <span class="wi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l14 14M19 5 5 19M3 12h18"/></svg></span>
+        <h3>Both seasons, one crew</h3>
+        <p>Lawn care all summer, snow removal all winter — handled by the same people, start to finish.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>4.8★</b><span>Google rating</span></div>
+      <div class="stat"><b>8</b><span>Google reviews</span></div>
+      <div class="stat"><b>2</b><span>seasons, one crew</span></div>
+      <div class="stat"><b>Local</b><span>Breckenridge based</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec proc">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow f mb1" style="color:#a9cbe8">How it works</p>
+      <h2>Getting started takes one call</h2>
+      <p class="lead" style="margin-top:.85rem">No app, no contract maze — just tell Bryan's what you've got and you'll get a straight answer.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Reach out</h3><p>Call or text with your address and what you need — lawn, snow, or both.</p></div>
+      <div class="step"><div class="n">2</div><h3>Free estimate</h3><p>Bryan's looks at your property and gives you a straight, no-pressure price.</p></div>
+      <div class="step"><div class="n">3</div><h3>Get on the route</h3><p>Weekly mowing, seasonal work, or on-call plowing — whatever fits your place.</p></div>
+      <div class="step"><div class="n">4</div><h3>It just gets done</h3><p>Same crew, every visit, all year — and a callback when the snow flies.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW (single real) -->
+<section class="sec rev" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center mxa">
+      <p class="eyebrow mb1">From a Google review</p>
+      <h2>What a neighbor said</h2>
+      <p class="lead" style="margin-top:.7rem"><span class="stars">★★★★★</span> &nbsp;Rated 4.8 out of 5 across 8 Google reviews</p>
+    </div>
+    <figure class="rev-card">
+      <div class="qm" aria-hidden="true">&ldquo;</div>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <blockquote>Affordable with an exceptional attention to detail! Bryan is my go-to guy year round! 10/10</blockquote>
+      <figcaption class="who">
+        <span class="av" aria-hidden="true">J</span>
+        <div><b>J. Wilson</b><span>Google review</span></div>
+      </figcaption>
+    </figure>
+    <div class="rev-cta">
+      <a class="btn btn-ghost" href="https://maps.google.com/?cid=16741845603551489051" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>Read reviews on Google</a>
+      <a class="btn btn-pine" href="https://search.google.com/local/writereview?placeid=ChIJDScEsvpPyVIRGywf1N_7Vug" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.1-1.01z"/></svg>Leave a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div>
+        <p class="eyebrow mb1">Where Bryan's works</p>
+        <h2>Serving Breckenridge, Wahpeton &amp; the Bois de Sioux towns</h2>
+        <p class="lead" style="margin-top:.85rem">Based in Breckenridge, right on the Minnesota–North Dakota line, Bryan's mows and plows across the twin-cities area and the small towns of Wilkin and Richland County.</p>
+        <div class="area-list">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Breckenridge, MN</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Wahpeton, ND</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Wolverton</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Campbell</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Foxhome</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg>Kent</span>
+        </div>
+        <p style="font-size:.9rem;color:var(--ink-3);margin-top:1.1rem">Not sure if Bryan's reaches you? Just ask — if you're nearby, the answer's usually yes.</p>
+      </div>
+      <div class="map-wrap">
+        <iframe title="Map of Bryan's Lawn Care &amp; Snow Removal service area around Breckenridge, MN" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-96.78%2C46.12%2C-96.40%2C46.41&amp;layer=mapnik&amp;marker=46.264824%2C-96.5925896"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + FORM -->
+<section class="sec cta" id="quote">
+  <div class="wrap">
+    <div class="cta-grid">
+      <div>
+        <p class="eyebrow f mb1" style="color:#a9cbe8">Free estimate</p>
+        <h2>Tell Bryan's about your property</h2>
+        <p class="sub">Lawn, snow, or both — send a few details and you'll get a straight price, no pressure. Prefer to talk? Call or text any time.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Free, no-obligation quote</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Residential &amp; commercial</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>One crew for both seasons, all year</li>
+        </ul>
+        <div class="callrow">
+          <a class="btn btn-pri" href="tel:+12189550498"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (218) 955-0498</a>
+          <a class="btn btn-ghost-l" href="sms:+12189550498"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text Bryan's</a>
+        </div>
+      </div>
+
+      <form class="form" action="https://formsubmit.co/el/placeholder" method="POST" onsubmit="return false">
+        <h3>Request your free estimate</h3>
+        <p class="fsub">Send a few details — Bryan's gets back to you fast, usually the same day.</p>
+        <div class="fld"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
+        <div class="frow">
+          <div class="fld"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(218) 000-0000" required></div>
+          <div class="fld"><label for="town">Town / ZIP</label><input id="town" name="town" type="text" placeholder="Breckenridge"></div>
+        </div>
+        <div class="fld"><label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Lawn mowing &amp; maintenance</option>
+            <option>Snow plowing / removal</option>
+            <option>Spring or fall clean-up</option>
+            <option>Mulch &amp; bed care</option>
+            <option>Both seasons — lawn &amp; snow</option>
+          </select>
+        </div>
+        <div class="fld"><label for="detail">Anything else?</label><textarea id="detail" name="detail" rows="3" placeholder="Property size, schedule, timing…"></textarea></div>
+        <button class="btn btn-pri" type="submit">Send my request</button>
+        <p class="micro">Or just call / text (218) 955-0498 — Bryan's answers fast.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Bryan's Lawn Care &amp; Snow Removal — home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 20c1.6-3.2 4-4.8 8-4.8s6.4 1.6 8 4.8" stroke="#bdf0d4" stroke-width="1.7" stroke-linecap="round"/><path d="M12 3.5v6m0-6 2 2m-2-2-2 2M9.2 7l2.8 1.4L14.8 7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11.5l1.7 1m-1.7-1-1.7 1" stroke="#bcd6ee" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="nm">Bryan's<small>Lawn &amp; Snow</small></span>
+        </a>
+        <p class="blurb">Year-round lawn care and snow removal for Breckenridge, MN, Wahpeton, ND and the surrounding Bois de Sioux towns. One local crew, both seasons.</p>
+        <div class="ft-soc">
+          <a href="https://www.facebook.com/bryanslawncarellc" target="_blank" rel="noopener" aria-label="Bryan's on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a class="fl" href="#services">Lawn mowing &amp; maintenance</a>
+        <a class="fl" href="#services">Snow plowing &amp; removal</a>
+        <a class="fl" href="#services">Spring &amp; fall clean-up</a>
+        <a class="fl" href="#services">Mulch &amp; bed care</a>
+        <a class="fl" href="#area">Service area</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="nap">
+          <strong>Bryan's Lawn Care And Snow Removal</strong><br>
+          203 2nd St N<br>
+          Breckenridge, MN 56520<br>
+          <a href="tel:+12189550498" style="font-weight:700">(218) 955-0498</a>
+        </p>
+        <p class="hrs">
+          Mon–Thu: 8 AM – 8 PM<br>
+          Fri: 8 AM – 12 PM<br>
+          Sat–Sun: Closed<br>
+          <span style="color:#8fd6b1">Snow is on-call — call or text any time.</span>
+        </p>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>&copy; 2026 Bryan's Lawn Care And Snow Removal. All rights reserved.</span>
+      <span>Breckenridge, Minnesota</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="callbar">
+  <a class="btn btn-pri" href="tel:+12189550498"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a class="btn btn-pine" href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>Free Estimate</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Bryan's Lawn Care And Snow Removal",
+  "url": "https://savcab.github.io/websites/bryans-lawn-snow/",
+  "image": "https://savcab.github.io/websites/bryans-lawn-snow/assets/bryans-lawn-snow-og.png",
+  "telephone": "+1-218-955-0498",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "203 2nd St N",
+    "addressLocality": "Breckenridge",
+    "addressRegion": "MN",
+    "postalCode": "56520",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 46.264824, "longitude": -96.5925896 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "12:00" }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "Breckenridge" },
+    { "@type": "City", "name": "Wahpeton" },
+    { "@type": "City", "name": "Wolverton" },
+    { "@type": "City", "name": "Campbell" },
+    { "@type": "City", "name": "Foxhome" },
+    { "@type": "City", "name": "Kent" }
+  ],
+  "sameAs": [ "https://www.facebook.com/bryanslawncarellc" ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Lawn Care & Snow Removal Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing, Trimming & Edging" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mulch & Bed Care" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Spring & Fall Clean-Up" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Snow Plowing & Removal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Walkway & Entryway Clearing" } }
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('.svc-grid .card,.why-item,.step,.feat ul li,.stat');
+  els.forEach(function(el){el.classList.add('reveal')});
+  if(!('IntersectionObserver'in window)){els.forEach(function(el){el.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

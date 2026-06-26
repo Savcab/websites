@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mikes-lawn-landscaping.pages.dev/sitemap.xml
+Sitemap: https://savcab.github.io/websites/mikes-lawn-landscaping/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/sc-charlotte-s-pool-advanced-technicians/sitemap.xml

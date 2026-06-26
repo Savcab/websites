@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Northland Power Washing — Alexandria, MN lakes area">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f5563"/><stop offset="0.6" stop-color="#0a3a42"/><stop offset="1" stop-color="#072227"/>
+    </linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11636e"/><stop offset="1" stop-color="#08323a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="150" r="56" fill="#e6b34a" opacity="0.85"/>
+  <!-- distant pines -->
+  <g fill="#0b3940" opacity="0.75">
+    <path d="M0 430 l70-120 66 120z M120 430 l86-150 80 150z M250 430 l66-110 64 110z M900 430 l80-140 74 140z M1010 430 l70-120 66 120z M1120 430 l80-130 80 130z"/>
+  </g>
+  <!-- nearer pines -->
+  <g fill="#0a313a">
+    <path d="M60 480 l92-160 86 160z M1050 480 l92-160 86 160z"/>
+  </g>
+  <!-- water -->
+  <rect x="0" y="430" width="1200" height="200" fill="url(#w)"/>
+  <g stroke="#1f7480" stroke-width="3" opacity="0.5" fill="none">
+    <path d="M80 500 q50-14 100 0 t100 0"/><path d="M820 540 q50-14 100 0 t100 0"/>
+  </g>
+  <!-- dock -->
+  <g stroke="#0a313a" stroke-width="10"><path d="M120 440 v110 M170 440 v110 M115 450 h60 M115 490 h60"/></g>
+  <!-- star mark -->
+  <path d="M150 150 l13 27 30 4-22 21 5 30-26-14-26 14 5-30-22-21 30-4z" fill="#e6b34a"/>
+  <!-- text -->
+  <text x="80" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1">Northland Power Washing</text>
+  <text x="82" y="360" font-family="Georgia, serif" font-size="34" font-weight="600" fill="#bfe0e0">Lake cabins &amp; homes &middot; Alexandria, MN</text>
+  <g transform="translate(82,392)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#e6b34a">★ 5.0 on Google &middot; 11 reviews</text>
+  </g>
+</svg>

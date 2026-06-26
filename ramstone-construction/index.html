@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masonry &amp; Stonework in Kimberly, ID | Ramstone Construction</title>
+<meta name="description" content="Custom stone masonry, outdoor fireplaces, retaining walls, and stamped concrete in Kimberly &amp; the Magic Valley. Ramstone Construction — rated 5.0 across 40 Google reviews. Call for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/ramstone-construction/">
+<meta name="theme-color" content="#2f3b3a">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Masonry &amp; Stonework in Kimberly, ID | Ramstone Construction">
+<meta property="og:description" content="Custom stone masonry, outdoor fireplaces, retaining walls, and stamped concrete across the Magic Valley. Rated 5.0 on 40 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/ramstone-construction/">
+<meta property="og:image" content="https://savcab.github.io/websites/ramstone-construction/assets/hero-outdoor-fireplace.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:65ch;
+  /* TYPE */
+  --display:"Bricolage Grotesque",Georgia,serif;
+  --body:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --h1:clamp(2.25rem,5.2vw,3.5rem);
+  --h2:clamp(1.6rem,3.2vw,2.35rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.02em;
+  /* COLOR — stone / basalt / limestone / terracotta */
+  --ink:#1f2422;        /* near-black charcoal-green ink */
+  --ink-2:#54605c;      /* secondary */
+  --ink-3:#8a948f;      /* captions */
+  --line:#e4e1d9;       /* warm hairline */
+  --bg:#ffffff;
+  --bg-2:#f5f2ec;       /* warm limestone alt section */
+  --bg-3:#eceae2;       /* deeper warm panel */
+  --brand:#2f3b3a;      /* basalt / slate-green stone */
+  --brand-d:#202927;    /* darker basalt for dark sections */
+  --accent:#b4502b;     /* terracotta (the fireplace stone / planters) */
+  --accent-d:#943f21;
+  /* RADIUS */
+  --r-s:5px; --r-m:11px; --r-l:20px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,20,20,.06);
+  --sh-2:0 2px 4px rgba(20,20,20,.06),0 4px 8px rgba(20,20,20,.05);
+  --sh-3:0 4px 8px rgba(20,20,20,.06),0 12px 24px rgba(20,20,20,.09);
+  --sh-4:0 10px 20px rgba(20,20,20,.10),0 28px 56px rgba(20,20,20,.12);
+  --t:180ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700;color:var(--ink)}
+h1{font-size:var(--h1);font-weight:800}
+h2{font-size:var(--h2);font-weight:700}
+h3{font-size:var(--h3);font-weight:600;letter-spacing:-.01em}
+p{max-width:var(--measure)}
+.container{max-width:75rem;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.6}
+.center-head{max-width:60ch}
+.eyebrow + h2{margin-top:.6rem}
+h2 + .lead{margin-top:1rem}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;border-radius:var(--r-m);padding:1rem 1.6rem;min-height:48px;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);border:1.5px solid transparent;white-space:nowrap}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink-3);background:var(--bg-2)}
+.btn-onhero{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.55);backdrop-filter:blur(4px)}
+.btn-onhero:hover{background:rgba(255,255,255,.18);border-color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:800;font-size:1.3rem;letter-spacing:-.02em;color:var(--ink)}
+.brand .mark{width:38px;height:38px;border-radius:9px;background:var(--brand);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .mark svg{width:21px;height:21px}
+.brand b{font-weight:800}
+.brand span.sub{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.header-nav{display:none;align-items:center;gap:1.9rem}
+.header-nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.header-nav a:hover{color:var(--ink)}
+.header-cta{display:flex;align-items:center;gap:.9rem}
+.header-phone{display:none;font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink);align-items:center;gap:.45rem}
+.header-phone svg{width:17px;height:17px;color:var(--accent)}
+.header-cta .btn{display:none}
+@media(min-width:480px){.header-cta .btn{display:inline-flex}}
+@media(min-width:600px){.header-phone{display:inline-flex}}
+@media(min-width:900px){.header-nav{display:flex}.header-phone{display:inline-flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--brand-d)}
+.hero-img-wrap{position:absolute;inset:0;overflow:hidden}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,25,24,.90) 0%,rgba(20,25,24,.72) 38%,rgba(20,25,24,.34) 70%,rgba(20,25,24,.12) 100%)}
+.hero-inner{position:relative;padding-block:var(--hero-y)}
+.hero-content{max-width:38rem}
+.hero .eyebrow{color:#e6b59e}
+.hero h1{color:#fff;margin-top:1rem;text-wrap:balance}
+.hero h1 em{font-style:normal;color:#e9c3ad}
+.hero p.lead{color:rgba(255,255,255,.86);margin-top:1.4rem;max-width:34rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem 2rem;margin-top:2.4rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.18)}
+.hero-trust .ht{display:flex;flex-direction:column;gap:.15rem}
+.hero-trust .ht b{font-family:var(--display);font-weight:800;font-size:1.5rem;color:#fff;line-height:1}
+.hero-trust .ht span{font-size:.8rem;color:rgba(255,255,255,.72);font-weight:500}
+.stars{color:#e6b859;letter-spacing:1px}
+
+/* ---------- trust strip ---------- */
+.trust-strip{background:var(--brand);color:#fff}
+.trust-strip .container{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 2.6rem;padding-block:1.15rem}
+.trust-item{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.trust-item svg{width:19px;height:19px;color:#e6b59e;flex:none}
+
+/* ---------- gallery ---------- */
+.gallery-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.6rem}
+@media(min-width:560px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:1.15rem}}
+figure.shot{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);background:var(--bg-3);border:1px solid var(--line)}
+figure.shot img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 420ms cubic-bezier(.2,.6,.2,1)}
+figure.shot:hover img{transform:scale(1.045)}
+figure.shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .95rem .8rem;font-size:.82rem;font-weight:600;color:#fff;background:linear-gradient(transparent,rgba(15,18,17,.82));letter-spacing:.01em}
+figure.shot.tall{grid-row:span 1}
+@media(min-width:920px){figure.shot.feature{grid-column:span 2;grid-row:span 2}figure.shot.feature img{aspect-ratio:auto;height:100%}}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.8rem}
+@media(min-width:600px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-1);transition:box-shadow var(--t),transform var(--t),border-color var(--t)}
+.svc:hover{box-shadow:var(--sh-3);transform:translateY(-3px);border-color:#d8d3c7}
+.svc .ic{width:48px;height:48px;border-radius:var(--r-m);background:var(--bg-2);display:grid;place-items:center;margin-bottom:1.2rem;color:var(--brand)}
+.svc .ic svg{width:25px;height:25px;stroke-width:1.6}
+.svc h3{margin-bottom:.5rem}
+.svc p{font-size:.97rem;color:var(--ink-2);line-height:1.55;max-width:none}
+.svc.spotlight{background:var(--brand);border-color:var(--brand)}
+.svc.spotlight .ic{background:rgba(255,255,255,.12);color:#e6b59e}
+.svc.spotlight h3{color:#fff}
+.svc.spotlight p{color:rgba(255,255,255,.82)}
+
+/* ---------- split / why ---------- */
+.split{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr .95fr}.split.rev .split-media{order:2}}
+.split-media{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);border:1px solid var(--line)}
+.split-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.why-list{list-style:none;margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem}
+.why-list li{display:flex;gap:1rem;align-items:flex-start}
+.why-list .wic{width:42px;height:42px;border-radius:var(--r-m);background:var(--bg-2);color:var(--accent);display:grid;place-items:center;flex:none}
+.why-list .wic svg{width:21px;height:21px;stroke-width:1.7}
+.why-list h3{font-size:1.1rem;margin-bottom:.25rem}
+.why-list p{font-size:.96rem;color:var(--ink-2);max-width:46ch}
+
+/* ---------- process ---------- */
+.process{background:var(--brand-d);color:#fff}
+.process .eyebrow{color:#e6b59e}
+.process h2{color:#fff}
+.process .lead{color:rgba(255,255,255,.78)}
+.steps{display:grid;grid-template-columns:1fr;gap:1.2rem;margin-top:3rem;counter-reset:step}
+@media(min-width:680px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{position:relative;padding:2rem 1.6rem;border:1px solid rgba(255,255,255,.14);border-radius:var(--r-l);background:rgba(255,255,255,.035)}
+.step .num{font-family:var(--display);font-weight:800;font-size:1.05rem;width:40px;height:40px;border-radius:var(--r-pill);background:var(--accent);color:#fff;display:grid;place-items:center;margin-bottom:1.1rem}
+.step h3{color:#fff;font-size:1.12rem;margin-bottom:.4rem}
+.step p{color:rgba(255,255,255,.74);font-size:.93rem;max-width:none}
+
+/* ---------- reviews ---------- */
+.rev-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.2rem}
+.rev-score{display:flex;align-items:center;gap:.8rem;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.6rem 1.2rem .6rem .8rem}
+.rev-score .big{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1;color:var(--ink)}
+.rev-score small{font-size:.82rem;color:var(--ink-2);font-weight:600}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.3rem;margin-top:2.8rem}
+@media(min-width:820px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+.review{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.9rem;box-shadow:var(--sh-1);display:flex;flex-direction:column}
+.review .stars{font-size:1.05rem;margin-bottom:1rem}
+.review blockquote{font-size:1.08rem;line-height:1.6;color:var(--ink);max-width:none;font-weight:500}
+.review .who{margin-top:1.4rem;display:flex;align-items:center;gap:.7rem;font-size:.9rem}
+.review .who .av{width:38px;height:38px;border-radius:var(--r-pill);background:var(--brand);color:#fff;font-family:var(--display);font-weight:700;display:grid;place-items:center;flex:none}
+.review .who b{font-weight:700;color:var(--ink)}
+.review .who span{color:var(--ink-3);display:block;font-size:.8rem}
+.rev-cta{margin-top:2.4rem;text-align:center}
+
+/* ---------- service area / map ---------- */
+.area-grid{display:grid;grid-template-columns:1fr;gap:clamp(1.8rem,4vw,3rem);align-items:center}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1.1fr}}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.towns span{font-size:.9rem;font-weight:600;color:var(--ink-2);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.45rem .95rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);background:var(--bg-3)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0}
+
+/* ---------- about ---------- */
+.about-card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(2rem,5vw,3.4rem)}
+.about-card .lead{max-width:62ch}
+.about-stats{display:flex;flex-wrap:wrap;gap:2.4rem;margin-top:2.2rem;padding-top:2rem;border-top:1px solid var(--line)}
+.about-stats .st b{font-family:var(--display);font-weight:800;font-size:1.9rem;color:var(--brand);line-height:1;display:block}
+.about-stats .st span{font-size:.85rem;color:var(--ink-2);font-weight:600;margin-top:.3rem;display:block}
+
+/* ---------- FAQ ---------- */
+.faq-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.6rem;max-width:54rem}
+.faq{border:1px solid var(--line);border-radius:var(--r-m);background:var(--bg);overflow:hidden}
+.faq h3{font-size:1.05rem;padding:1.3rem 1.5rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;list-style:none;font-family:var(--display);font-weight:600}
+.faq h3::-webkit-details-marker{display:none}
+.faq .plus{width:22px;height:22px;flex:none;position:relative;transition:transform var(--t)}
+.faq .plus::before,.faq .plus::after{content:"";position:absolute;background:var(--accent);border-radius:2px}
+.faq .plus::before{top:10px;left:2px;right:2px;height:2px}
+.faq .plus::after{left:10px;top:2px;bottom:2px;width:2px;transition:opacity var(--t)}
+.faq[open] .plus::after{opacity:0}
+.faq p{padding:0 1.5rem 1.4rem;color:var(--ink-2);font-size:.97rem;line-height:1.6;max-width:none}
+
+/* ---------- final CTA ---------- */
+.final{position:relative;background:var(--brand-d);color:#fff;text-align:center;overflow:hidden}
+.final::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 100% at 50% 0%,rgba(180,80,43,.22),transparent 60%);pointer-events:none}
+.final .container{position:relative}
+.final h2{color:#fff;max-width:22ch;margin-inline:auto}
+.final p{color:rgba(255,255,255,.82);margin:1.2rem auto 0;text-align:center}
+.final-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2.2rem}
+.final-phone{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.2rem);color:#fff;display:inline-flex;align-items:center;gap:.6rem;margin-top:1.8rem}
+.final-phone svg{width:26px;height:26px;color:#e6b59e}
+.final small{display:block;margin-top:.8rem;color:rgba(255,255,255,.6);font-size:.85rem}
+
+/* ---------- footer ---------- */
+.site-footer{background:#171d1b;color:rgba(255,255,255,.74);padding-block:3.4rem 6.5rem;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:2.4rem}
+@media(min-width:720px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.footer-brand .brand{color:#fff;margin-bottom:1rem}
+.footer-brand .brand .sub{color:rgba(255,255,255,.5)}
+.footer-brand p{color:rgba(255,255,255,.6);font-size:.9rem;max-width:34ch}
+.site-footer h4{font-family:var(--display);color:#fff;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.1rem;font-weight:700}
+.footer-col a,.footer-col p{color:rgba(255,255,255,.7);display:block;margin-bottom:.6rem;font-size:.92rem;max-width:none}
+.footer-col a:hover{color:#fff}
+.footer-col .nap{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem}
+.footer-col .nap svg{width:16px;height:16px;color:#e6b59e;flex:none;margin-top:3px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.8rem;padding-top:1.6rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;color:rgba(255,255,255,.5);font-size:.82rem}
+
+/* ---------- sticky mobile call bar ---------- */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;background:var(--accent);box-shadow:0 -4px 20px rgba(0,0,0,.18)}
+.callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem;color:#fff;font-family:var(--body);font-weight:700;font-size:1.02rem}
+.callbar a:first-child{border-right:1px solid rgba(255,255,255,.25)}
+.callbar a.alt{background:var(--brand-d)}
+.callbar svg{width:19px;height:19px}
+@media(min-width:900px){.callbar{display:none}}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="Ramstone Construction home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#e9d9c7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 14h18M8 4v5m8-5v5M6 14v6m6-6v6m6-6v6M3 4h18v16H3z"/></svg>
+      </span>
+      <span>Ramstone<b> Construction</b><span class="sub">Masonry &amp; Stonework</span></span>
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#work">Our Work</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+12084211077" class="header-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(208) 421-1077</a>
+      <a href="#contact" class="btn btn-primary">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="top">
+  <div class="hero-img-wrap">
+    <img src="assets/hero-outdoor-fireplace.jpg" alt="Custom outdoor fireplace with stacked-stone surround and paver patio built by Ramstone Construction in Kimberly, Idaho" width="1500" height="843" fetchpriority="high">
+  </div>
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="eyebrow">Kimberly &amp; the Magic Valley</p>
+      <h1>Stonework that makes a backyard <em>feel built to last.</em></h1>
+      <p class="lead">From custom outdoor fireplaces and stone masonry to retaining walls and stamped concrete, Ramstone Construction builds the kind of hardscape your neighbors ask about — for homeowners and builders across the Twin Falls area.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+        <a href="tel:+12084211077" class="btn btn-onhero"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 421-1077</a>
+      </div>
+      <div class="hero-trust">
+        <div class="ht"><b><span class="stars">★★★★★</span></b><span>5.0 across 40 Google reviews</span></div>
+        <div class="ht"><b>7+ yrs</b><span>Building in the Magic Valley</span></div>
+        <div class="ht"><b>Res + Builder</b><span>Homes &amp; spec-home concrete</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRUST STRIP ======================= -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free, no-pressure estimates</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>Five-star rated workmanship</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>Homeowners &amp; builders welcome</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Open Mon–Sat, early to evening</div>
+  </div>
+</div>
+
+<!-- ======================= GALLERY (gallery-first) ======================= -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="center-head reveal">
+      <p class="eyebrow">Recent Work</p>
+      <h2>A portfolio you can walk through</h2>
+      <p class="lead">Every project below was built by our crew right here in the Magic Valley — outdoor fireplaces, stone masonry, stamped &amp; stained concrete, retaining walls, and foundations. Photos straight from the jobsite.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <figure class="shot feature">
+        <img src="assets/stained-stamped-concrete-patio.jpg" alt="Rich brown stained and stamped concrete patio with a curved edge built by Ramstone Construction" width="1200" height="900" loading="lazy">
+        <figcaption>Stained &amp; stamped concrete patio — Magic Valley</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/masonry-stamped-walkway-stone-column.jpg" alt="Stamped and stained concrete walkway beside a stacked-stone veneer column" width="1200" height="900" loading="lazy">
+        <figcaption>Stamped concrete walkway &amp; stone column</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/covered-concrete-patio.jpg" alt="Covered concrete patio with broom finish in a Magic Valley backyard" width="1200" height="900" loading="lazy">
+        <figcaption>Covered patio slab &amp; finish work</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/concrete-foundation-pour.jpg" alt="Concrete foundation being poured with a pump truck on a new spec home site near Twin Falls" width="1200" height="900" loading="lazy">
+        <figcaption>Foundation pour — spec home, Twin Falls area</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/stained-concrete-patio-columns.jpg" alt="Stained concrete patio under a covered porch with columns" width="1200" height="900" loading="lazy">
+        <figcaption>Stained concrete porch &amp; patio</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/concrete-pool-deck.jpg" alt="Broom-finish concrete pool deck with curved coping around an in-ground pool" width="1200" height="900" loading="lazy">
+        <figcaption>Concrete pool deck &amp; coping</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/concrete-walkway-kimberly.jpg" alt="Freshly poured curved concrete walkway in a residential backyard in Kimberly, Idaho" width="1200" height="900" loading="lazy">
+        <figcaption>Curved walkway — Kimberly backyard</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SERVICES ======================= -->
+<section class="section" id="services" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="center-head reveal">
+      <p class="eyebrow">What We Build</p>
+      <h2>Stone, concrete &amp; everything in between</h2>
+      <p class="lead">One crew for the whole project — design, the masonry, and the concrete it sits on. Here's the work we take on most.</p>
+    </div>
+    <div class="svc-grid reveal">
+      <div class="svc spotlight">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1.5 3 4 4 4 7a4 4 0 0 1-8 0c0-1 .5-2 1-2.5"/><path d="M4 22h16M6 22v-4a6 6 0 0 1 12 0v4"/></svg></div>
+        <h3>Outdoor Fireplaces &amp; Fire Features</h3>
+        <p>Stone fireplaces, fire pits, and full outdoor living areas — the centerpiece that turns a yard into a place you actually use after dark.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 14h18M8 4v5m8-5v5M6 14v6m6-6v6m6-6v6M3 4h18v16H3z"/></svg></div>
+        <h3>Stone &amp; Brick Masonry</h3>
+        <p>Veneer, columns, accent walls, and custom stonework laid by hand — durable detail that reads as craftsmanship, not a kit.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20v-4h6v4M14 20v-7h6v7M4 12V8h6v4M4 8V4h16v8"/></svg></div>
+        <h3>Retaining Walls</h3>
+        <p>Engineered, properly drained block and stone walls that hold a slope and frame a yard — built to stay put through Idaho freeze-thaw.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v6l9 4 9-4V7M3 13v4l9 4 9-4v-4"/></svg></div>
+        <h3>Stamped &amp; Stained Concrete</h3>
+        <p>Patios, walkways, and driveways with the look of stone or brick — stamped patterns and rich integral stains, sealed to last.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20M5 18v-3h14v3M4 15l8-9 8 9M9 18v-3h6v3"/></svg></div>
+        <h3>Foundations &amp; Flatwork</h3>
+        <p>Footings, foundations, slabs, sidewalks, and flatwork — the concrete trusted by Magic Valley homeowners and spec-home builders alike.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7l8-5 8 5v7M9 21v-5h6v5M2 9l10-6 10 6"/></svg></div>
+        <h3>Patios &amp; Hardscape</h3>
+        <p>Paver and concrete patios, walkways, steps, and pool decks — designed and poured to work together as one finished outdoor space.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WHY / SPLIT ======================= -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="split">
+      <div class="split-media reveal">
+        <img src="assets/concrete-pool-deck.jpg" alt="Broom-finish concrete pool deck with curved coping built by Ramstone Construction near Twin Falls" width="1200" height="900" loading="lazy">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Why Ramstone</p>
+        <h2>Built once, built right</h2>
+        <p class="lead">Stonework and concrete are unforgiving — the prep underneath decides whether it lasts a season or a generation. We treat every job that way.</p>
+        <ul class="why-list">
+          <li>
+            <span class="wic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></span>
+            <div><h3>A 5.0 reputation, earned job by job</h3><p>Forty Google reviews and not a single one below five stars — from outdoor fireplaces to stamped concrete to foundations.</p></div>
+          </li>
+          <li>
+            <span class="wic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg></span>
+            <div><h3>Trusted by builders, not just homeowners</h3><p>Local contractors bring our crew in for foundation and concrete work on spec homes — the same care goes into a backyard patio.</p></div>
+          </li>
+          <li>
+            <span class="wic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <div><h3>Drainage &amp; base prep done properly</h3><p>Walls and slabs that survive Idaho freeze-thaw start below the surface. We build the part you'll never see to last.</p></div>
+          </li>
+          <li>
+            <span class="wic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+            <div><h3>Long days, real availability</h3><p>We're on the job Monday through Saturday, early morning into the evening — so projects keep moving and you can reach us.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROCESS ======================= -->
+<section class="section process">
+  <div class="container">
+    <div class="center-head reveal">
+      <p class="eyebrow">How It Works</p>
+      <h2>From idea to finished stone</h2>
+      <p class="lead">A simple, honest path — no surprises between the handshake and the last stone set.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="num">1</div><h3>Talk it through</h3><p>Call or send a few details. We'll listen to what you're picturing and what the space needs.</p></div>
+      <div class="step"><div class="num">2</div><h3>On-site &amp; free quote</h3><p>We walk the site, take measurements, and give you a clear, written estimate at no cost.</p></div>
+      <div class="step"><div class="num">3</div><h3>Build it right</h3><p>Prep, base, and drainage first — then the masonry and concrete, done by our own crew.</p></div>
+      <div class="step"><div class="num">4</div><h3>Walk the finish</h3><p>We clean up and walk the finished work with you, so you're happy before we call it done.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= REVIEWS ======================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="rev-head reveal">
+      <div class="center-head" style="margin:0">
+        <p class="eyebrow">In Their Words</p>
+        <h2>What Magic Valley clients say</h2>
+      </div>
+      <div class="rev-score">
+        <span class="big">5.0</span>
+        <small><span class="stars">★★★★★</span><br>40 Google reviews</small>
+      </div>
+    </div>
+    <div class="rev-grid reveal">
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"We are beyond thrilled with our new outdoor fireplace! The team at RamStone Design was so great to work with… Edgar and Gwendolyn leveraged their expertise and skill."</blockquote>
+        <div class="who"><span class="av">K</span><div><b>Karen Knauff</b><span>Google review · Outdoor fireplace</span></div></div>
+      </article>
+      <article class="review">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Oscar and his crew did an amazing job on a backyard project for me that included a sidewalk and stamped concrete."</blockquote>
+        <div class="who"><span class="av">J</span><div><b>Jerald Schwertfeger</b><span>Google review · Stamped concrete</span></div></div>
+      </article>
+    </div>
+    <div class="rev-cta">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJr2F7ehyhrFQRZnoVUk_40ds" target="_blank" rel="noopener" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>Leave us a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SERVICE AREA + MAP ======================= -->
+<section class="section" id="area" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="area-grid">
+      <div class="reveal">
+        <p class="eyebrow">Where We Work</p>
+        <h2>Serving Kimberly &amp; the Magic Valley</h2>
+        <p class="lead">Based in Kimberly and working throughout the Twin Falls area. If you're nearby and don't see your town listed, just ask — we travel for the right project.</p>
+        <div class="towns">
+          <span>Kimberly</span><span>Twin Falls</span><span>Hansen</span><span>Filer</span>
+          <span>Jerome</span><span>Buhl</span><span>Eden</span><span>Murtaugh</span>
+          <span>Hazelton</span><span>Magic Valley</span>
+        </div>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Map of the Kimberly and Twin Falls, Idaho service area" src="https://www.openstreetmap.org/export/embed.html?bbox=-114.60%2C42.45%2C-114.20%2C42.66&amp;layer=mapnik&amp;marker=42.5760212%2C-114.3841014" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ABOUT ======================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-card reveal">
+      <p class="eyebrow">About Ramstone Construction</p>
+      <h2 style="margin-top:.6rem">A Kimberly crew that takes stone seriously</h2>
+      <p class="lead" style="margin-top:1.2rem">Ramstone Construction has been building stone masonry, outdoor fireplaces, retaining walls, and concrete across the Magic Valley for years — work you can see in backyards from Kimberly to Twin Falls. We're a hands-on crew that designs and builds the whole project, so the stonework and the concrete it sits on are held to the same standard. Homeowners come to us for outdoor living spaces they'll use for decades; builders bring us on for foundations and flatwork they can count on.</p>
+      <div class="about-stats">
+        <div class="st"><b>5.0★</b><span>Average across 40 reviews</span></div>
+        <div class="st"><b>7+</b><span>Years building locally</span></div>
+        <div class="st"><b>Mon–Sat</b><span>On the job, early to late</span></div>
+        <div class="st"><b>Magic Valley</b><span>Homeowners &amp; builders</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="section" id="faq" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="center-head reveal">
+      <p class="eyebrow">Good to Know</p>
+      <h2>Questions we hear a lot</h2>
+    </div>
+    <div class="faq-grid reveal">
+      <details class="faq"><summary><h3>Do you give free estimates?<span class="plus" aria-hidden="true"></span></h3></summary><p>Yes. We'll come look at the site, take measurements, and give you a clear written estimate at no cost and with no pressure. Call (208) 421-1077 or send your details through the form.</p></details>
+      <details class="faq"><summary><h3>Do you work for homeowners, builders, or both?<span class="plus" aria-hidden="true"></span></h3></summary><p>Both. We build outdoor fireplaces, patios, walls, and stonework directly for homeowners, and we handle foundations, footings, and flatwork for local contractors and spec-home builds.</p></details>
+      <details class="faq"><summary><h3>What kinds of concrete finishes do you offer?<span class="plus" aria-hidden="true"></span></h3></summary><p>Standard broom-finish flatwork, plus decorative options like stamped concrete (stone, brick, and slate patterns) and integral or acid stains, sealed to hold up to Idaho weather.</p></details>
+      <details class="faq"><summary><h3>Can you build a complete outdoor living space?<span class="plus" aria-hidden="true"></span></h3></summary><p>Absolutely — that's some of our favorite work. Fireplaces, fire pits, patios, seating walls, and the stonework that ties it all together, designed and built as one project.</p></details>
+      <details class="faq"><summary><h3>Will a retaining wall hold up to freeze-thaw?<span class="plus" aria-hidden="true"></span></h3></summary><p>When it's built right, yes. Proper base preparation and drainage behind the wall are what keep it from shifting through Idaho's freeze-thaw cycles — and that's exactly where we don't cut corners.</p></details>
+      <details class="faq"><summary><h3>What areas do you serve?<span class="plus" aria-hidden="true"></span></h3></summary><p>We're based in Kimberly and work throughout the Twin Falls area and greater Magic Valley — Twin Falls, Hansen, Filer, Jerome, Buhl, and the surrounding towns. Not sure if you're in range? Just ask.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FINAL CTA + FORM ======================= -->
+<section class="section final" id="contact">
+  <div class="container">
+    <p class="eyebrow" style="color:#e6b59e">Start Your Project</p>
+    <h2>Let's build something that lasts</h2>
+    <p>Tell us what you're picturing — a fireplace, a patio, a wall, or a full backyard — and we'll get you a free estimate.</p>
+    <a href="tel:+12084211077" class="final-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(208) 421-1077</a>
+    <small>Open Mon–Fri 6 AM–8 PM · Sat 7 AM–3 PM</small>
+
+    <form class="quote-form" onsubmit="return false" aria-label="Request a free estimate" style="max-width:42rem;margin:2.8rem auto 0;text-align:left;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-l);padding:clamp(1.6rem,4vw,2.4rem)">
+      <div style="display:grid;grid-template-columns:1fr;gap:1rem">
+        <div style="display:grid;grid-template-columns:1fr;gap:1rem">
+          <div class="fg"><label>Name</label><input type="text" name="name" autocomplete="name" placeholder="Your name"></div>
+          <div class="fg"><label>Phone</label><input type="tel" name="phone" autocomplete="tel" placeholder="(208) 000-0000"></div>
+        </div>
+        <div class="fg"><label>What can we build for you?</label><textarea name="detail" rows="3" placeholder="e.g. an outdoor fireplace and a stamped-concrete patio in Twin Falls"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="justify-content:center;width:100%">Request My Free Estimate</button>
+        <p style="text-align:center;color:rgba(255,255,255,.6);font-size:.82rem;margin:.2rem auto 0;max-width:none">Prefer to talk? Call <a href="tel:+12084211077" style="color:#e9c3ad;font-weight:700">(208) 421-1077</a> — we answer.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#e9d9c7" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18M3 14h18M8 4v5m8-5v5M6 14v6m6-6v6m6-6v6M3 4h18v16H3z"/></svg></span>
+          <span>Ramstone<b> Construction</b><span class="sub">Masonry &amp; Stonework</span></span>
+        </div>
+        <p>Custom stone masonry, outdoor fireplaces, retaining walls, and concrete for homeowners and builders across Kimberly and the Magic Valley.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+12084211077">(208) 421-1077</a></div>
+        <div class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p style="margin:0">3990 N 3400 E<br>Kimberly, ID 83341</p></div>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon–Fri: 6:00 AM – 8:00 PM</p>
+        <p>Saturday: 7:00 AM – 3:00 PM</p>
+        <p>Sunday: Closed</p>
+        <a href="#contact" style="color:#e9c3ad;font-weight:700;margin-top:.4rem">Get a free estimate →</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ramstone Construction LLC · Kimberly, Idaho</span>
+      <span>Stone masonry · Outdoor fireplaces · Concrete · Hardscape</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= STICKY MOBILE CALL BAR ======================= -->
+<nav class="callbar" aria-label="Quick contact">
+  <a href="tel:+12084211077"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+  <a href="#contact" class="alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>Free Estimate</a>
+</nav>
+
+<!-- ======================= JSON-LD ======================= -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Ramstone Construction LLC",
+  "description":"Custom stone masonry, outdoor fireplaces, retaining walls, stamped concrete, foundations, and hardscape serving Kimberly and the Magic Valley.",
+  "url":"https://savcab.github.io/websites/ramstone-construction/",
+  "telephone":"+12084211077",
+  "image":"https://savcab.github.io/websites/ramstone-construction/assets/hero-outdoor-fireplace.jpg",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"3990 N 3400 E",
+    "addressLocality":"Kimberly",
+    "addressRegion":"ID",
+    "postalCode":"83341",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":42.5760212,"longitude":-114.3841014},
+  "areaServed":[
+    {"@type":"City","name":"Kimberly"},
+    {"@type":"City","name":"Twin Falls"},
+    {"@type":"City","name":"Hansen"},
+    {"@type":"City","name":"Filer"},
+    {"@type":"City","name":"Jerome"},
+    {"@type":"City","name":"Buhl"},
+    {"@type":"City","name":"Eden"},
+    {"@type":"City","name":"Murtaugh"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"06:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"15:00"}
+  ],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Masonry & Concrete Services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Outdoor fireplaces & fire features"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stone & brick masonry"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Retaining walls"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stamped & stained concrete"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Foundations & flatwork"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Patios & hardscape"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

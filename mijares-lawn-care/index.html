@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care in De Motte, IN | Mijares Lawn Care Services</title>
+<meta name="description" content="Reliable weekly mowing, edging & fall leaf cleanup for De Motte, IN & Jasper County — at a fair price. Rated 5.0 on Google. Free estimate: (219) 741-2999.">
+<link rel="canonical" href="https://savcab.github.io/websites/mijares-lawn-care/">
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Mijares Lawn Care Services — Lawn Care in De Motte, IN">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/mijares-lawn-care/">
+<meta property="og:image" content="https://savcab.github.io/websites/mijares-lawn-care/assets/hero-striped-lawn-de-motte.jpg">
+<meta property="og:description" content="Reliable weekly mowing, edging and fall leaf cleanup for De Motte and Jasper County. A book of loyal, multi-year clients — and a fair price.">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: deliberate display (Bricolage Grotesque) + body (Hanken Grotesk) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- JSON-LD: HomeAndConstructionBusiness (NO aggregateRating/review markup — policy) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Mijares Lawn Care Services LLC",
+  "image": "https://savcab.github.io/websites/mijares-lawn-care/assets/hero-striped-lawn-de-motte.jpg",
+  "url": "https://savcab.github.io/websites/mijares-lawn-care/",
+  "telephone": "+1-219-741-2999",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "935 8th Pl SW",
+    "addressLocality": "De Motte",
+    "addressRegion": "IN",
+    "postalCode": "46310",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.1942829,
+    "longitude": -87.2109208
+  },
+  "areaServed": [
+    { "@type": "City", "name": "De Motte" },
+    { "@type": "City", "name": "Wheatfield" },
+    { "@type": "City", "name": "Roselawn" },
+    { "@type": "City", "name": "Kouts" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "sameAs": []
+}
+</script>
+
+<style>
+:root{
+  /* SPACING — 4/8px grid, multiplicative */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:65ch;
+  /* TYPE */
+  --display:'Bricolage Grotesque', 'Hanken Grotesk', system-ui, sans-serif;
+  --body:'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --h1:clamp(2.25rem,5.4vw,3.5rem);
+  --h2:clamp(1.65rem,3.4vw,2.4rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.55;
+  --lh-head:1.08;
+  --track-head:-.02em;
+  /* COLOR — adopted from Mijares's real logo: crimson red + warm amber sunset + charcoal */
+  --ink:#1c1a18;
+  --ink-2:#5a5550;
+  --ink-3:#8a8580;
+  --line:#e7e3dd;
+  --bg:#ffffff;
+  --bg-2:#f6f3ee;       /* warm tinted alt */
+  --bg-dark:#171513;    /* near-black charcoal (logo bg) — deliberately not pure black */
+  --brand:#c8392e;      /* Mijares red */
+  --brand-d:#9e2a22;    /* darker red for hovers */
+  --accent:#e8852c;     /* warm amber — the logo's sunset, used for CTA pop sparingly */
+  --accent-d:#cf6f1c;
+  --green:#3f7d3a;      /* supporting grass green (logo badge) */
+  /* RADIUS — semantic tiers */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW — soft layered */
+  --sh-1:0 1px 2px rgba(28,26,24,.06);
+  --sh-2:0 2px 4px rgba(28,26,24,.06),0 4px 8px rgba(28,26,24,.05);
+  --sh-3:0 4px 8px rgba(28,26,24,.06),0 12px 24px rgba(28,26,24,.09);
+  --sh-4:0 10px 20px rgba(28,26,24,.10),0 28px 52px rgba(28,26,24,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head)}
+h1{font-size:var(--h1);font-weight:800}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.container{max-width:var(--container);margin:0 auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.split>*,.area>*,.row2>*,.svc-grid>*,.rev-grid>*,.faq-grid>*,.steps>*{min-width:0}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--brand);display:inline-block}
+.lede{font-size:1.18rem;color:var(--ink-2);max-width:60ch;line-height:1.6}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;min-height:52px;padding:0 1.75rem;border-radius:var(--r-m);border:2px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-primary{background:var(--accent);color:#231505;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-brand{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-brand:hover{background:var(--brand-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--bg-2)}
+.btn-ghost-light{background:rgba(255,255,255,.07);color:#fff;border-color:rgba(255,255,255,.32);backdrop-filter:blur(4px)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.16);border-color:#fff}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:-.01em;color:var(--ink)}
+.brand img{width:42px;height:42px;border-radius:var(--r-s);object-fit:cover}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav-links{display:flex;align-items:center;gap:1.9rem;font-weight:600;font-size:.95rem}
+.nav-links a{color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:.9rem}
+.nav-phone{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink)}
+.nav-phone svg{width:18px;height:18px;color:var(--brand)}
+@media(max-width:880px){.nav-links{display:none}.nav-phone span{display:none}}
+
+/* HERO */
+.hero{position:relative;color:#fff;isolation:isolate;background:var(--bg-dark)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,rgba(20,18,16,.86) 0%,rgba(20,18,16,.66) 42%,rgba(20,18,16,.30) 100%)}
+.hero-inner{padding-block:var(--hero-y);max-width:42rem}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1.5rem}
+.pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;font-weight:600;font-size:.82rem;padding:.42rem .85rem;border-radius:var(--r-pill);backdrop-filter:blur(4px)}
+.pill svg{width:15px;height:15px}
+.pill .star{color:#ffc24b}
+.hero h1{margin-bottom:1.15rem;text-shadow:0 2px 18px rgba(0,0,0,.3)}
+.hero h1 .accent{color:#ffb765}
+.hero p{color:rgba(255,255,255,.92);font-size:1.18rem;line-height:1.6;max-width:36ch;margin-bottom:2rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.9rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.5rem;font-size:.9rem;color:rgba(255,255,255,.82)}
+.hero-meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-meta svg{width:16px;height:16px;color:#ffb765}
+
+/* TRUST BAR */
+.trustbar{background:var(--bg-dark);border-top:1px solid rgba(255,255,255,.08)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08)}
+.trust-cell{background:var(--bg-dark);color:#fff;padding:1.5rem 1.25rem;text-align:center}
+.trust-cell .n{font-family:var(--display);font-weight:800;font-size:1.85rem;color:#ffb765;line-height:1}
+.trust-cell .l{font-size:.82rem;color:rgba(255,255,255,.7);margin-top:.45rem;font-weight:500}
+@media(max-width:680px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* SECTION HEADER */
+.sec-head{max-width:42rem;margin-bottom:clamp(2.5rem,5vw,3.75rem)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{margin:.9rem 0 .85rem}
+.sec-head .lede{margin-inline:0}
+.sec-head.center .lede{margin-inline:auto}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media(max-width:880px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2.1rem 1.9rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:transform var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc:hover::before{transform:scaleX(1)}
+.svc-ico{width:54px;height:54px;border-radius:var(--r-m);background:linear-gradient(150deg,#fdeee0,#f8ddc4);color:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:1.35rem}
+.svc-ico svg{width:27px;height:27px}
+.svc h3{margin-bottom:.55rem}
+.svc p{color:var(--ink-2);font-size:.97rem;line-height:1.6}
+
+/* SPLIT (about / why) */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+@media(max-width:880px){.split{grid-template-columns:1fr}}
+.split-media{position:relative}
+.split-media img{width:100%;border-radius:var(--r-l);box-shadow:var(--sh-4);aspect-ratio:4/3;object-fit:cover}
+.split-media .stamp{position:absolute;bottom:-22px;left:-18px;background:var(--brand);color:#fff;padding:1.1rem 1.4rem;border-radius:var(--r-m);box-shadow:var(--sh-3);max-width:220px}
+.split-media .stamp strong{font-family:var(--display);font-size:1.05rem;display:block;line-height:1.2}
+.split-media .stamp span{font-size:.82rem;opacity:.9}
+@media(max-width:880px){.split-media .stamp{left:auto;right:14px;bottom:-18px}}
+.feature-list{list-style:none;display:grid;gap:1.4rem;margin-top:1.9rem}
+.feature-list li{display:flex;gap:1rem;align-items:flex-start}
+.feature-list .fi{flex:none;width:42px;height:42px;border-radius:var(--r-m);background:var(--bg-2);color:var(--brand);display:flex;align-items:center;justify-content:center}
+.feature-list .fi svg{width:21px;height:21px}
+.feature-list h4{font-size:1.05rem;margin-bottom:.2rem;font-weight:700}
+.feature-list p{font-size:.94rem;color:var(--ink-2);max-width:46ch;line-height:1.55}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;counter-reset:step}
+@media(max-width:880px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{position:relative;padding-top:1rem}
+.step .num{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--brand);opacity:.22;line-height:1}
+.step h3{font-size:1.18rem;margin:.5rem 0 .5rem}
+.step p{font-size:.94rem;color:var(--ink-2);line-height:1.55}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;max-width:62rem;margin-inline:auto}
+@media(max-width:680px){.gallery{grid-template-columns:1fr}}
+.gallery figure{margin:0;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);background:var(--bg-2)}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 500ms ease}
+.gallery figure:hover img{transform:scale(1.05)}
+
+/* REVIEWS */
+.reviews-wrap{background:var(--bg-dark);color:#fff}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem}
+@media(max-width:880px){.rev-grid{grid-template-columns:1fr}}
+.rev{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-l);padding:2rem;display:flex;flex-direction:column;gap:1.1rem}
+.rev .stars{display:flex;gap:.2rem;color:#ffc24b}
+.rev .stars svg{width:19px;height:19px}
+.rev blockquote{font-size:1.08rem;line-height:1.6;color:rgba(255,255,255,.94);font-style:normal}
+.rev .who{display:flex;align-items:center;gap:.75rem;margin-top:auto}
+.rev .ava{width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:1.05rem}
+.rev .who b{font-weight:700;display:block;font-size:.98rem}
+.rev .who span{font-size:.82rem;color:rgba(255,255,255,.6)}
+.rev-foot{margin-top:2.25rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.1rem;justify-content:center;text-align:center;flex-direction:column}
+.rev-foot .rscore{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;color:rgba(255,255,255,.85)}
+.rev-foot .rscore b{color:#fff}
+.rev-foot .rscore .star{color:#ffc24b;display:inline-flex}
+.rev-foot .rscore svg{width:18px;height:18px}
+
+/* SERVICE AREA */
+.area{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+@media(max-width:880px){.area{grid-template-columns:1fr}}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);min-height:340px}
+.area-map iframe{display:block;width:100%;height:100%;min-height:340px;border:0}
+.towns{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.6rem}
+.town{display:inline-flex;align-items:center;gap:.45rem;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-weight:600;font-size:.92rem}
+.town svg{width:15px;height:15px;color:var(--brand)}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2.5rem}
+@media(max-width:780px){.faq-grid{grid-template-columns:1fr}}
+.faq details{border-bottom:1px solid var(--line);padding:1.15rem 0}
+.faq summary{font-family:var(--display);font-weight:700;font-size:1.08rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;transition:transform var(--t),background var(--t),color var(--t)}
+.faq summary .pm svg{width:15px;height:15px}
+.faq details[open] summary .pm{background:var(--brand);border-color:var(--brand);color:#fff;transform:rotate(180deg)}
+.faq details p{margin-top:.85rem;color:var(--ink-2);font-size:.98rem;line-height:1.6;max-width:62ch}
+
+/* CTA BAND */
+.cta-band{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;border-radius:var(--r-l);padding:clamp(2.5rem,6vw,4.25rem);text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,183,101,.28),transparent 55%);pointer-events:none}
+.cta-band h2{color:#fff;margin-bottom:1rem;position:relative}
+.cta-band p{color:rgba(255,255,255,.92);max-width:48ch;margin:0 auto 2rem;font-size:1.12rem;position:relative}
+.cta-band .hero-cta{justify-content:center;position:relative;margin-bottom:0}
+
+/* QUOTE FORM */
+.quote-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.quote-wrap>*{min-width:0}
+@media(max-width:880px){.quote-wrap{grid-template-columns:1fr}}
+.quote-info .feature-list{margin-top:1.6rem}
+form.quote{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.75rem,3vw,2.5rem);box-shadow:var(--sh-3)}
+.field{margin-bottom:1.15rem}
+.field label{display:block;font-weight:600;font-size:.88rem;margin-bottom:.45rem;color:var(--ink)}
+.field input,.field select,.field textarea{width:100%;min-width:0;max-width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--bg-2);border:1.5px solid var(--line);border-radius:var(--r-m);padding:.85rem 1rem;transition:border-color var(--t),background var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand);background:#fff}
+.field textarea{resize:vertical;min-height:96px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+form.quote .btn{width:100%;margin-top:.4rem}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+
+/* FOOTER */
+footer{background:var(--bg-dark);color:rgba(255,255,255,.72);padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.1)}
+@media(max-width:780px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+.foot-brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1.1rem}
+.foot-brand img{width:46px;height:46px;border-radius:var(--r-s)}
+.foot-brand b{font-family:var(--display);font-weight:800;font-size:1.2rem;color:#fff}
+footer p{font-size:.92rem;line-height:1.65;max-width:38ch}
+.foot-col h4{font-family:var(--display);color:#fff;font-size:1rem;margin-bottom:1.1rem}
+.foot-col ul{list-style:none;display:grid;gap:.7rem}
+.foot-col a,.foot-col li{font-size:.92rem;color:rgba(255,255,255,.72);transition:color var(--t)}
+.foot-col a:hover{color:#ffb765}
+.foot-nap{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.85rem}
+.foot-nap svg{width:17px;height:17px;color:#ffb765;flex:none;margin-top:2px}
+.foot-bottom{padding-top:2rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;font-size:.82rem;color:rgba(255,255,255,.5)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+
+/* MOBILE CALL BAR */
+.callbar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:var(--brand);box-shadow:0 -4px 20px rgba(0,0,0,.18)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:.6rem;color:#fff;font-weight:700;font-size:1.05rem;padding:1rem;width:100%}
+.callbar svg{width:20px;height:20px}
+@media(max-width:880px){.callbar{display:block}body{padding-bottom:60px}.callbar+*{}}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="assets/mijares-logo.jpg" alt="Mijares Lawn Care Services logo" width="42" height="42">
+      <span>Mijares Lawn Care<small>De Motte, Indiana</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+12197412999" class="nav-phone" aria-label="Call Mijares Lawn Care at (219) 741-2999">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(219) 741-2999</span>
+      </a>
+      <a href="#quote" class="btn btn-brand" style="min-height:46px;padding:0 1.3rem;font-size:.95rem">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <img class="hero-img" src="assets/hero-striped-lawn-de-motte.jpg" alt="Freshly mowed lawn with clean mowing stripes at a De Motte, Indiana home maintained by Mijares Lawn Care" width="1500" height="1137" fetchpriority="high">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="badge-row">
+        <span class="pill"><span class="star">★</span> 5.0 on Google &middot; 22 reviews</span>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Locally owned in De Motte</span>
+      </div>
+      <h1>Reliable lawn care &amp; <span class="accent">leaf cleanup</span> in De Motte, Indiana</h1>
+      <p>The neighborhood crew De Motte families have trusted with their lawns year after year — sharp weekly mowing and a fair, dependable price.</p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-primary">Get a Free Estimate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+12197412999" class="btn btn-ghost-light">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (219) 741-2999
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Mon–Fri 7am–7pm &middot; Sat 9am–4pm</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Serving De Motte &amp; Jasper County</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trustbar" aria-label="At a glance">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-cell"><div class="n">5.0★</div><div class="l">Google rating</div></div>
+      <div class="trust-cell"><div class="n">22</div><div class="l">5-star reviews</div></div>
+      <div class="trust-cell"><div class="n">Years</div><div class="l">Of loyal repeat clients</div></div>
+      <div class="trust-cell"><div class="n">Local</div><div class="l">De Motte owned &amp; run</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Lawn care that keeps your yard the best on the block</h2>
+      <p class="lede">Straightforward, dependable lawn maintenance for De Motte homes — done on schedule, the same careful way every visit.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M4 22V11a2 2 0 0 1 2-2h2"/><circle cx="6.5" cy="18" r="2.5"/><path d="M8 9V6a2 2 0 0 1 2-2h1l4 5h3a2 2 0 0 1 2 2v2"/><circle cx="18" cy="18" r="2.5"/></svg></div>
+        <h3>Weekly &amp; bi-weekly mowing</h3>
+        <p>Crisp, even cuts on a schedule you can count on — with tidy edges and a clean finish that shows. The reliable, fairly-priced service our clients keep coming back for.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+        <h3>Fall leaf cleanup</h3>
+        <p>When the leaves drop, we clear them — lawn, beds and walkways raked, blown and hauled so your yard heads into winter clean. A favorite of our long-time De Motte customers.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Trimming &amp; edging</h3>
+        <p>String-trimming around fences, trees, beds and the mailbox, plus sharp edges along drives and walks — the detail work that makes the whole property look finished.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY / ABOUT (split with real truck photo) -->
+<section class="section" id="why" style="background:var(--bg-2)">
+  <div class="container split">
+    <div class="split-media reveal">
+      <img src="assets/mijares-truck-trailer-equipment.jpg" alt="Mijares Lawn Care Services truck and equipment trailer loaded with commercial zero-turn mowers, ready for the route in Jasper County, Indiana" width="1100" height="733" loading="lazy">
+      <div class="stamp"><strong>Mijares Lawn Care</strong><span>Owned &amp; operated right here in De Motte</span></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why neighbors choose us</span>
+      <h2 style="margin:.9rem 0 1rem">A local crew you can actually rely on</h2>
+      <p class="lede" style="font-size:1.08rem">We&rsquo;re a De Motte lawn care company built on showing up, doing careful work, and charging a fair price — the reasons our customers have stayed with us for years.</p>
+      <ul class="feature-list">
+        <li>
+          <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><h4>Reliable &amp; dependable</h4><p>Our clients describe us as reliable and dependable — we keep to the schedule so your lawn never gets away from you.</p></div>
+        </li>
+        <li>
+          <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <div><h4>A fair, honest price</h4><p>&ldquo;Always a very fair price&rdquo; is something we hear a lot. Clear, reasonable rates with no surprises.</p></div>
+        </li>
+        <li>
+          <span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/></svg></span>
+          <div><h4>Local &amp; here for the long run</h4><p>Owned and operated in De Motte. Many of our customers have trusted us with their lawns season after season.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Getting started is easy</span>
+      <h2>From first call to a freshly cut lawn</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3>Reach out</h3><p>Call or send the quick form with your address and what you need — mowing, leaf cleanup, or both.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Free estimate</h3><p>We look at your property and give you a clear, fair price. No pressure, no obligation.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Pick your schedule</h3><p>Weekly or bi-weekly mowing, a one-time cleanup — whatever fits your yard and your budget.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>We keep it sharp</h3><p>We show up on schedule and leave your lawn clean and tidy, every single visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Real De Motte lawns we take care of</h2>
+      <p class="lede">A look at the kind of clean, well-kept results we deliver around the neighborhood — every one of these is our own work.</p>
+    </div>
+    <div class="gallery reveal">
+      <figure><img src="assets/lawn-mowing-stripes-ranch.jpg" alt="Wide green front lawn with fresh mowing stripes at a ranch home in De Motte, Indiana" width="1100" height="822" loading="lazy"></figure>
+      <figure><img src="assets/shaded-lawn-mowing-de-motte.jpg" alt="Large shaded backyard lawn with clean mowing stripes maintained by Mijares Lawn Care in De Motte, Indiana" width="1100" height="1100" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-wrap section" id="reviews">
+  <div class="container">
+    <div class="sec-head center reveal" style="margin-bottom:2.5rem">
+      <span class="eyebrow" style="color:#ffb765">From our Google reviews</span>
+      <h2 style="color:#fff">Rated 5.0 by De Motte neighbors</h2>
+      <p class="lede" style="color:rgba(255,255,255,.78)">Real, unedited reviews from our Google Business Profile.</p>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev reveal">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>
+        </div>
+        <blockquote>&ldquo;Mijares Lawn Care has been doing our lawn for a few years. I&rsquo;ve been very pleased with their work — they are reliable, dependable, and always a very fair price.&rdquo;</blockquote>
+        <figcaption class="who"><span class="ava">K</span><span><b>Karen Claypool</b><span>Google review</span></span></figcaption>
+      </figure>
+      <figure class="rev reveal">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>
+        </div>
+        <blockquote>&ldquo;Mijares Lawn Care has been taking care of our lawn and leaves for 2 years. We are very pleased with their work.&rdquo;</blockquote>
+        <figcaption class="who"><span class="ava">D</span><span><b>Doris Smock</b><span>Google review</span></span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-foot">
+      <div class="rscore"><span class="star"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span> <b>5.0</b> average from <b>22 reviews</b> on Google</div>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJzZlvMAXWbYERsUfJ06cnaHk" target="_blank" rel="noopener" class="btn btn-primary">Leave us a Google review
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area">
+  <div class="container area">
+    <div class="reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2 style="margin:.9rem 0 1rem">Proudly serving De Motte &amp; Jasper County</h2>
+      <p class="lede" style="font-size:1.08rem">Based in De Motte, we keep lawns sharp across town and the surrounding Jasper County communities. Not sure if we reach you? Just give us a call.</p>
+      <div class="towns">
+        <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> De Motte</span>
+        <span class="town">Wheatfield</span>
+        <span class="town">Roselawn</span>
+        <span class="town">Kouts</span>
+        <span class="town">Surrounding Jasper County</span>
+      </div>
+      <div style="margin-top:2rem">
+        <a href="tel:+12197412999" class="btn btn-brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (219) 741-2999
+        </a>
+      </div>
+    </div>
+    <div class="area-map reveal">
+      <iframe title="Map of De Motte, Indiana service area" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.32%2C41.14%2C-87.10%2C41.25&amp;layer=mapnik&amp;marker=41.1942829%2C-87.2109208" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq faq-grid reveal">
+      <details>
+        <summary>How much does lawn mowing cost?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>It depends on the size of your lawn and how often you&rsquo;d like it mowed. We&rsquo;ll come out, take a look, and give you a clear, fair quote up front — our customers consistently say our pricing is reasonable.</p>
+      </details>
+      <details>
+        <summary>How often should I have my lawn mowed?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>Most De Motte lawns look their best on a weekly schedule through the growing season, with bi-weekly an option when growth slows. We&rsquo;ll recommend what fits your yard.</p>
+      </details>
+      <details>
+        <summary>Do you handle fall leaf cleanup?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>Yes. When the leaves come down we clear them off the lawn, beds and walkways so your yard stays clean heading into winter. It&rsquo;s one of our most-requested fall services.</p>
+      </details>
+      <details>
+        <summary>What areas do you serve?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>We&rsquo;re based in De Motte and serve the town plus surrounding Jasper County communities like Wheatfield, Roselawn and Kouts. If you&rsquo;re nearby, give us a call to check.</p>
+      </details>
+      <details>
+        <summary>Are you a local business?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>We are — Mijares Lawn Care Services is owned and operated right here in De Motte, and many of our customers have stayed with us for years.</p>
+      </details>
+      <details>
+        <summary>How do I get started?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <p>Call us at (219) 741-2999 or fill out the quick estimate form on this page. We&rsquo;ll get back to you with a fair price and find a schedule that works for you.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE / FINAL CTA -->
+<section class="section" id="quote">
+  <div class="container quote-wrap">
+    <div class="quote-info reveal">
+      <span class="eyebrow">Free estimate</span>
+      <h2 style="margin:.9rem 0 1rem">Let&rsquo;s get your lawn on the schedule</h2>
+      <p class="lede" style="font-size:1.08rem">Tell us a little about your property and we&rsquo;ll get back to you with a fair price. Prefer to talk? Call <a href="tel:+12197412999" style="color:var(--brand);font-weight:700">(219) 741-2999</a>.</p>
+      <ul class="feature-list">
+        <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>No-pressure quote</h4><p>A clear price with no obligation — yours to think over.</p></div></li>
+        <li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><div><h4>Quick to respond</h4><p>We&rsquo;ll get back to you promptly to set things up.</p></div></li>
+      </ul>
+    </div>
+    <form class="quote reveal" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='Thanks! This is a preview form — please call (219) 741-2999 to book.';">
+      <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
+      <div class="row2">
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(219) 000-0000" required></div>
+        <div class="field"><label for="zip">ZIP code</label><input id="zip" name="zip" type="text" placeholder="46310"></div>
+      </div>
+      <div class="field"><label for="email">Email <span style="color:var(--ink-3);font-weight:400">(optional)</span></label><input id="email" name="email" type="email" placeholder="you@email.com"></div>
+      <div class="field"><label for="service">What do you need?</label>
+        <select id="service" name="service">
+          <option>Weekly / bi-weekly mowing</option>
+          <option>Fall leaf cleanup</option>
+          <option>Trimming &amp; edging</option>
+          <option>Mowing + cleanup</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field"><label for="detail">Details</label><textarea id="detail" name="detail" placeholder="Tell us about your lawn — size, address, anything we should know."></textarea></div>
+      <button type="submit" class="btn btn-primary">Request My Free Estimate
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form-note">We&rsquo;ll never share your information.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><img src="assets/mijares-logo.jpg" alt="Mijares Lawn Care Services logo" width="46" height="46"><b>Mijares Lawn Care</b></div>
+        <p>Reliable, fairly-priced lawn mowing and leaf cleanup for De Motte and the surrounding Jasper County communities. Locally owned and operated.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="foot-nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+12197412999">(219) 741-2999</a></div>
+        <div class="foot-nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>935 8th Pl SW<br>De Motte, IN 46310</span></div>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri &nbsp;7:00 AM – 7:00 PM</li>
+          <li>Saturday &nbsp;9:00 AM – 4:00 PM</li>
+          <li>Sunday &nbsp;Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Mijares Lawn Care Services LLC. All rights reserved.</span>
+      <span>De Motte, Indiana &middot; Lawn care &amp; leaf cleanup</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE CALL BAR -->
+<div class="callbar">
+  <a href="tel:+12197412999">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call (219) 741-2999
+  </a>
+</div>
+
+<script>
+// Scroll reveal — first-view only, secondary content
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

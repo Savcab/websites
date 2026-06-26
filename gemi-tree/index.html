@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Trimming &amp; Removal in Cedar City, UT | Gemi Tree</title>
+<meta name="description" content="Gemi Tree handles tree trimming, removal and stump grinding across Cedar City, UT — one responsive crew for homes and rental properties. Rated 4.8 from 49 reviews. Call (435) 559-0480 for a fair bid.">
+<link rel="canonical" href="https://savcab.github.io/websites/gemi-tree/">
+<meta name="theme-color" content="#1f3d2b">
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Tree Trimming &amp; Removal in Cedar City, UT | Gemi Tree">
+<meta property="og:description" content="One responsive crew for tree trimming, removal and stump grinding across Cedar City — homes and rentals alike. Rated 4.8 from 49 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/gemi-tree/">
+<meta property="og:image" content="https://savcab.github.io/websites/gemi-tree/assets/gemi-tree-removal-cedar-city-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7rem);
+  --hero-y:clamp(4rem,9vw,8rem);
+  --container:75rem;
+  --measure:62ch;
+  /* TYPE */
+  --display:'Newsreader',Georgia,'Times New Roman',serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --h1:clamp(2.25rem,5vw,3.4rem);
+  --h2:clamp(1.75rem,3.4vw,2.4rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.1;
+  --track-head:-.015em;
+  /* COLOR — forest/pine brand, warm bark + ochre accent */
+  --ink:#1d2520;       /* near-black warm ink */
+  --ink-2:#525b54;
+  --ink-3:#828b83;
+  --line:#e3e6e1;
+  --bg:#ffffff;
+  --bg-2:#f4f2ec;      /* warm parchment alt section */
+  --bg-3:#eef1ea;      /* soft sage */
+  --brand:#1f3d2b;     /* deep pine */
+  --brand-2:#356145;   /* mid forest */
+  --brand-d:#14271b;   /* darkest pine (dark sections) */
+  --bark:#6b4a2f;      /* warm bark brown */
+  --accent:#c8731f;    /* ochre/amber — CTAs only */
+  --accent-d:#a85d14;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,28,22,.06);
+  --sh-2:0 2px 4px rgba(20,28,22,.06),0 4px 10px rgba(20,28,22,.05);
+  --sh-3:0 6px 14px rgba(20,28,22,.08),0 14px 30px rgba(20,28,22,.08);
+  --sh-4:0 10px 20px rgba(20,28,22,.10),0 28px 56px rgba(20,28,22,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:600;letter-spacing:var(--track-head)}
+p{max-width:var(--measure)}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-2)}
+.eyebrow.on-dark{color:#9ec9ad}
+section{padding-block:var(--section-y)}
+
+/* ---- Buttons ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;min-height:52px;padding:0 1.7rem;border-radius:var(--r-m);border:2px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--brand);border-color:#cbd3c8}
+.btn-ghost:hover{border-color:var(--brand);background:rgba(31,61,43,.04);transform:translateY(-2px)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.4)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* ---- Header ---- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:74px}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--brand);letter-spacing:-.01em}
+.brand .mark{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--brand);color:#fff;flex:none}
+.brand .mark svg{width:23px;height:23px}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.header-actions{display:flex;align-items:center;gap:var(--s3)}
+.header-phone{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);font-size:1.02rem}
+.header-phone svg{width:18px;height:18px;color:var(--brand-2)}
+.header-phone span{font-variant-numeric:tabular-nums}
+.header-cta{display:inline-flex}
+@media(max-width:860px){.header-phone .label{display:none}.header-cta{display:none}}
+
+/* ---- Hero (split panel) ---- */
+.hero{background:var(--bg-2);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,4vw,4rem);align-items:center;padding-block:var(--hero-y)}
+.hero-copy{max-width:34rem}
+.hero h1{font-size:var(--h1);font-weight:700;color:var(--ink);margin:1.1rem 0 0}
+.hero h1 .accentword{color:var(--brand-2);font-style:italic}
+.hero-lede{font-size:1.15rem;color:var(--ink-2);margin-top:1.2rem;max-width:36ch}
+.hero-rating{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;padding:.55rem .95rem;background:#fff;border:1px solid var(--line);border-radius:var(--r-pill);box-shadow:var(--sh-1)}
+.stars{display:inline-flex;gap:1px;color:#e0a82e}
+.stars svg{width:17px;height:17px}
+.hero-rating b{font-weight:700}
+.hero-rating .muted{color:var(--ink-2);font-size:.92rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:1.8rem}
+.hero-trust{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.7rem;font-size:.9rem;color:var(--ink-2)}
+.hero-trust span{display:inline-flex;align-items:center;gap:.45rem}
+.hero-trust svg{width:16px;height:16px;color:var(--brand-2)}
+.hero-media{position:relative}
+.hero-media .frame{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);aspect-ratio:3/4}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:var(--r-m);box-shadow:var(--sh-3);padding:.85rem 1.05rem;display:flex;align-items:center;gap:.7rem;max-width:230px}
+.hero-badge .ico{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:var(--bg-3);color:var(--brand);flex:none}
+.hero-badge .ico svg{width:21px;height:21px}
+.hero-badge b{display:block;font-family:var(--display);font-size:1.15rem;line-height:1;color:var(--ink)}
+.hero-badge small{font-size:.78rem;color:var(--ink-2);line-height:1.3;display:block;margin-top:2px}
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+  .hero-media{max-width:440px;margin-inline:auto;width:100%}
+  .hero-badge{left:8px}
+}
+
+/* ---- Trust strip ---- */
+.trustbar{background:var(--brand-d);color:#eaf1ea}
+.trustbar .container{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4);padding-block:var(--s5)}
+.trust-item{display:flex;flex-direction:column;gap:.2rem}
+.trust-item .num{font-family:var(--display);font-size:1.9rem;font-weight:700;color:#fff;line-height:1}
+.trust-item .lab{font-size:.86rem;color:#a9c2b0}
+.trust-item .lab .stars{vertical-align:-2px}
+@media(max-width:760px){.trustbar .container{grid-template-columns:repeat(2,1fr);gap:var(--s4) var(--s3)}}
+
+/* ---- Section heading block ---- */
+.sec-head{max-width:46rem;margin-bottom:var(--s5)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{font-size:var(--h2);margin-top:.7rem;color:var(--ink)}
+.sec-head p{color:var(--ink-2);margin-top:.9rem;font-size:1.06rem}
+.sec-head.center p{margin-inline:auto}
+
+/* ---- Services ---- */
+.services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s4);box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d4dccd}
+.svc-card .ico{display:grid;place-items:center;width:54px;height:54px;border-radius:14px;background:var(--bg-3);color:var(--brand);margin-bottom:var(--s3)}
+.svc-card .ico svg{width:27px;height:27px}
+.svc-card h3{font-size:1.3rem;color:var(--ink);margin-bottom:.5rem}
+.svc-card p{color:var(--ink-2);font-size:.98rem;max-width:none}
+.svc-card.feature{grid-column:span 2;background:linear-gradient(120deg,var(--brand) 0%,var(--brand-2) 100%);color:#fff;border:none;display:grid;grid-template-columns:1fr auto;gap:var(--s4);align-items:center}
+.svc-card.feature .ico{background:rgba(255,255,255,.14);color:#fff}
+.svc-card.feature h3{color:#fff}
+.svc-card.feature p{color:#dbe8de;max-width:48ch}
+.svc-card.feature .btn{flex:none}
+@media(max-width:680px){
+  .svc-grid{grid-template-columns:1fr}
+  .svc-card.feature{grid-column:span 1;grid-template-columns:1fr;text-align:left}
+}
+
+/* ---- Why us (split: copy + image) ---- */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.why-media{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:4/3}
+.why-media img{width:100%;height:100%;object-fit:cover}
+.why-list{list-style:none;margin-top:var(--s4);display:grid;gap:var(--s3)}
+.why-list li{display:flex;gap:var(--s2);align-items:flex-start}
+.why-list .ico{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:#fff;border:1px solid var(--line);color:var(--brand-2);flex:none;box-shadow:var(--sh-1)}
+.why-list .ico svg{width:21px;height:21px}
+.why-list h4{font-family:var(--body);font-weight:700;font-size:1.04rem;color:var(--ink);margin-bottom:.15rem;letter-spacing:0}
+.why-list p{color:var(--ink-2);font-size:.96rem;max-width:42ch}
+@media(max-width:840px){.why-grid{grid-template-columns:1fr}.why-media{order:-1;max-height:340px}}
+
+/* ---- Process ---- */
+.process{background:var(--bg)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);counter-reset:step}
+.step{position:relative;padding:var(--s4) var(--s3);background:var(--bg-2);border-radius:var(--r-l);border:1px solid var(--line)}
+.step .n{counter-increment:step;font-family:var(--display);font-size:1.05rem;font-weight:700;color:#fff;width:40px;height:40px;border-radius:var(--r-pill);background:var(--brand);display:grid;place-items:center;margin-bottom:var(--s3)}
+.step .n::before{content:"0" counter(step)}
+.step h4{font-family:var(--display);font-size:1.2rem;color:var(--ink);margin-bottom:.4rem;letter-spacing:0}
+.step p{color:var(--ink-2);font-size:.95rem;max-width:none}
+@media(max-width:880px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.steps{grid-template-columns:1fr}}
+
+/* ---- Reviews ---- */
+.reviews{background:var(--brand-d);color:#e9f0ea}
+.reviews .sec-head h2{color:#fff}
+.reviews .sec-head p{color:#b3cbba}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.rev-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-l);padding:var(--s4)}
+.rev-card .stars{margin-bottom:var(--s2)}
+.rev-card blockquote{font-family:var(--display);font-size:1.2rem;line-height:1.5;color:#f3f7f3;font-weight:400}
+.rev-card .by{margin-top:var(--s3);display:flex;align-items:center;gap:.65rem;font-size:.92rem;color:#bcd2c2}
+.rev-card .by .av{width:36px;height:36px;border-radius:var(--r-pill);background:var(--brand-2);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1rem;flex:none}
+.rev-card .by b{color:#fff;font-family:var(--body);font-weight:600}
+.rev-foot{margin-top:var(--s5);display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3);justify-content:space-between}
+.rev-foot .gline{display:inline-flex;align-items:center;gap:.6rem;color:#cfe0d4;font-size:.95rem}
+.rev-foot .gline .stars svg{width:18px;height:18px}
+@media(max-width:760px){.rev-grid{grid-template-columns:1fr}}
+
+/* ---- Gallery ---- */
+.gallery{background:var(--bg)}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s2)}
+.gal-grid figure{position:relative;border-radius:var(--r-m);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--sh-1)}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform 420ms cubic-bezier(.2,.6,.2,1)}
+.gal-grid figure:hover img{transform:scale(1.05)}
+@media(max-width:780px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:440px){.gal-grid{grid-template-columns:1fr}}
+
+/* ---- Service area ---- */
+.area{background:var(--bg-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+.area-towns{list-style:none;display:flex;flex-wrap:wrap;gap:.55rem;margin-top:var(--s4)}
+.area-towns li{background:#fff;border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.92rem;font-weight:600;color:var(--ink-2);display:inline-flex;align-items:center;gap:.4rem}
+.area-towns svg{width:14px;height:14px;color:var(--brand-2)}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line)}
+.map-wrap iframe{display:block;width:100%;height:380px;border:0;filter:grayscale(.12)}
+@media(max-width:840px){.area-grid{grid-template-columns:1fr}}
+
+/* ---- FAQ ---- */
+.faq{background:var(--bg)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5) var(--s6)}
+.faq-item h3{font-family:var(--display);font-size:1.18rem;color:var(--ink);margin-bottom:.5rem;display:flex;gap:.6rem;align-items:flex-start;letter-spacing:0}
+.faq-item h3 svg{width:20px;height:20px;color:var(--accent);flex:none;margin-top:3px}
+.faq-item p{color:var(--ink-2);font-size:.99rem}
+@media(max-width:760px){.faq-grid{grid-template-columns:1fr;gap:var(--s4)}}
+
+/* ---- CTA + form ---- */
+.cta{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-d) 100%);color:#eaf1ea;position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 88% -10%,rgba(255,255,255,.07),transparent 60%);pointer-events:none}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;position:relative;z-index:1}
+.cta h2{font-size:var(--h2);color:#fff}
+.cta-copy p{color:#c4d7c9;margin-top:1rem;font-size:1.08rem}
+.cta-points{list-style:none;margin-top:var(--s4);display:grid;gap:.8rem}
+.cta-points li{display:flex;align-items:center;gap:.7rem;color:#dce8df;font-size:1rem}
+.cta-points svg{width:19px;height:19px;color:#9ed7ae;flex:none}
+.cta-call{margin-top:var(--s4)}
+.cta-call .ph{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-size:1.7rem;font-weight:700;color:#fff}
+.cta-call .ph svg{width:24px;height:24px;color:var(--accent)}
+.form-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.5rem,3vw,2.4rem);box-shadow:var(--sh-4)}
+.form-card h3{font-family:var(--display);font-size:1.4rem;color:var(--ink);margin-bottom:.35rem;letter-spacing:0}
+.form-card .sub{color:var(--ink-2);font-size:.95rem;margin-bottom:var(--s3)}
+.field{margin-bottom:var(--s2)}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:.35rem}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:#fcfdfb;transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(53,97,69,.12)}
+.field textarea{resize:vertical;min-height:88px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+.form-card .btn{width:100%;margin-top:var(--s2)}
+.form-note{font-size:.78rem;color:var(--ink-3);text-align:center;margin-top:.8rem}
+@media(max-width:860px){.cta-grid{grid-template-columns:1fr}.field-row{grid-template-columns:1fr}}
+
+/* ---- Footer ---- */
+.site-footer{background:var(--brand-d);color:#b9cdbf;padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s5);padding-bottom:var(--s5);border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand .brand{color:#fff}
+.foot-brand .brand small{color:#8fae98}
+.foot-brand p{color:#a9c2b0;margin-top:var(--s3);font-size:.95rem;max-width:34ch}
+.foot-col h4{font-family:var(--body);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#8fae98;margin-bottom:var(--s3)}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a,.foot-col address{color:#cbdccf;font-size:.95rem;font-style:normal;line-height:1.5}
+.foot-col a:hover{color:#fff}
+.foot-nap{display:grid;gap:.55rem}
+.foot-nap .row{display:flex;gap:.6rem;align-items:flex-start}
+.foot-nap svg{width:17px;height:17px;color:#7fb591;flex:none;margin-top:2px}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);padding-top:var(--s4);font-size:.85rem;color:#85a48f}
+@media(max-width:780px){.foot-grid{grid-template-columns:1fr;gap:var(--s4)}}
+
+/* ---- Sticky mobile call bar ---- */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(20,28,22,.1);padding:.6rem .85rem;gap:.6rem}
+.callbar .btn{flex:1;min-height:50px}
+.callbar .btn-call{background:var(--brand);color:#fff}
+.callbar .btn-call:hover{background:var(--brand-2)}
+@media(max-width:860px){.callbar{display:flex}body{padding-bottom:74px}}
+
+/* ---- Reveal ---- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Gemi Tree home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 0 1-2.4-4.8A3.5 3.5 0 0 1 12 2.5a3.5 3.5 0 0 1 5.4 1.7A3 3 0 0 1 15 9"/><path d="M12 15l-3.2-2.1A3 3 0 0 1 10.5 7.5"/><path d="M12 13l3-2a3 3 0 0 0-1.6-3.4"/></svg>
+      </span>
+      <span>Gemi Tree<small>Trimming &amp; Removal</small></span>
+    </a>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+14355590480">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="label">(435) 559-0480</span>
+      </a>
+      <a class="btn btn-primary header-cta" href="#quote">Get a Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Cedar City, Utah &middot; Tree Care</span>
+        <h1>Cedar City tree <span class="accentword">trimming &amp; removal</span>, done right the first time.</h1>
+        <p class="hero-lede">One responsive crew for the pruning, take-downs and stump work your trees need — whether it's your home or a row of rentals.</p>
+        <div class="hero-rating" role="img" aria-label="Rated 4.8 out of 5 from 49 Google reviews">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+          </span>
+          <span><b>4.8</b> <span class="muted">&middot; 49 Google reviews</span></span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#quote">Get a Free Estimate</a>
+          <a class="btn btn-ghost" href="tel:+14355590480">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+            (435) 559-0480
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free, no-pressure quotes</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Homes &amp; rental properties</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full clean-up included</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="frame">
+          <img src="assets/gemi-tree-removal-cedar-city-hero.jpg" width="576" height="768" fetchpriority="high" decoding="async" alt="Gemi Tree arborist climbing high to remove a large tree in Cedar City, Utah">
+        </div>
+        <div class="hero-badge">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 22 12 17.5 5.5 22 7.5 13.5 2 9h7z"/></svg></span>
+          <span><b>Trusted locally</b><small>4.8&#9733; from 49 Cedar City reviews</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trust strip ===== -->
+  <section class="trustbar" aria-label="At a glance">
+    <div class="container">
+      <div class="trust-item"><span class="num">4.8&#9733;</span><span class="lab">Average Google rating</span></div>
+      <div class="trust-item"><span class="num">49</span><span class="lab">Verified Google reviews</span></div>
+      <div class="trust-item"><span class="num">1 crew</span><span class="lab">Homes &amp; rentals, one bid</span></div>
+      <div class="trust-item"><span class="num">Free</span><span class="lab">On-site estimates</span></div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>Tree work for Cedar City homes &amp; properties</h2>
+        <p>From a single overgrown limb to a full take-down and stump, Gemi Tree handles the whole job — and hauls the mess away when we're done.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc-card reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5l-9 9"/><path d="M9.5 8.5L21 20"/><path d="M3 21l4.5-4.5"/><circle cx="16.5" cy="5.5" r="2.5"/></svg></span>
+          <h3>Tree Trimming &amp; Pruning</h3>
+          <p>Shaping, deadwood removal and crown thinning that keeps trees healthy, safe and clear of your roof and power lines.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M8 22h8"/><path d="M12 16c-4 0-7-2.5-7-6.5 0 0 3-1 3-4 0 0 4 1 4 4.5 0 0 4-1.5 4-5 0 0 3 2 3 5.5 0 4-3.5 5.5-7 5.5z"/></svg></span>
+          <h3>Tree Removal</h3>
+          <p>Safe, controlled take-downs of dead, leaning or storm-damaged trees in tight yards — rigged down piece by piece, never dropped on what matters.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="8" ry="3.5"/><path d="M4 9c0 5 3.5 7 8 7s8-2 8-7"/><path d="M12 12.5v3"/></svg></span>
+          <h3>Stump Grinding</h3>
+          <p>We grind the leftover stump below grade so you get your yard back — no trip hazard, no eyesore, nothing to mow around.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l5-4 5 4v13"/><path d="M19 21V11l-4-3"/><path d="M9 21v-4h2v4"/></svg></span>
+          <h3>Rental &amp; Property Tree Care</h3>
+          <p>Manage a few rentals or a portfolio? One responsive point of contact, one fair bid, and trees handled across every address you own.</p>
+        </article>
+        <article class="svc-card feature reveal">
+          <div>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <h3>Storm &amp; broken-limb response</h3>
+            <p>Big branch down or a tree threatening the house after a Cedar City wind? Call us — we'll get out, assess it, and make it safe.</p>
+          </div>
+          <a class="btn btn-primary" href="tel:+14355590480">Call (435) 559-0480</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why us ===== -->
+  <section class="why" id="why">
+    <div class="container why-grid">
+      <div class="why-copy reveal">
+        <span class="eyebrow">Why Gemi Tree</span>
+        <h2 style="font-size:var(--h2);margin-top:.7rem;color:var(--ink)">Quick to respond, fair on the bid</h2>
+        <p style="color:var(--ink-2);margin-top:.9rem;font-size:1.06rem">The reviews say it plainly: we show up, give honest suggestions, and price the work fairly — for one tree or a whole property.</p>
+        <ul class="why-list">
+          <li>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h4>Quick to respond</h4><p>We answer, we show up, and we get you a clear quote without the runaround.</p></div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l3 1m0 0l-3 9a5 5 0 0 0 6 0l-3-9zm0 0l3-1"/><path d="M21 6l-3 1m0 0l3 9a5 5 0 0 1-6 0l3-9zm0 0l-3-1"/><path d="M12 3v18"/><path d="M7 21h10"/></svg></span>
+            <div><h4>A fair, honest bid</h4><p>Straight pricing and real advice on what your trees actually need — and what can wait.</p></div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v8H3z"/><path d="M16 10h3l2 3v2h-5z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+            <div><h4>We haul it all away</h4><p>Limbs, logs and debris cleaned up and removed — your yard left tidier than we found it.</p></div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 3h3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-3"/><path d="M12 7v10M8 11h8"/></svg></span>
+            <div><h4>Built for multiple properties</h4><p>One smooth process whether it's your home or every rental on your list — same crew, same standard.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-media reveal">
+        <img src="assets/gemi-tree-climbing-crew-cedar-city.jpg" width="769" height="576" loading="lazy" decoding="async" alt="Gemi Tree climber working in a large residential tree in Cedar City with cleanup underway">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">How it works</span>
+        <h2>From first call to clean yard</h2>
+        <p>A simple, no-surprises process — most jobs are quoted fast and scheduled around your week.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="n" aria-hidden="true"></div><h4>Call or request</h4><p>Tell us what's going on — a quick call or the form is all it takes to get started.</p></div>
+        <div class="step reveal"><div class="n" aria-hidden="true"></div><h4>On-site look &amp; bid</h4><p>We assess the trees, talk through options, and give you a fair, written estimate.</p></div>
+        <div class="step reveal"><div class="n" aria-hidden="true"></div><h4>Scheduled &amp; done</h4><p>We set a time that works, then trim, remove or grind — safely and efficiently.</p></div>
+        <div class="step reveal"><div class="n" aria-hidden="true"></div><h4>Cleaned up</h4><p>All debris hauled off and the site left tidy. Nothing left for you to deal with.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow on-dark">From our Google reviews</span>
+        <h2>What Cedar City neighbors say</h2>
+        <p>A few words from real Google reviews — part of the 4.8&#9733; rating across 49 of them.</p>
+      </div>
+      <div class="rev-grid">
+        <article class="rev-card reveal">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+          </span>
+          <blockquote>&ldquo;The whole process was as smooth as could be both for my rental houses and my personal home. Jonathan was quick to respond, and made a fair bid.&rdquo;</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">B</span><span>&mdash; <b>Becca&nbsp;W.</b>, Google review</span></div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+          </span>
+          <blockquote>&ldquo;Jonathan was very responsive and easy to work with! They did a great job giving suggestions on what we needed to do to the trees we wanted trimmed.&rdquo;</blockquote>
+          <div class="by"><span class="av" aria-hidden="true">S</span><span>&mdash; <b>Sarah&nbsp;D.</b>, Google review</span></div>
+        </article>
+      </div>
+      <div class="rev-foot reveal">
+        <span class="gline">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .6l3.5 7.1 7.9 1.1-5.7 5.6 1.3 7.8L12 19.8 5.7 23.2 7 15.4 1.3 9.8l7.9-1.1z"/></svg>
+          </span>
+          <span><b style="color:#fff">4.8 out of 5</b> &middot; 49 Google reviews</span>
+        </span>
+        <a class="btn btn-ghost on-dark" href="https://search.google.com/local/writereview?placeid=ChIJzeiyysNltYARFR5SH9td850" target="_blank" rel="noopener">Leave us a Google review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Recent work</span>
+        <h2>On the job around Cedar City</h2>
+        <p>Real jobs, real trees — trimming, removals and cleanup across the area.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="reveal"><img src="assets/gemi-tree-tree-removal-cleanup-cedar-city.jpg" width="768" height="576" loading="lazy" decoding="async" alt="Tree removal and branch cleanup at a Cedar City home by Gemi Tree"></figure>
+        <figure class="reveal"><img src="assets/gemi-tree-arborist-team-cedar-city.jpg" width="768" height="576" loading="lazy" decoding="async" alt="Two Gemi Tree climbers roped into a tree during a removal in Cedar City"></figure>
+        <figure class="reveal"><img src="assets/gemi-tree-tree-trimming-cedar-city.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Tall residential tree being trimmed and thinned in Cedar City, Utah"></figure>
+        <figure class="reveal"><img src="assets/gemi-tree-mature-tree-care-cedar-city.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Mature pine tree cared for over a Cedar City home at sunset"></figure>
+        <figure class="reveal"><img src="assets/gemi-tree-tree-pruning-cedar-city.jpg" width="704" height="528" loading="lazy" decoding="async" alt="Tall tree pruned against a clear Cedar City sky by Gemi Tree"></figure>
+        <figure class="reveal"><img src="assets/gemi-tree-climbing-crew-cedar-city.jpg" width="769" height="576" loading="lazy" decoding="async" alt="Gemi Tree crew member high in a large tree on a Cedar City property"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Service area ===== -->
+  <section class="area" id="area">
+    <div class="container area-grid">
+      <div class="reveal">
+        <span class="eyebrow">Service area</span>
+        <h2 style="font-size:var(--h2);margin-top:.7rem;color:var(--ink)">Serving Cedar City &amp; Iron County</h2>
+        <p style="color:var(--ink-2);margin-top:.9rem;font-size:1.06rem">Based on Cedar St in Cedar City, we cover the city and the surrounding Iron County communities. Not sure if you're in range? Just give us a call.</p>
+        <ul class="area-towns">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg>Cedar City</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg>Enoch</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg>Cross Hollow</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg>Kanarraville</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg>Iron County</li>
+        </ul>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe
+          title="Map of Gemi Tree service area in Cedar City, Utah"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-113.20%2C37.62%2C-113.00%2C37.74&amp;layer=mapnik&amp;marker=37.6688%2C-113.0618"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Good to know</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>Do you give free estimates?</h3>
+          <p>Yes. We come out, look at the trees, and give you a fair, written bid at no cost — for one tree or a whole property.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>Do you clean up afterward?</h3>
+          <p>Always. Limbs, logs and debris are hauled away and the site is left tidy. You don't have to lift a finger after we leave.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>Can you handle several rental properties?</h3>
+          <p>Absolutely — it's something we do often. One point of contact and one fair bid covers the trees across every address you manage.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>Do you remove the stump too?</h3>
+          <p>We can. Stump grinding takes the leftover stump below grade so you get clean, usable yard back with nothing left to mow around.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>What areas do you serve?</h3>
+          <p>Cedar City and the surrounding Iron County communities — Enoch, Kanarraville and nearby. Call us if you're not sure you're in range.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><path d="M12 17h.01"/></svg>How fast can you come out?</h3>
+          <p>We're known for being quick to respond. Give us a call and we'll get you on the schedule as soon as we can — sooner for anything unsafe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA + form ===== -->
+  <section class="cta" id="quote">
+    <div class="container cta-grid">
+      <div class="cta-copy reveal">
+        <span class="eyebrow on-dark">Free estimate</span>
+        <h2>Let's take a look at your trees</h2>
+        <p>Tell us what you need and we'll get back to you with a fair bid. Homes, rentals, one tree or twenty.</p>
+        <ul class="cta-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Free, no-pressure on-site quote</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Quick to respond, fair on price</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Full clean-up and haul-away included</li>
+        </ul>
+        <div class="cta-call">
+          <span style="display:block;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;color:#9ec9ad;margin-bottom:.3rem">Prefer to call?</span>
+          <a class="ph" href="tel:+14355590480"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>(435) 559-0480</a>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>Request your free estimate</h3>
+        <p class="sub">We'll reach out to set up a time to look at the trees.</p>
+        <form action="https://formsubmit.co/el/gemitree-placeholder" method="POST" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(435) 000-0000" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com">
+            </div>
+          </div>
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option value="" selected>Select a service…</option>
+              <option>Tree trimming / pruning</option>
+              <option>Tree removal</option>
+              <option>Stump grinding</option>
+              <option>Multiple / rental properties</option>
+              <option>Storm or broken-limb response</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="Tell us about the trees, the property, and anything urgent."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Request My Free Estimate
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note">Or call/text <a href="tel:+14355590480" style="color:var(--brand-2);font-weight:600">(435) 559-0480</a> — we'll get right back to you.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" aria-label="Gemi Tree home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 0 1-2.4-4.8A3.5 3.5 0 0 1 12 2.5a3.5 3.5 0 0 1 5.4 1.7A3 3 0 0 1 15 9"/><path d="M12 15l-3.2-2.1A3 3 0 0 1 10.5 7.5"/><path d="M12 13l3-2a3 3 0 0 0-1.6-3.4"/></svg>
+          </span>
+          <span>Gemi Tree<small>Trimming &amp; Removal</small></span>
+        </a>
+        <p>Cedar City's responsive crew for tree trimming, removal and stump grinding — for homes and rental properties across Iron County.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Tree Trimming &amp; Pruning</a></li>
+          <li><a href="#services">Tree Removal</a></li>
+          <li><a href="#services">Stump Grinding</a></li>
+          <li><a href="#services">Rental &amp; Property Care</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="foot-nap">
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+14355590480">(435) 559-0480</a></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.2"/></svg><address>Gemi Tree Trimming and Removal<br>3215 Cedar St<br>Cedar City, UT 84721</address></div>
+          <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Call for current hours</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Gemi Tree Trimming and Removal. All rights reserved.</span>
+      <span>Cedar City, Utah &middot; Tree Trimming, Removal &amp; Stump Grinding</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Sticky mobile call bar ===== -->
+<div class="callbar">
+  <a class="btn btn-call" href="tel:+14355590480">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.7 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.27a2 2 0 0 1 2.11-.45c.74.34 1.53.57 2.34.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now
+  </a>
+  <a class="btn btn-primary" href="#quote">Free Estimate</a>
+</div>
+
+<!-- ===== JSON-LD (HomeAndConstructionBusiness — NO review/aggregateRating per Google policy) ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Gemi Tree Tree Trimming and Removal",
+  "image":"https://savcab.github.io/websites/gemi-tree/assets/gemi-tree-removal-cedar-city-hero.jpg",
+  "url":"https://savcab.github.io/websites/gemi-tree/",
+  "telephone":"+14355590480",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"3215 Cedar St",
+    "addressLocality":"Cedar City",
+    "addressRegion":"UT",
+    "postalCode":"84721",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":37.7792763,"longitude":-113.1130491},
+  "areaServed":[
+    {"@type":"City","name":"Cedar City"},
+    {"@type":"City","name":"Enoch"},
+    {"@type":"City","name":"Kanarraville"},
+    {"@type":"AdministrativeArea","name":"Iron County"}
+  ],
+  "knowsAbout":["Tree trimming","Tree pruning","Tree removal","Stump grinding"],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Tree Services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Trimming & Pruning"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Tree Removal"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump Grinding"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rental & Property Tree Care"}}
+    ]
+  }
+}
+</script>
+
+<script>
+// Scroll-reveal: secondary content, first view only, reduced-motion safe.
+(function(){
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if(rm || !('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  },{rootMargin:'0px 0px -8% 0px',threshold:0.08});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>

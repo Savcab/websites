@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lawn Mowing in Mitchell, SD | Mitchell Mowing &amp; Lawn Care</title>
+<meta name="description" content="5.0-star, locally run lawn mowing in Mitchell, SD. Mowed when your lawn needs it, plus trimming, leaf cleanup &amp; core aeration. Call 605-999-9507 for a free quote." />
+<link rel="canonical" href="https://savcab.github.io/websites/mitchell-mowing/" />
+
+<meta property="og:title" content="Lawn Mowing in Mitchell, SD | Mitchell Mowing &amp; Lawn Care" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://savcab.github.io/websites/mitchell-mowing/" />
+<meta property="og:image" content="https://savcab.github.io/websites/mitchell-mowing/assets/hero-mitchell-mowing-truck-mitchell-sd.jpg" />
+<meta property="og:description" content="A 5.0-star, locally run lawn care service in Mitchell, SD. Mowing on your schedule, leaf cleanup, and core aeration." />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(4.5rem,11vw,11rem);
+  --container:75rem;
+  --measure:62ch;
+  /* TYPE */
+  --display:"Fraunces",Georgia,serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --fs-h1:clamp(2.25rem,5.4vw,3.5rem);
+  --fs-h2:clamp(1.75rem,3.4vw,2.5rem);
+  --fs-h3:1.375rem;
+  --fs-body:1.0625rem;
+  --fs-small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.018em;
+  /* COLOR — brand red drawn from the Mitchell Mowing truck mark */
+  --ink:#211d1b;
+  --ink-2:#5c544f;
+  --ink-3:#8a817b;
+  --line:#e9e3db;
+  --bg:#ffffff;
+  --bg-2:#f7f3ec;     /* warm cream */
+  --bg-3:#1d1a18;     /* near-black charcoal for dark sections */
+  --brand:#b3221f;    /* signature red */
+  --brand-d:#8c1916;  /* darker red for hovers */
+  --brand-ink:#7a1512;
+  --accent:#b3221f;
+  --leaf:#3f6b3a;     /* supporting deep green — sparingly, for the lawn-care nod */
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(33,29,27,.06);
+  --sh-2:0 2px 4px rgba(33,29,27,.06),0 4px 10px rgba(33,29,27,.05);
+  --sh-3:0 6px 14px rgba(33,29,27,.07),0 14px 30px rgba(33,29,27,.09);
+  --sh-4:0 10px 20px rgba(33,29,27,.09),0 28px 56px rgba(33,29,27,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:600;letter-spacing:var(--track-head)}
+p{max-width:var(--measure)}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+section[id]{scroll-margin-top:84px}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:inline-block}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.6}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--body);font-weight:600;font-size:1rem;line-height:1;padding:1rem 1.75rem;border-radius:var(--r-pill);min-height:52px;cursor:pointer;border:1.5px solid transparent;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--brand-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-2px)}
+.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:72px;flex-wrap:nowrap}
+.brand{display:flex;align-items:center;gap:.7rem;min-width:0;flex-shrink:1}
+.brand-mark{width:44px;height:44px;flex:none}
+.brand-name{font-family:var(--display);font-weight:700;font-size:1.18rem;letter-spacing:-.01em;line-height:1.05;color:var(--ink);white-space:nowrap}
+.brand-name small{display:block;font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brand)}
+.nav-links{display:flex;align-items:center;gap:var(--s5);list-style:none}
+.nav-links a{font-weight:500;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:var(--s3);flex:none}
+.nav-phone{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:var(--ink);font-size:1rem;white-space:nowrap}
+.nav-phone svg{width:18px;height:18px;color:var(--brand)}
+.nav-toggle{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;color:#fff;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,17,16,.62) 0%,rgba(20,17,16,.42) 38%,rgba(20,17,16,.74) 100%)}
+.hero-inner{padding-block:var(--hero-y);max-width:46rem}
+.hero h1{font-size:var(--fs-h1);font-weight:600;margin-bottom:var(--s3);text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;color:#ffd9d6}
+.hero-sub{font-size:clamp(1.05rem,1.7vw,1.28rem);color:rgba(255,255,255,.92);max-width:38ch;margin-bottom:var(--s5);line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s4);margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.2)}
+.hero-trust .stars{color:#ffc83d;letter-spacing:2px;font-size:1.05rem}
+.hero-trust b{font-weight:700}
+.hero-trust-item{display:flex;flex-direction:column;gap:.15rem;font-size:.92rem;color:rgba(255,255,255,.88)}
+.hero-trust-item .big{font-family:var(--display);font-size:1.35rem;font-weight:700;color:#fff;line-height:1}
+
+/* ---------- trust strip ---------- */
+.strip{background:var(--bg-3);color:#fff}
+.strip .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4);padding-block:var(--s4)}
+.strip-item{display:flex;align-items:center;gap:.85rem;min-width:0}
+.strip-item svg{width:26px;height:26px;color:#f2a8a4;flex:none}
+.strip-item .t{font-weight:600;font-size:.98rem;color:#fff}
+.strip-item .s{font-size:.82rem;color:rgba(255,255,255,.62)}
+
+/* ---------- intro / about split ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.split-media{position:relative}
+.split-media img{width:100%;border-radius:var(--r-l);box-shadow:var(--sh-3);aspect-ratio:4/3;object-fit:cover}
+.split-media .badge{position:absolute;left:-14px;bottom:-14px;background:var(--brand);color:#fff;border-radius:var(--r-m);padding:.85rem 1.1rem;box-shadow:var(--sh-3);max-width:230px}
+.split-media .badge .n{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1}
+.split-media .badge .l{font-size:.8rem;color:rgba(255,255,255,.9);margin-top:.15rem}
+.split h2{font-size:var(--fs-h2);margin:var(--s2) 0 var(--s3)}
+.split p+p{margin-top:var(--s3)}
+.signature{margin-top:var(--s4);font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--ink);font-weight:500}
+.signature small{display:block;font-family:var(--body);font-style:normal;font-size:.85rem;letter-spacing:.04em;color:var(--ink-3);margin-top:.2rem;font-weight:500}
+
+/* ---------- section heading ---------- */
+.sec-head{max-width:40rem;margin-bottom:var(--s6)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{font-size:var(--fs-h2);margin:var(--s2) 0 var(--s3)}
+.sec-head p{color:var(--ink-2)}
+.sec-head.center p{margin-inline:auto}
+
+/* ---------- services ---------- */
+.services{background:var(--bg-2)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s5) var(--s4);box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#ecd4d3}
+.svc-icon{width:54px;height:54px;border-radius:var(--r-m);background:#fbeceb;color:var(--brand);display:grid;place-items:center;margin-bottom:var(--s3)}
+.svc-icon svg{width:27px;height:27px}
+.svc-card h3{font-size:var(--fs-h3);margin-bottom:.6rem;color:var(--ink)}
+.svc-card p{font-size:.98rem;color:var(--ink-2);line-height:1.55}
+
+/* ---------- why us ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.5rem,3vw,2.75rem) clamp(2rem,5vw,4rem)}
+.why-item{display:flex;gap:var(--s3);align-items:flex-start}
+.why-item .ic{width:48px;height:48px;flex:none;border-radius:var(--r-m);background:var(--bg-2);color:var(--brand);display:grid;place-items:center;border:1px solid var(--line)}
+.why-item .ic svg{width:24px;height:24px}
+.why-item h3{font-size:1.18rem;margin-bottom:.35rem;color:var(--ink)}
+.why-item p{font-size:.96rem;color:var(--ink-2);line-height:1.55;max-width:42ch}
+
+/* ---------- before/after gallery ---------- */
+.gallery{background:var(--bg-2)}
+.ba-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4)}
+.ba-fig{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);background:#fff;border:1px solid var(--line);margin:0}
+.ba-fig img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.ba-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem 1.1rem .9rem;background:linear-gradient(180deg,transparent,rgba(20,17,16,.82));color:#fff;font-size:.9rem;font-weight:500}
+.ba-tag{position:absolute;top:.85rem;left:.85rem;background:var(--brand);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .7rem;border-radius:var(--r-pill)}
+
+/* ---------- results strip (smaller mow shots) ---------- */
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);margin-top:var(--s5)}
+.shots figure{margin:0;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);border:1px solid var(--line)}
+.shots img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform var(--t)}
+.shots figure:hover img{transform:scale(1.05)}
+
+/* ---------- process ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4);counter-reset:step}
+.step{position:relative;padding-top:var(--s4)}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:var(--display);font-weight:600;font-size:2.4rem;color:#ecd4d3;line-height:1;display:block;margin-bottom:.6rem}
+.step h3{font-size:1.18rem;margin-bottom:.4rem;color:var(--ink)}
+.step p{font-size:.95rem;color:var(--ink-2);line-height:1.55;max-width:34ch}
+.step:not(:last-child)::after{content:"";position:absolute;top:1.1rem;left:3.4rem;right:-.5rem;height:1px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--bg-3);color:#fff}
+.reviews .sec-head h2{color:#fff}
+.reviews .sec-head p{color:rgba(255,255,255,.7)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.rev-card{background:#262220;border:1px solid #38322f;border-radius:var(--r-l);padding:var(--s4);display:flex;flex-direction:column;gap:var(--s3)}
+.rev-card .stars{color:#ffc83d;letter-spacing:2px;font-size:1rem}
+.rev-card blockquote{font-size:1rem;line-height:1.6;color:rgba(255,255,255,.9);font-family:var(--display);font-weight:400;font-style:italic}
+.rev-card .who{margin-top:auto;display:flex;align-items:center;gap:.7rem}
+.rev-card .av{width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--body);font-size:.95rem;flex:none}
+.rev-card .who .nm{font-weight:600;font-size:.95rem;color:#fff}
+.rev-card .who .src{font-size:.78rem;color:rgba(255,255,255,.5)}
+.rev-foot{margin-top:var(--s5);text-align:center;display:flex;flex-direction:column;align-items:center;gap:var(--s3)}
+.rev-foot .summary{display:inline-flex;align-items:center;gap:.7rem;font-size:1.05rem}
+.rev-foot .summary .stars{color:#ffc83d;letter-spacing:2px}
+
+/* ---------- service area ---------- */
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-list{display:flex;flex-wrap:wrap;gap:.6rem;margin:var(--s4) 0}
+.area-list span{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.92rem;font-weight:500;color:var(--ink-2)}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);line-height:0}
+.area-map iframe{width:100%;height:380px;border:0;display:block}
+
+/* ---------- CTA / quote ---------- */
+.cta{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff}
+.cta-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.cta h2{font-size:var(--fs-h2);color:#fff;margin-bottom:var(--s3)}
+.cta p{color:rgba(255,255,255,.9);margin-bottom:var(--s4)}
+.cta-points{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:var(--s4)}
+.cta-points li{display:flex;align-items:center;gap:.7rem;font-weight:500}
+.cta-points svg{width:20px;height:20px;color:#ffd9d6;flex:none}
+.cta-phone-big{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:700;font-size:clamp(1.6rem,3.2vw,2.1rem);color:#fff;margin-bottom:var(--s2)}
+.form-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.5rem,3vw,2.25rem);box-shadow:var(--sh-4);color:var(--ink)}
+.form-card h3{font-size:1.4rem;margin-bottom:.4rem}
+.form-card .fc-sub{font-size:.92rem;color:var(--ink-2);margin-bottom:var(--s3)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink-2);margin-bottom:.35rem}
+.field input,.field textarea,.field select{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg-2);transition:border-color var(--t),background var(--t)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand);background:#fff}
+.field textarea{resize:vertical;min-height:84px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.form-card .btn{width:100%}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:var(--s2)}
+
+/* ---------- FAQ ---------- */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3.5rem) clamp(2rem,5vw,4rem)}
+.faq-item{border-bottom:1px solid var(--line);padding-bottom:var(--s3)}
+.faq-item h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--ink)}
+.faq-item p{font-size:.96rem;color:var(--ink-2);line-height:1.6;max-width:48ch}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--bg-3);color:rgba(255,255,255,.7);padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s5)}
+.foot-brand .brand-name{color:#fff}
+.foot-brand p{font-size:.92rem;color:rgba(255,255,255,.6);margin-top:var(--s3);max-width:34ch}
+.foot-col h4{font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:var(--s3);font-weight:700}
+.foot-col a,.foot-col p{display:block;font-size:.95rem;color:rgba(255,255,255,.72);margin-bottom:.6rem}
+.foot-col a:hover{color:#fff}
+.foot-nap{font-style:normal}
+.foot-nap b{color:#fff;font-weight:600}
+.foot-bottom{border-top:1px solid #38322f;margin-top:var(--s5);padding-top:var(--s4);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);font-size:.82rem;color:rgba(255,255,255,.45)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--brand);box-shadow:0 -4px 18px rgba(0,0,0,.18)}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:.6rem;color:#fff;font-weight:700;font-size:1.05rem;padding:1rem;min-height:56px}
+.callbar svg{width:20px;height:20px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .nav-links{gap:var(--s4)}
+}
+@media (max-width:980px){
+  .nav-links{display:none}
+  .split,.area-grid,.cta-grid{grid-template-columns:1fr}
+  .area-grid .area-map{order:-1}
+  .svc-grid,.rev-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:not(:last-child)::after{display:none}
+}
+@media (max-width:860px){
+  .nav-phone span{display:none}
+  .nav-phone{padding:.4rem;border-radius:var(--r-pill)}
+}
+@media (max-width:760px){
+  .nav-cta .btn{padding:.7rem 1.1rem;min-height:44px;font-size:.92rem}
+  .brand-name small{display:none}
+  .svc-grid,.why-grid,.ba-grid,.rev-grid,.faq-grid,.shots,.steps,.form-row{grid-template-columns:1fr}
+  .shots{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .split-media .badge{left:0;bottom:-10px}
+  body{padding-bottom:56px}
+  .callbar{display:block}
+  .hero-trust{gap:var(--s3) var(--s4)}
+}
+@media (max-width:380px){
+  .brand-name{font-size:1.04rem}
+  .nav-cta .btn{padding:.65rem .95rem;font-size:.88rem}
+  .hero-trust-item .big{font-size:1.12rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Mitchell Mowing home">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="46" height="46" rx="11" fill="#b3221f"/>
+        <rect x="1.5" y="1.5" width="45" height="45" rx="10.5" stroke="#fff" stroke-opacity=".35"/>
+        <text x="24" y="33" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="27" font-weight="700" fill="#fff">M</text>
+      </svg>
+      <span class="brand-name">Mitchell Mowing<small>Mitchell, SD</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#quote">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+16059999507"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>605-999-9507</span></a>
+      <a class="btn btn-primary" href="#quote">Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/hero-mitchell-mowing-truck-mitchell-sd.jpg" alt="The Mitchell Mowing truck and equipment trailer parked beside a freshly striped lawn in Mitchell, South Dakota" width="1600" height="900" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow" style="color:#ffd9d6">Locally run lawn care · Mitchell, SD</span>
+      <h1>A sharp, even cut &mdash;<br>mowed <em>when your lawn needs it</em></h1>
+      <p class="hero-sub">Andrew and Mitchell Mowing keep yards across Mitchell looking their best, on a schedule that fits you instead of a rigid weekly contract.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#quote">Get a Free Quote</a>
+        <a class="btn btn-ghost-light" href="tel:+16059999507">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 605-999-9507
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span><b>5.0</b> from 10 Google reviews</span>
+        </div>
+        <div class="hero-trust-item">
+          <span class="big">Mitchell &amp; Davison County</span>
+          <span>residential lawns served</span>
+        </div>
+        <div class="hero-trust-item">
+          <span class="big">Mow-when-needed</span>
+          <span>no rigid weekly contract</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="strip">
+  <div class="container">
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 7.7 8 9 4.6-1.3 8-4 8-9V5l-8-3z"/></svg>
+      <div><div class="t">Locally owned</div><div class="s">Run by Andrew, here in Mitchell</div></div>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <div><div class="t">Easy to reach</div><div class="s">Call, text, or message anytime</div></div>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <div><div class="t">Tidy, detailed work</div><div class="s">Edged &amp; clippings blown clean</div></div>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div><div class="t">On your schedule</div><div class="s">Mowed when it actually needs it</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== INTRO / ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container split">
+    <div class="split-media reveal">
+      <img src="assets/striped-lawn-mowing-brick-home-mitchell-sd.jpg" alt="Freshly mowed lawn with clean mowing stripes in front of a brick home in Mitchell, SD" width="900" height="675" loading="lazy" decoding="async" />
+      <div class="badge"><div class="n">5.0 &#9733;</div><div class="l">Every Google review, 5 stars</div></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Meet Mitchell Mowing</span>
+      <h2>One person who actually cares how your yard turns out</h2>
+      <p class="lead">Mitchell Mowing is Andrew &mdash; a local lawn care service that treats every yard in town like it&rsquo;s the only one that day.</p>
+      <p>That means a clean, even cut, edges trimmed, and every last clipping blown off your driveway and sidewalks before he leaves. No call center, no rotating crews you&rsquo;ve never met &mdash; just dependable work and a friendly face who&rsquo;ll happily talk gardening once the mower is off.</p>
+      <p>Best of all, you&rsquo;re not locked into a rigid weekly contract. Your lawn gets mowed when it genuinely needs it, on a rhythm that fits your yard and your budget.</p>
+      <div class="signature">&mdash; Andrew, Mitchell Mowing<small>Serving Mitchell &amp; the surrounding Davison County area</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Lawn care that keeps your property looking cared-for</h2>
+      <p>A focused set of services, each done properly &mdash; no upselling you on work your yard doesn&rsquo;t need.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M3 18a3 3 0 0 1 3-3h2a3 3 0 0 0 3-3V6"/><circle cx="11" cy="5" r="1.6"/><circle cx="5.5" cy="18" r="2.5"/><circle cx="18.5" cy="18" r="2.5"/><path d="M11 12h6a2 2 0 0 1 2 2v1.6"/></svg></div>
+        <h3>Lawn Mowing</h3>
+        <p>A crisp, even cut with clean stripes, trimmed edges, and every clipping blown off your hard surfaces &mdash; on a schedule that suits your lawn.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2c1.5 2 2 4 2 6a2 2 0 1 1-4 0c0-2 .5-4 2-6z"/><path d="M5 22c.5-5 3-8 7-8s6.5 3 7 8"/><path d="M2 22h20"/></svg></div>
+        <h3>Trimming &amp; Edging</h3>
+        <p>Sharp, defined edges along walks, drives, beds, and fence lines &mdash; the finishing detail that makes a freshly mowed yard look truly tidy.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a8 8 0 0 0 8-8c0-3-2-5.5-4-8-1.2-1.5-2.4-3-4-4-1.6 1-2.8 2.5-4 4-2 2.5-4 5-4 8a8 8 0 0 0 8 8z"/></svg></div>
+        <h3>Leaf &amp; Yard Cleanup</h3>
+        <p>Spring and fall cleanups that clear leaves and debris off the lawn and beds, so your grass can breathe and your property looks its best.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="1.2"/><circle cx="12" cy="7" r="1.2"/><circle cx="18" cy="7" r="1.2"/><circle cx="6" cy="13" r="1.2"/><circle cx="12" cy="13" r="1.2"/><circle cx="18" cy="13" r="1.2"/><path d="M4 20h16"/></svg></div>
+        <h3>Core Aeration</h3>
+        <p>Pulling small cores from compacted soil so water, air, and nutrients reach the roots &mdash; the groundwork for a thicker, healthier lawn.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V10l8-6 8 6v11"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Residential Lawns</h3>
+        <p>From in-town lots to larger acreage on the edge of Mitchell, your home&rsquo;s lawn gets the same careful, consistent attention every visit.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="2" y="2" width="8" height="8" rx="1.5"/><path d="m9.5 14.5 5-5"/><path d="M14 14h6a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/></svg></div>
+        <h3>Flexible Scheduling</h3>
+        <p>No rigid weekly contract. Tell us your yard and budget, and we&rsquo;ll mow when it genuinely needs doing &mdash; nothing more, nothing wasted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Why homeowners choose Andrew</span>
+      <h2>The little things that add up to a yard you&rsquo;re proud of</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div><h3>Mowed when it needs it</h3><p>You only pay for the cuts your lawn actually calls for &mdash; not a one-size-fits-all weekly invoice.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div><h3>Detail-finished every time</h3><p>Edges trimmed and clippings blown off drives and walks, so the job looks complete the moment it&rsquo;s done.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <div><h3>The same person, every visit</h3><p>You get to know Andrew &mdash; no rotating crews, no strangers in your yard, just someone who remembers your property.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div>
+        <div><h3>Stands by the work</h3><p>If something&rsquo;s not right, you&rsquo;ll hear back &mdash; reviewers consistently note that Andrew shows up on time and stands behind his work.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h3>Local to Mitchell</h3><p>Based right here in Mitchell and serving the surrounding Davison County area &mdash; your money stays in the community.</p></div>
+      </div>
+      <div class="why-item reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-6 0v4"/><rect x="5" y="9" width="14" height="11" rx="2"/></svg></div>
+        <div><h3>Easy, no-pressure quotes</h3><p>Reach out for a straight answer on what your yard will cost &mdash; no contracts to sign just to get a price.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEFORE / AFTER GALLERY ===== -->
+<section class="section gallery" id="work">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Real yards, real results</span>
+      <h2>Before &amp; after, around Mitchell</h2>
+      <p>Every photo below is Andrew&rsquo;s own work on lawns and properties right here in the area &mdash; no stock images.</p>
+    </div>
+    <div class="ba-grid">
+      <figure class="ba-fig reveal">
+        <span class="ba-tag">Before &middot; After</span>
+        <img src="assets/beforeafter-leaf-cleanup-historic-home-mitchell-sd.jpg" alt="Before and after fall leaf cleanup at a historic two-story home in Mitchell, SD, from leaf-covered to a clean green lawn" width="1000" height="1000" loading="lazy" decoding="async" />
+        <figcaption>Fall leaf cleanup &mdash; from buried to a clean, green lawn</figcaption>
+      </figure>
+      <figure class="ba-fig reveal">
+        <span class="ba-tag">Before &middot; After</span>
+        <img src="assets/beforeafter-fall-leaf-cleanup-lakeside-mitchell-sd.jpg" alt="Before and after yard cleanup at a lakeside property in Mitchell, SD, clearing fall leaves down to fresh grass" width="1000" height="1000" loading="lazy" decoding="async" />
+        <figcaption>Lakeside cleanup &mdash; leaves cleared, grass restored</figcaption>
+      </figure>
+      <figure class="ba-fig reveal">
+        <span class="ba-tag">Before &middot; After</span>
+        <img src="assets/beforeafter-spring-cleanup-brick-home-mitchell-sd.jpg" alt="Before and after spring yard cleanup at a brick home in Mitchell, SD, tidied lawn and beds" width="1000" height="1000" loading="lazy" decoding="async" />
+        <figcaption>Spring cleanup &mdash; a fresh start for the season</figcaption>
+      </figure>
+      <figure class="ba-fig reveal">
+        <span class="ba-tag">Before &middot; After</span>
+        <img src="assets/beforeafter-yard-cleanup-tree-mitchell-sd.jpg" alt="Before and after yard and leaf cleanup around a tree and sidewalk at a Mitchell, SD home" width="1000" height="1000" loading="lazy" decoding="async" />
+        <figcaption>Yard cleanup &mdash; clear lawn, tidy walkway</figcaption>
+      </figure>
+    </div>
+
+    <div class="shots">
+      <figure class="reveal"><img src="assets/fresh-mow-ranch-home-mitchell-sd.jpg" alt="Freshly mowed green lawn at a ranch-style home in Mitchell, SD" width="900" height="675" loading="lazy" decoding="async" /></figure>
+      <figure class="reveal"><img src="assets/large-property-mowing-stripes-mitchell-sd.jpg" alt="Large open property freshly mowed with clean stripes near Mitchell, SD" width="900" height="675" loading="lazy" decoding="async" /></figure>
+      <figure class="reveal"><img src="assets/striped-lawn-mowing-brick-home-mitchell-sd.jpg" alt="Striped freshly cut lawn in front of a brick home in Mitchell, SD" width="900" height="675" loading="lazy" decoding="async" /></figure>
+      <figure class="reveal"><img src="assets/core-aeration-lawn-mitchell-sd.jpg" alt="Soil cores pulled during core aeration of a lawn in Mitchell, SD, with the aerator behind" width="900" height="675" loading="lazy" decoding="async" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting started is simple</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Reach out</h3><p>Call, text, or message Mitchell Mowing with your address and what you need.</p></div>
+      <div class="step reveal"><h3>Get your quote</h3><p>Andrew looks over your yard and gives you a clear, no-pressure price.</p></div>
+      <div class="step reveal"><h3>We mow when needed</h3><p>Your lawn is cared for on a rhythm that fits it &mdash; not a rigid weekly contract.</p></div>
+      <div class="step reveal"><h3>Enjoy the yard</h3><p>Come home to a clean, even cut with the edges trimmed and surfaces blown clear.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow" style="color:#f2a8a4">From our Google reviews</span>
+      <h2>What Mitchell homeowners say</h2>
+      <p>A few words from real Google reviews &mdash; every one of them five stars.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card reveal">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>&ldquo;Andrew is such a kind, thoughtful and professional fellow. He gets it that I can only afford to have my lawn mowed when it needs doing, not like some of the services that want to come every week. He trims the edging and blows all the grass clippings off the driveway and sidewalks. I would HIGHLY recommend him.&rdquo;</blockquote>
+        <div class="who"><span class="av">R</span><span><span class="nm">Romar Keep</span><span class="src">Google review</span></span></div>
+      </div>
+      <div class="rev-card reveal">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>&ldquo;Andrew does amazing work and takes pride in everything he does! If you are looking for a lawn mowing company, pick Mitchell Mowing!&rdquo;</blockquote>
+        <div class="who"><span class="av">M</span><span><span class="nm">Marius Laursen</span><span class="src">Google review</span></span></div>
+      </div>
+      <div class="rev-card reveal">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <blockquote>&ldquo;He is friendly and always does a great job. He stands by his work. He shows up on time and gets the job done in a timely matter. I highly recommend using his service.&rdquo;</blockquote>
+        <div class="who"><span class="av">B</span><span><span class="nm">Brandon Manchester</span><span class="src">Google review</span></span></div>
+      </div>
+    </div>
+    <div class="rev-foot">
+      <div class="summary"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>5.0</b> &nbsp;&middot;&nbsp; 10 Google reviews</div>
+      <a class="btn btn-ghost-light" href="https://search.google.com/local/writereview?placeid=ChIJUwPtyBMXhocRREs8QTBvJg4" target="_blank" rel="noopener">Leave Andrew a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE AREA ===== -->
+<section class="section" id="area">
+  <div class="container area-grid">
+    <div class="reveal">
+      <span class="eyebrow">Where we mow</span>
+      <h2 style="font-size:var(--fs-h2);margin:var(--s2) 0 var(--s3)">Serving Mitchell &amp; the surrounding area</h2>
+      <p>Mitchell Mowing is based in Mitchell, South Dakota and looks after residential lawns in town and across the nearby Davison County countryside. Not sure if you&rsquo;re in range? Just ask &mdash; if you&rsquo;re a short drive from Mitchell, there&rsquo;s a good chance we can help.</p>
+      <div class="area-list">
+        <span>City of Mitchell</span>
+        <span>Davison County</span>
+        <span>In-town lots</span>
+        <span>Rural routes &amp; acreages</span>
+        <span>Nearby properties</span>
+      </div>
+      <a class="btn btn-primary" href="#quote">Check my address</a>
+    </div>
+    <div class="area-map reveal">
+      <iframe title="Map of the Mitchell, South Dakota service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-98.13%2C43.66%2C-97.84%2C43.78&amp;layer=mapnik&amp;marker=43.7909561%2C-97.9874932"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA / QUOTE ===== -->
+<section class="section cta" id="quote">
+  <div class="container cta-grid">
+    <div class="reveal">
+      <span class="eyebrow" style="color:#ffd9d6">Free, no-pressure quote</span>
+      <h2>Ready for a yard you don&rsquo;t have to think about?</h2>
+      <p>Send a few details and Andrew will get back to you with a price and the next available time. Prefer to talk? Give Mitchell Mowing a call or text.</p>
+      <a class="cta-phone-big" href="tel:+16059999507">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        605-999-9507
+      </a>
+      <ul class="cta-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No contract required to get a price</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Mowed only when your lawn needs it</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Friendly, local, and reliable</li>
+      </ul>
+    </div>
+    <div class="form-card reveal">
+      <h3>Request your free quote</h3>
+      <p class="fc-sub">Fill this out and Andrew will be in touch. It only takes a minute.</p>
+      <form id="quote-form" action="https://www.facebook.com/MowMitchell/" method="GET">
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" type="text" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" type="tel" name="phone" placeholder="(605) 000-0000" required />
+          </div>
+          <div class="field">
+            <label for="f-zip">ZIP / Town</label>
+            <input id="f-zip" type="text" name="zip" placeholder="57301" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email <span style="font-weight:400;color:var(--ink-3)">(optional)</span></label>
+          <input id="f-email" type="email" name="email" placeholder="you@email.com" />
+        </div>
+        <div class="field">
+          <label for="f-detail">What does your yard need?</label>
+          <textarea id="f-detail" name="details" placeholder="e.g. regular mowing for a corner lot, plus a fall leaf cleanup"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send my request</button>
+        <p class="form-note">Or call / text <a href="tel:+16059999507" style="color:var(--brand);font-weight:600">605-999-9507</a> &mdash; we&rsquo;ll reply soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq" style="background:var(--bg-2)">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <h3>Do I have to sign a weekly contract?</h3>
+        <p>No. That&rsquo;s the whole idea behind Mitchell Mowing &mdash; your lawn is mowed when it actually needs it, on a rhythm that fits your yard and budget, not a rigid weekly schedule.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>What areas do you serve?</h3>
+        <p>Mitchell and the surrounding Davison County area, including in-town lots and acreages a short drive out. If you&rsquo;re nearby and not sure, just ask.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Besides mowing, what else can you do?</h3>
+        <p>Trimming and edging come standard with a mow. Andrew also handles seasonal leaf and yard cleanups and core aeration to keep your lawn healthy.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>How do I get a price?</h3>
+        <p>Send a quote request above or call / text 605-999-9507 with your address and what you need. You&rsquo;ll get a clear price with no obligation.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>Do you clean up after mowing?</h3>
+        <p>Always. Edges are trimmed and grass clippings are blown off your driveway, walks, and other hard surfaces before the job is considered done.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h3>How do I reach you?</h3>
+        <p>Call or text 605-999-9507, send the quote form on this page, or message Mitchell Mowing on Facebook &mdash; whichever is easiest for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top" aria-label="Mitchell Mowing home">
+          <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="46" height="46" rx="11" fill="#b3221f"/>
+            <text x="24" y="33" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="27" font-weight="700" fill="#fff">M</text>
+          </svg>
+          <span class="brand-name" style="color:#fff">Mitchell Mowing<small>Mitchell, SD</small></span>
+        </a>
+        <p>Honest, locally run lawn care for Mitchell and Davison County &mdash; mowed when your lawn needs it.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <address class="foot-nap">
+          <a href="tel:+16059999507"><b>605-999-9507</b></a>
+          <p>Mitchell, SD 57301</p>
+          <a href="https://www.facebook.com/MowMitchell/" target="_blank" rel="noopener">Facebook: facebook.com/MowMitchell</a>
+        </address>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <p>Mon&ndash;Fri: 8:00 AM &ndash; 5:00 PM</p>
+        <p>Sat&ndash;Sun: By appointment</p>
+        <a href="#quote">Request a free quote &rarr;</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Mitchell Mowing. All rights reserved.</span>
+      <span>Serving Mitchell &amp; Davison County, South Dakota</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MOBILE CALL BAR ===== -->
+<div class="callbar">
+  <a href="tel:+16059999507">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Mitchell Mowing
+  </a>
+</div>
+
+<!-- ===== JSON-LD ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Mitchell Mowing",
+  "description":"Locally run lawn care service in Mitchell, South Dakota offering lawn mowing, trimming and edging, seasonal leaf and yard cleanup, and core aeration on a flexible, mow-when-needed schedule.",
+  "url":"https://savcab.github.io/websites/mitchell-mowing/",
+  "image":"https://savcab.github.io/websites/mitchell-mowing/assets/hero-mitchell-mowing-truck-mitchell-sd.jpg",
+  "telephone":"+1-605-999-9507",
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Mitchell",
+    "addressRegion":"SD",
+    "postalCode":"57301",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":43.7909561,"longitude":-97.9874932},
+  "areaServed":[
+    {"@type":"City","name":"Mitchell"},
+    {"@type":"AdministrativeArea","name":"Davison County"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"}
+  ],
+  "sameAs":["https://www.facebook.com/MowMitchell/"]
+}
+</script>
+
+<script>
+// Quote form -> send the details as a text to Mitchell Mowing (real number on the truck).
+// No-JS fallback = the form's Facebook action, so the lead is never lost.
+(function(){
+  var f=document.getElementById('quote-form');
+  if(!f)return;
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var g=function(n){var el=f.elements[n];return el?el.value.trim():'';};
+    var lines=['Hi Andrew, I’d like a lawn care quote.'];
+    if(g('name'))lines.push('Name: '+g('name'));
+    if(g('phone'))lines.push('Phone: '+g('phone'));
+    if(g('zip'))lines.push('Town/ZIP: '+g('zip'));
+    if(g('email'))lines.push('Email: '+g('email'));
+    if(g('details'))lines.push('Needs: '+g('details'));
+    var body=encodeURIComponent(lines.join('\n'));
+    window.location.href='sms:+16059999507?&body='+body;
+  });
+})();
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -8% 0px',threshold:.05});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>

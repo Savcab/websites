@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tree Removal in Staunton, VA | Meadows Tree Service</title>
+<meta name="description" content="Meadows Tree Service handles tree removal, trimming and full debris cleanup across Staunton & the Shenandoah Valley. Free estimates, thorough cleanup, 5.0★ on Google. Call (540) 241-6280." />
+<link rel="canonical" href="https://savcab.github.io/websites/meadows-tree-service/" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / Social -->
+<meta property="og:title" content="Tree Removal in Staunton, VA | Meadows Tree Service" />
+<meta property="og:description" content="Tree removal, trimming and thorough debris cleanup across Staunton & the Shenandoah Valley. Free estimates. 5.0★ on Google." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://savcab.github.io/websites/meadows-tree-service/" />
+<meta property="og:image" content="https://savcab.github.io/websites/meadows-tree-service/assets/tree-removal-staunton-va-hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:65ch;
+  /* TYPE */
+  --display:"Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --body-f:"Mulish", "Segoe UI", system-ui, sans-serif;
+  --h1:clamp(2.1rem,5.2vw,3.4rem);
+  --h2:clamp(1.6rem,3.2vw,2.25rem);
+  --h3:1.375rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.1;
+  --track-head:-.02em;
+  /* COLOR — anchored on the crew's forest/lime green equipment */
+  --ink:#19211c;
+  --ink-2:#4f5953;
+  --ink-3:#828d86;
+  --line:#e3e7e3;
+  --bg:#ffffff;
+  --bg-2:#f4f6f1;
+  --brand:#1f5132;        /* deep forest green */
+  --brand-d:#163a24;      /* darker forest for dark sections / hovers */
+  --brand-2:#2f6f44;      /* mid green */
+  --accent:#7fb83f;       /* lime — matches their trucks; the 10% */
+  --accent-d:#6aa233;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(22,33,26,.06);
+  --sh-2:0 2px 4px rgba(22,33,26,.06),0 4px 8px rgba(22,33,26,.05);
+  --sh-3:0 4px 8px rgba(22,33,26,.06),0 12px 24px rgba(22,33,26,.08);
+  --sh-4:0 8px 16px rgba(22,33,26,.08),0 24px 48px rgba(22,33,26,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body-f);font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head)}
+h1{font-size:var(--h1)}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+ul{list-style:none}
+
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.bg-2{background:var(--bg-2)}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:var(--small);letter-spacing:.14em;text-transform:uppercase;color:var(--brand-2)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);max-width:60ch}
+.center{text-align:center;margin-inline:auto}
+.center p{margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:600;font-size:1rem;line-height:1;padding:1rem 1.75rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#15280c;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand-2);color:var(--brand);transform:translateY(-2px)}
+.btn-on-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-on-dark:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-2px)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:72px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--ink);letter-spacing:-.01em}
+.brand .mark{width:38px;height:38px;flex:none}
+.nav-links{display:flex;align-items:center;gap:var(--s4)}
+.nav-links a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:var(--s3)}
+.nav-phone{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--display);font-weight:700;color:var(--brand);font-size:1.02rem}
+.nav-phone svg{width:18px;height:18px}
+.btn-sm{padding:.7rem 1.2rem;min-height:42px;font-size:.95rem}
+.menu-btn{display:none}
+
+/* Hero */
+.hero{position:relative;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,rgba(16,29,20,.86) 0%,rgba(16,29,20,.66) 42%,rgba(16,29,20,.34) 100%)}
+.hero-inner{position:relative;z-index:2;padding-block:var(--hero-y)}
+.hero-content{max-width:44rem}
+.hero .badge-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:var(--s4)}
+.pill{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--display);font-weight:600;font-size:.82rem;letter-spacing:.02em;padding:.45rem .9rem;border-radius:var(--r-pill);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;backdrop-filter:blur(4px)}
+.pill svg{width:15px;height:15px}
+.pill .stars{color:var(--accent);letter-spacing:.05em}
+.hero h1{color:#fff;margin-bottom:var(--s3)}
+.hero h1 .accent{color:var(--accent)}
+.hero-sub{font-size:clamp(1.05rem,1.7vw,1.22rem);color:rgba(255,255,255,.9);max-width:40ch;margin-bottom:var(--s5);line-height:1.55}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
+
+/* Trust strip */
+.trust-strip{background:var(--brand-d);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4);padding-block:var(--s5)}
+.trust-item{text-align:center;padding-inline:.5rem}
+.trust-item .num{font-family:var(--display);font-weight:700;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--accent);line-height:1}
+.trust-item .lbl{display:block;margin-top:.5rem;font-size:.9rem;color:rgba(255,255,255,.82);line-height:1.35}
+
+/* Section heading block */
+.sec-head{max-width:46rem;margin-bottom:var(--s6)}
+.sec-head.center{margin-inline:auto}
+.sec-head .eyebrow{display:block;margin-bottom:var(--s2)}
+.sec-head h2{margin-bottom:var(--s3)}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4)}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s5) var(--s4);transition:transform var(--t),box-shadow var(--t),border-color var(--t);box-shadow:var(--sh-1)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d4ddd2}
+.svc-icon{width:54px;height:54px;border-radius:var(--r-m);background:var(--bg-2);display:grid;place-items:center;margin-bottom:var(--s3);color:var(--brand)}
+.svc-icon svg{width:27px;height:27px}
+.svc-card h3{margin-bottom:.55rem}
+.svc-card p{color:var(--ink-2);font-size:1rem;max-width:38ch}
+.svc-card.feature{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;border-color:transparent}
+.svc-card.feature .svc-icon{background:rgba(255,255,255,.14);color:var(--accent)}
+.svc-card.feature h3{color:#fff}
+.svc-card.feature p{color:rgba(255,255,255,.85)}
+.svc-card.feature .tag{display:inline-block;margin-top:var(--s3);font-family:var(--display);font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+
+/* Why-us split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.split-media{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:4/3}
+.split-media img{width:100%;height:100%;object-fit:cover}
+.why-list{display:grid;gap:var(--s4);margin-top:var(--s4)}
+.why-item{display:flex;gap:var(--s3);align-items:flex-start}
+.why-check{width:42px;height:42px;flex:none;border-radius:var(--r-m);background:var(--bg-2);color:var(--brand);display:grid;place-items:center}
+.why-check svg{width:21px;height:21px}
+.why-item h3{font-size:1.12rem;margin-bottom:.25rem}
+.why-item p{color:var(--ink-2);font-size:.98rem;max-width:42ch}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4);counter-reset:step}
+.step{position:relative;padding-top:var(--s4)}
+.step .n{font-family:var(--display);font-weight:700;font-size:2.4rem;color:var(--accent);line-height:1;margin-bottom:var(--s2);opacity:.95}
+.step h3{font-size:1.12rem;margin-bottom:.4rem}
+.step p{color:var(--ink-2);font-size:.96rem;max-width:30ch}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.gallery figure{position:relative;border-radius:var(--r-m);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--sh-1);background:var(--bg-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 420ms ease}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:.85rem 1rem .7rem;font-family:var(--display);font-weight:600;font-size:.85rem;color:#fff;background:linear-gradient(transparent,rgba(16,29,20,.8));opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.gallery figure:hover figcaption{opacity:1;transform:translateY(0)}
+
+/* Reviews */
+.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4)}
+.review-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s5) var(--s4);box-shadow:var(--sh-1);display:flex;flex-direction:column}
+.review-stars{color:var(--accent);font-size:1.05rem;letter-spacing:.08em;margin-bottom:var(--s3)}
+.review-card blockquote{font-size:1.06rem;color:var(--ink);line-height:1.6;max-width:46ch;margin-bottom:var(--s4);flex:1}
+.review-meta{display:flex;align-items:center;gap:.75rem}
+.review-avatar{width:42px;height:42px;border-radius:var(--r-pill);background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1rem;flex:none}
+.review-name{font-family:var(--display);font-weight:700;font-size:.98rem;color:var(--ink)}
+.review-src{font-size:.82rem;color:var(--ink-3)}
+.reviews-cta{margin-top:var(--s6);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:var(--s3);text-align:center}
+.reviews-cta p{margin:0;color:var(--ink-2)}
+
+/* Service area */
+.area-wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);min-height:340px}
+.area-map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.town-list{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4)}
+.town-chip{display:inline-flex;align-items:center;gap:.4rem;font-weight:600;font-size:.92rem;color:var(--brand);background:var(--bg-2);border:1px solid var(--line);padding:.5rem .9rem;border-radius:var(--r-pill)}
+.town-chip svg{width:14px;height:14px;color:var(--brand-2)}
+
+/* FAQ */
+.faq-list{max-width:50rem;margin-inline:auto;display:grid;gap:var(--s2)}
+.faq-item{border:1px solid var(--line);border-radius:var(--r-m);background:var(--bg);overflow:hidden}
+.faq-item summary{cursor:pointer;list-style:none;padding:var(--s3) var(--s4);font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .chev{width:20px;height:20px;flex:none;color:var(--brand-2);transition:transform var(--t)}
+.faq-item[open] summary .chev{transform:rotate(180deg)}
+.faq-item .faq-a{padding:0 var(--s4) var(--s4);color:var(--ink-2);font-size:1rem;line-height:1.6;max-width:62ch}
+
+/* Final CTA */
+.cta-final{position:relative;background:linear-gradient(150deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;overflow:hidden}
+.cta-final::after{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;background:rgba(127,184,63,.16);filter:blur(8px)}
+.cta-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.cta-copy h2{color:#fff;margin-bottom:var(--s3)}
+.cta-copy p{color:rgba(255,255,255,.88);margin-bottom:var(--s5);max-width:44ch}
+.cta-actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
+.quote-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.75rem,3vw,2.5rem);box-shadow:var(--sh-4);color:var(--ink)}
+.quote-card h3{font-size:1.3rem;margin-bottom:.4rem}
+.quote-card .sub{color:var(--ink-2);font-size:.95rem;margin-bottom:var(--s4)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-weight:600;font-size:.85rem;color:var(--ink-2);margin-bottom:.4rem}
+.field input,.field textarea{width:100%;font-family:var(--body-f);font-size:1rem;color:var(--ink);background:var(--bg-2);border:1.5px solid var(--line);border-radius:var(--r-m);padding:.8rem .95rem;transition:border-color var(--t),background var(--t)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--brand-2);background:#fff}
+.field textarea{resize:vertical;min-height:90px}
+.quote-card .btn{width:100%;justify-content:center}
+.form-note{margin-top:var(--s3);font-size:.82rem;color:var(--ink-3);text-align:center}
+
+/* Footer */
+.site-footer{background:var(--brand-d);color:rgba(255,255,255,.78);padding-block:var(--s6) var(--s4)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--s5)}
+.footer-brand .brand{color:#fff;margin-bottom:var(--s3)}
+.footer-brand p{font-size:.95rem;color:rgba(255,255,255,.7);max-width:34ch}
+.footer-col h4{font-family:var(--display);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s3)}
+.footer-col ul{display:grid;gap:.6rem}
+.footer-col a,.footer-col p{font-size:.95rem;color:rgba(255,255,255,.78);transition:color var(--t)}
+.footer-col a:hover{color:#fff}
+.footer-nap{display:flex;align-items:flex-start;gap:.55rem;margin-bottom:.7rem;font-size:.95rem;line-height:1.45}
+.footer-nap svg{width:17px;height:17px;flex:none;margin-top:2px;color:var(--accent)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:var(--s6);padding-top:var(--s4);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);font-size:.85rem;color:rgba(255,255,255,.6)}
+
+/* Sticky mobile call bar */
+.call-bar{display:none}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.gallery img,.btn{transition:none}}
+
+/* Responsive */
+@media (max-width:900px){
+  .nav-links{display:none}
+  .trust-grid{grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s3)}
+  .split{grid-template-columns:1fr;gap:var(--s5)}
+  .split-media{order:-1}
+  .steps{grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s4)}
+  .area-wrap{grid-template-columns:1fr}
+  .cta-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:var(--s5)}
+  .footer-brand{grid-column:1 / -1}
+}
+@media (max-width:720px){
+  .nav-links{display:none}
+  .nav-cta .btn{display:none}
+  .nav-phone span{display:inline}
+  .nav-phone{font-size:.98rem}
+  .brand span{font-size:1.05rem}
+  .brand .mark{width:34px;height:34px}
+  .nav{min-height:64px;gap:var(--s2)}
+  .menu-btn{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .hero-actions .btn{flex:1 1 auto;justify-content:center}
+  body{padding-bottom:64px}
+  .call-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--accent);box-shadow:0 -2px 14px rgba(0,0,0,.18)}
+  .call-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:1rem;font-family:var(--display);font-weight:700;font-size:1.05rem;color:#15280c}
+  .call-bar svg{width:20px;height:20px}
+}
+@media (max-width:480px){
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column}
+}
+@media (max-width:359px){
+  .nav-phone span{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="Meadows Tree Service home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#1f5132"/>
+        <path d="M20 7l5.5 8h-3.2l4.4 6.4h-3.4L28 28H22.6v5h-5.2v-5H12l4.7-6.6h-3.4L17.7 15h-3.2L20 7z" fill="#7fb83f"/>
+        <rect x="18.4" y="30" width="3.2" height="4" fill="#163a24"/>
+      </svg>
+      <span>Meadows&nbsp;Tree&nbsp;Service</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+15402416280" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(540) 241-6280</span>
+      </a>
+      <a href="#quote" class="btn btn-primary btn-sm">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/tree-removal-staunton-va-hero.jpg" alt="Meadows Tree Service crew with green bucket trucks and a pile of removed tree logs at a Staunton, VA home" width="1600" height="900" fetchpriority="high" />
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="badge-row">
+        <span class="pill"><span class="stars">★★★★★</span> 5.0 · 12 Google reviews</span>
+        <span class="pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          Free, no-obligation estimates
+        </span>
+      </div>
+      <h1>Staunton's <span class="accent">Tree Removal</span> &amp; Cleanup Crew</h1>
+      <p class="hero-sub">Safe tree removal, expert trimming and thorough debris hauling across Staunton and the Shenandoah Valley &mdash; the trees come down and the yard goes back to clean.</p>
+      <div class="hero-actions">
+        <a href="tel:+15402416280" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (540) 241-6280
+        </a>
+        <a href="#quote" class="btn btn-on-dark">Request a Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip" aria-label="At a glance">
+  <div class="container trust-grid">
+    <div class="trust-item"><span class="num">5.0★</span><span class="lbl">Perfect rating across 12 Google reviews</span></div>
+    <div class="trust-item"><span class="num">Free</span><span class="lbl">Honest, up-front estimates</span></div>
+    <div class="trust-item"><span class="num">Full</span><span class="lbl">Debris hauled &amp; site left clean</span></div>
+    <div class="trust-item"><span class="num">Local</span><span class="lbl">Staunton &amp; the Shenandoah Valley</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Tree work, start to clean finish</h2>
+      <p class="lead">From a single hazardous tree to a yard full of overgrowth, we handle the cut, the haul and the cleanup &mdash; so you're not left with a mess to deal with.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc-card feature reveal">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 1 1 6 0c0 1.5-1 2-1 3"/><path d="M5 13a4 4 0 0 1 4-4"/><path d="M19 13a4 4 0 0 0-4-4"/><path d="M7 13c-1.5 0-3 1-3 3 0 1.5 1 2.5 2.5 2.5"/><path d="M17 13c1.5 0 3 1 3 3 0 1.5-1 2.5-2.5 2.5"/></svg>
+        </div>
+        <h3>Tree Removal</h3>
+        <p>Hazardous, dead or overgrown trees taken down safely, including tight spots near homes, sheds and power lines using our bucket trucks.</p>
+        <span class="tag">Our most-requested service</span>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5 19 9"/><path d="m3 21 7-7"/><path d="M12.5 6.5 9 10l5 5 3.5-3.5a3.54 3.54 0 0 0-5-5Z"/><path d="m19 9 2-2"/></svg>
+        </div>
+        <h3>Trimming &amp; Pruning</h3>
+        <p>Shaping, deadwood removal and crown thinning that keeps your trees healthy, balanced and clear of the roof and lines.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v8"/><path d="M14 2v8"/><path d="M4.5 10h15l-1.2 9.2A2 2 0 0 1 16.3 21H7.7a2 2 0 0 1-2-1.8L4.5 10Z"/><path d="M9 14v3"/><path d="M15 14v3"/></svg>
+        </div>
+        <h3>Debris Hauling &amp; Cleanup</h3>
+        <p>The part people remember &mdash; we chip the brush, haul the wood and clear old debris piles, leaving the yard tidier than we found it.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="6"/><path d="M12 13h4"/><path d="M2 13h2"/><path d="M20 13h2"/><path d="m6 19-1.5 2"/><path d="m18 19 1.5 2"/></svg>
+        </div>
+        <h3>Stump Grinding</h3>
+        <p>Once the tree is down, we grind the stump below grade so you get your usable yard space &mdash; and your mower line &mdash; back.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section bg-2" id="why">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Why homeowners call us</span>
+      <h2 style="margin:var(--s2) 0 var(--s3)">A young company that already shows up like the long-time crews</h2>
+      <p class="lead">We're building our name in Staunton one clean job at a time &mdash; punctual, fair on price, and serious about leaving your property better than we found it.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><h3>Thorough cleanup, every time</h3><p>Reviewers keep mentioning it &mdash; we don't just drop the tree, we haul the debris and clear the old piles too.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <div><h3>Fair, up-front pricing</h3><p>You get a clear estimate before we start, and we stick to the number we quoted you.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <div><h3>Punctual &amp; reliable</h3><p>We show up when we say we will and work efficiently to get you back to a normal yard fast.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/></svg></span>
+          <div><h3>Homes &amp; businesses</h3><p>Residential yards and commercial properties alike &mdash; same care, same clean finish.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="split-media reveal">
+      <img src="assets/large-tree-removal-logs-staunton-va.jpg" alt="Meadows Tree Service worker beside neatly stacked logs from a large tree removal in Staunton, VA" width="800" height="600" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">How it works</span>
+      <h2>Four simple steps to a cleared yard</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Call or request</h3><p>Tell us what you need over the phone or with the quick form &mdash; a few details get us started.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Free estimate</h3><p>We look at the job, talk through the plan and give you a clear, honest price up front.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>We get to work</h3><p>The crew removes, trims or grinds safely &mdash; with care for your home, lines and landscaping.</p></div>
+      <div class="step reveal"><div class="n">04</div><h3>Cleaned &amp; done</h3><p>We haul the debris, grind the stump if needed and leave the site clean. That's the part you'll notice.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY / OUR WORK ============ -->
+<section class="section bg-2" id="work">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Our work</span>
+      <h2>Real jobs around the Valley</h2>
+      <p class="lead center">Every photo here is our own crew on a real Staunton-area job &mdash; removals, climbs, stump grinding and cleanup.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="assets/tree-removal-crane-staunton-va.jpg" alt="Meadows Tree Service crew removing a large tree with a crane and bucket lift in Staunton, VA" width="800" height="600" loading="lazy" /><figcaption>Large tree removal</figcaption></figure>
+      <figure><img src="assets/bucket-truck-tree-service-staunton-va.jpg" alt="Green Meadows Tree Service bucket truck reaching the top of a tall tree, Staunton VA" width="800" height="600" loading="lazy" /><figcaption>Bucket-truck removal</figcaption></figure>
+      <figure><img src="assets/debris-chipping-cleanup-staunton-va.jpg" alt="Meadows Tree Service truck and wood chipper cleaning up branches and leaves in Staunton, VA" width="800" height="600" loading="lazy" /><figcaption>Chipping &amp; debris cleanup</figcaption></figure>
+      <figure><img src="assets/tree-climbing-pruning-staunton-va.jpg" alt="Arborist climbing a tall pine for removal above the Shenandoah Valley near Staunton, VA" width="800" height="600" loading="lazy" /><figcaption>Climbing &amp; technical removal</figcaption></figure>
+      <figure><img src="assets/stump-grinding-staunton-va.jpg" alt="Meadows Tree Service stump grinder removing a fresh tree stump in Staunton, VA" width="800" height="600" loading="lazy" /><figcaption>Stump grinding</figcaption></figure>
+      <figure><img src="assets/debris-cleanup-residential-staunton-va.jpg" alt="Meadows Tree Service crew clearing brush and debris beside a Staunton, VA home" width="800" height="600" loading="lazy" /><figcaption>Residential cleanup</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">From our Google reviews</span>
+      <h2>A perfect 5.0, in their words</h2>
+      <p class="lead center">Twelve reviews, every one of them five stars. Here's what a couple of Staunton neighbors had to say.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>&ldquo;He did an amazing job, removed 2 trees and trimmed 3 for a price that didn't break the bank. Clean up was beyond good &mdash; I couldn't tell he had been here other than the trees being trimmed. Professional, and just a good company. If I need tree removal again I'll definitely be in.&rdquo;</blockquote>
+        <div class="review-meta">
+          <span class="review-avatar">R</span>
+          <span><span class="review-name">Rob Conley</span><br><span class="review-src">Google review</span></span>
+        </div>
+      </article>
+      <article class="review-card reveal">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>&ldquo;They took care of our project of cleaning out a very old bed of trees and shrubs. They were punctual and true to the quote given. We would definitely use them again for home and business needs.&rdquo;</blockquote>
+        <div class="review-meta">
+          <span class="review-avatar">M</span>
+          <span><span class="review-name">M. Swan</span><br><span class="review-src">Google review</span></span>
+        </div>
+      </article>
+    </div>
+    <div class="reviews-cta">
+      <p>Worked with us recently?</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ71be64WhtIkRXp7OgJDoGlA" target="_blank" rel="noopener" class="btn btn-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        Leave us a Google review
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section bg-2" id="area">
+  <div class="container area-wrap">
+    <div>
+      <span class="eyebrow">Where we work</span>
+      <h2 style="margin:var(--s2) 0 var(--s3)">Serving Staunton &amp; the Shenandoah Valley</h2>
+      <p class="lead">Based in Staunton, we cover the surrounding Valley communities of Augusta County. Not sure if you're in range? Give us a call &mdash; if we can get there, we'll take a look.</p>
+      <div class="town-list">
+        <span class="town-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10Z"/><circle cx="12" cy="11" r="2"/></svg>Staunton</span>
+        <span class="town-chip">Waynesboro</span>
+        <span class="town-chip">Fishersville</span>
+        <span class="town-chip">Verona</span>
+        <span class="town-chip">Stuarts Draft</span>
+        <span class="town-chip">Mount Sidney</span>
+        <span class="town-chip">Augusta County</span>
+      </div>
+    </div>
+    <div class="area-map">
+      <iframe title="Map of Meadows Tree Service service area around Staunton, VA" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.35%2C38.05%2C-78.85%2C38.40&amp;layer=mapnik&amp;marker=38.2262%2C-79.1042" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do you give free estimates?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">Yes. We'll look at the job, talk through what's involved and give you a clear, no-obligation price before any work begins. Call (540) 241-6280 or send the quick form below.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you haul away the debris and clean up?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">Always &mdash; it's what our customers mention most. We chip the brush, haul off the wood and can clear older debris piles while we're there, so you're left with a clean yard, not a project.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you take down a tree close to my house or power lines?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">Yes. We use bucket trucks and careful rigging to bring down trees in tight spots near structures, sheds and lines. Tell us about the location when you call and we'll plan the safest approach.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you grind the stump too?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">We can grind the stump below grade after a removal so you reclaim that part of your yard. Just let us know you'd like stump grinding included in your estimate.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What areas do you serve?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="faq-a">Staunton and the surrounding Shenandoah Valley &mdash; Waynesboro, Fishersville, Verona, Stuarts Draft and the rest of Augusta County. If you're nearby and not sure, give us a call.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA + QUOTE ============ -->
+<section class="section cta-final" id="quote">
+  <div class="container cta-grid">
+    <div class="cta-copy">
+      <span class="eyebrow" style="color:var(--accent)">Ready when you are</span>
+      <h2 style="margin-top:var(--s2)">Got a tree that needs to come down?</h2>
+      <p>Call for the fastest answer, or send a few details and we'll get back to you with a free estimate. Either way, your yard leaves clean.</p>
+      <div class="cta-actions">
+        <a href="tel:+15402416280" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (540) 241-6280
+        </a>
+        <a href="#top" class="btn btn-on-dark">Back to top</a>
+      </div>
+    </div>
+    <div class="quote-card">
+      <h3>Request a free estimate</h3>
+      <p class="sub">Tell us what you're dealing with and we'll be in touch.</p>
+      <form action="#" method="post" onsubmit="return false;">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" /></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(540) 000-0000" /></div>
+        <div class="field"><label for="addr">Property / town</label><input id="addr" name="address" type="text" placeholder="Street or town in the Valley" /></div>
+        <div class="field"><label for="detail">What do you need?</label><textarea id="detail" name="detail" placeholder="e.g. one large oak to remove near the driveway, plus haul-off"></textarea></div>
+        <button type="submit" class="btn btn-primary">Send my request</button>
+        <p class="form-note">Prefer to talk it through? Call (540) 241-6280.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#7fb83f"/>
+            <path d="M20 7l5.5 8h-3.2l4.4 6.4h-3.4L28 28H22.6v5h-5.2v-5H12l4.7-6.6h-3.4L17.7 15h-3.2L20 7z" fill="#163a24"/>
+            <rect x="18.4" y="30" width="3.2" height="4" fill="#0f2a18"/>
+          </svg>
+          <span>Meadows Tree Service</span>
+        </a>
+        <p>Tree removal, trimming and thorough debris cleanup for Staunton and the Shenandoah Valley.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-nap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+15402416280">(540) 241-6280</a>
+        </div>
+        <div class="footer-nap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.7-6-10a6 6 0 0 1 12 0c0 4.3-6 10-6 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <span>137 Union Church Rd<br>Staunton, VA 24401</span>
+        </div>
+        <div class="footer-nap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>Call for hours</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Tree Removal</a></li>
+          <li><a href="#services">Trimming &amp; Pruning</a></li>
+          <li><a href="#services">Debris Hauling &amp; Cleanup</a></li>
+          <li><a href="#services">Stump Grinding</a></li>
+          <li><a href="#area">Service Area</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Meadows Tree Service LLC. All rights reserved.</span>
+      <span>Staunton, VA &middot; Shenandoah Valley</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile call bar -->
+<div class="call-bar">
+  <a href="tel:+15402416280">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call (540) 241-6280
+  </a>
+</div>
+
+<!-- ============ JSON-LD ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Meadows Tree Service LLC",
+  "image": "https://savcab.github.io/websites/meadows-tree-service/assets/tree-removal-staunton-va-hero.jpg",
+  "url": "https://savcab.github.io/websites/meadows-tree-service/",
+  "telephone": "+1-540-241-6280",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "137 Union Church Rd",
+    "addressLocality": "Staunton",
+    "addressRegion": "VA",
+    "postalCode": "24401",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.2262472,
+    "longitude": -79.1042038
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Staunton"},
+    {"@type": "City", "name": "Waynesboro"},
+    {"@type": "City", "name": "Fishersville"},
+    {"@type": "City", "name": "Verona"},
+    {"@type": "City", "name": "Stuarts Draft"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree Removal"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tree Trimming & Pruning"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Debris Hauling & Cleanup"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stump Grinding"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+
+</body>
+</html>

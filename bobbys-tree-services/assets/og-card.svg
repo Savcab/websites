@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Bobby's Tree Services — Geneseo, Illinois">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15402c"/>
+      <stop offset="0.6" stop-color="#0d2419"/>
+      <stop offset="1" stop-color="#0a1d14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.12" r="0.7">
+      <stop offset="0" stop-color="#2f6b48" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2f6b48" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g stroke="#5e9c78" stroke-width="1.6" fill="none" opacity="0.4">
+    <path d="M1040 630 C1040 470 980 440 970 320 C965 250 1040 255 1050 165 C1062 255 1130 280 1116 370 C1104 470 1040 480 1040 630"/>
+    <path d="M1050 360 L1000 300 M1050 310 L1116 260 M1050 430 L995 365 M1050 480 L1112 420"/>
+  </g>
+  <!-- logo mark -->
+  <g transform="translate(96,86)">
+    <rect width="74" height="74" rx="17" fill="#1f4d34"/>
+    <path d="M37 13c-4.8 4.4-7.4 8.9-7.4 13.3 0 2.8 1.3 5.2 3.3 6.8-5 .9-8.9 4.8-8.9 9.6 0 2.6 1.1 4.8 3 6.5h20c1.9-1.7 3-3.9 3-6.5 0-4.8-3.9-8.7-8.9-9.6 2-1.6 3.3-4 3.3-6.8 0-4.4-2.6-8.9-7.4-13.3Z" fill="#8fd3aa"/>
+    <rect x="34.4" y="48" width="5.2" height="13" rx="2.2" fill="#c2682a"/>
+  </g>
+  <text x="190" y="124" font-family="'Libre Franklin',Arial,sans-serif" font-size="34" font-weight="800" fill="#f7f4ec">Bobby's Tree Services</text>
+  <text x="190" y="158" font-family="Arial,sans-serif" font-size="19" letter-spacing="3" fill="#8fd3aa">GENESEO, ILLINOIS</text>
+
+  <text x="96" y="330" font-family="'Libre Franklin',Arial,sans-serif" font-size="74" font-weight="900" fill="#ffffff">Clean Tree Removal</text>
+  <text x="96" y="412" font-family="'Libre Franklin',Arial,sans-serif" font-size="74" font-weight="900" fill="#8fd3aa">Geneseo Trusts.</text>
+
+  <text x="96" y="476" font-family="Arial,sans-serif" font-size="26" fill="#cfd8ce">Removal · Trimming · Stump Grinding · Storm Cleanup</text>
+
+  <g transform="translate(96,520)">
+    <g fill="#f4b740">
+      <path d="M0 28 L7 14 L14 28 L0 18 L14 18 Z" transform="translate(0,-6) scale(1.4)"/>
+    </g>
+    <text x="44" y="34" font-family="'Libre Franklin',Arial,sans-serif" font-size="30" font-weight="800" fill="#ffffff">5.0 on Google</text>
+    <text x="240" y="34" font-family="Arial,sans-serif" font-size="26" fill="#cfd8ce">· Customers since 2018</text>
+  </g>
+  <rect x="820" y="520" width="284" height="62" rx="14" fill="#c2682a"/>
+  <text x="962" y="560" text-anchor="middle" font-family="'Libre Franklin',Arial,sans-serif" font-size="27" font-weight="800" fill="#ffffff">(309) 944-0787</text>
+</svg>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://savcab.github.io/websites/id-pocatello-masonry-smylie-d-s-stucco/sitemap.xml
+Sitemap: https://savcab.github.io/websites/smylie-ds-masonry-stucco-pocatello/sitemap.xml

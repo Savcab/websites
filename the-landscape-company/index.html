@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landscape Design &amp; Build in Longmont, CO | The Landscape Company</title>
+<meta name="description" content="Custom landscape design-build in Longmont, Erie, Frederick &amp; Broomfield, CO. Outdoor living spaces, water features, xeriscapes, patios &amp; pergolas. Rated 5.0 on Google. Free consultation.">
+<link rel="canonical" href="https://savcab.github.io/websites/the-landscape-company/">
+<meta name="theme-color" content="#2f5d3a">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Landscape Company — Custom Landscape Design &amp; Build, Longmont CO">
+<meta property="og:description" content="Outdoor living spaces, water features, xeriscapes &amp; hardscapes across Boulder County. Rated 5.0 on Google. Free design consultation.">
+<meta property="og:url" content="https://savcab.github.io/websites/the-landscape-company/">
+<meta property="og:image" content="https://savcab.github.io/websites/the-landscape-company/assets/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Landscape Company — Custom Landscape Design &amp; Build, Longmont CO">
+<meta name="twitter:description" content="Outdoor living spaces, water features, xeriscapes &amp; hardscapes across Boulder County. Rated 5.0 on Google.">
+<meta name="twitter:image" content="https://savcab.github.io/websites/the-landscape-company/assets/hero.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:65ch;
+  /* TYPE */
+  --display:'Bricolage Grotesque',Georgia,serif;
+  --body:'Source Sans 3',system-ui,-apple-system,sans-serif;
+  --h1:clamp(2.25rem,5.4vw,3.75rem);
+  --h2:clamp(1.7rem,3.4vw,2.5rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.1;
+  --track-head:-.02em;
+  /* COLOR — recovered brand: pine/forest green + warm Colorado-earth accent */
+  --ink:#1c2620;       /* dark green-grey, never #000 */
+  --ink-2:#4f5b53;
+  --ink-3:#84908a;
+  --line:#e4e7e2;
+  --bg:#ffffff;
+  --bg-2:#f5f3ed;      /* warm paper alt */
+  --bg-3:#eef1ea;      /* faint sage */
+  --brand:#2f5d3a;     /* pine/forest green */
+  --brand-d:#1f3d28;   /* deep evergreen (dark sections/hovers) */
+  --brand-l:#4a7d56;
+  --accent:#b9742e;    /* warm brass/copper — flagstone + cedar pergola */
+  --accent-d:#9a5f23;
+  /* RADIUS — tiers by role */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW — soft, layered */
+  --sh-1:0 1px 2px rgba(28,38,32,.06);
+  --sh-2:0 2px 4px rgba(28,38,32,.06),0 4px 8px rgba(28,38,32,.05);
+  --sh-3:0 4px 8px rgba(28,38,32,.06),0 12px 24px rgba(28,38,32,.08);
+  --sh-4:0 10px 20px rgba(28,38,32,.10),0 24px 48px rgba(28,38,32,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:clip}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;color:var(--ink)}
+h2{font-size:var(--h2);letter-spacing:var(--track-head)}
+h3{font-size:var(--h3);font-weight:600}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+ul{list-style:none}
+
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+.bg-2{background:var(--bg-2)}
+.bg-dark{background:var(--brand-d);color:#eaf0ea}
+.bg-dark h2,.bg-dark h3{color:#fff}
+
+.eyebrow{font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:var(--s2)}
+.bg-dark .eyebrow{color:#d6a772}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.6}
+.bg-dark .lead{color:#c4d0c5}
+.center{text-align:center}
+.section-head{max-width:46rem;margin-bottom:var(--s6)}
+.section-head.center{margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.7rem;border-radius:var(--r-pill);border:2px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-on-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-on-dark:hover{background:rgba(255,255,255,.1);border-color:#fff;transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:box-shadow var(--t),border-color var(--t),background var(--t)}
+.hdr.solid{box-shadow:var(--sh-1);border-color:var(--line);background:rgba(255,255,255,.95)}
+.hdr-row{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:72px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:700;font-size:1.18rem;color:var(--ink);letter-spacing:-.01em}
+.brand .mark{width:38px;height:38px;flex:none;border-radius:var(--r-s)}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:1px}
+.nav{display:flex;align-items:center;gap:var(--s4)}
+.nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a:hover{color:var(--brand)}
+.hdr-cta{display:flex;align-items:center;gap:var(--s3)}
+.tel-link{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;color:var(--brand);font-size:1rem}
+.tel-link svg{width:18px;height:18px}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;color:var(--ink);padding:.4rem}
+.menu-btn svg{width:28px;height:28px}
+
+/* Mobile drawer */
+.drawer{position:fixed;inset:0 0 0 auto;width:min(82vw,340px);background:#fff;z-index:60;transform:translateX(100%);transition:transform var(--t);box-shadow:var(--sh-4);padding:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.drawer.open{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s3)}
+.drawer a{padding:.85rem .25rem;font-weight:600;font-size:1.05rem;border-bottom:1px solid var(--line);color:var(--ink)}
+.drawer .btn{margin-top:var(--s3);justify-content:center}
+.scrim{position:fixed;inset:0;background:rgba(28,38,32,.5);z-index:55;opacity:0;visibility:hidden;transition:opacity var(--t),visibility var(--t)}
+.scrim.open{opacity:1;visibility:visible}
+
+/* Hero */
+.hero{position:relative;color:#fff;isolation:isolate}
+.hero-img-wrap{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,30,22,.62) 0%,rgba(20,30,22,.42) 38%,rgba(20,30,22,.66) 100%)}
+.hero-inner{padding-block:var(--hero-y);max-width:46rem}
+.hero h1{font-size:var(--h1);color:#fff;font-weight:800;letter-spacing:var(--track-head);text-wrap:balance}
+.hero h1 em{font-style:normal;color:#e9c39a}
+.hero .lead{color:#eef2ec;margin-top:var(--s3);max-width:40ch;font-size:clamp(1.1rem,1.8vw,1.3rem)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s5)}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2) var(--s4);margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.22)}
+.hero-trust .item{display:flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;color:#eef2ec}
+.hero-trust svg{width:18px;height:18px;color:#e9c39a;flex:none}
+.stars{display:inline-flex;gap:1px;color:#f0b75e}
+.stars svg{width:17px;height:17px;color:#f0b75e}
+
+/* Trust strip */
+.trust-strip{background:var(--brand-d);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3) var(--s5);padding-block:var(--s5)}
+.trust-grid .cell{display:flex;align-items:center;gap:.85rem}
+.trust-grid svg{width:26px;height:26px;color:#d6a772;flex:none}
+.trust-grid .t-num{font-family:var(--display);font-size:1.45rem;font-weight:700;line-height:1;color:#fff}
+.trust-grid .t-lab{font-size:.86rem;color:#bcccbd;margin-top:3px}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s4);transition:transform var(--t),box-shadow var(--t),border-color var(--t);box-shadow:var(--sh-1)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:#d6ddd4}
+.svc-ico{width:54px;height:54px;border-radius:var(--r-m);background:var(--bg-3);display:flex;align-items:center;justify-content:center;margin-bottom:var(--s3)}
+.svc-ico svg{width:27px;height:27px;color:var(--brand)}
+.svc-card h3{margin-bottom:.5rem}
+.svc-card p{color:var(--ink-2);font-size:.98rem;line-height:1.55}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4);counter-reset:step}
+.step{position:relative;padding-top:var(--s2)}
+.step .num{font-family:var(--display);font-size:2.6rem;font-weight:800;color:var(--accent);line-height:1;opacity:.9}
+.step h3{margin:.6rem 0 .4rem}
+.step p{color:var(--ink-2);font-size:.98rem}
+.bg-dark .step p{color:#bcccbd}
+
+/* Feature split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.split-media img{border-radius:var(--r-l);box-shadow:var(--sh-4);width:100%;aspect-ratio:4/3;object-fit:cover}
+.feat-list{margin-top:var(--s4);display:grid;gap:var(--s3)}
+.feat-list li{display:flex;gap:.85rem;align-items:flex-start}
+.feat-list .chk{width:26px;height:26px;border-radius:var(--r-pill);background:var(--brand);flex:none;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.feat-list .chk svg{width:15px;height:15px;color:#fff}
+.feat-list strong{display:block;color:var(--ink);font-weight:700;font-family:var(--display);font-size:1.05rem}
+.feat-list span{color:var(--ink-2);font-size:.96rem}
+
+/* Reviews */
+.rev-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:var(--s3);margin-bottom:var(--s6)}
+.rev-rating{display:flex;align-items:center;gap:.85rem;background:#fff;border:1px solid var(--line);border-radius:var(--r-pill);padding:.6rem 1.1rem;box-shadow:var(--sh-1)}
+.rev-rating .big{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--ink)}
+.rev-rating .sub{font-size:.82rem;color:var(--ink-2)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:var(--s4);display:flex;flex-direction:column;box-shadow:var(--sh-1)}
+.rev-card .stars{margin-bottom:var(--s2)}
+.rev-card blockquote{font-size:1rem;line-height:1.6;color:var(--ink);max-width:none}
+.rev-card .who{margin-top:var(--s3);padding-top:var(--s3);border-top:1px solid var(--line);font-weight:700;color:var(--ink);font-size:.95rem;display:flex;align-items:center;gap:.5rem}
+.rev-card .who .gicon{width:18px;height:18px;flex:none}
+.rev-card .who small{font-weight:500;color:var(--ink-3);font-size:.8rem}
+.rev-foot{text-align:center;margin-top:var(--s6)}
+
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;gap:var(--s3)}
+.gal figure{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);background:var(--bg-3)}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 600ms cubic-bezier(.2,.6,.2,1)}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1rem .8rem;font-size:.84rem;font-weight:600;color:#fff;background:linear-gradient(180deg,transparent,rgba(20,30,22,.78));opacity:0;transition:opacity var(--t)}
+.gal figure:hover figcaption,.gal figure:focus-within figcaption{opacity:1}
+.gal .wide{grid-column:span 2}
+
+/* Service area */
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4)}
+.chip{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#eaf0ea;padding:.5rem .95rem;border-radius:var(--r-pill);font-weight:600;font-size:.92rem}
+.chip svg{width:15px;height:15px;color:#d6a772}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);border:1px solid rgba(255,255,255,.12);line-height:0}
+.map-frame iframe{width:100%;height:340px;border:0;display:block}
+
+/* FAQ */
+.faq{max-width:50rem;margin-inline:auto;display:grid;gap:var(--s2)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-1);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:1.15rem 1.4rem;font-family:var(--display);font-weight:600;font-size:1.06rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:22px;height:22px;flex:none;color:var(--accent);transition:transform var(--t)}
+.faq details[open] summary .pm{transform:rotate(45deg)}
+.faq .ans{padding:0 1.4rem 1.25rem;color:var(--ink-2);line-height:1.6}
+.faq .ans p{max-width:none}
+
+/* Quote / contact */
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem)}
+.q-form{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.5rem,3vw,2.4rem);box-shadow:var(--sh-3)}
+.q-form h3{font-size:1.5rem;margin-bottom:.4rem}
+.q-form .fhint{color:var(--ink-2);font-size:.95rem;margin-bottom:var(--s4)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-weight:600;font-size:.86rem;color:var(--ink);margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:var(--r-m);padding:.8rem .9rem;transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(47,93,58,.12)}
+.field textarea{resize:vertical;min-height:96px}
+.field.row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);margin-bottom:0}
+.q-form .btn-primary{width:100%;justify-content:center;margin-top:var(--s2)}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:var(--s3)}
+.form-ok{display:none;background:var(--bg-3);border:1px solid #cfe0d2;border-radius:var(--r-m);padding:var(--s4);text-align:center;color:var(--brand-d);font-weight:600}
+.form-ok.show{display:block}
+.field [aria-invalid="true"]{border-color:#c0492f;box-shadow:0 0 0 3px rgba(192,73,47,.12)}
+.err-msg{color:#c0492f;font-size:.8rem;margin-top:.3rem;display:none}
+.err-msg.show{display:block}
+
+.contact-info h3{font-size:1.5rem;margin-bottom:var(--s4)}
+.cinfo-list{display:grid;gap:var(--s3)}
+.cinfo{display:flex;gap:.95rem;align-items:flex-start}
+.cinfo .ci-ico{width:44px;height:44px;border-radius:var(--r-m);background:var(--bg-3);display:flex;align-items:center;justify-content:center;flex:none}
+.cinfo .ci-ico svg{width:21px;height:21px;color:var(--brand)}
+.cinfo .ci-lab{font-size:.8rem;color:var(--ink-3);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.cinfo .ci-val{font-weight:600;color:var(--ink);font-size:1.05rem}
+.cinfo .ci-val a:hover{color:var(--brand)}
+.cinfo .ci-val small{display:block;font-weight:400;color:var(--ink-2);font-size:.9rem;margin-top:2px}
+.hours-tbl{margin-top:var(--s2);width:100%;font-size:.93rem;border-collapse:collapse}
+.hours-tbl td{padding:.32rem 0;color:var(--ink-2)}
+.hours-tbl td:last-child{text-align:right;color:var(--ink);font-weight:600}
+.socials{display:flex;gap:.6rem;margin-top:var(--s4)}
+.socials a{width:42px;height:42px;border-radius:var(--r-pill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-2);transition:all var(--t)}
+.socials a:hover{background:var(--brand);border-color:var(--brand);color:#fff;transform:translateY(-2px)}
+.socials svg{width:19px;height:19px}
+
+/* Review CTA band */
+.gband{background:var(--bg-2);border-radius:var(--r-l);padding:clamp(1.75rem,4vw,2.75rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--s4);border:1px solid var(--line)}
+.gband .gt h3{font-size:1.4rem}
+.gband .gt p{color:var(--ink-2);margin-top:.3rem}
+
+/* Footer */
+.footer{background:var(--ink);color:#c2cbc4;padding-block:var(--s6) var(--s5);position:relative;overflow:hidden}
+.footer .wm{position:absolute;right:-2%;bottom:-3.2rem;font-family:var(--display);font-weight:800;font-size:clamp(5rem,16vw,13rem);color:rgba(255,255,255,.035);line-height:1;pointer-events:none;white-space:nowrap;letter-spacing:-.03em}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:var(--s5);position:relative;z-index:1}
+.foot-brand .brand{color:#fff;margin-bottom:var(--s3)}
+.foot-brand .brand small{color:#d6a772}
+.foot-brand p{color:#9aa69e;font-size:.95rem;max-width:34ch}
+.foot-col h4{font-family:var(--body);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#7f8b83;margin-bottom:var(--s3)}
+.foot-col a,.foot-col p{display:block;color:#c2cbc4;font-size:.95rem;padding:.28rem 0}
+.foot-col a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:var(--s6);padding-top:var(--s4);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);font-size:.85rem;color:#828d85;position:relative;z-index:1}
+.foot-bottom a{color:#9aa69e}
+.foot-bottom a:hover{color:#fff}
+
+/* Mobile sticky call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:none;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(28,38,32,.1);padding:.6rem;gap:.6rem;grid-template-columns:1fr 1fr}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:.5rem;font-weight:700;border-radius:var(--r-m);padding:.85rem;font-size:.98rem}
+.callbar .cb-call{background:var(--brand);color:#fff}
+.callbar .cb-quote{background:var(--accent);color:#fff}
+.callbar svg{width:18px;height:18px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media (max-width:920px){
+  .svc-grid,.rev-grid,.gal{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:var(--s4)}
+  .split,.area-grid,.contact-grid{grid-template-columns:1fr}
+  .split-media{order:-1}
+  .gal .wide{grid-column:span 2}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .hdr-cta .btn{display:none}
+}
+@media (max-width:640px){
+  .hdr-cta .tel-link span{display:none}
+  .svc-grid,.rev-grid,.trust-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .gal .wide{grid-column:span 2}
+  .field.row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .callbar{display:grid}
+  body{padding-bottom:74px}
+  .hero-trust{gap:.6rem var(--s3)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-row">
+    <a href="#top" class="brand" aria-label="The Landscape Company home">
+      <svg class="mark" viewBox="0 0 40 40" role="img" aria-hidden="true">
+        <rect width="40" height="40" rx="6" fill="#2f5d3a"/>
+        <path d="M20 7l5 8h-3l4 7h-3.2l4.2 7H13l4.2-7H14l4-7h-3z" fill="#9ec3a3"/>
+        <path d="M11 9l3.6 6h-2.1l2.8 5H10l2.8-5h-1.6L13.5 9z" fill="#6c9b74" opacity=".85"/>
+        <path d="M29 9l3.6 6h-2.1l2.8 5H28l2.8-5h-1.6L31.5 9z" fill="#6c9b74" opacity=".85"/>
+        <rect x="18.6" y="28" width="2.8" height="6" fill="#7a5a36"/>
+      </svg>
+      <span>The Landscape Company<small>Longmont, Colorado</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="tel-link" href="tel:+13035201738" aria-label="Call (303) 520-1738">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(303) 520-1738</span>
+      </a>
+      <a class="btn btn-primary" href="#quote">Free Consultation</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Mobile menu">
+  <div class="drawer-top">
+    <span class="brand" style="font-size:1rem"><span>The Landscape Company</span></span>
+    <button class="menu-btn" id="menuClose" aria-label="Close menu" style="display:block">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="#services">Services</a>
+  <a href="#work">Our Work</a>
+  <a href="#process">Process</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#area">Service Area</a>
+  <a href="#faq">FAQ</a>
+  <a class="tel-link" href="tel:+13035201738" style="border:none;padding-top:1rem">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    (303) 520-1738
+  </a>
+  <a class="btn btn-primary" href="#quote">Start Your Project</a>
+</aside>
+
+<main id="top">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <img src="assets/hero.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Cedar pergola over a flagstone patio at sunset with a Colorado mountain view, a custom outdoor living space built in Longmont">
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Custom Landscape Design &amp; Build · Boulder County</p>
+      <h1>Your backyard, <em>designed and built</em> into the place you never want to leave.</h1>
+      <p class="lead">We design and install complete outdoor living spaces across Longmont, Erie, Frederick &amp; Broomfield — from water features and pergolas to xeriscapes that thrive in Colorado.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#quote">Start Your Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a class="btn btn-on-dark" href="tel:+13035201738">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (303) 520-1738
+        </a>
+      </div>
+      <div class="hero-trust">
+        <span class="item">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>5.0 on 18 Google reviews</span>
+        </span>
+        <span class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Over 45 years of experience
+        </span>
+        <span class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          Design-build, start to finish
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trust strip ===== -->
+  <section class="trust-strip" aria-label="At a glance">
+    <div class="wrap">
+      <div class="trust-grid">
+        <div class="cell">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.6 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+          <div><div class="t-num">5.0&nbsp;★</div><div class="t-lab">Across 18 Google reviews</div></div>
+        </div>
+        <div class="cell">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><div class="t-num">45+ years</div><div class="t-lab">Of landscaping experience</div></div>
+        </div>
+        <div class="cell">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>
+          <div><div class="t-num">Design + Build</div><div class="t-lab">One team, plan to planting</div></div>
+        </div>
+        <div class="cell">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><div class="t-num">Boulder County</div><div class="t-lab">Longmont &amp; surrounding towns</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What We Build</p>
+        <h2>Complete outdoor living, from one collaborative team.</h2>
+        <p class="lead">We don't just maintain yards — we design and build them. Every project is drawn around how you actually want to live outside, then installed by the same crew that planned it.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21v-9l7-4 7 4v9"/><path d="M9 21v-5h6v5"/><path d="M9 12h6"/></svg></div>
+          <h3>Outdoor Living Spaces</h3>
+          <p>Patios, seating areas and full backyard retreats designed for relaxing and entertaining — the heart of every project we take on.</p>
+        </article>
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 5-9 5-9z"/><path d="M3 20c2 0 2 1.5 4.5 1.5S10 20 12 20s2 1.5 4.5 1.5S19 20 21 20"/></svg></div>
+          <h3>Water Features</h3>
+          <p>Custom ponds, waterfalls and courtyard fountains that bring movement and sound to your landscape — a signature of our design work.</p>
+        </article>
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c0-6 0-9 0-9"/><path d="M12 13c-2-1-4-3-4-6 2 0 4 1 4 4"/><path d="M12 11c1.5-1.5 4-2.5 6-2-1 3-3.5 4.5-6 4.5"/><path d="M5 22h14"/></svg></div>
+          <h3>Xeriscapes</h3>
+          <p>Boulder placement, native grasses and water-wise planting designed for Colorado's climate — beautiful year-round with far less watering.</p>
+        </article>
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2v3"/><path d="M5.5 5.5l1.5 1.5"/><path d="M18.5 5.5L17 7"/><path d="M9 14a5 5 0 1 1 6 0 3 3 0 0 0-1 2h-4a3 3 0 0 0-1-2z"/></svg></div>
+          <h3>Night Lighting</h3>
+          <p>Low-voltage landscape lighting that highlights your trees, paths and architecture — so your outdoor space comes alive after sunset.</p>
+        </article>
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18"/><path d="M4 9V5h16v4"/><path d="M5 9v11"/><path d="M19 9v11"/><path d="M9 9v11"/><path d="M15 9v11"/></svg></div>
+          <h3>Pergolas, Patios &amp; Walkways</h3>
+          <p>Cedar pergolas, flagstone walkways and paver patios built to last — the hardscape structure that gives a yard its shape and shade.</p>
+        </article>
+        <article class="svc-card reveal">
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="11" rx="1.5"/><path d="M3 13h18"/><circle cx="7.5" cy="11" r=".6" fill="currentColor"/><circle cx="11" cy="11" r=".6" fill="currentColor"/><path d="M7 5c0 1-1 1-1 2M11 5c0 1-1 1-1 2M15 5c0 1-1 1-1 2"/></svg></div>
+          <h3>Outdoor Kitchens</h3>
+          <p>Built-in grills, counters and dining areas under the stars — designed so the whole gathering happens out back, not just the cooking.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Feature split (why us) ===== -->
+  <section class="section bg-2">
+    <div class="wrap split">
+      <div class="split-copy reveal">
+        <p class="eyebrow">Why Homeowners Choose Us</p>
+        <h2>One team that draws the plan and brings it to life.</h2>
+        <p class="lead">Plenty of yards look fine. Yours should reflect how you actually live — and it should be built by the same people who designed it, so nothing gets lost between paper and patio.</p>
+        <ul class="feat-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Design-build, not subcontracted</strong>We create your plan and install it with our own crew, so the finished space matches the vision.</span></li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Collaborative by design</strong>We meet, listen and refine the plan around your ideas before a single boulder is set.</span></li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>Built for Colorado</strong>Xeriscape know-how, proper drainage and hardy planting that holds up to the Front Range climate.</span></li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span><strong>A 5.0 reputation we protect</strong>Clear communication, on-time crews and attention to detail — exactly what our reviews describe.</span></li>
+        </ul>
+      </div>
+      <div class="split-media reveal">
+        <img src="assets/pergola-hammock-lawn.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Backyard with a cedar pergola, hammock, placed boulders and fresh sod lawn built by The Landscape Company near Longmont">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Process ===== -->
+  <section class="section bg-dark" id="process">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">How It Works</p>
+        <h2>Three simple steps to your dream yard.</h2>
+        <p class="lead">From first conversation to the day you settle in outside, we keep the process clear and collaborative.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="num">01</div>
+          <h3>Schedule your free consultation</h3>
+          <p>We visit your property, talk through how you want to use the space, and listen to the ideas you already have.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">02</div>
+          <h3>Collaborate on your design</h3>
+          <p>We create a plan tailored to your yard and budget, then refine it together until it's exactly right.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">03</div>
+          <h3>Enjoy your finished space</h3>
+          <p>Our crew builds it start to finish — then it's yours to relax in, entertain in, and love showing off.</p>
+        </div>
+      </div>
+      <div class="center" style="margin-top:var(--s6)">
+        <a class="btn btn-primary" href="#quote">Book My Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="rev-head reveal">
+        <div class="section-head" style="margin-bottom:0">
+          <p class="eyebrow">In Their Words</p>
+          <h2>Homeowners who let us bring their vision to life.</h2>
+        </div>
+        <div class="rev-rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <div><span class="big">5.0</span> <span class="sub">/ 5 · 18 Google reviews</span></div>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <blockquote>"Levi and crew did an exceptional job of bringing our landscape design to life. Fast and efficient, his team was quick to communicate. Able to visualize artistically in 3 dimensions, he helped us select the perfect boulders... If you are looking for something beyond the ordinary, Levi will deliver."</blockquote>
+          <div class="who">
+            <svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+            R Merritt <small>· Google review</small>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <blockquote>"Levi met with us several times and provided an excellent design, based upon our input. Levi and his crew showed up on time and did an incredible job turning the landscape plan into a beautiful reality! We can heartily recommend the Landscape Company to anyone looking to replace or update their landscape."</blockquote>
+          <div class="who">
+            <svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+            J Scott <small>· Google review</small>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <blockquote>"We had such a great experience working with Levi and his team. Our backyard looks incredible thanks to him and his hardworking, talented crew. Professional, on time, and respectful. Every detail was thoughtfully done... the final result truly transformed our outdoor space."</blockquote>
+          <div class="who">
+            <svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+            Brandon &amp; Dusty Day <small>· Google review</small>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <blockquote>"Their commitment to excellence and professionalism is top notch. It's refreshing to work with a family owned business who truly understands a strong work ethic. You won't find a stronger company when it comes to collaboration and bringing your vision to life."</blockquote>
+          <div class="who">
+            <svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+            Rodney Corey <small>· Google review</small>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <blockquote>"We had a fantastic experience with TLC, Levi and his team! They came in and worked on our yard and were done quickly. Plus the knowledge of the whole team is great. I would recommend them for any landscape project."</blockquote>
+          <div class="who">
+            <svg class="gicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+            Heidi Foote <small>· Google review</small>
+          </div>
+        </article>
+        <article class="rev-card reveal" style="background:var(--brand-d);color:#eaf0ea;justify-content:center;align-items:flex-start">
+          <h3 style="color:#fff;font-size:1.3rem">Loved working with us?</h3>
+          <p style="color:#c4d0c5;margin:.6rem 0 1.2rem;font-size:.97rem">Your review helps other Colorado homeowners find a crew they can trust.</p>
+          <a class="btn btn-on-dark" href="https://search.google.com/local/writereview?placeid=ChIJT-OQbvVkU48Rfk5cGuxSL5Q" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.6 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg>
+            Leave a Google review
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section bg-2" id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Recent Projects</p>
+        <h2>A look at outdoor spaces we've designed and built.</h2>
+        <p class="lead">Every photo below is our own work across the Front Range — patios, pergolas, water features and xeriscapes installed by our crew.</p>
+      </div>
+      <div class="gal">
+        <figure class="reveal wide"><img src="assets/estate-aerial.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Aerial view of a completed estate landscape with curved hardscape and xeriscape beds near Longmont, Colorado"><figcaption>Full-property design &amp; install · estate landscape</figcaption></figure>
+        <figure class="reveal"><img src="assets/pergola-lighting-dusk.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Cedar pergola patio with low-voltage night lighting at dusk on a paver patio"><figcaption>Pergola patio with night lighting</figcaption></figure>
+        <figure class="reveal"><img src="assets/outdoor-kitchen-night.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Outdoor kitchen with built-in grill and string lights under a pergola at night"><figcaption>Built-in outdoor kitchen</figcaption></figure>
+        <figure class="reveal"><img src="assets/flagstone-walkway.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Flagstone walkway leading past stone pillars and a pergola in a Colorado backyard"><figcaption>Flagstone walkway &amp; stonework</figcaption></figure>
+        <figure class="reveal"><img src="assets/xeriscape-frontyard.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Front-yard xeriscape with boulders, native grasses and gravel for water-wise Colorado landscaping"><figcaption>Water-wise xeriscape</figcaption></figure>
+        <figure class="reveal"><img src="assets/planting-beds.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Front-yard planting beds with mulch, shrubs and stone edging beside a manicured lawn"><figcaption>Planting beds &amp; stone edging</figcaption></figure>
+        <figure class="reveal"><img src="assets/dry-creek-bed.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Dry creek bed with river rock used for drainage alongside mulched landscape beds"><figcaption>Dry creek bed &amp; drainage</figcaption></figure>
+        <figure class="reveal"><img src="assets/boulder-xeriscape.webp" width="1100" height="825" loading="lazy" decoding="async" alt="Modern Colorado home with a boulder xeriscape, ornamental tree and gravel ground cover"><figcaption>Boulder xeriscape &amp; entry</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Service area ===== -->
+  <section class="section bg-dark" id="area">
+    <div class="wrap area-grid">
+      <div class="area-copy reveal">
+        <p class="eyebrow">Where We Work</p>
+        <h2>Designing &amp; building across Boulder County and north Denver.</h2>
+        <p class="lead">Based in Longmont, we serve homeowners throughout the surrounding Front Range communities. If you're nearby and don't see your town listed, reach out — we likely cover you.</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="2.5"/></svg>Longmont</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="2.5"/></svg>Erie</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="2.5"/></svg>Frederick</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="2.5"/></svg>Broomfield</span>
+        </div>
+      </div>
+      <div class="map-frame reveal">
+        <iframe title="Map of The Landscape Company service area around Longmont, Colorado" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-105.35%2C39.92%2C-104.78%2C40.28&amp;layer=mapnik&amp;marker=40.1223%2C-104.9593"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Good To Know</p>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>Do you handle both the design and the installation?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="ans"><p>Yes — we're a design-build landscaper. We create the plan with you and then install it with our own crew, so the finished space matches the design and nothing is lost handing off to a separate contractor.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>What does the process look like to get started?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="ans"><p>It starts with a free consultation at your property. We talk through how you want to use the space and your budget, then collaborate on a tailored design. Once you're happy with the plan, we schedule the build and our crew handles it start to finish.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>What kinds of projects do you take on?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="ans"><p>Complete outdoor living spaces: patios and walkways, cedar pergolas, water features, xeriscapes and native planting, low-voltage night lighting, and outdoor kitchens. We work on both residential and commercial properties.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>Do you design xeriscapes suited to Colorado's climate?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="ans"><p>Absolutely. Water-wise xeriscaping — boulder placement, native grasses and drought-tolerant planting — is one of our specialties, designed to look great year-round on the Front Range while cutting down on watering.</p></div>
+        </details>
+        <details class="reveal">
+          <summary>Which areas do you serve?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></summary>
+          <div class="ans"><p>We're based in Longmont and serve the surrounding Boulder County and north-Denver communities, including Erie, Frederick and Broomfield. If you're nearby and not sure, give us a call at (303) 520-1738.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quote / contact ===== -->
+  <section class="section bg-2" id="quote">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Start Your Project</p>
+        <h2>Let's design your outdoor space.</h2>
+        <p class="lead">Tell us a little about your yard and what you have in mind. We'll be in touch to schedule your free consultation.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="q-form reveal" id="quoteForm" novalidate>
+          <h3>Request your free consultation</h3>
+          <p class="fhint">No obligation — just a conversation about your project.</p>
+          <div id="formFields">
+            <div class="field row">
+              <div>
+                <label for="qname">Name</label>
+                <input id="qname" name="name" type="text" autocomplete="name" required>
+                <span class="err-msg" id="err-name">Please enter your name.</span>
+              </div>
+              <div>
+                <label for="qphone">Phone</label>
+                <input id="qphone" name="phone" type="tel" autocomplete="tel" required>
+                <span class="err-msg" id="err-phone">Please enter a phone number.</span>
+              </div>
+            </div>
+            <div class="field" style="margin-top:var(--s3)">
+              <label for="qzip">Project ZIP code</label>
+              <input id="qzip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="e.g. 80504">
+            </div>
+            <div class="field">
+              <label for="qproject">Project type</label>
+              <select id="qproject" name="project">
+                <option value="">Select one…</option>
+                <option>Full outdoor living space</option>
+                <option>Water feature</option>
+                <option>Xeriscape / planting</option>
+                <option>Patio, pergola or walkway</option>
+                <option>Outdoor kitchen</option>
+                <option>Night lighting</option>
+                <option>Not sure yet — need ideas</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="qmsg">Tell us about your yard</label>
+              <textarea id="qmsg" name="message" placeholder="What would you love your outdoor space to do?"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Request My Free Consultation
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="form-note">Prefer to talk now? Call <a href="tel:+13035201738" style="color:var(--brand);font-weight:700">(303) 520-1738</a>.</p>
+          </div>
+          <div class="form-ok" id="formOk"></div>
+        </form>
+
+        <div class="contact-info reveal">
+          <h3>Get in touch</h3>
+          <div class="cinfo-list">
+            <div class="cinfo">
+              <div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><div class="ci-lab">Call or text</div><div class="ci-val"><a href="tel:+13035201738">(303) 520-1738</a></div></div>
+            </div>
+            <div class="cinfo">
+              <div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div class="ci-lab">Based in</div><div class="ci-val">Longmont, CO 80504<small>Serving Boulder County &amp; north Denver</small></div></div>
+            </div>
+            <div class="cinfo">
+              <div class="ci-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div>
+                <div class="ci-lab">Hours</div>
+                <table class="hours-tbl">
+                  <tr><td>Monday</td><td>8:30 AM – 8:00 PM</td></tr>
+                  <tr><td>Tue – Saturday</td><td>8:00 AM – 8:00 PM</td></tr>
+                  <tr><td>Sunday</td><td>Closed</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="socials" aria-label="Social media">
+            <a href="https://www.facebook.com/profile.php?id=61572589098001" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/thelandscapecompanyllc/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@TheLandscapeCompanyLLC" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.8C19.2 5 12 5 12 5s-7.2 0-8.9.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.8C4.8 19 12 19 12 19s7.2 0 8.9-.5a2.5 2.5 0 0 0 1.7-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand" style="color:#fff">
+          <svg class="mark" viewBox="0 0 40 40" role="img" aria-hidden="true">
+            <rect width="40" height="40" rx="6" fill="#2f5d3a"/>
+            <path d="M20 7l5 8h-3l4 7h-3.2l4.2 7H13l4.2-7H14l4-7h-3z" fill="#9ec3a3"/>
+            <path d="M11 9l3.6 6h-2.1l2.8 5H10l2.8-5h-1.6L13.5 9z" fill="#6c9b74" opacity=".85"/>
+            <path d="M29 9l3.6 6h-2.1l2.8 5H28l2.8-5h-1.6L31.5 9z" fill="#6c9b74" opacity=".85"/>
+            <rect x="18.6" y="28" width="2.8" height="6" fill="#7a5a36"/>
+          </svg>
+          <span>The Landscape Company<small>Longmont, Colorado</small></span>
+        </span>
+        <p>Custom landscape design and build for homeowners across Boulder County and north Denver. Bringing your outdoor vision to life, start to finish.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Outdoor Living Spaces</a>
+        <a href="#services">Water Features</a>
+        <a href="#services">Xeriscapes</a>
+        <a href="#services">Pergolas &amp; Patios</a>
+        <a href="#services">Outdoor Kitchens</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+13035201738">(303) 520-1738</a>
+        <p>Longmont, CO 80504</p>
+        <a href="#quote">Free Consultation</a>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJT-OQbvVkU48Rfk5cGuxSL5Q" target="_blank" rel="noopener">Leave a Google Review</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> The Landscape Company LLC · Longmont, CO</span>
+      <span>Landscape Design &amp; Build · Boulder County, Colorado</span>
+    </div>
+  </div>
+  <div class="wm" aria-hidden="true">The Landscape Company</div>
+</footer>
+
+<!-- Mobile sticky call bar -->
+<nav class="callbar" aria-label="Quick actions">
+  <a class="cb-call" href="tel:+13035201738">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call Now
+  </a>
+  <a class="cb-quote" href="#quote">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+    Free Quote
+  </a>
+</nav>
+
+<!-- JSON-LD: HomeAndConstructionBusiness (NO aggregateRating/review per Google policy) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "The Landscape Company LLC",
+  "image": "https://savcab.github.io/websites/the-landscape-company/assets/hero.webp",
+  "url": "https://savcab.github.io/websites/the-landscape-company/",
+  "telephone": "+1-303-520-1738",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5101 Dvorak Cir",
+    "addressLocality": "Longmont",
+    "addressRegion": "CO",
+    "postalCode": "80504",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 40.1223055, "longitude": -104.9592834 },
+  "areaServed": [
+    { "@type": "City", "name": "Longmont" },
+    { "@type": "City", "name": "Erie" },
+    { "@type": "City", "name": "Frederick" },
+    { "@type": "City", "name": "Broomfield" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:30", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "20:00" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61572589098001",
+    "https://www.instagram.com/thelandscapecompanyllc/",
+    "https://www.youtube.com/@TheLandscapeCompanyLLC"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Landscape Design & Build Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outdoor Living Spaces" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Features" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Xeriscape Design & Install" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscape Night Lighting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pergolas, Patios & Walkways" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outdoor Kitchens" } }
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById('hdr');
+  var onScroll=function(){ if(window.scrollY>12){hdr.classList.add('solid');}else{hdr.classList.remove('solid');} };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  // Mobile drawer
+  var drawer=document.getElementById('drawer'), scrim=document.getElementById('scrim');
+  var openD=function(){drawer.classList.add('open');scrim.classList.add('open');document.getElementById('menuBtn').setAttribute('aria-expanded','true');};
+  var closeD=function(){drawer.classList.remove('open');scrim.classList.remove('open');document.getElementById('menuBtn').setAttribute('aria-expanded','false');};
+  document.getElementById('menuBtn').addEventListener('click',openD);
+  document.getElementById('menuClose').addEventListener('click',closeD);
+  scrim.addEventListener('click',closeD);
+  Array.prototype.forEach.call(drawer.querySelectorAll('a'),function(a){a.addEventListener('click',closeD);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeD();});
+
+  // Reveal on scroll (first-view, supporting content only)
+  var revs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);} });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    revs.forEach(function(el){io.observe(el);});
+    setTimeout(function(){revs.forEach(function(el){el.classList.add('in');});},2500); // failsafe
+  } else { revs.forEach(function(el){el.classList.add('in');}); }
+
+  // Year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Quote form — client-side validation + confirmation (no backend; honest "we'll call you")
+  var form=document.getElementById('quoteForm');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var ok=true;
+      var checks=[['qname','err-name'],['qphone','err-phone']];
+      checks.forEach(function(c){
+        var f=document.getElementById(c[0]), em=document.getElementById(c[1]);
+        if(!f.value.trim()){ f.setAttribute('aria-invalid','true'); em.classList.add('show'); ok=false; }
+        else { f.removeAttribute('aria-invalid'); em.classList.remove('show'); }
+      });
+      if(!ok){ var bad=form.querySelector('[aria-invalid="true"]'); if(bad)bad.focus(); return; }
+      var name=document.getElementById('qname').value.trim().split(' ')[0];
+      document.getElementById('formFields').style.display='none';
+      var okBox=document.getElementById('formOk');
+      okBox.innerHTML='Thanks'+(name?', '+name.replace(/[<>&"]/g,''):'')+'! Your request is noted. We’ll reach out shortly to schedule your free consultation.<br><br>Need to talk sooner? Call <a href="tel:+13035201738" style="color:var(--brand);font-weight:700">(303) 520-1738</a>.';
+      okBox.classList.add('show');
+    });
+  }
+})();
+</script>
+</body>
+</html>

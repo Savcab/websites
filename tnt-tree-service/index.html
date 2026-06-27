@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tree Removal in Ocean Park, WA | TnT Tree Service</title>
+<meta name="description" content="TnT Tree Service takes down the large, dangerous trees other crews refuse — removal, storm response, trimming & stump grinding on the Long Beach Peninsula. Call (360) 214-0922, 7 days a week." />
+<link rel="canonical" href="https://savcab.github.io/websites/tnt-tree-service/" />
+<meta name="theme-color" content="#143226" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Tree Removal in Ocean Park, WA | TnT Tree Service" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://savcab.github.io/websites/tnt-tree-service/" />
+<meta property="og:image" content="https://savcab.github.io/websites/tnt-tree-service/assets/hero-tree-removal-ocean-park.jpg" />
+<meta property="og:description" content="The crew Peninsula homeowners call for the big, threatening trees others won't touch. Removal, storm response, trimming & stump grinding. Open 7 days." />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- LocalBusiness structured data — HomeAndConstructionBusiness; NO review/aggregateRating per Google policy -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "TnT Tree Service",
+  "image": "https://savcab.github.io/websites/tnt-tree-service/assets/hero-tree-removal-ocean-park.jpg",
+  "url": "https://savcab.github.io/websites/tnt-tree-service/",
+  "telephone": "+13602140922",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "28400 U St",
+    "addressLocality": "Ocean Park",
+    "addressRegion": "WA",
+    "postalCode": "98640",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 46.5078111,
+    "longitude": -124.043509
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Ocean Park" },
+    { "@type": "City", "name": "Long Beach" },
+    { "@type": "City", "name": "Ilwaco" },
+    { "@type": "City", "name": "Seaview" },
+    { "@type": "City", "name": "Nahcotta" },
+    { "@type": "City", "name": "Oysterville" },
+    { "@type": "City", "name": "Chinook" },
+    { "@type": "City", "name": "Naselle" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tree Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Large & Hazardous Tree Removal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Storm & Emergency Tree Response" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tree Trimming & Pruning" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stump Grinding" } }
+    ]
+  }
+}
+</script>
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --display:'Space Grotesk', system-ui, sans-serif;
+  --body:'Hanken Grotesk', system-ui, sans-serif;
+  --h1:clamp(2.25rem,5.4vw,3.6rem);
+  --h2:clamp(1.6rem,3.2vw,2.3rem);
+  --h3:1.3rem;
+  --fz:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.02em;
+  /* COLOR — coastal PNW: weathered evergreen / storm grey / cut-cedar amber */
+  --ink:#1c211e;
+  --ink-2:#535b54;
+  --ink-3:#838c84;
+  --line:#e4e3da;
+  --bg:#ffffff;
+  --bg-2:#f4f1ea;       /* warm driftwood neutral */
+  --bg-3:#eceae0;
+  --brand:#1f4d3a;      /* deep coastal evergreen */
+  --brand-d:#143226;    /* darkest evergreen */
+  --brand-l:#2f6b51;
+  --accent:#c46a2c;     /* cut-cedar / amber — CTA only */
+  --accent-d:#a9551d;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,30,24,.06);
+  --sh-2:0 2px 4px rgba(20,30,24,.06),0 4px 10px rgba(20,30,24,.05);
+  --sh-3:0 6px 14px rgba(20,30,24,.08),0 14px 30px rgba(20,30,24,.08);
+  --sh-4:0 10px 20px rgba(20,30,24,.10),0 28px 56px rgba(20,30,24,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  font-size:var(--fz);
+  line-height:var(--lh-body);
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700;color:var(--ink)}
+h1{font-size:var(--h1)}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.container{width:100%;max-width:75rem;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.bg-2{background:var(--bg-2)}
+.eyebrow{
+  font-family:var(--display);font-weight:600;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brand-l);display:inline-block;margin-bottom:var(--s2);
+}
+.lede{font-size:1.15rem;color:var(--ink-2);max-width:54ch;line-height:1.55}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:var(--display);font-weight:600;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:var(--r-m);min-height:52px;
+  cursor:pointer;border:1.5px solid transparent;transition:var(--t);white-space:nowrap;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-on-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.btn-on-dark:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+/* ---------- Header ---------- */
+.header{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:700;font-size:1.2rem;letter-spacing:-.01em}
+.brand .mark{
+  width:38px;height:38px;border-radius:10px;background:var(--brand);color:#fff;
+  display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)
+}
+.brand .mark svg{width:22px;height:22px}
+.brand small{display:block;font-family:var(--body);font-weight:500;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav{display:flex;align-items:center;gap:var(--s5)}
+.nav-links{display:flex;gap:var(--s4);align-items:center}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.header-phone{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:700;color:var(--brand);font-size:1.02rem}
+.header-phone svg{width:18px;height:18px}
+@media (max-width:900px){.nav-links{display:none}.header-phone .lbl{display:none}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--brand-d)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-scrim{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(20,50,38,.72) 0%,rgba(20,50,38,.5) 38%,rgba(15,30,24,.82) 100%);
+}
+.hero-inner{position:relative;z-index:2;padding-block:var(--hero-y)}
+.hero-grid{max-width:42rem}
+.hero .badge{
+  display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:600;
+  font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(196,106,44,.92);color:#fff;padding:.45rem .9rem;border-radius:var(--r-pill);margin-bottom:var(--s3)
+}
+.hero .badge svg{width:15px;height:15px}
+.hero h1{color:#fff;margin-bottom:var(--s3);text-shadow:0 2px 18px rgba(0,0,0,.28)}
+.hero h1 .accent{color:#f2c79a}
+.hero-sub{font-size:1.18rem;line-height:1.55;color:rgba(255,255,255,.93);max-width:38ch;margin-bottom:var(--s4)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.hero-trust{display:flex;flex-wrap:wrap;gap:var(--s4);margin-top:var(--s5);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.2)}
+.hero-trust .item{display:flex;align-items:center;gap:.6rem}
+.hero-trust .item svg{width:20px;height:20px;color:#f2c79a;flex:none}
+.hero-trust .item strong{display:block;font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.1}
+.hero-trust .item span{font-size:.82rem;color:rgba(255,255,255,.78)}
+.stars{color:#f2c79a;letter-spacing:1px}
+
+/* ---------- Trust strip ---------- */
+.trust-strip{background:var(--brand-d);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.trust-strip .container{display:flex;flex-wrap:wrap;gap:var(--s3) var(--s6);justify-content:center;padding-block:var(--s4)}
+.trust-strip .ts{display:flex;align-items:center;gap:.65rem;font-size:.96rem}
+.trust-strip .ts svg{width:20px;height:20px;color:#f2c79a;flex:none}
+.trust-strip .ts b{font-family:var(--display);font-weight:600}
+
+/* ---------- Section heading ---------- */
+.sec-head{max-width:50rem;margin-bottom:var(--s6)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head.center .lede{margin-inline:auto}
+.sec-head p{margin-top:var(--s2)}
+
+/* ---------- Services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:var(--s3)}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+.svc-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);
+  padding:var(--s5) var(--s4);transition:var(--t);position:relative;overflow:hidden
+}
+.svc-card.feature{grid-column:1/-1;background:var(--brand);color:#fff;border-color:var(--brand)}
+@media(min-width:640px){.svc-card.feature{grid-column:1/-1}}
+.svc-card:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-icon{
+  width:52px;height:52px;border-radius:var(--r-m);display:grid;place-items:center;
+  background:var(--bg-2);color:var(--brand);margin-bottom:var(--s3)
+}
+.svc-card.feature .svc-icon{background:rgba(255,255,255,.16);color:#fff}
+.svc-icon svg{width:26px;height:26px}
+.svc-card h3{margin-bottom:.5rem}
+.svc-card.feature h3{color:#fff}
+.svc-card p{color:var(--ink-2);font-size:.98rem;max-width:46ch}
+.svc-card.feature p{color:rgba(255,255,255,.9)}
+.svc-card .tag{
+  display:inline-block;font-family:var(--display);font-weight:600;font-size:.72rem;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--accent);background:rgba(196,106,44,.1);
+  padding:.3rem .7rem;border-radius:var(--r-pill);margin-bottom:var(--s3)
+}
+.feature-layout{display:grid;gap:var(--s4);align-items:center}
+@media(min-width:760px){.feature-layout{grid-template-columns:1.3fr 1fr}}
+.feature-list{list-style:none;display:grid;gap:.7rem;margin-top:var(--s3)}
+.feature-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.98rem;color:rgba(255,255,255,.92)}
+.feature-list li svg{width:19px;height:19px;color:#f2c79a;flex:none;margin-top:2px}
+
+/* ---------- Why us ---------- */
+.why-grid{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.why-grid{grid-template-columns:repeat(4,1fr)}}
+.why-card{padding:var(--s3) 0}
+.why-icon{
+  width:48px;height:48px;border-radius:var(--r-m);display:grid;place-items:center;
+  background:var(--brand);color:#fff;margin-bottom:var(--s3);box-shadow:var(--sh-2)
+}
+.why-icon svg{width:24px;height:24px}
+.why-card h3{font-size:1.12rem;margin-bottom:.4rem}
+.why-card p{color:var(--ink-2);font-size:.95rem}
+
+/* ---------- Process ---------- */
+.proc-wrap{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:760px){.proc-wrap{grid-template-columns:repeat(4,1fr)}}
+.proc-step{position:relative;padding-top:var(--s4)}
+.proc-num{
+  font-family:var(--display);font-weight:700;font-size:.85rem;letter-spacing:.05em;
+  width:42px;height:42px;border-radius:var(--r-pill);background:var(--bg);border:2px solid var(--brand);
+  color:var(--brand);display:grid;place-items:center;margin-bottom:var(--s3)
+}
+.proc-step h3{font-size:1.1rem;margin-bottom:.45rem}
+.proc-step p{color:var(--ink-2);font-size:.93rem}
+
+/* ---------- Reviews ---------- */
+.rev-grid{display:grid;grid-template-columns:1fr;gap:var(--s4)}
+@media(min-width:860px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+.rev-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);
+  padding:var(--s5);box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:var(--s3)
+}
+.rev-card .stars{font-size:1.05rem}
+.rev-card blockquote{font-size:1.08rem;line-height:1.6;color:var(--ink);font-weight:500;max-width:none}
+.rev-card .who{display:flex;align-items:center;gap:.75rem;margin-top:auto}
+.rev-card .avatar{
+  width:42px;height:42px;border-radius:var(--r-pill);background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1rem;flex:none
+}
+.rev-card .who b{font-family:var(--display);font-weight:600;display:block;font-size:.98rem}
+.rev-card .who span{font-size:.82rem;color:var(--ink-3)}
+.rev-foot{text-align:center;margin-top:var(--s5)}
+.rev-foot a{font-family:var(--display);font-weight:600;color:var(--brand);border-bottom:2px solid var(--accent);padding-bottom:2px}
+.rev-foot a:hover{color:var(--accent-d)}
+
+/* ---------- Gallery ---------- */
+.gal-grid{display:grid;grid-template-columns:1fr;gap:var(--s2)}
+@media(min-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.gal-item{
+  border-radius:var(--r-m);overflow:hidden;background:var(--bg-3);position:relative;
+  box-shadow:var(--sh-1)
+}
+.gal-item img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 400ms ease}
+.gal-item:hover img{transform:scale(1.04)}
+.gal-item .cap{
+  position:absolute;left:0;right:0;bottom:0;padding:.7rem .85rem;
+  background:linear-gradient(0deg,rgba(15,30,24,.82),transparent);
+  color:#fff;font-size:.82rem;font-weight:500;font-family:var(--display)
+}
+
+/* ---------- Service area ---------- */
+.area-layout{display:grid;grid-template-columns:1fr;gap:var(--s5);align-items:start}
+@media(min-width:860px){.area-layout{grid-template-columns:1fr 1fr}}
+.area-towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4)}
+.area-towns span{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);
+  padding:.5rem 1rem;font-size:.92rem;font-weight:500;color:var(--ink-2)
+}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0;filter:grayscale(.12)}
+
+/* ---------- About ---------- */
+.about-layout{display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:center}
+@media(min-width:860px){.about-layout{grid-template-columns:1.05fr .95fr}}
+.about-img{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3)}
+.about-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-card{
+  margin-top:var(--s4);background:var(--bg-2);border:1px solid var(--line);
+  border-radius:var(--r-m);padding:var(--s4);display:flex;gap:var(--s3);align-items:center
+}
+.about-card svg{width:34px;height:34px;color:var(--brand);flex:none}
+.about-card p{font-size:.95rem;color:var(--ink-2);margin:0}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:48rem;margin-inline:auto;display:grid;gap:var(--s2)}
+.faq-item{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);padding:var(--s4) var(--s4);transition:var(--t)}
+.faq-item:hover{box-shadow:var(--sh-2)}
+.faq-item h3{font-size:1.08rem;margin-bottom:.55rem;color:var(--ink)}
+.faq-item p{color:var(--ink-2);font-size:.97rem;max-width:none}
+
+/* ---------- CTA band ---------- */
+.cta-band{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.cta-band::before{
+  content:"";position:absolute;inset:0;opacity:.16;
+  background:radial-gradient(circle at 80% 20%, var(--brand-l), transparent 55%);
+}
+.cta-layout{position:relative;display:grid;grid-template-columns:1fr;gap:var(--s6);align-items:center}
+@media(min-width:860px){.cta-layout{grid-template-columns:1.1fr .9fr}}
+.cta-band h2{color:#fff}
+.cta-band .lede{color:rgba(255,255,255,.86)}
+.cta-points{list-style:none;display:grid;gap:.7rem;margin-top:var(--s4)}
+.cta-points li{display:flex;align-items:center;gap:.6rem;color:rgba(255,255,255,.92);font-size:1rem}
+.cta-points li svg{width:20px;height:20px;color:#f2c79a;flex:none}
+.quote-form{background:var(--bg);border-radius:var(--r-l);padding:var(--s5);box-shadow:var(--sh-4);color:var(--ink)}
+.quote-form h3{font-size:1.3rem;margin-bottom:.4rem}
+.quote-form .sub{font-size:.92rem;color:var(--ink-2);margin-bottom:var(--s4)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-size:.82rem;font-weight:600;font-family:var(--display);margin-bottom:.35rem;color:var(--ink)}
+.field input,.field textarea,.field select{
+  width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-s);
+  font-family:var(--body);font-size:1rem;color:var(--ink);background:var(--bg);transition:border-color var(--t)
+}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand)}
+.field textarea{resize:vertical;min-height:88px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+@media(max-width:480px){.form-row{grid-template-columns:1fr}}
+.quote-form .btn{width:100%;margin-top:var(--s2)}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:var(--s3)}
+
+/* ---------- Footer ---------- */
+.footer{background:#11201a;color:rgba(255,255,255,.72);padding-block:var(--s6) var(--s5)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:var(--s5)}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-brand .brand{color:#fff;margin-bottom:var(--s3)}
+.foot-brand .mark{background:var(--brand-l)}
+.foot-brand p{font-size:.92rem;max-width:34ch;color:rgba(255,255,255,.6)}
+.foot-col h4{font-family:var(--display);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:var(--s3)}
+.foot-col a,.foot-col p{display:block;font-size:.95rem;color:rgba(255,255,255,.78);margin-bottom:.6rem;max-width:none}
+.foot-col a:hover{color:#f2c79a}
+.foot-col .nap{font-style:normal}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:var(--s6);padding-top:var(--s4);display:flex;flex-wrap:wrap;gap:var(--s2);justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.45)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+
+/* ---------- Sticky mobile call bar ---------- */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  background:var(--accent);box-shadow:0 -4px 16px rgba(0,0,0,.18)
+}
+.callbar a{
+  display:flex;align-items:center;justify-content:center;gap:.6rem;
+  color:#fff;font-family:var(--display);font-weight:700;font-size:1.05rem;padding:.95rem;width:100%
+}
+.callbar a svg{width:20px;height:20px}
+@media(max-width:760px){
+  .callbar{display:block}
+  body{padding-bottom:60px}
+}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="TnT Tree Service home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9l3-7 3 7"/><path d="M7 14l5-5 5 5"/><path d="M5 19l7-7 7 7"/></svg>
+      </span>
+      <span>TnT Tree Service<small>Ocean Park, WA</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#gallery">Our Work</a>
+        <a href="#area">Service Area</a>
+      </div>
+      <a href="tel:+13602140922" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="lbl">(360) 214-0922</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <img class="hero-img" src="assets/hero-tree-removal-ocean-park.jpg" alt="Large tree felled and sectioned into trunk rounds beside an Ocean Park home by TnT Tree Service" width="1600" height="900" fetchpriority="high" decoding="async" />
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-grid">
+      <span class="badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+        The Big, Dangerous Ones — Handled
+      </span>
+      <h1>Ocean Park's Crew for the <span class="accent">Trees Others Won't Touch</span></h1>
+      <p class="hero-sub">Large hazard removals, storm cleanup, trimming and stump grinding across the Long Beach Peninsula. Owner-run, fully rigged, and answering the phone seven days a week.</p>
+      <div class="hero-cta">
+        <a href="tel:+13602140922" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (360) 214-0922
+        </a>
+        <a href="#quote" class="btn btn-on-dark">Get a Free Quote</a>
+      </div>
+      <div class="hero-trust">
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+          <div><strong>5.0 <span class="stars" aria-hidden="true">★★★★★</span></strong><span>18 Google reviews</span></div>
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><strong>Open 7 Days</strong><span>7 AM – 7 PM</span></div>
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          <div><strong>Owner-Run Crew</strong><span>Long Beach Peninsula</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust-strip">
+  <div class="container">
+    <div class="ts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><b>Hazard &amp; large-tree specialists</b></div>
+    <div class="ts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-3 9h5l-3 9"/></svg><b>Storm response on the Peninsula</b></div>
+    <div class="ts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" fill="currentColor" stroke="none"/></svg><b>Rated 5.0 across 18 reviews</b></div>
+    <div class="ts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><b>Free, no-pressure estimates</b></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Tree work, done right the first time</h2>
+      <p class="lede">From a single leaning fir over your roof to a full storm-down mess in the yard, we bring the rigging, the saws and the experience to take it down safely — then haul it away.</p>
+    </div>
+
+    <div class="svc-grid">
+      <!-- Feature card: hazard removal -->
+      <article class="svc-card feature">
+        <div class="feature-layout">
+          <div>
+            <span class="tag" style="color:#f2c79a;background:rgba(255,255,255,.14)">Our Specialty</span>
+            <div class="svc-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9l3-7 3 7"/><path d="M7 14l5-5 5 5"/><path d="M5 19l7-7 7 7"/></svg>
+            </div>
+            <h3>Large &amp; Hazardous Tree Removal</h3>
+            <p>The leaning giants, the rot-weakened firs, the trees crowding a roofline or power line — the removals other crews turn down. We rig them down in pieces, control every drop, and protect what's underneath.</p>
+          </div>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Tight-quarters &amp; near-structure takedowns</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Climbing &amp; rigging for tough drops</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Dead, dying &amp; storm-damaged trees</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full cleanup &amp; haul-away included</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-3 9h5l-3 9"/><path d="M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1"/></svg>
+        </div>
+        <h3>Storm &amp; Emergency Response</h3>
+        <p>When a coastal blow drops a tree on your property, we move fast to clear what's dangerous and make the site safe — seven days a week.</p>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5 3 6V3h3l11.5 11.5"/><circle cx="18.5" cy="18.5" r="2.5"/><path d="m6 18 3-3"/></svg>
+        </div>
+        <h3>Tree Trimming &amp; Pruning</h3>
+        <p>Clear the roofline, lift the canopy, cut back the deadwood and shape healthy trees so they stand up to the next windstorm.</p>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="9" rx="8" ry="3.5"/><path d="M4 9v4c0 1.9 3.6 3.5 8 3.5s8-1.6 8-3.5V9"/><path d="m9 18 1.5 3M15 18l-1.5 3"/></svg>
+        </div>
+        <h3>Stump Grinding</h3>
+        <p>Finish the job. We grind the stump below grade so you get your yard back — no trip hazard, no eyesore, no regrowth.</p>
+      </article>
+
+      <article class="svc-card">
+        <div class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4 16a2 2 0 0 0 1.7 3h12.6A2 2 0 0 0 20 16l-6-7.5V2"/><path d="M8 2h8"/></svg>
+        </div>
+        <h3>Lot Clearing &amp; Hauling</h3>
+        <p>Brush, blow-down and overgrowth cleared and hauled off so a crowded lot is open, usable ground again.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section bg-2" id="why">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Why Homeowners Call TnT</span>
+      <h2>The crew you call when it can't go wrong</h2>
+      <p class="lede">A dangerous tree near your home is no place for guesswork. Here's what people on the Peninsula count on us for.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg></div>
+        <h3>We Take the Hard Ones</h3>
+        <p>The removals other companies walk away from are the ones we're known for. Size and difficulty don't scare us off.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></div>
+        <h3>Controlled &amp; Careful</h3>
+        <p>Rigging, climbing and roping so a big tree comes down in pieces — not all at once on your roof, fence or flower beds.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Answering 7 Days a Week</h3>
+        <p>Open 7 AM to 7 PM, every day. A real person picks up — handy when a storm just changed your weekend plans.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3>Straight Answers, Free Quotes</h3>
+        <p>We'll look at the tree, tell you honestly what it needs, and give you a clear price — no pressure, no surprises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>From "that tree worries me" to gone</h2>
+    </div>
+    <div class="proc-wrap">
+      <div class="proc-step">
+        <div class="proc-num">01</div>
+        <h3>Call or Request</h3>
+        <p>Tell us what's going on — a leaning tree, storm damage, or a removal another crew passed on.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">02</div>
+        <h3>On-Site Look</h3>
+        <p>We come out, assess the tree and the surroundings, and give you a straight, free quote.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">03</div>
+        <h3>Safe Removal</h3>
+        <p>We rig and take it down in a controlled way, protecting your home, fences and landscaping.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">04</div>
+        <h3>Cleaned Up</h3>
+        <p>Debris hauled, stump ground if you want it, site left tidy. Your yard, back to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section bg-2" id="reviews">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">From Our Google Reviews</span>
+      <h2>5.0 stars, and the stories behind them</h2>
+      <p class="lede">Real words from neighbors on the Peninsula who called us for the trees that had them worried.</p>
+    </div>
+    <div class="rev-grid">
+      <article class="rev-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"I have called on Trevor (TnT) multiple times to remove large threatening difficult trees that others refused to deal with. His ability to fell a tree…"</blockquote>
+        <div class="who">
+          <div class="avatar" aria-hidden="true">C</div>
+          <div><b>Chris Ridling</b><span>Google review</span></div>
+        </div>
+      </article>
+      <article class="rev-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"I had sick trees. Trevor was very reasonably priced. His assistant, Brian, and his team went above &amp; beyond with tree removal."</blockquote>
+        <div class="who">
+          <div class="avatar" aria-hidden="true">L</div>
+          <div><b>Linda Dawsey</b><span>Google review</span></div>
+        </div>
+      </article>
+    </div>
+    <div class="rev-foot">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJIbArI5QJk1QRE3asGZ-zhMs" target="_blank" rel="noopener">Read all 18 reviews &amp; leave your own on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>Big trees, brought down safely</h2>
+      <p class="lede">A look at real jobs across Ocean Park and the Long Beach Peninsula — the kind of removals we're known for.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item">
+        <img src="assets/arborist-climbing-removal-ocean-park.jpg" alt="TnT Tree Service climber in full rigging harness working high in a conifer above a rooftop in Ocean Park, WA" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">Rigged &amp; climbed — removal over a roofline</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="assets/hazard-tree-near-home-ocean-park.jpg" alt="Tall coastal conifers leaning over a Long Beach Peninsula home at dusk before removal" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">Hazard trees crowding a home</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="assets/controlled-tree-felling-pacific-county.jpg" alt="A large tree being felled under control through the forest canopy in Pacific County, Washington" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">A controlled drop in progress</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="assets/sectional-tree-takedown-ocean-park.jpg" alt="Large trunk being taken down section by section near a home on the Long Beach Peninsula" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">Sectional takedown, piece by piece</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="assets/large-tree-removal-long-beach-peninsula.jpg" alt="Massive felled tree trunks and limbs on the ground after a large removal by TnT Tree Service" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">After the felling — the wood down</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="assets/tree-assessment-coastal-washington.jpg" alt="A large healthy coastal conifer assessed by TnT Tree Service in Ocean Park, Washington" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption class="cap">Assessing a coastal giant</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section bg-2" id="about">
+  <div class="container">
+    <div class="about-layout">
+      <div>
+        <span class="eyebrow">About TnT Tree Service</span>
+        <h2>A small, owner-run crew the Peninsula trusts</h2>
+        <p style="margin-top:var(--s3);color:var(--ink-2)">TnT Tree Service is a local, owner-run outfit working the Long Beach Peninsula and the coastal communities around Ocean Park. We've built our name on the jobs nobody else wants — the big, leaning, storm-stressed trees that take real rigging and real nerve to bring down safely.</p>
+        <p style="margin-top:var(--s3);color:var(--ink-2)">We keep the crew small on purpose, so the person who looks at your tree is the same person on the job. That's how we keep the work careful, the prices fair, and our reviews at a straight 5.0.</p>
+        <div class="about-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z"/></svg>
+          <p><strong style="color:var(--ink)">Rated 5.0 across 18 Google reviews</strong> — earned one careful removal at a time, from neighbors who'd call us again.</p>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="assets/large-tree-removal-long-beach-peninsula.jpg" alt="Large sectioned tree trunks on the ground after a TnT Tree Service removal near Ocean Park, WA" width="1200" height="900" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section" id="area">
+  <div class="container">
+    <div class="area-layout">
+      <div>
+        <span class="eyebrow">Where We Work</span>
+        <h2>Serving Ocean Park &amp; the Long Beach Peninsula</h2>
+        <p style="margin-top:var(--s3);color:var(--ink-2)">Based in Ocean Park, we cover the communities up and down the Peninsula and around Willapa Bay. If you're nearby and have a tree that worries you, give us a call — we'll let you know if we can help.</p>
+        <div class="area-towns">
+          <span>Ocean Park</span>
+          <span>Long Beach</span>
+          <span>Seaview</span>
+          <span>Ilwaco</span>
+          <span>Nahcotta</span>
+          <span>Oysterville</span>
+          <span>Chinook</span>
+          <span>Naselle</span>
+          <span>&amp; surrounding Pacific County</span>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          title="Map of TnT Tree Service service area around Ocean Park, WA"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-124.20%2C46.38%2C-123.85%2C46.62&amp;layer=mapnik&amp;marker=46.5078111%2C-124.043509"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA + QUOTE FORM ============ -->
+<section class="section cta-band" id="quote">
+  <div class="container">
+    <div class="cta-layout">
+      <div>
+        <span class="eyebrow" style="color:#f2c79a">Free Estimate</span>
+        <h2>Got a tree that worries you? Let's take a look.</h2>
+        <p class="lede">Call now for the fastest answer, or send a few details and we'll get right back to you. Either way, the quote is free.</p>
+        <ul class="cta-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No-pressure, no-obligation estimates</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Open 7 days, 7 AM – 7 PM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>The removals others won't take on</li>
+        </ul>
+        <a href="tel:+13602140922" class="btn btn-primary" style="margin-top:var(--s5)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (360) 214-0922
+        </a>
+      </div>
+      <form class="quote-form" onsubmit="event.preventDefault(); this.querySelector('.form-note').textContent='Thanks! For the fastest response, please call (360) 214-0922.';">
+        <h3>Request a Free Quote</h3>
+        <p class="sub">Tell us about your tree and we'll be in touch.</p>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(360) 000-0000" required />
+          </div>
+          <div class="field">
+            <label for="zip">Town / ZIP</label>
+            <input id="zip" name="zip" type="text" placeholder="Ocean Park" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Large / hazardous tree removal</option>
+            <option>Storm or emergency cleanup</option>
+            <option>Trimming &amp; pruning</option>
+            <option>Stump grinding</option>
+            <option>Lot clearing &amp; hauling</option>
+            <option>Not sure — need a look</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="detail">Details</label>
+          <textarea id="detail" name="detail" placeholder="Tell us about the tree — size, location, what's nearby…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Request</button>
+        <p class="form-note">We'll never share your details. Prefer to talk? Call (360) 214-0922.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section bg-2" id="faq">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Do you really take on the trees other companies won't?</h3>
+        <p>Yes — that's where we've built our reputation. Large, leaning, dead or storm-damaged trees in tight spots are exactly the work we specialize in. If another crew has turned a removal down, give us a call.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much does tree removal cost?</h3>
+        <p>It depends on the tree's size, condition and how close it is to your home, fences or power lines. We come out, look at it in person, and give you a clear, free quote before any work starts — no surprises.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can you come out after a storm?</h3>
+        <p>We're open seven days a week, 7 AM to 7 PM, and storm cleanup is a big part of what we do on the Peninsula. Call us and we'll let you know how soon we can get to your property.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you clean up and haul everything away?</h3>
+        <p>Yes. Cleanup and haul-away are part of the job. We can also grind the stump below grade so you're left with open, usable ground — just let us know.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What areas do you serve?</h3>
+        <p>We're based in Ocean Park and work up and down the Long Beach Peninsula — Long Beach, Seaview, Ilwaco, Nahcotta, Oysterville, Chinook, Naselle and the surrounding Pacific County area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9l3-7 3 7"/><path d="M7 14l5-5 5 5"/><path d="M5 19l7-7 7 7"/></svg>
+          </span>
+          <span>TnT Tree Service</span>
+        </div>
+        <p>The Long Beach Peninsula's crew for the big, dangerous trees others won't touch. Owner-run, 5.0-rated, open 7 days.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+13602140922">(360) 214-0922</a>
+        <address class="nap">
+          <p>28400 U St<br />Ocean Park, WA 98640</p>
+        </address>
+        <p>Open daily · 7 AM – 7 PM</p>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Large &amp; hazardous removal</a>
+        <a href="#services">Storm &amp; emergency response</a>
+        <a href="#services">Trimming &amp; pruning</a>
+        <a href="#services">Stump grinding</a>
+        <a href="#area">Service area</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 TnT Tree Service · Ocean Park, WA</span>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJIbArI5QJk1QRE3asGZ-zhMs" target="_blank" rel="noopener">Leave us a Google review</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CALL BAR ============ -->
+<div class="callbar">
+  <a href="tel:+13602140922">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call TnT Tree Service
+  </a>
+</div>
+
+<script>
+// Scroll-reveal (secondary content only, first-view only)
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:0.15});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>

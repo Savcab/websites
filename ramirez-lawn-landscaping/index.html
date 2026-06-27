@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lawn Care &amp; Landscaping in Hendersonville, NC | Ramirez</title>
+<meta name="description" content="Lawn care &amp; landscaping in Hendersonville, NC — mowing, sod, hedge trimming, paver patios &amp; retaining walls. 4.7 stars. Free estimates: (828) 674-1708." />
+<link rel="canonical" href="https://savcab.github.io/websites/ramirez-lawn-landscaping/" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Ramirez Lawn &amp; Landscaping — Hendersonville, NC" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://savcab.github.io/websites/ramirez-lawn-landscaping/" />
+<meta property="og:image" content="https://savcab.github.io/websites/ramirez-lawn-landscaping/assets/hero-landscape-hendersonville.jpg" />
+<meta property="og:description" content="Lawn care, sod, hedge trimming and paver hardscapes across Hendersonville &amp; Henderson County. 4.7 stars. Free estimates — (828) 674-1708." />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Ramirez Lawn & Landscaping",
+  "url": "https://savcab.github.io/websites/ramirez-lawn-landscaping/",
+  "image": "https://savcab.github.io/websites/ramirez-lawn-landscaping/assets/hero-landscape-hendersonville.jpg",
+  "telephone": "+18286741708",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "61 Kayla Susan Rd",
+    "addressLocality": "Hendersonville",
+    "addressRegion": "NC",
+    "postalCode": "28792",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 35.3532601, "longitude": -82.3993155 },
+  "areaServed": [
+    { "@type": "City", "name": "Hendersonville" },
+    { "@type": "City", "name": "Flat Rock" },
+    { "@type": "City", "name": "Fletcher" },
+    { "@type": "City", "name": "Mills River" },
+    { "@type": "City", "name": "Etowah" },
+    { "@type": "City", "name": "Laurel Park" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "07:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "16:00" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Lawn & Landscaping Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing & Edging" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sod Installation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hedge & Shrub Trimming" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paver Patios & Walkways" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retaining Walls & Steps" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grading & Yard Cleanup" } }
+    ]
+  }
+}
+</script>
+
+<style>
+:root{
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(4rem,9vw,8.5rem);
+  --container:75rem;
+  --measure:64ch;
+
+  --h1:clamp(2.2rem,5.2vw,3.5rem);
+  --h2:clamp(1.7rem,3.4vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.1;
+  --track-head:-.02em;
+
+  --ink:#1a2119;       /* near-black warm green-ink */
+  --ink-2:#54605a;
+  --ink-3:#8a948e;
+  --line:#e3e7e2;
+  --bg:#ffffff;
+  --bg-2:#f4f6f1;      /* tinted warm-cool green-neutral */
+  --bg-3:#eef2ea;
+
+  --brand:#1d5631;     /* Ramirez forest green */
+  --brand-d:#123a20;   /* darker green for dark sections / hovers */
+  --brand-l:#2f7a48;
+  --accent:#b6863a;    /* Ramirez bronze/gold accent */
+  --accent-d:#9a6f2c;
+
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(20,30,20,.06);
+  --sh-2:0 2px 4px rgba(20,30,20,.06),0 4px 8px rgba(20,30,20,.05);
+  --sh-3:0 6px 14px rgba(20,30,20,.07),0 14px 30px rgba(20,30,20,.09);
+  --sh-4:0 10px 20px rgba(20,30,20,.09),0 28px 56px rgba(20,30,20,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Hanken Grotesk",system-ui,-apple-system,sans-serif;
+  font-size:var(--body); line-height:var(--lh-body);
+  color:var(--ink); background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);color:var(--ink);font-weight:600}
+h1{font-size:var(--h1);letter-spacing:var(--track-head);font-weight:600}
+h2{font-size:var(--h2);letter-spacing:-.01em}
+h3{font-size:var(--h3)}
+p{max-width:var(--measure)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{
+  font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:.78rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--brand);
+  display:inline-flex;align-items:center;gap:.5rem;
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--accent);display:inline-block}
+.lead{font-size:1.15rem;color:var(--ink-2);max-width:58ch;line-height:1.6}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:"Hanken Grotesk",sans-serif;font-weight:600;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:var(--r-m);min-height:48px;
+  transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);
+  cursor:pointer;border:1.5px solid transparent;white-space:nowrap;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--brand);border-color:rgba(29,86,49,.28)}
+.btn-ghost:hover{background:var(--brand);color:#fff;border-color:var(--brand);transform:translateY(-2px)}
+.btn-onbrand{background:#fff;color:var(--brand)}
+.btn-onbrand:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+
+/* ---- header ---- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand .lockup{display:flex;flex-direction:column;line-height:1}
+.brand .name{font-family:"Fraunces",serif;font-weight:600;font-size:1.18rem;color:var(--brand);letter-spacing:.01em}
+.brand .tag{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-d);font-weight:600;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:1.9rem}
+.nav-links a{font-weight:500;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:.9rem}
+.nav-phone{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;color:var(--ink);font-size:.98rem}
+.nav-phone svg{width:17px;height:17px;color:var(--brand)}
+.nav-toggle{display:none}
+@media(max-width:880px){
+  .nav-links{display:none}
+}
+@media(max-width:560px){
+  .nav-phone span{display:none}
+  .nav-cta .btn{display:none}      /* sticky mobile call bar covers Call + Free Estimate */
+  .brand .name{font-size:1.08rem}
+}
+
+/* ---- hero ---- */
+.hero{background:var(--bg);overflow:hidden}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center;
+  padding-block:var(--hero-y);
+}
+.hero-copy{max-width:34rem}
+.hero h1{margin:1.1rem 0 0}
+.hero h1 .accent{color:var(--brand);font-style:italic;font-weight:500}
+.hero p.lead{margin-top:1.4rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-trust{display:flex;align-items:center;gap:1.3rem;margin-top:2.2rem;flex-wrap:wrap}
+.stars{display:inline-flex;gap:2px;color:var(--accent)}
+.stars svg{width:18px;height:18px}
+.hero-trust .rate{font-weight:700;color:var(--ink)}
+.hero-trust .muted{color:var(--ink-2);font-size:.95rem}
+.hero-trust .divider{width:1px;height:26px;background:var(--line)}
+.hero-media{position:relative}
+.hero-media .frame{
+  position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);
+  aspect-ratio:3/4;border:1px solid var(--line);
+}
+.hero-media .frame img{width:100%;height:100%;object-fit:cover}
+.hero-badge{
+  position:absolute;left:-1.1rem;bottom:1.6rem;background:#fff;border-radius:var(--r-m);
+  box-shadow:var(--sh-3);padding:.85rem 1.1rem;display:flex;align-items:center;gap:.7rem;
+  border:1px solid var(--line);max-width:240px;
+}
+.hero-badge .ic{width:38px;height:38px;border-radius:10px;background:var(--bg-3);display:grid;place-items:center;flex:none;color:var(--brand)}
+.hero-badge .ic svg{width:20px;height:20px}
+.hero-badge b{display:block;font-size:.92rem;color:var(--ink);font-family:"Fraunces",serif}
+.hero-badge span{font-size:.78rem;color:var(--ink-2)}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+  .hero-media{max-width:420px;margin-inline:auto;width:100%}
+  .hero-badge{left:.5rem}
+}
+
+/* ---- trust strip ---- */
+.trust-strip{background:var(--brand);color:#fff}
+.trust-strip .row{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding-block:var(--s5);
+  text-align:center;
+}
+.trust-strip .cell{display:flex;flex-direction:column;gap:.25rem;align-items:center}
+.trust-strip .cell .big{font-family:"Fraunces",serif;font-size:1.9rem;font-weight:600;line-height:1}
+.trust-strip .cell .lbl{font-size:.82rem;letter-spacing:.04em;color:rgba(255,255,255,.82)}
+.trust-strip .cell .ic{color:var(--accent);margin-bottom:.3rem}
+.trust-strip .cell .ic svg{width:24px;height:24px}
+.trust-strip .divider-v{display:none}
+@media(max-width:760px){
+  .trust-strip .row{grid-template-columns:repeat(2,1fr);gap:2rem 1rem}
+}
+
+/* ---- services ---- */
+.sec-head{max-width:52ch}
+.sec-head h2{margin:.8rem 0 0}
+.sec-head p{margin-top:1rem;color:var(--ink-2)}
+.svc-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem;
+}
+.svc-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);
+  padding:1.8rem 1.6rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);
+  box-shadow:var(--sh-1);
+}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-card .ic{
+  width:50px;height:50px;border-radius:var(--r-m);background:var(--bg-3);color:var(--brand);
+  display:grid;place-items:center;margin-bottom:1.1rem;
+}
+.svc-card .ic svg{width:25px;height:25px}
+.svc-card h3{font-weight:600;font-size:1.18rem;margin-bottom:.5rem}
+.svc-card p{font-size:.96rem;color:var(--ink-2);line-height:1.55}
+@media(max-width:880px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* ---- split feature (why us) ---- */
+.feature{background:var(--bg-2)}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.feature-media{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:4/3;border:1px solid var(--line)}
+.feature-media img{width:100%;height:100%;object-fit:cover}
+.feature h2{margin:.8rem 0 1.2rem}
+.why-list{display:flex;flex-direction:column;gap:1.3rem;margin-top:1.5rem;max-width:34rem}
+.why-item{display:flex;gap:1rem;align-items:flex-start}
+.why-item .ic{width:42px;height:42px;border-radius:11px;background:#fff;color:var(--brand);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.why-item .ic svg{width:21px;height:21px}
+.why-item h3{font-size:1.08rem;margin-bottom:.25rem}
+.why-item p{font-size:.95rem;color:var(--ink-2);margin:0}
+@media(max-width:840px){
+  .feature-grid{grid-template-columns:1fr;gap:2.5rem}
+  .feature-media{order:-1}
+}
+
+/* ---- gallery ---- */
+.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap}
+.gal-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:1rem;margin-top:2.8rem;
+}
+.gal-item{
+  position:relative;overflow:hidden;border-radius:var(--r-m);box-shadow:var(--sh-1);
+  border:1px solid var(--line);
+}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 500ms cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item .cap{
+  position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .8rem;
+  background:linear-gradient(to top,rgba(18,30,18,.78),transparent);
+  color:#fff;font-size:.82rem;font-weight:500;opacity:0;transform:translateY(8px);transition:all var(--t);
+}
+.gal-item:hover .cap{opacity:1;transform:translateY(0)}
+.gal-item.tall{grid-row:span 2}
+.gal-item.wide{grid-column:span 2}
+@media(max-width:900px){
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .gal-item.wide{grid-column:span 2}
+  .gal-item.tall{grid-row:span 2}
+}
+@media(max-width:520px){
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:140px}
+  .gal-item .cap{opacity:1;transform:none}
+}
+
+/* ---- process ---- */
+.process{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.process .eyebrow{color:#e7d9bb}
+.process .eyebrow::before{background:var(--accent)}
+.process h2{color:#fff}
+.process .sec-head p{color:rgba(255,255,255,.78)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3rem;counter-reset:step}
+.step{position:relative;padding-top:1rem}
+.step .num{
+  font-family:"Fraunces",serif;font-size:2.3rem;color:var(--accent);font-weight:600;line-height:1;
+  display:block;margin-bottom:.8rem;
+}
+.step h3{color:#fff;font-size:1.18rem;margin-bottom:.45rem}
+.step p{color:rgba(255,255,255,.74);font-size:.93rem;line-height:1.55}
+.step:not(:last-child)::after{
+  content:"";position:absolute;top:1.35rem;right:-.85rem;width:1.7rem;height:1px;
+  background:rgba(255,255,255,.25);
+}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr;gap:2rem}.step:not(:last-child)::after{display:none}}
+@media(max-width:460px){.steps{grid-template-columns:1fr}}
+
+/* ---- reviews CTA ---- */
+.rev{background:var(--bg-2)}
+.rev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.rev-score{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:2.4rem;text-align:center;
+  box-shadow:var(--sh-2);
+}
+.rev-score .val{font-family:"Fraunces",serif;font-size:3.6rem;font-weight:600;color:var(--brand);line-height:1}
+.rev-score .stars{justify-content:center;margin:.6rem 0}
+.rev-score .stars svg{width:22px;height:22px}
+.rev-score .count{color:var(--ink-2);font-size:.95rem}
+.rev-score .src{margin-top:1.4rem;display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--ink-3)}
+.rev-score .src svg{width:16px;height:16px}
+.rev-copy h2{margin:.7rem 0 1rem}
+.rev-copy p{color:var(--ink-2);margin-bottom:1.6rem}
+.rev-actions{display:flex;flex-wrap:wrap;gap:.9rem}
+@media(max-width:760px){.rev-grid{grid-template-columns:1fr;gap:2.2rem}}
+
+/* ---- service area ---- */
+.area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+.area-towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.chip{
+  display:inline-flex;align-items:center;gap:.4rem;background:var(--bg-2);border:1px solid var(--line);
+  border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.9rem;font-weight:500;color:var(--ink-2);
+}
+.chip svg{width:14px;height:14px;color:var(--brand)}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);line-height:0}
+.map-wrap iframe{width:100%;height:380px;border:0;display:block}
+@media(max-width:780px){.area-grid{grid-template-columns:1fr;gap:2rem}}
+
+/* ---- contact / final CTA ---- */
+.contact{background:var(--brand);color:#fff;position:relative;overflow:hidden}
+.contact::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 85% 0%,rgba(182,134,58,.22),transparent 55%);
+}
+.contact-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact h2{color:#fff;margin:.7rem 0 1rem}
+.contact .lead{color:rgba(255,255,255,.85)}
+.contact-info{margin-top:2rem;display:flex;flex-direction:column;gap:1.2rem}
+.cinfo{display:flex;gap:.9rem;align-items:flex-start}
+.cinfo .ic{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none;color:#fff}
+.cinfo .ic svg{width:20px;height:20px}
+.cinfo .lbl{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.cinfo a,.cinfo .v{color:#fff;font-weight:600;font-size:1.05rem}
+.cinfo .v.sm{font-weight:400;font-size:.95rem;color:rgba(255,255,255,.85);line-height:1.5}
+.form-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.3rem);box-shadow:var(--sh-4);color:var(--ink)}
+.form-card h3{font-size:1.3rem;margin-bottom:.3rem}
+.form-card .sub{color:var(--ink-2);font-size:.92rem;margin-bottom:1.5rem}
+.field{margin-bottom:1.05rem}
+.field label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
+.field input,.field select,.field textarea{
+  width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:var(--r-s);
+  font-family:inherit;font-size:.97rem;color:var(--ink);background:var(--bg);transition:border-color var(--t),box-shadow var(--t);
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(29,86,49,.12);
+}
+.field textarea{resize:vertical;min-height:96px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-card .btn{width:100%;margin-top:.4rem}
+.form-note{font-size:.78rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.field-row{grid-template-columns:1fr}}
+
+/* ---- footer ---- */
+.site-footer{background:var(--ink);color:rgba(255,255,255,.75);padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:var(--s5)}
+.foot-brand .name{font-family:"Fraunces",serif;color:#fff;font-size:1.25rem;font-weight:600}
+.foot-brand .tag{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-top:4px;font-weight:600}
+.foot-brand p{margin-top:1rem;font-size:.92rem;line-height:1.6;color:rgba(255,255,255,.6);max-width:32ch}
+.foot-col h4{color:#fff;font-family:"Hanken Grotesk",sans-serif;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;font-weight:600}
+.foot-col a,.foot-col .li{display:block;color:rgba(255,255,255,.7);font-size:.93rem;margin-bottom:.6rem;transition:color var(--t)}
+.foot-col a:hover{color:var(--accent)}
+.foot-col .li{display:flex;gap:.55rem;align-items:flex-start}
+.foot-col .li svg{width:15px;height:15px;color:var(--accent);flex:none;margin-top:3px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:var(--s4);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.84rem;color:rgba(255,255,255,.5)}
+.foot-bottom a{color:rgba(255,255,255,.6)}
+.foot-bottom a:hover{color:var(--accent)}
+@media(max-width:720px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+
+/* ---- mobile sticky call bar ---- */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  background:var(--brand);box-shadow:0 -4px 16px rgba(0,0,0,.16);
+  padding:.6rem .9rem;gap:.7rem;
+}
+.callbar a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-weight:600;font-size:.98rem;padding:.85rem;border-radius:var(--r-m);min-height:48px}
+.callbar .call{background:#fff;color:var(--brand)}
+.callbar .quote{background:var(--accent);color:#fff}
+.callbar svg{width:18px;height:18px}
+@media(max-width:880px){
+  .callbar{display:flex}
+  body{padding-bottom:72px}
+}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand" aria-label="Ramirez Lawn & Landscaping home">
+      <!-- logo: ring monogram + leaf sprig (reproduction of real Ramirez mark) -->
+      <svg width="44" height="44" viewBox="0 0 64 64" fill="none" aria-hidden="true" role="img">
+        <circle cx="32" cy="32" r="29" stroke="#b6863a" stroke-width="2"/>
+        <circle cx="32" cy="32" r="24.5" stroke="#1d5631" stroke-width="1.4"/>
+        <path d="M24 44V22h8.4c4.1 0 6.8 2.4 6.8 6.1 0 2.9-1.7 5-4.4 5.8L41 44h-4.7l-4.9-9.2H28V44h-4Zm4-12.6h4c2 0 3.2-1.1 3.2-2.9 0-1.8-1.2-2.9-3.2-2.9h-4v5.8Z" fill="#1d5631"/>
+        <path d="M40.5 24.5c3.2-.6 5.8-2.6 6.8-5.3-3 .2-5.6 1.6-6.9 3.8-.2-2.6.6-5 2.2-6.7-2.7 1.1-4.4 3.7-4.4 6.8 0 .5 0 1 .1 1.5l2.2-.1Z" fill="#2f7a48"/>
+      </svg>
+      <span class="lockup">
+        <span class="name">Ramirez</span>
+        <span class="tag">Lawn &amp; Landscaping</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+18286741708" class="nav-phone" aria-label="Call Ramirez Lawn & Landscaping">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span>(828) 674-1708</span>
+      </a>
+      <a href="#contact" class="btn btn-primary" style="padding:.7rem 1.2rem;min-height:42px">Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Hendersonville &amp; Henderson County, NC</span>
+      <h1>A yard you're proud of, <span class="accent">handled start to finish.</span></h1>
+      <p class="lead">From weekly mowing and fresh sod to paver patios and retaining walls, Ramirez Lawn &amp; Landscaping keeps Hendersonville properties sharp, healthy, and built to last.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          Get a Free Estimate
+        </a>
+        <a href="tel:+18286741708" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (828) 674-1708
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div>
+          <div class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          </div>
+          <span class="muted"><span class="rate">4.7</span> · 28 Google reviews</span>
+        </div>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="muted">Based in Hendersonville, NC</span>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="frame">
+        <img src="assets/hero-landscape-hendersonville.jpg" width="825" height="1100" fetchpriority="high" decoding="async" alt="Manicured backyard lawn maintained by Ramirez Lawn & Landscaping sweeping toward a pool in Hendersonville, NC" />
+      </div>
+      <div class="hero-badge">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div><b>Lawns to hardscapes</b><span>One crew for the whole property</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="container row">
+    <div class="cell">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg></span>
+      <span class="big">4.7</span><span class="lbl">Google rating</span>
+    </div>
+    <div class="cell">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+      <span class="big">28</span><span class="lbl">Reviews &amp; counting</span>
+    </div>
+    <div class="cell">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+      <span class="big">Free</span><span class="lbl">On-site estimates</span>
+    </div>
+    <div class="cell">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+      <span class="big">Local</span><span class="lbl">Henderson County</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service lawn care and landscaping</h2>
+      <p>Whether you need the grass kept tidy every week or a backyard transformed with stone, we cover the whole property — no juggling multiple contractors.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M2 22v-4h8v4"/><path d="M10 18a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v0"/><path d="M14 14V8"/><path d="M14 8c0-2 1.5-3 3-3"/><path d="M14 11c0-2-1.5-3-3-3"/></svg></span>
+        <h3>Lawn Mowing &amp; Edging</h3>
+        <p>Reliable weekly or bi-weekly mowing, crisp edging and trimming that keeps your lawn looking cared-for all season.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="1"/><path d="M3 14h18"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><path d="M12 4V2"/></svg></span>
+        <h3>Sod &amp; New Lawns</h3>
+        <p>Fresh sod installation and lawn renovation that turns bare, patchy ground into thick, even turf that takes root fast.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-3 2-5 5-5"/><path d="M12 16c-3 0-5-2-5-5"/><path d="M17 7c1.5 0 3-1 3-3-1.5 0-3 1-3 3z"/><path d="M7 11c-1.5 0-3-1-3-3 1.5 0 3 1 3 3z"/></svg></span>
+        <h3>Hedge &amp; Shrub Trimming</h3>
+        <p>Shaping, pruning and shrub care that keeps borders neat and helps your plantings stay healthy and full.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span>
+        <h3>Paver Patios &amp; Walkways</h3>
+        <p>Custom paver patios, walkways and sitting areas built on a proper compacted base so they stay flat and solid for years.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 21v-5h5v5"/><path d="M8 16v-5h5v5"/><path d="M13 11V6h5v5"/><path d="M18 11v5"/></svg></span>
+        <h3>Retaining Walls &amp; Steps</h3>
+        <p>Stone and block retaining walls plus garden steps that tame slopes, stop erosion and make hillsides usable.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M7 12h10"/><path d="M10 18h4"/><path d="M3 6c2-2 4-2 6 0"/></svg></span>
+        <h3>Grading &amp; Cleanup</h3>
+        <p>Yard grading, leaf and debris cleanup, and seasonal tidy-ups that reset the property and keep water moving the right way.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US / FEATURE ============ -->
+<section class="section feature" id="why">
+  <div class="container feature-grid">
+    <div>
+      <span class="eyebrow">Why neighbors call Ramirez</span>
+      <h2>Dependable crews who treat your property like their own</h2>
+      <p>A 4.7-star reputation across 28 reviews isn't built on one good job — it's built on showing up, doing careful work, and leaving the place cleaner than we found it.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <div><h3>Show up when we say</h3><p>Scheduled service you can count on — your lawn doesn't get skipped or pushed.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <div><h3>An eye for the details</h3><p>Clean edges, square corners and tidy cleanup — the small things that make a yard look finished.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+          <div><h3>Lawns and hardscapes, one call</h3><p>Routine maintenance and bigger build projects handled by the same trusted crew.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h3>Local to Henderson County</h3><p>Based right here in Hendersonville — we know the soil, the slopes and the seasons.</p></div>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Request your free estimate</a>
+    </div>
+    <div class="feature-media reveal">
+      <img src="assets/lawn-mowing-edging-hendersonville.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Freshly mowed and edged front lawn at a Hendersonville home maintained by Ramirez Lawn & Landscaping" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="gallery-head">
+      <div class="sec-head">
+        <span class="eyebrow">Our work</span>
+        <h2>Recent projects around Hendersonville</h2>
+      </div>
+      <p style="color:var(--ink-2);max-width:34ch">Real lawns and hardscapes we've built and maintained for Henderson County homeowners.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item tall reveal">
+        <img src="assets/paver-patio-installation-hendersonville.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Completed paver patio with charcoal border in a fenced Hendersonville backyard by Ramirez Lawn & Landscaping" />
+        <span class="cap">Paver patio &amp; border, Hendersonville</span>
+      </div>
+      <div class="gal-item wide reveal">
+        <img src="assets/concrete-steps-hillside-hendersonville.jpg" width="1100" height="854" loading="lazy" decoding="async" alt="Finished concrete step run set into a sloped lawn by Ramirez Lawn & Landscaping in Henderson County" />
+        <span class="cap">Hillside steps &amp; grading</span>
+      </div>
+      <div class="gal-item reveal">
+        <img src="assets/backyard-paver-patio-hendersonville.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Rectangular paver patio installed in a graded backyard in Hendersonville, NC" />
+        <span class="cap">Backyard patio build</span>
+      </div>
+      <div class="gal-item reveal">
+        <img src="assets/stone-steps-retaining-hendersonville.jpg" width="1100" height="819" loading="lazy" decoding="async" alt="Stone steps and retaining work set into a graded hillside with privacy fence in Hendersonville" />
+        <span class="cap">Retaining steps on a slope</span>
+      </div>
+      <div class="gal-item wide reveal">
+        <img src="assets/paver-patio-build-hendersonville.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Ramirez Lawn & Landscaping crew laying pavers on a compacted base in a Hendersonville backyard" />
+        <span class="cap">Pavers going down — proper base prep</span>
+      </div>
+      <div class="gal-item reveal">
+        <img src="assets/lawn-mowing-edging-hendersonville.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Freshly mowed and edged lawn at a brick home in Hendersonville, maintained by Ramirez Lawn & Landscaping" />
+        <span class="cap">Weekly mow &amp; clean edges</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting started is simple</h2>
+      <p>No pressure, no runaround — just a clear path from your first call to a finished yard.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num">01</span>
+        <h3>Call or request a quote</h3>
+        <p>Tell us what you need — a weekly mow, a one-time cleanup, or a full landscape project.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3>Free on-site visit</h3>
+        <p>We walk the property, talk through options, and give you a straightforward estimate.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3>We get to work</h3>
+        <p>Our crew shows up on schedule and does careful, tidy work from start to finish.</p>
+      </div>
+      <div class="step">
+        <span class="num">04</span>
+        <h3>Enjoy the results</h3>
+        <p>You get a yard that looks great — and ongoing service to keep it that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS CTA ============ -->
+<section class="section rev">
+  <div class="container rev-grid">
+    <div class="rev-score reveal">
+      <div class="val">4.7</div>
+      <div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+      </div>
+      <div class="count">Based on 28 Google reviews</div>
+      <div class="src"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Verified on Google</div>
+    </div>
+    <div class="rev-copy">
+      <span class="eyebrow">Reputation</span>
+      <h2>Trusted by Hendersonville homeowners</h2>
+      <p>Our customers keep us at 4.7 stars because we do what we say and stand behind the work. Read what neighbors have to say — or, if we've worked on your yard, we'd be grateful if you shared your experience.</p>
+      <div class="rev-actions">
+        <a href="https://search.google.com/local/reviews?placeid=ChIJLS9FDMHpWYgRD8jPtIKHh48" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Read Google reviews
+        </a>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJLS9FDMHpWYgRD8jPtIKHh48" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          Leave a review
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section" id="area">
+  <div class="container area-grid">
+    <div>
+      <span class="eyebrow">Where we work</span>
+      <h2>Serving Hendersonville &amp; surrounding Henderson County</h2>
+      <p style="margin-top:1rem;color:var(--ink-2)">Based on Kayla Susan Rd in Hendersonville, we take care of lawns and landscapes throughout the area and nearby communities.</p>
+      <div class="area-towns">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Hendersonville</span>
+        <span class="chip">Flat Rock</span>
+        <span class="chip">Laurel Park</span>
+        <span class="chip">Fletcher</span>
+        <span class="chip">Mills River</span>
+        <span class="chip">Etowah</span>
+        <span class="chip">Horse Shoe</span>
+        <span class="chip">East Flat Rock</span>
+      </div>
+      <p style="margin-top:1.4rem;font-size:.92rem;color:var(--ink-3)">Not sure if you're in range? Give us a call — there's a good chance we can help.</p>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        title="Map of Ramirez Lawn & Landscaping service area in Hendersonville, NC"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-82.55%2C35.25%2C-82.25%2C35.45&amp;layer=mapnik&amp;marker=35.3532601%2C-82.3993155"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FINAL CTA ============ -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <span class="eyebrow" style="color:#e7d9bb">Free estimate</span>
+      <h2>Let's get your yard on the schedule</h2>
+      <p class="lead">Tell us a little about your property and what you're after. We'll get back to you to set up a free, no-obligation on-site estimate.</p>
+      <div class="contact-info">
+        <div class="cinfo">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <div><div class="lbl">Call or text</div><a href="tel:+18286741708">(828) 674-1708</a></div>
+        </div>
+        <div class="cinfo">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="lbl">Based in</div><span class="v sm">61 Kayla Susan Rd<br>Hendersonville, NC 28792</span></div>
+        </div>
+        <div class="cinfo">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <div>
+            <div class="lbl">Hours</div>
+            <span class="v sm">Mon–Thu 7am–6pm · Fri 7am–7pm<br>Sat 8am–4pm · Sun closed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="form-card" action="https://formsubmit.co/el/ramirez-lawn" method="POST" novalidate>
+      <h3>Request a free estimate</h3>
+      <p class="sub">We'll reach out to schedule your on-site visit.</p>
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required />
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(828) 000-0000" required />
+        </div>
+        <div class="field">
+          <label for="zip">ZIP code</label>
+          <input type="text" id="zip" name="zip" inputmode="numeric" placeholder="28792" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service">
+          <option>Lawn mowing &amp; maintenance</option>
+          <option>Sod / new lawn</option>
+          <option>Hedge &amp; shrub trimming</option>
+          <option>Paver patio / walkway</option>
+          <option>Retaining wall / steps</option>
+          <option>Grading / cleanup</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="details">Project details <span style="color:var(--ink-3);font-weight:400">(optional)</span></label>
+        <textarea id="details" name="details" placeholder="Tell us about your yard or project…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send my request</button>
+      <p class="form-note">Prefer to talk? Call <a href="tel:+18286741708" style="color:var(--brand);font-weight:600">(828) 674-1708</a>.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">Ramirez Lawn &amp; Landscaping</div>
+        <div class="tag">Lawn &amp; Landscaping</div>
+        <p>Full-service lawn care and landscaping for Hendersonville and Henderson County, NC.</p>
+        <div class="stars" style="color:var(--accent);margin-top:1rem" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <span style="color:rgba(255,255,255,.7);font-size:.9rem;margin-left:.4rem;align-self:center">4.7 · 28 reviews</span>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Lawn mowing &amp; edging</a>
+        <a href="#services">Sod &amp; new lawns</a>
+        <a href="#services">Hedge &amp; shrub trimming</a>
+        <a href="#services">Paver patios &amp; walkways</a>
+        <a href="#services">Retaining walls &amp; steps</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <span class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><a href="tel:+18286741708">(828) 674-1708</a></span>
+        <span class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>61 Kayla Susan Rd,<br>Hendersonville, NC 28792</span>
+        <span class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon–Sat · Closed Sundays</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ramirez Lawn &amp; Landscaping · Hendersonville, NC</span>
+      <span><a href="#top">Back to top ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky call bar -->
+<div class="callbar">
+  <a href="tel:+18286741708" class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call</a>
+  <a href="#contact" class="quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Free Estimate</a>
+</div>
+
+<script>
+// scroll reveal — first view, secondary content only
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

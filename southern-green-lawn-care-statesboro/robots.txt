@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/southern-green-lawn-care-statesboro/sitemap.xml

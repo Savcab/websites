@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping &amp; Lawn Care in Shawano, WI | BJ's Landscape</title>
+<meta name="description" content="BJ's Landscape and Maintenance keeps Shawano, WI yards sharp — mowing, mulch beds, tree work, grading and seasonal cleanups. Owner-operated, 5.0 rated. Call or text (920) 334-6969.">
+<link rel="canonical" href="https://savcab.github.io/websites/bjs-maintenance/">
+<meta name="theme-color" content="#1f3d2b">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Landscaping &amp; Lawn Care in Shawano, WI | BJ's Landscape">
+<meta property="og:description" content="Mowing, mulch beds, tree work, grading and seasonal cleanups across Shawano County. Owner-operated, 5.0 rated. Call or text (920) 334-6969.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/bjs-maintenance/">
+<meta property="og:image" content="https://savcab.github.io/websites/bjs-maintenance/assets/hero-lawn-care-shawano.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Landscaping &amp; Lawn Care in Shawano, WI | BJ's Landscape">
+<meta name="twitter:description" content="Mowing, mulch beds, tree work, grading and seasonal cleanups across Shawano County. Call or text (920) 334-6969.">
+<meta name="twitter:image" content="https://savcab.github.io/websites/bjs-maintenance/assets/hero-lawn-care-shawano.jpg">
+
+<!-- Favicon: inline SVG "BJ" mark -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%231f3d2b'/%3E%3Ctext%20x='16'%20y='22'%20font-family='Georgia,serif'%20font-size='15'%20font-weight='700'%20fill='%23e8c97a'%20text-anchor='middle'%3EBJ%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts: Bricolage Grotesque (display) + Hanken Grotesk (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness JSON-LD (no review/aggregateRating per Google policy) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "BJ's Landscape and Maintenance, LLC",
+  "image": "https://savcab.github.io/websites/bjs-maintenance/assets/hero-lawn-care-shawano.jpg",
+  "url": "https://savcab.github.io/websites/bjs-maintenance/",
+  "telephone": "+19203346969",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "N5160 Co Rd MM",
+    "addressLocality": "Shawano",
+    "addressRegion": "WI",
+    "postalCode": "54166",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.7769657,
+    "longitude": -88.624177
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Shawano"},
+    {"@type": "City", "name": "Bonduel"},
+    {"@type": "City", "name": "Cecil"},
+    {"@type": "City", "name": "Gresham"},
+    {"@type": "City", "name": "Clintonville"},
+    {"@type": "City", "name": "Bowler"},
+    {"@type": "City", "name": "Pulaski"}
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:65ch;
+  /* TYPE */
+  --display:"Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+  --body:"Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --h1:clamp(2.4rem,6vw,4rem);
+  --h2:clamp(1.7rem,3.6vw,2.6rem);
+  --h3:1.375rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.55;
+  --lh-head:1.06;
+  --track-head:-.02em;
+  /* COLOR — evergreen + warm birch/cream, WI northwoods */
+  --ink:#1c2620;       /* deep pine-charcoal, ~87% */
+  --ink-2:#54605a;
+  --ink-3:#8b948e;
+  --line:#e4e6e1;
+  --bg:#ffffff;
+  --bg-2:#f5f3ed;      /* warm birch paper */
+  --bg-3:#eef0e9;      /* soft sage */
+  --brand:#1f3d2b;     /* deep evergreen */
+  --brand-d:#15291d;   /* darkest pine */
+  --brand-2:#3f6b4a;   /* moss */
+  --accent:#c8862f;    /* amber / autumn-birch — CTAs only */
+  --accent-d:#a96e22;
+  --accent-soft:#f4e7cf;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,24,20,.06);
+  --sh-2:0 2px 4px rgba(20,24,20,.06),0 4px 8px rgba(20,24,20,.05);
+  --sh-3:0 4px 8px rgba(20,24,20,.06),0 12px 24px rgba(20,24,20,.08);
+  --sh-4:0 10px 20px rgba(20,24,20,.10),0 28px 56px rgba(20,24,20,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--body);
+  font-size:var(--fs-body);
+  line-height:var(--lh-body);
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent-soft);color:var(--brand-d)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head)}
+p{max-width:var(--measure)}
+
+.wrap{max-width:var(--container);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{
+  font-family:var(--display);font-weight:600;font-size:.78rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brand-2);display:inline-flex;align-items:center;gap:.6rem;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+.section-head{max-width:46rem;margin-bottom:clamp(2.25rem,5vw,3.5rem)}
+.section-head h2{font-size:var(--h2);margin:.9rem 0 .9rem;color:var(--ink)}
+.section-head p{color:var(--ink-2);font-size:1.075rem}
+.lead{font-size:1.15rem;color:var(--ink-2)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-family:var(--display);font-weight:600;font-size:1rem;
+  padding:.95rem 1.7rem;border-radius:var(--r-pill);min-height:48px;
+  cursor:pointer;border:1.5px solid transparent;transition:var(--t);white-space:nowrap;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--brand);border-color:rgba(31,61,43,.28)}
+.btn-ghost:hover{border-color:var(--brand);background:rgba(31,61,43,.05)}
+.btn-light{background:#fff;color:var(--brand-d)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-outline-light:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* ---------- Header ---------- */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  transition:background var(--t),box-shadow var(--t),padding var(--t);
+  padding:1.1rem 0;
+}
+.header.solid{background:rgba(255,255,255,.94);backdrop-filter:saturate(140%) blur(10px);
+  box-shadow:0 1px 0 var(--line),var(--sh-1);padding:.7rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.brand-mark{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:700}
+.brand-badge{
+  width:42px;height:42px;border-radius:11px;background:var(--brand);color:var(--accent-soft);
+  display:grid;place-items:center;font-size:1.05rem;letter-spacing:.02em;flex:none;
+  box-shadow:var(--sh-2);transition:transform var(--t);
+}
+.brand-mark:hover .brand-badge{transform:rotate(-4deg)}
+.brand-text{display:flex;flex-direction:column;line-height:1.05}
+.brand-text b{font-size:1.08rem;color:var(--ink);font-weight:700}
+.brand-text span{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.header.solid .brand-text b{color:var(--ink)}
+.header:not(.solid) .brand-text b{color:#fff}
+.header:not(.solid) .brand-text span{color:rgba(255,255,255,.72)}
+.header:not(.solid) .brand-badge{background:rgba(255,255,255,.16);backdrop-filter:blur(4px)}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a.navlink{font-family:var(--display);font-weight:500;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.header:not(.solid) .nav a.navlink{color:rgba(255,255,255,.82)}
+.nav a.navlink:hover{color:var(--accent)}
+.header:not(.solid) .nav a.navlink:hover{color:#fff}
+.nav-cta{display:flex;align-items:center;gap:.9rem}
+.phone-link{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:600;font-size:1rem;color:var(--brand)}
+.header:not(.solid) .phone-link{color:#fff}
+.phone-link svg{width:17px;height:17px}
+.menu-toggle{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;align-items:center;justify-content:center}
+.menu-toggle svg{width:26px;height:26px;color:var(--ink)}
+.header:not(.solid) .menu-toggle svg{color:#fff}
+
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:60;background:var(--brand-d);
+  display:flex;flex-direction:column;padding:1.5rem clamp(1.25rem,5vw,2rem);
+  transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.6,.2,1);visibility:hidden}
+.drawer.open{transform:translateX(0);visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between}
+.drawer-top .brand-text b{color:#fff}.drawer-top .brand-text span{color:rgba(255,255,255,.6)}
+.drawer-close{background:none;border:0;color:#fff;cursor:pointer;width:44px;height:44px}
+.drawer-close svg{width:28px;height:28px}
+.drawer nav{display:flex;flex-direction:column;gap:.4rem;margin-top:2.5rem}
+.drawer nav a{font-family:var(--display);font-weight:600;font-size:1.5rem;color:#fff;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.drawer nav a:hover{color:var(--accent)}
+.drawer-foot{margin-top:auto;display:flex;flex-direction:column;gap:.8rem;padding-top:2rem}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:clamp(560px,90vh,820px);display:flex;align-items:flex-end;
+  padding-top:var(--hero-y);padding-bottom:clamp(3rem,6vw,5rem);isolation:isolate;background:var(--brand-d)}
+.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero-scrim{position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(21,41,29,.62) 0%,rgba(21,41,29,.28) 38%,rgba(21,41,29,.55) 78%,rgba(21,41,29,.86) 100%),
+             linear-gradient(95deg,rgba(21,41,29,.7) 0%,rgba(21,41,29,.18) 55%,transparent 100%)}
+.hero-content{max-width:43rem;color:#fff}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);border-radius:var(--r-pill);
+  padding:.45rem 1rem .45rem .6rem;font-size:.8rem;font-weight:600;font-family:var(--display);
+  letter-spacing:.02em;margin-bottom:1.6rem}
+.hero-badge .stars{color:var(--accent);letter-spacing:.05em;font-size:.92rem}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;margin-bottom:1.2rem;letter-spacing:-.025em}
+.hero h1 .accent{color:#f1d9a8}
+.hero p{font-size:1.2rem;color:rgba(255,255,255,.9);max-width:34rem;margin-bottom:2rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.hero-note{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:rgba(255,255,255,.78);margin-top:1.4rem}
+.hero-note svg{width:16px;height:16px;color:var(--accent);flex:none}
+
+/* trust strip */
+.trust{background:var(--brand-d);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1)}
+.trust-cell{background:var(--brand-d);padding:1.5rem clamp(1rem,2.5vw,1.75rem);display:flex;flex-direction:column;gap:.25rem}
+.trust-cell .num{font-family:var(--display);font-weight:700;font-size:1.7rem;color:#fff;line-height:1;display:flex;align-items:baseline;gap:.3rem}
+.trust-cell .num .star{color:var(--accent);font-size:1.2rem}
+.trust-cell .lbl{font-size:.82rem;color:rgba(255,255,255,.66);font-weight:500}
+
+/* ---------- Services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.85rem;
+  display:flex;flex-direction:column;gap:.85rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc-card::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--brand-2);
+  transform:scaleY(0);transform-origin:top;transition:transform var(--t)}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-card:hover::after{transform:scaleY(1)}
+.svc-icon{width:52px;height:52px;border-radius:14px;background:var(--bg-3);color:var(--brand);
+  display:grid;place-items:center;flex:none}
+.svc-icon svg{width:26px;height:26px}
+.svc-card h3{font-size:1.28rem;color:var(--ink);font-weight:700}
+.svc-card p{font-size:.985rem;color:var(--ink-2);margin:0}
+.svc-card .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.25rem}
+.svc-card .tags span{font-size:.76rem;font-weight:600;color:var(--brand-2);background:var(--bg-2);
+  border:1px solid var(--line);padding:.28rem .65rem;border-radius:var(--r-pill)}
+.svc-card.feature{background:linear-gradient(155deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;border-color:transparent}
+.svc-card.feature .svc-icon{background:rgba(255,255,255,.14);color:#fff}
+.svc-card.feature h3{color:#fff}
+.svc-card.feature p{color:rgba(255,255,255,.86)}
+.svc-card.feature .tags span{color:#f1d9a8;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.16)}
+.svc-card.feature::after{background:var(--accent)}
+
+/* ---------- Split (about / why) ---------- */
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+.split.alt{grid-template-columns:1fr 1.05fr}
+.split-media{position:relative}
+.split-media img{border-radius:var(--r-l);box-shadow:var(--sh-4);width:100%;aspect-ratio:4/3;object-fit:cover}
+.split-media .float-card{position:absolute;bottom:-1.5rem;right:-1.25rem;background:#fff;
+  border-radius:var(--r-m);box-shadow:var(--sh-4);padding:1.1rem 1.3rem;display:flex;align-items:center;gap:.85rem;border:1px solid var(--line)}
+.split-media .float-card .rk{font-family:var(--display);font-weight:800;font-size:1.9rem;color:var(--brand);line-height:1}
+.split-media .float-card .rk-lbl{font-size:.78rem;color:var(--ink-2);font-weight:600;line-height:1.25}
+.split-media .float-card .rk-lbl .stars{color:var(--accent);display:block;font-size:.85rem;letter-spacing:.06em}
+.split-body h2{font-size:var(--h2);margin:.9rem 0 1.2rem;color:var(--ink)}
+.split-body p{color:var(--ink-2);margin-bottom:1.1rem}
+.split-body p strong{color:var(--ink)}
+.feat-list{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;margin-top:1.6rem}
+.feat-item{display:flex;gap:.75rem;align-items:flex-start}
+.feat-item .ic{width:38px;height:38px;border-radius:10px;background:var(--accent-soft);color:var(--accent-d);display:grid;place-items:center;flex:none}
+.feat-item .ic svg{width:20px;height:20px}
+.feat-item h4{font-family:var(--display);font-size:1.02rem;font-weight:700;color:var(--ink);margin-bottom:.15rem}
+.feat-item p{font-size:.9rem;color:var(--ink-2);margin:0}
+
+/* ---------- Process ---------- */
+.process{background:var(--bg-2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:step}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.6rem;position:relative}
+.step .stepnum{font-family:var(--display);font-weight:800;font-size:1rem;color:#fff;background:var(--brand);
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;margin-bottom:1rem;box-shadow:var(--sh-2)}
+.step h3{font-size:1.16rem;color:var(--ink);margin-bottom:.5rem;font-weight:700}
+.step p{font-size:.92rem;color:var(--ink-2);margin:0}
+.step:not(:last-child)::after{content:"";position:absolute;top:2.7rem;right:-.85rem;width:1.4rem;height:2px;
+  background:repeating-linear-gradient(90deg,var(--brand-2) 0 4px,transparent 4px 8px)}
+
+/* ---------- Quote (testimonial band) ---------- */
+.qband{position:relative;background:var(--brand-d);color:#fff;isolation:isolate;overflow:hidden}
+.qband-bg{position:absolute;inset:0;z-index:-2}
+.qband-bg img{width:100%;height:100%;object-fit:cover;opacity:.22}
+.qband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--brand-d) 12%,rgba(21,41,29,.72) 100%)}
+.qband .wrap{position:relative}
+.qmark{font-family:var(--display);font-size:5rem;line-height:.6;color:var(--accent);opacity:.55;margin-bottom:.5rem}
+.qband blockquote{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3.4vw,2.3rem);
+  line-height:1.28;max-width:54rem;color:#fff;letter-spacing:-.01em}
+.qband .who{margin-top:1.6rem;display:flex;align-items:center;gap:.85rem}
+.qband .who .av{width:46px;height:46px;border-radius:50%;background:var(--brand-2);color:#fff;
+  display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1.1rem}
+.qband .who b{font-family:var(--display);display:block;font-size:1.02rem}
+.qband .who span{font-size:.85rem;color:rgba(255,255,255,.7)}
+.qband .who .stars{color:var(--accent);font-size:.9rem;letter-spacing:.08em}
+
+/* ---------- Gallery ---------- */
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:.9rem}
+.gal-item{position:relative;border-radius:var(--r-m);overflow:hidden;cursor:pointer;background:var(--bg-3);aspect-ratio:4/3}
+.gal-item.tall{grid-row:span 2;aspect-ratio:auto}
+.gal-item.wide{grid-column:span 2}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(21,41,29,.55) 100%);opacity:0;transition:opacity var(--t)}
+.gal-item:hover::after{opacity:1}
+.gal-cap{position:absolute;left:.9rem;bottom:.8rem;right:.9rem;color:#fff;font-size:.82rem;font-weight:600;
+  font-family:var(--display);opacity:0;transform:translateY(6px);transition:var(--t);z-index:2;text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.gal-item:hover .gal-cap{opacity:1;transform:translateY(0)}
+
+/* ---------- Service area ---------- */
+.area{background:var(--brand-d);color:#fff}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-body h2{color:#fff;font-size:var(--h2);margin:.9rem 0 1.1rem}
+.area-body p{color:rgba(255,255,255,.82);margin-bottom:1.5rem}
+.town-chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.town-chips span{font-family:var(--display);font-weight:500;font-size:.92rem;color:#fff;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:.5rem 1rem;border-radius:var(--r-pill)}
+.town-chips span.home{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);border:1px solid rgba(255,255,255,.12);aspect-ratio:4/3;background:var(--brand)}
+.area-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.92)}
+
+/* ---------- FAQ ---------- */
+.faq-wrap{max-width:50rem;margin:0 auto}
+.faq{border:1px solid var(--line);border-radius:var(--r-m);background:#fff;margin-bottom:.85rem;overflow:hidden;transition:box-shadow var(--t),border-color var(--t)}
+.faq[open]{box-shadow:var(--sh-2);border-color:transparent}
+.faq summary{list-style:none;cursor:pointer;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  font-family:var(--display);font-weight:600;font-size:1.08rem;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .chev{width:22px;height:22px;flex:none;color:var(--brand-2);transition:transform var(--t)}
+.faq[open] summary .chev{transform:rotate(180deg)}
+.faq .faq-a{padding:0 1.5rem 1.4rem;color:var(--ink-2);font-size:.99rem}
+.faq .faq-a p{margin:0}
+
+/* ---------- Contact / CTA ---------- */
+.contact{background:var(--bg-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,3.5rem)}
+.contact-panel{background:var(--brand);color:#fff;border-radius:var(--r-l);padding:clamp(2rem,4vw,3rem);box-shadow:var(--sh-3);position:relative;overflow:hidden}
+.contact-panel h2{color:#fff;font-size:var(--h2);margin-bottom:.9rem}
+.contact-panel>p{color:rgba(255,255,255,.85);margin-bottom:2rem}
+.contact-rows{display:flex;flex-direction:column;gap:1.2rem;margin-bottom:2rem}
+.contact-row{display:flex;gap:1rem;align-items:flex-start}
+.contact-row .ic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none}
+.contact-row .ic svg{width:22px;height:22px;color:#f1d9a8}
+.contact-row .ct b{font-family:var(--display);display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6);margin-bottom:.2rem;font-weight:600}
+.contact-row .ct a,.contact-row .ct span{color:#fff;font-size:1.06rem;font-weight:500}
+.contact-row .ct a:hover{color:#f1d9a8}
+.hours-table{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:.4rem}
+.hours-table td{padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.88)}
+.hours-table td:last-child{text-align:right;font-weight:600;color:#fff;font-family:var(--display)}
+.hours-table tr.closed td:last-child{color:rgba(255,255,255,.5)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.75rem,4vw,2.5rem);box-shadow:var(--sh-2)}
+.form-card h3{font-size:1.5rem;color:var(--ink);margin-bottom:.4rem}
+.form-card .sub{color:var(--ink-2);font-size:.96rem;margin-bottom:1.6rem}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-family:var(--display);font-weight:600;font-size:.86rem;color:var(--ink);margin-bottom:.4rem}
+.field input,.field textarea,.field select{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);
+  padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg);transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(63,107,74,.13)}
+.field textarea{resize:vertical;min-height:96px}
+.field.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.1rem}
+.field.row2 .field{margin:0}
+.form-note{font-size:.82rem;color:var(--ink-3);margin-top:.9rem;text-align:center}
+.form-success{display:none;text-align:center;padding:1rem 0}
+.form-success.show{display:block}
+.form-success .ok{width:64px;height:64px;border-radius:50%;background:var(--bg-3);color:var(--brand);display:grid;place-items:center;margin:0 auto 1.1rem}
+.form-success .ok svg{width:32px;height:32px}
+.form-success h3{margin-bottom:.5rem}
+.form-success p{color:var(--ink-2);margin:0 auto 1.4rem}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--brand-d);color:rgba(255,255,255,.72);position:relative;overflow:hidden;padding-top:clamp(3.5rem,6vw,5rem)}
+.footer-watermark{position:absolute;left:50%;bottom:-2.5rem;transform:translateX(-50%);
+  font-family:var(--display);font-weight:800;font-size:clamp(7rem,20vw,17rem);color:rgba(255,255,255,.035);
+  letter-spacing:-.04em;white-space:nowrap;pointer-events:none;line-height:1;z-index:0}
+.footer .wrap{position:relative;z-index:1}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-brand .brand-mark{margin-bottom:1.1rem}
+.footer-brand .brand-text b{color:#fff}.footer-brand .brand-text span{color:rgba(255,255,255,.55)}
+.footer-brand p{font-size:.95rem;color:rgba(255,255,255,.65);max-width:30ch;margin-bottom:1.3rem}
+.footer-brand .stars{color:var(--accent);font-size:.95rem;letter-spacing:.06em}
+.footer-brand .stars span{color:rgba(255,255,255,.7);font-family:var(--body);margin-left:.4rem;font-size:.88rem;letter-spacing:0}
+.footer-col h4{font-family:var(--display);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:1.1rem;font-weight:700}
+.footer-col a,.footer-col address{display:block;font-style:normal;font-size:.95rem;color:rgba(255,255,255,.7);margin-bottom:.7rem;transition:color var(--t)}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.6rem 0;font-size:.85rem;color:rgba(255,255,255,.5)}
+.footer-bottom a{color:rgba(255,255,255,.6)}
+.footer-bottom a:hover{color:#fff}
+
+/* ---------- Sticky mobile call bar ---------- */
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:.6rem;padding:.7rem;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 -2px 12px rgba(20,24,20,.1);
+  transform:translateY(110%);transition:transform var(--t)}
+.mobile-bar.show{transform:translateY(0)}
+.mobile-bar .btn{flex:1;font-size:.95rem;padding:.8rem 1rem}
+
+/* ---------- Reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1!important;transform:none!important}
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px){
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:nth-child(2)::after{display:none}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .nav-cta .phone-link span.txt{display:none}
+  .menu-toggle{display:flex}
+  .split,.split.alt{grid-template-columns:1fr;gap:2.5rem}
+  .split.alt .split-media{order:-1}
+  .area-grid,.contact-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+  .gal-item.wide{grid-column:span 2}
+  .gal-item.tall{grid-row:auto;aspect-ratio:4/3}
+  .mobile-bar{display:flex}
+  .contact-panel{order:2}
+  .feat-list{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step::after{display:none}
+  .field.row2{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;gap:2rem}
+  .split-media .float-card{right:.75rem;bottom:-1rem;padding:.85rem 1rem}
+  .hero p{font-size:1.08rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand-mark" aria-label="BJ's Landscape and Maintenance home">
+      <span class="brand-badge">BJ</span>
+      <span class="brand-text"><b>BJ's Landscape</b><span>&amp; Maintenance &middot; Shawano</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#work">Our Work</a>
+      <a class="navlink" href="#area">Service Area</a>
+      <a class="navlink" href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="phone-link" href="tel:+19203346969">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="txt">(920) 334-6969</span>
+      </a>
+      <a class="btn btn-primary" href="#contact">Free Estimate</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <div class="brand-mark"><span class="brand-badge">BJ</span><span class="brand-text"><b>BJ's Landscape</b><span>&amp; Maintenance</span></span></div>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="#services" data-close>Services</a>
+    <a href="#about" data-close>About</a>
+    <a href="#work" data-close>Our Work</a>
+    <a href="#area" data-close>Service Area</a>
+    <a href="#contact" data-close>Contact</a>
+  </nav>
+  <div class="drawer-foot">
+    <a class="btn btn-light" href="tel:+19203346969">Call (920) 334-6969</a>
+    <a class="btn btn-outline-light" href="sms:+19203346969">Text Us</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-lawn-care-shawano.jpg" alt="Freshly mowed, striped backyard lawn maintained by BJ's Landscape in Shawano, Wisconsin" width="1600" height="900" fetchpriority="high">
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="hero-badge"><span class="stars">★★★★★</span> 5.0 from 8 Google reviews</span>
+    <h1>Shawano's reliable hands for <span class="accent">lawns, beds &amp; big yard projects</span></h1>
+    <p>From a sharp weekly mow to mulch beds, tree work and full property cleanups — we keep Shawano County yards looking their best, season after season.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact">Get a Free Estimate</a>
+      <a class="btn btn-outline-light" href="tel:+19203346969">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call or Text
+      </a>
+    </div>
+    <div class="hero-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Owner-operated &middot; on time, every time &middot; serving Shawano &amp; nearby
+    </div>
+  </div>
+</section>
+
+<!-- trust strip -->
+<section class="trust" aria-label="At a glance">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-cell">
+        <span class="num"><span class="star">★</span>5.0</span>
+        <span class="lbl">Across 8 Google reviews</span>
+      </div>
+      <div class="trust-cell">
+        <span class="num">Local</span>
+        <span class="lbl">Owner-operated in Shawano, WI</span>
+      </div>
+      <div class="trust-cell">
+        <span class="num">7+</span>
+        <span class="lbl">Services, lawn care to tree work</span>
+      </div>
+      <div class="trust-cell">
+        <span class="num">Free</span>
+        <span class="lbl">No-pressure estimates</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>One crew for the whole yard</h2>
+      <p>Whether it's keeping the grass tidy all summer or reshaping a tired landscape from the ground up, we handle it — so you've got one trusted number to call instead of three.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22c1.25-1.25 2.5-2 4-2 1.5 0 2 1 4 1s2.5-2 4-2 2 1 4 1"/><path d="M7 17c0-3 .5-6 3-9"/><path d="M12 17c0-4 1-7 4-10"/><path d="M17 17c0-2 .5-4 2-6"/></svg></div>
+        <h3>Lawn Care &amp; Mowing</h3>
+        <p>Clean, consistent mowing with crisp edges and trimmed borders — on a weekly or every-other-week schedule that fits your yard.</p>
+        <div class="tags"><span>Mowing</span><span>Edging &amp; trimming</span><span>Recurring</span></div>
+      </article>
+
+      <article class="svc-card feature reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 8c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 11c0-3-2-5-5-5 0 3 2 5 5 5z"/><path d="M5 22h14"/></svg></div>
+        <h3>Mulch Beds &amp; Planting</h3>
+        <p>Fresh mulch, clean bed edges and new plantings that frame your home — the detail work that makes a yard look cared for.</p>
+        <div class="tags"><span>Mulching</span><span>Bed edging</span><span>Plantings</span></div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M12 8 7 5"/><path d="m12 8 5-3"/><path d="m12 14-6-3"/><path d="m12 14 6-3"/><circle cx="12" cy="2" r="0"/></svg></div>
+        <h3>Tree Trimming &amp; Removal</h3>
+        <p>Pruning overgrown limbs, taking down problem trees and clearing brush — handled safely, with the cleanup included.</p>
+        <div class="tags"><span>Trimming</span><span>Removal</span><span>Brush clearing</span></div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="8.5" y="3.5" width="7" height="7" rx="1"/></svg></div>
+        <h3>Paver Walkways &amp; Hardscape</h3>
+        <p>Paver walkways and edging built on a proper compacted base, so they sit level and stay put through Wisconsin winters.</p>
+        <div class="tags"><span>Walkways</span><span>Paver edging</span><span>Base prep</span></div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h4l2-9 3 13 2-7h4"/><path d="M3 21h18"/></svg></div>
+        <h3>Grading &amp; Drainage</h3>
+        <p>Skid-steer grading, regrading around the foundation and drainage fixes that move water away from your home, not toward it.</p>
+        <div class="tags"><span>Grading</span><span>Drainage</span><span>Skid-steer work</span></div>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4 12"/><path d="M14 2v6.5l6 3.5"/><path d="M4 12v5c0 1 1 2 2 2h12c1 0 2-1 2-2v-5"/><path d="m9 19-1 3"/><path d="m15 19 1 3"/></svg></div>
+        <h3>Spring &amp; Fall Cleanups</h3>
+        <p>Leaf and debris cleanup, bed refreshes and end-of-season tidy-ups that get your property ready for whatever's next.</p>
+        <div class="tags"><span>Leaf cleanup</span><span>Spring prep</span><span>Hauling</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / WHY ============ -->
+<section class="section" id="about" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-media reveal">
+        <img src="assets/mulch-bed-planting.jpg" alt="Fresh mulch bed with hostas, ferns and potted plantings installed along a clean lawn edge in Shawano, WI" width="1200" height="900" loading="lazy">
+        <div class="float-card">
+          <span class="rk">5.0</span>
+          <span class="rk-lbl"><span class="stars">★★★★★</span>8 Google reviews</span>
+        </div>
+      </div>
+      <div class="split-body reveal">
+        <span class="eyebrow">Who we are</span>
+        <h2>A local crew that treats your yard like our own</h2>
+        <p>BJ's Landscape and Maintenance is an owner-operated outfit right here in Shawano. We're the people our neighbors call when they want the work done right and done when we said it would be — no chasing, no surprises.</p>
+        <p>Most of our work comes from word of mouth, and we'd like to keep it that way. <strong>That means showing up on time, leaving the site clean, and standing behind what we do</strong> — whether it's a standing weekly mow or a one-time project that reshapes the whole yard.</p>
+        <div class="feat-list">
+          <div class="feat-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><h4>On time, every time</h4><p>The thing our reviews mention most — we show up when we say we will.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <div><h4>Done right the first time</h4><p>Careful, tidy work you won't have to call us back to fix.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-3"/></svg></div>
+            <div><h4>One call, whole property</h4><p>Lawn care through hardscape — you don't need three contractors.</p></div>
+          </div>
+          <div class="feat-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Truly local</h4><p>Based in Shawano and serving the towns right around it.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center">How it works</span>
+      <h2>Simple from hello to done</h2>
+      <p style="margin-inline:auto">No drawn-out process — just a quick call, a fair quote, and work that gets handled.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="stepnum">1</div><h3>Reach out</h3><p>Call or text us about your lawn or project. Tell us what you've got going on.</p></div>
+      <div class="step reveal"><div class="stepnum">2</div><h3>Free estimate</h3><p>We look it over, talk options, and give you a clear, no-pressure price.</p></div>
+      <div class="step reveal"><div class="stepnum">3</div><h3>We get to work</h3><p>We show up on the day we promised and do the job right — start to finish.</p></div>
+      <div class="step reveal"><div class="stepnum">4</div><h3>Left looking great</h3><p>Site cleaned up, yard looking sharp. Recurring mows? We'll keep it on schedule.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL BAND ============ -->
+<section class="qband">
+  <div class="qband-bg"><img src="assets/tree-trimming.jpg" alt="Tall trees being trimmed and shaped in a large Shawano-area yard" width="1200" height="900" loading="lazy"></div>
+  <div class="wrap section">
+    <div class="reveal">
+      <div class="qmark">&ldquo;</div>
+      <blockquote>Brad is very reliable and always shows up on time. He takes care of my elderly parents' yard and they absolutely love him.</blockquote>
+      <div class="who">
+        <span class="av">S</span>
+        <div>
+          <b>Sherri Bain</b>
+          <span class="stars">★★★★★</span> <span>&middot; Google review</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Real yards, real projects around Shawano</h2>
+      <p>A look at recent work — lawns kept sharp, beds refreshed, trees handled and properties reshaped. Every photo here is our own.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item wide reveal"><img src="assets/paver-walkway-install.jpg" alt="Paver walkway being installed on a compacted base beside a Shawano home" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Paver walkway &amp; base prep</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/tree-removal-climb.jpg" alt="Climbing arborist removing a tall dead tree limb by limb" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Tree removal</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/grading-excavation.jpg" alt="Skid-steer grading a yard down to soil next to a house" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Grading &amp; site prep</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/drainage-install.jpg" alt="Crew installing drainage line along a home foundation" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Drainage install</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/skid-steer-dirtwork.jpg" alt="Skid-steer moving soil in a front yard at a new home in Shawano County" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Skid-steer dirt work</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/fall-cleanup-tractor.jpg" alt="Tractor doing fall yard cleanup, clearing leaves and debris" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Fall cleanup</figcaption></figure>
+      <figure class="gal-item reveal"><img src="assets/brush-clearing.jpg" alt="Worker clearing overgrown brush along a backyard fence line" width="1200" height="900" loading="lazy"><figcaption class="gal-cap">Brush clearing</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section area" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="area-body reveal">
+        <span class="eyebrow" style="color:#f1d9a8">Where we work</span>
+        <h2>Proudly serving Shawano County</h2>
+        <p>We're based on County Road MM in Shawano and cover the city plus the surrounding towns — roughly a 25-mile reach. If you're nearby and not sure we make it out your way, just ask.</p>
+        <div class="town-chips">
+          <span class="home">Shawano</span>
+          <span>Bonduel</span>
+          <span>Cecil</span>
+          <span>Gresham</span>
+          <span>Clintonville</span>
+          <span>Bowler</span>
+          <span>Pulaski</span>
+          <span>&amp; surrounding areas</span>
+        </div>
+      </div>
+      <div class="area-map reveal">
+        <iframe title="Map of Shawano, WI service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-89.30%2C44.45%2C-87.95%2C45.10&amp;layer=mapnik&amp;marker=44.7769657%2C-88.624177"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center">Good to know</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq reveal"><summary>How do I get a quote?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary><div class="faq-a"><p>Easiest way is to call or text us at (920) 334-6969, or fill out the quick form below. Tell us a bit about your yard or project and we'll get you a free, no-pressure estimate.</p></div></details>
+      <details class="faq reveal"><summary>Do you do one-time jobs, or only regular service?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary><div class="faq-a"><p>Both. We handle one-time projects like tree removal, mulch beds, grading and cleanups, and we also keep yards on a regular mowing schedule through the season. Whatever you need.</p></div></details>
+      <details class="faq reveal"><summary>What areas do you cover?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary><div class="faq-a"><p>We're based in Shawano and serve the surrounding Shawano County area — including Bonduel, Cecil, Gresham, Clintonville, Bowler and Pulaski. If you're close by, reach out and we'll let you know.</p></div></details>
+      <details class="faq reveal"><summary>How soon can you come out?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary><div class="faq-a"><p>It depends on the season and how booked we are, but we'll always give you a straight answer on timing when you reach out. The sooner you call, the sooner we can get you on the schedule.</p></div></details>
+      <details class="faq reveal"><summary>What's the best way to reach you?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary><div class="faq-a"><p>Call or text (920) 334-6969 — texting is often quickest if we're out on a job. We're reachable Monday through Friday, 8:00 AM to 5:00 PM.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+      <span class="eyebrow" style="justify-content:center">Get started</span>
+      <h2>Let's get your yard handled</h2>
+      <p style="margin-inline:auto">Tell us what you need and we'll get back to you with a free estimate. No pressure, no obligation.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-panel reveal">
+        <h2>Talk to a real local</h2>
+        <p>You'll reach us directly — no call center, no runaround.</p>
+        <div class="contact-rows">
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="ct"><b>Call or text</b><a href="tel:+19203346969">(920) 334-6969</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="ct"><b>Based in</b><span>N5160 Co Rd MM, Shawano, WI 54166</span></div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div class="ct" style="flex:1">
+              <b>Hours</b>
+              <table class="hours-table">
+                <tr><td>Monday &ndash; Friday</td><td>8:00 AM &ndash; 5:00 PM</td></tr>
+                <tr class="closed"><td>Saturday</td><td>Closed</td></tr>
+                <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-light" href="tel:+19203346969">Call Now</a>
+          <a class="btn btn-outline-light" href="sms:+19203346969">Send a Text</a>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="quoteForm" novalidate>
+          <h3>Request a free estimate</h3>
+          <p class="sub">We'll text or call you back, usually same or next business day.</p>
+          <div class="field">
+            <label for="qname">Your name</label>
+            <input type="text" id="qname" name="name" autocomplete="name" placeholder="First and last name">
+          </div>
+          <div class="field row2">
+            <div class="field">
+              <label for="qphone">Phone</label>
+              <input type="tel" id="qphone" name="phone" autocomplete="tel" placeholder="(920) 000-0000">
+            </div>
+            <div class="field">
+              <label for="qtown">Town</label>
+              <input type="text" id="qtown" name="town" placeholder="Shawano">
+            </div>
+          </div>
+          <div class="field">
+            <label for="qservice">What do you need?</label>
+            <select id="qservice" name="service">
+              <option value="" selected disabled>Choose a service…</option>
+              <option>Lawn care &amp; mowing</option>
+              <option>Mulch beds &amp; planting</option>
+              <option>Tree trimming or removal</option>
+              <option>Paver walkway / hardscape</option>
+              <option>Grading &amp; drainage</option>
+              <option>Spring or fall cleanup</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="qdetail">A few details</label>
+            <textarea id="qdetail" name="detail" placeholder="Tell us about your yard or project…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Send Request</button>
+          <p class="form-note">Prefer to talk? Call or text <a href="tel:+19203346969" style="color:var(--brand);font-weight:600">(920) 334-6969</a>.</p>
+        </form>
+        <div class="form-success" id="formSuccess" aria-live="polite">
+          <div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Thanks, <span id="successName">there</span>!</h3>
+          <p>Your request is ready to send. To reach us fastest, tap below to call or text now — we'll get right back to you.</p>
+          <div style="display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap">
+            <a class="btn btn-primary" href="tel:+19203346969">Call Now</a>
+            <a class="btn btn-ghost" href="sms:+19203346969">Text Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-watermark" aria-hidden="true">BJ&rsquo;s</div>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand-mark">
+          <span class="brand-badge">BJ</span>
+          <span class="brand-text"><b>BJ's Landscape</b><span>&amp; Maintenance, LLC</span></span>
+        </a>
+        <p>Owner-operated lawn care and landscaping serving Shawano, Wisconsin and the surrounding county.</p>
+        <div class="stars">★★★★★ <span>5.0 &middot; 8 Google reviews</span></div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Lawn care &amp; mowing</a>
+        <a href="#services">Mulch beds &amp; planting</a>
+        <a href="#services">Tree trimming &amp; removal</a>
+        <a href="#services">Grading &amp; drainage</a>
+        <a href="#services">Seasonal cleanups</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="tel:+19203346969">(920) 334-6969</a>
+        <a href="sms:+19203346969">Text us</a>
+        <address>N5160 Co Rd MM<br>Shawano, WI 54166</address>
+        <a href="#contact">Free estimate</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> BJ's Landscape and Maintenance, LLC. All rights reserved.</span>
+      <span>Shawano, WI &middot; Made for our neighbors</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CALL BAR ============ -->
+<div class="mobile-bar" id="mobileBar">
+  <a class="btn btn-primary" href="tel:+19203346969">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a class="btn btn-ghost" href="sms:+19203346969">Text</a>
+  <a class="btn btn-ghost" href="#contact">Quote</a>
+</div>
+
+<!-- failsafe: reveal everything even if the main script errors -->
+<script>
+  setTimeout(function(){document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in')});},2500);
+</script>
+<script>
+(function(){
+  "use strict";
+  var header=document.getElementById('header');
+  var mobileBar=document.getElementById('mobileBar');
+  var drawer=document.getElementById('drawer');
+
+  // header solid + mobile bar on scroll
+  function onScroll(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    if(y>40){header.classList.add('solid');}else{header.classList.remove('solid');}
+    if(y>560){mobileBar.classList.add('show');}else{mobileBar.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  // mobile drawer
+  var toggle=document.getElementById('menuToggle');
+  var closeBtn=document.getElementById('drawerClose');
+  function openDrawer(){drawer.classList.add('open');toggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeDrawer(){drawer.classList.remove('open');toggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  toggle.addEventListener('click',openDrawer);
+  closeBtn.addEventListener('click',closeDrawer);
+  drawer.querySelectorAll('[data-close]').forEach(function(a){a.addEventListener('click',closeDrawer);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeDrawer();});
+
+  // reveal on scroll
+  var revs=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    revs.forEach(function(el){io.observe(el);});
+  }else{
+    revs.forEach(function(el){el.classList.add('in');});
+  }
+
+  // year
+  var y=document.getElementById('year'); if(y){y.textContent=new Date().getFullYear();}
+
+  // quote form -> validate, then surface call/text (no delivery email exists)
+  var form=document.getElementById('quoteForm');
+  var success=document.getElementById('formSuccess');
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.querySelector('#qname');
+      var phone=form.querySelector('#qphone');
+      var ok=true;
+      [name,phone].forEach(function(f){
+        if(!f.value.trim()){f.style.borderColor='#c0492f';f.setAttribute('aria-invalid','true');ok=false;}
+        else{f.style.borderColor='';f.removeAttribute('aria-invalid');}
+      });
+      if(!ok){ (name.value.trim()?phone:name).focus(); return; }
+      var first=(name.value.trim().split(' ')[0])||'there';
+      document.getElementById('successName').textContent=first;
+      form.style.display='none';
+      success.classList.add('show');
+      success.scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  }
+})();
+</script>
+</body>
+</html>

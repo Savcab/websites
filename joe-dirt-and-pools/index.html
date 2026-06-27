@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping &amp; Pools in Wabash, IN | Joe Dirt</title>
+<meta name="description" content="Joe Dirt designs, builds &amp; maintains landscapes, paver hardscapes and fiberglass pools across Wabash &amp; northern Indiana. 4.8★ on Google. Free design consult.">
+<link rel="canonical" href="https://savcab.github.io/websites/joe-dirt-and-pools/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Joe Dirt Landscaping &amp; Pools — Wabash, IN">
+<meta property="og:description" content="Design. Develop. Maintain. Custom landscapes, paver hardscapes &amp; fiberglass pools for homes across northern Indiana.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/joe-dirt-and-pools/">
+<meta property="og:image" content="https://savcab.github.io/websites/joe-dirt-and-pools/assets/joe-dirt-pool-patio-landscape-wabash-hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: Bricolage Grotesque (display) + Hanken Grotesk (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness JSON-LD (HomeAndConstructionBusiness). No aggregateRating/review per Google policy. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Joe Dirt Landscaping and Pools",
+  "image": "https://savcab.github.io/websites/joe-dirt-and-pools/assets/joe-dirt-pool-patio-landscape-wabash-hero.webp",
+  "url": "https://savcab.github.io/websites/joe-dirt-and-pools/",
+  "telephone": "+1-260-563-3478",
+  "email": "joedirtlandscaping@outlook.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "528 IN-115",
+    "addressLocality": "Wabash",
+    "addressRegion": "IN",
+    "postalCode": "46992",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 40.816868, "longitude": -85.8684619 },
+  "areaServed": [
+    { "@type": "City", "name": "Wabash" },
+    { "@type": "City", "name": "North Manchester" },
+    { "@type": "City", "name": "Roann" },
+    { "@type": "City", "name": "Lagro" },
+    { "@type": "City", "name": "Marion" },
+    { "@type": "City", "name": "Huntington" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  }],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fiberglass pool design &amp; installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paver patios &amp; hardscape construction" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscape design &amp; maintenance" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retaining walls &amp; outdoor living" } }
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --display:"Bricolage Grotesque", system-ui, sans-serif;
+  --body:"Hanken Grotesk", system-ui, sans-serif;
+  --h1:clamp(2.4rem,5.4vw,4rem);
+  --h2:clamp(1.7rem,3.4vw,2.5rem);
+  --h3:1.3125rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.022em;
+  /* COLOR — earthy, design-led; brand = deep moss green, accent = warm copper */
+  --ink:#1c211d;
+  --ink-2:#54605a;
+  --ink-3:#8a948f;
+  --line:#e4e6e0;
+  --bg:#ffffff;
+  --bg-2:#f5f3ec;     /* warm stone tint */
+  --bg-3:#eceadf;
+  --brand:#2f5233;    /* moss / forest green */
+  --brand-d:#21381f;  /* deep evergreen */
+  --brand-l:#3f6b43;
+  --accent:#bd6334;   /* copper / terracotta */
+  --accent-d:#9c4f26;
+  --gold:#caa05a;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(28,33,29,.06);
+  --sh-2:0 2px 4px rgba(28,33,29,.06),0 4px 10px rgba(28,33,29,.05);
+  --sh-3:0 6px 14px rgba(28,33,29,.07),0 14px 30px rgba(28,33,29,.09);
+  --sh-4:0 10px 20px rgba(28,33,29,.10),0 28px 56px rgba(28,33,29,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700;color:var(--ink)}
+h1{font-size:var(--h1);font-weight:800}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:1.5rem}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--body);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-d)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);line-height:1.6}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);font-weight:600;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(28,33,29,.22)}
+.btn-ghost:hover{border-color:var(--ink);background:rgba(28,33,29,.03)}
+.btn-on-dark{background:rgba(255,255,255,.10);color:#fff;border-color:rgba(255,255,255,.34);backdrop-filter:blur(4px)}
+.btn-on-dark:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:74px}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:-.02em;color:var(--ink)}
+.brand .mark{width:40px;height:40px;flex:0 0 auto;border-radius:var(--r-s)}
+.brand small{display:block;font-family:var(--body);font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-d);margin-top:2px}
+.nav-links{display:none;align-items:center;gap:2rem}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--ink-2);transition:color var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:none;align-items:center;gap:.9rem}
+.nav-phone{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;color:var(--ink);font-size:.98rem}
+.nav-phone svg{width:17px;height:17px;color:var(--brand)}
+@media(min-width:920px){.nav-links{display:flex}.nav-cta{display:flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:clamp(560px,82vh,760px);display:flex;align-items:flex-end;overflow:hidden;background:var(--brand-d)}
+.hero img.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,30,20,.30) 0%,rgba(20,30,20,.12) 40%,rgba(18,26,18,.82) 100%)}
+.hero .container{position:relative;z-index:2;padding-bottom:var(--hero-y);padding-top:var(--s7)}
+.hero-inner{max-width:48rem}
+.hero .eyebrow{color:#e8c79a}
+.hero h1{color:#fff;margin:.7rem 0 1rem;text-shadow:0 2px 30px rgba(0,0,0,.3)}
+.hero h1 .accent{color:#e9c89c}
+.hero p{color:rgba(255,255,255,.92);font-size:clamp(1.05rem,1.7vw,1.3rem);max-width:36rem;margin-bottom:1.9rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:1.3rem;margin-top:2rem;color:#fff}
+.hero-trust .stars{color:#f0c06a;letter-spacing:2px;font-size:1.05rem}
+.hero-trust .ht-item{display:flex;align-items:center;gap:.5rem;font-size:.92rem;color:rgba(255,255,255,.9)}
+.hero-trust .ht-item svg{width:18px;height:18px;color:#e9c89c}
+.hero-trust .div{width:1px;height:20px;background:rgba(255,255,255,.28)}
+
+/* ---------- trust strip ---------- */
+.trustbar{background:var(--brand-d);color:#fff}
+.trustbar .container{display:grid;grid-template-columns:1fr;gap:1.4rem;padding-block:2rem}
+.tb-item{display:flex;align-items:center;gap:.8rem}
+.tb-item svg{width:26px;height:26px;color:#e9c89c;flex:0 0 auto}
+.tb-item b{font-family:var(--display);font-size:1.05rem;font-weight:700;display:block;line-height:1.2}
+.tb-item span{font-size:.85rem;color:rgba(255,255,255,.72)}
+@media(min-width:680px){.trustbar .container{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.trustbar .container{grid-template-columns:repeat(4,1fr);gap:1rem}}
+
+/* ---------- section heading ---------- */
+.sec-head{max-width:44rem;margin-bottom:var(--s6)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{margin:.6rem 0 .9rem}
+.sec-head p{color:var(--ink-2)}
+.sec-head.center p{margin-inline:auto}
+
+/* ---------- services ---------- */
+.services{background:var(--bg-2)}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.4rem}
+@media(min-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2.1rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t);position:relative;overflow:hidden}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3)}
+.svc-card .ic{width:54px;height:54px;border-radius:var(--r-m);display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-l));color:#fff;margin-bottom:1.3rem;box-shadow:var(--sh-2)}
+.svc-card .ic svg{width:27px;height:27px}
+.svc-card h3{margin-bottom:.5rem}
+.svc-card p{font-size:.97rem;color:var(--ink-2);line-height:1.55;max-width:none}
+.svc-card .tag{margin-top:1.1rem;display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--accent-d)}
+.svc-card .tag svg{width:15px;height:15px}
+
+/* ---------- about / split ---------- */
+.split{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1.05fr 1fr}.split.rev .media{order:2}}
+.split .media{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:4/3}
+.split .media img{width:100%;height:100%;object-fit:cover}
+.split .media .badge{position:absolute;left:1.1rem;bottom:1.1rem;background:rgba(255,255,255,.95);border-radius:var(--r-m);padding:.7rem 1rem;box-shadow:var(--sh-2);font-size:.82rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:.5rem}
+.split .media .badge svg{width:18px;height:18px;color:var(--accent)}
+.about-list{list-style:none;margin-top:1.6rem;display:grid;gap:1rem}
+.about-list li{display:flex;gap:.85rem;align-items:flex-start}
+.about-list .chk{width:26px;height:26px;flex:0 0 auto;border-radius:var(--r-pill);background:rgba(47,82,51,.1);display:grid;place-items:center;margin-top:1px}
+.about-list .chk svg{width:15px;height:15px;color:var(--brand)}
+.about-list b{display:block;font-weight:700;font-size:1rem;color:var(--ink);font-family:var(--display);letter-spacing:-.01em}
+.about-list span{font-size:.94rem;color:var(--ink-2)}
+
+/* ---------- process ---------- */
+.process{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.process .sec-head h2{color:#fff}
+.process .sec-head p{color:rgba(255,255,255,.74)}
+.steps{display:grid;grid-template-columns:1fr;gap:1.4rem;counter-reset:step}
+@media(min-width:640px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{position:relative;padding:2rem 1.6rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-l)}
+.step .n{font-family:var(--display);font-weight:800;font-size:2.4rem;color:#e9c89c;line-height:1;letter-spacing:-.04em;opacity:.92}
+.step h3{color:#fff;margin:.9rem 0 .5rem}
+.step p{color:rgba(255,255,255,.74);font-size:.93rem;max-width:none}
+
+/* ---------- gallery ---------- */
+.gallery{background:var(--bg-2)}
+.gal-grid{display:grid;grid-template-columns:1fr;gap:1.1rem}
+@media(min-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.gal-item{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);aspect-ratio:4/3;background:var(--bg-3)}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 500ms cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item .cap{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .8rem;background:linear-gradient(transparent,rgba(18,26,18,.78));color:#fff;font-size:.82rem;font-weight:600;letter-spacing:.01em;opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.gal-item:hover .cap{opacity:1;transform:translateY(0)}
+.gal-feature{grid-column:1/-1}
+@media(min-width:560px){.gal-feature{grid-column:span 2}}
+@media(min-width:920px){.gal-feature{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}}
+
+/* ---------- reviews ---------- */
+.reviews .sec-head{text-align:center;margin-inline:auto}
+.rev-meta{display:inline-flex;align-items:center;gap:.7rem;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.55rem 1.1rem;margin-top:1.1rem;font-weight:600;font-size:.92rem}
+.rev-meta .stars{color:#e0a93f;letter-spacing:1.5px}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:var(--s5)}
+@media(min-width:720px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1060px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.rev-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:.9rem}
+.rev-card .stars{color:#e0a93f;letter-spacing:1.5px;font-size:1rem}
+.rev-card p{font-size:.99rem;color:var(--ink);line-height:1.6;max-width:none}
+.rev-card .who{display:flex;align-items:center;gap:.75rem;margin-top:auto;padding-top:.3rem}
+.rev-card .av{width:40px;height:40px;border-radius:var(--r-pill);background:linear-gradient(135deg,var(--brand),var(--brand-l));color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1rem}
+.rev-card .who b{display:block;font-size:.92rem;font-weight:700}
+.rev-card .who span{font-size:.78rem;color:var(--ink-3)}
+.rev-feature{grid-column:1/-1;background:var(--brand-d);color:#fff;border:none}
+@media(min-width:1060px){.rev-feature{grid-column:span 3;display:grid;grid-template-columns:auto 1fr;gap:1.8rem;align-items:center;padding:2.4rem}}
+.rev-feature p{color:#fff;font-size:clamp(1.1rem,1.8vw,1.35rem);font-family:var(--display);font-weight:500;line-height:1.42;letter-spacing:-.01em}
+.rev-feature .stars{font-size:1.15rem}
+.rev-feature .who b{color:#fff}.rev-feature .who span{color:rgba(255,255,255,.6)}
+.rev-feature .qmark{font-family:var(--display);font-size:5rem;line-height:.7;color:#e9c89c;font-weight:800;opacity:.5}
+
+/* ---------- service area ---------- */
+.area{background:var(--bg-2)}
+.area-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3rem);align-items:stretch}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1fr}}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);min-height:340px;border:1px solid var(--line)}
+.area-map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.town{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-size:.88rem;font-weight:500;color:var(--ink-2)}
+.town svg{width:14px;height:14px;color:var(--brand)}
+
+/* ---------- faq ---------- */
+.faq-wrap{display:grid;grid-template-columns:1fr;gap:.8rem;max-width:50rem;margin-inline:auto}
+.faq{border:1px solid var(--line);border-radius:var(--r-m);background:var(--bg);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:1.3rem 1.5rem;font-family:var(--display);font-weight:600;font-size:1.06rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:1rem;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ico{flex:0 0 auto;width:26px;height:26px;border-radius:var(--r-pill);background:var(--bg-2);display:grid;place-items:center;transition:transform var(--t),background var(--t)}
+.faq summary .ico svg{width:15px;height:15px;color:var(--brand)}
+.faq[open] summary .ico{transform:rotate(45deg);background:var(--brand);color:#fff}
+.faq[open] summary .ico svg{color:#fff}
+.faq .ans{padding:0 1.5rem 1.4rem;color:var(--ink-2);font-size:.97rem;line-height:1.6}
+.faq .ans p{max-width:none}
+
+/* ---------- CTA / form ---------- */
+.cta{position:relative;overflow:hidden;background:var(--brand);color:#fff}
+.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 85% -10%,rgba(233,200,156,.18),transparent 60%)}
+.cta .container{position:relative;z-index:1}
+.cta-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(min-width:900px){.cta-grid{grid-template-columns:1fr 1.05fr}}
+.cta h2{color:#fff;margin-bottom:1rem}
+.cta .lead{color:rgba(255,255,255,.86)}
+.cta-points{list-style:none;margin-top:1.7rem;display:grid;gap:.9rem}
+.cta-points li{display:flex;align-items:center;gap:.7rem;font-size:1rem;color:rgba(255,255,255,.92)}
+.cta-points svg{width:20px;height:20px;color:#e9c89c;flex:0 0 auto}
+.cta-call{margin-top:2rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.cta-call .big-phone{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:800;font-size:1.7rem;color:#fff;letter-spacing:-.02em}
+.cta-call .big-phone svg{width:26px;height:26px;color:#e9c89c}
+.form-card{background:#fff;border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-4);color:var(--ink)}
+.form-card h3{font-size:1.35rem;margin-bottom:.4rem}
+.form-card .fc-sub{font-size:.92rem;color:var(--ink-2);margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink-2);margin-bottom:.4rem;letter-spacing:.01em}
+.field input,.field select,.field textarea{width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg-2);transition:border-color var(--t),background var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brand);background:#fff}
+.field textarea{resize:vertical;min-height:92px}
+.row2{display:grid;grid-template-columns:1fr;gap:0}
+@media(min-width:520px){.row2{grid-template-columns:1fr 1fr;gap:1rem}}
+.form-card .btn{width:100%;justify-content:center;margin-top:.4rem}
+.form-card .fineprint{font-size:.78rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+
+/* ---------- footer ---------- */
+.footer{background:var(--brand-d);color:rgba(255,255,255,.74);padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;padding-bottom:2.6rem;border-bottom:1px solid rgba(255,255,255,.12)}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:rgba(255,255,255,.7);max-width:30ch}
+.foot-rev{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-pill);padding:.5rem .9rem;font-size:.84rem;font-weight:600;color:#fff;transition:background var(--t)}
+.foot-rev:hover{background:rgba(255,255,255,.14)}
+.foot-rev svg{width:16px;height:16px;color:#e9c89c}
+.foot-col h4{font-family:var(--display);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#e9c89c;margin-bottom:1rem;font-weight:700}
+.foot-col ul{list-style:none;display:grid;gap:.6rem}
+.foot-col a,.foot-col li{font-size:.92rem;color:rgba(255,255,255,.74)}
+.foot-col a:hover{color:#fff}
+.nap{display:flex;gap:.6rem;align-items:flex-start;font-size:.92rem;color:rgba(255,255,255,.74)}
+.nap svg{width:16px;height:16px;color:#e9c89c;flex:0 0 auto;margin-top:3px}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.8rem;font-size:.82rem;color:rgba(255,255,255,.55)}
+
+/* ---------- sticky mobile call bar ---------- */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;background:var(--brand-d);box-shadow:0 -4px 20px rgba(0,0,0,.18);padding:.55rem;gap:.55rem}
+.callbar a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem;border-radius:var(--r-m);font-weight:700;font-size:.96rem}
+.callbar .c-call{background:var(--accent);color:#fff}
+.callbar .c-quote{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.callbar svg{width:18px;height:18px}
+@media(min-width:920px){.callbar{display:none}}
+body{padding-bottom:72px}
+@media(min-width:920px){body{padding-bottom:0}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#" class="brand" aria-label="Joe Dirt Landscaping and Pools home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="6" fill="#2f5233"/>
+        <path d="M9 27c4-1 6-4 7-8 1 4 3 7 7 8" stroke="#e9c89c" stroke-width="2" stroke-linecap="round"/>
+        <path d="M20 7c-2.5 4-2.5 9 0 13 2.5-4 2.5-9 0-13Z" fill="#e9c89c"/>
+        <circle cx="20" cy="30" r="1.6" fill="#bd6334"/>
+        <path d="M13 31h14" stroke="#e9c89c" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span>Joe Dirt<small>Landscaping &amp; Pools</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+12605633478">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.84.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        (260) 563-3478
+      </a>
+      <a class="btn btn-primary" href="#quote">Free Consult</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <img class="hero-bg" src="assets/joe-dirt-pool-patio-landscape-wabash-hero.webp" alt="Backyard paver patio, fiberglass pool and landscaping built by Joe Dirt in Wabash, Indiana" width="1920" height="1080" fetchpriority="high">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">Wabash &amp; Northern Indiana · Design / Build / Maintain</span>
+      <h1>Outdoor spaces, built to <span class="accent">live in</span>.</h1>
+      <p>Custom landscapes, paver hardscapes and fiberglass pools — designed, constructed and maintained by one local crew that treats your yard like art.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#quote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+          Start your project
+        </a>
+        <a class="btn btn-on-dark" href="tel:+12605633478">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.84.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (260) 563-3478
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="ht-item"><span class="stars">★★★★★</span> <span>4.8 · 16 Google reviews</span></div>
+        <div class="div" aria-hidden="true"></div>
+        <div class="ht-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Based in Wabash, Indiana</div>
+        <div class="div" aria-hidden="true"></div>
+        <div class="ht-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 12 5 5L22 4"/></svg> One crew, start to finish</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trustbar" aria-label="Why homeowners choose Joe Dirt">
+  <div class="container">
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+      <div><b>4.8★ · 16 reviews</b><span>Rated on Google</span></div>
+    </div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+      <div><b>Design &amp; Build</b><span>One firm, full project</span></div>
+    </div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 21a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM7 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+      <div><b>Residential &amp; Commercial</b><span>High-end properties</span></div>
+    </div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><b>Northern Indiana</b><span>Wabash &amp; surrounding</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service outdoor design &amp; construction</h2>
+      <p>From the first sketch to the last plant, Joe Dirt handles design, construction and maintenance in-house — so the people who plan your space are the ones who build it.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-5 10-5 10 5 10 5-3 5-10 5S2 12 2 12z"/><path d="M2 16c2.5 1.5 5 1 7-0.5M22 16c-2.5 1.5-5 1-7-0.5"/></svg></div>
+        <h3>Fiberglass Pools</h3>
+        <p>Inground fiberglass pool design and installation with the surrounding paver deck, coping and landscape lighting built as one finished space — not a pool dropped in a yard.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Pool + deck as one project</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></div>
+        <h3>Hardscape &amp; Patios</h3>
+        <p>Paver patios, walkways, outdoor kitchens, fireplaces and fire features — creative, functional outdoor living spaces engineered with proper base prep and drainage to last.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Patios · kitchens · fire pits</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12M12 12c0-3 1.5-5 4-6M12 12c0-3-1.5-5-4-6M12 7a4 4 0 0 0-4-4M12 7a4 4 0 0 1 4-4"/></svg></div>
+        <h3>Landscape Design</h3>
+        <p>Landscaping is both art and science — we plan for what you see and what lives below the surface, building healthy, timeless plantings tailored to your home's style.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Design that lasts</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10l4-2M20 21V10l-4-2M8 8V5l4-2 4 2v3M9 21v-4h6v4"/></svg></div>
+        <h3>Retaining Walls &amp; Grading</h3>
+        <p>Segmental retaining walls, steps and grade changes that turn awkward slopes into usable, structured outdoor rooms — built to hold the ground and shape the view.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Walls · steps · slopes</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></div>
+        <h3>Retail Yard &amp; Materials</h3>
+        <p>Quality soil, mulch, plants and trees from our Wabash yard — with the know-how to help you choose the right material and the best way to plant it.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Soil · mulch · plants</span>
+      </article>
+      <article class="svc-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/><path d="M7 3v3M17 3v3M11 9v3M19 15v3"/></svg></div>
+        <h3>Maintenance</h3>
+        <p>Ongoing care to keep what we build looking its best — seasonal plantings, bed upkeep and property maintenance for the homes and businesses we've designed.</p>
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Keep it timeless</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / SPLIT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="split">
+      <div class="media reveal">
+        <img src="assets/paver-walkway-landscape-design-wabash.webp" alt="Paver walkway with landscape borders leading to a home, designed and built by Joe Dirt in northern Indiana" width="1200" height="900" loading="lazy">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Design · Develop · Maintain</div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Who we are</span>
+        <h2>A design-led crew that builds what it draws</h2>
+        <p class="lead">Joe Dirt is a full-service design, construction and maintenance firm serving high-end residential and commercial properties across northern Indiana — known for a real sense of style and artistic flair in everything we design.</p>
+        <ul class="about-list">
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><b>One team, the whole project</b>We design, build and maintain in-house, so nothing gets lost in a hand-off between contractors.</span></li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><b>Tailored to your space</b>Every plan is built around your home's aesthetic and how you actually want to use the yard.</span></li>
+          <li><span class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg></span><span><b>Built to last</b>Proper base prep, drainage and healthy soil under the surface — the part you don't see is what keeps it looking good for years.</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="#quote" style="margin-top:1.9rem">Talk through your project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="color:#e9c89c">How it works</span>
+      <h2>From sketch to finished space</h2>
+      <p>A clear path from the first conversation to a yard you can't wait to use.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Consult</h3><p>We visit, listen to how you want to live outdoors, walk the site and talk through ideas and budget.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Design</h3><p>We turn it into a tailored plan — layout, materials, plantings and pool or hardscape details to match your home.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>Build</h3><p>Our own crew handles construction start to finish, with the base prep and drainage done right underneath.</p></div>
+      <div class="step reveal"><div class="n">04</div><h3>Maintain</h3><p>We keep it looking its best season after season, so your investment stays timeless.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our work</span>
+      <h2>Recent projects across northern Indiana</h2>
+      <p>Pools, patios, fireplaces and plantings — all designed and built by our own crew. A few favorites from around Wabash and the surrounding area.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item gal-feature reveal">
+        <img src="assets/fiberglass-pool-paver-deck-dusk-wabash.webp" alt="Fiberglass pool with a paver deck and landscape lighting at dusk in Wabash, Indiana" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Fiberglass pool &amp; paver deck at dusk</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/lakeside-pool-paver-patio-wabash.webp" alt="Lakeside fiberglass pool with paver patio and lounge area built by Joe Dirt" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Lakeside pool &amp; patio</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/stone-outdoor-fireplace-patio-wabash.webp" alt="Stone outdoor fireplace with firewood storage on a paver patio in northern Indiana" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Stone outdoor fireplace</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/outdoor-kitchen-paver-patio-wabash.webp" alt="Covered outdoor kitchen and bar on a paver patio built by Joe Dirt in Wabash, Indiana" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Covered outdoor kitchen</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/landscape-lighting-paver-steps-wabash.webp" alt="Illuminated paver steps and retaining walls with landscape lighting at night" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Paver steps &amp; landscape lighting</figcaption>
+      </figure>
+      <figure class="gal-item reveal">
+        <img src="assets/stone-retaining-wall-steps-wabash.webp" alt="Stone retaining wall with steps in front of a home in northern Indiana" width="1200" height="900" loading="lazy">
+        <figcaption class="cap">Retaining wall &amp; entry steps</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">In their words</span>
+      <h2>What our customers say</h2>
+      <p>A few notes from homeowners and clients we've worked with.</p>
+      <div class="rev-meta"><span class="stars">★★★★★</span> 4.8 average · 16 Google reviews</div>
+    </div>
+    <div class="rev-grid">
+      <article class="rev-card rev-feature reveal">
+        <div class="qmark" aria-hidden="true">&ldquo;</div>
+        <div>
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>Our landscaping and hardscape patio project with Joe Dirt was a wonderful experience! They are a high quality company with professional expertise, integrity, custom design work and top-notch craftsmanship. The employees were kind, knowledgeable and hard-working. We are so pleased with the final outcome and would highly recommend Joe Dirt.</p>
+          <div class="who"><div class="av">C</div><div><b>Carl &amp; Vindy Pace</b><span>Landscape &amp; hardscape patio</span></div></div>
+        </div>
+      </article>
+      <article class="rev-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>So happy. The crew was amazing — they took care of every detail. I will definitely use Joe Dirt Landscaping again and tell my friends. Thank you!</p>
+        <div class="who"><div class="av">Y</div><div><b>Yvonne Nelson</b><span>Google review</span></div></div>
+      </article>
+      <article class="rev-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>Purchased materials for several jobs from these guys. High quality material and great customer service. I recommend them to everyone looking for materials or a great hardscape designer. Joe has a big heart for people and goes out of his way to take care of us.</p>
+        <div class="who"><div class="av">D</div><div><b>Derick Robbins</b><span>Google review</span></div></div>
+      </article>
+      <article class="rev-card reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>Had a great experience buying a tulip poplar tree and some topsoil from Joe Dirt Landscaping. The owner took the time to teach me the best planting method and was more than generous with the load of soil. Will definitely be doing business with them again.</p>
+        <div class="who"><div class="av">B</div><div><b>Benjamin Mota</b><span>Google review</span></div></div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:var(--s5)">
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ49svhUJBFIgRxFqf4wmAXFY" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+        Leave us a Google review
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section area" id="area">
+  <div class="container">
+    <div class="area-grid">
+      <div class="reveal">
+        <span class="eyebrow">Where we work</span>
+        <h2 style="margin:.6rem 0 .9rem">Serving Wabash &amp; northern Indiana</h2>
+        <p class="lead">Based at our yard on State Road 115 in Wabash, we design and build for homes and businesses across the surrounding communities.</p>
+        <div class="towns">
+          <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="2.5"/></svg> Wabash</span>
+          <span class="town">North Manchester</span>
+          <span class="town">Roann</span>
+          <span class="town">Lagro</span>
+          <span class="town">Marion</span>
+          <span class="town">Huntington</span>
+          <span class="town">Peru</span>
+          <span class="town">&amp; surrounding northern Indiana</span>
+        </div>
+        <div style="margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.8rem">
+          <a class="btn btn-primary" href="#quote">Request a free consult</a>
+          <a class="btn btn-ghost" href="tel:+12605633478">Call (260) 563-3478</a>
+        </div>
+      </div>
+      <div class="area-map reveal">
+        <iframe title="Map showing Joe Dirt Landscaping and Pools in Wabash, Indiana" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.95%2C40.75%2C-85.78%2C40.88&amp;layer=mapnik&amp;marker=40.816868%2C-85.8684619" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq reveal">
+        <summary>Do you handle the whole project, from design to build?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans"><p>Yes. Joe Dirt is a full-service design, construction and maintenance firm. The same team that designs your space builds it and can maintain it afterward, so there's no hand-off between separate contractors.</p></div>
+      </details>
+      <details class="faq reveal">
+        <summary>What kind of pools do you build?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans"><p>We specialize in inground fiberglass pools, designed together with the surrounding paver deck, coping and landscape lighting so the finished area reads as one cohesive outdoor space rather than a pool added on later.</p></div>
+      </details>
+      <details class="faq reveal">
+        <summary>Do you work on commercial properties too?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans"><p>We do. We serve high-end residential and commercial properties across northern Indiana — from backyard landscapes and pools to hardscape and grounds for businesses.</p></div>
+      </details>
+      <details class="faq reveal">
+        <summary>Can I buy soil, mulch or plants directly from you?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans"><p>Yes — we stock quality soil, mulch, plants and trees at our Wabash yard, and we're happy to help you pick the right material and the best way to plant it. Give us a call for current availability.</p></div>
+      </details>
+      <details class="faq reveal">
+        <summary>How do I get started?<span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="ans"><p>Call us at <a href="tel:+12605633478" style="color:var(--brand);font-weight:600">(260) 563-3478</a> or send the quick form below. We'll set up a consult, walk your site and talk through ideas and budget before any work begins.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / QUOTE ============ -->
+<section class="section cta" id="quote">
+  <div class="container">
+    <div class="cta-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="color:#e9c89c">Free design consult</span>
+        <h2>Let's plan your outdoor space</h2>
+        <p class="lead">Tell us a little about your project and we'll get back to you to set up a consult. No pressure — just a conversation about what's possible in your yard.</p>
+        <ul class="cta-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Design, build &amp; maintain under one roof</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Pools, patios, walls &amp; landscaping</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Serving Wabash &amp; northern Indiana</li>
+        </ul>
+        <div class="cta-call">
+          <a class="big-phone" href="tel:+12605633478">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.84.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            (260) 563-3478
+          </a>
+        </div>
+      </div>
+      <form class="form-card reveal" action="https://formsubmit.co/joedirtlandscaping@outlook.com" method="POST">
+        <h3>Request your free consult</h3>
+        <p class="fc-sub">We'll reply to set up a visit and walk your site.</p>
+        <input type="hidden" name="_subject" value="New consult request — Joe Dirt website">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <div class="row2">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"></div>
+          <div class="field"><label for="zip">ZIP / town</label><input id="zip" name="zip_or_town" type="text"></div>
+        </div>
+        <div class="field">
+          <label for="project">Project type</label>
+          <select id="project" name="project_type">
+            <option>Fiberglass pool</option>
+            <option>Patio / hardscape</option>
+            <option>Landscape design</option>
+            <option>Retaining wall / grading</option>
+            <option>Materials (soil / mulch / plants)</option>
+            <option>Maintenance</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="detail">Tell us about your project</label><textarea id="detail" name="details" placeholder="A few details about what you're hoping to do…"></textarea></div>
+        <button class="btn btn-primary" type="submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          Send my request
+        </button>
+        <p class="fineprint">Prefer to talk? Call (260) 563-3478 — Mon–Fri, 8am–5pm.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="brand">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="6" fill="#3f6b43"/>
+            <path d="M9 27c4-1 6-4 7-8 1 4 3 7 7 8" stroke="#e9c89c" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 7c-2.5 4-2.5 9 0 13 2.5-4 2.5-9 0-13Z" fill="#e9c89c"/>
+            <circle cx="20" cy="30" r="1.6" fill="#bd6334"/>
+            <path d="M13 31h14" stroke="#e9c89c" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>Joe Dirt<small>Landscaping &amp; Pools</small></span>
+        </a>
+        <p>Design. Develop. Maintain. Custom landscapes, hardscapes and fiberglass pools across northern Indiana.</p>
+        <a class="foot-rev" href="https://search.google.com/local/writereview?placeid=ChIJ49svhUJBFIgRxFqf4wmAXFY" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21.4 8 14 2 9.4h7.6z"/></svg>
+          4.8★ on Google · leave a review
+        </a>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Fiberglass pools</a></li>
+          <li><a href="#services">Hardscape &amp; patios</a></li>
+          <li><a href="#services">Landscape design</a></li>
+          <li><a href="#services">Retaining walls</a></li>
+          <li><a href="#services">Retail materials</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 528 IN-115, Wabash, IN 46992</li>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.84.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> <a href="tel:+12605633478">(260) 563-3478</a></li>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg> <a href="mailto:joedirtlandscaping@outlook.com">joedirtlandscaping@outlook.com</a></li>
+          <li class="nap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Mon–Fri 8am–5pm · Sat &amp; Sun closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Joe Dirt Landscaping and Pools · Wabash, Indiana</span>
+      <span>Design. Develop. Maintain.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CALL BAR ============ -->
+<div class="callbar">
+  <a class="c-call" href="tel:+12605633478"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.97.36 1.92.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.84.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg> Call now</a>
+  <a class="c-quote" href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg> Free consult</a>
+</div>
+
+<script>
+// Scroll reveal — first-view, secondary content only, respects reduced-motion
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

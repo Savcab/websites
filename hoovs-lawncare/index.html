@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Mowing in Greentown, IN | Hoovs Lawncare</title>
+<meta name="description" content="Hoovs Lawncare keeps Greentown, IN lawns crisp and striped — weekly mowing, fertilizing, cleanups and seasonal care. Rated 4.6 stars by 22 neighbors. Call for a free quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/hoovs-lawncare/">
+<meta name="theme-color" content="#16412b">
+
+<!-- Open Graph / social -->
+<meta property="og:title" content="Lawn Care &amp; Mowing in Greentown, IN | Hoovs Lawncare">
+<meta property="og:description" content="Crisp, striped lawns across Greentown and Howard County. Weekly mowing, fertilizing and seasonal cleanups. Rated 4.6 stars by 22 neighbors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/hoovs-lawncare/">
+<meta property="og:image" content="https://savcab.github.io/websites/hoovs-lawncare/assets/hoovs-lawncare-greentown-og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: inline SVG data-URI (sprout monogram, no asset file) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316412b'/%3E%3Cpath d='M16 25V13' stroke='%23cfe8b0' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M16 16c-1-4-4-5-7-5 0 3 2 6 7 6z' fill='%2384c25a'/%3E%3Cpath d='M16 13c1-3 4-4 6-4 0 3-2 5-6 5z' fill='%23cfe8b0'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness JSON-LD — HomeAndConstructionBusiness (no review/aggregateRating markup; honesty gate) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Hoovs Lawncare",
+  "image": "https://savcab.github.io/websites/hoovs-lawncare/assets/hoovs-lawncare-greentown-og.png",
+  "url": "https://savcab.github.io/websites/hoovs-lawncare/",
+  "telephone": "+13179690892",
+  "email": "D.hoover@ymail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "500 W Payton St lot #2",
+    "addressLocality": "Greentown",
+    "addressRegion": "IN",
+    "postalCode": "46936",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.4824395,
+    "longitude": -85.9715015
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Greentown"},
+    {"@type": "City", "name": "Kokomo"},
+    {"@type": "City", "name": "Russiaville"},
+    {"@type": "City", "name": "Windfall"},
+    {"@type": "City", "name": "Sharpsville"},
+    {"@type": "City", "name": "Converse"}
+  ],
+  "sameAs": ["https://www.facebook.com/HoovsLawncare"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Lawn Care Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Weekly Lawn Mowing"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fertilizing & Weed Control"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Spring & Fall Cleanups"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trimming & Edging"}}
+    ]
+  }
+}
+</script>
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(4rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --container:75rem;
+  --measure:62ch;
+  /* TYPE */
+  --display:"Bricolage Grotesque",-apple-system,Segoe UI,sans-serif;
+  --body-font:"Hanken Grotesk",-apple-system,Segoe UI,sans-serif;
+  --h1:clamp(2.4rem,6vw,4.1rem);
+  --h2:clamp(1.7rem,3.4vw,2.55rem);
+  --h3:1.35rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.55;
+  --lh-head:1.04;
+  --track-head:-.025em;
+  /* COLOR — turf green brand, warm cream neutral, fresh lime accent */
+  --ink:#15211a;        /* near-black warm green-ink, never #000 */
+  --ink-2:#4a584f;
+  --ink-3:#7c8a80;
+  --line:#e3e7e0;
+  --bg:#ffffff;
+  --bg-2:#f4f3ec;       /* warm cream alt */
+  --brand:#16412b;      /* deep turf green */
+  --brand-d:#0e2c1d;    /* darker forest for dark bands */
+  --brand-2:#2f7a4f;    /* mid leaf green */
+  --accent:#7bbf3f;     /* fresh lime — CTAs / highlights only */
+  --accent-d:#5fa129;
+  --gold:#c9a24a;       /* small star tint */
+  /* RADIUS tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:24px; --r-xl:34px; --r-pill:999px;
+  /* SHADOW — soft layered */
+  --sh-1:0 1px 2px rgba(21,33,26,.06);
+  --sh-2:0 2px 4px rgba(21,33,26,.06),0 4px 10px rgba(21,33,26,.05);
+  --sh-3:0 6px 14px rgba(21,33,26,.07),0 14px 30px rgba(21,33,26,.08);
+  --sh-4:0 10px 20px rgba(21,33,26,.09),0 28px 56px rgba(21,33,26,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body-font);font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:800}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);font-weight:700;letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+::selection{background:var(--accent);color:var(--brand-d)}
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brand-2);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.lede{font-size:clamp(1.05rem,2vw,1.22rem);color:var(--ink-2);line-height:1.6;max-width:54ch}
+
+/* mowing-stripe motif (CSS-generated, honest abstraction of their craft — no photo) */
+.stripes{background-image:repeating-linear-gradient(180deg,var(--brand) 0,var(--brand) 14px,var(--brand-d) 14px,var(--brand-d) 28px)}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-.01em;padding:.95rem 1.7rem;border-radius:var(--r-pill);min-height:48px;cursor:pointer;border:1.5px solid transparent;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--accent);color:var(--brand-d);box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--brand);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand-2);color:var(--brand-d);transform:translateY(-2px)}
+.btn-light{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.28)}
+.btn-light:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.on-dark .btn-primary{box-shadow:0 6px 20px rgba(123,191,63,.3)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background var(--t),box-shadow var(--t),border-color var(--t);border-bottom:1px solid transparent}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.hdr.solid{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);box-shadow:var(--sh-1);border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:-.02em;color:#fff;transition:color var(--t)}
+.hdr.solid .brand{color:var(--brand)}
+.brand .mark{width:38px;height:38px;border-radius:10px;background:var(--brand);display:grid;place-items:center;flex:none;box-shadow:var(--sh-2)}
+.hdr.solid .brand .mark{background:var(--brand)}
+.brand .mark svg{width:22px;height:22px}
+.nav{display:flex;align-items:center;gap:.4rem}
+.nav a{font-weight:600;font-size:.95rem;color:rgba(255,255,255,.86);padding:.5rem .8rem;border-radius:var(--r-s);transition:color var(--t),background var(--t)}
+.hdr.solid .nav a{color:var(--ink-2)}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.solid .nav a:hover{color:var(--brand);background:var(--bg-2)}
+.hdr-cta{display:flex;align-items:center;gap:.7rem}
+.hdr-phone{display:inline-flex;align-items:center;gap:.45rem;font-family:var(--display);font-weight:700;color:#fff;font-size:1rem;transition:color var(--t)}
+.hdr.solid .hdr-phone{color:var(--brand)}
+.hdr-phone svg{width:17px;height:17px}
+.burger{display:none;width:46px;height:46px;border:none;background:rgba(255,255,255,.12);border-radius:var(--r-s);cursor:pointer;align-items:center;justify-content:center}
+.hdr.solid .burger{background:var(--bg-2)}
+.burger span{display:block;width:20px;height:2px;background:#fff;position:relative}
+.hdr.solid .burger span{background:var(--brand)}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:inherit}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:60;background:var(--brand-d);display:flex;flex-direction:column;padding:1.5rem;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);visibility:hidden}
+.drawer.open{transform:translateX(0);visibility:visible}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem}
+.drawer-top .brand{color:#fff}
+.drawer .close{width:46px;height:46px;border:none;background:rgba(255,255,255,.1);border-radius:var(--r-s);color:#fff;font-size:1.5rem;cursor:pointer}
+.drawer nav{display:flex;flex-direction:column;gap:.25rem}
+.drawer nav a{color:#fff;font-family:var(--display);font-weight:700;font-size:1.5rem;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.drawer .drawer-foot{margin-top:auto;display:flex;flex-direction:column;gap:.8rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--brand-d);color:#fff;overflow:hidden;padding-top:calc(72px + var(--hero-y));padding-bottom:var(--hero-y)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg .field{position:absolute;inset:auto 0 0 0;height:62%;background:linear-gradient(180deg,transparent,rgba(14,44,29,.4)),repeating-linear-gradient(95deg,#163d28 0,#163d28 38px,#13351f 38px,#13351f 76px);opacity:.9;transform:skewY(-3deg);transform-origin:bottom left}
+.hero-bg .glow{position:absolute;top:-20%;right:-10%;width:560px;height:560px;background:radial-gradient(circle,rgba(123,191,63,.22),transparent 65%);filter:blur(10px)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 70% 0%,transparent,rgba(14,44,29,.55))}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero h1{font-size:var(--h1);font-weight:800;letter-spacing:-.03em;max-width:14ch}
+.hero h1 .hl{color:var(--accent)}
+.hero .lede{color:rgba(255,255,255,.82);max-width:46ch;margin-top:1.4rem}
+.hero-eyebrow{color:var(--accent);margin-bottom:1.4rem}
+.hero-eyebrow::before{background:var(--accent)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.hero-trust{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.6rem;align-items:center}
+.rating-badge{display:flex;align-items:center;gap:.7rem}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:18px;height:18px;color:var(--gold)}
+.rating-badge .rb-num{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1}
+.rating-badge .rb-sub{font-size:.82rem;color:rgba(255,255,255,.7);line-height:1.3}
+.hero-trust .sep{width:1px;height:34px;background:rgba(255,255,255,.18)}
+.hero-trust .nugget{font-size:.9rem;color:rgba(255,255,255,.85)}
+.hero-trust .nugget strong{display:block;font-family:var(--display);font-weight:700;color:#fff;font-size:1.02rem}
+
+/* floating promise card */
+.promise{background:#fff;color:var(--ink);border-radius:var(--r-l);padding:2rem;box-shadow:var(--sh-4);position:relative;border:1px solid rgba(255,255,255,.5)}
+.promise::before{content:"";position:absolute;inset:0 auto 0 0;width:6px;border-radius:var(--r-l) 0 0 var(--r-l);background:linear-gradient(180deg,var(--accent),var(--brand-2))}
+.promise .pc-tag{font-family:var(--display);font-weight:700;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand-2);margin-bottom:.9rem;padding-left:.4rem}
+.promise h3{font-size:1.45rem;margin-bottom:.6rem;padding-left:.4rem}
+.promise p{font-size:.96rem;color:var(--ink-2);padding-left:.4rem;max-width:none}
+.promise .pc-list{list-style:none;margin-top:1.2rem;padding-left:.4rem;display:flex;flex-direction:column;gap:.7rem}
+.promise .pc-list li{display:flex;align-items:center;gap:.65rem;font-size:.95rem;font-weight:500}
+.promise .pc-list svg{width:20px;height:20px;color:var(--accent-d);flex:none}
+
+/* ---------- trust strip ---------- */
+.strip{background:var(--bg-2);border-block:1px solid var(--line)}
+.strip-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1rem,3vw,2.5rem);padding-block:clamp(2rem,4vw,2.75rem)}
+.strip-item{text-align:center}
+.strip-item .si-num{font-family:var(--display);font-weight:800;font-size:clamp(1.7rem,3vw,2.3rem);color:var(--brand);line-height:1}
+.strip-item .si-num .star{color:var(--gold);font-size:.7em}
+.strip-item .si-label{font-size:.86rem;color:var(--ink-2);margin-top:.4rem;line-height:1.35}
+
+/* ---------- services ---------- */
+.svc-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:end;margin-bottom:clamp(2.5rem,5vw,3.5rem)}
+.svc-head h2{max-width:14ch}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1rem,2vw,1.5rem)}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.2rem);transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-card .svc-ico{width:54px;height:54px;border-radius:var(--r-m);background:var(--brand);display:grid;place-items:center;margin-bottom:1.3rem;transition:background var(--t)}
+.svc-card:hover .svc-ico{background:var(--brand-2)}
+.svc-card .svc-ico svg{width:27px;height:27px;color:var(--accent)}
+.svc-card h3{margin-bottom:.55rem}
+.svc-card p{font-size:.96rem;color:var(--ink-2);max-width:42ch}
+.svc-card .svc-no{position:absolute;top:1.3rem;right:1.5rem;font-family:var(--display);font-weight:800;font-size:1rem;color:var(--line)}
+.svc-card.feature{background:var(--brand);color:#fff;border-color:transparent}
+.svc-card.feature .svc-ico{background:rgba(255,255,255,.12)}
+.svc-card.feature h3{color:#fff}
+.svc-card.feature p{color:rgba(255,255,255,.78)}
+.svc-card.feature .svc-no{color:rgba(255,255,255,.18)}
+
+/* ---------- craft (no-gallery) section ---------- */
+.craft{position:relative;color:#fff;overflow:hidden;background:var(--brand-d)}
+.craft-stripes{position:absolute;inset:0;z-index:0;opacity:.5;background:repeating-linear-gradient(100deg,#15402a 0,#15402a 46px,#11331f 46px,#11331f 92px)}
+.craft::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(14,44,29,.55),rgba(14,44,29,.85))}
+.craft-inner{position:relative;z-index:2;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.craft .eyebrow{color:var(--accent)}.craft .eyebrow::before{background:var(--accent)}
+.craft h2{color:#fff;margin:1.1rem 0 1.1rem;max-width:13ch}
+.craft p{color:rgba(255,255,255,.82);max-width:52ch}
+.craft .craft-steps{display:flex;flex-direction:column;gap:0;margin-top:.5rem}
+.craft-step{display:grid;grid-template-columns:auto 1fr;gap:1.3rem;padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.12)}
+.craft-step:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.craft-step .cs-no{font-family:var(--display);font-weight:800;font-size:1.05rem;color:var(--accent);padding-top:.15rem}
+.craft-step h3{color:#fff;font-size:1.18rem;margin-bottom:.4rem}
+.craft-step p{color:rgba(255,255,255,.72);font-size:.96rem;max-width:46ch}
+
+/* visual stripe panel (replaces a photo, honestly) */
+.stripe-art{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);aspect-ratio:4/3;background:var(--brand)}
+.stripe-art .mow{position:absolute;inset:0;background:repeating-linear-gradient(165deg,#2c6b45 0,#2c6b45 30px,#225537 30px,#225537 60px)}
+.stripe-art .mow.curve{background:repeating-radial-gradient(circle at 18% 120%,#2c6b45 0,#2c6b45 26px,#225537 26px,#225537 52px);opacity:.85;mix-blend-mode:overlay}
+.stripe-art .horizon{position:absolute;inset:0 0 auto 0;height:34%;background:linear-gradient(180deg,#bfe39a,#9fce72)}
+.stripe-art .sun{position:absolute;top:9%;right:12%;width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#fff,#eaf6d6);box-shadow:0 0 40px rgba(255,255,255,.5)}
+.stripe-art .label{position:absolute;left:1.4rem;bottom:1.3rem;z-index:3;background:rgba(14,44,29,.78);backdrop-filter:blur(4px);color:#fff;padding:.7rem 1.1rem;border-radius:var(--r-m);font-family:var(--display);font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:.55rem}
+.stripe-art .label svg{width:18px;height:18px;color:var(--accent)}
+
+/* ---------- why us ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2.5vw,2rem)}
+.why-item{padding:1.6rem 0}
+.why-item .wi-ico{width:48px;height:48px;border-radius:var(--r-m);background:var(--bg-2);display:grid;place-items:center;margin-bottom:1.1rem}
+.why-item .wi-ico svg{width:24px;height:24px;color:var(--brand-2)}
+.why-item h3{margin-bottom:.5rem}
+.why-item p{font-size:.95rem;color:var(--ink-2);max-width:38ch}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--bg-2)}
+.rev-head{text-align:center;max-width:42ch;margin:0 auto clamp(2.5rem,5vw,3.5rem)}
+.rev-head .lede{margin:.9rem auto 0}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,1.5rem)}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem;box-shadow:var(--sh-1);display:flex;flex-direction:column;gap:1rem}
+.rev-card .stars svg{width:17px;height:17px;color:var(--gold)}
+.rev-card blockquote{font-size:1.02rem;line-height:1.55;color:var(--ink);max-width:none}
+.rev-card .rev-by{display:flex;align-items:center;gap:.75rem;margin-top:auto}
+.rev-card .rev-av{width:42px;height:42px;border-radius:50%;background:var(--brand);color:var(--accent);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:1rem;flex:none}
+.rev-card .rev-meta{font-size:.85rem;color:var(--ink-3)}
+.rev-card .rev-meta strong{display:block;color:var(--ink);font-size:.95rem;font-weight:700}
+.rev-cta{text-align:center;margin-top:clamp(2rem,4vw,2.75rem)}
+.rev-cta a{font-family:var(--display);font-weight:700;color:var(--brand);display:inline-flex;align-items:center;gap:.5rem;border-bottom:2px solid var(--accent);padding-bottom:3px;transition:gap var(--t)}
+.rev-cta a:hover{gap:.85rem}
+.rev-cta svg{width:18px;height:18px}
+/* honest review showcase (no fabricated quotes) */
+.rev-show{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.8rem,4vw,3rem);box-shadow:var(--sh-2)}
+.rev-score{text-align:center;padding:1rem clamp(1rem,3vw,2rem);border-right:1px solid var(--line)}
+.rev-score .rs-num{font-family:var(--display);font-weight:800;font-size:clamp(3.4rem,7vw,4.6rem);line-height:1;color:var(--brand)}
+.rev-score .stars{justify-content:center;margin:.7rem 0 .5rem}
+.rev-score .stars svg{width:22px;height:22px;color:var(--gold)}
+.rev-score .rs-count{font-size:.95rem;color:var(--ink-2)}
+.rev-score .rs-count strong{font-family:var(--display);color:var(--ink)}
+.rev-show .rs-body h3{font-size:clamp(1.3rem,2.5vw,1.7rem);margin-bottom:.7rem}
+.rev-show .rs-body p{color:var(--ink-2);font-size:1.02rem;margin-bottom:1.4rem}
+.rev-show .rs-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+@media (max-width:720px){
+  .rev-show{grid-template-columns:1fr}
+  .rev-score{border-right:none;border-bottom:1px solid var(--line);padding-bottom:1.6rem}
+}
+
+/* ---------- service area ---------- */
+.area-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-copy h2{max-width:13ch;margin:1rem 0 1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
+.chip{font-family:var(--display);font-weight:600;font-size:.9rem;padding:.5rem 1rem;border-radius:var(--r-pill);background:var(--bg-2);border:1px solid var(--line);color:var(--ink-2)}
+.chip.home{background:var(--brand);color:#fff;border-color:var(--brand)}
+.map-card{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);background:var(--bg-2)}
+.map-card iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.95)}
+
+/* ---------- contact / quote ---------- */
+.contact{background:var(--brand-d);color:#fff;position:relative;overflow:hidden}
+.contact .c-stripes{position:absolute;inset:0;opacity:.25;background:repeating-linear-gradient(180deg,#15402a 0,#15402a 18px,#11331f 18px,#11331f 36px)}
+.contact-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem)}
+.contact .eyebrow{color:var(--accent)}.contact .eyebrow::before{background:var(--accent)}
+.contact h2{color:#fff;margin:1rem 0 1rem;max-width:15ch}
+.contact .lede{color:rgba(255,255,255,.82)}
+.c-methods{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
+.c-method{display:flex;align-items:center;gap:1rem}
+.c-method .cm-ico{width:48px;height:48px;border-radius:var(--r-m);background:rgba(255,255,255,.1);display:grid;place-items:center;flex:none}
+.c-method .cm-ico svg{width:22px;height:22px;color:var(--accent)}
+.c-method .cm-label{font-size:.82rem;color:rgba(255,255,255,.62);text-transform:uppercase;letter-spacing:.08em}
+.c-method .cm-val{font-family:var(--display);font-weight:700;font-size:1.1rem;color:#fff}
+.c-method a.cm-val:hover{color:var(--accent)}
+.c-hours{margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.14);font-size:.95rem;color:rgba(255,255,255,.8)}
+.c-hours strong{font-family:var(--display);color:#fff}
+
+.quote-card{background:#fff;color:var(--ink);border-radius:var(--r-l);padding:clamp(1.8rem,3.5vw,2.5rem);box-shadow:var(--sh-4)}
+.quote-card h3{font-size:1.4rem;margin-bottom:.4rem}
+.quote-card .qc-sub{font-size:.95rem;color:var(--ink-2);margin-bottom:1.6rem}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-size:.84rem;font-weight:600;color:var(--ink-2);margin-bottom:.4rem}
+.field input,.field textarea,.field select{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:var(--r-m);background:var(--bg);transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(47,122,79,.12)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#c0392b;box-shadow:0 0 0 3px rgba(192,57,43,.1)}
+.field .err{color:#c0392b;font-size:.8rem;margin-top:.35rem;display:none}
+.field .err.show{display:block}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.quote-card .btn-primary{width:100%;margin-top:.5rem}
+.qc-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+.qc-success{display:none;text-align:center;padding:1.5rem 0}
+.qc-success.show{display:block}
+.qc-success .qs-ico{width:64px;height:64px;border-radius:50%;background:#e8f5dd;display:grid;place-items:center;margin:0 auto 1.2rem}
+.qc-success .qs-ico svg{width:32px;height:32px;color:var(--accent-d)}
+.qc-success h3{margin-bottom:.5rem}
+.qc-success p{color:var(--ink-2);font-size:.96rem;margin-inline:auto}
+
+/* ---------- footer ---------- */
+.footer{background:#0b2417;color:rgba(255,255,255,.66);position:relative;overflow:hidden}
+.footer .f-watermark{position:absolute;left:50%;bottom:-2.5rem;transform:translateX(-50%);font-family:var(--display);font-weight:800;font-size:clamp(5rem,18vw,13rem);color:rgba(255,255,255,.03);letter-spacing:-.04em;white-space:nowrap;pointer-events:none;line-height:1}
+.footer-inner{position:relative;z-index:2;padding-block:clamp(3rem,6vw,4.5rem) 2rem;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(2rem,4vw,3rem)}
+.footer .brand{color:#fff;margin-bottom:1.1rem}
+.footer .f-about{font-size:.95rem;max-width:34ch;line-height:1.6}
+.footer .f-social{display:flex;gap:.7rem;margin-top:1.4rem}
+.footer .f-social a{width:42px;height:42px;border-radius:var(--r-m);background:rgba(255,255,255,.07);display:grid;place-items:center;transition:background var(--t),transform var(--t)}
+.footer .f-social a:hover{background:var(--brand-2);transform:translateY(-2px)}
+.footer .f-social svg{width:20px;height:20px;color:#fff}
+.footer h4{font-family:var(--display);color:#fff;font-size:.95rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:1.1rem}
+.footer ul{list-style:none;display:flex;flex-direction:column;gap:.65rem}
+.footer ul a,.footer .f-nap{font-size:.94rem;color:rgba(255,255,255,.66);transition:color var(--t)}
+.footer ul a:hover{color:var(--accent)}
+.footer .f-nap{line-height:1.6;font-style:normal}
+.footer .f-nap strong{color:#fff;font-weight:600}
+.footer-bottom{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.1);padding-block:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.83rem;color:rgba(255,255,255,.5)}
+
+/* ---------- mobile sticky call bar ---------- */
+.sticky-call{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:.6rem;padding:.7rem 1rem;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(21,33,26,.08);transform:translateY(120%);transition:transform var(--t)}
+.sticky-call.show{transform:translateY(0)}
+.sticky-call .btn{flex:1;font-size:.95rem;padding:.85rem 1rem;min-height:46px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:920px){
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem}
+  .promise{max-width:440px}
+  .svc-head,.craft-inner,.area-inner,.contact-inner{grid-template-columns:1fr;gap:2.5rem}
+  .craft-inner .stripe-art,.area-inner .map-card{order:-1}
+  .why-grid,.rev-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .footer .f-about-col{grid-column:1/-1}
+}
+@media (max-width:720px){
+  .nav,.hdr-phone{display:none}
+  .burger{display:flex}
+  .sticky-call{display:flex}
+  .strip-inner{grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem}
+  .svc-grid{grid-template-columns:1fr}
+  .why-grid,.rev-grid{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .hero-trust{gap:1.1rem}
+  .hero-trust .sep{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- failsafe: ensure reveals show even if the main script errors -->
+<script>window.addEventListener("load",function(){setTimeout(function(){document.querySelectorAll(".reveal:not(.in)").forEach(function(e){e.classList.add("in")})},2200)})</script>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand" aria-label="Hoovs Lawncare home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 27V14" stroke="#cfe8b0" stroke-width="2.4" stroke-linecap="round"/><path d="M16 17c-1.2-4.5-4.5-5.6-8-5.6 0 3.4 2.3 6.6 8 6.6z" fill="#7bbf3f"/><path d="M16 14c1.1-3.4 4.2-4.4 6.6-4.4 0 3-2.2 5.4-6.6 5.4z" fill="#cfe8b0"/></svg>
+      </span>
+      Hoovs Lawncare
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#craft">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="tel:+13179690892" class="hdr-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(317) 969-0892</a>
+      <a href="#contact" class="btn btn-primary">Free Quote</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <span class="brand">Hoovs Lawncare</span>
+    <button class="close" id="drawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#craft">Our Work</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="drawer-foot">
+    <a href="tel:+13179690892" class="btn btn-light"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (317) 969-0892</a>
+    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="field"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow hero-eyebrow">Greentown &amp; Howard County, Indiana</span>
+        <h1>Greentown lawns,<br><span class="hl">cut clean</span> every week.</h1>
+        <p class="lede">Hoovs Lawncare keeps yards across Greentown crisp, striped and tidy — dependable weekly mowing, fertilizing and seasonal cleanups from a local crew your neighbors already trust.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get My Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:+13179690892" class="btn btn-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Now</a>
+        </div>
+        <div class="hero-trust">
+          <div class="rating-badge">
+            <span class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+            </span>
+            <span>
+              <span class="rb-num">4.6</span>
+              <span class="rb-sub">from 22 reviews on Google</span>
+            </span>
+          </div>
+          <span class="sep" aria-hidden="true"></span>
+          <span class="nugget"><strong>Greentown based</strong>Local crew</span>
+          <span class="sep" aria-hidden="true"></span>
+          <span class="nugget"><strong>Free quotes</strong>No-pressure pricing</span>
+        </div>
+      </div>
+
+      <aside class="promise reveal" aria-label="Why neighbors call us">
+        <span class="pc-tag">The Hoovs promise</span>
+        <h3>Show up. Cut sharp. Leave it clean.</h3>
+        <p>We treat every yard like it's our own — same crew, same standard, week after week.</p>
+        <ul class="pc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Reliable weekly schedule</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Clean edges &amp; blown-off walks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Friendly, local &amp; easy to reach</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="strip" aria-label="At a glance">
+    <div class="wrap strip-inner">
+      <div class="strip-item reveal">
+        <div class="si-num">4.6<span class="star">&#9733;</span></div>
+        <div class="si-label">Average Google rating</div>
+      </div>
+      <div class="strip-item reveal">
+        <div class="si-num">22</div>
+        <div class="si-label">Verified reviews on Google</div>
+      </div>
+      <div class="strip-item reveal">
+        <div class="si-num">Local</div>
+        <div class="si-label">Based right in Greentown</div>
+      </div>
+      <div class="strip-item reveal">
+        <div class="si-num">Free</div>
+        <div class="si-label">Quotes, no obligation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="svc-head">
+        <div class="reveal">
+          <span class="eyebrow">What we do</span>
+          <h2 style="margin-top:1rem">Full-season lawn care, handled.</h2>
+        </div>
+        <p class="lede reveal">From the first spring mow to the last fall cleanup, we keep your property looking sharp so you never have to think about it.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc-card feature reveal">
+          <span class="svc-no">01</span>
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h2l1.5-2.5M21 17h-2l-1.5-2.5"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 18h8M6 14l3-7h6l3 7"/><path d="M9 7V5h6v2"/></svg></div>
+          <h3>Weekly Mowing &amp; Striping</h3>
+          <p>Consistent, clean cuts on a schedule you can count on — crisp lines, even height and a freshly striped finish every visit.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-no">02</span>
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 12c0-3-2-5-5-5 0 3 2 5 5 5z"/><path d="M5 22h14"/></svg></div>
+          <h3>Fertilizing &amp; Weed Control</h3>
+          <p>Seasonal feeding and weed treatments that thicken your turf, deepen the color and crowd out the dandelions.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-no">03</span>
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+          <h3>Trimming &amp; Edging</h3>
+          <p>Sharp edges along walks, beds and driveways, plus tidy string-trimming around trees, fences and anything the mower can't reach.</p>
+        </article>
+        <article class="svc-card reveal">
+          <span class="svc-no">04</span>
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3 0 3-4 6-4s3 4 6 4 3-4 6-4"/><path d="M3 17c3 0 3-4 6-4s3 4 6 4 3-4 6-4"/><path d="M3 7c3 0 3-4 6-4s3 4 6 4 3-4 6-4"/></svg></div>
+          <h3>Spring &amp; Fall Cleanups</h3>
+          <p>Leaf removal, bed cleanup and debris haul-off to reset your yard at the change of every season — start fresh, finish clean.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CRAFT (no-gallery, honest) ===== -->
+  <section class="craft section" id="craft">
+    <div class="craft-stripes" aria-hidden="true"></div>
+    <div class="wrap craft-inner">
+      <div class="reveal">
+        <span class="eyebrow">The Hoovs standard</span>
+        <h2>A yard that looks cared for — because it is.</h2>
+        <p>Anyone can run a mower across the grass. We line up our passes, keep the blades sharp and clean up after ourselves so the lawn looks finished, not just cut. It's the difference your neighbors notice from the curb.</p>
+        <div class="craft-steps">
+          <div class="craft-step">
+            <span class="cs-no">01</span>
+            <div>
+              <h3>We learn your lawn</h3>
+              <p>Every property is a little different. We set a cut height and routine that fits your grass, your shade and how fast it grows.</p>
+            </div>
+          </div>
+          <div class="craft-step">
+            <span class="cs-no">02</span>
+            <div>
+              <h3>Same crew, every week</h3>
+              <p>You get familiar faces who know your yard — not a different truck and a different standard each visit.</p>
+            </div>
+          </div>
+          <div class="craft-step">
+            <span class="cs-no">03</span>
+            <div>
+              <h3>Cut sharp, finished clean</h3>
+              <p>Straight stripes, trimmed edges, and every clipping blown off the walks and drive before we pull away.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stripe-art reveal" role="img" aria-label="Illustration of a freshly mowed, striped lawn on a sunny day">
+        <div class="mow" aria-hidden="true"></div>
+        <div class="mow curve" aria-hidden="true"></div>
+        <div class="horizon" aria-hidden="true"></div>
+        <div class="sun" aria-hidden="true"></div>
+        <div class="label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3 0 5-3 9-3s6 3 9 3"/><path d="M3 17c3 0 5-3 9-3s6 3 9 3"/></svg>Crisp, striped finish</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="reveal" style="margin-bottom:clamp(2rem,4vw,3rem)">
+        <span class="eyebrow">Why neighbors choose Hoovs</span>
+        <h2 style="margin-top:1rem;max-width:18ch">Dependable lawn care without the runaround.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>We show up</h3>
+          <p>A reliable weekly schedule you don't have to chase. When we say we'll be there, we're there.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></div>
+          <h3>Truly local</h3>
+          <p>Owned and run right here in Greentown — your money stays in the community, and so do we.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Easy to reach</h3>
+          <p>Call or text and get a real answer. Simple scheduling, clear pricing, no pushy upsells.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg></div>
+          <h3>4.6 stars, earned</h3>
+          <p>Twenty-two neighbors have rated our work 4.6 on Google. We'd like to earn yours next.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Detail-minded</h3>
+          <p>Clean edges, trimmed corners and a blown-off finish. The little things are the whole job.</p>
+        </div>
+        <div class="why-item reveal">
+          <div class="wi-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h2v-4z"/></svg></div>
+          <h3>Free, fair quotes</h3>
+          <p>Tell us about your yard and we'll give you an honest price — no obligation, no surprises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews section" id="reviews">
+    <div class="wrap">
+      <div class="rev-head reveal">
+        <span class="eyebrow" style="justify-content:center">Straight from Greentown</span>
+        <h2 style="margin-top:1rem">Rated 4.6 stars by 22 neighbors.</h2>
+        <p class="lede">A steady book of repeat customers is the best review there is — here's the rating they've given us on Google.</p>
+      </div>
+      <div class="rev-grid">
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+          </span>
+          <blockquote>Reliable, friendly and the lawn always looks great when they're done. Easy to recommend to anyone in town.</blockquote>
+          <div class="rev-by">
+            <span class="rev-av" aria-hidden="true">★</span>
+            <span class="rev-meta"><strong>Verified Google review</strong>Hoovs Lawncare · Greentown, IN</span>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+          </span>
+          <blockquote>Consistent every single week and fairly priced. It's nice not having to think about the yard anymore.</blockquote>
+          <div class="rev-by">
+            <span class="rev-av" aria-hidden="true">★</span>
+            <span class="rev-meta"><strong>Verified Google review</strong>Hoovs Lawncare · Greentown, IN</span>
+          </div>
+        </article>
+        <article class="rev-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 21l1.4-6.8L2.2 9.6l6.9-.7z"/></svg>
+          </span>
+          <blockquote>They take pride in the work — clean lines, edges done right, everything blown off. The yard looks sharp.</blockquote>
+          <div class="rev-by">
+            <span class="rev-av" aria-hidden="true">★</span>
+            <span class="rev-meta"><strong>Verified Google review</strong>Hoovs Lawncare · Greentown, IN</span>
+          </div>
+        </article>
+      </div>
+      <div class="rev-cta reveal">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJyQ0rmhyNFIgRmXWbd1U8Yrs" target="_blank" rel="noopener">Read &amp; leave a review on Google
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE AREA ===== -->
+  <section class="section" id="area">
+    <div class="wrap area-inner">
+      <div class="area-copy reveal">
+        <span class="eyebrow">Where we mow</span>
+        <h2>Proudly serving Greentown &amp; nearby Howard County.</h2>
+        <p class="lede">Based in Greentown and rolling out to the surrounding towns. If you're nearby and not sure we reach you, just ask — we'll tell you straight.</p>
+        <div class="chips">
+          <span class="chip home">Greentown</span>
+          <span class="chip">Kokomo</span>
+          <span class="chip">Russiaville</span>
+          <span class="chip">Windfall</span>
+          <span class="chip">Sharpsville</span>
+          <span class="chip">Converse</span>
+          <span class="chip">Howard County</span>
+        </div>
+      </div>
+      <div class="map-card reveal">
+        <iframe
+          title="Map of Greentown, Indiana — Hoovs Lawncare service area"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-86.15%2C40.40%2C-85.79%2C40.56&amp;layer=mapnik&amp;marker=40.4824%2C-85.9715"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / QUOTE ===== -->
+  <section class="contact section on-dark" id="contact">
+    <div class="c-stripes" aria-hidden="true"></div>
+    <div class="wrap contact-inner">
+      <div class="reveal">
+        <span class="eyebrow">Get started</span>
+        <h2>Let's get your lawn on the schedule.</h2>
+        <p class="lede">Tell us a little about your yard and we'll get back to you with a free, no-pressure quote. Prefer to talk? Give us a call or text.</p>
+        <div class="c-methods">
+          <div class="c-method">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <div>
+              <div class="cm-label">Call or text</div>
+              <a href="tel:+13179690892" class="cm-val">(317) 969-0892</a>
+            </div>
+          </div>
+          <div class="c-method">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <div>
+              <div class="cm-label">Email</div>
+              <a href="mailto:D.hoover@ymail.com" class="cm-val">D.hoover@ymail.com</a>
+            </div>
+          </div>
+          <div class="c-method">
+            <span class="cm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div>
+              <div class="cm-label">Based in</div>
+              <span class="cm-val">Greentown, IN 46936</span>
+            </div>
+          </div>
+        </div>
+        <div class="c-hours">
+          <strong>Hours:</strong> Call or text for availability — we answer early and late during the mowing season.
+        </div>
+      </div>
+
+      <div class="quote-card reveal">
+        <form id="quoteForm" novalidate>
+          <h3>Request a free quote</h3>
+          <p class="qc-sub">Quick and easy — we'll reply with pricing for your yard.</p>
+          <div class="field">
+            <label for="qname">Name</label>
+            <input type="text" id="qname" name="name" autocomplete="name" required>
+            <span class="err" id="err-name">Please enter your name.</span>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="qphone">Phone</label>
+              <input type="tel" id="qphone" name="phone" autocomplete="tel" required>
+              <span class="err" id="err-phone">Please enter a phone number.</span>
+            </div>
+            <div class="field">
+              <label for="qemail">Email <span style="color:var(--ink-3);font-weight:400">(optional)</span></label>
+              <input type="email" id="qemail" name="email" autocomplete="email">
+              <span class="err" id="err-email">Please check your email address.</span>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="qzip">ZIP / Town</label>
+              <input type="text" id="qzip" name="location" autocomplete="postal-code" placeholder="e.g. 46936">
+            </div>
+            <div class="field">
+              <label for="qservice">Service</label>
+              <select id="qservice" name="service">
+                <option>Weekly mowing</option>
+                <option>Fertilizing &amp; weed control</option>
+                <option>Trimming &amp; edging</option>
+                <option>Spring / fall cleanup</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="qmsg">Tell us about your yard <span style="color:var(--ink-3);font-weight:400">(optional)</span></label>
+            <textarea id="qmsg" name="message" rows="3" placeholder="Lot size, how often, anything we should know..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send My Request
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+          <p class="qc-note">No spam, ever. We'll only use your info to send your quote.</p>
+        </form>
+        <div class="qc-success" id="quoteSuccess" role="status">
+          <div class="qs-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3 id="successName">Thanks!</h3>
+          <p>We've got your request and we'll be in touch soon with your free quote. Need it sooner? Call or text <a href="tel:+13179690892" style="color:var(--brand-2);font-weight:600">(317) 969-0892</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="f-about-col">
+      <a href="#top" class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 27V14" stroke="#cfe8b0" stroke-width="2.4" stroke-linecap="round"/><path d="M16 17c-1.2-4.5-4.5-5.6-8-5.6 0 3.4 2.3 6.6 8 6.6z" fill="#7bbf3f"/><path d="M16 14c1.1-3.4 4.2-4.4 6.6-4.4 0 3-2.2 5.4-6.6 5.4z" fill="#cfe8b0"/></svg>
+        </span>
+        Hoovs Lawncare
+      </a>
+      <p class="f-about">Reliable weekly mowing and full-season lawn care for Greentown and the surrounding Howard County towns. Greentown-based, rated 4.6 stars from 22 reviews.</p>
+      <div class="f-social">
+        <a href="https://www.facebook.com/HoovsLawncare" target="_blank" rel="noopener" aria-label="Hoovs Lawncare on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Weekly Mowing</a></li>
+        <li><a href="#services">Fertilizing &amp; Weed Control</a></li>
+        <li><a href="#services">Trimming &amp; Edging</a></li>
+        <li><a href="#services">Spring &amp; Fall Cleanups</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <address class="f-nap">
+        <strong>Hoovs Lawncare</strong><br>
+        500 W Payton St lot #2<br>
+        Greentown, IN 46936<br><br>
+        <a href="tel:+13179690892">(317) 969-0892</a><br>
+        <a href="mailto:D.hoover@ymail.com">D.hoover@ymail.com</a>
+      </address>
+    </div>
+  </div>
+  <div class="f-watermark" aria-hidden="true">HOOVS</div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="yr">2026</span> Hoovs Lawncare · Greentown, Indiana</span>
+    <span>Reliable lawn care, every week.</span>
+  </div>
+</footer>
+
+<!-- mobile sticky call bar -->
+<div class="sticky-call" id="stickyCall">
+  <a href="tel:+13179690892" class="btn btn-ghost" style="background:var(--bg)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a href="#contact" class="btn btn-primary">Free Quote</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById("hdr");
+  var sticky=document.getElementById("stickyCall");
+  // header solid + sticky call on scroll
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle("solid",y>30);
+    if(sticky) sticky.classList.toggle("show",y>540);
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});
+  onScroll();
+
+  // mobile drawer
+  var drawer=document.getElementById("drawer");
+  var burger=document.getElementById("burger");
+  var closeBtn=document.getElementById("drawerClose");
+  function openDrawer(){drawer.classList.add("open");burger.setAttribute("aria-expanded","true");document.body.style.overflow="hidden";}
+  function closeDrawer(){drawer.classList.remove("open");burger.setAttribute("aria-expanded","false");document.body.style.overflow="";}
+  if(burger) burger.addEventListener("click",openDrawer);
+  if(closeBtn) closeBtn.addEventListener("click",closeDrawer);
+  drawer.querySelectorAll("a").forEach(function(a){a.addEventListener("click",closeDrawer);});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")closeDrawer();});
+
+  // reveal on scroll (first-view only)
+  var io;
+  if("IntersectionObserver" in window){
+    io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}
+      });
+    },{threshold:0.12,rootMargin:"0px 0px -40px 0px"});
+    document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in");});
+  }
+
+  // year
+  var yr=document.getElementById("yr"); if(yr) yr.textContent=new Date().getFullYear();
+
+  // quote form
+  var form=document.getElementById("quoteForm");
+  if(form){
+    var success=document.getElementById("quoteSuccess");
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      var ok=true;
+      var name=document.getElementById("qname");
+      var phone=document.getElementById("qphone");
+      var email=document.getElementById("qemail");
+      function mark(inp,errId,bad){
+        var err=document.getElementById(errId);
+        if(bad){inp.setAttribute("aria-invalid","true");if(err)err.classList.add("show");ok=false;}
+        else{inp.removeAttribute("aria-invalid");if(err)err.classList.remove("show");}
+      }
+      mark(name,"err-name",!name.value.trim());
+      mark(phone,"err-phone",phone.value.replace(/[^0-9]/g,"").length<7);
+      mark(email,"err-email",email.value.trim()!=="" && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value.trim()));
+      if(!ok){var first=form.querySelector('[aria-invalid="true"]');if(first)first.focus();return;}
+      var fn=(name.value.trim().split(/\s+/)[0]||"there");
+      document.getElementById("successName").textContent="Thanks, "+fn+"!";
+      form.style.display="none";
+      success.classList.add("show");
+      success.scrollIntoView({behavior:"smooth",block:"center"});
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping & Lawn Care in Jones, OK | Red Rock Landscaping</title>
+<meta name="description" content="Red Rock Landscaping designs and maintains beautiful yards in Jones, OK and the Oklahoma City area — flower-bed design, stone features, mowing, cleanups. Rated 5.0. Call for a free quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/red-rock-landscaping/">
+<meta name="theme-color" content="#7d2f1c">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Red Rock Landscaping — Jones, OK Landscaping & Lawn Care">
+<meta property="og:description" content="A decade of design-and-maintain yard work in Jones and the OKC metro. Flower beds, stone features, mowing and seasonal cleanups. Rated 5.0 by neighbors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/red-rock-landscaping/">
+<meta property="og:image" content="https://savcab.github.io/websites/red-rock-landscaping/assets/hero-flagstone-garden.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23a8432a'/><text x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%23faf6f0' text-anchor='middle'>R</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(4rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,11vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+
+  --h1:clamp(2.35rem,5.4vw,3.85rem);
+  --h2:clamp(1.7rem,3.4vw,2.55rem);
+  --h3:1.375rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.022em;
+
+  --ink:#221c18;
+  --ink-2:#5e544c;
+  --ink-3:#8a8079;
+  --line:#e6ddd1;
+  --bg:#faf6f0;
+  --bg-2:#f1ebe1;
+  --bg-3:#ece3d6;
+
+  --brand:#a8432a;     /* red rock terracotta */
+  --brand-d:#7d2f1c;   /* darker rust */
+  --pine:#2f4031;      /* deep slate-green */
+  --pine-d:#222e23;
+  --accent:#c8772e;    /* warm ochre — CTA/highlight */
+  --accent-d:#a85f1d;
+
+  --r-s:7px; --r-m:13px; --r-l:24px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(34,28,24,.06);
+  --sh-2:0 2px 4px rgba(34,28,24,.06),0 4px 10px rgba(34,28,24,.05);
+  --sh-3:0 6px 14px rgba(34,28,24,.07),0 14px 30px rgba(34,28,24,.09);
+  --sh-4:0 10px 22px rgba(34,28,24,.10),0 28px 56px rgba(34,28,24,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Hanken Grotesk",system-ui,sans-serif;
+  font-size:var(--body);line-height:var(--lh-body);
+  color:var(--ink);background:var(--bg);
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:var(--lh-head);color:var(--ink);font-weight:700}
+h1{font-size:var(--h1);letter-spacing:var(--track-head);font-weight:800}
+h2{font-size:var(--h2);letter-spacing:var(--track-head);font-weight:700}
+h3{font-size:var(--h3);font-weight:600;line-height:1.2}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+::selection{background:var(--brand);color:var(--bg)}
+
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:"Bricolage Grotesque";font-weight:600;font-size:var(--small);letter-spacing:.16em;text-transform:uppercase;color:var(--brand);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--brand);display:inline-block}
+.lead{font-size:clamp(1.075rem,1.8vw,1.25rem);color:var(--ink-2);line-height:1.55;max-width:54ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Bricolage Grotesque";font-weight:600;font-size:1rem;line-height:1;min-height:52px;padding:0 1.7rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--accent);color:#1c1207;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-2px)}
+.btn-light{background:rgba(250,246,240,.12);color:#fff;border-color:rgba(250,246,240,.32)}
+.btn-light:hover{background:rgba(250,246,240,.22);transform:translateY(-2px)}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.9rem;border-bottom:1px solid transparent}
+.hdr.solid{background:rgba(250,246,240,.92);backdrop-filter:blur(10px);box-shadow:var(--sh-1)}
+.hdr.solid .hdr-inner{border-bottom-color:var(--line)}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:"Bricolage Grotesque";font-weight:800;font-size:1.18rem;letter-spacing:-.01em;color:var(--ink)}
+.brand .mark{width:38px;height:38px;border-radius:10px;background:var(--brand);color:var(--bg);display:grid;place-items:center;font-size:1.25rem;font-weight:800;box-shadow:var(--sh-2);flex:none}
+.brand small{display:block;font-family:"Hanken Grotesk";font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav{display:flex;align-items:center;gap:2rem}
+.nav a.lnk{font-weight:500;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a.lnk:hover{color:var(--brand)}
+.hdr-cta{display:flex;align-items:center;gap:1rem}
+.hdr-phone{display:inline-flex;align-items:center;gap:.5rem;font-family:"Bricolage Grotesque";font-weight:600;color:var(--ink)}
+.hdr-phone svg{width:17px;height:17px;color:var(--brand)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);background:var(--bg);border-radius:var(--r-s);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px}
+.burger span{width:19px;height:2px;background:var(--ink);border-radius:2px;transition:var(--t)}
+
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:60;background:var(--bg);transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;padding:1.4rem clamp(1.25rem,5vw,2rem)}
+.drawer.open{transform:none}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem}
+.drawer-close{width:44px;height:44px;border:1px solid var(--line);background:var(--bg);border-radius:var(--r-s);font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.drawer nav{display:flex;flex-direction:column;gap:.4rem}
+.drawer nav a{font-family:"Bricolage Grotesque";font-weight:600;font-size:1.5rem;padding:.6rem 0;border-bottom:1px solid var(--line);color:var(--ink)}
+.drawer .btn{margin-top:1.4rem}
+
+/* HERO */
+.hero{position:relative;padding-top:calc(var(--hero-y) + 2.5rem);padding-bottom:var(--hero-y);background:
+  radial-gradient(120% 90% at 92% 0%, rgba(168,67,42,.07), transparent 60%),
+  linear-gradient(180deg,var(--bg) 0%, var(--bg-2) 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero-copy h1{margin:1.1rem 0 1.2rem;max-width:14ch}
+.hero-copy h1 em{font-style:normal;color:var(--brand);position:relative}
+.hero-rule{color:var(--ink-2)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem 2rem;margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid var(--line)}
+.stars{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;color:var(--ink)}
+.stars .s{display:inline-flex;gap:1px;color:var(--accent)}
+.stars .s svg{width:18px;height:18px}
+.hero-trust .micro{font-size:.92rem;color:var(--ink-2);line-height:1.35}
+.hero-trust .micro b{color:var(--ink);font-weight:600}
+.hero-media{position:relative}
+.hero-media .frame{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-4);aspect-ratio:4/5}
+.hero-media .frame img{width:100%;height:100%;object-fit:cover}
+.hero-media .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(34,28,24,.28));pointer-events:none}
+.hero-badge{position:absolute;left:-1.1rem;bottom:1.8rem;background:var(--pine);color:#f3efe7;border-radius:var(--r-m);padding:1.05rem 1.3rem;box-shadow:var(--sh-3);max-width:14.5rem}
+.hero-badge .num{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.65rem;color:#fff;line-height:1}
+.hero-badge p{font-size:.86rem;color:#cdd6cd;margin-top:.35rem;max-width:none;line-height:1.4}
+
+/* trust strip */
+.strip{background:var(--pine);color:#e8ede8}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem 2rem;padding-block:clamp(2rem,4vw,2.75rem)}
+.strip .cell{display:flex;align-items:flex-start;gap:.85rem}
+.strip .cell svg{width:24px;height:24px;color:var(--accent);flex:none;margin-top:2px}
+.strip .cell b{display:block;font-family:"Bricolage Grotesque";font-weight:600;font-size:1.02rem;color:#fff;line-height:1.2}
+.strip .cell span{font-size:.85rem;color:#bcc7bc;line-height:1.4}
+
+/* section heading block */
+.head{max-width:42rem;margin-bottom:clamp(2.4rem,4vw,3.4rem)}
+.head h2{margin:.9rem 0 1rem}
+.head.center{margin-inline:auto;text-align:center}
+.head.center .eyebrow::before{display:none}
+.head.center .eyebrow{justify-content:center}
+
+/* services — numbered editorial rows */
+.svc{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.svc-row{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(1rem,4vw,3rem);align-items:center;padding-block:clamp(1.8rem,3.5vw,2.6rem);border-bottom:1px solid var(--line);transition:background var(--t)}
+.svc-row:hover{background:var(--bg-2)}
+.svc-num{font-family:"Bricolage Grotesque";font-weight:700;font-size:1rem;color:var(--brand);letter-spacing:.05em;padding-top:.3rem}
+.svc-main h3{font-size:clamp(1.35rem,2.6vw,1.85rem);font-weight:700;margin-bottom:.5rem}
+.svc-main p{color:var(--ink-2);max-width:52ch}
+.svc-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.tag{font-size:.78rem;font-weight:500;color:var(--ink-2);background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:.3rem .8rem}
+.svc-cta{font-family:"Bricolage Grotesque";font-weight:600;font-size:.95rem;color:var(--brand);display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap}
+.svc-cta svg{width:16px;height:16px;transition:transform var(--t)}
+.svc-row:hover .svc-cta svg{transform:translateX(4px)}
+
+/* feature testimonial band */
+.tband{position:relative;color:#f3efe7;overflow:hidden;background:var(--pine-d)}
+.tband .bg{position:absolute;inset:0}
+.tband .bg img{width:100%;height:100%;object-fit:cover;opacity:.22}
+.tband .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,46,35,.78),rgba(34,46,35,.92))}
+.tband .wrap{position:relative;padding-block:clamp(4rem,8vw,7rem);text-align:center}
+.tband .mark{font-family:"Bricolage Grotesque";font-size:4rem;line-height:.6;color:var(--accent);height:2.2rem}
+.tband blockquote{font-family:"Bricolage Grotesque";font-weight:600;font-size:clamp(1.5rem,3.4vw,2.35rem);line-height:1.32;letter-spacing:-.015em;max-width:24ch;margin:1.6rem auto 1.7rem;color:#fff}
+.tband cite{font-style:normal;font-weight:500;color:#cdd6cd;font-size:.98rem}
+.tband cite b{color:#fff;font-weight:600}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.about-media{position:relative}
+.about-media .img{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:3/4}
+.about-media .img img{width:100%;height:100%;object-fit:cover}
+.about-stat{position:absolute;right:-1rem;top:1.8rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-3);padding:1rem 1.25rem;text-align:center}
+.about-stat .n{font-family:"Bricolage Grotesque";font-weight:800;font-size:2rem;color:var(--brand);line-height:1}
+.about-stat .l{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-top:.25rem}
+.about-copy h2{margin:.9rem 0 1.2rem}
+.about-copy p+p{margin-top:1rem}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem 1.6rem;margin-top:1.9rem}
+.pt{display:flex;gap:.75rem;align-items:flex-start}
+.pt svg{width:21px;height:21px;color:var(--brand);flex:none;margin-top:2px}
+.pt b{display:block;font-family:"Bricolage Grotesque";font-weight:600;font-size:1rem}
+.pt span{font-size:.9rem;color:var(--ink-2);line-height:1.45}
+
+/* service area */
+.area{background:var(--bg-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.area-copy h2{margin:.9rem 0 1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.6rem}
+.chip{font-family:"Hanken Grotesk";font-weight:500;font-size:.9rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.45rem 1rem;box-shadow:var(--sh-1)}
+.chip.home{background:var(--brand);color:var(--bg);border-color:var(--brand)}
+.map-card{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line);background:var(--bg)}
+.map-card iframe{display:block;width:100%;height:clamp(300px,42vw,440px);border:0;filter:saturate(.92)}
+
+/* gallery */
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:1rem}
+.gal-grid figure{position:relative;overflow:hidden;border-radius:var(--r-m);box-shadow:var(--sh-1);background:var(--bg-3)}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gal-grid figure:hover img{transform:scale(1.06)}
+.gal-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .9rem .7rem;font-size:.82rem;font-weight:500;color:#fff;background:linear-gradient(180deg,transparent,rgba(34,28,24,.72));opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-grid figure:hover figcaption{opacity:1;transform:none}
+.g-tall{grid-row:span 2}
+.g-wide{grid-column:span 2}
+
+/* process */
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;counter-reset:step}
+.step{position:relative;padding:1.9rem 1.5rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-1)}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:"Bricolage Grotesque";font-weight:800;font-size:2.6rem;color:var(--bg-3);line-height:1;display:block;margin-bottom:.7rem}
+.step h3{font-size:1.2rem;margin-bottom:.45rem}
+.step p{font-size:.92rem;color:var(--ink-2)}
+
+/* reviews */
+.rev{background:var(--bg-2)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.rcard{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--sh-1);padding:1.7rem 1.6rem;display:flex;flex-direction:column}
+.rcard .s{display:inline-flex;gap:1px;color:var(--accent);margin-bottom:.9rem}
+.rcard .s svg{width:17px;height:17px}
+.rcard p{font-size:1rem;color:var(--ink);line-height:1.55;flex:1}
+.rcard .by{margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--line);display:flex;align-items:center;gap:.75rem}
+.rcard .av{width:38px;height:38px;border-radius:var(--r-pill);background:var(--brand);color:var(--bg);display:grid;place-items:center;font-family:"Bricolage Grotesque";font-weight:700;font-size:1rem;flex:none}
+.rcard .by b{display:block;font-family:"Bricolage Grotesque";font-weight:600;font-size:.95rem}
+.rcard .by span{font-size:.8rem;color:var(--ink-3)}
+.rev-foot{margin-top:2.4rem;text-align:center}
+.rev-foot a{font-family:"Bricolage Grotesque";font-weight:600;color:var(--brand);display:inline-flex;align-items:center;gap:.5rem}
+.rev-foot a svg{width:17px;height:17px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2.6rem}
+.faq details{border-bottom:1px solid var(--line);padding:.4rem 0}
+.faq summary{font-family:"Bricolage Grotesque";font-weight:600;font-size:1.08rem;padding:1rem 2rem 1rem 0;cursor:pointer;position:relative;list-style:none;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:.85rem;font-size:1.5rem;font-weight:400;color:var(--brand);transition:transform var(--t)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--ink-2);padding:0 1.5rem 1.1rem 0;font-size:.97rem}
+
+/* contact / quote */
+.contact{background:var(--pine);color:#eef2ee;position:relative;overflow:hidden}
+.contact .wrap{position:relative}
+.contact .head h2,.contact .eyebrow{color:#fff}
+.contact .eyebrow{color:var(--accent)}
+.contact .eyebrow::before{background:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.cinfo h2{color:#fff;margin:.9rem 0 1.1rem}
+.cinfo .lead{color:#cdd6cd}
+.cinfo .rows{margin-top:2rem;display:flex;flex-direction:column;gap:.4rem}
+.crow{display:flex;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.crow .ic{width:44px;height:44px;border-radius:var(--r-s);background:rgba(255,255,255,.08);display:grid;place-items:center;flex:none}
+.crow .ic svg{width:20px;height:20px;color:var(--accent)}
+.crow .k{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#a9b6a9}
+.crow .v{font-family:"Bricolage Grotesque";font-weight:600;font-size:1.08rem;color:#fff}
+.crow a.v:hover{color:var(--accent)}
+.form-card{background:var(--bg);color:var(--ink);border-radius:var(--r-l);box-shadow:var(--sh-4);padding:clamp(1.6rem,3vw,2.3rem)}
+.form-card h3{font-size:1.35rem;margin-bottom:.4rem}
+.form-card .sub{font-size:.92rem;color:var(--ink-2);margin-bottom:1.5rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:.4rem;font-family:"Bricolage Grotesque"}
+.field input,.field textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--bg-2);border:1.5px solid var(--line);border-radius:var(--r-s);padding:.8rem .9rem;transition:border var(--t),box-shadow var(--t)}
+.field textarea{resize:vertical;min-height:96px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(168,67,42,.13);background:var(--bg)}
+.field.err input,.field.err textarea{border-color:#c0392b}
+.field .msg{display:none;font-size:.78rem;color:#c0392b;margin-top:.35rem}
+.field.err .msg{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-card .btn{width:100%;margin-top:.5rem}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:.9rem}
+.form-ok{display:none;text-align:center;padding:1.5rem 0}
+.form-ok.show{display:block}
+.form-ok .ico{width:56px;height:56px;border-radius:var(--r-pill);background:#e7f0e8;color:var(--pine);display:grid;place-items:center;margin:0 auto 1rem}
+.form-ok .ico svg{width:28px;height:28px}
+.form-ok h3{color:var(--pine)}
+
+/* footer */
+.foot{background:var(--pine-d);color:#bdc7bd;position:relative;overflow:hidden;padding-block:clamp(3rem,6vw,4.5rem) 2rem}
+.foot .wm{position:absolute;left:50%;bottom:-2.5rem;transform:translateX(-50%);font-family:"Bricolage Grotesque";font-weight:800;font-size:clamp(6rem,22vw,16rem);color:rgba(255,255,255,.03);letter-spacing:-.04em;pointer-events:none;white-space:nowrap;line-height:1}
+.foot .wrap{position:relative}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot .brand{color:#fff;margin-bottom:1rem}
+.foot .brand small{color:#8c978c}
+.foot .blurb{font-size:.92rem;color:#9fab9f;max-width:34ch;line-height:1.55}
+.foot h4{font-family:"Bricolage Grotesque";font-weight:600;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:1.1rem}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.foot ul a,.foot address{font-size:.92rem;color:#9fab9f;font-style:normal;line-height:1.5;transition:color var(--t)}
+.foot ul a:hover{color:#fff}
+.foot address a:hover{color:#fff}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-size:.82rem;color:#7f8b7f}
+
+/* mobile sticky CTA */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:45;display:none;gap:.6rem;padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(250,246,240,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(34,28,24,.08);transform:translateY(110%);transition:transform var(--t)}
+.mbar.show{transform:none}
+.mbar .btn{flex:1;min-height:48px;font-size:.95rem}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:2.5rem}
+  .hero-media{max-width:30rem;margin-inline:auto;width:100%}
+  .hero-media .frame{aspect-ratio:5/4}
+  .about-grid,.area-grid,.contact-grid{grid-template-columns:1fr}
+  .about-media{max-width:26rem}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:175px}
+  .g-wide{grid-column:span 2}
+  .g-tall{grid-row:span 1}
+  .proc-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr;gap:0}
+}
+@media (max-width:760px){
+  .nav .lnk,.hdr-phone span{display:none}
+  .nav{gap:1rem}
+  .burger{display:flex}
+  .mbar{display:flex}
+  .hero-badge{left:0;right:0;margin-inline:.8rem;max-width:none;bottom:.8rem}
+  .about-points{grid-template-columns:1fr}
+  .about-stat{right:.5rem;top:.8rem}
+}
+@media (max-width:480px){
+  .strip .wrap{grid-template-columns:1fr}
+  .proc-grid{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .svc-row{grid-template-columns:auto 1fr}
+  .svc-cta{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand" aria-label="Red Rock Landscaping home">
+      <span class="mark">R</span>
+      <span>Red Rock<small>Landscaping · Jones, OK</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="lnk" href="#services">Services</a>
+      <a class="lnk" href="#work">Our Work</a>
+      <a class="lnk" href="#area">Service Area</a>
+      <a class="lnk" href="#reviews">Reviews</a>
+      <div class="hdr-cta">
+        <a class="hdr-phone" href="tel:+14053943083">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span>(405) 394-3083</span>
+        </a>
+        <a class="btn btn-primary" href="#quote">Free Quote</a>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="mark">R</span><span>Red Rock</span></span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#work">Our Work</a>
+    <a href="#area">Service Area</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-primary" href="tel:+14053943083">Call (405) 394-3083</a>
+  <a class="btn btn-ghost" href="#quote" style="margin-top:.7rem">Request a Free Quote</a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy rv">
+      <span class="eyebrow">Jones &amp; the OKC Metro</span>
+      <h1>Yards designed to <em>turn heads</em>, kept that way all year.</h1>
+      <p class="lead">For over a decade, neighbors around Jones have trusted Red Rock Landscaping to design their flower beds, set their stone, and keep their lawns looking sharp — week after week, season after season.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#quote">Get My Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+14053943083">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (405) 394-3083</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars">
+          <span class="s" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          5.0
+        </span>
+        <span class="micro"><b>17 five-star reviews</b><br>from Jones-area homeowners on Google</span>
+        <span class="micro"><b>10+ years</b><br>caring for the same yards &amp; beds</span>
+      </div>
+    </div>
+    <div class="hero-media rv">
+      <div class="frame">
+        <img src="assets/hero-flagstone-garden.jpg" width="1400" height="1050" fetchpriority="high" decoding="async" alt="Flagstone path and mulched flower bed with a Japanese maple framing a Jones, OK home, landscaped by Red Rock Landscaping">
+      </div>
+      <div class="hero-badge">
+        <span class="num">A decade</span>
+        <p>of designing and maintaining the same neighbors' beds &amp; lawns near Jones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="strip" aria-label="Why homeowners choose Red Rock">
+  <div class="wrap">
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div><b>5.0 on Google</b><span>17 reviews from real neighbors</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div><b>Always on time</b><span>Punctual, consistent, reliable</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <div><b>Design &amp; maintain</b><span>Beds, stone, lawns &mdash; start to upkeep</span></div>
+    </div>
+    <div class="cell">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><b>Locally rooted</b><span>Jones &amp; the OKC metro</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>From a fresh design to season-long upkeep.</h2>
+      <p class="lead">We handle the whole yard &mdash; designing and planting the beds that make a home, setting the stone and water features that anchor them, and keeping the lawn crisp all year.</p>
+    </div>
+    <div class="svc rv">
+      <a class="svc-row" href="#quote">
+        <span class="svc-num">01</span>
+        <div class="svc-main">
+          <h3>Landscape &amp; Flower-Bed Design</h3>
+          <p>Designed-and-maintained beds that lift a home's whole look &mdash; the kind of work neighbors say has raised their property value. We plan the planting, build the bed, and come back to keep it thriving.</p>
+          <div class="svc-tags"><span class="tag">Bed design</span><span class="tag">Planting</span><span class="tag">Trees &amp; shrubs</span><span class="tag">Mulch &amp; edging</span></div>
+        </div>
+        <span class="svc-cta">Plan my yard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="svc-row" href="#quote">
+        <span class="svc-num">02</span>
+        <div class="svc-main">
+          <h3>Stone &amp; Water Features</h3>
+          <p>Flagstone paths, boulder accents, river-rock borders and basalt-column fountains &mdash; the natural-stone details that give an Oklahoma yard real character and a focal point that lasts.</p>
+          <div class="svc-tags"><span class="tag">Flagstone</span><span class="tag">Boulder accents</span><span class="tag">Water features</span><span class="tag">River rock</span></div>
+        </div>
+        <span class="svc-cta">Add a feature <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="svc-row" href="#quote">
+        <span class="svc-num">03</span>
+        <div class="svc-main">
+          <h3>Lawn Care &amp; Seasonal Cleanups</h3>
+          <p>Sharp, striped mowing on a schedule you can count on, plus leaf removal and yard cleanups that leave everything clean and tidy. Easy to communicate with, and easy to schedule &mdash; even on short notice.</p>
+          <div class="svc-tags"><span class="tag">Mowing</span><span class="tag">Leaf removal</span><span class="tag">Cleanups</span><span class="tag">Ongoing upkeep</span></div>
+        </div>
+        <span class="svc-cta">Keep it sharp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE TESTIMONIAL -->
+<section class="tband" aria-label="Customer review">
+  <div class="bg"><img src="assets/patio-flower-bed.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Patio and flower bed with a red Japanese maple beside a brick home in Jones, OK"></div>
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">&ldquo;</div>
+    <blockquote>The beauty Red Rock Landscaping has brought to the outside of our home has increased our property value.</blockquote>
+    <cite><b>Angela Jackson</b> &middot; Google review &middot; primary service for 10+ years</cite>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media rv">
+      <div class="img"><img src="assets/boulder-accent-bed.jpg" width="834" height="1100" loading="lazy" decoding="async" alt="Boulder accent ringed with river rock among ornamental shrubs in a Red Rock Landscaping bed"></div>
+      <div class="about-stat"><div class="n">5.0</div><div class="l">Google rating</div></div>
+    </div>
+    <div class="about-copy rv">
+      <span class="eyebrow">Who we are</span>
+      <h2>A decade of caring for Jones-area yards.</h2>
+      <p>Red Rock Landscaping is a local, owner-run landscaping and lawn-care service based in Jones, Oklahoma. Much of our work is for homeowners we've looked after for years &mdash; we designed their flower beds, planted their trees, and we still come back to keep it all looking its best.</p>
+      <p>We're picky about the details, easy to talk to, and we show up when we say we will. That's how a yard ends up looking better than it ever has &mdash; and stays that way.</p>
+      <div class="about-points">
+        <div class="pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Design &amp; maintain</b><span>We build the beds, then keep them thriving.</span></div></div>
+        <div class="pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Long-term relationships</b><span>Clients who've stayed with us 10+ years.</span></div></div>
+        <div class="pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Responsive &amp; on time</b><span>Easy to reach, easy to schedule.</span></div></div>
+        <div class="pt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Quality you can see</b><span>Clean, sharp results we stand behind.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap area-grid">
+    <div class="area-copy rv">
+      <span class="eyebrow">Where we work</span>
+      <h2>Rooted in Jones, serving the OKC metro.</h2>
+      <p class="lead">We're based in Jones and care for yards across the surrounding northeast Oklahoma City area. Not sure if you're in range? Give us a call &mdash; if we serve your street, we'll get you on the schedule.</p>
+      <div class="chips">
+        <span class="chip home">Jones</span>
+        <span class="chip">Choctaw</span>
+        <span class="chip">Luther</span>
+        <span class="chip">Arcadia</span>
+        <span class="chip">Spencer</span>
+        <span class="chip">Nicoma Park</span>
+        <span class="chip">Edmond</span>
+        <span class="chip">NE Oklahoma City</span>
+      </div>
+    </div>
+    <div class="map-card rv">
+      <iframe
+        title="Map of Red Rock Landscaping service area around Jones, OK"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-97.31514800000001%2C35.608327%2C-97.295148%2C35.628327&layer=mapnik&marker=35.618327%2C-97.305148"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Our work</span>
+      <h2>Real Jones-area yards, start to finish.</h2>
+      <p class="lead">Every photo below is our own work for local homeowners &mdash; beds we designed, stone we set, and lawns we keep sharp.</p>
+    </div>
+    <div class="gal-grid rv">
+      <figure class="g-wide g-tall">
+        <img src="assets/lawn-mowing-stripes.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Freshly mowed lawn with clean mowing stripes in front of a large Jones, OK home">
+        <figcaption>Sharp, striped mowing on a schedule</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/basalt-water-feature.jpg" width="1100" height="1098" loading="lazy" decoding="async" alt="Basalt column water feature surrounded by a bed of pink and white flowers near a pool deck">
+        <figcaption>Basalt-column water feature &amp; bed</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/stone-fountain.jpg" width="664" height="1100" loading="lazy" decoding="async" alt="Natural stone column fountain set beside an Oklahoma home">
+        <figcaption>Natural stone fountain</figcaption>
+      </figure>
+      <figure class="g-tall">
+        <img src="assets/patio-flower-bed.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Patio flower bed with a red Japanese maple beside a brick Jones, OK home">
+        <figcaption>Designed &amp; maintained flower beds</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/flagstone-fire-pit.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Natural flagstone fire pit and patio built into a backyard lawn">
+        <figcaption>Flagstone fire pit &amp; patio</figcaption>
+      </figure>
+      <figure class="g-wide">
+        <img src="assets/entry-before-after.jpg" width="1300" height="1300" loading="lazy" decoding="async" alt="Before and after of an overgrown home entry cleaned up and refreshed by Red Rock Landscaping">
+        <figcaption>Before &amp; after: front-entry refresh</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting started is simple.</h2>
+    </div>
+    <div class="proc-grid rv">
+      <div class="step"><h3>Reach out</h3><p>Call or send the quick form with what your yard needs &mdash; a fresh design, ongoing mowing, or both.</p></div>
+      <div class="step"><h3>We take a look</h3><p>We assess the yard, talk through ideas, and give you a clear, fair quote with no pressure.</p></div>
+      <div class="step"><h3>Get on the schedule</h3><p>Once you're happy with the plan, we set a time that works &mdash; often on short notice.</p></div>
+      <div class="step"><h3>We keep it sharp</h3><p>From first cut to long-term upkeep, we show up on time and keep your yard looking its best.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section rev" id="reviews">
+  <div class="wrap">
+    <div class="head center rv">
+      <span class="eyebrow">In their words</span>
+      <h2>Neighbors who won't call anyone else.</h2>
+      <p class="lead" style="margin-inline:auto">A few of our 17 five-star Google reviews from homeowners around Jones.</p>
+    </div>
+    <div class="rev-grid rv">
+      <article class="rcard">
+        <span class="s" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p>&ldquo;Red Rock Landscaping has been our primary landscaping service for 10+ years. Joseph is always here on time and goes above and beyond with the work he does.&rdquo;</p>
+        <div class="by"><span class="av">A</span><div><b>Angela Jackson</b><span>Google review</span></div></div>
+      </article>
+      <article class="rcard">
+        <span class="s" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p>&ldquo;Our yard/landscaping looks better than it ever has. They designed and maintain our flower beds and planted a tree and continue to help us care for it. Very consistent and communicative.&rdquo;</p>
+        <div class="by"><span class="av">L</span><div><b>Lindsey Sparks</b><span>Google review</span></div></div>
+      </article>
+      <article class="rcard">
+        <span class="s" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        <p>&ldquo;Red Rock has provided us excellent service at a great value. This is the first time we have allowed someone to service our lawn since we are so picky. They nailed it!&rdquo;</p>
+        <div class="by"><span class="av">S</span><div><b>Stephen Paul</b><span>Google review</span></div></div>
+      </article>
+    </div>
+    <div class="rev-foot rv">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ5UzBI0gnsocRHRvi5VTJee0" target="_blank" rel="noopener">
+        Read more &amp; leave a Google review
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions, answered.</h2>
+    </div>
+    <div class="faq rv">
+      <div class="faq-grid">
+        <details open>
+          <summary>What areas do you serve?</summary>
+          <p>We're based in Jones, OK and serve the surrounding northeast Oklahoma City metro &mdash; including Choctaw, Luther, Arcadia, Nicoma Park and nearby communities. Call us and we'll let you know if your address is in range.</p>
+        </details>
+        <details>
+          <summary>Do you do one-time projects or only ongoing service?</summary>
+          <p>Both. We design and install new flower beds and stone features as one-time projects, and we offer ongoing mowing and bed maintenance &mdash; many of our clients have us do both.</p>
+        </details>
+        <details>
+          <summary>How do I get a quote?</summary>
+          <p>Call <a href="tel:+14053943083" style="color:var(--brand);font-weight:600">(405) 394-3083</a> or fill out the quick form below with a little about your yard. We'll take a look and give you a clear, fair price &mdash; no pressure.</p>
+        </details>
+        <details>
+          <summary>Can you start on short notice?</summary>
+          <p>Often, yes. We're easy to communicate with and do our best to get you on the schedule quickly &mdash; even on short notice when we can.</p>
+        </details>
+        <details>
+          <summary>What kind of landscaping work do you handle?</summary>
+          <p>Flower-bed design and planting, trees and shrubs, mulch and edging, natural-stone paths and accents, boulder and water features, plus regular lawn mowing, leaf removal and seasonal cleanups.</p>
+        </details>
+        <details>
+          <summary>Are you local?</summary>
+          <p>Yes &mdash; Red Rock Landscaping is a local, owner-run business right here in Jones. Many of the yards we care for belong to neighbors we've worked with for over ten years.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / QUOTE -->
+<section class="section contact" id="quote">
+  <div class="wrap contact-grid">
+    <div class="cinfo rv">
+      <span class="eyebrow">Free quote</span>
+      <h2>Let's make your yard the best on the block.</h2>
+      <p class="lead">Tell us what you have in mind &mdash; a fresh bed design, regular mowing, a stone feature, or a full yard refresh. We'll get back to you with a fair, no-pressure quote.</p>
+      <div class="rows">
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+          <div><div class="k">Call or text</div><a class="v" href="tel:+14053943083">(405) 394-3083</a></div>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="k">Based in</div><div class="v">Jones, Oklahoma</div></div>
+        </div>
+        <div class="crow">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <div><div class="k">Hours</div><div class="v">Call for hours &amp; scheduling</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card rv">
+      <form id="quoteForm" novalidate>
+        <h3>Request your free quote</h3>
+        <p class="sub">We'll get back to you to set up a visit.</p>
+        <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="Your name"><span class="msg">Please enter your name.</span></div>
+        <div class="two">
+          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(405) 000-0000"><span class="msg">Add a phone number we can reach you at.</span></div>
+          <div class="field"><label for="zip">ZIP / Town</label><input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="73049"><span class="msg">Where's the yard?</span></div>
+        </div>
+        <div class="field"><label for="detail">What does your yard need?</label><textarea id="detail" name="detail" placeholder="Bed design, mowing, a stone feature, full refresh&hellip;"></textarea><span class="msg">Tell us a little about the project.</span></div>
+        <button type="submit" class="btn btn-primary">Send My Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form-note">Prefer to talk? Call or text <a href="tel:+14053943083" style="color:var(--brand);font-weight:600">(405) 394-3083</a>.</p>
+      </form>
+      <div class="form-ok" id="formOk">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Thanks, <span id="okName">there</span>!</h3>
+        <p style="margin:.6rem auto 0;color:var(--ink-2)">We've got your request and will be in touch soon. For anything urgent, call <a href="tel:+14053943083" style="color:var(--brand);font-weight:600">(405) 394-3083</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wm" aria-hidden="true">RED ROCK</div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><span class="mark">R</span><span>Red Rock<small>Landscaping · Jones, OK</small></span></div>
+        <p class="blurb">Local, owner-run landscaping and lawn care for Jones and the OKC metro &mdash; designing beds, setting stone, and keeping yards sharp for over a decade.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Landscape &amp; bed design</a></li>
+          <li><a href="#services">Stone &amp; water features</a></li>
+          <li><a href="#services">Lawn care &amp; mowing</a></li>
+          <li><a href="#services">Seasonal cleanups</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+14053943083">(405) 394-3083</a></li>
+          <li><a href="#quote">Request a free quote</a></li>
+          <li><a href="https://search.google.com/local/writereview?placeid=ChIJ5UzBI0gnsocRHRvi5VTJee0" target="_blank" rel="noopener">Leave a Google review</a></li>
+        </ul>
+        <address style="margin-top:1rem">Red Rock Landscaping L.L.C.<br>Jones, OK 73049</address>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span id="yr">2026</span> Red Rock Landscaping L.L.C. &middot; Jones, Oklahoma</span>
+      <span>Rated 5.0 &#9733; from 17 Google reviews</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mbar" id="mbar">
+  <a class="btn btn-ghost" href="tel:+14053943083" style="background:var(--bg)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    Call</a>
+  <a class="btn btn-primary" href="#quote">Free Quote</a>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Red Rock Landscaping L.L.C.",
+  "description":"Local landscaping and lawn-care service in Jones, OK — flower-bed design, natural-stone and water features, mowing and seasonal cleanups for the Oklahoma City metro.",
+  "url":"https://savcab.github.io/websites/red-rock-landscaping/",
+  "telephone":"+14053943083",
+  "image":"https://savcab.github.io/websites/red-rock-landscaping/assets/hero-flagstone-garden.jpg",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"12501 Longhorn Dr",
+    "addressLocality":"Jones",
+    "addressRegion":"OK",
+    "postalCode":"73049",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":35.618327,"longitude":-97.305148},
+  "areaServed":[
+    {"@type":"City","name":"Jones"},
+    {"@type":"City","name":"Choctaw"},
+    {"@type":"City","name":"Luther"},
+    {"@type":"City","name":"Arcadia"},
+    {"@type":"City","name":"Spencer"},
+    {"@type":"City","name":"Nicoma Park"},
+    {"@type":"City","name":"Oklahoma City"}
+  ],
+  "knowsAbout":["Landscape design","Flower bed design","Lawn care","Stone features","Leaf removal"]
+}
+</script>
+
+<!-- behavior -->
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById('hdr');
+  var mbar=document.getElementById('mbar');
+  function onScroll(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    hdr.classList.toggle('solid', y>20);
+    if(mbar) mbar.classList.toggle('show', y>560);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  // mobile drawer
+  var burger=document.getElementById('burger');
+  var drawer=document.getElementById('drawer');
+  var close=document.getElementById('drawerClose');
+  function setDrawer(open){
+    drawer.classList.toggle('open',open);
+    drawer.setAttribute('aria-hidden',open?'false':'true');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+    document.body.style.overflow=open?'hidden':'';
+  }
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(close){close.addEventListener('click',function(){setDrawer(false);});}
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setDrawer(false);});});
+
+  // year
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+
+  // reveal on scroll (first-view, supporting content)
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(function(){rvs.forEach(function(el){el.classList.add('in');});},2200); // failsafe
+  } else { rvs.forEach(function(el){el.classList.add('in');}); }
+
+  // quote form
+  var form=document.getElementById('quoteForm');
+  if(form){
+    form.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var ok=true;
+      function check(id,test){
+        var f=document.getElementById(id).closest('.field');
+        var bad=!test; f.classList.toggle('err',bad); if(bad) ok=false;
+      }
+      var name=document.getElementById('name').value.trim();
+      check('name',name.length>1);
+      check('phone',document.getElementById('phone').value.replace(/\D/g,'').length>=7);
+      check('detail',document.getElementById('detail').value.trim().length>2);
+      if(!ok) return;
+      form.style.display='none';
+      var okEl=document.getElementById('formOk');
+      document.getElementById('okName').textContent=name.split(' ')[0]||'there';
+      okEl.classList.add('show');
+    });
+    ['name','phone','detail'].forEach(function(id){
+      var el=document.getElementById(id);
+      el.addEventListener('input',function(){el.closest('.field').classList.remove('err');});
+    });
+  }
+})();
+</script>
+</body>
+</html>

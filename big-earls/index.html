@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Care &amp; Property Maintenance in Marion, NC | Big Earl's</title>
+<meta name="description" content="Big Earl's: lawn care, mowing, tree &amp; brush work, and property cleanup across Marion, NC &amp; McDowell County. Locally run, 5-star rated. Call for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/big-earls/">
+<meta name="theme-color" content="#1d241c">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="Big Earl's — Lawn Care &amp; Property Maintenance in Marion, NC">
+<meta property="og:description" content="Lawn care, tree &amp; brush work, and full property cleanup across Marion &amp; McDowell County. 5-star rated, locally run. Free estimates.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/big-earls/">
+<meta property="og:image" content="https://savcab.github.io/websites/big-earls/assets/og-big-earls-marion-nc.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: Big Earl's saw-blade + pines emblem -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d241c'/%3E%3Cg fill='%23D8601E'%3E%3Cpath d='M32 9l3.1 4.6 5.2-2.2-.9 5.6 5.6.9-3.7 4.3 4.3 3.7-5.6.9.9 5.6-5.2-2.2L32 41l-3.1-4.6-5.2 2.2.9-5.6-5.6-.9 4.3-3.7-4.3-3.7 5.6-.9-.9-5.6 5.2 2.2z'/%3E%3C/g%3E%3Cg fill='%23f7f4ef'%3E%3Cpath d='M32 17l3 6h-6zM32 21l3.5 7h-7zM32 25l4 8h-8zM30.7 33h2.6v6h-2.6z'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- JSON-LD: HomeAndConstructionBusiness (no review/aggregateRating markup per policy) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Big Earl's",
+  "description": "Lawn care, mowing, tree and brush work, and full property maintenance serving Marion, NC and McDowell County.",
+  "image": "https://savcab.github.io/websites/big-earls/assets/hero-lawn-stripes-marion-nc.jpg",
+  "url": "https://savcab.github.io/websites/big-earls/",
+  "telephone": "+18288035601",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "347 Springdale Dr",
+    "addressLocality": "Marion",
+    "addressRegion": "NC",
+    "postalCode": "28752",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.706136,
+    "longitude": -81.953474
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Marion"},
+    {"@type": "City", "name": "Old Fort"},
+    {"@type": "City", "name": "Nebo"},
+    {"@type": "City", "name": "Glenwood"},
+    {"@type": "City", "name": "Pleasant Gardens"},
+    {"@type": "City", "name": "Woodlawn"}
+  ],
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "17:00"}
+  ],
+  "knowsAbout": ["Lawn care", "Mowing", "Tree and brush removal", "Property cleanup", "Mulching", "Leaf removal"]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7rem);
+  --hero-y:clamp(5rem,11vw,9rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --display:"Bricolage Grotesque",-apple-system,system-ui,sans-serif;
+  --body:"Hanken Grotesk",-apple-system,system-ui,sans-serif;
+  --h1:clamp(2.35rem,5.4vw,3.6rem);
+  --h2:clamp(1.65rem,3.4vw,2.35rem);
+  --h3:1.3rem;
+  --fs-body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --track-head:-.018em;
+  /* COLOR — Big Earl's: burnt-orange brand + warm neutral + deep foothills charcoal-green */
+  --ink:#21251f;
+  --ink-2:#565b52;
+  --ink-3:#8a8f83;
+  --line:#e6e1d7;
+  --bg:#ffffff;
+  --bg-2:#f7f4ee;
+  --bg-3:#f0ebe0;
+  --brand:#1d241c;        /* deep foothills charcoal-green (dark sections, header) */
+  --brand-d:#141a13;
+  --accent:#d8601e;       /* their real logo orange — CTAs/highlights only */
+  --accent-d:#b54e14;
+  --accent-soft:#fbeede;
+  /* RADIUS */
+  --r-s:6px; --r-m:12px; --r-l:22px; --r-pill:999px;
+  /* SHADOW */
+  --sh-1:0 1px 2px rgba(20,18,12,.06);
+  --sh-2:0 2px 4px rgba(20,18,12,.06),0 4px 10px rgba(20,18,12,.05);
+  --sh-3:0 6px 14px rgba(20,18,12,.07),0 16px 32px rgba(20,18,12,.09);
+  --sh-4:0 10px 20px rgba(20,18,12,.10),0 28px 56px rgba(20,18,12,.13);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--body);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--display);line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head);color:var(--ink)}
+h1{font-size:var(--h1);font-weight:800}
+h2{font-size:var(--h2)}
+h3{font-size:var(--h3);letter-spacing:-.01em}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;height:auto}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+section[id],[id]{scroll-margin-top:84px}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:1.75rem;height:2px;background:var(--accent);border-radius:2px}
+.lede{font-size:1.1875rem;color:var(--ink-2);line-height:1.55;max-width:60ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:1rem;letter-spacing:-.01em;border:0;border-radius:var(--r-pill);cursor:pointer;min-height:52px;padding:.85rem 1.75rem;transition:transform var(--t),box-shadow var(--t),background var(--t);text-align:center}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-on-dark{background:#fff;color:var(--brand)}
+.btn-on-dark:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost-dark{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.32)}
+.btn-ghost-dark:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-2px)}
+
+/* ---------- Header ---------- */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:60;transition:background var(--t),box-shadow var(--t),padding var(--t);padding-block:.85rem}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.hdr.solid{background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1);padding-block:.6rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand-mark{width:42px;height:42px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1}
+.brand-name{font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:-.01em;color:#fff;transition:color var(--t)}
+.brand-tag{font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);font-weight:600;margin-top:.18rem;transition:color var(--t)}
+.hdr.solid .brand-name{color:var(--ink)}
+.hdr.solid .brand-tag{color:var(--accent-d)}
+.hdr-nav{display:flex;align-items:center;gap:2rem}
+.hdr-links{display:flex;gap:1.6rem}
+.hdr-links a{font-weight:600;font-size:.94rem;color:rgba(255,255,255,.88);transition:color var(--t)}
+.hdr-links a:hover{color:#fff}
+.hdr.solid .hdr-links a{color:var(--ink-2)}
+.hdr.solid .hdr-links a:hover{color:var(--accent-d)}
+.hdr-cta{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:700;font-size:.96rem;background:var(--accent);color:#fff;padding:.6rem 1.15rem;border-radius:var(--r-pill);transition:background var(--t),transform var(--t)}
+.hdr-cta:hover{background:var(--accent-d);transform:translateY(-1px)}
+.hdr-cta svg{width:1.05em;height:1.05em}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:var(--r-m);cursor:pointer;align-items:center;justify-content:center}
+.hdr.solid .burger{background:var(--bg-2)}
+.burger span{display:block;width:20px;height:2px;background:#fff;border-radius:2px;position:relative;transition:var(--t)}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;border-radius:2px;transition:var(--t)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.hdr.solid .burger span,.hdr.solid .burger span::before,.hdr.solid .burger span::after{background:var(--ink)}
+
+/* Mobile drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--brand);display:flex;flex-direction:column;padding:1.5rem clamp(1.25rem,5vw,2rem) 2rem;transform:translateY(-100%);opacity:0;visibility:hidden;transition:transform .32s cubic-bezier(.2,.7,.2,1),opacity .32s,visibility .32s}
+.drawer.open{transform:translateY(0);opacity:1;visibility:visible}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:2.5rem}
+.drawer-close{width:46px;height:46px;border:0;background:rgba(255,255,255,.1);border-radius:var(--r-m);color:#fff;font-size:1.5rem;cursor:pointer}
+.drawer a.dlink{font-family:var(--display);font-weight:700;font-size:1.65rem;color:#fff;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.drawer .btn{margin-top:auto;width:100%}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:clamp(560px,86vh,820px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,16,.62) 0%,rgba(20,22,16,.18) 32%,rgba(20,22,16,.30) 62%,rgba(20,22,16,.82) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-block:var(--hero-y) clamp(2.5rem,5vw,4rem)}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);padding:.45rem .9rem;border-radius:var(--r-pill);font-size:.82rem;font-weight:600;letter-spacing:.02em;margin-bottom:1.4rem}
+.hero-badge .stars{color:#ffc14d;letter-spacing:.06em}
+.hero h1{color:#fff;max-width:16ch;text-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hero h1 em{font-style:normal;color:#ffb877}
+.hero-sub{margin-top:1.25rem;font-size:1.18rem;line-height:1.5;color:rgba(255,255,255,.92);max-width:52ch}
+.hero-cta{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.85rem}
+.hero-meta{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:1.5rem 2.2rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.2)}
+.hero-meta div{display:flex;flex-direction:column;gap:.15rem}
+.hero-meta .k{font-family:var(--display);font-weight:700;font-size:1.05rem}
+.hero-meta .v{font-size:.84rem;color:rgba(255,255,255,.78);letter-spacing:.02em}
+
+/* ---------- Trust strip ---------- */
+.trust{background:var(--brand);color:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;padding-block:2.25rem}
+.trust-item{display:flex;align-items:center;gap:.85rem}
+.trust-item svg{width:1.7rem;height:1.7rem;color:var(--accent);flex:none}
+.trust-item .tt{font-family:var(--display);font-weight:700;font-size:1.02rem;line-height:1.15}
+.trust-item .ts{font-size:.8rem;color:rgba(255,255,255,.72);margin-top:.1rem}
+
+/* ---------- Services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:2.75rem}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:2rem 1.85rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-ico{width:54px;height:54px;border-radius:var(--r-m);background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.svc-ico svg{width:1.6rem;height:1.6rem;color:var(--accent-d)}
+.svc-card h3{margin-bottom:.5rem}
+.svc-card p{color:var(--ink-2);font-size:.97rem;line-height:1.55}
+.svc-feat{grid-column:1/-1;background:var(--brand);color:#fff;border:0;display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:center}
+.svc-feat h3{color:#fff;font-size:clamp(1.5rem,2.6vw,1.9rem)}
+.svc-feat p{color:rgba(255,255,255,.85);font-size:1.02rem;max-width:42ch}
+.svc-feat .svc-ico{background:rgba(216,96,30,.18)}
+.svc-feat .svc-ico svg{color:#ffb877}
+.svc-feat-list{display:flex;flex-direction:column;gap:.7rem}
+.svc-feat-list li{display:flex;align-items:flex-start;gap:.65rem;list-style:none;font-size:.97rem;color:rgba(255,255,255,.9)}
+.svc-feat-list svg{width:1.15rem;height:1.15rem;color:var(--accent);flex:none;margin-top:.18rem}
+
+/* ---------- Why us ---------- */
+.why{background:var(--bg-2)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.75rem}
+.why-card{background:var(--bg);border-radius:var(--r-l);padding:1.85rem;box-shadow:var(--sh-1);border:1px solid var(--line)}
+.why-num{font-family:var(--display);font-weight:800;font-size:1rem;color:var(--accent);background:var(--accent-soft);width:2.4rem;height:2.4rem;border-radius:var(--r-s);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.why-card h3{font-size:1.18rem;margin-bottom:.45rem}
+.why-card p{color:var(--ink-2);font-size:.95rem;line-height:1.55}
+
+/* ---------- Process ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.75rem;counter-reset:step}
+.step{position:relative;padding-top:1rem}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--bg-3);line-height:1;display:block;margin-bottom:.5rem}
+.step h3{font-size:1.12rem;margin-bottom:.4rem}
+.step p{color:var(--ink-2);font-size:.94rem;line-height:1.5}
+.step:not(:last-child)::after{content:"";position:absolute;top:1.9rem;right:-.9rem;width:.55rem;height:.55rem;border-top:2px solid var(--line);border-right:2px solid var(--line);transform:rotate(45deg)}
+
+/* ---------- Work / Gallery ---------- */
+.work{background:var(--brand-d);color:#fff}
+.work .eyebrow{color:#ffb877}
+.work .eyebrow::before{background:var(--accent)}
+.work h2{color:#fff}
+.work .lede{color:rgba(255,255,255,.82)}
+.gallery{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:auto auto;gap:1rem;margin-top:2.75rem}
+.gallery figure{position:relative;overflow:hidden;border-radius:var(--r-l);background:#222}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 600ms cubic-bezier(.2,.6,.2,1)}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery .g-big{grid-row:1/3}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem 1.3rem .95rem;font-size:.86rem;font-weight:500;color:#fff;background:linear-gradient(180deg,transparent,rgba(10,12,8,.78));letter-spacing:.01em}
+.work-note{margin-top:1.75rem;font-size:.9rem;color:rgba(255,255,255,.62);max-width:60ch}
+
+/* ---------- Area ---------- */
+.area-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.75rem,4vw,3.5rem);align-items:center;margin-top:2.75rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1.05rem;font-size:.92rem;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:.45rem}
+.chip svg{width:.95rem;height:.95rem;color:var(--accent)}
+.chip.home{background:var(--brand);color:#fff;border-color:var(--brand)}
+.chip.home svg{color:#ffb877}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line)}
+.map-frame iframe{display:block;width:100%;height:360px;border:0;filter:saturate(1.05)}
+
+/* ---------- About ---------- */
+.about{background:var(--bg-2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,4vw,4rem);align-items:center}
+.about-photo{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);position:relative}
+.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-photo .tag{position:absolute;bottom:1rem;left:1rem;background:rgba(29,36,28,.92);color:#fff;font-family:var(--display);font-weight:700;font-size:.82rem;padding:.5rem .95rem;border-radius:var(--r-pill);display:flex;align-items:center;gap:.45rem}
+.about-photo .tag svg{width:1rem;height:1rem;color:#ffb877}
+.about-body h2{margin-bottom:1.1rem}
+.about-body p{color:var(--ink-2);margin-bottom:1rem;line-height:1.65}
+.about-body p strong{color:var(--ink);font-weight:600}
+
+/* ---------- FAQ ---------- */
+.faq-list{margin-top:2.5rem;max-width:50rem;margin-inline:auto;border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:1.4rem 3rem 1.4rem 0;font-family:var(--display);font-weight:700;font-size:1.12rem;color:var(--ink);position:relative;letter-spacing:-.01em;line-height:1.3}
+.faq-q::after{content:"";position:absolute;right:.35rem;top:50%;width:.7rem;height:.7rem;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:translateY(-65%) rotate(45deg);transition:transform var(--t)}
+.faq-item.open .faq-q::after{transform:translateY(-35%) rotate(-135deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding:0 0 1.4rem;color:var(--ink-2);line-height:1.65;max-width:60ch}
+
+/* ---------- Final CTA ---------- */
+.cta{position:relative;background:var(--brand);color:#fff;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 85% 10%,rgba(216,96,30,.28),transparent 55%);pointer-events:none}
+.cta-inner{position:relative;text-align:center;max-width:48rem;margin-inline:auto}
+.cta h2{color:#fff;font-size:clamp(2rem,4.5vw,3rem);margin-bottom:1rem}
+.cta p{color:rgba(255,255,255,.86);font-size:1.15rem;margin-inline:auto;margin-bottom:2rem;max-width:46ch}
+.cta-actions{display:flex;flex-wrap:wrap;gap:.85rem;justify-content:center}
+.cta-phone{margin-top:1.75rem;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.2rem);color:#fff;display:inline-flex;align-items:center;gap:.6rem;letter-spacing:-.01em}
+.cta-phone svg{width:1em;height:1em;color:var(--accent)}
+.cta-hours{margin-top:.6rem;font-size:.9rem;color:rgba(255,255,255,.7)}
+
+/* ---------- Footer ---------- */
+.ftr{background:var(--brand-d);color:rgba(255,255,255,.74);padding-block:clamp(3rem,6vw,4.5rem) 2rem;position:relative;overflow:hidden}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;position:relative;z-index:2}
+.ftr-brand .brand-mark{width:46px;height:46px}
+.ftr-brand .brand-name{color:#fff;font-size:1.3rem}
+.ftr-brand .brand-tag{color:#ffb877}
+.ftr-about{margin-top:1.1rem;font-size:.92rem;line-height:1.6;max-width:34ch}
+.ftr h4{color:#fff;font-family:var(--display);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.1rem}
+.ftr-col a,.ftr-col p{display:block;font-size:.94rem;color:rgba(255,255,255,.74);margin-bottom:.7rem;line-height:1.5}
+.ftr-col a:hover{color:#ffb877}
+.ftr-nap{font-style:normal}
+.ftr-nap .line{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.7rem;font-size:.94rem;color:rgba(255,255,255,.78)}
+.ftr-nap svg{width:1.05rem;height:1.05rem;color:var(--accent);flex:none;margin-top:.15rem}
+.ftr-watermark{position:absolute;bottom:-2.5rem;right:-1rem;font-family:var(--display);font-weight:800;font-size:clamp(5rem,18vw,13rem);color:rgba(255,255,255,.035);line-height:.8;pointer-events:none;z-index:1;white-space:nowrap}
+.ftr-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:2.75rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:space-between;font-size:.82rem;color:rgba(255,255,255,.55);position:relative;z-index:2}
+.ftr-bottom a{color:rgba(255,255,255,.7)}
+.ftr-review{display:inline-flex;align-items:center;gap:.5rem;color:#ffb877!important;font-weight:600}
+.ftr-review svg{width:1rem;height:1rem}
+
+/* ---------- Sticky mobile call bar ---------- */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;gap:.6rem;padding:.65rem .8rem calc(.65rem + env(safe-area-inset-bottom));background:rgba(29,36,28,.97);backdrop-filter:blur(8px);box-shadow:0 -4px 20px rgba(0,0,0,.18);transform:translateY(110%);transition:transform var(--t)}
+.callbar.show{transform:translateY(0)}
+.callbar a{flex:1;min-height:50px;border-radius:var(--r-m);display:flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--display);font-weight:700;font-size:1rem}
+.callbar svg{width:1.15em;height:1.15em}
+.callbar .cb-call{background:var(--accent);color:#fff}
+.callbar .cb-quote{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .trust .wrap{grid-template-columns:repeat(2,1fr);gap:1.5rem 1.25rem}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:1.75rem}
+  .step:nth-child(2)::after{display:none}
+  .area-grid{grid-template-columns:1fr;gap:2rem}
+  .about-grid{grid-template-columns:1fr;gap:2rem}
+  .svc-feat{grid-template-columns:1fr;gap:1.5rem}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+  .ftr-brand{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .hdr-nav{display:none}
+  .burger{display:flex}
+  .callbar{display:flex}
+  .svc-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery .g-big{grid-row:auto}
+  .step:not(:last-child)::after{display:none}
+}
+@media (max-width:480px){
+  .why-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr}
+  .hero-meta{gap:1.1rem 1.75rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand" aria-label="Big Earl's home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="13" fill="#1d241c"/>
+        <path d="M32 8l3.3 4.9 5.6-2.4-1 6 6 1-3.9 4.6 3.9 4.6-6 1 1 6-5.6-2.4L32 42l-3.3-4.9-5.6 2.4 1-6-6-1 3.9-4.6L13.4 22.5l6-1-1-6 5.6 2.4z" fill="#d8601e"/>
+        <g fill="#f7f4ef">
+          <path d="M32 16.5l3.3 6.6h-6.6zM32 21l4 8h-8zM32 25.5l4.6 9.2h-9.2zM30.6 34.7h2.8v6.3h-2.8z"/>
+        </g>
+      </svg>
+      <span class="brand-txt">
+        <span class="brand-name">Big Earl's</span>
+        <span class="brand-tag">Property Maintenance &amp; More</span>
+      </span>
+    </a>
+    <nav class="hdr-nav" aria-label="Primary">
+      <div class="hdr-links">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#area">Service Area</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="tel:+18288035601" class="hdr-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (828) 803-5601
+      </a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top">
+    <span class="brand-name" style="color:#fff;font-size:1.18rem">Big Earl's</span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="#services" class="dlink">Services</a>
+  <a href="#work" class="dlink">Our Work</a>
+  <a href="#area" class="dlink">Service Area</a>
+  <a href="#about" class="dlink">About</a>
+  <a href="#contact" class="dlink">Contact</a>
+  <a href="tel:+18288035601" class="btn btn-primary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call (828) 803-5601
+  </a>
+</div>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero-lawn-stripes-marion-nc.jpg" alt="A freshly mowed, striped green lawn and manicured hedges in front of a home in Marion, North Carolina" width="1500" height="825" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-inner">
+    <span class="hero-badge"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 from 9 reviews &middot; Marion, NC</span>
+    <h1>A sharp lawn and a tidy property, <em>handled by Big Earl's.</em></h1>
+    <p class="hero-sub">Mowing, tree &amp; brush work, and full property cleanup for homes and land across Marion, NC. Local, dependable, and proud of the lines we leave behind.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Get a free estimate</a>
+      <a href="tel:+18288035601" class="btn btn-ghost-dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (828) 803-5601
+      </a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="k">5.0&#9733;</span><span class="v">9 Google reviews</span></div>
+      <div><span class="k">Mon&ndash;Sat</span><span class="v">9:00 AM &ndash; 5:00 PM</span></div>
+      <div><span class="k">Locally run</span><span class="v">Right here in Marion</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" aria-label="Why homeowners trust Big Earl's">
+  <div class="wrap">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.86-5-4.87 7.1-1.01z"/></svg>
+      <div><div class="tt">5.0 / 5 rating</div><div class="ts">From 9 Google reviews</div></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><div class="tt">Marion based</div><div class="ts">Serving McDowell County</div></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+      <div><div class="tt">Free estimates</div><div class="ts">No-obligation, up front</div></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div><div class="tt">Show-up you can count on</div><div class="ts">We do what we say</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <span class="eyebrow reveal">What we do</span>
+    <h2 class="reveal" style="margin-top:1rem;max-width:18ch">From a clean cut to a cleared lot &mdash; one local crew.</h2>
+    <p class="lede reveal" style="margin-top:1rem">"Property maintenance &amp; more" isn't just a slogan. We keep lawns sharp, clear the brush and limbs other folks won't touch, and leave your place looking cared for.</p>
+
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20v-4a7 7 0 0 1 14 0v4"/><path d="M12 9V3"/><path d="M9 5l3-2 3 2"/></svg></div>
+        <h3>Lawn Care &amp; Mowing</h3>
+        <p>Regular mowing, edging, trimming, and blow-off that keeps your yard crisp all season &mdash; with the clean stripes we're known for.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V11"/><path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 13c0-3-2-5-5-5 0 3 2 5 5 5z"/><path d="M12 8c0-2.5 1.5-4 1.5-4S15 5.5 15 8"/></svg></div>
+        <h3>Tree &amp; Brush Work</h3>
+        <p>Overgrown limbs, fence-line brush, storm cleanup, and small-tree removal. We bring the saws so you don't have to.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v5M14 11v5"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></div>
+        <h3>Property Cleanup</h3>
+        <p>Leaf removal, debris hauling, overgrowth knockdown, and seasonal tidy-ups that get a neglected lot back under control.</p>
+      </article>
+
+      <article class="svc-card reveal">
+        <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21c3-1 6-1 9 0s6 1 9 0"/><path d="M4 21V10l8-5 8 5v11"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Mulch &amp; Bed Maintenance</h3>
+        <p>Fresh mulch, bed edging, and shrub trimming that frames the house and keeps the weeds down between cuts.</p>
+      </article>
+
+      <article class="svc-card svc-feat reveal">
+        <div>
+          <div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Recurring &amp; one-time &mdash; your call.</h3>
+          <p>Set up a regular schedule and never think about it again, or call us in for a single big job. Either way you get the same crew and the same standard.</p>
+        </div>
+        <ul class="svc-feat-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Weekly &amp; bi-weekly mowing plans</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Spring cleanups &amp; fall leaf hauls</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Residential lawns &amp; larger acreage</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Free, no-pressure estimates</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <span class="eyebrow reveal">Why Big Earl's</span>
+    <h2 class="reveal" style="margin-top:1rem;max-width:20ch">Hire the neighbor who actually shows up.</h2>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <h3>Local &amp; hands-on</h3>
+        <p>We live and work right here in Marion. When you call, you're talking to the people doing the work &mdash; not a call center two states away.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <h3>One crew, many jobs</h3>
+        <p>Mowing today, brush and limbs next week, a full cleanup before the holidays. You don't have to line up three different companies.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <h3>A clean, finished look</h3>
+        <p>Straight stripes, sharp edges, and nothing left behind. The before-and-after is the whole point &mdash; and it's why our reviews are 5 stars.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <h3>Honest estimates</h3>
+        <p>We'll look at the job, tell you what it takes, and give you a straight price. No surprise add-ons after the work is done.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">05</div>
+        <h3>We bring the tools</h3>
+        <p>Mowers, trimmers, saws, and a truck for hauling. The "&amp; more" in our name means we handle the messy stuff most lawn guys skip.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">06</div>
+        <h3>Dependable &amp; respectful</h3>
+        <p>We treat your property like our own &mdash; on time, tidied up, and gone before you know it, with the place looking better than we found it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="wrap">
+    <span class="eyebrow reveal">How it works</span>
+    <h2 class="reveal" style="margin-top:1rem;max-width:18ch">Getting started is a two-minute phone call.</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Reach out</h3>
+        <p>Call or text us and tell us what you need done &mdash; a regular mow or a big one-time job.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Free estimate</h3>
+        <p>We look over the property, talk through it, and give you an honest, up-front price.</p>
+      </div>
+      <div class="step reveal">
+        <h3>We get to work</h3>
+        <p>We show up when we say, with the right equipment, and handle it start to finish.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Left looking great</h3>
+        <p>Clean lines, cleared debris, nothing left behind &mdash; and a standing offer to keep it that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / GALLERY ============ -->
+<section class="section work" id="work">
+  <div class="wrap">
+    <span class="eyebrow reveal">Recent work</span>
+    <h2 class="reveal" style="margin-top:1rem;max-width:16ch">The lines speak for themselves.</h2>
+    <p class="lede reveal">A recent job here in the Marion area &mdash; the kind of clean, striped finish we put on every yard we touch.</p>
+    <div class="gallery">
+      <figure class="g-big reveal">
+        <img src="assets/gallery-striped-lawn-home-marion.jpg" alt="Freshly striped lawn and trimmed hedges in front of a large home in Marion, NC" width="1100" height="825" loading="lazy" decoding="async">
+        <figcaption>Full-property mow &amp; trim &mdash; Marion, NC</figcaption>
+      </figure>
+      <figure class="reveal">
+        <img src="assets/gallery-fresh-cut-stripes-detail-marion.jpg" alt="Close-up of crisp fresh-cut mowing stripes beside a hedge and driveway" width="1100" height="550" loading="lazy" decoding="async">
+        <figcaption>Fresh-cut stripes, up close</figcaption>
+      </figure>
+      <figure class="reveal" style="background:var(--brand);display:flex;align-items:center;justify-content:center;min-height:200px">
+        <a href="#contact" style="text-align:center;padding:1.5rem;color:#fff">
+          <span style="font-family:var(--display);font-weight:800;font-size:1.3rem;display:block;margin-bottom:.4rem">Want your yard next?</span>
+          <span style="color:#ffb877;font-weight:600;font-size:.95rem">Get a free estimate &rarr;</span>
+        </a>
+      </figure>
+    </div>
+    <p class="work-note reveal">These are real photos of our own work in the Marion area. Building out the full gallery as we wrap more jobs &mdash; call us and yours could be the next one we post.</p>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="section" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="reveal">
+        <span class="eyebrow">Where we work</span>
+        <h2 style="margin-top:1rem;max-width:16ch">Proudly serving Marion &amp; McDowell County.</h2>
+        <p class="lede" style="margin-top:1rem">Based on Springdale Drive in Marion, we cover the town and the surrounding McDowell County communities. Not sure if you're in range? Just give us a call.</p>
+        <div class="chips">
+          <span class="chip home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Marion</span>
+          <span class="chip">Old Fort</span>
+          <span class="chip">Nebo</span>
+          <span class="chip">Lake James</span>
+          <span class="chip">Glenwood</span>
+          <span class="chip">Pleasant Gardens</span>
+          <span class="chip">Woodlawn</span>
+          <span class="chip">McDowell County</span>
+        </div>
+      </div>
+      <div class="map-frame reveal">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-82.12%2C35.62%2C-81.79%2C35.79&amp;layer=mapnik&amp;marker=35.706136%2C-81.953474"
+          title="Map showing Big Earl's service area centered on Marion, North Carolina"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/gallery-fresh-cut-stripes-detail-marion.jpg" alt="Detail of a freshly mowed, striped green lawn cared for by Big Earl's in Marion, NC" width="1100" height="550" loading="lazy" decoding="async">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.86-5-4.87 7.1-1.01z"/></svg> 5.0 &middot; 9 Google reviews</span>
+      </div>
+      <div class="about-body reveal">
+        <span class="eyebrow">About Big Earl's</span>
+        <h2 style="margin-top:1rem">A local name you can put a face to.</h2>
+        <p>Big Earl's is a Marion, North Carolina property-maintenance outfit built on simple stuff: <strong>show up, do good work, and leave the place better than you found it.</strong> We handle the lawn, the brush, the limbs, and the cleanup &mdash; the whole property, not just the easy parts.</p>
+        <p>We're proud that our first customers gave us a <strong>perfect 5-star rating</strong>. In a small community, your reputation is everything, and we work to earn ours one yard at a time.</p>
+        <p>Whether you want a tidy lawn every week or you've got a lot that's gotten out of hand, we'd be glad to take a look and give you an honest price.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:.5rem">Get your free estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section why" id="faq">
+  <div class="wrap">
+    <div style="text-align:center" class="reveal">
+      <span class="eyebrow">Good to know</span>
+      <h2 style="margin-top:1rem">Questions homeowners ask us</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">What areas do you serve?</button>
+        <div class="faq-a"><p>We're based in Marion and cover McDowell County &mdash; including Old Fort, Nebo, the Lake James area, Glenwood, Pleasant Gardens, and Woodlawn. If you're nearby and not sure, just call and ask.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Do you only mow, or do you do bigger jobs too?</button>
+        <div class="faq-a"><p>Both. Regular mowing is our bread and butter, but the "&amp; more" is real &mdash; tree and brush work, storm and debris cleanup, leaf hauls, mulch, and getting overgrown lots back under control. If it's outside and needs doing, ask us.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">How much does it cost?</button>
+        <div class="faq-a"><p>It depends on the size of the property and the work involved, so we give every job a free, no-obligation estimate first. You'll get a straight, up-front price before we start &mdash; no surprises after.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Can I set up regular service?</button>
+        <div class="faq-a"><p>Absolutely. Most homeowners go with a weekly or bi-weekly mowing schedule so they never have to think about it. We can also do one-time jobs &mdash; whatever fits you better.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">What are your hours?</button>
+        <div class="faq-a"><p>We're out working Monday through Saturday, 9:00 AM to 5:00 PM, and closed Sundays. The fastest way to reach us is a call or text to (828) 803-5601.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA / CONTACT ============ -->
+<section class="section cta" id="contact">
+  <div class="wrap cta-inner reveal">
+    <span class="eyebrow" style="justify-content:center;color:#ffb877">Free estimates</span>
+    <h2 style="margin-top:1rem">Let's get your property looking right.</h2>
+    <p>Call or text Big Earl's for a free, no-pressure estimate. Tell us what you need &mdash; a weekly mow, a brush job, or a full cleanup &mdash; and we'll give you an honest price.</p>
+    <div class="cta-actions">
+      <a href="tel:+18288035601" class="btn btn-on-dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call now
+      </a>
+      <a href="sms:+18288035601" class="btn btn-ghost-dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Send a text
+      </a>
+    </div>
+    <a href="tel:+18288035601" class="cta-phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (828) 803-5601
+    </a>
+    <div class="cta-hours">Mon&ndash;Sat 9:00 AM &ndash; 5:00 PM &middot; Marion, NC &amp; McDowell County</div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div class="ftr-brand">
+        <a href="#top" class="brand" aria-label="Big Earl's home">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="13" fill="#283022"/>
+            <path d="M32 8l3.3 4.9 5.6-2.4-1 6 6 1-3.9 4.6 3.9 4.6-6 1 1 6-5.6-2.4L32 42l-3.3-4.9-5.6 2.4 1-6-6-1 3.9-4.6L13.4 22.5l6-1-1-6 5.6 2.4z" fill="#d8601e"/>
+            <g fill="#f7f4ef"><path d="M32 16.5l3.3 6.6h-6.6zM32 21l4 8h-8zM32 25.5l4.6 9.2h-9.2zM30.6 34.7h2.8v6.3h-2.8z"/></g>
+          </svg>
+          <span class="brand-txt">
+            <span class="brand-name">Big Earl's</span>
+            <span class="brand-tag">Property Maintenance &amp; More</span>
+          </span>
+        </a>
+        <p class="ftr-about">Lawn care, tree &amp; brush work, and full property cleanup for homeowners across Marion and McDowell County, North Carolina.</p>
+      </div>
+      <div class="ftr-col">
+        <h4>Services</h4>
+        <a href="#services">Lawn Care &amp; Mowing</a>
+        <a href="#services">Tree &amp; Brush Work</a>
+        <a href="#services">Property Cleanup</a>
+        <a href="#services">Mulch &amp; Beds</a>
+      </div>
+      <div class="ftr-col">
+        <h4>Get in touch</h4>
+        <address class="ftr-nap">
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 347 Springdale Dr,<br>Marion, NC 28752</div>
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18288035601">(828) 803-5601</a></div>
+          <div class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon&ndash;Sat 9 AM&ndash;5 PM &middot; Sun closed</div>
+        </address>
+        <a class="ftr-review" href="https://search.google.com/local/writereview?placeid=ChIJRUPiKT21UIgRfuGD9UnIbzU" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.86-5-4.87 7.1-1.01z"/></svg>
+          Leave us a Google review
+        </a>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>&copy; <span id="yr">2026</span> Big Earl's &middot; Marion, NC. All rights reserved.</span>
+      <span>Lawn care &amp; property maintenance in Marion &amp; McDowell County, NC</span>
+    </div>
+  </div>
+  <div class="ftr-watermark" aria-hidden="true">BIG EARL'S</div>
+</footer>
+
+<!-- ============ STICKY MOBILE CALL BAR ============ -->
+<div class="callbar" id="callbar">
+  <a href="tel:+18288035601" class="cb-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call now
+  </a>
+  <a href="#contact" class="cb-quote">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Free estimate
+  </a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var hdr=document.getElementById('hdr');
+  var callbar=document.getElementById('callbar');
+  var burger=document.getElementById('burger');
+  var drawer=document.getElementById('drawer');
+  var drawerClose=document.getElementById('drawerClose');
+
+  // Header solid + mobile callbar on scroll
+  function onScroll(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    hdr.classList.toggle('solid', y>40);
+    if(callbar) callbar.classList.toggle('show', y>560);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Drawer
+  function openDrawer(){drawer.classList.add('open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeDrawer(){drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  if(burger) burger.addEventListener('click', openDrawer);
+  if(drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click', closeDrawer);});
+  document.addEventListener('keydown', function(e){if(e.key==='Escape') closeDrawer();});
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn=item.querySelector('.faq-q');
+    var ans=item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var open=item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      ans.style.maxHeight = open ? (ans.scrollHeight+'px') : '0px';
+    });
+  });
+
+  // Reveal on scroll (first-view, supporting content) + failsafe
+  var reveals=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.06});
+    reveals.forEach(function(el){io.observe(el);});
+    // failsafe: show everything after 2.5s no matter what
+    setTimeout(function(){reveals.forEach(function(el){el.classList.add('in');});}, 2500);
+  } else {
+    reveals.forEach(function(el){el.classList.add('in');});
+  }
+
+  // Year
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+})();
+</script>
+<!-- second independent failsafe so a JS error above can never leave content hidden -->
+<script>setTimeout(function(){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});},3000);</script>
+</body>
+</html>

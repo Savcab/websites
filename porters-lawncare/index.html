@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,170 +9,522 @@
 <meta property="og:title" content="Porters LawnCare &amp; Landscaping — Portsmouth, OH">
 <meta property="og:description" content="Mowing, mulch beds, and slope &amp; brush cleanup for Portsmouth and the surrounding Scioto County towns. Rated 4.9 on Google.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.jpg">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="1200">
+<meta property="og:image" content="https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.webp">
+<meta property="og:image:width" content="1500">
+<meta property="og:image:height" content="1125">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Porters LawnCare &amp; Landscaping — Portsmouth, OH">
 <meta name="twitter:description" content="Mowing, mulch beds, and slope &amp; brush cleanup for Portsmouth and the surrounding Scioto County towns. Rated 4.9 on Google.">
-<meta name="twitter:image" content="https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.jpg">
+<meta name="twitter:image" content="https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.webp">
 <meta property="og:url" content="https://savcab.github.io/websites/porters-lawncare/">
 <meta property="og:site_name" content="Porters LawnCare &amp; Landscaping">
 <meta name="robots" content="index,follow">
-<meta name="author" content="Porters LawnCare &amp; Landscaping">
 <meta name="theme-color" content="#234438">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23234438'/%3E%3Ctext x='32' y='44' font-size='32' font-family='Georgia,serif' font-weight='700' fill='%23D98A5E' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script>
-tailwind.config={theme:{extend:{
-  colors:{
-    paper:'#F6F4EE',paper2:'#EBE7DC',
-    ink:'#15231C',inksoft:'#3E4A41',
-    forest:'#234438',forest2:'#1A3329',forest3:'#10211A',
-    moss:'#4F9168',moss2:'#427C58',sprout:'#9CC288',
-    brass:'#D98A5E',brass2:'#BD6E42',brass3:'#9C5128',
-    stone:'#E2DBCB',stoneline:'#D7CFBC'
-  },
-  fontFamily:{disp:['"Bricolage Grotesque"','Georgia','serif'],sans:['"Hanken Grotesk"','system-ui','sans-serif']},
-  boxShadow:{soft:'0 18px 50px -24px rgba(16,33,26,.45)',card:'0 2px 4px rgba(16,33,26,.04),0 14px 40px -20px rgba(16,33,26,.30)',lift:'0 30px 70px -30px rgba(16,33,26,.55)'},
-  letterSpacing:{label:'.22em'}
-}}}
-</script>
 <style>
-  :root{color-scheme:light}
-  html{scroll-padding-top:7rem}
-  html.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
-  html.js .reveal.from-l{transform:translateX(-30px)}
-  html.js .reveal.from-r{transform:translateX(30px)}
-  html.js .reveal.zoom{transform:scale(.93)}
-  html.js .reveal.in{opacity:1;transform:none}
-  /* hero promise card: replays slide-from-left+fade each time it enters view */
-  html.js .slide-in-left{opacity:0;transform:translateX(-52px) translateY(10px);transition:opacity .95s cubic-bezier(.16,.8,.3,1) .15s,transform .95s cubic-bezier(.16,.8,.3,1) .15s}
-  html.js .slide-in-left.in{opacity:1;transform:none}
-  body{font-family:'Hanken Grotesk',system-ui,sans-serif;color:#15231C;background:#F6F4EE;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  .disp{font-family:'Bricolage Grotesque','Georgia',serif;font-optical-sizing:auto}
-  ::selection{background:#234438;color:#F6F4EE}
-  .label{font-family:'Hanken Grotesk',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:.78rem}
-  .card-h{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s cubic-bezier(.2,.7,.2,1)}
-  /* reliable translucent surfaces (CDN custom-color slash-opacity is unreliable) */
-  .glass{background-color:rgba(246,244,238,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-  .hdr-solid{background-color:rgba(246,244,238,.93);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:#D7CFBC;box-shadow:0 2px 4px rgba(16,33,26,.05),0 14px 40px -20px rgba(16,33,26,.30)}
-  /* mobile: over the photo hero (before scroll) the brand must read light */
-  @media (max-width:1023px){
-    #hdrbar:not(.hdr-solid) #brand{color:#F6F4EE;text-shadow:0 1px 12px rgba(16,33,26,.55)}
-    #hdrbar:not(.hdr-solid) #brandsub{color:rgba(246,244,238,.82);text-shadow:0 1px 10px rgba(16,33,26,.5)}
-    #hdrbar:not(.hdr-solid) #menubtn{color:#F6F4EE}
-  }
-  .stripes{background-image:repeating-linear-gradient(100deg,rgba(35,68,56,.06) 0 8px,transparent 8px 22px)}
-  @keyframes draw{to{stroke-dashoffset:0}}
-  .flourish path{stroke-dasharray:230;stroke-dashoffset:230;animation:draw 1.1s cubic-bezier(.6,.1,.3,1) .65s forwards}
-  @media (prefers-reduced-motion:reduce){.flourish path{animation:none;stroke-dashoffset:0}}
-  @keyframes ripple{0%{transform:scale(.28);opacity:.55}80%{opacity:0}100%{transform:scale(1);opacity:0}}
-  .ripple{transform-origin:200px 200px;animation:ripple 4s ease-out infinite}
-  .ripple.d2{animation-delay:1.33s}.ripple.d3{animation-delay:2.66s}
-  @keyframes blip{0%,100%{opacity:.45}50%{opacity:1}}
-  .blip{animation:blip 2.6s ease-in-out infinite}
-  .blip.b2{animation-delay:.5s}.blip.b3{animation-delay:1s}.blip.b4{animation-delay:1.5s}.blip.b5{animation-delay:2s}
-  input[type=range].rng{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:999px;background:#E2DBCB;outline:none}
-  input[type=range].rng::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:26px;height:26px;border-radius:50%;background:#234438;border:3px solid #D98A5E;cursor:grab;box-shadow:0 4px 12px rgba(16,33,26,.35);transition:transform .15s}
-  input[type=range].rng::-webkit-slider-thumb:active{cursor:grabbing;transform:scale(1.12)}
-  input[type=range].rng::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#234438;border:3px solid #D98A5E;cursor:grab}
-  input[type=range].rng:focus-visible::-webkit-slider-thumb{outline:2px solid #D98A5E;outline-offset:2px}
-  .ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-  section,#visit{scroll-margin-top:7rem}
-  a,button{transition:color .25s,background-color .25s,border-color .25s,transform .25s,box-shadow .25s,opacity .25s}
-  .navlink{position:relative}
-  .navlink::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1.5px;background:currentColor;transition:right .3s ease}
-  .navlink:hover::after,.navlink.active::after{right:0}
-  .underline-grow{background-image:linear-gradient(currentColor,currentColor);background-size:0% 1.5px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .35s}
-  .underline-grow:hover{background-size:100% 1.5px}
-  .btn-pri{background:#234438;color:#F6F4EE}
-  .btn-pri:hover{background:#1A3329;transform:translateY(-2px);box-shadow:0 16px 30px -14px rgba(16,33,26,.6)}
-  .gallery-img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
-  .gallery-fig:hover .gallery-img{transform:scale(1.06)}
-  input,select,textarea{font-family:'Hanken Grotesk',system-ui,sans-serif}
-  .field{background:#fff;border:1px solid #D7CFBC;border-radius:.6rem;transition:border-color .2s,box-shadow .2s}
-  .field:focus{outline:none;border-color:#4F9168;box-shadow:0 0 0 3px rgba(79,145,104,.16)}
-  .field.err{border-color:#c0492f;box-shadow:0 0 0 3px rgba(192,73,47,.14)}
-  select.field{-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;padding-right:2.75rem;background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233E4A41' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.05rem}
-  select.field::-ms-expand{display:none}
-  :focus-visible{outline:2px solid #D98A5E;outline-offset:2px;border-radius:3px}
-  .marq{display:flex;white-space:nowrap;will-change:transform;animation:marq 36s linear infinite}
-  @keyframes marq{to{transform:translateX(-50%)}}
-  .grain{background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:4px 4px}
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html.js .reveal,html.js .slide-in-left{opacity:1;transform:none}}
-  .lb{position:fixed;inset:0;z-index:90;background:rgba(16,33,26,.94);display:none;align-items:center;justify-content:center;padding:1.5rem}
-  .lb.open{display:flex}
-  .lb img{max-width:92vw;max-height:86vh;border-radius:.4rem;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+/* ============ TOKENS (DESIGN_RULES §0) ============ */
+:root{
+  color-scheme:light;
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,12vw,11rem);
+  --container:80rem;        /* 1280px content cap */
+  --measure:65ch;
+  --h1:clamp(2.7rem,6.2vw,4.4rem);
+  --h2:clamp(2rem,4vw,3rem);
+  --h3:1.5rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.04;
+  --track-head:-.01em;
+  /* color — brand: deep forest, warm paper neutral ramp, brass accent (the 10%) */
+  --ink:#15231C;     --ink-2:#3E4A41;   --ink-3:#717B72;
+  --line:#D7CFBC;    --line-2:#E2DBCB;
+  --bg:#F6F4EE;      --bg-2:#EBE7DC;    --bg-card:#ffffff;
+  --forest:#234438;  --forest-2:#1A3329; --forest-3:#10211A;
+  --moss:#4F9168;    --moss-2:#427C58;  --sprout:#9CC288;
+  --brass:#D98A5E;   --brass-2:#BD6E42; --brass-3:#9C5128;
+  --paper-on-dark:#F6F4EE;
+  --r-s:8px; --r-m:14px; --r-l:22px; --r-xl:32px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(16,33,26,.05);
+  --sh-2:0 2px 4px rgba(16,33,26,.05),0 8px 20px -10px rgba(16,33,26,.18);
+  --sh-3:0 2px 4px rgba(16,33,26,.04),0 16px 40px -18px rgba(16,33,26,.30);
+  --sh-4:0 24px 64px -28px rgba(16,33,26,.5);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:6.5rem;-webkit-text-size-adjust:100%}
+body{font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;padding-bottom:78px}
+@media(min-width:640px){body{padding-bottom:0}}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none;transition:color var(--t),background-color var(--t),border-color var(--t),transform var(--t),box-shadow var(--t),opacity var(--t)}
+button{font:inherit;cursor:pointer;border:0;background:none;transition:color var(--t),background-color var(--t),border-color var(--t),transform var(--t),box-shadow var(--t),opacity var(--t)}
+h1,h2,h3,h4{line-height:var(--lh-head);font-weight:400}
+p{max-width:var(--measure)}
+ul{list-style:none;padding:0}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:3px}
+::selection{background:var(--forest);color:var(--paper-on-dark)}
+.disp{font-family:'Bricolage Grotesque','Georgia',serif;font-optical-sizing:auto;letter-spacing:var(--track-head)}
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:1.25rem}
+@media(min-width:640px){.wrap{padding-inline:2rem}}
+.sec{padding-block:var(--section-y)}
+.label{font-family:'Hanken Grotesk',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-weight:600;font-size:.74rem}
+.ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.eyebrow{display:inline-flex;align-items:center;gap:.75rem;color:var(--brass-3)}
+.eyebrow .dash{width:2rem;height:1px;background:rgba(189,110,66,.6)}
+
+/* ============ MOTION ============ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.from-l{transform:translateX(-30px)}
+.reveal.zoom{transform:scale(.94)}
+.reveal.in{opacity:1;transform:none}
+.slide-in-left{opacity:0;transform:translateX(-48px) translateY(10px);transition:opacity .9s cubic-bezier(.16,.8,.3,1) .12s,transform .9s cubic-bezier(.16,.8,.3,1) .12s}
+.slide-in-left.in{opacity:1;transform:none}
+@keyframes draw{to{stroke-dashoffset:0}}
+.flourish path{stroke-dasharray:230;stroke-dashoffset:230;animation:draw 1.1s cubic-bezier(.6,.1,.3,1) .6s forwards}
+@keyframes ripple{0%{transform:scale(.28);opacity:.5}80%{opacity:0}100%{transform:scale(1);opacity:0}}
+.ripple{transform-origin:200px 200px;animation:ripple 4s ease-out infinite}
+.ripple.d2{animation-delay:1.33s}.ripple.d3{animation-delay:2.66s}
+@keyframes blip{0%,100%{opacity:.45}50%{opacity:1}}
+.blip{animation:blip 2.6s ease-in-out infinite}
+.blip.b2{animation-delay:.5s}.blip.b3{animation-delay:1s}.blip.b4{animation-delay:1.5s}.blip.b5{animation-delay:2s}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal,.slide-in-left{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-weight:600;border-radius:var(--r-pill);padding:1rem 1.75rem;font-size:1rem;line-height:1}
+.btn svg{width:1rem;height:1rem}
+.btn-pri{background:var(--forest);color:var(--paper-on-dark);box-shadow:var(--sh-2)}
+.btn-pri:hover{background:var(--forest-2);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-brass{background:var(--brass);color:var(--forest-3)}
+.btn-brass:hover{background:var(--paper-on-dark);transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(35,68,56,.28);color:var(--forest)}
+.btn-ghost:hover{border-color:var(--forest);background:var(--forest);color:var(--paper-on-dark)}
+.btn-ghost-light{border:1px solid rgba(246,244,238,.45);color:var(--paper-on-dark)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.1)}
+.btn-sm{padding:.7rem 1.25rem;font-size:.875rem}
+.link-arrow{display:inline-flex;align-items:center;gap:.4rem;font-weight:600;font-size:.875rem;color:var(--forest)}
+.link-arrow svg{width:1rem;height:1rem;transition:transform var(--t)}
+.link-arrow:hover svg{transform:translateX(3px)}
+.underline-grow{background-image:linear-gradient(currentColor,currentColor);background-size:0% 1.5px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .35s}
+.underline-grow:hover{background-size:100% 1.5px}
+
+/* ============ HEADER ============ */
+.progress{position:fixed;top:0;left:0;right:0;z-index:70;height:3px;pointer-events:none}
+.progress>i{display:block;height:100%;background:var(--brass);transform:scaleX(0);transform-origin:left}
+#chrome{position:fixed;top:0;left:0;right:0;z-index:50}
+.hdr-inner{max-width:var(--container);margin-inline:auto;padding:0 1rem}
+@media(min-width:640px){.hdr-inner{padding:0 1.5rem}}
+#hdrbar{margin-top:.65rem;border-radius:var(--r-pill);border:1px solid transparent;display:flex;align-items:center;justify-content:space-between;gap:1rem;height:3.5rem;padding:0 1rem;transition:background-color .4s,border-color .4s,box-shadow .4s}
+@media(min-width:640px){#hdrbar{padding:0 1.25rem}}
+#hdrbar.solid{background-color:rgba(246,244,238,.93);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-color:var(--line);box-shadow:var(--sh-2)}
+.brandmark{display:flex;align-items:center;gap:.6rem}
+.brandmark .glyph{width:2.25rem;height:2.25rem;border-radius:var(--r-s);background:var(--forest);color:var(--brass);display:grid;place-items:center;font-family:'Bricolage Grotesque',serif;font-weight:600;font-size:1.25rem;line-height:1;border:1px solid rgba(217,138,94,.3)}
+#brand{display:block;font-family:'Bricolage Grotesque',serif;font-weight:600;font-size:1.125rem;letter-spacing:-.01em;color:var(--ink);transition:color .3s,text-shadow .3s}
+#brandsub{display:block;text-transform:uppercase;letter-spacing:.2em;font-weight:600;font-size:.6rem;color:var(--ink-2);margin-top:2px;transition:color .3s,text-shadow .3s}
+.nav-desk{display:none;align-items:center;gap:1.75rem;font-size:.9rem;font-weight:500}
+.nav-desk a{color:rgba(21,35,28,.75);position:relative;padding-block:.25rem}
+.nav-desk a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--forest);transition:right .3s ease}
+.nav-desk a:hover,.nav-desk a.active{color:var(--forest)}
+.nav-desk a:hover::after,.nav-desk a.active::after{right:0}
+.hdr-actions{display:flex;align-items:center;gap:.5rem}
+.hdr-phone{display:none;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:var(--forest)}
+.hdr-phone:hover{color:var(--moss)}
+.menubtn{display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:var(--r-pill);color:var(--ink)}
+.menubtn:hover{background:rgba(21,35,28,.05)}
+.menubtn svg{width:1.5rem;height:1.5rem}
+@media(min-width:1024px){
+  .nav-desk{display:flex}
+  .menubtn{display:none}
+}
+@media(min-width:640px){.hdr-phone,.hdr-cta{display:inline-flex}}
+.hdr-cta{display:none}
+/* mobile: header sits over the photo hero before scroll → brand reads light */
+@media (max-width:1023px){
+  #hdrbar:not(.solid) #brand{color:var(--paper-on-dark);text-shadow:0 1px 12px rgba(16,33,26,.55)}
+  #hdrbar:not(.solid) #brandsub{color:rgba(246,244,238,.82);text-shadow:0 1px 10px rgba(16,33,26,.5)}
+  #hdrbar:not(.solid) .menubtn{color:var(--paper-on-dark)}
+}
+
+/* ============ MOBILE MENU ============ */
+#mobile{position:fixed;inset:0;z-index:60;display:none}
+#mobile.show{display:block}
+#mobile .backdrop{position:absolute;inset:0;background:rgba(16,33,26,.6);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+#mobilepanel{position:absolute;right:0;top:0;height:100%;width:82%;max-width:24rem;background:var(--bg);box-shadow:var(--sh-4);display:flex;flex-direction:column;padding:1.5rem;transform:translateX(100%);transition:transform .3s ease}
+#mobile.show #mobilepanel{transform:none}
+.mhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem}
+.mhead .disp{font-size:1.25rem;font-weight:600}
+.mclose{width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:var(--r-pill)}
+.mclose:hover{background:rgba(21,35,28,.05)}
+.mclose svg{width:1.5rem;height:1.5rem}
+.mlinks{display:flex;flex-direction:column;font-family:'Bricolage Grotesque',serif;font-size:1.15rem}
+.mlinks a{padding:.75rem 0;border-bottom:1px solid var(--line-2)}
+.mfoot{margin-top:auto;display:grid;gap:.75rem;padding-top:1.5rem}
+
+/* ============ HERO ============ */
+.hero{position:relative;background:var(--bg);overflow:hidden}
+.hero-photo-m{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-scrim-m{position:absolute;inset:0;background:linear-gradient(to top,rgba(16,33,26,.95),rgba(16,33,26,.6) 45%,rgba(16,33,26,.55))}
+.hero-grid{position:relative;display:grid}
+.hero-copy{position:relative;z-index:2;padding:8rem 1.25rem 4rem;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-weight:300;color:var(--paper-on-dark);margin-top:1.5rem;font-size:var(--h1);line-height:.98}
+.hero h1 .accent{font-style:italic;font-weight:400;color:var(--brass)}
+.hero h1 .ul{position:relative;display:inline-block}
+.hero h1 .flourish{position:absolute;left:0;bottom:-.35rem;width:100%;pointer-events:none}
+.hero-sub{margin-top:1.5rem;color:rgba(246,244,238,.95);font-size:1.0625rem;line-height:1.6;max-width:30rem}
+.hero-cta{margin-top:2.25rem;display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
+.hero-rating{margin-top:2.25rem;display:flex;align-items:center;gap:1rem}
+.stars{display:inline-flex;color:var(--brass)}
+.stars svg{width:1.25rem;height:1.25rem;fill:currentColor}
+.hero-rating p{font-size:.875rem;color:rgba(246,244,238,.9)}
+.hero-rating b{font-weight:700;color:var(--paper-on-dark)}
+.hero-photo-d{display:none}
+.eyebrow-hero{color:var(--brass)}
+.eyebrow-hero .dash{background:rgba(217,138,94,.6)}
+@media(min-width:1024px){
+  .hero-photo-m,.hero-scrim-m{display:none}
+  .hero-grid{grid-template-columns:.92fr 1.08fr;align-items:stretch}
+  .hero-copy{padding:10rem 3rem 5rem;padding-left:max(2rem,calc((100vw - 80rem)/2 + 2rem))}
+  .hero h1{color:var(--ink)}
+  .hero h1 .accent{color:var(--forest)}
+  .hero-sub{color:var(--ink-2);font-size:1.125rem;max-width:34rem}
+  .hero-rating p{color:var(--ink-2)}
+  .hero-rating b{color:var(--ink)}
+  .eyebrow-hero{color:var(--brass-3)}
+  .eyebrow-hero .dash{background:rgba(189,110,66,.6)}
+  .hero-photo-d{display:block;position:relative;min-height:calc(100vh - 1rem);overflow:hidden}
+  .hero-photo-d img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+  .hero-fade{position:absolute;inset:0;width:34%;background:linear-gradient(to right,var(--bg),rgba(246,244,238,.1) 60%,transparent)}
+  .hero-topfade{position:absolute;inset:0;background:linear-gradient(to top,rgba(16,33,26,.45),transparent 40%)}
+  .hero-card{position:absolute;left:1.75rem;bottom:1.75rem;max-width:19rem;border:1px solid rgba(255,255,255,.6);border-radius:var(--r-l);box-shadow:var(--sh-4);padding:1.25rem;background-color:rgba(246,244,238,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+}
+.ghost-on-photo{border:1px solid rgba(246,244,238,.5);color:var(--paper-on-dark)}
+.ghost-on-photo:hover{border-color:var(--forest);background:var(--forest);color:var(--paper-on-dark)}
+@media(min-width:1024px){.ghost-on-photo{border-color:rgba(35,68,56,.25);color:var(--forest)}}
+.hero-card .kick{display:flex;align-items:center;gap:.5rem;color:var(--brass-3)}
+.hero-card .kick .label{font-size:.62rem;color:var(--ink)}
+.hero-card h3{font-family:'Bricolage Grotesque',serif;font-size:1.25rem;color:var(--ink);margin-top:.5rem;line-height:1.3;font-weight:400}
+.hero-card h3 em{font-style:normal;color:var(--moss-2)}
+.hero-card p{font-size:.75rem;color:var(--ink-2);margin-top:.5rem}
+
+/* ============ TRUST STRIP ============ */
+.trust{background:var(--forest);color:var(--paper-on-dark);border-block:1px solid var(--forest-2)}
+.trust .row{max-width:var(--container);margin-inline:auto;padding:1rem 1.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.6rem 2rem}
+.trust span{display:flex;align-items:center;gap:.5rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:.62rem;color:rgba(246,244,238,.78)}
+.trust .mark{color:var(--brass)}
+
+/* ============ SECTION HEAD ============ */
+.sec-head{display:flex;flex-direction:column;gap:1.5rem}
+@media(min-width:768px){.sec-head{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+.sec-head h2{font-family:'Bricolage Grotesque',serif;font-weight:300;color:var(--ink);font-size:var(--h2);margin-top:.75rem;line-height:1.08}
+.sec-head .note{color:var(--ink-2);max-width:24rem}
+@media(min-width:768px){.sec-head .note{text-align:right}}
+
+/* ============ SERVICES ============ */
+.svc-list{margin-top:3rem;border-top:1px solid var(--line)}
+.svc{display:grid;gap:1.25rem 1.5rem;padding-block:2.25rem;border-bottom:1px solid var(--line);align-items:start}
+@media(min-width:768px){.svc{grid-template-columns:repeat(12,1fr);padding-block:2.75rem;border-radius:var(--r-l);margin-inline:-1.25rem;padding-inline:1.25rem;transition:background-color .3s}.svc:hover{background:rgba(235,231,220,.6)}}
+.svc .num{display:flex;align-items:center;gap:1rem;font-family:'Bricolage Grotesque',serif;font-size:3.25rem;line-height:.8;color:var(--line)}
+@media(min-width:768px){.svc .num{display:block;font-size:4.5rem;grid-column:span 2}.svc:hover .num{color:var(--brass)}}
+.svc .num .mtitle{font-family:'Bricolage Grotesque',serif;font-size:1.5rem;color:var(--ink);line-height:1.1}
+@media(min-width:768px){.svc .num .mtitle{display:none}}
+.svc-mid{grid-column:span 4}
+.svc-icon{width:2.5rem;height:2.5rem;flex-shrink:0;border-radius:var(--r-m);background:var(--bg-2);color:var(--forest);display:grid;place-items:center;transition:background-color .3s,color .3s}
+.svc-icon svg{width:1.25rem;height:1.25rem}
+.svc:hover .svc-icon{background:var(--forest);color:var(--brass)}
+.svc-head{display:flex;align-items:flex-start;gap:.75rem}
+.svc-head .kick{display:block;text-transform:uppercase;letter-spacing:.2em;font-weight:600;font-size:.62rem;color:var(--brass-3)}
+.svc-head h3{font-family:'Bricolage Grotesque',serif;font-size:1.5rem;color:var(--ink);line-height:1.1;font-weight:400;display:none}
+@media(min-width:768px){.svc-head h3{display:block}}
+.svc-desc{grid-column:span 3;color:var(--ink-2);font-size:.9rem;line-height:1.6}
+.svc-pts{grid-column:span 3;display:flex;flex-direction:column;gap:.5rem;font-size:.9rem;color:rgba(21,35,28,.8)}
+.svc-pts li{display:flex;gap:.5rem}
+.svc-pts svg{width:1rem;height:1rem;color:var(--moss);margin-top:.18rem;flex-shrink:0}
+/* dark differentiator band */
+.svc.dark{background:var(--forest);color:var(--paper-on-dark);border-radius:var(--r-l);margin-inline:-1rem;padding-inline:1rem;margin-top:.5rem;border-bottom:0;position:relative;overflow:hidden;box-shadow:var(--sh-3)}
+@media(min-width:640px){.svc.dark{margin-inline:-1.25rem;padding-inline:1.25rem}}
+.svc.dark .grain{position:absolute;inset:0;opacity:.4;pointer-events:none}
+.svc.dark .num{color:rgba(255,255,255,.2);position:relative}
+.svc.dark .num .mtitle{color:var(--paper-on-dark)}
+.svc.dark:hover .num{color:var(--brass)}
+.svc.dark .svc-mid,.svc.dark .svc-desc,.svc.dark .svc-pts{position:relative}
+.svc.dark .svc-icon{background:rgba(255,255,255,.1);color:var(--brass)}
+.svc.dark .svc-head .kick{color:var(--brass)}
+.svc.dark .svc-head h3{color:var(--paper-on-dark)}
+.svc.dark .svc-desc{color:rgba(246,244,238,.75)}
+.svc.dark .svc-pts{color:rgba(246,244,238,.85)}
+.svc.dark .svc-pts svg{color:var(--brass)}
+.svc.dark .link-arrow{color:var(--brass)}
+
+/* ============ TEXTURE / GRAIN ============ */
+.grain{background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:4px 4px}
+.stripes{background-image:repeating-linear-gradient(100deg,rgba(35,68,56,.06) 0 8px,transparent 8px 22px)}
+
+/* ============ FEATURE QUOTE ============ */
+.feature{position:relative;overflow:hidden}
+.feature>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform}
+.feature .veil{position:absolute;inset:0;background:rgba(16,33,26,.8)}
+.feature .veil2{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(16,33,26,.55),transparent 75%)}
+.feature .inner{position:relative;max-width:56rem;margin-inline:auto;padding:clamp(3.5rem,9vw,8rem) 1.25rem;text-align:center;color:var(--paper-on-dark)}
+.feature .qmark{width:2.5rem;height:2.5rem;margin-inline:auto;color:var(--brass);fill:currentColor}
+.feature blockquote{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:clamp(1.6rem,4vw,2.9rem);line-height:1.12;margin-top:1.75rem;max-width:none;text-shadow:0 2px 30px rgba(16,33,26,.75)}
+.feature blockquote .hl{font-style:italic;font-weight:400;color:#F0C9AC}
+.feature .attr{margin-top:2rem;color:rgba(246,244,238,.75)}
+
+/* ============ ABOUT ============ */
+.about{background:var(--bg-2)}
+.about .grid{display:grid;gap:3.5rem;align-items:center}
+@media(min-width:1024px){.about .grid{grid-template-columns:1fr 1fr}}
+.about-figure{position:relative}
+.about-figure .frame{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-3);aspect-ratio:5/6}
+@media(min-width:640px) and (max-width:1023px){.about-figure .frame{aspect-ratio:4/3}}
+.about-figure .frame img{width:100%;height:100%;object-fit:cover}
+.about-badge{position:absolute;bottom:-1.5rem;right:.5rem;background:var(--bg-card);border-radius:var(--r-l);box-shadow:var(--sh-4);border:1px solid var(--line);padding:1.25rem 1.5rem;text-align:center}
+@media(min-width:640px){.about-badge{right:1.5rem}}
+.about-badge .big{font-family:'Bricolage Grotesque',serif;font-size:2.25rem;color:var(--forest);line-height:1}
+.about-badge .label{color:var(--brass-3);margin-top:.5rem;font-size:.62rem}
+.about h2{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:var(--h2);color:var(--ink);margin-top:.75rem;line-height:1.08}
+.about .lead{color:var(--ink-2);font-size:1.125rem;margin-top:1.5rem;line-height:1.6}
+.about-tiles{margin-top:2rem;display:grid;gap:1rem}
+@media(min-width:640px){.about-tiles{grid-template-columns:1fr 1fr}}
+.about-tile{display:flex;gap:.75rem;border-radius:var(--r-l);background:var(--bg-card);border:1px solid var(--line);padding:1rem}
+.about-tile svg{width:1.5rem;height:1.5rem;color:var(--moss);flex-shrink:0}
+.about-tile .t{font-weight:600;color:var(--ink);font-size:.875rem}
+.about-tile .d{font-size:.75rem;color:var(--ink-2);margin-top:.25rem}
+
+/* ============ SERVICE AREA ============ */
+.area-card{border-radius:var(--r-xl);background:var(--forest);color:var(--paper-on-dark);overflow:hidden;display:grid;box-shadow:var(--sh-3);position:relative}
+@media(min-width:1024px){.area-card{grid-template-columns:1fr 1fr}}
+.area-copy{position:relative;padding:2rem;display:flex;flex-direction:column;justify-content:center}
+@media(min-width:640px){.area-copy{padding:3rem}}
+@media(min-width:1024px){.area-copy{padding:3.5rem}}
+.area-copy h2{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.05;margin-top:1rem}
+.area-copy .note{color:rgba(246,244,238,.65);margin-top:1.25rem;max-width:28rem;line-height:1.6}
+.chips{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.5rem;max-width:28rem}
+.chips li{font-size:.75rem;font-weight:500;padding:.4rem .85rem;border-radius:var(--r-pill);background:rgba(255,255,255,.08);color:rgba(246,244,238,.82);border:1px solid rgba(255,255,255,.1)}
+.area-graphic{position:relative;min-height:20rem;display:grid;place-items:center;padding:1.5rem}
+@media(min-width:1024px){.area-graphic{min-height:0}}
+.area-graphic .stripes{position:absolute;inset:0;opacity:.5}
+.area-graphic svg{position:relative;width:100%;max-width:28rem}
+.area-label{margin-top:1.75rem;align-self:flex-start}
+
+/* ============ GALLERY ============ */
+.gal{margin-top:3rem;display:grid;grid-template-columns:1fr 1fr;gap:.75rem;grid-auto-flow:dense}
+@media(min-width:640px){.gal{gap:1rem}}
+@media(min-width:1024px){.gal{grid-template-columns:repeat(4,1fr)}}
+.gfig{position:relative;overflow:hidden;border-radius:var(--r-l);cursor:zoom-in}
+.gfig img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.gfig:hover img{transform:scale(1.06)}
+.gfig figcaption{position:absolute;inset-inline:0;bottom:0;padding:.85rem;background:linear-gradient(to top,rgba(16,33,26,.82),transparent);color:var(--paper-on-dark);font-size:.78rem;font-weight:500;opacity:0;transition:opacity var(--t)}
+.gfig:hover figcaption,.gfig:focus-visible figcaption{opacity:1}
+.gfig.big{grid-column:span 2;grid-row:span 2}
+.gfig.wide{grid-column:span 2}
+.gfig .sq{aspect-ratio:1/1}
+.gfig.big .ph{aspect-ratio:1/1}
+@media(min-width:640px){.gfig.big .ph{aspect-ratio:auto;height:100%;min-height:100%}.gfig.wide .ph{aspect-ratio:auto;height:100%}}
+.gfig.wide .ph{aspect-ratio:2/1}
+
+/* ============ PROCESS ============ */
+.process{background:var(--forest);color:var(--paper-on-dark);position:relative;overflow:hidden}
+.process .grain{position:absolute;inset:0;opacity:.4;pointer-events:none}
+.process .inner{position:relative}
+.process .lede{text-align:center;max-width:42rem;margin-inline:auto}
+.process .lede h2{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:var(--h2);margin-top:.75rem;line-height:1.08}
+.process .lede p{color:rgba(246,244,238,.65);margin-top:1.25rem;margin-inline:auto}
+.steps{margin-top:3.5rem;display:grid;gap:1.25rem}
+@media(min-width:640px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{border-radius:var(--r-xl);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:1.75rem}
+.step .top{display:flex;align-items:center;justify-content:space-between}
+.step .n{font-family:'Bricolage Grotesque',serif;font-size:3rem;color:var(--brass);line-height:1}
+.step .top svg{width:1.75rem;height:1.75rem;color:var(--brass)}
+.step h3{font-family:'Bricolage Grotesque',serif;font-size:1.25rem;margin-top:1.25rem;font-weight:400}
+.step p{color:rgba(246,244,238,.65);font-size:.875rem;margin-top:.5rem;line-height:1.6}
+
+/* ============ REVIEWS ============ */
+.reviews{background:var(--bg-2)}
+.rev-stars{display:flex;color:var(--brass)}
+.rev-stars svg{width:1.25rem;height:1.25rem;fill:currentColor}
+.rev-grid{margin-top:3rem;display:grid;gap:1.25rem}
+@media(min-width:768px){.rev-grid{grid-template-columns:1fr 1fr}}
+.rev-card{border-radius:var(--r-xl);background:var(--bg-card);border:1px solid var(--line);box-shadow:var(--sh-2);padding:1.75rem;display:flex;flex-direction:column}
+@media(min-width:1024px){.rev-card{padding:2rem}}
+.rev-card .qstars{display:flex;color:var(--brass)}
+.rev-card .qstars svg{width:1rem;height:1rem;fill:currentColor}
+.rev-card blockquote{font-family:'Bricolage Grotesque',serif;font-size:1.25rem;color:var(--ink);line-height:1.35;margin-top:1.25rem;flex:1;font-weight:400;max-width:none}
+@media(min-width:1024px){.rev-card blockquote{font-size:1.4rem}}
+.rev-card figcaption{margin-top:1.5rem;display:flex;align-items:center;gap:.75rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.rev-av{width:2.5rem;height:2.5rem;border-radius:var(--r-pill);background:var(--forest);color:var(--brass);display:grid;place-items:center;font-family:'Bricolage Grotesque',serif;font-weight:600}
+.rev-card .nm{display:block;font-weight:600;color:var(--ink);font-size:.875rem}
+.rev-card .src{display:block;font-size:.75rem;color:var(--ink-2)}
+.rev-foot{text-align:center;color:var(--ink-2);font-size:.875rem;margin-top:2.25rem}
+.rev-foot a{color:var(--forest);font-weight:600}
+
+/* ============ QUOTE / CONTACT ============ */
+.quote-grid{display:grid;gap:3rem}
+@media(min-width:1024px){.quote-grid{grid-template-columns:1fr 1fr;gap:4rem}}
+.quote-intro h2{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:var(--h2);color:var(--ink);margin-top:.75rem;line-height:1.08}
+.quote-intro p{color:var(--ink-2);margin-top:1.25rem}
+.quick-contact{margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+@media(min-width:640px){.quick-contact{flex-direction:row}.quick-contact .btn{flex:1}}
+.form-note{font-size:.75rem;color:var(--ink-2);margin-top:.75rem}
+form#quoteform{margin-top:1.75rem;display:grid;gap:1rem}
+@media(min-width:640px){form#quoteform{grid-template-columns:1fr 1fr}}
+.fld{display:flex;flex-direction:column}
+.fld.full{grid-column:1/-1}
+.fld label{text-transform:uppercase;letter-spacing:.18em;font-weight:600;font-size:.64rem;color:var(--ink-2)}
+.fld label .req{color:var(--brass-3)}
+.fld label .opt{text-transform:none;letter-spacing:normal;font-weight:400;color:rgba(62,74,65,.65)}
+.field{margin-top:.4rem;width:100%;padding:.8rem 1rem;font-size:.9rem;font-family:'Hanken Grotesk',sans-serif;background:#fff;border:1px solid var(--line);border-radius:var(--r-m);color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.field::placeholder{color:#9aa39b}
+.field:focus{outline:none;border-color:var(--moss);box-shadow:0 0 0 3px rgba(79,145,104,.16)}
+.field.err{border-color:#c0492f;box-shadow:0 0 0 3px rgba(192,73,47,.14)}
+textarea.field{resize:vertical;min-height:6.5rem}
+select.field{-webkit-appearance:none;appearance:none;cursor:pointer;padding-right:2.75rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233E4A41' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.05rem}
+.fld-err{display:none;margin-top:.4rem;font-size:.75rem;font-weight:500;color:#a83b22}
+.fld-err.show{display:block}
+.submit-row{grid-column:1/-1;display:flex;flex-direction:column;gap:1rem;margin-top:.25rem}
+@media(min-width:640px){.submit-row{flex-direction:row;align-items:center}}
+.submit-row .talk{font-size:.75rem;color:var(--ink-2)}
+.submit-row .talk a{color:var(--forest);font-weight:600}
+#quotesuccess{display:none;margin-top:2rem;border-radius:var(--r-xl);background:var(--forest);color:var(--paper-on-dark);padding:2rem;text-align:center;box-shadow:var(--sh-3)}
+#quotesuccess .check{width:3.5rem;height:3.5rem;border-radius:var(--r-pill);background:rgba(255,255,255,.1);color:var(--brass);display:grid;place-items:center;margin-inline:auto}
+#quotesuccess .check svg{width:1.75rem;height:1.75rem}
+#quotesuccess h3{font-family:'Bricolage Grotesque',serif;font-size:1.5rem;margin-top:1.25rem;font-weight:400}
+#quotesuccess p{color:rgba(246,244,238,.7);margin-top:.5rem;font-size:.875rem;max-width:24rem;margin-inline:auto}
+.contact-card{border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-2);background:var(--bg-card)}
+.contact-card .map{aspect-ratio:16/10;width:100%;background:var(--bg-2)}
+.contact-card .map iframe{width:100%;height:100%;border:0}
+.contact-body{padding:1.75rem;display:grid;gap:1.75rem}
+@media(min-width:640px){.contact-body{grid-template-columns:1fr 1fr}}
+.contact-body .label{color:var(--brass-3);font-size:.64rem}
+.contact-list{margin-top:1rem;display:flex;flex-direction:column;gap:1rem;font-size:.875rem}
+.contact-list li{display:flex;gap:.75rem}
+.contact-list svg{width:1.25rem;height:1.25rem;color:var(--moss);flex-shrink:0;margin-top:.15rem}
+.contact-list .k{display:block;color:var(--ink-2);font-size:.72rem}
+.contact-list .v{font-weight:600;color:var(--ink)}
+.contact-list a.v:hover{color:var(--moss)}
+.hours{margin-top:1rem;font-size:.875rem}
+.hours .r{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.hours .r:last-child{border-bottom:0}
+.hours dt{color:var(--ink-2)}
+.hours dd{font-weight:500;color:var(--ink)}
+.hours-note{margin-top:1.25rem;border-radius:var(--r-m);background:var(--bg-2);padding:1rem}
+.hours-note p{font-size:.75rem;color:var(--ink-2);line-height:1.6}
+.hours-note b{color:var(--ink)}
+
+/* ============ FINAL CTA ============ */
+.final{background:var(--forest);color:var(--paper-on-dark);position:relative;overflow:hidden}
+.final .grain{position:absolute;inset:0;opacity:.4;pointer-events:none}
+.final .inner{position:relative;max-width:56rem;margin-inline:auto;padding-block:clamp(3.5rem,8vw,6rem);text-align:center}
+.final h2{font-family:'Bricolage Grotesque',serif;font-weight:300;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.08;margin-top:1rem}
+.final p{color:rgba(246,244,238,.7);margin-top:1.25rem;max-width:36rem;margin-inline:auto;line-height:1.6}
+.final .cta{margin-top:2.25rem;display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem}
+
+/* ============ FOOTER ============ */
+footer{position:relative;background:var(--forest-3);color:rgba(246,244,238,.7);overflow:hidden;padding-bottom:6rem}
+@media(min-width:640px){footer{padding-bottom:0}}
+.foot-stripe{height:.625rem;background-image:repeating-linear-gradient(115deg,#234438 0 18px,#356350 18px 36px)}
+.foot-mark{pointer-events:none;user-select:none;position:absolute;inset-inline:0;bottom:-1rem;text-align:center;font-family:'Bricolage Grotesque',serif;font-weight:600;line-height:1;color:rgba(255,255,255,.035);font-size:clamp(5.5rem,21vw,17rem)}
+@media(min-width:640px){.foot-mark{bottom:-2rem}}
+.foot-grid{position:relative;max-width:var(--container);margin-inline:auto;padding:4rem 1.25rem 3.5rem;display:grid;gap:2.5rem}
+@media(min-width:640px){.foot-grid{padding-inline:2rem}}
+@media(min-width:768px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr}}
+.foot-brand .row{display:flex;align-items:center;gap:.6rem}
+.foot-brand .glyph{width:2.5rem;height:2.5rem;border-radius:var(--r-s);background:rgba(255,255,255,.08);color:var(--brass);display:grid;place-items:center;font-family:'Bricolage Grotesque',serif;font-weight:600;font-size:1.25rem;border:1px solid rgba(217,138,94,.25)}
+.foot-brand .nm{display:block;font-family:'Bricolage Grotesque',serif;font-size:1.125rem;color:var(--paper-on-dark);font-weight:600}
+.foot-brand .sub{display:block;text-transform:uppercase;letter-spacing:.2em;font-size:.6rem;color:rgba(246,244,238,.65);margin-top:2px}
+.foot-brand p{font-size:.875rem;max-width:22rem;line-height:1.6;margin-top:1.25rem}
+.foot-call{margin-top:1.5rem;display:inline-flex;align-items:center;gap:.5rem;border-radius:var(--r-pill);background:rgba(255,255,255,.05);color:var(--paper-on-dark);font-weight:600;font-size:.875rem;padding:.75rem 1.25rem}
+.foot-call svg{width:1rem;height:1rem}
+.foot-call:hover{background:var(--brass);color:var(--forest-3)}
+.foot-col .label{color:rgba(246,244,238,.6);font-size:.64rem}
+.foot-col ul{margin-top:1rem;display:flex;flex-direction:column;gap:.65rem;font-size:.875rem}
+.foot-col a:hover{color:var(--brass)}
+.foot-col .muted{color:rgba(246,244,238,.55)}
+.foot-bar{position:relative;border-top:1px solid rgba(255,255,255,.08)}
+.foot-bar .row{max-width:var(--container);margin-inline:auto;padding:1.25rem;display:flex;flex-direction:column;align-items:center;gap:.5rem;font-size:.72rem;color:rgba(246,244,238,.65)}
+@media(min-width:640px){.foot-bar .row{flex-direction:row;justify-content:space-between;padding-inline:2rem}}
+
+/* ============ MOBILE STICKY CTA ============ */
+#mcta{position:fixed;bottom:0;inset-inline:0;z-index:80;display:flex;gap:.75rem;padding:.75rem 1rem;padding-bottom:max(.75rem,env(safe-area-inset-bottom));background-color:rgba(246,244,238,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-top:1px solid var(--line);box-shadow:0 -8px 30px -12px rgba(16,33,26,.3)}
+@media(min-width:640px){#mcta{display:none}}
+#mcta .btn{padding:.85rem 1.25rem;font-size:.875rem}
+#mcta .call{flex-shrink:0}
+#mcta .quote{flex:1}
+
+/* ============ LIGHTBOX ============ */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(16,33,26,.94);display:none;align-items:center;justify-content:center;padding:1.5rem}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:86vh;border-radius:var(--r-s);box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+.lb .x{position:absolute;top:1.25rem;right:1.25rem;color:rgba(246,244,238,.8);width:2.75rem;height:2.75rem;display:grid;place-items:center}
+.lb .x:hover{color:var(--paper-on-dark)}
+.lb .x svg{width:1.75rem;height:1.75rem}
 </style>
 </head>
-<body class="overflow-x-clip pb-[78px] sm:pb-0">
-<script>document.documentElement.classList.add('js')</script>
+<body>
 
-<!-- scroll progress -->
-<div class="fixed top-0 inset-x-0 z-[70] h-[3px] bg-transparent pointer-events-none"><div id="progbar" class="h-full bg-brass origin-left" style="transform:scaleX(0)"></div></div>
+<div class="progress"><i id="progbar"></i></div>
 
-<!-- HEADER stack (fixed) -->
-<div id="chrome" class="fixed top-0 inset-x-0 z-50">
-
-<!-- HEADER -->
-<header id="hdr" class="transition-all duration-500">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div id="hdrbar" class="mt-2.5 rounded-full border border-transparent flex items-center justify-between gap-4 h-14 px-4 sm:px-5 transition-all duration-500">
-      <a href="#top" class="flex items-center gap-2.5 group">
-        <span class="w-9 h-9 rounded-lg bg-forest text-brass grid place-items-center disp font-semibold text-xl leading-none border border-brass/30">P</span>
-        <span class="leading-none">
-          <span id="brand" class="block disp font-semibold text-lg tracking-tight text-ink transition-colors">Porters</span>
-          <span id="brandsub" class="block label text-[.62rem] text-inksoft mt-0.5 transition-colors">Lawncare &amp; Landscaping</span>
-        </span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-ink/75">
-        <a href="#about" class="navlink hover:text-forest">About</a>
-        <a href="#services" class="navlink hover:text-forest">Services</a>
-        <a href="#work" class="navlink hover:text-forest">Our Work</a>
-        <a href="#area" class="navlink hover:text-forest">Service Area</a>
-        <a href="#reviews" class="navlink hover:text-forest">Reviews</a>
-        <a href="#quote" class="navlink hover:text-forest">Free Quote</a>
-      </nav>
-      <div class="flex items-center gap-2">
-        <a href="tel:+16065416612" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-forest hover:text-moss">
-          <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          (606) 541-6612
+<div id="chrome">
+  <header>
+    <div class="hdr-inner">
+      <div id="hdrbar">
+        <a href="#top" class="brandmark" aria-label="Porters LawnCare &amp; Landscaping — home">
+          <span class="glyph" aria-hidden="true">P</span>
+          <span style="line-height:1">
+            <span id="brand">Porters</span>
+            <span id="brandsub">Lawncare &amp; Landscaping</span>
+          </span>
         </a>
-        <a href="#quote" class="hidden sm:inline-flex items-center gap-1.5 rounded-full btn-pri px-5 py-2.5 text-sm font-semibold whitespace-nowrap">
-          Free Quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menubtn" aria-label="Open menu" class="lg:hidden w-10 h-10 grid place-items-center rounded-full text-ink hover:bg-ink/5">
-          <svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-        </button>
+        <nav class="nav-desk" aria-label="Primary">
+          <a href="#about" class="navlink">About</a>
+          <a href="#services" class="navlink">Services</a>
+          <a href="#work" class="navlink">Our Work</a>
+          <a href="#area" class="navlink">Service Area</a>
+          <a href="#reviews" class="navlink">Reviews</a>
+          <a href="#quote" class="navlink">Free Quote</a>
+        </nav>
+        <div class="hdr-actions">
+          <a href="tel:+16065416612" class="hdr-phone" aria-label="Call (606) 541-6612">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            (606) 541-6612
+          </a>
+          <a href="#quote" class="btn btn-pri btn-sm hdr-cta">Free Quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <button id="menubtn" class="menubtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-</div><!-- /fixed header stack -->
+  </header>
+</div>
 
-<!-- MOBILE MENU -->
-<div id="mobile" class="fixed inset-0 z-[60] hidden">
-  <div class="absolute inset-0 bg-forest3/60 backdrop-blur-sm" data-close></div>
-  <nav class="absolute right-0 top-0 h-full w-[78%] max-w-sm bg-paper shadow-lift flex flex-col p-6 translate-x-full transition-transform duration-300" id="mobilepanel">
-    <div class="flex items-center justify-between mb-8">
-      <span class="disp text-xl font-semibold">Porters</span>
-      <button data-close aria-label="Close menu" class="w-10 h-10 grid place-items-center rounded-full hover:bg-ink/5"><svg class="ic w-6 h-6" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+<div id="mobile">
+  <div class="backdrop" data-close></div>
+  <nav id="mobilepanel" aria-label="Mobile">
+    <div class="mhead">
+      <span class="disp">Porters</span>
+      <button class="mclose" data-close aria-label="Close menu"><svg class="ic" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
     </div>
-    <div class="flex flex-col gap-1 text-lg disp">
-      <a href="#about" data-close class="py-3 border-b border-stoneline">About</a>
-      <a href="#services" data-close class="py-3 border-b border-stoneline">Services</a>
-      <a href="#work" data-close class="py-3 border-b border-stoneline">Our Work</a>
-      <a href="#area" data-close class="py-3 border-b border-stoneline">Service Area</a>
-      <a href="#reviews" data-close class="py-3 border-b border-stoneline">Reviews</a>
-      <a href="#visit" data-close class="py-3 border-b border-stoneline">Visit &amp; Hours</a>
+    <div class="mlinks">
+      <a href="#about" data-close>About</a>
+      <a href="#services" data-close>Services</a>
+      <a href="#work" data-close>Our Work</a>
+      <a href="#area" data-close>Service Area</a>
+      <a href="#reviews" data-close>Reviews</a>
+      <a href="#visit" data-close>Visit &amp; Hours</a>
     </div>
-    <div class="mt-auto grid gap-3">
-      <a href="tel:+16065416612" class="inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold py-3"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
-      <a href="#quote" data-close class="inline-flex items-center justify-center gap-2 rounded-full btn-pri py-3 font-semibold">Get a Free Quote</a>
+    <div class="mfoot">
+      <a href="tel:+16065416612" class="btn btn-ghost"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
+      <a href="#quote" data-close class="btn btn-pri">Get a Free Quote</a>
     </div>
   </nav>
 </div>
@@ -180,248 +532,195 @@ tailwind.config={theme:{extend:{
 <main id="top">
 
 <!-- HERO -->
-<section class="relative bg-paper overflow-hidden">
-  <!-- mobile-only full-bleed hero image — the first thing seen on phones -->
-  <img src="assets/hero-hillside-stripes.jpg" width="1600" height="1200" fetchpriority="high" decoding="async" alt="A sloped Portsmouth, OH lawn mowed with clean curved stripes by Porters LawnCare &amp; Landscaping" class="lg:hidden absolute inset-0 w-full h-full object-cover">
-  <div class="lg:hidden absolute inset-0 bg-forest3/45"></div>
-  <div class="lg:hidden absolute inset-0 bg-gradient-to-t from-forest3/95 via-forest3/60 to-forest3/55"></div>
-  <div class="relative grid lg:grid-cols-[0.92fr_1.08fr] items-stretch">
-    <!-- copy -->
-    <div class="relative z-10 px-5 sm:px-8 lg:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] lg:pr-12 pt-32 lg:pt-40 pb-16 lg:pb-20 flex flex-col justify-center">
-      <span class="reveal label text-brass lg:text-brass3 flex items-center gap-3"><span class="w-8 h-px bg-brass/60 lg:bg-brass2/60"></span>Portsmouth, OH · Lawn Care &amp; Landscaping</span>
-      <h1 class="reveal disp font-light text-paper lg:text-ink mt-6 text-[2.7rem] sm:text-6xl lg:text-[4.4rem] leading-[.98] tracking-[-.01em]">
-        Mowed by the acre.<br><span class="italic font-normal text-brass lg:text-forest">Landscaped</span> by <span class="relative inline-block">hand.<svg class="flourish absolute left-0 -bottom-1 sm:-bottom-2 w-full pointer-events-none" height="12" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8C45 3 92 3 130 6c30 2 50 3 67 1" stroke="#D98A5E" stroke-width="3" stroke-linecap="round"/></svg></span>
-      </h1>
-      <p class="reveal mt-5 text-paper/95 text-base leading-relaxed max-w-xs lg:hidden">
-        Crisp-striped mowing, fresh mulch beds, and the slope &amp; brush cleanup other crews won't touch — for Portsmouth homes and properties.
-      </p>
-      <p class="reveal mt-7 max-w-xl text-inksoft text-lg leading-relaxed hidden lg:block">
-        Lawn care &amp; landscaping for Portsmouth and the surrounding Scioto County towns — clean-striped mowing, fresh mulch beds and edging, and the heavy slope, grading and brush cleanup most crews pass on. Done right, the first time.
-      </p>
-      <div class="reveal mt-9 flex flex-wrap items-center gap-3">
-        <a href="#quote" class="inline-flex items-center gap-2 rounded-full btn-pri px-7 py-4 font-semibold">
-          Get a free quote
-          <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a href="tel:+16065416612" class="inline-flex items-center gap-2 rounded-full border border-paper/50 text-paper lg:border-forest/25 lg:text-forest px-7 py-4 font-semibold hover:border-forest hover:bg-forest hover:text-paper">
-          <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-          (606) 541-6612
-        </a>
+<section class="hero">
+  <img src="assets/hero-hillside-stripes.webp" width="1500" height="1125" fetchpriority="high" decoding="async" alt="A sloped Portsmouth, OH lawn mowed with clean curved stripes by Porters LawnCare &amp; Landscaping" class="hero-photo-m">
+  <div class="hero-scrim-m"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="reveal label eyebrow eyebrow-hero"><span class="dash"></span>Portsmouth, OH · Lawn Care &amp; Landscaping</span>
+      <h1 class="reveal disp">Mowed by the acre.<br><span class="accent">Landscaped</span> by <span class="ul">hand.<svg class="flourish" height="12" viewBox="0 0 200 12" fill="none" preserveAspectRatio="none" aria-hidden="true"><path d="M3 8C45 3 92 3 130 6c30 2 50 3 67 1" stroke="#D98A5E" stroke-width="3" stroke-linecap="round"/></svg></span></h1>
+      <p class="reveal hero-sub">Lawn care &amp; landscaping for Portsmouth and the surrounding Scioto County towns — clean-striped mowing, fresh mulch beds and edging, and the heavy slope, grading and brush cleanup most crews pass on. Done right, the first time.</p>
+      <div class="reveal hero-cta">
+        <a href="#quote" class="btn btn-pri">Get a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="tel:+16065416612" class="btn ghost-on-photo"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>(606) 541-6612</a>
       </div>
-      <div class="reveal mt-9 flex items-center gap-4">
-        <div class="flex text-brass" aria-hidden="true">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-        </div>
-        <p class="text-sm text-paper/90 lg:text-inksoft"><span class="font-semibold text-paper lg:text-ink">4.9</span> rating · 32 Google reviews</p>
+      <div class="reveal hero-rating">
+        <span class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </span>
+        <p><b>4.9</b> rating · 32 Google reviews</p>
       </div>
     </div>
-    <!-- image (desktop split layout) -->
-    <div class="hidden lg:block relative lg:min-h-[calc(100vh-1rem)] overflow-hidden">
-      <img src="assets/hero-hillside-stripes.jpg" width="1600" height="1200" decoding="async" data-parallax="0.07" alt="A sloped Portsmouth, OH lawn mowed with clean curved stripes by Porters LawnCare &amp; Landscaping" class="absolute inset-0 w-full h-full object-cover will-change-transform">
-      <div class="absolute inset-0 bg-gradient-to-r from-paper via-paper/10 to-transparent lg:w-1/3"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-forest3/45 via-transparent to-transparent"></div>
-      <!-- floating card -->
-      <div class="slide-in-left glass absolute left-5 bottom-5 sm:left-7 sm:bottom-7 max-w-[19rem] border border-white/60 rounded-2xl shadow-lift p-5">
-        <div class="flex items-center gap-2 text-brass3">
-          <svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
-          <span class="label text-[.66rem] text-ink">The Porters difference</span>
-        </div>
-        <p class="disp text-xl text-ink mt-2 leading-snug">We show up fast — <span class="text-moss2">often a quote the same day you call.</span></p>
-        <p class="text-xs text-inksoft mt-2">A local crew on the job seven days a week, 6am–6pm.</p>
+    <div class="hero-photo-d">
+      <img src="assets/hero-hillside-stripes.webp" width="1500" height="1125" decoding="async" data-parallax="0.07" alt="A sloped Portsmouth, OH lawn mowed with clean curved stripes by Porters LawnCare &amp; Landscaping">
+      <div class="hero-fade"></div>
+      <div class="hero-topfade"></div>
+      <div class="slide-in-left hero-card">
+        <div class="kick"><svg class="ic" style="width:1.25rem;height:1.25rem" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg><span class="label">The Porters difference</span></div>
+        <h3>We show up fast — <em>often a quote the same day you call.</em></h3>
+        <p>A local crew on the job seven days a week, 6am–6pm.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TRUST STRIP (static) -->
-<section class="bg-forest text-paper border-y border-forest2">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-2.5 label text-[.64rem] text-paper/75">
-    <span class="flex items-center gap-2"><span class="text-brass">✦</span> 4.9 Google rating</span>
-    <span class="flex items-center gap-2"><span class="text-brass">✦</span> 32 five-star reviews</span>
-    <span class="flex items-center gap-2"><span class="text-brass">✦</span> Open 7 days a week</span>
-    <span class="flex items-center gap-2"><span class="text-brass">✦</span> Free, same-day quotes</span>
-    <span class="flex items-center gap-2"><span class="text-brass">✦</span> Based right in Portsmouth</span>
+<!-- TRUST STRIP -->
+<section class="trust">
+  <div class="row">
+    <span><span class="mark">✦</span> 4.9 Google rating</span>
+    <span><span class="mark">✦</span> 32 five-star reviews</span>
+    <span><span class="mark">✦</span> Open 7 days a week</span>
+    <span><span class="mark">✦</span> Free, same-day quotes</span>
+    <span><span class="mark">✦</span> Based right in Portsmouth</span>
   </div>
 </section>
 
-<!-- SERVICES (editorial index) -->
-<section id="services" class="max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28">
-  <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<!-- SERVICES -->
+<section id="services" class="sec wrap">
+  <div class="reveal sec-head">
     <div>
-      <span class="label text-brass3">01 — What we do</span>
-      <h2 class="disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">Three ways we keep<br>your property sharp.</h2>
+      <span class="label eyebrow">01 — What we do</span>
+      <h2>Three ways we keep<br>your property sharp.</h2>
     </div>
-    <p class="text-inksoft max-w-sm md:text-right">Mowing, fresh beds, and the rough slope &amp; cleanup work — every job done by the same crew Portsmouth already rates a clean 4.9.</p>
+    <p class="note">Mowing, fresh beds, and the rough slope &amp; cleanup work — every job done by the same crew Portsmouth already rates a clean 4.9.</p>
   </div>
 
-  <div class="mt-14 border-t border-stoneline">
-    <!-- 01 mowing -->
-    <article class="reveal group grid md:grid-cols-12 gap-x-6 gap-y-5 py-9 lg:py-11 border-b border-stoneline items-start transition-colors duration-300 hover:bg-paper2/60 sm:-mx-5 sm:px-5 rounded-2xl">
-      <div class="md:col-span-2 flex items-center gap-4 md:block">
-        <span class="disp text-[3.5rem] lg:text-7xl leading-[.8] text-stoneline group-hover:text-brass transition-colors duration-300">01</span>
-        <span class="md:hidden disp text-2xl text-ink">Lawn Mowing</span>
-      </div>
-      <div class="md:col-span-4">
-        <div class="flex items-start gap-3">
-          <span class="w-10 h-10 shrink-0 rounded-xl bg-paper2 text-forest grid place-items-center group-hover:bg-forest group-hover:text-brass transition-colors"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3.3 3.6-5 9-5s9 1.7 9 5M7 12V7m4 5V5m4 7V8"/></svg></span>
-          <div>
-            <span class="label text-[.64rem] text-brass3 block">Weekly &amp; one-time</span>
-            <h3 class="hidden md:block disp text-2xl text-ink leading-tight">Lawn Mowing</h3>
-          </div>
+  <div class="svc-list">
+    <article class="svc reveal">
+      <div class="num">01<span class="mtitle">Lawn Mowing</span></div>
+      <div class="svc-mid">
+        <div class="svc-head">
+          <span class="svc-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3.3 3.6-5 9-5s9 1.7 9 5M7 12V7m4 5V5m4 7V8"/></svg></span>
+          <div><span class="kick">Weekly &amp; one-time</span><h3>Lawn Mowing</h3></div>
         </div>
-        <a href="#quote" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-forest underline-grow">Get a free quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#quote" class="link-arrow underline-grow" style="margin-top:1rem">Get a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <p class="md:col-span-3 text-inksoft text-sm leading-relaxed">Mowing, trimming, edging and a full blow-off — finished with the clean stripes you can see from the road. On a weekly schedule or a one-time cut, whatever your yard needs.</p>
-      <ul class="md:col-span-3 space-y-2 text-sm text-ink/80">
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Mow, trim, edge &amp; blow off</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Striped &amp; detailed every visit</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Yards, acreage &amp; commercial lots</li>
+      <p class="svc-desc">Mowing, trimming, edging and a full blow-off — finished with the clean stripes you can see from the road. On a weekly schedule or a one-time cut, whatever your yard needs.</p>
+      <ul class="svc-pts">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Mow, trim, edge &amp; blow off</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Striped &amp; detailed every visit</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Yards, acreage &amp; commercial lots</li>
       </ul>
     </article>
-    <!-- 02 landscaping -->
-    <article class="reveal group grid md:grid-cols-12 gap-x-6 gap-y-5 py-9 lg:py-11 border-b border-stoneline items-start transition-colors duration-300 hover:bg-paper2/60 sm:-mx-5 sm:px-5 rounded-2xl">
-      <div class="md:col-span-2 flex items-center gap-4 md:block">
-        <span class="disp text-[3.5rem] lg:text-7xl leading-[.8] text-stoneline group-hover:text-brass transition-colors duration-300">02</span>
-        <span class="md:hidden disp text-2xl text-ink">Landscaping &amp; Beds</span>
-      </div>
-      <div class="md:col-span-4">
-        <div class="flex items-start gap-3">
-          <span class="w-10 h-10 shrink-0 rounded-xl bg-paper2 text-forest grid place-items-center group-hover:bg-forest group-hover:text-brass transition-colors"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M12 2C8 6 7 9 7 12a5 5 0 0 0 10 0c0-3-1-6-5-10ZM12 22v-6"/></svg></span>
-          <div>
-            <span class="label text-[.64rem] text-brass3 block">Beds &amp; planting</span>
-            <h3 class="hidden md:block disp text-2xl text-ink leading-tight">Landscaping &amp; Beds</h3>
-          </div>
+
+    <article class="svc reveal">
+      <div class="num">02<span class="mtitle">Landscaping &amp; Beds</span></div>
+      <div class="svc-mid">
+        <div class="svc-head">
+          <span class="svc-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M12 2C8 6 7 9 7 12a5 5 0 0 0 10 0c0-3-1-6-5-10ZM12 22v-6"/></svg></span>
+          <div><span class="kick">Beds &amp; planting</span><h3>Landscaping &amp; Beds</h3></div>
         </div>
-        <a href="#quote" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-forest underline-grow">Get a free quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#quote" class="link-arrow underline-grow" style="margin-top:1rem">Get a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <p class="md:col-span-3 text-inksoft text-sm leading-relaxed">Fresh mulch beds, clean edging, shrubs and seasonal color — installed to lift the whole front of your property. We shape it around what you want the space to look like.</p>
-      <ul class="md:col-span-3 space-y-2 text-sm text-ink/80">
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Fresh mulch beds &amp; edging</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Shrub trimming &amp; planting</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-moss mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Seasonal color &amp; refresh</li>
+      <p class="svc-desc">Fresh mulch beds, clean edging, shrubs and seasonal color — installed to lift the whole front of your property. We shape it around what you want the space to look like.</p>
+      <ul class="svc-pts">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Fresh mulch beds &amp; edging</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Shrub trimming &amp; planting</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Seasonal color &amp; refresh</li>
       </ul>
     </article>
-    <!-- 03 slope, grading & cleanup — premium dark band (the differentiator) -->
-    <article class="reveal group relative grid md:grid-cols-12 gap-x-6 gap-y-5 py-9 lg:py-11 items-start bg-forest text-paper rounded-2xl overflow-hidden -mx-4 px-4 sm:-mx-5 sm:px-5 mt-2 card-h hover:shadow-lift">
-      <div class="absolute inset-0 grain opacity-40 pointer-events-none"></div>
-      <div class="relative md:col-span-2 flex items-center gap-4 md:block">
-        <span class="disp text-[3.5rem] lg:text-7xl leading-[.8] text-white/20 group-hover:text-brass transition-colors duration-300">03</span>
-        <span class="md:hidden disp text-2xl text-paper">Slope &amp; Cleanup</span>
-      </div>
-      <div class="relative md:col-span-4">
-        <div class="flex items-start gap-3">
-          <span class="w-10 h-10 shrink-0 rounded-xl bg-white/10 text-brass grid place-items-center"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l4-2 4 2M13 21V11l4-2 2 1v11"/></svg></span>
-          <div>
-            <span class="label text-[.64rem] text-brass block">The hard stuff</span>
-            <h3 class="hidden md:block disp text-2xl text-paper leading-tight">Slope, Grading &amp; Cleanup</h3>
-          </div>
+
+    <article class="svc dark reveal">
+      <div class="grain"></div>
+      <div class="num">03<span class="mtitle">Slope &amp; Cleanup</span></div>
+      <div class="svc-mid">
+        <div class="svc-head">
+          <span class="svc-icon"><svg class="ic" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l4-2 4 2M13 21V11l4-2 2 1v11"/></svg></span>
+          <div><span class="kick">The hard stuff</span><h3>Slope, Grading &amp; Cleanup</h3></div>
         </div>
-        <a href="#quote" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brass underline-grow">Get a free quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#quote" class="link-arrow underline-grow" style="margin-top:1rem">Get a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <p class="relative md:col-span-3 text-paper/75 text-sm leading-relaxed">Overgrown slopes, tall weeds, half-dead brush and the steep, awkward spots other crews pass on. We clear it, grade it, and hand it back looking like part of the yard again.</p>
-      <ul class="relative md:col-span-3 space-y-2 text-sm text-paper/85">
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-brass mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Slope &amp; hillside cleanup</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-brass mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Brush &amp; overgrowth removal</li>
-        <li class="flex gap-2"><svg class="ic w-4 h-4 text-brass mt-0.5 shrink-0" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Grading &amp; property reclaim</li>
+      <p class="svc-desc">Overgrown slopes, tall weeds, half-dead brush and the steep, awkward spots other crews pass on. We clear it, grade it, and hand it back looking like part of the yard again.</p>
+      <ul class="svc-pts">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Slope &amp; hillside cleanup</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Brush &amp; overgrowth removal</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="m5 12 5 5L20 6"/></svg>Grading &amp; property reclaim</li>
       </ul>
     </article>
   </div>
 </section>
 
-<!-- STRIPE FEATURE / TESTIMONIAL -->
-<section class="relative overflow-hidden">
-  <img src="assets/scenic-field-mow.jpg" width="1200" height="635" loading="lazy" decoding="async" data-parallax="0.16" alt="A wide rolling field freshly mowed by Porters near Portsmouth, OH" class="absolute inset-0 w-full h-full object-cover will-change-transform">
-  <div class="absolute inset-0 bg-forest3/80"></div>
-  <div class="absolute inset-0" style="background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(16,33,26,.55),transparent 75%)"></div>
-  <div class="absolute inset-0 grain opacity-40"></div>
-  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 py-14 lg:py-32 text-center text-paper">
-    <svg class="reveal w-10 h-10 mx-auto text-brass" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 7C6.5 7 5 9.2 5 12v5h5v-5H7.6c0-1.7.8-2.7 2.4-2.8L9.5 7Zm9 0c-3 0-4.5 2.2-4.5 5v5h5v-5h-2.4c0-1.7.8-2.7 2.4-2.8L18.5 7Z"/></svg>
-    <blockquote class="reveal zoom disp font-light text-3xl sm:text-4xl lg:text-[2.9rem] leading-[1.12] mt-7" style="text-shadow:0 2px 30px rgba(16,33,26,.75)">
-      “An eyesore on a large slope — tall weeds, half-dead bushes. The guys worked their tails off. <span class="italic font-normal" style="color:#F0C9AC">It now looks great.</span>”
-    </blockquote>
-    <p class="reveal label text-paper/75 mt-8">Nancy B. · Google review</p>
+<!-- FEATURE QUOTE -->
+<section class="feature">
+  <img src="assets/scenic-field-mow.webp" width="1200" height="636" loading="lazy" decoding="async" data-parallax="0.16" alt="A wide rolling field freshly mowed by Porters near Portsmouth, OH">
+  <div class="veil"></div>
+  <div class="veil2"></div>
+  <div class="grain" style="position:absolute;inset:0;opacity:.4"></div>
+  <div class="inner">
+    <svg class="reveal qmark" viewBox="0 0 24 24"><path d="M9.5 7C6.5 7 5 9.2 5 12v5h5v-5H7.6c0-1.7.8-2.7 2.4-2.8L9.5 7Zm9 0c-3 0-4.5 2.2-4.5 5v5h5v-5h-2.4c0-1.7.8-2.7 2.4-2.8L18.5 7Z"/></svg>
+    <blockquote class="reveal zoom disp">“An eyesore on a large slope — tall weeds, half-dead bushes. The guys worked their tails off. <span class="hl">It now looks great.</span>”</blockquote>
+    <p class="reveal label attr">Nancy B. · Google review</p>
   </div>
 </section>
 
-<!-- ABOUT / MISSION -->
-<section id="about" class="bg-paper2">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
-    <div class="reveal from-l relative">
-      <div class="rounded-3xl overflow-hidden shadow-soft aspect-[5/6] sm:aspect-[4/3] lg:aspect-[5/6]">
-        <img src="assets/mulch-bed-install.jpg" width="975" height="1300" alt="A freshly installed mulch bed with new plantings at a Portsmouth, OH home by Porters" class="w-full h-full object-cover">
+<!-- ABOUT -->
+<section id="about" class="about sec">
+  <div class="wrap grid">
+    <div class="reveal from-l about-figure">
+      <div class="frame">
+        <img src="assets/mulch-bed-install.webp" width="1100" height="1467" loading="lazy" decoding="async" alt="A freshly installed mulch bed with new plantings at a Portsmouth, OH home by Porters">
       </div>
-      <div class="absolute -bottom-6 -right-2 sm:right-6 bg-white rounded-2xl shadow-lift border border-stoneline px-6 py-5 text-center">
-        <div class="disp text-4xl text-forest leading-none" data-count="4.9">4.9</div>
-        <div class="label text-[.62rem] text-brass3 mt-2">Average rating</div>
+      <div class="about-badge">
+        <div class="big" data-count="4.9">4.9</div>
+        <div class="label">Average rating</div>
       </div>
     </div>
     <div>
-      <span class="reveal label text-brass3">02 — Who we are</span>
-      <h2 class="reveal disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">A local Portsmouth crew that just shows up and does it right.</h2>
-      <p class="reveal text-inksoft text-lg mt-6 leading-relaxed">We're a hands-on lawn and landscape crew right here in Portsmouth. We answer the phone, come out to look, and give you a straight quote — usually the same day you call. Then we do the work the way we'd want it done on our own place, and we stay in touch until you're happy with it.</p>
-      <div class="reveal mt-8 grid sm:grid-cols-2 gap-4">
-        <div class="flex gap-3 rounded-2xl bg-white border border-stoneline p-4">
-          <svg class="ic w-6 h-6 text-moss shrink-0" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <div><p class="font-semibold text-ink text-sm">4.9 on 32 reviews</p><p class="text-xs text-inksoft mt-1">Built fast on real, five-star Google reviews.</p></div>
+      <span class="reveal label eyebrow">02 — Who we are</span>
+      <h2 class="reveal">A local Portsmouth crew that just shows up and does it right.</h2>
+      <p class="reveal lead">We're a hands-on lawn and landscape crew right here in Portsmouth. We answer the phone, come out to look, and give you a straight quote — usually the same day you call. Then we do the work the way we'd want it done on our own place, and we stay in touch until you're happy with it.</p>
+      <div class="reveal about-tiles">
+        <div class="about-tile">
+          <svg class="ic" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <div><p class="t">4.9 on 32 reviews</p><p class="d">Built fast on real, five-star Google reviews.</p></div>
         </div>
-        <div class="flex gap-3 rounded-2xl bg-white border border-stoneline p-4">
-          <svg class="ic w-6 h-6 text-moss shrink-0" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
-          <div><p class="font-semibold text-ink text-sm">Out fast, seven days</p><p class="text-xs text-inksoft mt-1">On the job 6am–6pm, every day of the week.</p></div>
+        <div class="about-tile">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg>
+          <div><p class="t">Out fast, seven days</p><p class="d">On the job 6am–6pm, every day of the week.</p></div>
         </div>
-        <div class="flex gap-3 rounded-2xl bg-white border border-stoneline p-4">
-          <svg class="ic w-6 h-6 text-moss shrink-0" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div><p class="font-semibold text-ink text-sm">Portsmouth &amp; nearby</p><p class="text-xs text-inksoft mt-1">Serving Portsmouth and the surrounding towns.</p></div>
+        <div class="about-tile">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><p class="t">Portsmouth &amp; nearby</p><p class="d">Serving Portsmouth and the surrounding towns.</p></div>
         </div>
-        <div class="flex gap-3 rounded-2xl bg-white border border-stoneline p-4">
-          <svg class="ic w-6 h-6 text-moss shrink-0" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><p class="font-semibold text-ink text-sm">Straight, honest quotes</p><p class="text-xs text-inksoft mt-1">We listen, suggest, and price it fairly — no pressure.</p></div>
+        <div class="about-tile">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><p class="t">Straight, honest quotes</p><p class="d">We listen, suggest, and price it fairly — no pressure.</p></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREA (signature graphic) -->
-<section id="area" class="bg-paper">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-11 lg:py-24">
-    <div class="reveal rounded-[2rem] bg-forest text-paper overflow-hidden grid lg:grid-cols-2 shadow-soft relative">
-      <div class="absolute inset-0 grain opacity-40 pointer-events-none"></div>
-      <!-- copy -->
-      <div class="relative p-8 sm:p-12 lg:p-14 flex flex-col justify-center">
-        <span class="label text-brass">03 — Where we work</span>
-        <h2 class="disp font-light text-3xl lg:text-[2.7rem] leading-[1.05] mt-4">Portsmouth — and the<br>towns all around it.</h2>
-        <p class="text-paper/65 mt-5 max-w-md leading-relaxed">We're based right in Portsmouth and cover the surrounding Scioto County communities along the river. Not sure if we reach you? Give us a call — if it's nearby, we're probably already out that way.</p>
-        <ul class="mt-7 flex flex-wrap gap-2 max-w-md">
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">Portsmouth</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">New Boston</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">Wheelersburg</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">Sciotoville</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">West Portsmouth</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">Lucasville</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">Minford</li>
-          <li class="text-xs font-medium px-3 py-1.5 rounded-full bg-white/8 text-paper/80 border border-white/10">McDermott</li>
+<!-- SERVICE AREA -->
+<section id="area" class="sec">
+  <div class="wrap">
+    <div class="reveal area-card">
+      <div class="grain" style="position:absolute;inset:0;opacity:.4;pointer-events:none"></div>
+      <div class="area-copy">
+        <span class="label" style="color:var(--brass)">03 — Where we work</span>
+        <h2>Portsmouth — and the<br>towns all around it.</h2>
+        <p class="note">We're based right in Portsmouth and cover the surrounding Scioto County communities along the river. Not sure if we reach you? Give us a call — if it's nearby, we're probably already out that way.</p>
+        <ul class="chips">
+          <li>Portsmouth</li><li>New Boston</li><li>Wheelersburg</li><li>Sciotoville</li>
+          <li>West Portsmouth</li><li>Lucasville</li><li>Minford</li><li>McDermott</li>
         </ul>
-        <a href="#quote" class="mt-8 inline-flex items-center gap-2 self-start rounded-full bg-brass text-forest3 px-6 py-3 font-semibold hover:bg-paper">Check my address <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#quote" class="btn btn-brass area-label">Check my address <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <!-- area graphic -->
-      <div class="relative min-h-[20rem] lg:min-h-0 grid place-items-center p-6">
-        <div class="absolute inset-0 stripes opacity-[.5]"></div>
-        <svg viewBox="0 0 400 400" class="relative w-full max-w-md" role="img" aria-label="Map showing the Portsmouth, Ohio area towns Porters serves">
+      <div class="area-graphic">
+        <div class="stripes"></div>
+        <svg viewBox="0 0 400 400" role="img" aria-label="Map showing the Portsmouth, Ohio area towns Porters serves">
           <defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9CC288" stop-opacity=".18"/><stop offset="70%" stop-color="#9CC288" stop-opacity="0"/></radialGradient></defs>
           <circle cx="200" cy="200" r="170" fill="url(#rg)"/>
-          <!-- expanding ripples -->
           <circle class="ripple" cx="200" cy="200" r="170" fill="none" stroke="#D98A5E" stroke-width="1.5"/>
           <circle class="ripple d2" cx="200" cy="200" r="170" fill="none" stroke="#D98A5E" stroke-width="1.5"/>
           <circle class="ripple d3" cx="200" cy="200" r="170" fill="none" stroke="#D98A5E" stroke-width="1.5"/>
-          <!-- static rings -->
           <circle cx="200" cy="200" r="170" fill="none" stroke="#F6F4EE" stroke-opacity=".18" stroke-width="1"/>
           <circle cx="200" cy="200" r="115" fill="none" stroke="#F6F4EE" stroke-opacity=".15" stroke-width="1" stroke-dasharray="3 5"/>
           <circle cx="200" cy="200" r="60" fill="none" stroke="#F6F4EE" stroke-opacity=".15" stroke-width="1" stroke-dasharray="3 5"/>
-          <!-- town blips -->
           <g font-family="'Hanken Grotesk',sans-serif" font-size="11" fill="#F6F4EE">
             <g class="blip"><circle cx="262" cy="206" r="3.5" fill="#9CC288"/><text x="270" y="204" fill-opacity=".8">New Boston</text></g>
             <g class="blip b2"><circle cx="300" cy="232" r="3.5" fill="#9CC288"/><text x="270" y="250" fill-opacity=".8">Wheelersburg</text></g>
@@ -430,7 +729,6 @@ tailwind.config={theme:{extend:{
             <g class="blip b5"><circle cx="186" cy="120" r="3.5" fill="#9CC288"/><text x="150" y="112" fill-opacity=".8">Lucasville</text></g>
             <g class="blip b3"><circle cx="248" cy="138" r="3" fill="#9CC288"/><text x="256" y="136" fill-opacity=".7">Minford</text></g>
           </g>
-          <!-- center pin: Portsmouth -->
           <circle cx="200" cy="200" r="9" fill="#D98A5E"/>
           <circle cx="200" cy="200" r="4" fill="#1A3329"/>
           <text x="200" y="226" text-anchor="middle" fill="#F6F4EE" font-size="12.5" font-family="'Hanken Grotesk',sans-serif" font-weight="700">Portsmouth, OH</text>
@@ -441,177 +739,171 @@ tailwind.config={theme:{extend:{
 </section>
 
 <!-- GALLERY -->
-<section id="work" class="max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28">
-  <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<section id="work" class="sec wrap">
+  <div class="reveal sec-head">
     <div>
-      <span class="label text-brass3">04 — Recent work</span>
-      <h2 class="disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">Real lawns &amp; landscapes<br>around Portsmouth.</h2>
+      <span class="label eyebrow">04 — Recent work</span>
+      <h2>Real lawns &amp; landscapes<br>around Portsmouth.</h2>
     </div>
-    <p class="text-inksoft max-w-sm md:text-right">Every photo here is our own work — tap any image to see it full size.</p>
+    <p class="note">Every photo here is our own work — tap any image to see it full size.</p>
   </div>
 
-  <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 [grid-auto-flow:dense]">
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl col-span-2 row-span-2 cursor-zoom-in group" data-full="assets/mulch-bed-install.jpg">
-      <img src="assets/mulch-bed-install.jpg" width="975" height="1300" alt="A freshly installed mulch bed with new plantings at a Portsmouth home" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square sm:aspect-auto sm:min-h-full">
-      <figcaption class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-sm font-medium opacity-0 group-hover:opacity-100">Fresh mulch beds</figcaption>
+  <div class="gal">
+    <figure class="gfig big reveal" data-full="assets/mulch-bed-install.webp" tabindex="0" aria-label="View photo: a freshly installed mulch bed with new plantings at a Portsmouth home, full size">
+      <img src="assets/mulch-bed-install.webp" width="1100" height="1467" loading="lazy" decoding="async" alt="A freshly installed mulch bed with new plantings at a Portsmouth home" class="ph">
+      <figcaption>Fresh mulch beds</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl cursor-zoom-in group" data-full="assets/striped-lawn-house.jpg">
-      <img src="assets/striped-lawn-house.jpg" width="1120" height="1400" alt="A lawn mowed with crisp straight stripes in front of a Portsmouth home" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Mowing &amp; striping</figcaption>
+    <figure class="gfig reveal" data-full="assets/striped-lawn-house.webp" tabindex="0" aria-label="View photo: a lawn mowed with crisp straight stripes in front of a Portsmouth home, full size">
+      <img src="assets/striped-lawn-house.webp" width="1100" height="1375" loading="lazy" decoding="async" alt="A lawn mowed with crisp straight stripes in front of a Portsmouth home" class="sq">
+      <figcaption>Mowing &amp; striping</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl cursor-zoom-in group" data-full="assets/lawn-mow-ranch.jpg">
-      <img src="assets/lawn-mow-ranch.jpg" width="1200" height="900" alt="A neatly mowed front and side lawn at a ranch home near Portsmouth, OH" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Weekly mowing</figcaption>
+    <figure class="gfig reveal" data-full="assets/lawn-mow-ranch.webp" tabindex="0" aria-label="View photo: a neatly mowed lawn at a ranch home near Portsmouth, full size">
+      <img src="assets/lawn-mow-ranch.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A neatly mowed front and side lawn at a ranch home near Portsmouth, OH" class="sq">
+      <figcaption>Weekly mowing</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl cursor-zoom-in group" data-full="assets/boxwood-trim-edging.jpg">
-      <img src="assets/boxwood-trim-edging.jpg" width="1200" height="850" alt="A neatly trimmed row of boxwood shrubs and clean bed edging" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Shrub trimming</figcaption>
+    <figure class="gfig reveal" data-full="assets/boxwood-trim-edging.webp" tabindex="0" aria-label="View photo: a neatly trimmed row of boxwood shrubs and clean bed edging, full size">
+      <img src="assets/boxwood-trim-edging.webp" width="1200" height="851" loading="lazy" decoding="async" alt="A neatly trimmed row of boxwood shrubs and clean bed edging" class="sq">
+      <figcaption>Shrub trimming</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl cursor-zoom-in group" data-full="assets/slope-bed-cleanup.jpg">
-      <img src="assets/slope-bed-cleanup.jpg" width="1200" height="661" alt="A cleared and freshly edged landscape bed along a sloped home foundation" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Slope &amp; bed cleanup</figcaption>
+    <figure class="gfig reveal" data-full="assets/slope-bed-cleanup.webp" tabindex="0" aria-label="View photo: a cleared and freshly edged landscape bed along a sloped home foundation, full size">
+      <img src="assets/slope-bed-cleanup.webp" width="1200" height="662" loading="lazy" decoding="async" alt="A cleared and freshly edged landscape bed along a sloped home foundation" class="sq">
+      <figcaption>Slope &amp; bed cleanup</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl col-span-2 cursor-zoom-in group" data-full="assets/scenic-field-mow.jpg">
-      <img src="assets/scenic-field-mow.jpg" width="1200" height="635" alt="A wide rolling field freshly mowed along a country property near Portsmouth" loading="lazy" class="gallery-img w-full h-full object-cover aspect-[2/1] sm:aspect-auto sm:h-full">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Acreage mowing</figcaption>
+    <figure class="gfig wide reveal" data-full="assets/scenic-field-mow.webp" tabindex="0" aria-label="View photo: a wide rolling field freshly mowed near Portsmouth, full size">
+      <img src="assets/scenic-field-mow.webp" width="1200" height="636" loading="lazy" decoding="async" alt="A wide rolling field freshly mowed along a country property near Portsmouth" class="ph">
+      <figcaption>Acreage mowing</figcaption>
     </figure>
-    <figure class="gallery-fig reveal relative overflow-hidden rounded-2xl cursor-zoom-in group" data-full="assets/commercial-grounds.jpg">
-      <img src="assets/commercial-grounds.jpg" width="1200" height="675" alt="Manicured commercial grounds with flagpole and landscaped greens" loading="lazy" class="gallery-img w-full h-full object-cover aspect-square">
-      <figcaption class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-forest3/80 to-transparent text-paper text-xs font-medium opacity-0 group-hover:opacity-100">Commercial grounds</figcaption>
+    <figure class="gfig reveal" data-full="assets/commercial-grounds.webp" tabindex="0" aria-label="View photo: manicured commercial grounds with flagpole and landscaped greens, full size">
+      <img src="assets/commercial-grounds.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Manicured commercial grounds with flagpole and landscaped greens" class="sq">
+      <figcaption>Commercial grounds</figcaption>
     </figure>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section id="process" class="bg-forest text-paper relative overflow-hidden">
-  <div class="absolute inset-0 grain opacity-40 pointer-events-none"></div>
-  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28">
-    <div class="reveal text-center max-w-2xl mx-auto">
-      <span class="label text-brass">05 — How it works</span>
-      <h2 class="disp font-light text-4xl lg:text-5xl mt-3 leading-tight">Easy from the first call.</h2>
-      <p class="text-paper/65 mt-5">No runaround and no pressure. Here's exactly what happens from the moment you reach out to a finished yard.</p>
+<section id="process" class="process sec">
+  <div class="grain"></div>
+  <div class="inner wrap">
+    <div class="reveal lede">
+      <span class="label" style="color:var(--brass)">05 — How it works</span>
+      <h2>Easy from the first call.</h2>
+      <p>No runaround and no pressure. Here's exactly what happens from the moment you reach out to a finished yard.</p>
     </div>
-
-    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="reveal rounded-3xl bg-white/5 border border-white/10 p-7">
-        <div class="flex items-center justify-between"><span class="disp text-5xl text-brass leading-none">1</span><svg class="ic w-7 h-7 text-brass" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
-        <h3 class="disp text-xl mt-5">Call or text</h3>
-        <p class="text-paper/65 text-sm mt-2 leading-relaxed">Tell us what you need — a weekly mow, fresh beds, or a slope that's gotten out of hand.</p>
+    <div class="steps">
+      <div class="reveal step">
+        <div class="top"><span class="n">1</span><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
+        <h3>Call or text</h3>
+        <p>Tell us what you need — a weekly mow, fresh beds, or a slope that's gotten out of hand.</p>
       </div>
-      <div class="reveal rounded-3xl bg-white/5 border border-white/10 p-7" style="transition-delay:.06s">
-        <div class="flex items-center justify-between"><span class="disp text-5xl text-brass leading-none">2</span><svg class="ic w-7 h-7 text-brass" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <h3 class="disp text-xl mt-5">We come look</h3>
-        <p class="text-paper/65 text-sm mt-2 leading-relaxed">Often the same day you call. We walk the property, listen to what you want, and offer suggestions.</p>
+      <div class="reveal step" style="transition-delay:.06s">
+        <div class="top"><span class="n">2</span><svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>We come look</h3>
+        <p>Often the same day you call. We walk the property, listen to what you want, and offer suggestions.</p>
       </div>
-      <div class="reveal rounded-3xl bg-white/5 border border-white/10 p-7" style="transition-delay:.12s">
-        <div class="flex items-center justify-between"><span class="disp text-5xl text-brass leading-none">3</span><svg class="ic w-7 h-7 text-brass" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <h3 class="disp text-xl mt-5">Get a fair quote</h3>
-        <p class="text-paper/65 text-sm mt-2 leading-relaxed">A clear, reasonable price up front — no surprises and no pressure to decide on the spot.</p>
+      <div class="reveal step" style="transition-delay:.12s">
+        <div class="top"><span class="n">3</span><svg class="ic" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Get a fair quote</h3>
+        <p>A clear, reasonable price up front — no surprises and no pressure to decide on the spot.</p>
       </div>
-      <div class="reveal rounded-3xl bg-white/5 border border-white/10 p-7" style="transition-delay:.18s">
-        <div class="flex items-center justify-between"><span class="disp text-5xl text-brass leading-none">4</span><svg class="ic w-7 h-7 text-brass" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3.3 3.6-5 9-5s9 1.7 9 5M7 12V7m4 5V5m4 7V8"/></svg></div>
-        <h3 class="disp text-xl mt-5">We get it done</h3>
-        <p class="text-paper/65 text-sm mt-2 leading-relaxed">The crew shows up, does the work right, and stays in touch until you're happy with it.</p>
+      <div class="reveal step" style="transition-delay:.18s">
+        <div class="top"><span class="n">4</span><svg class="ic" viewBox="0 0 24 24"><path d="M3 17h18M3 17c0-3.3 3.6-5 9-5s9 1.7 9 5M7 12V7m4 5V5m4 7V8"/></svg></div>
+        <h3>We get it done</h3>
+        <p>The crew shows up, does the work right, and stays in touch until you're happy with it.</p>
       </div>
     </div>
-    <div class="reveal text-center mt-12">
-      <a href="#quote" class="inline-flex items-center gap-2 rounded-full bg-brass text-forest3 px-7 py-3.5 font-semibold hover:bg-paper">Start with a free quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="reveal" style="text-align:center;margin-top:3rem">
+      <a href="#quote" class="btn btn-brass">Start with a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews" class="bg-paper2">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28">
-    <div class="reveal flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<section id="reviews" class="reviews sec">
+  <div class="wrap">
+    <div class="reveal sec-head">
       <div>
-        <span class="label text-brass3">06 — Reviews</span>
-        <h2 class="disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">What Portsmouth<br>neighbors say.</h2>
+        <span class="label eyebrow">06 — Reviews</span>
+        <h2>What Portsmouth<br>neighbors say.</h2>
       </div>
-      <div class="md:text-right">
-        <div class="flex md:justify-end text-brass" aria-hidden="true">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+      <div style="text-align:left">
+        <div class="rev-stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         </div>
-        <p class="text-inksoft text-sm mt-2 max-w-sm"><span class="font-semibold text-ink">4.9</span> out of 5 across 32 Google reviews.</p>
+        <p style="color:var(--ink-2);font-size:.875rem;margin-top:.5rem;max-width:24rem"><b style="color:var(--ink)">4.9</b> out of 5 across 32 Google reviews.</p>
       </div>
     </div>
 
-    <div class="mt-12 grid md:grid-cols-2 gap-5">
-      <figure class="reveal rounded-3xl bg-white border border-stoneline shadow-card p-7 lg:p-8 flex flex-col">
-        <div class="flex text-brass" aria-hidden="true">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+    <div class="rev-grid">
+      <figure class="reveal rev-card">
+        <div class="qstars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         </div>
-        <blockquote class="disp text-xl lg:text-2xl text-ink leading-snug mt-5 flex-1">“Had an eyesore just outside my fence line — tall weeds, half-dead evergreen bushes, all on a large slope. The guys worked their tails off. It now looks great.”</blockquote>
-        <figcaption class="mt-6 flex items-center gap-3 pt-5 border-t border-stoneline">
-          <span class="w-10 h-10 rounded-full bg-forest text-brass grid place-items-center disp font-semibold">N</span>
-          <span><span class="block font-semibold text-ink text-sm">Nancy B.</span><span class="block text-xs text-inksoft">From our Google reviews</span></span>
+        <blockquote>“Had an eyesore just outside my fence line — tall weeds, half-dead evergreen bushes, all on a large slope. The guys worked their tails off. It now looks great.”</blockquote>
+        <figcaption>
+          <span class="rev-av">N</span>
+          <span><span class="nm">Nancy B.</span><span class="src">From our Google reviews</span></span>
         </figcaption>
       </figure>
-      <figure class="reveal rounded-3xl bg-white border border-stoneline shadow-card p-7 lg:p-8 flex flex-col" style="transition-delay:.06s">
-        <div class="flex text-brass" aria-hidden="true">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+      <figure class="reveal rev-card" style="transition-delay:.06s">
+        <div class="qstars" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
         </div>
-        <blockquote class="disp text-xl lg:text-2xl text-ink leading-snug mt-5 flex-1">“Justin came the day that I called to give me an estimate. He gave me suggestions which I appreciated, and was very patient when I changed my mind a couple times. The price was very reasonable.”</blockquote>
-        <figcaption class="mt-6 flex items-center gap-3 pt-5 border-t border-stoneline">
-          <span class="w-10 h-10 rounded-full bg-forest text-brass grid place-items-center disp font-semibold">C</span>
-          <span><span class="block font-semibold text-ink text-sm">Christi</span><span class="block text-xs text-inksoft">From our Google reviews</span></span>
+        <blockquote>“Justin came the day that I called to give me an estimate. He gave me suggestions which I appreciated, and was very patient when I changed my mind a couple times. The price was very reasonable.”</blockquote>
+        <figcaption>
+          <span class="rev-av">C</span>
+          <span><span class="nm">Christi</span><span class="src">From our Google reviews</span></span>
         </figcaption>
       </figure>
     </div>
-    <p class="reveal text-center text-inksoft text-sm mt-9">Happy with our work? <a href="https://search.google.com/local/writereview?placeid=ChIJ8QHw7NjaKCQRJnbD11GiD6c" target="_blank" rel="noopener" class="text-forest font-semibold underline-grow">Leave us a Google review</a> — it means a lot to a small local crew.</p>
+    <p class="reveal rev-foot">Happy with our work? <a href="https://search.google.com/local/writereview?placeid=ChIJ8QHw7NjaKCQRJnbD11GiD6c" target="_blank" rel="noopener" class="underline-grow">Leave us a Google review</a> — it means a lot to a small local crew.</p>
   </div>
 </section>
 
 <!-- QUOTE + CONTACT -->
-<section id="quote" class="max-w-7xl mx-auto px-5 sm:px-8 py-12 lg:py-28">
-  <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
-    <!-- form -->
-    <div class="reveal">
-      <span class="label text-brass3">07 — Free quote</span>
-      <h2 class="disp font-light text-ink text-4xl lg:text-5xl mt-3 leading-tight">Tell us about<br>your yard.</h2>
-      <p class="text-inksoft mt-5 max-w-md">Send a few details and we'll get back to you — usually the same day — with a free, no-pressure quote. The fastest way to reach us is a quick call or text.</p>
+<section id="quote" class="sec wrap">
+  <div class="quote-grid">
+    <div class="reveal quote-intro">
+      <span class="label eyebrow">07 — Free quote</span>
+      <h2>Tell us about<br>your yard.</h2>
+      <p>Send a few details and we'll get back to you — usually the same day — with a free, no-pressure quote. The fastest way to reach us is a quick call or text.</p>
 
-      <!-- one-tap contact: reach us without the form -->
-      <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <a href="tel:+16065416612" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm hover:bg-forest hover:text-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
-        <a href="sms:+16065416612" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm hover:bg-forest hover:text-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>Text us</a>
+      <div class="quick-contact">
+        <a href="tel:+16065416612" class="btn btn-ghost btn-sm"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
+        <a href="sms:+16065416612" class="btn btn-ghost btn-sm"><svg class="ic" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>Text us</a>
       </div>
-      <p class="text-xs text-inksoft mt-3">Or fill out the quick form below — whatever's easiest.</p>
+      <p class="form-note">Or fill out the quick form below — whatever's easiest.</p>
 
-      <form id="quoteform" class="mt-7 grid sm:grid-cols-2 gap-4" novalidate>
-        <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-name">Name <span class="text-brass3">*</span></label>
-          <input id="q-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="q-name-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Jane Doe">
-          <p id="q-name-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please tell us your name.</p>
+      <form id="quoteform" novalidate>
+        <div class="fld">
+          <label for="q-name">Name <span class="req">*</span></label>
+          <input id="q-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="q-name-err" class="field" placeholder="Jane Doe">
+          <p id="q-name-err" class="fld-err">Please tell us your name.</p>
         </div>
-        <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-phone">Phone</label>
-          <input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="(740) 000-0000">
-          <p id="q-phone-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid phone number.</p>
+        <div class="fld">
+          <label for="q-phone">Phone</label>
+          <input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err" class="field" placeholder="(740) 000-0000">
+          <p id="q-phone-err" class="fld-err">Please enter a valid phone number.</p>
         </div>
-        <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-email">Email</label>
-          <input id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="you@email.com">
-          <p id="q-email-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please enter a valid email address.</p>
+        <div class="fld">
+          <label for="q-email">Email</label>
+          <input id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err" class="field" placeholder="you@email.com">
+          <p id="q-email-err" class="fld-err">Please enter a valid email address.</p>
         </div>
-        <div class="sm:col-span-2">
-          <p id="q-contact-err" class="hidden -mt-1 text-xs font-medium" style="color:#a83b22">Please add a phone or email so we can reach you.</p>
-        </div>
-        <div class="sm:col-span-1">
-          <label class="label text-[.66rem] text-inksoft" for="q-service">Service <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
-          <select id="q-service" name="service" class="field w-full mt-1.5 px-4 py-3 text-sm text-ink">
+        <div class="fld">
+          <label for="q-service">Service <span class="opt">(optional)</span></label>
+          <select id="q-service" name="service" class="field">
             <option>Lawn mowing</option>
             <option>Landscaping &amp; beds</option>
             <option>Slope, grading &amp; cleanup</option>
@@ -619,58 +911,54 @@ tailwind.config={theme:{extend:{
             <option>Something else</option>
           </select>
         </div>
-        <div class="sm:col-span-2">
-          <label class="label text-[.66rem] text-inksoft" for="q-address">Property address <span class="text-brass3">*</span></label>
-          <input id="q-address" name="address" type="text" autocomplete="street-address" required aria-required="true" aria-describedby="q-address-err" class="field w-full mt-1.5 px-4 py-3 text-sm" placeholder="Street, City, ZIP (Portsmouth area)">
-          <p id="q-address-err" class="hidden mt-1.5 text-xs font-medium" style="color:#a83b22">Please add the property address.</p>
+        <div class="fld full">
+          <p id="q-contact-err" class="fld-err" style="margin-top:0">Please add a phone or email so we can reach you.</p>
         </div>
-        <div class="sm:col-span-2">
-          <label class="label text-[.66rem] text-inksoft" for="q-message">What are you looking for? <span class="text-inksoft/60 font-normal normal-case tracking-normal">(optional)</span></label>
-          <textarea id="q-message" name="message" rows="4" class="field w-full mt-1.5 px-4 py-3 text-sm resize-none" placeholder="Acreage, the look you're after, timing — anything helps."></textarea>
+        <div class="fld full">
+          <label for="q-address">Property address <span class="req">*</span></label>
+          <input id="q-address" name="address" type="text" autocomplete="street-address" required aria-required="true" aria-describedby="q-address-err" class="field" placeholder="Street, City, ZIP (Portsmouth area)">
+          <p id="q-address-err" class="fld-err">Please add the property address.</p>
         </div>
-        <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center gap-4 mt-1">
-          <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full btn-pri px-7 py-4 font-semibold w-full sm:w-auto">
-            Send my request
-            <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
-          </button>
-          <p class="text-xs text-inksoft">Prefer to talk? Text <a href="sms:+16065416612" class="text-forest font-semibold underline-grow">(606) 541-6612</a></p>
+        <div class="fld full">
+          <label for="q-message">What are you looking for? <span class="opt">(optional)</span></label>
+          <textarea id="q-message" name="message" rows="4" class="field" placeholder="Acreage, the look you're after, timing — anything helps."></textarea>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-pri">Send my request <svg class="ic" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg></button>
+          <p class="talk">Prefer to talk? Text <a href="sms:+16065416612" class="underline-grow">(606) 541-6612</a></p>
         </div>
       </form>
-      <!-- success -->
-      <div id="quotesuccess" class="hidden mt-8 rounded-3xl bg-forest text-paper p-8 text-center shadow-soft">
-        <div class="w-14 h-14 rounded-full bg-white/10 text-brass grid place-items-center mx-auto">
-          <svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg>
-        </div>
-        <h3 class="disp text-2xl mt-5">Thanks — got your details.</h3>
-        <p class="text-paper/70 mt-2 text-sm max-w-sm mx-auto" id="successmsg">To lock in your free quote the fastest, give us a quick call or text at (606) 541-6612 — we'll get right back to you.</p>
-        <a href="tel:+16065416612" class="inline-flex items-center gap-2 mt-6 rounded-full bg-brass text-forest3 px-6 py-3 font-semibold">Call (606) 541-6612</a>
+      <div id="quotesuccess">
+        <div class="check"><svg class="ic" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></svg></div>
+        <h3>Thanks — got your details.</h3>
+        <p id="successmsg">To lock in your free quote the fastest, give us a quick call or text at (606) 541-6612 — we'll get right back to you.</p>
+        <a href="tel:+16065416612" class="btn btn-brass" style="margin-top:1.5rem">Call (606) 541-6612</a>
       </div>
     </div>
 
-    <!-- contact panel -->
     <div id="visit" class="reveal">
-      <div class="rounded-3xl overflow-hidden border border-stoneline shadow-card bg-white">
-        <div class="aspect-[16/10] w-full bg-paper2">
-          <iframe title="Map to Porters LawnCare &amp; Landscaping, 1714 Poplar St, Portsmouth, OH" class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1714%20Poplar%20St%2C%20Portsmouth%2C%20OH%2045662&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+      <div class="contact-card">
+        <div class="map">
+          <iframe title="Map to Porters LawnCare &amp; Landscaping, 1714 Poplar St, Portsmouth, OH" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1714%20Poplar%20St%2C%20Portsmouth%2C%20OH%2045662&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
         </div>
-        <div class="p-7 grid sm:grid-cols-2 gap-7">
+        <div class="contact-body">
           <div>
-            <span class="label text-[.66rem] text-brass3">Get in touch</span>
-            <ul class="mt-4 space-y-4 text-sm">
-              <li class="flex gap-3"><svg class="ic w-5 h-5 text-moss shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span><span class="block text-inksoft text-xs">Call or text</span><a href="tel:+16065416612" class="font-semibold text-ink hover:text-moss">(606) 541-6612</a></span></li>
-              <li class="flex gap-3"><svg class="ic w-5 h-5 text-moss shrink-0 mt-0.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><span class="block text-inksoft text-xs">Based in</span><a href="https://www.google.com/maps/dir/?api=1&destination=1714%20Poplar%20St%2C%20Portsmouth%2C%20OH%2045662" target="_blank" rel="noopener" class="font-semibold text-ink hover:text-moss">1714 Poplar St, Portsmouth, OH 45662</a></span></li>
+            <span class="label">Get in touch</span>
+            <ul class="contact-list">
+              <li><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span><span class="k">Call or text</span><a href="tel:+16065416612" class="v">(606) 541-6612</a></span></li>
+              <li><svg class="ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><span class="k">Based in</span><a href="https://www.google.com/maps/dir/?api=1&destination=1714%20Poplar%20St%2C%20Portsmouth%2C%20OH%2045662" target="_blank" rel="noopener" class="v">1714 Poplar St, Portsmouth, OH 45662</a></span></li>
             </ul>
-            <a href="https://search.google.com/local/writereview?placeid=ChIJ8QHw7NjaKCQRJnbD11GiD6c" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-full border border-stoneline text-forest font-semibold px-5 py-2.5 text-sm hover:bg-forest hover:text-paper hover:border-forest"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>Leave a Google review</a>
+            <a href="https://search.google.com/local/writereview?placeid=ChIJ8QHw7NjaKCQRJnbD11GiD6c" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:1.5rem"><svg class="ic" viewBox="0 0 24 24"><path d="m12 2 3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>Leave a Google review</a>
           </div>
           <div>
-            <span class="label text-[.66rem] text-brass3">Hours</span>
-            <dl class="mt-4 text-sm">
-              <div class="flex justify-between py-2 border-b border-stoneline"><dt class="text-inksoft">Mon – Fri</dt><dd class="font-medium text-ink">6:00a – 6:00p</dd></div>
-              <div class="flex justify-between py-2 border-b border-stoneline"><dt class="text-inksoft">Saturday</dt><dd class="font-medium text-ink">7:00a – 8:00p</dd></div>
-              <div class="flex justify-between py-2"><dt class="text-inksoft">Sunday</dt><dd class="font-medium text-ink">6:00a – 6:00p</dd></div>
+            <span class="label">Hours</span>
+            <dl class="hours">
+              <div class="r"><dt>Mon – Fri</dt><dd>6:00a – 6:00p</dd></div>
+              <div class="r"><dt>Saturday</dt><dd>7:00a – 8:00p</dd></div>
+              <div class="r"><dt>Sunday</dt><dd>6:00a – 6:00p</dd></div>
             </dl>
-            <div class="mt-5 rounded-2xl bg-paper2 p-4">
-              <p class="text-xs text-inksoft leading-relaxed"><span class="font-semibold text-ink">On the job seven days a week.</span> Call or text during business hours and we'll get right back to you.</p>
+            <div class="hours-note">
+              <p><b>On the job seven days a week.</b> Call or text during business hours and we'll get right back to you.</p>
             </div>
           </div>
         </div>
@@ -679,56 +967,54 @@ tailwind.config={theme:{extend:{
   </div>
 </section>
 
-<!-- FINAL CTA BAND -->
-<section class="bg-forest text-paper relative overflow-hidden">
-  <div class="absolute inset-0 grain opacity-40 pointer-events-none"></div>
-  <div class="relative max-w-4xl mx-auto px-5 sm:px-8 py-14 lg:py-24 text-center">
-    <span class="reveal label text-brass">Ready when you are</span>
-    <h2 class="reveal disp font-light text-3xl lg:text-[2.7rem] leading-[1.08] mt-4">Let's get your yard<br>looking right.</h2>
-    <p class="reveal text-paper/70 mt-5 max-w-xl mx-auto leading-relaxed">Whether it's a weekly mow, a fresh set of beds, or a slope that's gotten away from you — call or text and we'll come take a look, usually the same day.</p>
-    <div class="reveal mt-9 flex flex-wrap items-center justify-center gap-3">
-      <a href="tel:+16065416612" class="inline-flex items-center gap-2 rounded-full bg-brass text-forest3 px-7 py-4 font-semibold hover:bg-paper"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
-      <a href="#quote" class="inline-flex items-center gap-2 rounded-full border border-paper/40 text-paper px-7 py-4 font-semibold hover:bg-white/10">Request a free quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="grain"></div>
+  <div class="inner wrap">
+    <span class="reveal label" style="color:var(--brass)">Ready when you are</span>
+    <h2 class="reveal">Let's get your yard<br>looking right.</h2>
+    <p class="reveal">Whether it's a weekly mow, a fresh set of beds, or a slope that's gotten away from you — call or text and we'll come take a look, usually the same day.</p>
+    <div class="reveal cta">
+      <a href="tel:+16065416612" class="btn btn-brass"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call (606) 541-6612</a>
+      <a href="#quote" class="btn btn-ghost-light">Request a free quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="relative bg-forest3 text-paper/70 overflow-hidden pb-24 sm:pb-0">
-  <!-- fresh-cut stripe edge (brand motif) -->
-  <div class="h-2.5" style="background-image:repeating-linear-gradient(115deg,#234438 0 18px,#356350 18px 36px)"></div>
-  <!-- oversized wordmark watermark -->
-  <div aria-hidden="true" class="pointer-events-none select-none absolute inset-x-0 -bottom-4 sm:-bottom-8 text-center disp font-semibold leading-none text-white/[.035]" style="font-size:clamp(5.5rem,21vw,17rem)">Porters</div>
-  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-14 grid md:grid-cols-[1.6fr_1fr_1fr] gap-10">
-    <div>
-      <div class="flex items-center gap-2.5">
-        <span class="w-10 h-10 rounded-lg bg-white/8 text-brass grid place-items-center disp font-semibold text-xl border border-brass/25">P</span>
-        <span class="leading-none"><span class="block disp text-lg text-paper font-semibold">Porters</span><span class="block label text-[.62rem] text-paper/65 mt-0.5">Lawncare &amp; Landscaping</span></span>
+<footer>
+  <div class="foot-stripe"></div>
+  <div class="foot-mark" aria-hidden="true">Porters</div>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="row">
+        <span class="glyph" aria-hidden="true">P</span>
+        <span style="line-height:1"><span class="nm">Porters</span><span class="sub">Lawncare &amp; Landscaping</span></span>
       </div>
-      <p class="mt-5 text-sm max-w-xs leading-relaxed">Mowing, mulch beds, and the rough slope &amp; cleanup work — done the right way for Portsmouth, OH and the towns around it. A local crew rated 4.9 on Google.</p>
-      <a href="tel:+16065416612" class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/5 text-paper font-semibold px-5 py-3 text-sm hover:bg-brass hover:text-forest3"><svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call or text (606) 541-6612</a>
+      <p>Mowing, mulch beds, and the rough slope &amp; cleanup work — done the right way for Portsmouth, OH and the towns around it. A local crew rated 4.9 on Google.</p>
+      <a href="tel:+16065416612" class="foot-call"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call or text (606) 541-6612</a>
     </div>
-    <div>
-      <span class="label text-[.66rem] text-paper/60">Explore</span>
-      <ul class="mt-4 space-y-2.5 text-sm">
-        <li><a href="#services" class="hover:text-brass">Services</a></li>
-        <li><a href="#work" class="hover:text-brass">Our work</a></li>
-        <li><a href="#area" class="hover:text-brass">Service area</a></li>
-        <li><a href="#reviews" class="hover:text-brass">Reviews</a></li>
-        <li><a href="#quote" class="hover:text-brass">Free quote</a></li>
+    <div class="foot-col">
+      <span class="label">Explore</span>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#area">Service area</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#quote">Free quote</a></li>
       </ul>
     </div>
-    <div>
-      <span class="label text-[.66rem] text-paper/60">Contact</span>
-      <ul class="mt-4 space-y-2.5 text-sm">
-        <li><a href="tel:+16065416612" class="hover:text-brass">(606) 541-6612</a></li>
-        <li class="text-paper/55">1714 Poplar St,<br>Portsmouth, OH 45662</li>
-        <li class="text-paper/55">Mon–Sun · 6:00a–6:00p<br>Sat · 7:00a–8:00p</li>
+    <div class="foot-col">
+      <span class="label">Contact</span>
+      <ul>
+        <li><a href="tel:+16065416612">(606) 541-6612</a></li>
+        <li class="muted">1714 Poplar St,<br>Portsmouth, OH 45662</li>
+        <li class="muted">Mon–Sun · 6:00a–6:00p<br>Sat · 7:00a–8:00p</li>
       </ul>
     </div>
   </div>
-  <div class="relative border-t border-white/8">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-paper/65">
+  <div class="foot-bar">
+    <div class="row">
       <p>© 2026 Porters LawnCare &amp; Landscaping. All rights reserved.</p>
       <p>Portsmouth, Ohio · Lawn care &amp; landscaping done right.</p>
     </div>
@@ -736,15 +1022,15 @@ tailwind.config={theme:{extend:{
 </footer>
 </main>
 
-<!-- MOBILE STICKY CTA (visible immediately on phones — primary "Get a Free Quote" can't be missed) -->
-<div id="mcta" class="sm:hidden fixed bottom-0 inset-x-0 z-[80] glass border-t border-stoneline shadow-lift px-4 py-3 flex gap-3" style="padding-bottom:max(0.75rem,env(safe-area-inset-bottom))">
-  <a href="tel:+16065416612" aria-label="Call Porters LawnCare at (606) 541-6612" class="shrink-0 inline-flex items-center justify-center gap-2 rounded-full border border-forest text-forest font-semibold px-5 py-3.5 text-sm"><svg class="ic w-5 h-5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call</a>
-  <a href="#quote" aria-label="Get a free quote" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full btn-pri font-semibold py-3.5 text-sm">Get a Free Quote <svg class="ic w-4 h-4" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<!-- MOBILE STICKY CTA -->
+<div id="mcta">
+  <a href="tel:+16065416612" aria-label="Call Porters LawnCare at (606) 541-6612" class="btn btn-ghost call"><svg class="ic" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>Call</a>
+  <a href="#quote" aria-label="Get a free quote" class="btn btn-pri quote">Get a Free Quote <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 
 <!-- LIGHTBOX -->
 <div class="lb" id="lightbox" aria-hidden="true">
-  <button aria-label="Close" class="absolute top-5 right-5 text-paper/80 hover:text-paper w-11 h-11 grid place-items-center"><svg class="ic w-7 h-7" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="x" aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
   <img id="lbimg" src="" alt="">
 </div>
 
@@ -754,7 +1040,6 @@ tailwind.config={theme:{extend:{
 (function(){
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
 
-  // keep anchor offset locked to the real height of the fixed header
   var chrome=document.getElementById('chrome');
   function syncChrome(){
     var h=chrome?chrome.offsetHeight:96;
@@ -764,18 +1049,15 @@ tailwind.config={theme:{extend:{
   window.portersSyncChrome=syncChrome;
   syncChrome();window.addEventListener('resize',syncChrome,{passive:true});
 
-  // header scroll state + scroll-progress bar (mobile CTA is always visible on phones)
   var hdr=document.getElementById('hdrbar'),prog=document.getElementById('progbar');
   function onScroll(){
     var y=window.scrollY;
-    if(y>30){hdr.classList.add('hdr-solid');}
-    else{hdr.classList.remove('hdr-solid');}
+    if(y>30){hdr.classList.add('solid');}else{hdr.classList.remove('solid');}
     var max=document.body.scrollHeight-window.innerHeight;
     if(prog)prog.style.transform='scaleX('+(max>0?y/max:0)+')';
   }
   onScroll();window.addEventListener('scroll',onScroll,{passive:true});
 
-  // parallax: elements drift slower/faster than scroll (subtle, premium)
   var px=[].slice.call(document.querySelectorAll('[data-parallax]'));
   var ticking=false;
   function parallax(){
@@ -792,22 +1074,20 @@ tailwind.config={theme:{extend:{
     window.addEventListener('resize',parallax,{passive:true});
   }
 
-  // mobile menu
-  var mobile=document.getElementById('mobile'),panel=document.getElementById('mobilepanel'),menubtn=document.getElementById('menubtn');
-  function openM(){mobile.classList.remove('hidden');document.body.style.overflow='hidden';requestAnimationFrame(function(){panel.classList.remove('translate-x-full')});}
-  function closeM(){panel.classList.add('translate-x-full');document.body.style.overflow='';setTimeout(function(){mobile.classList.add('hidden')},300);}
+  var mobile=document.getElementById('mobile'),menubtn=document.getElementById('menubtn');
+  function openM(){mobile.classList.add('show');document.body.style.overflow='hidden';menubtn.setAttribute('aria-expanded','true');}
+  function closeM(){mobile.classList.remove('show');document.body.style.overflow='';menubtn.setAttribute('aria-expanded','false');}
   menubtn.addEventListener('click',openM);
   mobile.addEventListener('click',function(e){if(e.target.hasAttribute('data-close')||e.target.closest('[data-close]'))closeM();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobile.classList.contains('show'))closeM();});
 
-  // reveal on scroll
   var rev=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
     rev.forEach(function(el){io.observe(el);});
-    setTimeout(function(){rev.forEach(function(el){el.classList.add('in');});},2500); // failsafe
+    setTimeout(function(){rev.forEach(function(el){el.classList.add('in');});},2500);
   }else{rev.forEach(function(el){el.classList.add('in');});}
 
-  // hero promise card: replay slide-from-left each time it scrolls into view
   var sil=document.querySelector('.slide-in-left');
   if(sil){
     if(reduce||!('IntersectionObserver' in window)){sil.classList.add('in');}
@@ -817,15 +1097,13 @@ tailwind.config={theme:{extend:{
     }
   }
 
-  // active nav link
-  var links=[].slice.call(document.querySelectorAll('nav .navlink'));
+  var links=[].slice.call(document.querySelectorAll('.nav-desk .navlink'));
   var secs=links.map(function(l){return document.querySelector(l.getAttribute('href'));}).filter(Boolean);
   if('IntersectionObserver' in window){
     var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-45% 0px -50% 0px'});
     secs.forEach(function(s){io2.observe(s);});
   }
 
-  // count-up rating
   var rc=document.querySelector('[data-count]');
   if(rc&&'IntersectionObserver' in window){
     var done=false;
@@ -833,12 +1111,10 @@ tailwind.config={theme:{extend:{
     io3.observe(rc);
   }
 
-  // gallery lightbox (mouse + keyboard accessible)
   var lb=document.getElementById('lightbox'),lbimg=document.getElementById('lbimg');
-  document.querySelectorAll('.gallery-fig').forEach(function(f){
-    f.setAttribute('role','button');f.setAttribute('tabindex','0');
+  document.querySelectorAll('.gfig').forEach(function(f){
+    f.setAttribute('role','button');
     var im=f.querySelector('img');
-    if(!f.getAttribute('aria-label'))f.setAttribute('aria-label','View photo'+(im&&im.alt?': '+im.alt:'')+' full size');
     function openLb(){lbimg.src=f.getAttribute('data-full');lbimg.alt=im?im.alt:'';lb.classList.add('open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
     f.addEventListener('click',openLb);
     f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLb();}});
@@ -847,7 +1123,6 @@ tailwind.config={theme:{extend:{
   lb.addEventListener('click',function(e){if(e.target===lb||e.target.closest('button'))closeLb();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 
-  // quote form — name + property address required, plus at least one contact method (phone OR email)
   var form=document.getElementById('quoteform'),success=document.getElementById('quotesuccess');
   function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
   function digits(v){return (v.match(/\d/g)||[]).length;}
@@ -857,36 +1132,30 @@ tailwind.config={theme:{extend:{
   var qAddress=document.getElementById('q-address'),qAddressErr=document.getElementById('q-address-err');
   var qContactErr=document.getElementById('q-contact-err');
   function setErr(el,err,bad){
-    if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err){err.setAttribute('role','alert');err.classList.remove('hidden');}}
-    else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.add('hidden');}
+    if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err){err.setAttribute('role','alert');err.classList.add('show');}}
+    else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.remove('show');}
   }
   function validateQuote(){
     var ok=true;
     var nameOk=qName.value.trim().length>=2;setErr(qName,qNameErr,!nameOk);if(!nameOk)ok=false;
     var addressOk=qAddress.value.trim().length>=4;setErr(qAddress,qAddressErr,!addressOk);if(!addressOk)ok=false;
     var phoneVal=qPhone.value.trim(),emailVal=qEmail.value.trim();
-    // a filled contact field must itself be valid
     var phoneBad=phoneVal.length>0&&digits(phoneVal)<10;setErr(qPhone,qPhoneErr,phoneBad);if(phoneBad)ok=false;
     var emailBad=emailVal.length>0&&!validEmail(emailVal);setErr(qEmail,qEmailErr,emailBad);if(emailBad)ok=false;
-    // need at least one contact method present
     var hasContact=(phoneVal.length>0&&!phoneBad)||(emailVal.length>0&&!emailBad);
-    if(!hasContact){qContactErr.setAttribute('role','alert');qContactErr.classList.remove('hidden');if(!phoneBad&&!emailBad){qPhone.classList.add('err');qPhone.setAttribute('aria-invalid','true');qEmail.classList.add('err');qEmail.setAttribute('aria-invalid','true');}ok=false;}
-    else{qContactErr.classList.add('hidden');}
+    if(!hasContact){qContactErr.setAttribute('role','alert');qContactErr.classList.add('show');if(!phoneBad&&!emailBad){qPhone.classList.add('err');qPhone.setAttribute('aria-invalid','true');qEmail.classList.add('err');qEmail.setAttribute('aria-invalid','true');}ok=false;}
+    else{qContactErr.classList.remove('show');}
     return ok;
   }
   [qName,qAddress,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
   form.addEventListener('submit',function(e){
     e.preventDefault();
     form.dataset.tried='1';
-    if(!validateQuote()){
-      var firstBad=form.querySelector('.err');if(firstBad)firstBad.focus();
-      return;
-    }
-    // No back-end mailbox on file - confirm receipt and route to the fastest channel (call/text).
+    if(!validateQuote()){var firstBad=form.querySelector('.err');if(firstBad)firstBad.focus();return;}
     var data={};new FormData(form).forEach(function(v,k){data[k]=v;});
     var name=(data.name||'').trim().split(' ')[0];
-    document.getElementById('successmsg').textContent=(name?'Thanks, '+name+' - ':'Thanks - ')+"to lock in your free quote the fastest, give us a quick call or text at (606) 541-6612 and we'll get right back to you.";
-    form.style.display='none';success.classList.remove('hidden');success.scrollIntoView({behavior:'smooth',block:'center'});
+    document.getElementById('successmsg').textContent=(name?'Thanks, '+name+' — ':'Thanks — ')+"to lock in your free quote the fastest, give us a quick call or text at (606) 541-6612 and we'll get right back to you.";
+    form.style.display='none';success.style.display='block';success.scrollIntoView({behavior:'smooth',block:'center'});
   });
 })();
 </script>
@@ -895,7 +1164,7 @@ tailwind.config={theme:{extend:{
 {
   "@context":"https://schema.org","@type":"HomeAndConstructionBusiness",
   "name":"Porters LawnCare & Landscaping",
-  "image":"https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.jpg",
+  "image":"https://savcab.github.io/websites/porters-lawncare/assets/hero-hillside-stripes.webp",
   "telephone":"+16065416612",
   "url":"https://savcab.github.io/websites/porters-lawncare/",
   "priceRange":"$$",

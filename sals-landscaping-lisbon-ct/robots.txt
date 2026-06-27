@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/sals-landscaping-lisbon-ct/sitemap.xml

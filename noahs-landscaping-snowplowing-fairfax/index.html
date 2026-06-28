@@ -76,6 +76,9 @@ p{max-width:var(--measure)}
 .icon.fill{fill:currentColor;stroke:none}
 .section{padding-block:var(--section-y)}
 .lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* responsive copy — condensed text on phones, full copy on laptop */
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
 /* buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
 .btn-primary{background:var(--ice);color:#fff;box-shadow:var(--sh-2)}
@@ -373,7 +376,7 @@ html:not(.js) .rv{opacity:1;transform:none}
   <div class="wrap hero-content">
     <span class="eyebrow"><span class="tick"></span>Landscaping &amp; snow management &middot; Fairfax, VT</span>
     <h1>Landscaping &amp; snow care for Fairfax, <em>all year round</em>.</h1>
-    <p class="sub">From crisp-cut lawns, fresh beds and seasonal cleanups to driveways cleared before sunrise &mdash; one local crew looks after your property through every Vermont season.</p>
+    <p class="sub"><span class="only-lap">From crisp-cut lawns, fresh beds and seasonal cleanups to driveways cleared before sunrise &mdash; one local crew looks after your property through every Vermont season.</span><span class="only-mob">One local crew for your lawn, beds and snow &mdash; every Vermont season.</span></p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
       <a class="btn btn-ghost on-dark" href="#work">See our work</a>

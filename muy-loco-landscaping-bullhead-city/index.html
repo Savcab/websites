@@ -326,6 +326,17 @@ form.sent .fc-body{display:none}
 .lb-prev{left:1rem;top:50%;transform:translateY(-50%)}
 .lb-next{right:1rem;top:50%;transform:translateY(-50%)}
 
+/* Mobile refinements — comfortable tap targets + tidy hero social proof (mobile only; desktop untouched) */
+@media(max-width:600px){
+  .info-row a{padding-block:.55rem}     /* call/email links → >=44px thumb targets */
+  .info-list{gap:.7rem}
+}
+@media(max-width:360px){
+  .hbadge{font-size:.86rem;gap:.4rem}   /* keep the rating line on one row at 320/360 */
+  .hbadge .stars svg{width:15px;height:15px}
+  .hero-cta .btn{flex:1 1 100%}         /* full-width stacked CTAs read cleaner at the narrowest widths */
+}
+
 /* Reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}

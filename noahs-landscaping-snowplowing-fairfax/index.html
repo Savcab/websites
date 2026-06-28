@@ -282,6 +282,16 @@ html:not(.js) .rv{opacity:1;transform:none}
   .sticky-cta{display:flex}
   .hours-foot{margin-top:1rem}
   footer{padding-bottom:5.5rem}
+  /* compact wordmark so it never wraps past the bar / overlaps content */
+  .hdr-in{height:64px}
+  .hdr-in .brand{font-size:1.06rem;line-height:1.1}
+  .hdr-in .brand .logo{width:34px;height:34px}
+  .hdr-in .brand .logo svg{width:20px;height:20px}
+  .hdr-in .brand .yr{display:none}
+  /* hero flows from just below the fixed header — no flex-end overflow under it */
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
 }
 @media (max-width:540px){
   .season-strip{grid-template-columns:1fr}

@@ -1,233 +1,730 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noah's Landscaping &amp; Snowplowing LLC | Fairfax, VT Landscaping &amp; Snow Removal</title>
-<meta name="description" content="Noah's Landscaping & Snowplowing LLC — landscaping, lawn care, hardscaping and winter snowplowing in Fairfax, VT. 4.9 stars across 47 reviews. Call (802) 735-5975.">
-<link rel="canonical" href="https://savcab.github.io/website-builder/5cdb58dbb01af6a7/">
-<meta property="og:title" content="Noah's Landscaping & Snowplowing LLC — Fairfax, VT">
-<meta property="og:description" content="Year-round: landscaping in summer, snowplowing in winter. 4.9 stars, 47 reviews. Call (802) 735-5975.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping &amp; Snow Plowing in Fairfax, VT | Noah&rsquo;s</title>
+<meta name="description" content="Local Fairfax, VT crew for year-round property care: lawn care, beds and cleanups in summer; driveway plowing and snow removal in winter. 4.9&#9733; from 47 neighbors. Call or text for a free quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/">
+<meta name="theme-color" content="#244b3d">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Noah&rsquo;s Landscaping &amp; Snowplowing — Fairfax, VT">
+<meta property="og:description" content="One local crew for all four seasons in Fairfax: lawn care &amp; beds in summer, driveway plowing &amp; snow removal in winter.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1200&q=70&fm=jpg&fit=crop">
+<meta property="og:url" content="https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/">
+<meta property="og:image" content="https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/assets/hero-striped-lawn-fairfax.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23198754'/%3E%3Ctext x='50' y='70' font-size='52' font-family='Arial' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23244b3d'/%3E%3Cpath d='M16 5l5 8h-3l4 7h-4l3 5h-16l3-5h-4l4-7h-3z' fill='%23eef4f0'/%3E%3Ccircle cx='16' cy='27' r='1.6' fill='%237fb0c4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script>
-tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#198754',dark:'#136943',ink:'#0F211A'}},fontFamily:{sans:['Manrope','sans-serif']},boxShadow:{soft:'0 12px 44px -14px rgba(15,33,26,.22)'}}}}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-html{scroll-behavior:smooth}
-body{font-family:Manrope,sans-serif}
-.ic{width:1em;height:1em;display:inline-block;vertical-align:-.125em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.card-lift{transition:transform .25s ease,box-shadow .25s ease}
-.card-lift:hover{transform:translateY(-6px);box-shadow:0 22px 50px -18px rgba(15,33,26,.3)}
-.eyebrow:after{content:"";display:block;width:34px;height:3px;border-radius:2px;background:#198754;margin-top:10px}
-.gimg{transition:transform .4s ease}
-.gtile:hover .gimg{transform:scale(1.06)}
-.navlink.active{color:#198754}
+:root{
+  /* SPACING — 4/8 grid */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  /* TYPE */
+  --h1:clamp(2.25rem,5.2vw,3.65rem);
+  --h2:clamp(1.7rem,3.4vw,2.6rem);
+  --h3:1.3rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.08; --track-head:-.018em; --track-eye:.16em;
+  /* COLOR — cool New England four-season; never pure black. */
+  --ink:#19272a;      /* cool charcoal-spruce ink ~88% */
+  --ink-2:#54616a;
+  --ink-3:#8a959c;
+  --line:#dde4e1;
+  --paper:#f2f5f3;    /* cool frost paper ground */
+  --paper-2:#e6ece9;  /* tinted alt section */
+  --bg:#ffffff;
+  --spruce:#244b3d;   /* brand green — Vermont spruce, year-round base (the 30%) */
+  --spruce-d:#163026; /* dark green sections / hovers */
+  --sage:#5d7d68;     /* mid green secondary */
+  --sage-tint:#dde9e0;
+  --ice:#2c6e88;      /* winter accent (the 10%) — glacier teal-blue, CTAs */
+  --ice-d:#1f5066;    /* hover */
+  --ice-deep:#163b4c; /* snow-band dark ground */
+  --ice-tint:#d6e6ec; /* frost chip / panel */
+  --gold:#c79a3e;     /* star glyphs only */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted, 4 tiers */
+  --sh-1:0 1px 2px rgba(20,35,40,.06);
+  --sh-2:0 2px 5px rgba(20,35,40,.07),0 4px 10px rgba(20,35,40,.05);
+  --sh-3:0 6px 14px rgba(20,35,40,.08),0 16px 30px rgba(20,35,40,.09);
+  --sh-4:0 12px 24px rgba(20,35,40,.10),0 28px 56px rgba(20,35,40,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Spectral",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:700;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--ice);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow.on-dark{color:#9fd0e0}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--ice);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--ice-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-green{background:var(--spruce);color:#fff;box-shadow:var(--sh-2)}
+.btn-green:hover{background:var(--spruce-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--spruce);color:var(--spruce)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-white{background:#fff;color:var(--ice-deep);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Spectral",serif;font-weight:700;font-size:1.18rem;color:#fff;letter-spacing:-.01em;transition:color var(--t)}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--spruce);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .logo svg{width:23px;height:23px}
+.brand b{font-weight:800}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#9fd0e0;display:block;margin-top:1px}
+.nav{display:flex;align-items:center;gap:.4rem}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.solid{background:rgba(242,245,243,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .brand{color:var(--ink)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--spruce);background:var(--sage-tint)}
+.hdr.solid .call-pill{color:var(--spruce);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill:hover{background:rgba(255,255,255,.12)}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.14);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
+.hdr.solid .burger{background:var(--sage-tint);color:var(--spruce)}
+.burger svg{width:24px;height:24px}
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--spruce-d);display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand{color:#fff}
+.drawer a.dlink{font-family:"Spectral",serif;font-size:1.5rem;font-weight:600;color:#eaf2ec;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,92vh,820px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,30,28,.62) 0%,rgba(15,30,28,.18) 32%,rgba(15,30,28,.30) 62%,rgba(12,25,23,.82) 100%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero .eyebrow{color:#bfe0ce}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:16ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;font-weight:600;color:#bfe0ce}
+.hero .sub{margin-top:1.15rem;font-size:1.15rem;color:rgba(255,255,255,.92);max-width:54ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+/* dual-season strip — the signature */
+.season-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);max-width:680px}
+.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:center;gap:.85rem;color:#fff}
+.season-cell.summer{background:linear-gradient(135deg,var(--spruce) 0%,#2c5a48 100%)}
+.season-cell.winter{background:linear-gradient(135deg,var(--ice) 0%,var(--ice-d) 100%)}
+.season-cell .ci{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
+.season-cell .ci svg{width:23px;height:23px}
+.season-cell .sk{font-family:"Mulish";font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;opacity:.82;display:block}
+.season-cell .sv{font-family:"Spectral";font-weight:600;font-size:1.02rem;line-height:1.25;margin-top:2px}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15.5rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--spruce);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:700}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+/* ===== SNOW BAND — the differentiator ===== */
+.snow{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--ice-deep)}
+.snow-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%;z-index:-2;opacity:.9}
+.snow-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(15,40,52,.93) 0%,rgba(17,46,60,.82) 42%,rgba(20,55,70,.50) 100%)}
+.snow .wrap{position:relative;padding-block:clamp(4rem,9vw,8rem)}
+.snow-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.snow h2{font-size:var(--h2);color:#fff;margin-top:.7rem;max-width:18ch}
+.snow .lede{color:rgba(233,244,248,.9);margin-top:1.1rem;max-width:48ch}
+.snow-feats{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.7rem}
+.snow-feat{display:flex;align-items:center;gap:.7rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-m);padding:.85rem 1rem;font-weight:600;font-size:.95rem}
+.snow-feat .icon{color:#9fd0e0;width:1.35rem;height:1.35rem}
+.snow-cta{margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.snow-note{font-size:.85rem;color:rgba(210,230,236,.75);max-width:42ch;margin-top:1rem}
+.snow-quote{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-l);padding:1.7rem 1.6rem;box-shadow:var(--sh-3)}
+.snow-quote .icon{width:30px;height:30px;color:#9fd0e0;margin-bottom:.7rem}
+.snow-quote blockquote{font-family:"Spectral",serif;font-size:1.16rem;line-height:1.5;font-style:italic;color:#eef6f9;font-weight:500}
+.snow-quote .by{margin-top:1rem;font-family:"Mulish";font-weight:700;font-size:.9rem;color:#fff;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.snow-quote .by .stars{color:var(--gold)}
+.snow-quote .by .mt{color:rgba(200,224,232,.7);font-weight:600}
+/* snowfall */
+.flakes{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.flake{position:absolute;top:-8%;width:6px;height:6px;border-radius:50%;background:#eaf6fa;opacity:0;animation:fall linear infinite;filter:blur(.3px)}
+@keyframes fall{0%{transform:translateY(-10%) translateX(0);opacity:0}10%{opacity:.5}90%{opacity:.45}100%{transform:translateY(115vh) translateX(26px);opacity:0}}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;width:100%;font:inherit;color:inherit;text-align:left}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.05)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(15,30,28,.8));color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center}
+/* ===== TESTIMONIALS ===== */
+.testi{background:var(--spruce-d);color:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.t-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:var(--r-l);padding:1.6rem 1.5rem;display:flex;flex-direction:column}
+.t-card .stars{margin-bottom:.85rem}
+.t-card blockquote{font-family:"Spectral",serif;font-size:1.04rem;line-height:1.56;color:#eaf2ec;font-weight:500;font-style:italic}
+.t-card .by{margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12);font-family:"Mulish";font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.t-card .by .mt{color:rgba(190,214,200,.72);font-weight:600;font-size:.82rem}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap}
+.t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* ===== WHY / CREW ===== */
+.why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
+.why-photo{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-3);position:relative}
+.why-photo img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.why h2{font-size:var(--h2);margin-top:.7rem}
+.why p{margin-top:1.1rem;color:var(--ink-2)}
+.why-pts{list-style:none;margin-top:1.5rem;display:grid;gap:.7rem}
+.why-pts li{display:flex;align-items:center;gap:.7rem;font-weight:600;color:var(--ink)}
+.why-pts .icon{color:var(--ice);width:1.3rem;height:1.3rem;flex:none}
+/* ===== AREA ===== */
+.area{background:var(--paper-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;margin-top:var(--s5)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--sage)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.92)}
+/* ===== CONTACT ===== */
+.ct-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem;margin-top:var(--s5)}
+.ct-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.ct-card.call{display:flex;flex-direction:column}
+.ct-card .big-phone{font-family:"Spectral",serif;font-weight:700;font-size:clamp(1.9rem,5vw,2.6rem);color:var(--spruce);letter-spacing:-.01em;margin:.6rem 0 .3rem;display:inline-flex;align-items:center;gap:.6rem}
+.ct-card .big-phone .icon{width:1.5rem;height:1.5rem;color:var(--ice)}
+.ct-sub{color:var(--ink-2);font-size:.98rem}
+.ct-actions{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.5rem}
+.ct-actions .btn{padding:.95rem 1rem}
+.review-btn{margin-top:.8rem}
+.review-btn .btn{width:100%;background:var(--paper-2);color:var(--spruce);border-color:var(--line)}
+.review-btn .btn:hover{background:var(--sage-tint)}
+.hours-panel{background:var(--spruce);color:#fff;border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.hours-panel h3{color:#fff;font-size:1.3rem;display:flex;align-items:center;gap:.6rem}
+.hours-panel h3 .icon{color:#bfe0ce}
+.hours-table{margin-top:1.2rem;width:100%;border-collapse:collapse}
+.hours-table td{padding:.62rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.96rem}
+.hours-table td:last-child{text-align:right;font-weight:700;color:#eaf2ec}
+.hours-table tr.closed td:last-child{color:#9fb3a6;font-weight:600}
+.hours-foot{margin-top:1.3rem;font-size:.9rem;color:#cfe0d4;display:flex;align-items:flex-start;gap:.55rem}
+.hours-foot .icon{color:#bfe0ce;width:1.15rem;height:1.15rem;margin-top:2px;flex:none}
+.nap{margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#dceae0;line-height:1.6}
+.nap b{color:#fff}
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#c4cdcf}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9aa4a7;max-width:34ch;line-height:1.6}
+.foot-col h4{font-family:"Mulish";font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7f898c;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c4cdcf;padding:.28rem 0;line-height:1.5}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#828c8f}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(242,245,243,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(20,35,40,.1);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,22,20,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#eaf2ec;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(22px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:920px){
+  .snow-grid,.why-grid,.area-grid,.ct-grid{grid-template-columns:1fr}
+  .why-photo{order:-1}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav .link,.nav .btn,.call-pill{display:none}
+  .burger{display:grid}
+  .sticky-cta{display:flex}
+  .hours-foot{margin-top:1rem}
+  footer{padding-bottom:5.5rem}
+}
+@media (max-width:540px){
+  .season-strip{grid-template-columns:1fr}
+  .snow-feats{grid-template-columns:1fr}
+  .ct-actions{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+}
 </style>
 </head>
-<body class="bg-white text-brand-ink antialiased">
-<svg width="0" height="0" class="hidden" aria-hidden="true"><defs>
-<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
-<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
-<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
-<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-snow" viewBox="0 0 24 24"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
 <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
-<symbol id="i-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
-<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10M10 20c5.5-2.5.8-6.4 3-10M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-1.5.5-3 .4-4.3-.4-1.1-.8-1.8-2.2-2.3-3.7 1.5-.5 3-.4 4.3.4ZM14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4-1.9.1-3.3.6-4.9 1.4Z"/></symbol>
-<symbol id="i-snow" viewBox="0 0 24 24"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/></symbol>
-<symbol id="i-navigation" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+<symbol id="i-trees" viewBox="0 0 24 24"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 18.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-shovel" viewBox="0 0 24 24"><path d="M2 22v-5l5.5-5.5 5 5L7 22z"/><path d="M9.5 9.5 16 3"/><path d="M14 3h7v7"/><path d="M14 10 21 3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
 </defs></svg>
 
-<!-- STICKY TAB NAV -->
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-emerald-100">
-  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
-    <a href="#top" class="flex items-center gap-2 font-extrabold text-lg shrink-0">
-      <span class="w-9 h-9 rounded-xl bg-brand text-white grid place-items-center text-sm">N</span>
-      <span class="hidden sm:block">Noah&rsquo;s <span class="text-brand">Landscaping</span></span>
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Noah&rsquo;s Landscaping &amp; Snowplowing home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/><circle cx="16" cy="28" r="1.5" style="fill:#7fb0c4"/></svg></span>
+      <span>Noah&rsquo;s <b>Landscaping</b><span class="yr">&amp; Snowplowing &middot; Fairfax VT</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
-      <a href="#services" class="navlink hover:text-brand">Services</a>
-      <a href="#gallery" class="navlink hover:text-brand">Gallery</a>
-      <a href="#why" class="navlink hover:text-brand">Why Us</a>
-      <a href="#reviews" class="navlink hover:text-brand">Reviews</a>
-      <a href="#contact" class="navlink hover:text-brand">Contact</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#snow">Snow &amp; Ice</a>
+      <a class="link" href="#work">Our Work</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>(802) 735-5975</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
     </nav>
-    <a href="tel:+18027355975" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-4 py-2.5 rounded-full shadow-soft shrink-0">
-      <svg class="ic"><use href="#i-phone"></use></svg><span class="hidden sm:inline">(802) 735-5975</span><span class="sm:hidden">Call</span>
-    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
   </div>
 </header>
 
-<main id="top">
-<!-- HERO full-bleed -->
-<section class="relative">
-  <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1700&q=72&fm=jpg&fit=crop" alt="A lush, professionally landscaped backyard garden and lawn" class="absolute inset-0 w-full h-full object-cover" loading="eager">
-  <div class="absolute inset-0 bg-gradient-to-b from-brand-ink/55 via-brand-ink/45 to-brand-ink/80"></div>
-  <div class="relative max-w-6xl mx-auto px-4 py-24 md:py-32 text-white">
-    <p class="eyebrow inline-block font-semibold tracking-wide text-sm uppercase text-emerald-200">Fairfax, Vermont &bull; Year-round</p>
-    <h1 class="mt-5 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.04] max-w-3xl">Landscaping in summer. Snowplowing all winter.</h1>
-    <p class="mt-5 text-lg text-white/85 max-w-xl">Noah&rsquo;s keeps Fairfax properties looking their best in every season &mdash; lawns and landscapes when it&rsquo;s green, dependable plowing when it snows.</p>
-    <div class="mt-8 flex flex-wrap items-center gap-3">
-      <a href="tel:+18027355975" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-full shadow-soft"><svg class="ic"><use href="#i-phone"></use></svg> Call (802) 735-5975</a>
-      <a href="#contact" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur text-white font-semibold px-6 py-3.5 rounded-full ring-1 ring-white/30">Get a free quote</a>
-    </div>
-    <div class="mt-8 inline-flex items-center gap-3 bg-white/10 backdrop-blur ring-1 ring-white/20 rounded-full px-4 py-2 text-sm">
-      <span class="flex text-amber-300" aria-label="4.9 out of 5 stars"><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg></span>
-      <span class="font-bold">4.9</span><span class="text-white/75">/ 47 Google reviews</span>
-    </div>
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Noah&rsquo;s</span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
   </div>
-</section>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#snow">Snow &amp; Ice</a>
+  <a class="dlink" href="#work">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>Call (802) 735-5975</a>
+    <a class="btn btn-ghost on-dark" href="sms:+18027355975">Text us</a>
+  </div>
+</div>
 
-<!-- TRUST STRIP -->
-<section class="border-b border-emerald-100 bg-emerald-50/40">
-  <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <div><div class="text-2xl font-extrabold text-brand-dark">4.9&#9733;</div><div class="text-xs text-slate-500 mt-1">Google rating</div></div>
-    <div><div class="text-2xl font-extrabold text-brand-dark">47</div><div class="text-xs text-slate-500 mt-1">Customer reviews</div></div>
-    <div><div class="text-2xl font-extrabold text-brand-dark">Year-round</div><div class="text-xs text-slate-500 mt-1">Summer &amp; winter</div></div>
-    <div><div class="text-2xl font-extrabold text-brand-dark">Local</div><div class="text-xs text-slate-500 mt-1">Fairfax, VT</div></div>
+<!-- HERO -->
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="assets/hero-striped-lawn-fairfax.jpg" alt="Freshly striped, mowed lawn in front of a home in Fairfax, Vermont" width="1200" height="675" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow"><span class="tick"></span>Landscaping &amp; snow management &middot; Fairfax, VT</span>
+    <h1>Landscaping &amp; snow care for Fairfax, <em>all year round</em>.</h1>
+    <p class="sub">From crisp-cut lawns, fresh beds and seasonal cleanups to driveways cleared before sunrise &mdash; one local crew looks after your property through every Vermont season.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost on-dark" href="#work">See our work</a>
+    </div>
+    <a class="rate-badge" href="https://www.google.com/maps?cid=2795482032389160956" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+      <span><b>4.9</b> &middot; 47 Google reviews</span>
+    </a>
+    <div class="season-strip" role="presentation">
+      <div class="season-cell summer">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-sun"/></svg></span>
+        <span><span class="sk">Spring &ndash; Fall</span><span class="sv">Lawn care, beds &amp; cleanups</span></span>
+      </div>
+      <div class="season-cell winter">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <span><span class="sk">First snow &ndash; Mud season</span><span class="sv">Plowing &amp; storm response</span></span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="max-w-6xl mx-auto px-4 py-16 md:py-20 scroll-mt-20">
-  <div class="max-w-2xl">
-    <p class="eyebrow inline-block text-brand font-semibold tracking-wide text-sm uppercase">What we do</p>
-    <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">One local crew, every season</h2>
-  </div>
-  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    <div class="bg-white rounded-2xl p-7 card-lift border border-slate-100">
-      <span class="w-12 h-12 rounded-xl bg-emerald-50 text-brand grid place-items-center text-xl"><svg class="ic"><use href="#i-leaf"></use></svg></span>
-      <h3 class="mt-4 font-bold text-lg">Lawn care</h3>
-      <p class="mt-2 text-slate-600 text-sm">Mowing, trimming and seasonal upkeep that keeps your property sharp all summer.</p>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>What we do</span>
+      <h2>Property care that keeps up with the seasons.</h2>
+      <p class="lede">A short, honest list of the work we actually do &mdash; the lawns, beds and snow that keep Fairfax yards looking sharp from the first mow to the last storm.</p>
     </div>
-    <div class="bg-white rounded-2xl p-7 card-lift border border-slate-100">
-      <span class="w-12 h-12 rounded-xl bg-emerald-50 text-brand grid place-items-center text-xl"><svg class="ic"><use href="#i-sprout"></use></svg></span>
-      <h3 class="mt-4 font-bold text-lg">Landscaping</h3>
-      <p class="mt-2 text-slate-600 text-sm">Plantings, beds and yard improvements designed to thrive in the Vermont climate.</p>
-    </div>
-    <div class="bg-white rounded-2xl p-7 card-lift border border-slate-100">
-      <span class="w-12 h-12 rounded-xl bg-emerald-50 text-brand grid place-items-center text-xl"><svg class="ic"><use href="#i-layers"></use></svg></span>
-      <h3 class="mt-4 font-bold text-lg">Hardscaping</h3>
-      <p class="mt-2 text-slate-600 text-sm">Walkways, patios and stonework that add structure and lasting value to your yard.</p>
-    </div>
-    <div class="bg-white rounded-2xl p-7 card-lift border border-slate-100">
-      <span class="w-12 h-12 rounded-xl bg-emerald-50 text-brand grid place-items-center text-xl"><svg class="ic"><use href="#i-snow"></use></svg></span>
-      <h3 class="mt-4 font-bold text-lg">Snowplowing</h3>
-      <p class="mt-2 text-slate-600 text-sm">Reliable winter snow removal for driveways and lots, so you&rsquo;re never snowed in.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY (honest framing: inspiration, not "our jobs") -->
-<section id="gallery" class="bg-emerald-50/40 border-y border-emerald-100 scroll-mt-16">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
-    <div class="max-w-2xl">
-      <p class="eyebrow inline-block text-brand font-semibold tracking-wide text-sm uppercase">Gallery</p>
-      <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">The kind of work we love</h2>
-      <p class="mt-3 text-slate-600">A look at the landscaping and outdoor spaces that inspire what we do for Fairfax homes and businesses.</p>
-    </div>
-    <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=700&q=70&fm=jpg&fit=crop" alt="Healthy manicured green lawn"></div>
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=700&q=70&fm=jpg&fit=crop" alt="Landscaped garden walkway with plantings"></div>
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1599685315640-9ceab2f58148?w=700&q=70&fm=jpg&fit=crop" alt="Garden path through mature plantings"></div>
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1598902108854-10e335adac99?w=700&q=70&fm=jpg&fit=crop" alt="Beautifully landscaped home yard"></div>
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1605117882932-f9e32b03fea9?w=700&q=70&fm=jpg&fit=crop" alt="Landscaper edging a lawn"></div>
-      <div class="gtile overflow-hidden rounded-2xl aspect-[4/3]"><img class="gimg w-full h-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=700&q=70&fm=jpg&fit=crop" alt="Snow-covered winter landscape"></div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-sprout"/></svg></span>
+        <h3>Lawn care &amp; mowing</h3>
+        <p>Weekly mowing, edging and string-trimming that keeps your lawn striped, even and under control &mdash; from the first cut of spring to the last of fall.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        <h3>Beds, mulch &amp; plantings</h3>
+        <p>Bed cleanups, fresh mulch, new plantings, fabric and stone &mdash; the detail work that makes a yard read cared-for instead of overgrown.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-trees"/></svg></span>
+        <h3>Cleanups &amp; tree work</h3>
+        <p>Spring and fall cleanups, leaf blow-downs, brush hauling and tree trimming &mdash; we reset the whole property for the season ahead.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <h3>Snow &amp; ice management</h3>
+        <p>Driveways and walkways plowed, cleared and shoveled all winter &mdash; per-storm or for the whole season. <a href="#snow" style="color:var(--ice);font-weight:700">See winter services &rarr;</a></p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- WHY + image -->
-<section id="why" class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-2 gap-10 items-center scroll-mt-20">
-  <div class="relative order-2 md:order-1">
-    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1000&q=70&fm=jpg&fit=crop" alt="A home with professionally maintained landscaped grounds" class="w-full h-[360px] object-cover rounded-3xl shadow-soft" loading="lazy">
-  </div>
-  <div class="order-1 md:order-2">
-    <p class="eyebrow inline-block text-brand font-semibold tracking-wide text-sm uppercase">Why Noah&rsquo;s</p>
-    <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">A 4.9-star reputation, earned year-round</h2>
-    <p class="mt-4 text-slate-600">47 reviews at 4.9 stars is one of the strongest reputations in the Fairfax area &mdash; built by showing up, doing careful work, and being there in January as much as July.</p>
-    <ul class="mt-6 space-y-3">
-      <li class="flex items-start gap-3"><span class="mt-0.5 text-brand"><svg class="ic text-lg"><use href="#i-check"></use></svg></span><span class="text-slate-700"><strong>Summer and winter</strong> &mdash; one company for landscaping and snow.</span></li>
-      <li class="flex items-start gap-3"><span class="mt-0.5 text-brand"><svg class="ic text-lg"><use href="#i-check"></use></svg></span><span class="text-slate-700"><strong>4.9 stars / 47 reviews</strong> &mdash; trusted across the community.</span></li>
-      <li class="flex items-start gap-3"><span class="mt-0.5 text-brand"><svg class="ic text-lg"><use href="#i-check"></use></svg></span><span class="text-slate-700"><strong>Local to Fairfax, VT</strong> &mdash; we know Vermont yards and Vermont winters.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- REVIEWS (aggregate only — no fabricated quotes) -->
-<section id="reviews" class="bg-brand-ink text-white scroll-mt-16">
-  <div class="max-w-4xl mx-auto px-4 py-16 md:py-20 text-center">
-    <div class="flex justify-center text-amber-300 text-xl" aria-label="4.9 out of 5 stars"><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg><svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg></div>
-    <div class="mt-5 text-6xl font-extrabold">4.9</div>
-    <p class="mt-2 text-emerald-200 uppercase tracking-wider text-sm">Average across 47 Google reviews</p>
-    <p class="mt-5 text-white/75 max-w-xl mx-auto">Fairfax homeowners and businesses consistently rate Noah&rsquo;s among the area&rsquo;s most reliable outdoor crews, season after season.</p>
-    <a href="tel:+18027355975" class="mt-8 inline-flex items-center gap-2 bg-white text-brand-dark font-bold px-7 py-3.5 rounded-full"><svg class="ic"><use href="#i-phone"></use></svg> Call (802) 735-5975</a>
-  </div>
-</section>
-
-<!-- HOURS + MAP + CONTACT -->
-<section id="contact" class="max-w-6xl mx-auto px-4 py-16 md:py-20 scroll-mt-20">
-  <div class="grid md:grid-cols-2 gap-10">
-    <div>
-      <p class="eyebrow inline-block text-brand font-semibold tracking-wide text-sm uppercase">Contact</p>
-      <h2 class="mt-3 text-3xl md:text-4xl font-extrabold tracking-tight">Get a free quote</h2>
-      <p class="mt-4 text-slate-600">Call or text for landscaping or snowplowing anywhere around Fairfax. We&rsquo;ll give you an honest, no-pressure estimate.</p>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a href="tel:+18027355975" class="inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3.5 rounded-full shadow-soft"><svg class="ic"><use href="#i-phone"></use></svg> (802) 735-5975</a>
-        <a href="https://www.openstreetmap.org/?mlat=44.665&mlon=-73.0118#map=15/44.665/-73.0118" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-slate-200 hover:border-brand text-slate-700 font-semibold px-6 py-3.5 rounded-full"><svg class="ic"><use href="#i-navigation"></use></svg> Directions</a>
+<!-- SNOW BAND — the differentiator -->
+<section class="snow" id="snow">
+  <img class="snow-img" src="assets/snow-plow-truck-fairfax.jpg" alt="Plow truck clearing snow at a property in Fairfax, Vermont after a winter storm" width="1200" height="675" loading="lazy" decoding="async">
+  <div class="snow-scrim"></div>
+  <div class="flakes" aria-hidden="true" id="flakes"></div>
+  <div class="wrap">
+    <div class="snow-grid">
+      <div class="snow-copy rv">
+        <span class="eyebrow on-dark"><span class="tick"></span>When the snow flies</span>
+        <h2>Snow &amp; ice management, all winter long.</h2>
+        <p class="lede">Winter doesn&rsquo;t wait, and neither do we. When a storm rolls through Franklin County we plow driveways, clear walkways and paths, and hand-shovel the spots a plow can&rsquo;t reach &mdash; early, so you can get out the door.</p>
+        <div class="snow-feats">
+          <div class="snow-feat"><svg class="icon"><use href="#i-truck"/></svg>Driveway plowing</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-shovel"/></svg>Walkway &amp; path clearing</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-snow"/></svg>Per-storm or full season</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-clock"/></svg>Storm response, short notice</div>
+        </div>
+        <div class="snow-cta">
+          <a class="btn btn-white" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>Reserve your winter spot</a>
+          <a class="btn btn-ghost on-dark" href="sms:+18027355975"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+        </div>
+        <p class="snow-note">Take us on for the whole season, or call for a one-time plow after the next storm.</p>
       </div>
-      <div class="mt-8 rounded-2xl border border-slate-100 overflow-hidden">
-        <table class="w-full text-sm"><tbody class="divide-y divide-slate-100">
-          <tr class="flex justify-between px-5 py-2.5"><td class="text-slate-500">Mon&ndash;Fri</td><td class="font-medium">8:00 AM &ndash; 5:30 PM</td></tr>
-          <tr class="flex justify-between px-5 py-2.5"><td class="text-slate-500">Saturday</td><td class="text-brand font-medium">Closed</td></tr>
-          <tr class="flex justify-between px-5 py-2.5"><td class="text-slate-500">Sunday</td><td class="text-brand font-medium">Closed</td></tr>
-        </tbody></table>
-      </div>
-      <div class="mt-5 flex items-start gap-3 text-slate-600 text-sm"><span class="text-brand mt-0.5"><svg class="ic text-lg"><use href="#i-map-pin"></use></svg></span><span>384 Fletcher Rd, Fairfax, VT 05454</span></div>
-    </div>
-    <div class="rounded-2xl overflow-hidden border border-slate-100 min-h-[340px]">
-      <iframe title="Map of Noah's Landscaping & Snowplowing, Fairfax VT" class="w-full h-full min-h-[340px]" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.0178%2C44.6590%2C-73.0058%2C44.6710&layer=mapnik&marker=44.6650%2C-73.0118"></iframe>
+      <figure class="snow-quote rv">
+        <svg class="icon"><use href="#i-quote"/></svg>
+        <blockquote>I needed my driveway cleared as soon as possible. A friend recommended Noah. Noah was quick to answer my call and came up to my house just as quickly. He did a great job and came right back out after it snowed a bunch again. His rates are reasonable, he is conscientious, and his work is good.</blockquote>
+        <figcaption class="by"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span> Kathy J. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="max-w-6xl mx-auto px-4 pb-16 md:pb-20">
-  <div class="rounded-3xl bg-brand text-white text-center px-6 py-14 shadow-soft">
-    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Green in summer, clear in winter.</h2>
-    <p class="mt-3 text-emerald-50 max-w-xl mx-auto">One trusted Fairfax crew for landscaping and snow. Call today for your free quote.</p>
-    <a href="tel:+18027355975" class="mt-8 inline-flex items-center gap-2 bg-white text-brand-dark font-bold px-7 py-4 rounded-full"><svg class="ic"><use href="#i-phone"></use></svg> (802) 735-5975</a>
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Recent work</span>
+      <h2>A look at what we&rsquo;ve been up to.</h2>
+      <p class="lede">Real lawns, beds and winters from around Fairfax and Franklin County.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="gal-item rv" type="button"><img src="assets/mulch-beds-blue-house.jpg" alt="Fresh dark mulch beds and shrubs along a blue colonial home" width="960" height="720" loading="lazy" decoding="async"><span class="gal-cap">Fresh mulch beds &amp; foundation plantings</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/mulch-walkway-plantings.jpg" alt="Mulched garden beds and new plantings lining a front walkway" width="738" height="553" loading="lazy" decoding="async"><span class="gal-cap">Walkway beds, mulch &amp; plantings</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/lawn-mowing-riding-mower.jpg" alt="Riding mower on a freshly cut suburban lawn in Vermont" width="960" height="720" loading="lazy" decoding="async"><span class="gal-cap">Weekly mowing &amp; lawn care</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/tree-pruning-evergreen.jpg" alt="Crew member trimming a large evergreen tree with a pole pruner" width="1200" height="900" loading="lazy" decoding="async"><span class="gal-cap">Tree trimming &amp; limb work</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/commercial-bed-planting.jpg" alt="Crew planting a fresh landscape bed at a property entrance" width="1200" height="900" loading="lazy" decoding="async"><span class="gal-cap">Seasonal bed planting</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/fall-cleanup-bed-prep.jpg" alt="Worker prepping garden beds during a property cleanup" width="960" height="720" loading="lazy" decoding="async"><span class="gal-cap">Cleanups &amp; bed prep</span></button>
+    </div>
+    <p class="gal-note">Photos straight from Noah&rsquo;s Google Business listing.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testi" id="reviews">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow on-dark"><span class="tick"></span>In our neighbors&rsquo; words</span>
+      <h2>Trusted in summer and in snow.</h2>
+    </div>
+    <div class="t-grid">
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>Noah and his team did a great job of mowing my overgrown yard and weed whacking. A BIG thank you ! Very reasonable pricing too! Highly recommend.</blockquote>
+        <figcaption class="by">Wendy E. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>I contacted Noah in a pinch for a one time plow after a recent storm. He was amazing to deal with. He was fast, courteous and helpful. He was able to fit me in on short notice and help. Thank YOU!!</blockquote>
+        <figcaption class="by">Mary Beth T. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>He responded very quickly and came out and provided an estimate on the same day. They were able to weed, place fabric, and match and place about 2&quot; of river stone within about 4 hours. Very happy with their work.</blockquote>
+        <figcaption class="by">Don F. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+    </div>
+    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.9</b> out of 5 &middot; 47 Google reviews &middot; <a href="https://www.google.com/maps?cid=2795482032389160956" target="_blank" rel="noopener">Read them on Google</a></p>
+  </div>
+</section>
+
+<!-- WHY / CREW -->
+<section class="section" id="why">
+  <div class="wrap why-grid">
+    <figure class="why-photo rv">
+      <img src="assets/crew-truck-fairfax.jpg" alt="Noah&rsquo;s Landscaping crew beside their branded truck and equipment trailer in Fairfax, Vermont" width="1179" height="664" loading="lazy" decoding="async">
+    </figure>
+    <div class="why rv">
+      <span class="eyebrow"><span class="tick"></span>One local crew</span>
+      <h2>The same crew, every season.</h2>
+      <p>We&rsquo;re a small crew based right here in Fairfax. The same people who stripe your lawn in July are the ones plowing your driveway in January &mdash; so you&rsquo;ve got one number to call all year, and someone who already knows your property.</p>
+      <ul class="why-pts">
+        <li><svg class="icon"><use href="#i-check"/></svg>Year-round care &mdash; landscaping &amp; snow under one roof</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Quick to answer, quick to show up</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Free quotes &mdash; just call or text</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:1.7rem">
+        <a class="btn btn-green" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>Where we work</span>
+      <h2>Serving Fairfax &amp; greater Franklin County.</h2>
+    </div>
+    <div class="area-grid">
+      <div class="rv">
+        <p class="lede">Based in Fairfax, we cover the towns around us for both landscaping and winter snow removal:</p>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Fairfax</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>St. Albans</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Georgia</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Fletcher</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Westford</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Milton</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Cambridge</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Jeffersonville</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Underhill</span>
+        </div>
+        <p class="note">Not sure if you&rsquo;re in range? Call or text &mdash; we cover most of Franklin County and the nearby towns.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Noah&rsquo;s Landscaping &amp; Snowplowing service area in Fairfax, Vermont" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-72.9813208%2C44.6653588%2C-72.9693208%2C44.6773588&amp;layer=mapnik&amp;marker=44.6713588%2C-72.9753208"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Get a free quote</span>
+      <h2>Tell us about your property.</h2>
+      <p class="lede">Call or text and we&rsquo;ll set up a free quote &mdash; for lawn care, a one-time job, or your winter snow plan.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-card call rv">
+        <span class="eyebrow"><span class="tick"></span>Call or text</span>
+        <a class="big-phone" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>(802) 735-5975</a>
+        <p class="ct-sub">Reach Noah&rsquo;s directly &mdash; we&rsquo;re quick to answer and happy to give a free estimate.</p>
+        <div class="ct-actions">
+          <a class="btn btn-primary" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-green" href="sms:+18027355975"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+        </div>
+        <div class="review-btn">
+          <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJpdoFAWQN3awR_P-K7BiMyyY" target="_blank" rel="noopener"><svg class="icon fill" style="color:var(--gold)"><use href="#i-star"/></svg>Leave us a Google review</a>
+        </div>
+      </div>
+      <div class="hours-panel rv">
+        <h3><svg class="icon"><use href="#i-clock"/></svg>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>8:00 AM &ndash; 5:30 PM</td></tr>
+          <tr><td>Tuesday</td><td>8:00 AM &ndash; 5:30 PM</td></tr>
+          <tr><td>Wednesday</td><td>8:00 AM &ndash; 5:30 PM</td></tr>
+          <tr><td>Thursday</td><td>8:00 AM &ndash; 5:30 PM</td></tr>
+          <tr><td>Friday</td><td>8:00 AM &ndash; 5:30 PM</td></tr>
+          <tr class="closed"><td>Saturday</td><td>Closed</td></tr>
+          <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <p class="hours-foot"><svg class="icon"><use href="#i-snow"/></svg>During winter storms we&rsquo;re out early and after hours &mdash; snow doesn&rsquo;t keep office hours.</p>
+        <div class="nap">
+          <b>Noah&rsquo;s Landscaping &amp; Snowplowing LLC</b><br>
+          384 Fletcher Rd, Fairfax, VT 05454<br>
+          <a href="tel:+18027355975" style="color:#fff;font-weight:700">(802) 735-5975</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 </main>
 
-<footer class="border-t border-emerald-100">
-  <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-    <div class="flex items-center gap-2 font-extrabold text-brand-ink"><span class="w-8 h-8 rounded-lg bg-brand text-white grid place-items-center text-xs">N</span> Noah&rsquo;s Landscaping &amp; Snowplowing LLC</div>
-    <div>384 Fletcher Rd, Fairfax, VT 05454 &bull; <a href="tel:+18027355975" class="text-brand font-semibold">(802) 735-5975</a></div>
-    <div>&copy; 2026</div>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Noah&rsquo;s <b style="font-weight:800;margin-left:.25rem">Landscaping</b></span>
+      <p>Landscaping all summer, snow plowing all winter &mdash; one local crew for your Fairfax, Vermont property, every season of the year.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="#services">Services</a>
+      <a href="#snow">Snow &amp; Ice</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </div>
+    <div class="foot-col">
+      <h4>Get in touch</h4>
+      <a href="tel:+18027355975">(802) 735-5975</a>
+      <a href="sms:+18027355975">Text us</a>
+      <p>384 Fletcher Rd<br>Fairfax, VT 05454</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJpdoFAWQN3awR_P-K7BiMyyY" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Noah&rsquo;s Landscaping &amp; Snowplowing LLC &middot; Fairfax, VT</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 4.9 &middot; 47 Google reviews</span>
   </div>
 </footer>
 
-<a href="tel:+18027355975" class="md:hidden fixed bottom-4 inset-x-4 z-50 bg-brand text-white font-bold py-4 rounded-full shadow-soft flex items-center justify-center gap-2"><svg class="ic"><use href="#i-phone"></use></svg> Call (802) 735-5975</a>
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+18027355975"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-green" href="sms:+18027355975"><svg class="icon"><use href="#i-msg"/></svg>Text</a>
+</div>
 
-<script>
-// active-tab highlight on scroll
-const secs=['services','gallery','why','reviews','contact'].map(id=>document.getElementById(id));
-const links=document.querySelectorAll('.navlink');
-const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
-secs.forEach(s=>s&&io.observe(s));
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-cl"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Noah’s Landscaping & Snowplowing LLC",
+  "description":"Landscaping, lawn care and snow & ice management serving Fairfax, Vermont and Franklin County.",
+  "image":"https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/assets/hero-striped-lawn-fairfax.jpg",
+  "url":"https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/",
+  "telephone":"+18027355975",
+  "address":{"@type":"PostalAddress","streetAddress":"384 Fletcher Rd","addressLocality":"Fairfax","addressRegion":"VT","postalCode":"05454","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":44.6713588,"longitude":-72.9753208},
+  "areaServed":[
+    {"@type":"City","name":"Fairfax"},
+    {"@type":"City","name":"St. Albans"},
+    {"@type":"City","name":"Georgia"},
+    {"@type":"City","name":"Fletcher"},
+    {"@type":"City","name":"Westford"},
+    {"@type":"City","name":"Milton"},
+    {"@type":"City","name":"Cambridge"},
+    {"@type":"City","name":"Jeffersonville"},
+    {"@type":"City","name":"Underhill"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:30"}
+  ]
+}
 </script>
 
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LandscapingBusiness","name":"Noah's Landscaping & Snowplowing LLC","image":"https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1200&q=70&fm=jpg&fit=crop","@id":"https://savcab.github.io/website-builder/5cdb58dbb01af6a7/","url":"https://savcab.github.io/website-builder/5cdb58dbb01af6a7/","telephone":"+18027355975","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"384 Fletcher Rd","addressLocality":"Fairfax","addressRegion":"VT","postalCode":"05454","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":44.665,"longitude":-73.0118},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"47"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:30"}]}
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // drawer
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});
+
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  // snowfall (subtle; auto-disabled under reduced-motion via CSS)
+  var fl=document.getElementById('flakes');
+  if(fl&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    for(var f=0;f<9;f++){
+      var s=document.createElement('span');s.className='flake';
+      s.style.left=(Math.random()*100)+'%';
+      var sz=(4+Math.random()*5);s.style.width=sz+'px';s.style.height=sz+'px';
+      s.style.animationDuration=(11+Math.random()*9)+'s';
+      s.style.animationDelay=(-Math.random()*16)+'s';
+      s.style.opacity=(.22+Math.random()*.3);
+      fl.appendChild(s);
+    }
+  }
+
+  // lightbox
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function open(i){idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;open(i);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')open(idx+1);else if(e.key==='ArrowLeft')open(idx-1);});
+})();
 </script>
 </body>
 </html>

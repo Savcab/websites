@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/noahs-landscaping-snowplowing-fairfax/sitemap.xml

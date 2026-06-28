@@ -101,6 +101,8 @@ section{padding-block:var(--section-y)}
 .sec-head{max-width:60ch}
 .sec-head h2{font-size:var(--h2);font-weight:500;color:var(--ink);margin-top:.7rem}
 .lede{font-size:1.15rem;color:var(--ink-2);max-width:58ch;line-height:1.6}
+/* responsive copy: full text on laptop, condensed on phone — toggled at 560px */
+.only-mob{display:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:.95rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
 .btn-primary{background:var(--red);color:#fff;box-shadow:var(--sh-2)}
 .btn-primary:hover{background:var(--red-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
@@ -288,6 +290,7 @@ html.js .rv.in{opacity:1;transform:none}
   .svc-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
   .float-card{display:none}
+  .only-lap{display:none}.only-mob{display:inline}
 }
 @media (max-width:380px){
   .vitals-in{grid-template-columns:1fr}
@@ -364,7 +367,7 @@ html.js .rv.in{opacity:1;transform:none}
       <div class="hero-copy">
         <span class="eyebrow"><svg class="i plus" aria-hidden="true"><use href="#i-plus"/></svg>Lawn care · Enterprise, AL</span>
         <h1>Enterprise lawn care with a&nbsp;<em>perfect record</em>.</h1>
-        <p class="sub">We mow, edge, trim and clean up — then keep your yard on a steady schedule. Call us or text us; somebody answers either way.</p>
+        <p class="sub"><span class="only-lap">We mow, edge, trim and clean up — then keep your yard on a steady schedule. Call us or text us; somebody answers either way.</span><span class="only-mob">Mowing, cleanups, scheduled care — call or text, we answer.</span></p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="tel:+13347979199"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call or text for a quote</a>
           <a class="btn btn-ghost" href="#reviews"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg>Read the reviews</a>
@@ -545,7 +548,7 @@ html.js .rv.in{opacity:1;transform:none}
         <div class="rv">
           <span class="eyebrow"><svg class="i plus" aria-hidden="true"><use href="#i-plus"/></svg>Where we work</span>
           <h2>Enterprise and across the Wiregrass.</h2>
-          <p class="lede" style="margin-top:1rem">Home base is Enterprise, and we run the trailer out to the surrounding towns all week. If you're nearby, ask — there's a good chance we're already on your road.</p>
+          <p class="lede" style="margin-top:1rem"><span class="only-lap">Home base is Enterprise, and we run the trailer out to the surrounding towns all week. If you're nearby, ask — there's a good chance we're already on your road.</span><span class="only-mob">Based in Enterprise, out across the Wiregrass all week. Nearby? Just ask.</span></p>
           <div class="chips">
             <span class="chip"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Enterprise</span>
             <span class="chip"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Daleville</span>

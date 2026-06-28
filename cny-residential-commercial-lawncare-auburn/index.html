@@ -172,6 +172,7 @@ img{display:block; max-width:100%; height:auto}
 .menu-btn svg{width:24px;height:24px}
 @media(max-width:900px){
   .nav .lk{display:none} .nav .btn.callbtn{display:none}
+  .nav .btn-primary{display:none} /* proposal CTA lives in the drawer + sticky bar on mobile */
   .menu-btn{display:inline-flex}
 }
 /* mobile drawer */
@@ -367,6 +368,31 @@ footer{background:var(--navy-d); color:#c4d4e1; padding-block:var(--s6) var(--s4
 html.js .rv{will-change:opacity,transform}
 .rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1)}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}}
+
+/* ---------- mobile refinements (≤900px): clear the fixed header, kill hero overlaps ---------- */
+@media(max-width:900px){
+  /* hero → normal flow: H1 clears the fixed header; foot strip stacks below the CTAs (no overlap) */
+  .hero{display:block; min-height:auto}
+  .hero-in{padding-block:6rem 1.6rem}
+  .hero h1,.hero p.sub{max-width:none}
+  .hero-cta{flex-direction:column; align-items:stretch; gap:.7rem; margin-top:1.6rem}
+  .hero-cta .btn{width:100%}
+  .rating-badge{justify-content:center; margin-top:.15rem}
+  .hero-foot{position:static}
+  .hero-strip{flex-direction:column; align-items:flex-start; gap:.8rem; padding-block:1.1rem 1.35rem; font-size:.92rem}
+  /* tighten header gap + keep the wordmark on one line; halo keeps it legible over the hero photo */
+  .hdr-in{gap:.85rem}
+  .brand{white-space:nowrap; text-shadow:0 1px 10px rgba(255,255,255,.55)}
+  /* keep page content clear of the fixed sticky CTA bar */
+  footer{padding-bottom:calc(var(--s4) + 4.75rem)}
+}
+@media(max-width:420px){
+  /* narrow phones: drop the decorative sub-line so the wordmark stays compact + centered
+     (full name still appears in the drawer + footer); ease the H1 a touch */
+  .brand{font-size:1.1rem}
+  .brand .sub{display:none}
+  .hero h1{font-size:clamp(1.95rem,8.4vw,2.2rem)}
+}
 </style>
 </head>
 <body>

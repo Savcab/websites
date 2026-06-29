@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/ca-santa-rosa-vicelandscape/sitemap.xml

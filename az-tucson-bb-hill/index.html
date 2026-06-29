@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--
+  B.B Hill Landscaping — Tucson, AZ (biz_key az-tucson-landscaping-bb-hill)
+  PATH 0: brand adopt + elevate. Existing site bbhilllandscaping.com is LIVE (WordPress/LiteSpeed, HTTP 200).
+  Brand recovered from live site: forest-green palette (#00451f / #13241a / #00ae42), white "B.B. Hill"
+  wordmark logo (self-hosted from their own Logo.svg), real services + FAQ + "What Sets Us Apart" copy.
+  Real photos mined from THIS business's Google Business Profile (place_id ChIJ2Sz-J8971oYRt0uJa926kkw).
+  Reviews verbatim from DB reviews_evidence. Honesty: no tenure number (their "25yrs" vs finder est. 3
+  conflict -> omitted), no licensed/insured/bonded/family-owned (unsourced); "locally owned" sourced to
+  their homepage; AMA partner / IREM sponsor sourced to finder credibility_anchor. See provenance.json.
+-->
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Commercial Landscaping in Tucson, AZ | B.B Hill Landscaping</title>
+<meta name="description" content="B.B Hill Landscaping keeps Tucson apartment communities, HOAs and commercial properties sharp — grounds care, irrigation, tree care and design-build. 4.9 stars, 72 reviews." />
+<link rel="canonical" href="https://savcab.github.io/websites/az-tucson-bb-hill/" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#00451f" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Commercial Landscaping in Tucson, AZ | B.B Hill Landscaping" />
+<meta property="og:description" content="Grounds maintenance, irrigation, tree care and design-build for Tucson apartment communities, HOAs and commercial properties. 4.9 stars · 72 Google reviews." />
+<meta property="og:url" content="https://savcab.github.io/websites/az-tucson-bb-hill/" />
+<meta property="og:image" content="https://savcab.github.io/websites/az-tucson-bb-hill/assets/commercial-grounds-apartment-community.jpg" />
+<meta property="og:image:width" content="1240" />
+<meta property="og:image:height" content="697" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://savcab.github.io/websites/az-tucson-bb-hill/assets/commercial-grounds-apartment-community.jpg" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2300451f'/%3E%3Cpath d='M4 23c4-7 7-9 12-9s8 2 12 9z' fill='%2300ae42'/%3E%3Ccircle cx='23' cy='10' r='3' fill='%23ffd166'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "B.B Hill Landscaping",
+  "url": "https://savcab.github.io/websites/az-tucson-bb-hill/",
+  "image": "https://savcab.github.io/websites/az-tucson-bb-hill/assets/commercial-grounds-apartment-community.jpg",
+  "telephone": "+15204444019",
+  "email": "info@bbhilllandscaping.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3810 S Dodge Blvd",
+    "addressLocality": "Tucson",
+    "addressRegion": "AZ",
+    "postalCode": "85713",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 32.1776907, "longitude": -110.9139179 },
+  "areaServed": [
+    { "@type": "City", "name": "Tucson" },
+    { "@type": "City", "name": "Catalina Foothills" },
+    { "@type": "City", "name": "Oro Valley" },
+    { "@type": "City", "name": "Marana" },
+    { "@type": "City", "name": "Vail" },
+    { "@type": "City", "name": "Sahuarita" }
+  ],
+  "sameAs": ["https://bbhilllandscaping.com"]
+}
+</script>
+
+<style>
+/* ============ tokens (off DESIGN_RULES §0) ============ */
+:root{
+  --ink:#13241a; --ink-2:#3c4d42; --ink-3:#6c7c70;
+  --forest:#00451f; --forest-d:#06341a; --forest-2:#0d5a2c;
+  --green:#0c7a36; --accent:#00ae42; --accent-d:#0a8a37; --mint:#7fdfa6;
+  --sand:#f1ece1; --sand-2:#e8e1d2; --gold:#c98a2b;
+  --bg:#ffffff; --bg-2:#f6f8f3; --bg-3:#eef2e9; --line:#e3e8de; --line-2:#d4dcce;
+  --s1:.5rem; --s2:.85rem; --s3:1.25rem; --s4:2rem; --s5:3rem; --s6:clamp(3.5rem,8vw,7.5rem);
+  --rad-s:8px; --rad:14px; --rad-l:22px; --rad-pill:999px;
+  --sh-1:0 1px 2px rgba(19,36,26,.06); --sh-2:0 6px 18px rgba(19,36,26,.08);
+  --sh-3:0 14px 38px rgba(19,36,26,.13); --sh-4:0 26px 70px rgba(6,52,26,.22);
+  --t:.34s cubic-bezier(.2,.6,.2,1);
+  --wrap:1200px;
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Mulish',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.62;font-size:1.0625rem;font-weight:400;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2rem)}
+.eyebrow{font-family:var(--body);font-size:.74rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:.5rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.eyebrow.on-dark{color:var(--mint)}
+.eyebrow.on-dark::before{background:var(--mint)}
+.sec{padding-block:var(--s6)}
+.sec-head{max-width:62ch}
+.sec-head h2{font-size:clamp(1.85rem,4.4vw,2.9rem);margin:.7rem 0 .6rem;font-weight:800}
+.sec-head p{color:var(--ink-2);font-size:1.075rem;max-width:60ch}
+.lede{color:var(--ink-2)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:var(--body);font-weight:700;font-size:.97rem;padding:.92rem 1.5rem;border-radius:var(--rad-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),background var(--t),box-shadow var(--t),border-color var(--t);line-height:1}
+.btn-primary{background:var(--forest);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--forest-2);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-accent{background:var(--accent);color:#06341a}
+.btn-accent:hover{background:var(--accent-d);color:#fff;transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{background:var(--bg-3);transform:translateY(-2px)}
+.btn-ondark{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.34)}
+.btn-ondark:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.btn-block{width:100%}
+
+/* ============ top bar ============ */
+.topbar{background:var(--forest-d);color:#dcefe2;font-size:.82rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-block:.5rem;min-height:38px}
+.topbar a{color:#fff;font-weight:600}
+.topbar .tb-meta{display:flex;gap:1.4rem;align-items:center}
+.topbar .tb-meta span{display:inline-flex;align-items:center;gap:.4rem}
+.dotsep{color:var(--mint)}
+@media(max-width:720px){.topbar .tb-meta{display:none}}
+
+/* ============ header / nav ============ */
+.hdr{position:sticky;top:0;z-index:50;background:var(--forest);color:#fff;box-shadow:0 2px 0 rgba(255,255,255,.05)}
+.hdr.scrolled{box-shadow:var(--sh-2)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand img{height:42px;width:auto}
+.nav{display:flex;align-items:center;gap:1.9rem}
+.nav a.nl{color:#eaf4ee;font-weight:600;font-size:.95rem;position:relative;padding:.2rem 0}
+.nav a.nl:hover{color:#fff}
+.nav a.nl::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:var(--accent);transition:right var(--t)}
+.nav a.nl:hover::after{right:0}
+.nav .btn{padding:.62rem 1.15rem;font-size:.9rem}
+.menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;width:46px;height:42px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:10px;cursor:pointer;padding:0 11px}
+.menu-btn span{display:block;height:2.5px;width:100%;background:#fff;border-radius:2px}
+@media(max-width:900px){.nav{display:none}.menu-btn{display:flex}}
+
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;visibility:hidden;opacity:0;transition:opacity var(--t),visibility var(--t)}
+.drawer.open{visibility:visible;opacity:1}
+.drawer-scrim{position:absolute;inset:0;background:rgba(6,52,26,.55)}
+.drawer-panel{position:absolute;top:0;right:0;height:100%;width:min(84%,330px);background:var(--bg);box-shadow:var(--sh-4);transform:translateX(100%);transition:transform var(--t);padding:1.3rem 1.3rem 2rem;display:flex;flex-direction:column;gap:.2rem}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.drawer-x{width:42px;height:42px;border:1px solid var(--line-2);background:var(--bg-2);border-radius:10px;font-size:1.4rem;line-height:1;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--body)}
+.drawer a.dl{padding:.85rem .4rem;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);font-size:1.05rem}
+.drawer .btn{margin-top:1rem}
+
+/* ============ hero ============ */
+.hero{position:relative;color:#fff;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;object-fit:cover;width:100%;height:100%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(104deg,rgba(0,52,26,.93) 0%,rgba(0,58,30,.82) 42%,rgba(6,52,26,.5) 100%)}
+.hero .wrap{padding-block:clamp(3.2rem,9vw,7rem)}
+.hero-inner{max-width:43rem}
+.hero h1{font-size:clamp(2.3rem,6vw,4rem);font-weight:800;color:#fff;letter-spacing:-.02em;margin:1rem 0 1.1rem}
+.hero h1 .hl{color:var(--mint)}
+.hero p.sub{font-size:clamp(1.05rem,2.3vw,1.28rem);color:#e3f1e8;max-width:40ch;line-height:1.5}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero-chips{display:flex;flex-wrap:wrap;gap:.5rem .55rem;margin-top:1.8rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:var(--rad-pill);padding:.5rem .9rem;font-size:.85rem;font-weight:600;color:#eefaf2}
+.chip .star{color:#ffd166}
+.chip svg{width:15px;height:15px;stroke:var(--mint);stroke-width:2;fill:none}
+
+/* trust band */
+.trust{background:var(--forest-d);color:#e6f3ea;border-top:1px solid rgba(255,255,255,.07)}
+.trust-in{display:grid;grid-template-columns:1fr;gap:1px;background:rgba(255,255,255,.08)}
+@media(min-width:560px){.trust-in{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.trust-in{grid-template-columns:repeat(4,1fr)}}
+.trust-cell{background:var(--forest-d);padding:1.15rem 1.2rem;display:flex;gap:.7rem;align-items:flex-start}
+.trust-cell svg{width:22px;height:22px;stroke:var(--accent);stroke-width:2;fill:none;flex-shrink:0;margin-top:2px}
+.trust-cell b{display:block;font-family:var(--display);font-weight:700;font-size:1rem;color:#fff;letter-spacing:-.01em}
+.trust-cell span{font-size:.85rem;color:#bcd6c4}
+
+/* ============ services ============ */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.6rem}
+@media(min-width:580px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--rad-l);padding:1.7rem 1.6rem;transition:transform var(--t),box-shadow var(--t),border-color var(--t);position:relative;overflow:hidden}
+.svc-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform var(--t)}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--sh-3);border-color:var(--line-2)}
+.svc-card:hover::before{transform:scaleY(1)}
+.svc-ic{width:50px;height:50px;border-radius:13px;background:var(--bg-3);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem}
+.svc-ic svg{width:25px;height:25px;stroke:var(--green);stroke-width:1.9;fill:none}
+.svc-card h3{font-size:1.22rem;margin-bottom:.5rem;font-weight:700}
+.svc-card p{color:var(--ink-2);font-size:.96rem;margin-bottom:.9rem}
+.svc-card ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
+.svc-card li{font-size:.8rem;font-weight:600;color:var(--green);background:var(--bg-3);border-radius:var(--rad-pill);padding:.3rem .7rem}
+
+/* ============ properties strip ============ */
+.props{background:var(--bg-2);border-block:1px solid var(--line)}
+.prop-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.9rem;margin-top:2.3rem}
+@media(min-width:760px){.prop-grid{grid-template-columns:repeat(4,1fr)}}
+.prop-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--rad);padding:1.4rem 1.3rem;text-align:left;transition:transform var(--t),box-shadow var(--t)}
+.prop-card:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
+.prop-card svg{width:27px;height:27px;stroke:var(--green);stroke-width:1.8;fill:none;margin-bottom:.7rem}
+.prop-card b{display:block;font-family:var(--display);font-size:1.02rem;font-weight:700;margin-bottom:.2rem}
+.prop-card span{font-size:.85rem;color:var(--ink-3)}
+
+/* ============ gallery ============ */
+.gal-grid{display:grid;grid-template-columns:1fr;gap:.9rem;margin-top:2.6rem;grid-auto-rows:13rem}
+@media(min-width:600px){.gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:14rem}}
+@media(min-width:960px){.gal-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:15.5rem;gap:1.1rem}}
+.gal-item{position:relative;overflow:hidden;border-radius:var(--rad);background:var(--bg-3)}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-item figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .75rem;font-size:.84rem;font-weight:600;color:#fff;background:linear-gradient(180deg,transparent,rgba(6,52,26,.85));opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.gal-item:hover figcaption{opacity:1;transform:none}
+@media(min-width:600px){.gal-item.feat{grid-column:span 2;grid-row:span 2}}
+
+/* ============ why / differentiators ============ */
+.why{background:var(--forest);color:#eaf5ee}
+.why .sec-head h2{color:#fff}
+.why .sec-head p{color:#bcd6c4}
+.why-grid{display:grid;grid-template-columns:1fr;gap:1px;margin-top:2.6rem;background:rgba(255,255,255,.1);border-radius:var(--rad-l);overflow:hidden}
+@media(min-width:640px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+.why-cell{background:var(--forest);padding:1.9rem 1.7rem}
+.why-cell .n{font-family:var(--display);font-size:.82rem;font-weight:700;color:var(--mint);letter-spacing:.04em}
+.why-cell h3{color:#fff;font-size:1.16rem;margin:.55rem 0 .5rem;font-weight:700}
+.why-cell p{color:#bcd6c4;font-size:.93rem;line-height:1.6}
+
+/* ============ reviews ============ */
+.rev-top{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem;margin-top:1.4rem}
+.rev-score{display:flex;align-items:center;gap:.8rem}
+.rev-score .big{font-family:var(--display);font-size:2.7rem;font-weight:800;color:var(--ink);line-height:1}
+.rev-stars{color:#f0a500;font-size:1.05rem;letter-spacing:1px}
+.rev-score small{display:block;color:var(--ink-3);font-size:.86rem;font-weight:600;margin-top:.15rem}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.2rem;margin-top:2.4rem}
+@media(min-width:820px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+.rev-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--rad-l);padding:1.8rem 1.7rem;box-shadow:var(--sh-1);position:relative}
+.rev-card .qm{font-family:var(--display);font-size:3.2rem;line-height:.6;color:var(--bg-3);position:absolute;top:1.1rem;right:1.3rem}
+.rev-card .stars{color:#f0a500;font-size:.95rem;letter-spacing:1px;margin-bottom:.7rem}
+.rev-card blockquote{font-size:1.04rem;color:var(--ink);line-height:1.62;font-weight:500}
+.rev-card cite{display:block;margin-top:1rem;font-style:normal;font-weight:700;color:var(--ink);font-size:.95rem}
+.rev-card cite span{display:block;font-weight:600;color:var(--ink-3);font-size:.82rem}
+
+/* ============ about ============ */
+.about-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center}
+@media(min-width:920px){.about-grid{grid-template-columns:1.05fr .95fr}}
+.about-media{position:relative;border-radius:var(--rad-l);overflow:hidden;box-shadow:var(--sh-3)}
+.about-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+.about-media .tag{position:absolute;left:1rem;bottom:1rem;background:rgba(0,69,31,.92);color:#fff;border-radius:var(--rad-pill);padding:.45rem 1rem;font-size:.8rem;font-weight:700}
+.about-body h2{font-size:clamp(1.8rem,4vw,2.7rem);font-weight:800;margin:.7rem 0 1rem}
+.about-body p{color:var(--ink-2);margin-bottom:1rem}
+.about-body .ab-list{list-style:none;display:grid;gap:.7rem;margin-top:1.3rem}
+.about-body .ab-list li{display:flex;gap:.65rem;align-items:flex-start;font-weight:600;color:var(--ink);font-size:.97rem}
+.about-body .ab-list svg{width:21px;height:21px;stroke:var(--accent);stroke-width:2.2;fill:none;flex-shrink:0;margin-top:1px}
+
+/* ============ contact ============ */
+.contact{background:var(--bg-2);border-top:1px solid var(--line)}
+.contact-card{display:grid;grid-template-columns:1fr;gap:0;background:var(--bg);border:1px solid var(--line);border-radius:var(--rad-l);overflow:hidden;box-shadow:var(--sh-2);margin-top:2.6rem}
+@media(min-width:880px){.contact-card{grid-template-columns:1fr 1fr}}
+.contact-info{padding:clamp(1.7rem,4vw,2.6rem);background:var(--forest);color:#eaf5ee}
+.contact-info h3{color:#fff;font-size:1.5rem;margin-bottom:.6rem;font-weight:700}
+.contact-info p.ci-lede{color:#bcd6c4;font-size:.97rem;margin-bottom:1.6rem}
+.ci-row{display:flex;gap:.85rem;align-items:flex-start;padding:.85rem 0;border-top:1px solid rgba(255,255,255,.12)}
+.ci-row:first-of-type{border-top:0}
+.ci-row svg{width:20px;height:20px;stroke:var(--mint);stroke-width:2;fill:none;flex-shrink:0;margin-top:3px}
+.ci-row .k{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:#9ec7ac;font-weight:700}
+.ci-row .v{font-size:1rem;font-weight:600;color:#fff}
+.ci-row .v a:hover{color:var(--mint)}
+.ci-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem}
+.contact-form{padding:clamp(1.7rem,4vw,2.6rem)}
+.contact-form h3{font-size:1.35rem;margin-bottom:.3rem;font-weight:700}
+.contact-form p.cf-note{color:var(--ink-3);font-size:.9rem;margin-bottom:1.4rem}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.8rem;font-weight:700;color:var(--ink-2);margin-bottom:.35rem;letter-spacing:.01em}
+.field input,.field textarea,.field select{width:100%;font-family:var(--body);font-size:.97rem;padding:.8rem .9rem;border:1.5px solid var(--line-2);border-radius:var(--rad-s);background:var(--bg-2);color:var(--ink);transition:border-color var(--t),background var(--t)}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--green);background:#fff}
+.field textarea{resize:vertical;min-height:96px}
+.form-row{display:grid;grid-template-columns:1fr;gap:0 1rem}
+@media(min-width:520px){.form-row{grid-template-columns:1fr 1fr}}
+
+/* map */
+.map-wrap{margin-top:2.6rem;border-radius:var(--rad-l);overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh-1)}
+.map-wrap iframe{width:100%;height:330px;border:0;display:block;filter:grayscale(.12)}
+
+/* ============ faq ============ */
+.faq-list{margin-top:2.4rem;max-width:820px}
+.faq-item{border:1px solid var(--line);border-radius:var(--rad);margin-bottom:.8rem;background:var(--bg);overflow:hidden;transition:box-shadow var(--t)}
+.faq-item[open]{box-shadow:var(--sh-2)}
+.faq-item summary{cursor:pointer;padding:1.2rem 1.4rem;font-family:var(--display);font-weight:700;font-size:1.06rem;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary .pl{width:22px;height:22px;flex-shrink:0;position:relative}
+.faq-item summary .pl::before,.faq-item summary .pl::after{content:"";position:absolute;background:var(--green);border-radius:2px;transition:transform var(--t)}
+.faq-item summary .pl::before{left:0;right:0;top:9.5px;height:3px}
+.faq-item summary .pl::after{top:0;bottom:0;left:9.5px;width:3px}
+.faq-item[open] summary .pl::after{transform:scaleY(0)}
+.faq-item .faq-a{padding:0 1.4rem 1.3rem;color:var(--ink-2);font-size:.98rem;line-height:1.62}
+
+/* ============ footer ============ */
+.foot{background:var(--forest-d);color:#bcd6c4;padding-top:var(--s6)}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2.2rem}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.6fr 1fr 1.2fr}}
+.foot-brand img{height:48px;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9ec0a8;max-width:34ch}
+.foot-col h4{color:#fff;font-family:var(--display);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;color:#bcd6c4;font-size:.92rem;padding:.28rem 0}
+.foot-col a:hover{color:#fff}
+.foot-rev{display:inline-flex;align-items:center;gap:.5rem;margin-top:.3rem;color:var(--mint);font-weight:700;font-size:.9rem}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);margin-top:2.6rem;padding-block:1.4rem}
+.foot-bot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.82rem;color:#8fb39b}
+
+/* sticky mobile cta */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(19,36,26,.1);padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));display:none;gap:.55rem}
+.sticky-cta .btn{flex:1;padding:.8rem .6rem;font-size:.92rem}
+@media(max-width:900px){.sticky-cta{display:flex}body{padding-bottom:74px}}
+
+/* reveal (JS-gated; no-JS shows everything) */
+.js .rv{opacity:0;transform:translateY(22px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+
+<!-- top bar -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-meta">
+      <span>Serving Tucson &amp; the surrounding metro</span>
+      <span class="dotsep">•</span>
+      <span>Arizona Multihousing Association partner · IREM Tucson sponsor</span>
+    </div>
+    <a href="tel:+15204444019">Call (520) 444-4019</a>
+  </div>
+</div>
+
+<!-- header -->
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="B.B Hill Landscaping home">
+      <img src="assets/bb-hill-logo.png" alt="B.B Hill Landscaping" width="600" height="220" />
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nl" href="#services">Services</a>
+      <a class="nl" href="#work">Our Work</a>
+      <a class="nl" href="#why">Why B.B Hill</a>
+      <a class="nl" href="#reviews">Reviews</a>
+      <a class="nl" href="#contact">Contact</a>
+      <a class="btn btn-accent" href="#contact">Request a proposal</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-scrim" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-label="Menu">
+    <div class="drawer-top">
+      <strong style="font-family:var(--display);color:var(--forest)">B.B Hill</strong>
+      <button class="drawer-x" id="drawerX" aria-label="Close menu">&times;</button>
+    </div>
+    <a class="dl" href="#services" data-close>Services</a>
+    <a class="dl" href="#work" data-close>Our Work</a>
+    <a class="dl" href="#properties" data-close>Properties We Serve</a>
+    <a class="dl" href="#why" data-close>Why B.B Hill</a>
+    <a class="dl" href="#reviews" data-close>Reviews</a>
+    <a class="dl" href="#contact" data-close>Contact</a>
+    <a class="btn btn-primary btn-block" href="tel:+15204444019" data-close>Call (520) 444-4019</a>
+    <a class="btn btn-accent btn-block" href="#contact" data-close>Request a proposal</a>
+  </div>
+</div>
+
+<!-- hero -->
+<section class="hero">
+  <img class="hero-bg" src="assets/commercial-grounds-apartment-community.jpg" alt="Maintained desert apartment community grounds with palms and Catalina mountains, Tucson AZ" width="1240" height="697" fetchpriority="high" decoding="async" />
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow on-dark">Commercial &amp; HOA Grounds Care · Tucson, AZ</span>
+      <h1>Commercial landscaping that makes your property <span class="hl">look managed.</span></h1>
+      <p class="sub">B.B Hill Landscaping keeps Tucson apartment communities, HOAs and commercial properties clean, green and contract-ready — with in-house crews and one accountable team.</p>
+      <div class="hero-cta">
+        <a class="btn btn-accent" href="#contact">Request a proposal</a>
+        <a class="btn btn-ondark" href="#work">See our work</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><span class="star">★</span> 4.9 rating · 72 Google reviews</span>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Locally owned &amp; operated</span>
+        <span class="chip"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg> In-house crews · 24/7 response</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- trust band -->
+<section class="trust">
+  <div class="wrap" style="padding-block:0">
+    <div class="trust-in">
+      <div class="trust-cell"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg><div><b>Multifamily &amp; HOA focus</b><span>Apartment communities, common areas &amp; boards</span></div></div>
+      <div class="trust-cell"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><div><b>One-time or contract</b><span>Cleanups or ongoing scheduled service</span></div></div>
+      <div class="trust-cell"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><b>AMA partner · IREM sponsor</b><span>Built for property-management standards</span></div></div>
+      <div class="trust-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><b>Responsive when you call</b><span>No outsourcing — handled in-house</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service grounds care, under one roof</h2>
+      <p>Complete commercial landscaping — from weekly maintenance to irrigation, tree care and project work. Reliable, responsive, and done right.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card rv">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V9l6-5 6 5v12M10 21v-5h4v5"/></svg></div>
+        <h3>Landscape Management</h3>
+        <p>Scheduled commercial maintenance that keeps every property sharp through the seasons.</p>
+        <ul><li>Commercial maintenance</li><li>Seasonal services</li><li>Turf &amp; plant health</li></ul>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-5-7-13-7-13S5 10 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <h3>Irrigation &amp; Water Management</h3>
+        <p>Smart, water-wise systems tuned for the Sonoran desert — fewer leaks, lower bills.</p>
+        <ul><li>Smart controllers</li><li>Install &amp; repair</li><li>Water-saving systems</li></ul>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12 7 8M12 12l5-4M12 12c0-5 3-8 3-8M9 5s3 2 3 7"/></svg></div>
+        <h3>Tree Care</h3>
+        <p>Pruning, shaping and health assessments — plus emergency response after monsoon storms.</p>
+        <ul><li>Pruning &amp; trimming</li><li>Emergency services</li><li>Health assessments</li></ul>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V10l4-3 4 3M12 20V7l5-4 5 4v13"/></svg></div>
+        <h3>Landscape Construction</h3>
+        <p>Design-build, hardscaping and site infrastructure that upgrades the property long-term.</p>
+        <ul><li>Design-build</li><li>Hardscaping</li><li>Site infrastructure</li></ul>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic"><svg viewBox="0 0 24 24"><path d="M9 11H5a2 2 0 0 0-2 2v7h18v-9a2 2 0 0 0-2-2h-4M9 11V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6M9 11h6M8 15h.01M12 15h.01M16 15h.01"/></svg></div>
+        <h3>Preconstruction &amp; Estimating</h3>
+        <p>Budget forecasting and value engineering, coordinated directly with your GCs or architects.</p>
+        <ul><li>Budget forecasting</li><li>Value engineering</li><li>Bid package support</li></ul>
+      </article>
+      <article class="svc-card rv" style="background:var(--bg-3);border-color:var(--line-2)">
+        <div class="svc-ic" style="background:var(--forest)"><svg viewBox="0 0 24 24" style="stroke:#fff"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></div>
+        <h3>Not sure what you need?</h3>
+        <p>Send us the property. We'll walk it, scope the work and send a clear, custom proposal — free.</p>
+        <a class="btn btn-primary" href="#contact" style="margin-top:.2rem">Request a proposal</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- properties -->
+<section class="sec props" id="properties">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Who we serve</span>
+      <h2>Built for the properties you manage</h2>
+      <p>We specialize in commercial properties — multi-family communities, schools, office buildings, plazas and more.</p>
+    </div>
+    <div class="prop-grid">
+      <div class="prop-card rv"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l5-3v17M14 21V11l5-2v12M9 9h.01M9 13h.01M9 17h.01"/></svg><b>Apartment communities</b><span>Multi-family &amp; common areas</span></div>
+      <div class="prop-card rv"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 12h4M10 16h4"/></svg><b>HOAs &amp; boards</b><span>Entries, medians &amp; amenities</span></div>
+      <div class="prop-card rv"><svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 8h2a2 2 0 0 1 2 2v11M8 7h2M8 11h2M8 15h2"/></svg><b>Offices &amp; plazas</b><span>Retail, business parks &amp; pads</span></div>
+      <div class="prop-card rv"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg><b>Schools &amp; campuses</b><span>Grounds &amp; recreation areas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- gallery -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Our work</span>
+      <h2>Tucson properties we keep dialed in</h2>
+      <p>Real common areas, courtyards and grounds across the Tucson metro — maintained by our own crews.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item feat rv">
+        <img src="assets/multifamily-lawn-poolside.jpg" alt="Green lawn and poolside common area at a Tucson apartment community maintained by B.B Hill Landscaping" width="1200" height="800" loading="lazy" />
+        <figcaption>Multifamily community grounds &amp; poolside lawn</figcaption>
+      </figure>
+      <figure class="gal-item rv">
+        <img src="assets/common-area-turf-paver-edging.jpg" alt="Common-area turf with curved paver edging and decomposed granite, Tucson AZ" width="1060" height="1200" loading="lazy" />
+        <figcaption>Common-area turf &amp; paver edging</figcaption>
+      </figure>
+      <figure class="gal-item rv">
+        <img src="assets/shaded-ramada-patio-turf.jpg" alt="Shaded ramada patio with artificial turf at a Tucson commercial property" width="1200" height="800" loading="lazy" />
+        <figcaption>Shaded ramada &amp; amenity patio</figcaption>
+      </figure>
+      <figure class="gal-item rv">
+        <img src="assets/pergola-courtyard-lawn.jpg" alt="Pergola courtyard with manicured lawn and desert plantings, Tucson AZ" width="1200" height="800" loading="lazy" />
+        <figcaption>Pergola courtyard &amp; lawn</figcaption>
+      </figure>
+      <figure class="gal-item rv">
+        <img src="assets/community-ramada-desert-path.jpg" alt="Community ramada with benches and decomposed-granite walking paths, Tucson AZ" width="1200" height="800" loading="lazy" />
+        <figcaption>Community ramada &amp; desert paths</figcaption>
+      </figure>
+      <figure class="gal-item rv">
+        <img src="assets/tree-care-trimming-crew.jpg" alt="B.B Hill crew performing tree trimming and cleanup at a Tucson property" width="825" height="1100" loading="lazy" />
+        <figcaption>Tree care &amp; storm cleanup</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- why -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow on-dark">What sets us apart</span>
+      <h2>The reasons property managers stay with B.B Hill</h2>
+      <p>No ads. No gimmicks. Just word-of-mouth and a job well done — the same standard on every property, every visit.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-cell rv"><div class="n">01</div><h3>Locally owned &amp; operated</h3><p>A Tucson crew serving our own community with pride, care and consistency.</p></div>
+      <div class="why-cell rv"><div class="n">02</div><h3>Service over profit</h3><p>We never cut corners. Quality and relationships come first — always.</p></div>
+      <div class="why-cell rv"><div class="n">03</div><h3>24/7 responsiveness</h3><p>When you call, we answer. Fast, reliable support when you need it most.</p></div>
+      <div class="why-cell rv"><div class="n">04</div><h3>Full-service expertise</h3><p>Maintenance, irrigation, trees and projects — we handle it all, in-house.</p></div>
+      <div class="why-cell rv"><div class="n">05</div><h3>Built on reputation</h3><p>4.9 stars across 72 Google reviews from the properties we already keep sharp.</p></div>
+      <div class="why-cell rv"><div class="n">06</div><h3>Made for managers</h3><p>An Arizona Multihousing Association partner and IREM Tucson sponsor — we speak your standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Reviews</span>
+      <h2>Trusted by property managers, praised for reliability</h2>
+      <div class="rev-top">
+        <div class="rev-score">
+          <div class="big">4.9</div>
+          <div><div class="rev-stars">★★★★★</div><small>72 Google reviews</small></div>
+        </div>
+        <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ2Sz-J8971oYRt0uJa926kkw" target="_blank" rel="noopener">Leave us a Google review</a>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev-card rv">
+        <div class="qm">&rdquo;</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>German was extremely kind. While they were completing maintenance on our apartment complex... they maintain the property perfectly. It is always so clean and tidy and the grass is super green and always cut perfectly... the palm trees are cut perfectly for the right shading.</blockquote>
+        <cite>celine harris<span>Google review</span></cite>
+      </figure>
+      <figure class="rev-card rv">
+        <div class="qm">&rdquo;</div>
+        <div class="stars">★★★★★</div>
+        <blockquote>We've been using BB Hill for our landscaping and I can honestly say our property, Bear Canyon, has never looked better. Since Steven took over, everything just feels dialed in.</blockquote>
+        <cite>Jenn Cresap<span>Google review</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section class="sec props" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-media rv">
+        <img src="assets/bb-hill-team.jpg" alt="The B.B Hill Landscaping crew in uniform in front of their Tucson shop" width="1200" height="675" loading="lazy" />
+        <span class="tag">The B.B Hill crew · Tucson, AZ</span>
+      </div>
+      <div class="about-body rv">
+        <span class="eyebrow">About B.B Hill</span>
+        <h2>Rooted in experience. Driven by people.</h2>
+        <p>B.B Hill Landscaping is a Tucson commercial landscaping team built around dependable, high-quality work — skilled crews, lasting relationships, and a commitment to doing things right.</p>
+        <p>From planning to execution, work is handled by our experienced in-house team. No outsourcing — just consistent, accountable service property managers can count on.</p>
+        <ul class="ab-list">
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Locally owned &amp; operated in Tucson</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Arizona Multihousing Association partner · IREM Tucson sponsor</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>All work handled in-house — no subcontracting</li>
+          <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>4.9 stars across 72 Google reviews</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Get started</span>
+      <h2>Request a proposal for your property</h2>
+      <p>Tell us about the property and what it needs. We'll walk it, scope the work, and send a clear, custom quote — free, with no obligation.</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3>Talk to B.B Hill</h3>
+        <p class="ci-lede">Reach us directly — we answer when you call.</p>
+        <div class="ci-row">
+          <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><div class="k">Phone</div><div class="v"><a href="tel:+15204444019">(520) 444-4019</a></div></div>
+        </div>
+        <div class="ci-row">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 7-10 6L2 7"/></svg>
+          <div><div class="k">Email</div><div class="v"><a href="mailto:info@bbhilllandscaping.com">info@bbhilllandscaping.com</a></div></div>
+        </div>
+        <div class="ci-row">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><div class="k">Address</div><div class="v">3810 S Dodge Blvd, Tucson, AZ 85713</div></div>
+        </div>
+        <div class="ci-row">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div><div class="k">Hours</div><div class="v">Call for hours &amp; scheduling</div></div>
+        </div>
+        <div class="ci-actions">
+          <a class="btn btn-accent" href="tel:+15204444019">Call now</a>
+          <a class="btn btn-ondark" href="https://search.google.com/local/writereview?placeid=ChIJ2Sz-J8971oYRt0uJa926kkw" target="_blank" rel="noopener">Review us on Google</a>
+        </div>
+      </div>
+      <form class="contact-form" action="mailto:info@bbhilllandscaping.com" method="post" enctype="text/plain">
+        <h3>Request a proposal</h3>
+        <p class="cf-note">We reply to most requests the same business day.</p>
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
+          <div class="field"><label for="company">Property / company</label><input id="company" name="company" type="text" /></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" /></div>
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Ongoing grounds maintenance</option>
+            <option>Irrigation &amp; water management</option>
+            <option>Tree care</option>
+            <option>Landscape construction / design-build</option>
+            <option>One-time cleanup</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">Tell us about the property</label><textarea id="message" name="message" placeholder="Property type, size, location, and what you're looking for…"></textarea></div>
+        <button class="btn btn-primary btn-block" type="submit">Send my request</button>
+      </form>
+    </div>
+    <div class="map-wrap rv">
+      <iframe title="Map to B.B Hill Landscaping, 3810 S Dodge Blvd, Tucson AZ" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-110.9239179%2C32.1676907%2C-110.9039179%2C32.1876907&amp;layer=mapnik&amp;marker=32.1776907%2C-110.9139179"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- faq -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Answers</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item rv"><summary>What types of properties do you service?<span class="pl"></span></summary><div class="faq-a">We specialize in commercial properties — multi-family communities, schools, office buildings, plazas, and more.</div></details>
+      <details class="faq-item rv"><summary>Do you offer one-time services, or only contracts?<span class="pl"></span></summary><div class="faq-a">We offer both. Whether you're looking for a one-time cleanup or ongoing maintenance, we're happy to tailor our services to meet your needs.</div></details>
+      <details class="faq-item rv"><summary>Are emergency services available?<span class="pl"></span></summary><div class="faq-a">Yes — we understand that some landscaping issues just can't wait. Emergency services are available upon request, subject to availability.</div></details>
+      <details class="faq-item rv"><summary>Can I get a custom quote for my property?<span class="pl"></span></summary><div class="faq-a">Absolutely. Every property is unique, which is why we provide free, custom quotes based on your specific landscape and goals.</div></details>
+      <details class="faq-item rv"><summary>Do you handle everything in-house?<span class="pl"></span></summary><div class="faq-a">Yes — from planning to execution, all work is handled by our experienced in-house team. No outsourcing, just consistent, high-quality service.</div></details>
+      <details class="faq-item rv"><summary>How soon can you start?<span class="pl"></span></summary><div class="faq-a">We're ready when you are. Start times vary based on the scope of the project and our current schedule, but we'll work with you to begin as soon as possible.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/bb-hill-logo.png" alt="B.B Hill Landscaping" width="600" height="220" />
+        <p>Commercial &amp; HOA grounds care across the Tucson metro — maintenance, irrigation, tree care and design-build, handled in-house.</p>
+        <a class="foot-rev" href="https://search.google.com/local/writereview?placeid=ChIJ2Sz-J8971oYRt0uJa926kkw" target="_blank" rel="noopener">★ 4.9 · 72 Google reviews</a>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Landscape management</a>
+        <a href="#services">Irrigation &amp; water</a>
+        <a href="#services">Tree care</a>
+        <a href="#services">Landscape construction</a>
+        <a href="#services">Preconstruction &amp; estimating</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p>B.B Hill Landscaping</p>
+        <p>3810 S Dodge Blvd<br/>Tucson, AZ 85713</p>
+        <a href="tel:+15204444019">(520) 444-4019</a>
+        <a href="mailto:info@bbhilllandscaping.com">info@bbhilllandscaping.com</a>
+        <p>Serving Tucson, Catalina Foothills, Oro Valley, Marana, Vail &amp; Sahuarita.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div class="wrap">
+      <span>© 2026 B.B Hill Landscaping · BC Hill Elite Services LLC. All rights reserved.</span>
+      <span>Tucson, Arizona</span>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky mobile cta -->
+<div class="sticky-cta">
+  <a class="btn btn-primary" href="tel:+15204444019">Call now</a>
+  <a class="btn btn-accent" href="#contact">Request a proposal</a>
+</div>
+
+<script>
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
+(function(){
+  var hdr=document.querySelector('.hdr');
+  addEventListener('scroll',function(){hdr.classList.toggle('scrolled',scrollY>8)},{passive:true});
+  var drawer=document.getElementById('drawer'),mb=document.getElementById('menuBtn');
+  function open(){drawer.classList.add('open');mb.setAttribute('aria-expanded','true')}
+  function close(){drawer.classList.remove('open');mb.setAttribute('aria-expanded','false')}
+  mb.addEventListener('click',open);
+  document.getElementById('drawerX').addEventListener('click',close);
+  drawer.querySelectorAll('[data-close]').forEach(function(el){el.addEventListener('click',close)});
+  addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  } else { document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')}); }
+})();
+</script>
+</body>
+</html>

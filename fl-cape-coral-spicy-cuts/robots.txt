@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/fl-cape-coral-spicy-cuts/sitemap.xml

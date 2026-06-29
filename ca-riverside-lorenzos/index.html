@@ -1,0 +1,651 @@
+<!--
+  Lorenzo's Landscaping — Riverside, CA. PATH-0 brand-match (adopt + elevate).
+  Existing live site lorenzo-landscaping.com is a Fontic DIY builder template (builder credit in footer,
+  messy 6-color palette). Rebuilt cleaner/faster, recognizably THEIR brand: green landscaping identity
+  (their #01a325 elevated to a refined grass-green ramp) + warm citrus-gold accent (their #FFD700 elevated),
+  their real tagline "Perfecting landscapes, enhancing lifestyles." Real photos = their OWN site photos
+  (firebase fotosCliente). Real review = Laura Stetler (Google). Hand-written CSS off DESIGN_RULES §0 tokens.
+  HONESTY: dropped their unverifiable "two decades / since 2000" claim (DB tenure confirmed:false, domain 2yr).
+  Fonts: Fraunces (display serif, "classic") + Mulish (body).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping in Riverside, CA | Lorenzo&rsquo;s Landscaping</title>
+<meta name="description" content="Lorenzo&rsquo;s Landscaping &mdash; Riverside, CA&rsquo;s owner-operated crew for lawn care, hedge &amp; tree pruning, hardscaping, artificial turf and irrigation. 5.0&#9733; from 30 Google reviews. Free quotes.">
+<link rel="canonical" href="https://savcab.github.io/websites/ca-riverside-lorenzos/">
+<meta name="theme-color" content="#1f6b34">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Lorenzo&rsquo;s Landscaping &mdash; Riverside, CA">
+<meta property="og:description" content="Owner-operated Riverside landscaping &amp; lawn care: hedge &amp; tree pruning, hardscaping, turf, irrigation. 5.0&#9733; from 30 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/ca-riverside-lorenzos/">
+<meta property="og:image" content="https://savcab.github.io/websites/ca-riverside-lorenzos/assets/hero-riverside-lawn-mountains.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6b34'/%3E%3Cpath d='M16 25c-4-1-7-4-7-9 0-1 0-2 .4-3 2 .3 4 1.3 5.2 3 .5.8.9 1.7 1.1 2.6.3-2 1.2-4 2.8-5.4C25 8 25 6 25 6s-2 0-4 1.6c-1.7 1.3-2.7 3.2-3 5.2C16.6 11 14.5 10 12 9.8 9.7 9.6 8 10 8 10s.3 2 1.6 3.6' fill='none' stroke='%23eef4ec' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* SPACING — 4/8 grid */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  /* TYPE */
+  --h1:clamp(2.3rem,5.4vw,3.85rem);
+  --h2:clamp(1.75rem,3.5vw,2.65rem);
+  --h3:1.32rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.06; --track-head:-.012em; --track-eye:.16em;
+  /* COLOR — Lorenzo brand green elevated; warm citrus-gold accent; never pure black */
+  --ink:#1f2a22;       /* warm charcoal-green ink */
+  --ink-2:#566054;
+  --ink-3:#8a948a;
+  --line:#e3e0d6;
+  --paper:#f6f4ee;     /* warm cream ground */
+  --paper-2:#efece2;   /* tinted alt section */
+  --bg:#ffffff;
+  --green:#1f6b34;     /* brand grass-green (their #01a325, deepened) — base green */
+  --green-dk:#154f27;  /* dark green sections / hovers */
+  --sage:#5c8358;      /* mid green secondary */
+  --sage-tint:#dde9d8;
+  --gold:#c8922e;      /* citrus-gold accent — stars + small accents (accent) */
+  --gold-d:#a9781f;
+  --gold-tint:#f1e6cd;
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  /* SHADOW — soft layered, warm-tinted, 4 tiers */
+  --sh-1:0 1px 2px rgba(31,42,34,.06);
+  --sh-2:0 2px 5px rgba(31,42,34,.07),0 4px 10px rgba(31,42,34,.05);
+  --sh-3:0 6px 14px rgba(31,42,34,.08),0 16px 30px rgba(31,42,34,.09);
+  --sh-4:0 12px 24px rgba(31,42,34,.10),0 28px 56px rgba(31,42,34,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:600}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:800;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* responsive copy — condensed text on phones, full copy on laptop */
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--green);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--green-dk);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:var(--sh-2)}
+.btn-gold:hover{background:var(--gold-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-white{background:#fff;color:var(--green-dk);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces",serif;font-weight:600;font-size:1.2rem;color:#fff;letter-spacing:-.01em;transition:color var(--t)}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--green);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .logo svg{width:23px;height:23px}
+.brand b{font-weight:700}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#bfe0c4;display:block;margin-top:1px}
+.nav{display:flex;align-items:center;gap:.4rem}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.14)}
+.hdr.solid{background:rgba(246,244,238,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .brand{color:var(--ink)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--green);background:var(--sage-tint)}
+.hdr.solid .call-pill{color:var(--green);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill:hover{background:rgba(255,255,255,.12)}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.16);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
+.hdr.solid .burger{background:var(--sage-tint);color:var(--green)}
+.burger svg{width:24px;height:24px}
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--green-dk);display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand{color:#fff}
+.drawer a.dlink{font-family:"Fraunces",serif;font-size:1.5rem;font-weight:500;color:#eaf2ec;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,92vh,824px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,38,24,.60) 0%,rgba(18,38,24,.16) 30%,rgba(18,38,24,.30) 60%,rgba(14,30,19,.84) 100%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero .eyebrow{color:#c7e6c9}
+.hero h1{font-size:var(--h1);font-weight:600;color:#fff;max-width:17ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.30)}
+.hero h1 em{font-style:italic;font-weight:500;color:#c7e6c9}
+.hero .sub{margin-top:1.15rem;font-size:1.16rem;color:rgba(255,255,255,.93);max-width:52ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .95rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+.rate-badge .stars{color:var(--gold)}
+/* ===== TRUST STRIP ===== */
+.trust{background:var(--green-dk);color:#fff}
+.trust-in{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;padding-block:var(--s4)}
+.trust-cell{display:flex;align-items:center;gap:.85rem;justify-content:center;text-align:left}
+.trust-cell .ti{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none;color:#c7e6c9}
+.trust-cell .ti svg{width:23px;height:23px}
+.trust-cell .tk{font-family:"Fraunces",serif;font-weight:600;font-size:1.35rem;line-height:1}
+.trust-cell .tv{font-size:.84rem;color:rgba(255,255,255,.78);margin-top:3px;font-weight:600}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--green);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:600}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;width:100%;font:inherit;color:inherit;text-align:left}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.05)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(15,30,20,.82));color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center}
+/* ===== FEATURE REVIEW ===== */
+.feat{background:var(--green-dk);color:#fff}
+.feat-in{display:grid;grid-template-columns:1fr;gap:1.4rem;max-width:60rem;margin-inline:auto;text-align:center}
+.feat .icon.quote{width:40px;height:40px;color:var(--gold);margin-inline:auto}
+.feat blockquote{font-family:"Fraunces",serif;font-size:clamp(1.4rem,3vw,2rem);line-height:1.42;font-weight:500;color:#f3f8f3;font-style:italic;max-width:24ch;margin-inline:auto}
+.feat .by{display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap;font-family:"Mulish";font-weight:700;color:#fff}
+.feat .by .stars{color:var(--gold)}
+.feat .by .mt{color:rgba(199,230,201,.72);font-weight:600;font-size:.9rem}
+.feat .rating-line{display:inline-flex;align-items:center;gap:.6rem;margin-top:.4rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:.5rem 1rem;border-radius:var(--r-pill);font-size:.92rem;font-weight:700}
+.feat .rating-line a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* ===== WHY / CREW ===== */
+.why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
+.why-photo{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-3);position:relative;aspect-ratio:4/5}
+.why-photo img{width:100%;height:100%;object-fit:cover;object-position:center 48%}
+.why h2{font-size:var(--h2);margin-top:.7rem}
+.why p{margin-top:1.1rem;color:var(--ink-2)}
+.why-pts{list-style:none;margin-top:1.5rem;display:grid;gap:.7rem}
+.why-pts li{display:flex;align-items:center;gap:.7rem;font-weight:600;color:var(--ink)}
+.why-pts .icon{color:var(--green);width:1.3rem;height:1.3rem;flex:none}
+/* ===== AREA ===== */
+.area{background:var(--paper-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;margin-top:var(--s5)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--sage)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:390px;border:0;filter:saturate(.94)}
+/* ===== CONTACT ===== */
+.ct-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem;margin-top:var(--s5)}
+.ct-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.ct-card.call{display:flex;flex-direction:column}
+.ct-card .big-phone{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.9rem,5vw,2.55rem);color:var(--green);letter-spacing:-.01em;margin:.6rem 0 .3rem;display:inline-flex;align-items:center;gap:.6rem}
+.ct-card .big-phone .icon{width:1.5rem;height:1.5rem;color:var(--gold)}
+.ct-alt{font-size:.96rem;color:var(--ink-2);margin-top:.1rem}
+.ct-alt a{color:var(--green);font-weight:700}
+.ct-sub{color:var(--ink-2);font-size:.98rem;margin-top:.7rem}
+.ct-actions{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.5rem}
+.ct-actions .btn{padding:.95rem 1rem}
+.review-btn{margin-top:.8rem}
+.review-btn .btn{width:100%;background:var(--paper-2);color:var(--green);border-color:var(--line)}
+.review-btn .btn:hover{background:var(--sage-tint)}
+.hours-panel{background:var(--green);color:#fff;border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.hours-panel h3{color:#fff;font-size:1.3rem;display:flex;align-items:center;gap:.6rem}
+.hours-panel h3 .icon{color:#c7e6c9}
+.hours-table{margin-top:1.2rem;width:100%;border-collapse:collapse}
+.hours-table td{padding:.62rem 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:.96rem}
+.hours-table td:last-child{text-align:right;font-weight:700;color:#eef6ee}
+.hours-foot{margin-top:1.3rem;font-size:.9rem;color:#d7e8d8;display:flex;align-items:flex-start;gap:.55rem}
+.hours-foot .icon{color:#c7e6c9;width:1.15rem;height:1.15rem;margin-top:2px;flex:none}
+.nap{margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.16);font-size:.92rem;color:#e2efe2;line-height:1.6}
+.nap b{color:#fff}
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#c4cdc4}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9aa49a;max-width:36ch;line-height:1.6}
+.foot-col h4{font-family:"Mulish";font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7f897f;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c4cdc4;padding:.28rem 0;line-height:1.5}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#828c82}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(246,244,238,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(31,42,34,.1);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,22,16,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#eaf2ec;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(22px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:920px){
+  .why-grid,.area-grid,.ct-grid{grid-template-columns:1fr}
+  .why-photo{order:-1;max-width:32rem;margin-inline:auto}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav .link,.nav .btn,.call-pill{display:none}
+  .burger{display:grid}
+  .sticky-cta{display:flex}
+  .hours-foot{margin-top:1rem}
+  footer{padding-bottom:5.5rem}
+  .trust-in{grid-template-columns:1fr;gap:1rem}
+  .trust-cell{justify-content:flex-start;max-width:22rem;margin-inline:auto;width:100%}
+  /* compact wordmark so it never wraps past the bar / overlaps content */
+  .hdr-in{height:64px}
+  .hdr-in .brand{font-size:1.06rem;line-height:1.1}
+  .hdr-in .brand .logo{width:34px;height:34px}
+  .hdr-in .brand .logo svg{width:20px;height:20px}
+  .hdr-in .brand .yr{display:none}
+  /* hero flows from just below the fixed header — no flex-end overflow under it */
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:540px){
+  .ct-actions{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+}
+</style>
+</head>
+<body id="top">
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></symbol>
+<symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 22v-7"/><path d="M9 8a3 3 0 0 1 .6-5.8 3 3 0 0 1 4.8 0A3 3 0 0 1 15 8a3.5 3.5 0 0 1 .9 6.5 3.5 3.5 0 0 1-7.8 0A3.5 3.5 0 0 1 9 8Z"/></symbol>
+<symbol id="i-paver" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+<symbol id="i-grass" viewBox="0 0 24 24"><path d="M12 21V11"/><path d="M12 13c0-3-1.5-5-4-6 0 3 1 5 4 6Z"/><path d="M12 13c0-3 1.5-5 4-6 0 3-1 5-4 6Z"/><path d="M4 21h16"/><path d="M7 21c0-2-.5-3.5-2-4.5M17 21c0-2 .5-3.5 2-4.5"/></symbol>
+<symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-5-7-13-7-13S5 10 5 15a7 7 0 0 0 7 7Z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Lorenzo&rsquo;s Landscaping home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c-5-1.5-8-5-8-10 0-1.4.2-2.6.6-3.7 2.4.3 4.6 1.5 6 3.5.5.8.9 1.7 1.2 2.6.3-2.2 1.3-4.3 3-5.8C18 6.7 18 4 18 4s-2.7 0-5 2c-1.9 1.7-3 4-3.3 6.3" fill="none" stroke="#eef4ec" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>Lorenzo&rsquo;s <b>Landscaping</b><span class="yr">Riverside, CA</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#work">Our Work</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+19519413151"><svg class="icon"><use href="#i-phone"/></svg>(951) 941-3151</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c-5-1.5-8-5-8-10 0-1.4.2-2.6.6-3.7 2.4.3 4.6 1.5 6 3.5.5.8.9 1.7 1.2 2.6.3-2.2 1.3-4.3 3-5.8C18 6.7 18 4 18 4s-2.7 0-5 2c-1.9 1.7-3 4-3.3 6.3" fill="none" stroke="#eef4ec" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Lorenzo&rsquo;s <b>Landscaping</b></span></span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#work">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+19519413151"><svg class="icon"><use href="#i-phone"/></svg>Call (951) 941-3151</a>
+    <a class="btn btn-ghost on-dark" href="#contact">Get a free quote</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero-riverside-lawn-mountains.webp" alt="Freshly mowed green lawn with mountain backdrop, a Lorenzo's Landscaping yard in Riverside, CA" width="1302" height="976" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow"><span class="tick"></span>Landscaping &amp; Lawn Care &middot; Riverside, CA</span>
+    <h1>Landscaping &amp; lawn care in Riverside, <em>done right and kept tidy.</em></h1>
+    <p class="sub">
+      <span class="only-lap">Lorenzo&rsquo;s is the crew Riverside homeowners book season after season &mdash; hedge and tree pruning, lawn care, hardscaping, turf and irrigation, handled by the owner himself.</span>
+      <span class="only-mob">The Riverside crew homeowners book season after season &mdash; lawns, pruning, hardscaping and turf.</span>
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact"><svg class="icon"><use href="#i-leaf"/></svg>Get a free quote</a>
+      <a class="btn btn-ghost on-dark" href="#work">See our work</a>
+    </div>
+    <div class="rate-badge"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span><b>5.0</b>&nbsp;rating &middot; 30 reviews on Google</div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust">
+  <div class="wrap trust-in">
+    <div class="trust-cell"><span class="ti"><svg class="icon"><use href="#i-star"/></svg></span><div><span class="tk">5.0&#9733;</span><div class="tv">Across 30 Google reviews</div></div></div>
+    <div class="trust-cell"><span class="ti"><svg class="icon"><use href="#i-repeat"/></svg></span><div><span class="tk">Repeat clients</span><div class="tv">Booked season after season</div></div></div>
+    <div class="trust-cell"><span class="ti"><svg class="icon"><use href="#i-clock"/></svg></span><div><span class="tk">7 days a week</span><div class="tv">6 AM&ndash;6 PM, owner-answered</div></div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>What we do</span>
+      <h2>One Riverside crew for the whole yard</h2>
+      <p class="lede">From a standing weekly mow to a full bed and hardscape refresh, Lorenzo&rsquo;s keeps Riverside properties looking sharp through the long Inland Empire growing season.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-grass"/></svg></span><h3>Lawn Care &amp; Yard Maintenance</h3><p>Mowing, edging, weed removal and seasonal clean-ups on a schedule that keeps your yard tidy year-round.</p></div>
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-scissors"/></svg></span><h3>Hedge &amp; Shrub Pruning</h3><p>Shaping and reworking hedges, shrubs and plantings &mdash; the twice-a-year rework our repeat clients book us back for.</p></div>
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-tree"/></svg></span><h3>Tree Trimming, Topping &amp; Removal</h3><p>Trimming, topping, fruit-tree care and full removals, with the cleanup hauled away when we&rsquo;re done.</p></div>
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-paver"/></svg></span><h3>Hardscaping &amp; Pavers</h3><p>Paver walkways, patios and borders that frame the lawn and stand up to Riverside sun and foot traffic.</p></div>
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-leaf"/></svg></span><h3>Artificial Turf &amp; Putting Greens</h3><p>Low-water artificial grass and backyard putting greens &mdash; green all year with none of the watering.</p></div>
+      <div class="svc rv"><span class="ic"><svg class="icon"><use href="#i-drop"/></svg></span><h3>Irrigation, Slopes &amp; Mulching</h3><p>Broken-pipe and irrigation repair, slope and hillside maintenance, mulching, plantings and ivy clearance.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY / OUR WORK -->
+<section class="section" id="work" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Our work</span>
+      <h2>Real Riverside yards, finished by Lorenzo&rsquo;s</h2>
+      <p class="lede">A few of the lawns, beds, walkways and trees we&rsquo;ve cared for around Riverside and the Inland Empire.</p>
+    </div>
+    <div class="gal-grid rv">
+      <button class="gal-item" type="button"><img src="assets/paver-walkway-pergola-lawn.webp" alt="Curved paver walkway through a green lawn beside a pergola in Riverside" width="1024" height="768" loading="lazy"><span class="gal-cap">Paver walkway &amp; lawn</span></button>
+      <button class="gal-item" type="button"><img src="assets/striped-lawn-curved-border.webp" alt="Freshly cut lawn with a curved concrete mow-strip border" width="749" height="937" loading="lazy"><span class="gal-cap">Lawn &amp; concrete border</span></button>
+      <button class="gal-item" type="button"><img src="assets/front-yard-mulch-beds.webp" alt="Finished front yard with fresh mulch beds and shaped plantings" width="811" height="811" loading="lazy"><span class="gal-cap">Front-yard beds</span></button>
+      <button class="gal-item" type="button"><img src="assets/tree-trimming-removal.webp" alt="Tree trimming and removal work in progress on a Riverside property" width="1299" height="1732" loading="lazy"><span class="gal-cap">Tree trimming &amp; removal</span></button>
+      <button class="gal-item" type="button"><img src="assets/artificial-turf-putting-green.webp" alt="Backyard artificial turf putting green with stamped concrete path" width="768" height="773" loading="lazy"><span class="gal-cap">Artificial turf &amp; putting green</span></button>
+      <button class="gal-item" type="button"><img src="assets/river-rock-mulch-bed-front.webp" alt="Front-yard bed with red mulch, river rock and young plantings" width="1302" height="976" loading="lazy"><span class="gal-cap">Mulch &amp; river-rock bed</span></button>
+      <button class="gal-item" type="button"><img src="assets/paver-checkerboard-walkway.webp" alt="Checkerboard paver-and-gravel walkway leading through a yard" width="1200" height="1600" loading="lazy"><span class="gal-cap">Paver &amp; gravel walkway</span></button>
+      <button class="gal-item" type="button"><img src="assets/clean-lawn-stone-column.webp" alt="Manicured green lawn beside a stone column entry in Riverside" width="750" height="939" loading="lazy"><span class="gal-cap">Lawn &amp; stone entry</span></button>
+      <button class="gal-item" type="button"><img src="assets/lawn-white-picket-fence.webp" alt="Tidy lawn and flower bed along a white picket fence" width="1172" height="1562" loading="lazy"><span class="gal-cap">Lawn &amp; flower bed</span></button>
+    </div>
+    <p class="gal-note">Every photo is real work by Lorenzo&rsquo;s Landscaping in the Riverside area.</p>
+  </div>
+</section>
+
+<!-- FEATURE REVIEW -->
+<section class="feat section" id="reviews">
+  <div class="wrap feat-in rv">
+    <svg class="icon quote" aria-hidden="true"><use href="#i-quote"/></svg>
+    <blockquote>Lorenzo does such a great job at caring for my yard! I hire him twice a year for rework of my hedges and pruning of all of my plants.</blockquote>
+    <div class="by"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span><span>Laura Stetler</span><span class="mt">&middot; Google review</span></div>
+    <div class="rating-line"><svg class="icon fill" style="width:1.05em;height:1.05em;color:var(--gold)"><use href="#i-star"/></svg><b>5.0</b>&nbsp;from 30 Google reviews &middot; <a href="https://search.google.com/local/reviews?placeid=ChIJMeMJiWOv3IARMDrHbJSh8Nw" target="_blank" rel="noopener">Read them on Google</a></div>
+  </div>
+</section>
+
+<!-- WHY / ABOUT -->
+<section class="section" id="about">
+  <div class="wrap why-grid">
+    <div class="why-photo rv"><img src="assets/crew-at-work-riverside.jpg" alt="Lorenzo's Landscaping crew at work clearing and grading a Riverside yard" width="1125" height="1500" loading="lazy"></div>
+    <div class="why rv">
+      <span class="eyebrow"><span class="tick"></span>Why Lorenzo&rsquo;s</span>
+      <h2>Owner-operated, and it shows</h2>
+      <p>Lorenzo&rsquo;s Landscaping is run hands-on by owner Bacilio Lorenzo &mdash; the same person who quotes the job is the one caring for your yard. That&rsquo;s how a 5.0 rating across 30 Google reviews turns into clients who book the same crew back season after season.</p>
+      <p>It&rsquo;s honest, tidy work: clear quotes, the cleanup hauled away, and a yard that looks cared-for long after we leave.</p>
+      <ul class="why-pts">
+        <li><svg class="icon"><use href="#i-check"/></svg>Owner-operated &mdash; talk to the person doing the work</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Repeat clients across Riverside &amp; the Inland Empire</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Free, no-pressure quotes &mdash; call, text or email</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Cleanup hauled away when the job is done</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:1.8rem"><a class="btn btn-primary" href="#contact"><svg class="icon"><use href="#i-arrow"/></svg>Get a free quote</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area section" id="area">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Where we work</span>
+      <h2>Serving Riverside &amp; the Inland Empire</h2>
+      <p class="lede">Based on 5th Street in Riverside, Lorenzo&rsquo;s covers roughly 80 miles around the city &mdash; including these nearby communities.</p>
+    </div>
+    <div class="area-grid">
+      <div class="rv">
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Riverside</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Moreno Valley</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Jurupa Valley</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Corona</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Norco</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Eastvale</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Grand Terrace</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Colton</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Rialto</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Redlands</span>
+        </div>
+        <p class="note">Not sure if you&rsquo;re in range? <a href="#contact" style="color:var(--green);font-weight:700">Send us your address</a> and we&rsquo;ll let you know.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Lorenzo's Landscaping at 2310 5th St, Riverside, CA" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-117.3659266%2C33.9736539%2C-117.3539266%2C33.9856539&amp;layer=mapnik&amp;marker=33.9796539%2C-117.3599266"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Get in touch</span>
+      <h2>Tell us about your yard</h2>
+      <p class="lede">Call, text or email for a free quote. The owner answers, seven days a week.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-card call rv">
+        <span class="eyebrow"><span class="tick"></span>Call or text</span>
+        <a class="big-phone" href="tel:+19519413151"><svg class="icon"><use href="#i-phone"/></svg>(951) 941-3151</a>
+        <p class="ct-alt">Also: <a href="tel:+19096457123">(909) 645-7123</a></p>
+        <p class="ct-sub">Prefer email? Reach Bacilio directly at <a href="mailto:baciliolorenzo55@gmail.com" style="color:var(--green);font-weight:700">baciliolorenzo55@gmail.com</a>.</p>
+        <div class="ct-actions">
+          <a class="btn btn-primary" href="tel:+19519413151"><svg class="icon"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-gold" href="mailto:baciliolorenzo55@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Email us</a>
+        </div>
+        <div class="review-btn"><a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJMeMJiWOv3IARMDrHbJSh8Nw" target="_blank" rel="noopener"><svg class="icon"><use href="#i-star"/></svg>Leave us a Google review</a></div>
+      </div>
+      <div class="hours-panel rv">
+        <h3><svg class="icon"><use href="#i-clock"/></svg>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Thursday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Saturday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Sunday</td><td>6:00 AM &ndash; 6:00 PM</td></tr>
+        </table>
+        <p class="hours-foot"><svg class="icon"><use href="#i-pin"/></svg><span>Open seven days a week. Quotes are free and there&rsquo;s no obligation.</span></p>
+        <div class="nap">
+          <b>Lorenzo&rsquo;s Landscaping</b><br>
+          2310 5th St, Riverside, CA 92507<br>
+          <a href="tel:+19519413151" style="color:#fff;font-weight:700">(951) 941-3151</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a href="#top" class="brand" aria-label="Lorenzo&rsquo;s Landscaping home">
+        <span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c-5-1.5-8-5-8-10 0-1.4.2-2.6.6-3.7 2.4.3 4.6 1.5 6 3.5.5.8.9 1.7 1.2 2.6.3-2.2 1.3-4.3 3-5.8C18 6.7 18 4 18 4s-2.7 0-5 2c-1.9 1.7-3 4-3.3 6.3" fill="none" stroke="#eef4ec" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>Lorenzo&rsquo;s <b>Landscaping</b></span>
+      </a>
+      <p>Owner-operated landscaping and lawn care in Riverside, CA &mdash; perfecting landscapes, enhancing lifestyles.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Services</h4>
+      <a href="#services">Lawn care &amp; maintenance</a>
+      <a href="#services">Hedge &amp; tree pruning</a>
+      <a href="#services">Hardscaping &amp; pavers</a>
+      <a href="#services">Artificial turf</a>
+      <a href="#services">Irrigation &amp; slopes</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="tel:+19519413151">(951) 941-3151</a>
+      <a href="mailto:baciliolorenzo55@gmail.com">baciliolorenzo55@gmail.com</a>
+      <p>2310 5th St<br>Riverside, CA 92507</p>
+      <p>Open 7 days &middot; 6 AM&ndash;6 PM</p>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Lorenzo&rsquo;s Landscaping. All rights reserved.</span>
+    <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg>&nbsp;<span style="color:#9aa49a;font-weight:600">5.0 on Google</span></span>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+19519413151"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-gold" href="#contact"><svg class="icon"><use href="#i-leaf"/></svg>Free quote</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous"><svg aria-hidden="true"><use href="#i-cl"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next"><svg aria-hidden="true"><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Lorenzo's Landscaping",
+  "description":"Owner-operated landscaping and lawn care in Riverside, California: lawn maintenance, hedge and tree pruning, hardscaping, artificial turf and irrigation.",
+  "image":"https://savcab.github.io/websites/ca-riverside-lorenzos/assets/hero-riverside-lawn-mountains.webp",
+  "url":"https://savcab.github.io/websites/ca-riverside-lorenzos/",
+  "telephone":"+19519413151",
+  "email":"baciliolorenzo55@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"2310 5th St","addressLocality":"Riverside","addressRegion":"CA","postalCode":"92507","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":33.9796539,"longitude":-117.3599266},
+  "areaServed":[
+    {"@type":"City","name":"Riverside"},
+    {"@type":"City","name":"Moreno Valley"},
+    {"@type":"City","name":"Jurupa Valley"},
+    {"@type":"City","name":"Corona"},
+    {"@type":"City","name":"Norco"},
+    {"@type":"City","name":"Eastvale"},
+    {"@type":"City","name":"Grand Terrace"},
+    {"@type":"City","name":"Colton"},
+    {"@type":"City","name":"Rialto"},
+    {"@type":"City","name":"Redlands"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"06:00","closes":"18:00"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // drawer
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});
+
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  // lightbox
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function open(i){idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;open(i);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')open(idx+1);else if(e.key==='ArrowLeft')open(idx-1);});
+})();
+</script>
+</body>
+</html>

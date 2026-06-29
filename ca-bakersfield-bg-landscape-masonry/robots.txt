@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/ca-bakersfield-bg-landscape-masonry/sitemap.xml

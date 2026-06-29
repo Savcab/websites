@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/fl-brandon-wayne-and-sons/sitemap.xml

@@ -1,0 +1,882 @@
+<!--
+  Lawns By St. John — Jacksonville, FL — commercial-grounds-landscaper skin (adopt+elevate path-0).
+  Existing brand lawnsbystjohn.com is a live but generic 1.85MB TopLinePro template (no distinctive
+  logo/identity beyond the name + a default amber accent). Adopted the real NAME, commercial/HOA
+  positioning, About copy, services and Google reviews; elevated onto the corporate commercial-grounds
+  skin (navy/emerald) to serve the B2B angle. Email Sales@lawnsbystjohn.com is verified -> real proposal
+  form. Phone is unconfirmed line-type -> tel: only, NO sms:. No hours on file -> "Call for hours".
+  Rating 4.9/81 in VISIBLE HTML only (no aggregateRating JSON-LD). Owner name only inside verbatim quotes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Landscaping &amp; Grounds Care in Jacksonville, FL | Lawns By St. John</title>
+<meta name="description" content="Lawns By St. John keeps Jacksonville, FL properties sharp — lawn maintenance, landscape design, pavers and lighting for HOAs, commercial lots and homes across Northeast Florida. 4.9 stars, 81 reviews." />
+<link rel="canonical" href="https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/" />
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Commercial &amp; Residential Grounds Care in Jacksonville, FL | Lawns By St. John" />
+<meta property="og:description" content="Lawn maintenance, landscape design, pavers and landscape lighting for HOAs, commercial lots and homes across Jacksonville and Northeast Florida. 4.9 stars · 81 Google reviews." />
+<meta property="og:url" content="https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/" />
+<meta property="og:image" content="https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/assets/manicured-lawn-home-jacksonville.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="900" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/assets/manicured-lawn-home-jacksonville.jpg" />
+<meta name="theme-color" content="#13283f" />
+
+<!-- Favicon: field-rows mark on navy -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3a5f'/%3E%3Cg stroke='%23ffffff' stroke-width='2' stroke-linecap='round' fill='none'%3E%3Cpath d='M6 24h20'/%3E%3Cpath d='M9 19h14'/%3E%3Cpath d='M12 14h8'/%3E%3Cpath d='M15 9h2'/%3E%3C/g%3E%3Cpath d='M24 21l2 2-2 2' stroke='%2316774c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Lawns By St. John",
+  "url": "https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/",
+  "image": "https://savcab.github.io/websites/fl-jacksonville-lawns-by-st-john/assets/manicured-lawn-home-jacksonville.jpg",
+  "telephone": "+19048615403",
+  "email": "Sales@lawnsbystjohn.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13037 Twin Pines Cir S",
+    "addressLocality": "Jacksonville",
+    "addressRegion": "FL",
+    "postalCode": "32246",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 30.3134917, "longitude": -81.4621217 },
+  "areaServed": [
+    { "@type": "City", "name": "Jacksonville" },
+    { "@type": "City", "name": "Jacksonville Beach" },
+    { "@type": "City", "name": "Atlantic Beach" },
+    { "@type": "City", "name": "Neptune Beach" },
+    { "@type": "City", "name": "Ponte Vedra Beach" },
+    { "@type": "City", "name": "Nocatee" },
+    { "@type": "City", "name": "Mandarin" },
+    { "@type": "City", "name": "Fruit Cove" },
+    { "@type": "City", "name": "Fleming Island" },
+    { "@type": "City", "name": "Orange Park" }
+  ],
+  "sameAs": ["https://facebook.com/LawnsbyStJohn"]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING — 4/8 grid, ~1.5x */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(4rem,8.5vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --h1:clamp(2.2rem,5.1vw,3.5rem);
+  --h2:clamp(1.65rem,3.3vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.06;
+  --track-head:-.02em;
+  /* COLOR — commercial-grounds: cool navy/slate ground, slate ink, ONE emerald accent */
+  --bg:#ffffff;
+  --bg-2:#eef2f6;        /* cool light-slate alt section (NOT warm) */
+  --bg-3:#e3e9ef;        /* deeper slate for chips/hairlines on light */
+  --ink:#16202b;         /* slate ink (NOT pure black) */
+  --ink-2:#48586a;       /* secondary text */
+  --ink-3:#76879a;       /* captions/tertiary */
+  --line:#dde4ec;        /* hairline on light */
+  --navy:#1d3a5f;        /* deep corporate navy/slate — brand */
+  --navy-d:#13283f;      /* darker navy (dark sections/hovers/scrims) */
+  --navy-2:#27557f;      /* mid steel-blue */
+  --accent:#16774c;      /* emerald — the 10%, CTAs/highlights (white text passes AA) */
+  --accent-d:#115a39;    /* darker emerald for hover */
+  --accent-tint:#e2efe9; /* pale emerald wash for icon tiles */
+  --mint:#8fd9b2;        /* light mint for accents on dark */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:12px; --r-l:18px; --r-xl:26px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted */
+  --sh-1:0 1px 2px rgba(22,32,43,.06);
+  --sh-2:0 2px 5px rgba(22,32,43,.06),0 6px 14px rgba(22,32,43,.05);
+  --sh-3:0 6px 16px rgba(22,32,43,.08),0 18px 36px rgba(22,32,43,.09);
+  --sh-4:0 12px 28px rgba(22,32,43,.10),0 30px 60px rgba(22,32,43,.12);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  font-family:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  font-size:var(--body); line-height:var(--lh-body); color:var(--ink);
+  background:var(--bg); -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Archivo','Arial Narrow',sans-serif; line-height:var(--lh-head); font-weight:700; color:var(--ink)}
+h1{font-size:var(--h1); letter-spacing:var(--track-head); font-weight:800}
+h2{font-size:var(--h2); letter-spacing:var(--track-head)}
+h3{font-size:var(--h3); font-weight:700}
+p{max-width:var(--measure)}
+a{color:inherit; text-decoration:none}
+img{display:block; max-width:100%; height:auto}
+::selection{background:var(--mint); color:var(--navy-d)}
+
+.wrap{width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem}
+.eyebrow{font-family:'Archivo',sans-serif; font-size:.76rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); display:inline-flex; align-items:center; gap:.55rem}
+.eyebrow .bar{width:24px;height:2px;background:var(--accent);display:inline-block}
+.lede{font-size:1.14rem; color:var(--ink-2); max-width:56ch; line-height:1.62}
+/* responsive copy — phones get a tighter, honest subset of the same line; laptop keeps the full copy */
+.only-mob{display:none}
+@media(max-width:600px){.only-lap{display:none}.only-mob{display:block}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:.55rem; font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:1rem; line-height:1; min-height:52px; padding:.95rem 1.6rem; border-radius:var(--r-m); border:1.5px solid transparent; cursor:pointer; transition:transform var(--t), box-shadow var(--t), background var(--t), color var(--t), border-color var(--t); will-change:transform}
+.btn svg{width:19px;height:19px;flex:0 0 auto}
+.btn-primary{background:var(--accent); color:#fff; box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d); transform:translateY(-2px); box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent; color:var(--navy); border-color:var(--bg-3)}
+.btn-ghost:hover{background:var(--bg-2); border-color:var(--navy-2); transform:translateY(-2px)}
+.btn-ondark{background:rgba(255,255,255,.10); color:#fff; border-color:rgba(255,255,255,.34)}
+.btn-ondark:hover{background:rgba(255,255,255,.18); transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed; inset:0 0 auto 0; z-index:60; transition:background var(--t), box-shadow var(--t), border-color var(--t); border-bottom:1px solid transparent}
+.hdr.solid{background:rgba(255,255,255,.93); backdrop-filter:saturate(160%) blur(10px); -webkit-backdrop-filter:saturate(160%) blur(10px); box-shadow:var(--sh-1); border-bottom-color:var(--line)}
+.hdr-in{display:flex; align-items:center; justify-content:space-between; gap:var(--s3); min-height:4.6rem}
+.brand{display:inline-flex; align-items:center; gap:.65rem; font-family:'Archivo',sans-serif; font-weight:800; font-size:1.18rem; color:var(--ink); letter-spacing:-.01em; text-shadow:0 1px 10px rgba(255,255,255,.5)}
+.hdr.solid .brand{text-shadow:none}
+.brand .mark{width:40px;height:40px;flex:0 0 auto; border-radius:10px; background:var(--navy); display:grid; place-items:center; box-shadow:var(--sh-1)}
+.brand .mark svg{width:24px;height:24px;color:#fff}
+.brand .sub{display:block;font-family:'IBM Plex Sans',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav{display:flex; align-items:center; gap:var(--s4)}
+.nav a.lk{font-family:'IBM Plex Sans',sans-serif; font-weight:500; font-size:.95rem; color:var(--ink-2); position:relative; padding:.3rem 0; transition:color var(--t)}
+.nav a.lk::after{content:""; position:absolute; left:0; right:100%; bottom:-3px; height:2px; background:var(--accent); transition:right var(--t)}
+.nav a.lk:hover{color:var(--ink)} .nav a.lk:hover::after, .nav a.lk.active::after{right:0}
+.nav a.lk.active{color:var(--ink)}
+.hdr .btn{min-height:46px; padding:.7rem 1.3rem; font-size:.94rem}
+.menu-btn{display:none; width:46px;height:46px; border:1px solid var(--line); border-radius:var(--r-s); background:var(--bg); color:var(--ink); align-items:center; justify-content:center; cursor:pointer}
+.menu-btn svg{width:24px;height:24px}
+@media(max-width:900px){
+  .nav .lk{display:none} .nav .btn.callbtn{display:none}
+  .nav .btn-primary{display:none} /* proposal CTA lives in the drawer + sticky bar on mobile */
+  .menu-btn{display:inline-flex}
+}
+/* mobile drawer */
+.drawer{position:fixed; inset:0; z-index:70; background:rgba(19,40,63,.5); opacity:0; visibility:hidden; transition:opacity var(--t)}
+.drawer.open{opacity:1; visibility:visible}
+.drawer-panel{position:absolute; top:0; right:0; height:100%; width:min(82%,340px); background:var(--bg); box-shadow:var(--sh-4); transform:translateX(100%); transition:transform var(--t); padding:1.4rem 1.4rem 2rem; display:flex; flex-direction:column; gap:.3rem}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:.8rem}
+.drawer a.dlk{font-family:'Archivo',sans-serif; font-weight:600; font-size:1.2rem; color:var(--ink); padding:.75rem 0; border-bottom:1px solid var(--line)}
+.drawer .btn{margin-top:1rem}
+.x-btn{width:44px;height:44px;border:1px solid var(--line);border-radius:var(--r-s);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.x-btn svg{width:24px;height:24px}
+
+/* ---------- hero ---------- */
+.hero{position:relative; min-height:clamp(580px,92vh,880px); display:flex; align-items:flex-end; color:#fff; isolation:isolate}
+.hero-img{position:absolute; inset:0; z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover; object-position:center 56%}
+.hero::after{content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg, rgba(19,40,63,.52) 0%, rgba(19,40,63,.30) 36%, rgba(13,26,41,.66) 84%, rgba(13,26,41,.84) 100%)}
+.hero-in{padding-block:var(--hero-y) clamp(2.5rem,5vw,4rem); width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem}
+.hero .eyebrow{color:#bfe6d2}
+.hero .eyebrow .bar{background:var(--mint)}
+.hero h1{color:#fff; max-width:18ch; margin-top:1.1rem; text-shadow:0 2px 24px rgba(10,20,32,.45)}
+.hero h1 em{font-style:normal; color:var(--mint)}
+.hero p.sub{color:#e7edf3; font-size:1.18rem; max-width:50ch; margin-top:1.3rem; text-shadow:0 1px 16px rgba(10,20,32,.5)}
+.hero-cta{display:flex; flex-wrap:wrap; gap:.85rem; margin-top:1.9rem; align-items:center}
+.rating-badge{display:inline-flex; align-items:center; gap:.6rem; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); padding:.6rem 1rem; border-radius:var(--r-pill); font-size:.92rem; color:#fff; font-weight:500}
+.rating-badge .stars{display:inline-flex; color:#ffd479} .rating-badge .stars svg{width:16px;height:16px}
+.rating-badge a{text-decoration:underline; text-underline-offset:2px; text-decoration-color:rgba(255,255,255,.42)}
+.hero-foot{position:absolute; left:0; right:0; bottom:0; z-index:1}
+.hero-strip{width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem; border-top:1px solid rgba(255,255,255,.16); display:flex; flex-wrap:wrap; gap:1rem 2.2rem; padding-top:1rem; padding-bottom:1.3rem; font-size:.9rem; color:#dbe3ea}
+.hero-strip span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-strip svg{width:17px;height:17px;color:var(--mint)}
+
+/* ---------- trust bar ---------- */
+.trust{background:var(--navy-d); color:#fff}
+.trust-in{display:grid; grid-template-columns:1fr; gap:.2rem; padding-block:1.15rem}
+@media(min-width:640px){.trust-in{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.trust-in{grid-template-columns:repeat(4,1fr)}}
+.trust-item{display:flex; align-items:center; gap:.7rem; padding:.55rem .2rem; font-size:.95rem; font-weight:500; color:#eaf0f5}
+.trust-item .ic{width:34px;height:34px;flex:0 0 auto;border-radius:var(--r-s);background:rgba(255,255,255,.08);display:grid;place-items:center;color:var(--mint)}
+.trust-item .ic svg{width:18px;height:18px}
+.trust-item b{font-weight:700;color:#fff}
+
+/* ---------- section scaffold ---------- */
+section{position:relative}
+.sec{padding-block:var(--section-y)}
+.sec-alt{background:var(--bg-2)}
+.sec-head{max-width:62ch}
+.sec-head.center{margin-inline:auto; text-align:center}
+.sec-head h2{margin-top:.9rem}
+.sec-head p{margin-top:1rem}
+.sec-head.center p{margin-inline:auto}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1.2rem; margin-top:var(--s5)}
+@media(min-width:560px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
+.svc-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-l); padding:1.7rem 1.5rem; box-shadow:var(--sh-1); transition:transform var(--t), box-shadow var(--t), border-color var(--t); position:relative; overflow:hidden}
+.svc-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:0;transition:opacity var(--t)}
+.svc-card:hover{transform:translateY(-4px); box-shadow:var(--sh-3); border-color:var(--bg-3)}
+.svc-card:hover::before{opacity:1}
+.svc-ic{width:52px;height:52px;border-radius:var(--r-m); background:var(--accent-tint); display:grid; place-items:center; margin-bottom:1.05rem}
+.svc-ic svg{width:26px;height:26px;color:var(--accent-d)}
+.svc-card h3{font-weight:700}
+.svc-card p{font-size:.95rem; color:var(--ink-2); margin-top:.5rem; line-height:1.55}
+
+/* ---------- property types ---------- */
+.prop-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1rem; margin-top:var(--s5)}
+@media(min-width:560px){.prop-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.prop-grid{grid-template-columns:repeat(3,1fr)}}
+.prop-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-m); padding:1.45rem 1.4rem; display:flex; gap:1rem; align-items:flex-start; transition:border-color var(--t), box-shadow var(--t), transform var(--t)}
+.sec-alt .prop-card{background:#fff}
+.prop-card:hover{border-color:var(--navy-2); box-shadow:var(--sh-2); transform:translateY(-2px)}
+.prop-ic{width:44px;height:44px;flex:0 0 auto;border-radius:var(--r-s); background:var(--navy); display:grid; place-items:center}
+.prop-ic svg{width:22px;height:22px;color:#fff}
+.prop-card h3{font-size:1.05rem;font-weight:700}
+.prop-card p{font-size:.9rem;color:var(--ink-2);margin-top:.3rem;line-height:1.5}
+
+/* ---------- feature band (signature) ---------- */
+.band{position:relative; min-height:clamp(420px,56vh,600px); display:flex; align-items:center; color:#fff; isolation:isolate; overflow:hidden}
+.band-img{position:absolute; inset:0; z-index:-2}
+.band-img img{width:100%;height:100%;object-fit:cover; object-position:center 60%}
+.band::after{content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg, rgba(13,26,41,.86) 0%, rgba(13,26,41,.62) 46%, rgba(13,26,41,.22) 100%)}
+.band-in{width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem; padding-block:var(--s6)}
+.band .eyebrow{color:#bfe6d2}.band .eyebrow .bar{background:var(--mint)}
+.band h2{color:#fff; max-width:20ch; margin-top:1rem; text-shadow:0 2px 22px rgba(10,20,32,.45)}
+.band p{color:#e7edf3; max-width:46ch; margin-top:1.1rem; font-size:1.08rem; text-shadow:0 1px 14px rgba(10,20,32,.45)}
+.band .cap{margin-top:1.6rem; font-size:.84rem; color:#cdd9e3; display:inline-flex; align-items:center; gap:.5rem}
+.band .cap svg{width:15px;height:15px}
+
+/* ---------- portfolio mosaic ---------- */
+.gal-grid{display:grid; grid-template-columns:repeat(1,1fr); grid-auto-rows:13rem; gap:1rem; margin-top:var(--s5)}
+@media(min-width:600px){.gal-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:14rem}}
+@media(min-width:920px){.gal-grid{grid-template-columns:repeat(3,1fr); grid-auto-rows:clamp(13rem,17vw,16rem); gap:1.1rem}}
+.gal-item{position:relative; border-radius:var(--r-l); overflow:hidden; cursor:pointer; box-shadow:var(--sh-1); background:var(--bg-3); border:1px solid var(--line)}
+.gal-item.feature{grid-column:span 1}
+@media(min-width:600px){.gal-item.feature{grid-column:span 2}}
+.gal-item img{width:100%;height:100%;object-fit:cover; transition:transform 600ms cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img{transform:scale(1.05)}
+.gal-item figcaption{position:absolute; left:0; right:0; bottom:0; padding:1.6rem 1rem .85rem; font-size:.85rem; font-weight:500; color:#fff; background:linear-gradient(180deg,transparent,rgba(10,20,32,.82)); opacity:0; transform:translateY(8px); transition:opacity var(--t), transform var(--t)}
+.gal-item:hover figcaption, .gal-item:focus-visible figcaption{opacity:1; transform:none}
+.gal-item:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+.gal-note{margin-top:1.5rem; font-size:.9rem; color:var(--ink-3); display:inline-flex; align-items:center; gap:.5rem}
+.gal-note svg{width:16px;height:16px;color:var(--accent)}
+
+/* ---------- reviews ---------- */
+.rev{background:var(--navy); color:#fff; position:relative; overflow:hidden}
+.rev .field-bg{position:absolute; pointer-events:none; opacity:.07; color:#fff; right:-30px; top:-20px; width:320px; height:320px}
+.rev .wrap{position:relative; z-index:1}
+.rev .eyebrow{color:var(--mint)}.rev .eyebrow .bar{background:var(--mint)}
+.rev h2{color:#fff; margin-top:.9rem}
+.rev-grid{display:grid; grid-template-columns:1fr; gap:1.2rem; margin-top:var(--s5)}
+@media(min-width:840px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.quote-card{background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.14); border-radius:var(--r-l); padding:1.8rem 1.6rem; display:flex; flex-direction:column}
+.quote-card .stars{display:inline-flex; color:#ffd479; margin-bottom:1rem}
+.quote-card .stars svg{width:18px;height:18px}
+.quote-card blockquote{font-size:1.02rem; line-height:1.6; color:#eef3f7; font-weight:400}
+.quote-card cite{margin-top:1.3rem; font-style:normal; font-size:.9rem; color:#cddce8; font-weight:600; display:flex; align-items:center; gap:.55rem}
+.quote-card cite .dot{width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.quote-card cite span{font-weight:400; color:#9fb3c5}
+.rev-foot{margin-top:var(--s5); display:flex; flex-wrap:wrap; align-items:center; gap:1rem 1.6rem}
+.rev-foot .score{font-family:'Archivo',sans-serif; font-weight:700; font-size:1.5rem; color:#fff; display:inline-flex; align-items:center; gap:.6rem}
+.rev-foot .score .stars{color:#ffd479} .rev-foot .score .stars svg{width:20px;height:20px}
+.rev-foot a{color:var(--mint); text-decoration:underline; text-underline-offset:3px; font-weight:500; font-size:.95rem}
+
+/* ---------- service area ---------- */
+.area-grid{display:grid; grid-template-columns:1fr; gap:var(--s5); margin-top:var(--s5); align-items:start}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1.05fr; gap:var(--s6)}}
+.chips{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.6rem}
+.chip{display:inline-flex; align-items:center; gap:.45rem; background:var(--bg); border:1px solid var(--line); color:var(--ink-2); font-size:.92rem; font-weight:500; padding:.5rem .9rem; border-radius:var(--r-pill)}
+.sec-alt .chip{background:#fff}
+.chip svg{width:14px;height:14px;color:var(--accent)}
+.area-note{margin-top:1.5rem; font-size:.95rem; color:var(--ink-2)}
+.map-frame{border-radius:var(--r-l); overflow:hidden; box-shadow:var(--sh-2); border:1px solid var(--line); background:var(--bg-3)}
+.map-frame iframe{width:100%; height:380px; border:0; display:block}
+
+/* ---------- contact ---------- */
+.contact-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-xl); box-shadow:var(--sh-3); overflow:hidden; margin-top:var(--s5); display:grid; grid-template-columns:1fr}
+@media(min-width:860px){.contact-card{grid-template-columns:1.1fr .9fr}}
+.contact-main{padding:clamp(2rem,4vw,3.2rem)}
+.contact-main h3.fh{font-size:1.15rem;margin-bottom:.3rem}
+.contact-main .lede{margin-bottom:1.6rem}
+.contact-side{background:var(--navy); color:#fff; padding:clamp(2rem,4vw,3rem); display:flex; flex-direction:column; justify-content:center}
+.contact-side h3{color:#fff; font-weight:700; font-size:1.4rem}
+.contact-side p{color:#cddce8; margin-top:.7rem; font-size:.98rem; max-width:40ch}
+.phone-big{font-family:'Archivo',sans-serif; font-size:clamp(1.55rem,3.4vw,2.05rem); color:#fff; font-weight:800; display:inline-flex; align-items:center; gap:.65rem; letter-spacing:-.01em; margin-top:1.3rem}
+.phone-big svg{width:24px;height:24px;color:var(--mint)}
+.cs-meta{display:grid;gap:.95rem;margin-top:1.5rem;border-top:1px solid rgba(255,255,255,.14);padding-top:1.5rem}
+.cs-row{display:flex;gap:.75rem;align-items:flex-start;font-size:.96rem;color:#cddce8}
+.cs-row svg{width:19px;height:19px;flex:0 0 auto;color:var(--mint);margin-top:2px}
+.cs-row b{display:block;color:#fff;font-weight:600;margin-bottom:.1rem}
+.cs-row a{color:#fff;word-break:break-word}
+.cs-row a:hover{text-decoration:underline}
+.review-cta{margin-top:1.7rem}
+
+/* ---------- proposal form ---------- */
+.pform .frow{display:grid;gap:1rem;margin-bottom:1rem}
+@media(min-width:560px){.pform .frow.two{grid-template-columns:1fr 1fr}}
+.field label{display:block;font-size:.85rem;font-weight:600;color:var(--ink);margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:var(--r-m);padding:.78rem .9rem;transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-tint)}
+.field textarea{min-height:118px;resize:vertical}
+.field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#c0392b;box-shadow:0 0 0 3px rgba(192,57,43,.12)}
+.field .err{display:none;color:#c0392b;font-size:.82rem;margin-top:.35rem;font-weight:500}
+.field.invalid .err{display:block}
+.pform .btn{width:100%;margin-top:.4rem}
+.pform .fnote{font-size:.82rem;color:var(--ink-3);margin-top:.9rem;text-align:center}
+.form-success{display:none;text-align:center;padding:1.5rem .5rem}
+.form-success.show{display:block}
+.form-success .ok-ic{width:58px;height:58px;border-radius:50%;background:var(--accent-tint);display:grid;place-items:center;margin:0 auto 1rem}
+.form-success .ok-ic svg{width:30px;height:30px;color:var(--accent-d)}
+.form-success h3{font-size:1.25rem;margin-bottom:.5rem}
+.form-success p{color:var(--ink-2);margin-inline:auto}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-d); color:#c4d4e1; padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid; grid-template-columns:1fr; gap:var(--s4); padding-bottom:var(--s5); border-bottom:1px solid rgba(255,255,255,.12)}
+@media(min-width:720px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
+.foot-brand{display:inline-flex;align-items:center;gap:.65rem;font-family:'Archivo',sans-serif;font-size:1.2rem;color:#fff;font-weight:800;letter-spacing:-.01em}
+.foot-brand .mark{width:40px;height:40px;border-radius:10px;background:var(--navy-2);display:grid;place-items:center}
+.foot-brand .mark svg{width:24px;height:24px;color:#fff}
+.foot-col h4{color:#fff;font-family:'Archivo',sans-serif;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.foot-col p, .foot-col a{font-size:.95rem;color:#aebfcd;line-height:1.7;display:block}
+.foot-col a:hover{color:#fff}
+.foot-about{margin-top:1.1rem; font-size:.95rem; color:#a4b6c5; line-height:1.7; max-width:40ch}
+.foot-bottom{padding-top:var(--s4);display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center;font-size:.85rem;color:#8499a9}
+
+/* ---------- mobile sticky CTA ---------- */
+.sticky-cta{position:fixed; left:0; right:0; bottom:0; z-index:55; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-top:1px solid var(--line); box-shadow:0 -4px 20px rgba(22,32,43,.09); padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom)); display:none; gap:.6rem; transform:translateY(110%); transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1; min-height:50px; font-size:.95rem}
+@media(max-width:900px){.sticky-cta{display:flex}}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed; inset:0; z-index:90; background:rgba(10,20,32,.93); display:none; align-items:center; justify-content:center; padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:94vw; max-height:84vh; border-radius:var(--r-m); box-shadow:var(--sh-4)}
+.lb-cap{position:absolute; bottom:1.4rem; left:0; right:0; text-align:center; color:#dbe3ea; font-size:.92rem; padding:0 1rem}
+.lb-close,.lb-nav{position:absolute; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.3); color:#fff; width:50px;height:50px; border-radius:var(--r-pill); cursor:pointer; display:grid; place-items:center; transition:background var(--t)}
+.lb-close:hover,.lb-nav:hover{background:rgba(255,255,255,.24)}
+.lb-close{top:1.2rem; right:1.2rem} .lb-close svg{width:24px;height:24px}
+.lb-nav svg{width:26px;height:26px}
+.lb-prev{left:1.2rem; top:50%; transform:translateY(-50%)} .lb-next{right:1.2rem; top:50%; transform:translateY(-50%)}
+@media(max-width:560px){.lb-prev{left:.5rem}.lb-next{right:.5rem}.lb-nav{width:44px;height:44px}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0; transform:translateY(22px)}
+html.js .rv{will-change:opacity,transform}
+.rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1)}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}}
+
+/* ---------- mobile refinements (≤900px): clear the fixed header, kill hero overlaps ---------- */
+@media(max-width:900px){
+  .hero{display:block; min-height:auto}
+  .hero-in{padding-block:6rem 1.6rem}
+  .hero h1,.hero p.sub{max-width:none}
+  .hero-cta{flex-direction:column; align-items:stretch; gap:.7rem; margin-top:1.6rem}
+  .hero-cta .btn{width:100%}
+  .rating-badge{justify-content:center; margin-top:.15rem}
+  .hero-foot{position:static}
+  .hero-strip{flex-direction:column; align-items:flex-start; gap:.8rem; padding-block:1.1rem 1.35rem; font-size:.92rem}
+  .hdr-in{gap:.85rem}
+  .brand{white-space:nowrap; text-shadow:0 1px 10px rgba(255,255,255,.55)}
+  footer{padding-bottom:calc(var(--s4) + 4.75rem)}
+}
+@media(max-width:420px){
+  .brand{font-size:1.04rem}
+  .brand .sub{display:none}
+  .hero h1{font-size:clamp(1.95rem,8.4vw,2.2rem)}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Lawns By St. John home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg>
+      </span>
+      <span>Lawns By St. John<span class="sub">Residential &amp; Commercial</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services" class="lk">Services</a>
+      <a href="#properties" class="lk">Properties</a>
+      <a href="#work" class="lk">Our work</a>
+      <a href="#reviews" class="lk">Reviews</a>
+      <a href="#area" class="lk">Service area</a>
+      <a href="tel:+19048615403" class="btn btn-ghost callbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(904) 861-5403</a>
+      <a href="#contact" class="btn btn-primary">Request a proposal</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-top">
+      <span class="brand" style="font-size:1.05rem"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg></span><span>Lawns By St. John</span></span>
+      <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <a href="#services" class="dlk">Services</a>
+    <a href="#properties" class="dlk">Properties we serve</a>
+    <a href="#work" class="dlk">Our work</a>
+    <a href="#reviews" class="dlk">Reviews</a>
+    <a href="#area" class="dlk">Service area</a>
+    <a href="#contact" class="dlk">Contact</a>
+    <a href="tel:+19048615403" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(904) 861-5403</a>
+    <a href="#contact" class="btn btn-primary">Request a proposal</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-img">
+    <img src="assets/manicured-lawn-home-jacksonville.jpg" alt="Manicured, freshly mowed front lawn and palms at a home maintained by Lawns By St. John in Jacksonville, Florida" width="1600" height="900" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="hero-in">
+    <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Commercial &amp; residential grounds · Jacksonville, FL</span>
+    <h1>Landscape &amp; grounds care for Jacksonville-area properties, <em>year-round</em>.</h1>
+    <p class="sub only-lap">From HOA common areas and commercial lots to private estates, we keep Northeast Florida grounds mowed, planted, paved and lit — one crew, one point of contact, all season.</p>
+    <p class="sub only-mob">HOA, commercial &amp; private grounds — mowed, planted, paved &amp; lit across NE Florida.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>Request a proposal</a>
+      <a href="#work" class="btn btn-ondark">View recent work</a>
+      <span class="rating-badge">
+        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <span><strong>4.9</strong> · <a href="https://www.google.com/maps/place/?q=place_id:ChIJjf7fY3ZL5IgRN2JEyxIw6Ug" target="_blank" rel="noopener">81 Google reviews</a></span>
+      </span>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="hero-strip">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Residential &amp; commercial</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11a8 8 0 0 0-16 0c0 6.5 8 11 8 11z"/><path d="M9 11l2 2 4-4"/></svg>Insured &amp; family-owned</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jacksonville &amp; Northeast Florida</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust" aria-label="Why property owners choose us">
+  <div class="wrap trust-in">
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span><span><b>4.9 ★</b> · 81 reviews</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11a8 8 0 0 0-16 0c0 6.5 8 11 8 11z"/><path d="M9 11l2 2 4-4"/></svg></span><span><b>Insured</b> &amp; reliable</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/></svg></span><span><b>Family-owned</b> &amp; local</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V8l6-4 6 4v13"/><path d="M3 21h18"/><path d="M10 21v-5h4v5"/></svg></span><span><b>Residential</b> &amp; commercial</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>What we cover</span>
+      <h2>One landscape crew for the whole property.</h2>
+      <p class="lede">From weekly maintenance to a full design-and-install, you get all of it from us — on a schedule, with the same crew who already knows your grounds.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20c0-3 1.5-5 3-5"/><path d="M8 20c0-4 1.5-6 3-6"/><path d="M12 20c0-3 1.5-5 3-5"/><path d="M16 20c0-4 1.5-6 3-6"/></svg></div>
+        <h3>Lawn &amp; landscape maintenance</h3>
+        <p>Full-service weekly upkeep — mowing, edging, shrub trimming and weed control — so common areas, frontage and lawns stay sharp without you chasing us down.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V11"/><path d="M12 11C12 7 9 5 5 5c0 4 3 6 7 6z"/><path d="M12 13c0-3 3-5 7-5 0 3-3 5-7 5z"/><path d="M8 22h8"/></svg></div>
+        <h3>Landscape design &amp; install</h3>
+        <p>Custom landscape design with plant, shrub and tree installation, fresh beds and new sod — chosen for Northeast Florida's soil, sun and climate.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11H3z"/><path d="M3 9l4-5h10l4 5"/><path d="M9 9v11M15 9v11M3 14h18"/></svg></div>
+        <h3>Pavers &amp; hardscape</h3>
+        <p>Paver walkways, patios, driveways and lot work — built on a properly prepped, compacted base so it stays level and lasts through Florida rain.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2M5 7l1.5 1.5M19 7l-1.5 1.5M4 13h2M18 13h2"/><path d="M9 18h6"/><path d="M10 21h4"/><path d="M8.5 14a4 4 0 1 1 7 0c-.8 1-1.5 1.6-1.5 3h-4c0-1.4-.7-2-1.5-3z"/></svg></div>
+        <h3>Landscape lighting</h3>
+        <p>Low-voltage landscape lighting that adds curb appeal and security — entrances, walkways and beds that still read well after dark.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPERTY TYPES ============ -->
+<section class="sec sec-alt" id="properties">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Properties we serve</span>
+      <h2>Built for the properties you manage.</h2>
+      <p class="lede only-lap">"Residential and commercial" is right in our name. We work closely with property managers, HOA boards and commercial architects — scaling the same crews and equipment from a single home up to multi-building grounds, with one point of contact across all of it.</p>
+      <p class="lede only-mob">We work with property managers, HOA boards and architects — from a single home up to multi-building grounds, one point of contact.</p>
+    </div>
+    <div class="prop-grid">
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l5-3 5 3v12"/><path d="M15 21V12l4-2v11"/><path d="M9 21v-4h2v4"/></svg></span>
+        <div><h3>HOA &amp; community grounds</h3><p>Entrances, monuments, common areas and shared grounds kept consistent across the season.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V4h12v17"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M9 16h2M13 16h2"/></svg></span>
+        <div><h3>Managed &amp; commercial properties</h3><p>For property managers running a portfolio — one vendor, one contact, one straight answer.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M4 9a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0"/></svg></span>
+        <div><h3>Retail &amp; business lots</h3><p>Curb appeal and clean, safe access for the customers and tenants pulling into your lot.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l5 5"/><path d="M19 6l-9 9-5 1 1-5 9-9z"/><path d="M3 21h8"/></svg></span>
+        <div><h3>Builder &amp; architect plantings</h3><p>New-construction installs that meet a commercial architect's plan and city planting requirements.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V4h9v17"/><path d="M14 21V9h5v12"/><path d="M8 8h3M8 12h3M8 16h3"/></svg></span>
+        <div><h3>Multi-family &amp; apartments</h3><p>Presentable, turnover-ready grounds across every building in the community.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+        <div><h3>Private residences &amp; homes</h3><p>The same standard our homeowners have rated 4.9 across 81 reviews.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE BAND (signature) ============ -->
+<section class="band" aria-label="Maintained to standard">
+  <div class="band-img">
+    <img src="assets/hoa-community-entrance-jacksonville.jpg" alt="Landscaped community entrance with palms and trimmed beds at a Northeast Florida neighborhood, maintained by Lawns By St. John" width="1600" height="900" loading="lazy" decoding="async" />
+  </div>
+  <div class="band-in rv">
+    <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Maintained to standard</span>
+    <h2>One crew for every property on your list.</h2>
+    <p class="only-lap">Whether it's a single home, an HOA's common areas or a property manager's full portfolio, you get the same crew, one point of contact, and a straight answer when something needs attention — not a ticket in a queue.</p>
+    <p class="only-mob">One home or a full portfolio — the same crew, one point of contact, and a straight answer.</p>
+    <span class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>A community entrance in the Jacksonville area — from our Google Business listing</span>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow" style="justify-content:center"><span class="bar" aria-hidden="true"></span>Recent work</span>
+      <h2>Real properties, our own crews.</h2>
+      <p class="lede">Every photo here is our own work around Jacksonville and Northeast Florida — straight from our Google Business listing, no stock. Tap any one to take a closer look.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item feature rv" tabindex="0" role="button" aria-label="View larger: a paver walkway meeting a manicured turf edge"><img src="assets/paver-edging-manicured-turf.jpg" alt="Paver walkway meeting a sharply edged, freshly mown turf line with a river-rock and planted bed border in Jacksonville, Florida" width="1280" height="720" loading="lazy" decoding="async" /><figcaption>Paver walkway and manicured turf edge</figcaption></figure>
+      <figure class="gal-item rv" tabindex="0" role="button" aria-label="View larger: fresh sod and curb appeal at a Jacksonville home"><img src="assets/modern-home-curb-appeal-jacksonville.jpg" alt="Clean front lawn and palms framing a modern two-story home maintained in Jacksonville, Florida" width="1200" height="765" loading="lazy" decoding="async" /><figcaption>Fresh curb appeal at a Jacksonville home</figcaption></figure>
+      <figure class="gal-item rv" tabindex="0" role="button" aria-label="View larger: a low-water rock garden and bed design"><img src="assets/rock-garden-front-design.jpg" alt="Low-water front-yard rock garden with boulders, gravel and accent plantings designed by Lawns By St. John in Jacksonville, Florida" width="480" height="640" loading="lazy" decoding="async" /><figcaption>Low-water rock garden and bed design</figcaption></figure>
+      <figure class="gal-item rv" tabindex="0" role="button" aria-label="View larger: a paver pool deck and lawn"><img src="assets/pool-paver-deck-lawn.jpg" alt="Paver pool deck bordered by a green lawn and stone edging at a Northeast Florida backyard" width="480" height="640" loading="lazy" decoding="async" /><figcaption>Paver pool deck and lawn</figcaption></figure>
+      <figure class="gal-item rv" tabindex="0" role="button" aria-label="View larger: paver base prep and installation"><img src="assets/paver-base-installation.jpg" alt="Paver base being prepped and compacted for a new driveway installation in Jacksonville, Florida" width="900" height="1200" loading="lazy" decoding="async" /><figcaption>Paver base prep and installation</figcaption></figure>
+    </div>
+    <div style="text-align:center"><span class="gal-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>Photos straight from our Google Business listing</span></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="sec rev" id="reviews">
+  <svg class="field-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 17h12"/><path d="M9 13h6"/><path d="M11 9h2"/></svg>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>What clients say</span>
+      <h2>Jacksonville property owners, in their own words.</h2>
+    </div>
+    <div class="rev-grid">
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"Absolutely the best landscaping company I've ever dealt with. They did a full parking lot removal and replacement with True Grid pavers and it came out amazing. Good quality workmanship and professional crew. Highly recommended."</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>Ryan Merchan <span>· Google review</span></cite>
+      </figure>
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"Had a great experience with Lawns By St. John. Used them for sod replacement. From the start they were responsive, fair, gave quality work and excellent communication. On time and hard working. Will be using them again for future projects."</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>Stephen Wolfe <span>· Google review</span></cite>
+      </figure>
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"The whole crew is friendly, courteous and knowledgeable! They listen to what you want and then they do it."</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>David Kirian <span>· Google review</span></cite>
+      </figure>
+    </div>
+    <div class="rev-foot rv">
+      <span class="score"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>4.9 · 81 Google reviews</span>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJjf7fY3ZL5IgRN2JEyxIw6Ug" target="_blank" rel="noopener">Read every review on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="sec sec-alt" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="rv">
+        <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Where we work</span>
+        <h2>Based in Jacksonville, out across Northeast Florida.</h2>
+        <p class="lede">We keep our routes tight around the Southside, the Beaches and St. Johns County, so crews reach your property fast and stay on schedule. We mow, plant and build in:</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jacksonville</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Jacksonville Beach</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Atlantic Beach</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Neptune Beach</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ponte Vedra Beach</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Nocatee</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Mandarin</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Fruit Cove</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Fleming Island</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Orange Park</span>
+        </div>
+        <p class="area-note">Managing a property just outside this list? Give us a call — if it's around Jacksonville or Northeast Florida, we can usually cover it.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Lawns By St. John's service area around Jacksonville, FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.76%2C30.13%2C-81.16%2C30.49&amp;layer=mapnik&amp;marker=30.3134917%2C-81.4621217"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow" style="justify-content:center"><span class="bar" aria-hidden="true"></span>Request a proposal</span>
+      <h2>Tell us about your property.</h2>
+    </div>
+    <div class="contact-card rv">
+      <div class="contact-main">
+        <h3 class="fh">Request a proposal</h3>
+        <p class="lede only-lap">Send the property, the scope and the schedule and we'll come back with a straight proposal — to a real inbox, not a text-only widget. Prefer to talk? Call us directly.</p>
+        <p class="lede only-mob">Send your property details and we'll come back with a straight proposal. Prefer to talk? Call us.</p>
+        <form class="pform" id="proposalForm" novalidate>
+          <div class="frow two">
+            <div class="field">
+              <label for="pf-name">Name</label>
+              <input type="text" id="pf-name" name="name" autocomplete="name" required />
+              <span class="err" id="pf-name-err">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="pf-phone">Phone</label>
+              <input type="tel" id="pf-phone" name="phone" autocomplete="tel" required />
+              <span class="err" id="pf-phone-err">Please enter a phone we can reach you at.</span>
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:1rem">
+            <label for="pf-email">Email</label>
+            <input type="email" id="pf-email" name="email" autocomplete="email" required />
+            <span class="err" id="pf-email-err">Please enter a valid email.</span>
+          </div>
+          <div class="frow two">
+            <div class="field">
+              <label for="pf-type">Property type</label>
+              <select id="pf-type" name="property_type" required>
+                <option value="" selected disabled>Select one…</option>
+                <option>HOA / community</option>
+                <option>Commercial / retail</option>
+                <option>Property manager (portfolio)</option>
+                <option>New construction / builder</option>
+                <option>Residential / home</option>
+                <option>Other</option>
+              </select>
+              <span class="err" id="pf-type-err">Please choose a property type.</span>
+            </div>
+            <div class="field">
+              <label for="pf-area">Property location</label>
+              <input type="text" id="pf-area" name="property_location" placeholder="City or neighborhood" autocomplete="address-level2" />
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:1rem">
+            <label for="pf-msg">What do you need?</label>
+            <textarea id="pf-msg" name="message" placeholder="Scope, schedule, and anything we should know about the property." required></textarea>
+            <span class="err" id="pf-msg-err">Tell us a little about the work.</span>
+          </div>
+          <input type="hidden" name="_subject" value="New proposal request — Lawns By St. John website" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn btn-primary" id="pfSubmit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>Request a proposal</button>
+          <p class="fnote">Goes straight to Sales@lawnsbystjohn.com — we'll reply with a scope and price.</p>
+        </form>
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          <div class="ok-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>Thanks — we've got it.</h3>
+          <p>Your request is on its way to our inbox. We'll get back to you about scoping your property. Need us sooner? Call <a href="tel:+19048615403" style="color:var(--accent-d);font-weight:600">(904) 861-5403</a>.</p>
+        </div>
+      </div>
+      <aside class="contact-side">
+        <h3>Prefer to talk?</h3>
+        <p>Reach us directly — tell us the property, the scope and the schedule, and we'll put together a straight proposal.</p>
+        <a href="tel:+19048615403" class="phone-big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(904) 861-5403</a>
+        <div class="cs-meta">
+          <div class="cs-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Find us</b>13037 Twin Pines Cir S, Jacksonville, FL 32246</span></div>
+          <div class="cs-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg><span><b>Email</b><a href="mailto:Sales@lawnsbystjohn.com">Sales@lawnsbystjohn.com</a></span></div>
+          <div class="cs-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Hours</b>Call for hours</span></div>
+        </div>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJjf7fY3ZL5IgRN2JEyxIw6Ug" target="_blank" rel="noopener" class="btn btn-ondark review-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>Leave us a Google review</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg></span>Lawns By St. John</span>
+        <p class="foot-about">Residential and commercial landscape and grounds care — maintenance, design, pavers and lighting — for Jacksonville and Northeast Florida.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+19048615403">(904) 861-5403</a>
+        <a href="mailto:Sales@lawnsbystjohn.com">Sales@lawnsbystjohn.com</a>
+        <p>13037 Twin Pines Cir S<br/>Jacksonville, FL 32246</p>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJjf7fY3ZL5IgRN2JEyxIw6Ug" target="_blank" rel="noopener">Find us on Google →</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#services">Services</a>
+        <a href="#properties">Properties we serve</a>
+        <a href="#work">Our work</a>
+        <a href="https://facebook.com/LawnsbyStJohn" target="_blank" rel="noopener">Facebook →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Lawns By St. John · Jacksonville, FL</span>
+      <span>Serving Jacksonville &amp; Northeast Florida</span>
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="tel:+19048615403" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a href="#contact" class="btn btn-primary">Request a proposal</a>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+  <img id="lbImg" src="" alt="" />
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var doc=document;
+  var yrEl=doc.getElementById('yr'); if(yrEl) yrEl.textContent=new Date().getFullYear();
+
+  // header solid on scroll + active nav + sticky cta
+  var hdr=doc.getElementById('hdr'), sticky=doc.getElementById('stickyCta');
+  var links=Array.prototype.slice.call(doc.querySelectorAll('.nav a.lk'));
+  var secs=links.map(function(a){return doc.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+  function onScroll(){
+    var y=window.pageYOffset||doc.documentElement.scrollTop;
+    if(hdr) hdr.classList.toggle('solid', y>40);
+    if(sticky) sticky.classList.toggle('show', y>560);
+    var cur=null;
+    for(var i=0;i<secs.length;i++){ if(secs[i].getBoundingClientRect().top<=140) cur=links[i]; }
+    links.forEach(function(l){l.classList.remove('active');});
+    if(cur) cur.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+  onScroll();
+
+  // mobile drawer
+  var drawer=doc.getElementById('drawer'), menuBtn=doc.getElementById('menuBtn'), drawerClose=doc.getElementById('drawerClose');
+  function openD(){drawer.classList.add('open'); menuBtn.setAttribute('aria-expanded','true'); doc.body.style.overflow='hidden';}
+  function closeD(){drawer.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); doc.body.style.overflow='';}
+  if(menuBtn){ menuBtn.addEventListener('click', openD); }
+  if(drawerClose){ drawerClose.addEventListener('click', closeD); }
+  if(drawer){
+    drawer.addEventListener('click', function(e){ if(e.target===drawer) closeD(); });
+    Array.prototype.forEach.call(drawer.querySelectorAll('a'), function(a){ a.addEventListener('click', closeD); });
+  }
+
+  // reveal on scroll (secondary content only; failsafe + reduced-motion safe)
+  var rvs=Array.prototype.slice.call(doc.querySelectorAll('.rv'));
+  function showAll(){ rvs.forEach(function(el){el.classList.add('in');}); }
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ showAll(); }
+  else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }); }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll, 2600); // failsafe: never leave content hidden
+  } else { showAll(); }
+
+  // lightbox
+  var figs=Array.prototype.slice.call(doc.querySelectorAll('.gal-item'));
+  var lb=doc.getElementById('lb'), lbImg=doc.getElementById('lbImg'), lbCap=doc.getElementById('lbCap');
+  var lbClose=doc.getElementById('lbClose'), lbPrev=doc.getElementById('lbPrev'), lbNext=doc.getElementById('lbNext');
+  var items=figs.map(function(f){var im=f.querySelector('img'); var cap=f.querySelector('figcaption'); return {src:im.getAttribute('src'), alt:im.getAttribute('alt'), cap:cap?cap.textContent:''};});
+  var idx=0, lastFocus=null;
+  function show(i){ idx=(i+items.length)%items.length; var it=items[idx]; lbImg.setAttribute('src',it.src); lbImg.setAttribute('alt',it.alt); lbCap.textContent=it.cap; }
+  function openLb(i){ lastFocus=doc.activeElement; show(i); lb.classList.add('open'); doc.body.style.overflow='hidden'; lbClose.focus(); }
+  function closeLb(){ lb.classList.remove('open'); doc.body.style.overflow=''; if(lastFocus&&lastFocus.focus)lastFocus.focus(); }
+  figs.forEach(function(f,i){
+    f.addEventListener('click', function(){openLb(i);});
+    f.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openLb(i);} });
+  });
+  if(lb){
+    lbClose.addEventListener('click', closeLb);
+    lbPrev.addEventListener('click', function(){show(idx-1);});
+    lbNext.addEventListener('click', function(){show(idx+1);});
+    lb.addEventListener('click', function(e){ if(e.target===lb) closeLb(); });
+    doc.addEventListener('keydown', function(e){
+      if(!lb.classList.contains('open')) return;
+      if(e.key==='Escape') closeLb();
+      else if(e.key==='ArrowLeft') show(idx-1);
+      else if(e.key==='ArrowRight') show(idx+1);
+    });
+  }
+
+  // proposal form — validation + AJAX submit to the business inbox
+  var form=doc.getElementById('proposalForm'), success=doc.getElementById('formSuccess'), submitBtn=doc.getElementById('pfSubmit');
+  function setErr(id, on){ var f=doc.getElementById(id); if(!f) return; var field=f.closest('.field'); if(field) field.classList.toggle('invalid', on); f.setAttribute('aria-invalid', on?'true':'false'); }
+  function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var ok=true;
+      var name=doc.getElementById('pf-name'), phone=doc.getElementById('pf-phone'), email=doc.getElementById('pf-email'), type=doc.getElementById('pf-type'), msg=doc.getElementById('pf-msg');
+      if(!name.value.trim()){ setErr('pf-name',true); ok=false; } else setErr('pf-name',false);
+      if(!phone.value.trim()){ setErr('pf-phone',true); ok=false; } else setErr('pf-phone',false);
+      if(!validEmail(email.value.trim())){ setErr('pf-email',true); ok=false; } else setErr('pf-email',false);
+      if(!type.value){ setErr('pf-type',true); ok=false; } else setErr('pf-type',false);
+      if(!msg.value.trim()){ setErr('pf-msg',true); ok=false; } else setErr('pf-msg',false);
+      if(!ok){ var bad=form.querySelector('.field.invalid input,.field.invalid select,.field.invalid textarea'); if(bad) bad.focus(); return; }
+      submitBtn.disabled=true; submitBtn.textContent='Sending…';
+      fetch('https://formsubmit.co/ajax/Sales@lawnsbystjohn.com', {
+        method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({
+          name:name.value.trim(), phone:phone.value.trim(), email:email.value.trim(),
+          property_type:type.value, property_location:doc.getElementById('pf-area').value.trim(),
+          message:msg.value.trim(), _subject:'New proposal request — Lawns By St. John website'
+        })
+      }).then(function(r){ return r.json(); }).then(function(){
+        form.style.display='none'; success.classList.add('show'); success.scrollIntoView({behavior:'smooth', block:'center'});
+      }).catch(function(){
+        submitBtn.disabled=false; submitBtn.textContent='Request a proposal';
+        alert('Something went wrong sending your request. Please call (904) 861-5403 or email Sales@lawnsbystjohn.com.');
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

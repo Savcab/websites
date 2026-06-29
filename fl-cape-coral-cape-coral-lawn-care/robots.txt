@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/fl-cape-coral-cape-coral-lawn-care/sitemap.xml

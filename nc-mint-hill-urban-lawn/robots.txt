@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/nc-mint-hill-urban-lawn/sitemap.xml

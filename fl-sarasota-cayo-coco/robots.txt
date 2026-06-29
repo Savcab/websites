@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/fl-sarasota-cayo-coco/sitemap.xml

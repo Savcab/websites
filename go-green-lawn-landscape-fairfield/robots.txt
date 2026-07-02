@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/go-green-lawn-landscape-fairfield/sitemap.xml

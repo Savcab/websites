@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/elegance-landscaping-pembroke-pines/sitemap.xml

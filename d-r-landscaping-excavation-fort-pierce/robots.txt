@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/d-r-landscaping-excavation-fort-pierce/sitemap.xml

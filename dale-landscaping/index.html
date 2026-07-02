@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dale Landscaping — Landscaping &amp; Lawn Care in Zephyrhills, FL</title>
+<meta name="description" content="Dale Landscaping — full-service landscaping and lawn care in Zephyrhills, Wesley Chapel &amp; Dade City, FL. Garden design, lawn maintenance, mulching, tree work and land clearing. Licensed &amp; insured, 5.0 stars across 74 reviews.">
+<link rel="canonical" href="https://savcab.github.io/websites/dale-landscaping/">
+<meta property="og:title" content="Dale Landscaping — Landscaping &amp; Lawn Care in Zephyrhills, FL">
+<meta property="og:description" content="Full-service landscaping and lawn care across Pasco County. Licensed &amp; insured, 5.0 stars across 74 reviews.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://savcab.github.io/websites/dale-landscaping/assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;--s7:6rem;
+  --section-y:clamp(3.5rem,8vw,7rem);
+  --hero-y:clamp(4rem,10vw,9rem);
+  --container:75rem;--measure:64ch;
+  --h1:clamp(2.15rem,5.2vw,3.5rem);
+  --h2:clamp(1.65rem,3.4vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;--small:.875rem;
+  --lh-body:1.6;--lh-head:1.1;--track-head:-.015em;
+  --ink:#1a1c23;--ink-2:#54586a;--ink-3:#8a8fa3;
+  --line:#e7e7f0;--bg:#ffffff;--bg-2:#f5f5fb;
+  --brand:#292999;--brand-d:#1c1c66;--brand-2:#3a3ac2;
+  --accent:#2a8a4b;--accent-d:#1f6f3b;
+  --star:#f2a413;
+  --r-s:8px;--r-m:14px;--r-l:22px;--r-pill:999px;
+  --sh-1:0 1px 2px rgba(24,24,60,.06);
+  --sh-2:0 2px 4px rgba(24,24,60,.06),0 4px 10px rgba(24,24,60,.05);
+  --sh-3:0 6px 14px rgba(24,24,60,.07),0 14px 32px rgba(24,24,60,.09);
+  --sh-4:0 12px 24px rgba(24,24,60,.10),0 28px 56px rgba(24,24,60,.12);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:600;color:var(--ink)}
+h1{font-size:var(--h1)}h2{font-size:var(--h2)}h3{font-size:var(--h3);font-weight:600}
+p{max-width:var(--measure)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:1.5rem}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:"Inter";font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+.section{padding-block:var(--section-y)}
+.section-tint{background:var(--bg-2)}
+.lead{font-size:1.15rem;color:var(--ink-2);max-width:60ch;line-height:1.6}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Inter";font-weight:600;font-size:1rem;min-height:52px;padding:.5rem 1.7rem;border-radius:var(--r-m);border:1.5px solid transparent;cursor:pointer;transition:var(--t)}
+.btn svg{width:19px;height:19px}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--brand-2);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-ghost-ink{background:transparent;color:var(--brand);border-color:var(--brand)}
+.btn-ghost-ink:hover{background:var(--brand);color:#fff}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:18px;height:18px;fill:var(--star)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces";font-weight:700;font-size:1.35rem;color:var(--brand);letter-spacing:-.01em}
+.brand .mark{width:34px;height:34px;flex:none;display:grid;place-items:center;background:var(--brand);border-radius:9px}
+.brand .mark svg{width:20px;height:20px;stroke:#fff}
+.nav-links{display:flex;align-items:center;gap:1.9rem}
+.nav-links a{font-size:.95rem;font-weight:500;color:var(--ink-2);transition:var(--t)}
+.nav-links a:hover{color:var(--brand)}
+.nav-cta{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;color:var(--brand);border:1.5px solid var(--line);padding:.55rem 1.1rem;border-radius:var(--r-pill);transition:var(--t)}
+.nav-cta svg{width:17px;height:17px;stroke:var(--brand)}
+.nav-cta:hover{border-color:var(--brand);background:var(--bg-2)}
+.menu-toggle{display:none}
+
+/* hero */
+.hero{position:relative;min-height:clamp(560px,86vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,60,.28) 0%,rgba(20,20,60,.12) 38%,rgba(18,18,54,.72) 100%),linear-gradient(90deg,rgba(20,20,60,.55) 0%,rgba(20,20,60,0) 62%)}
+.hero-inner{position:relative;padding-block:var(--hero-y) var(--s6)}
+.hero .rating-chip{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(6px);padding:.4rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;margin-bottom:1.3rem}
+.hero h1{color:#fff;max-width:16ch;text-shadow:0 2px 20px rgba(15,15,45,.35)}
+.hero .sub{margin-top:1.1rem;max-width:52ch;font-size:1.15rem;color:rgba(255,255,255,.92);line-height:1.55}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.9rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin-top:1.8rem;font-size:.9rem;color:rgba(255,255,255,.9)}
+.hero-meta span{display:inline-flex;align-items:center;gap:.45rem}
+.hero-meta svg{width:16px;height:16px;stroke:var(--accent);flex:none}
+
+/* trust strip */
+.trust{background:var(--brand-d);color:#fff}
+.trust .row{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem 2.6rem;padding-block:1.15rem;text-align:center}
+.trust .item{display:inline-flex;align-items:center;gap:.6rem;font-size:.92rem;font-weight:500;color:rgba(255,255,255,.92)}
+.trust .item strong{font-weight:700;color:#fff}
+.trust svg{width:18px;height:18px;stroke:#8fd6a6;flex:none}
+.trust .stars svg{fill:var(--star);stroke:none;width:16px;height:16px}
+
+/* section head */
+.shead{max-width:56ch;margin-bottom:var(--s5)}
+.shead h2{margin-top:.7rem}
+.shead p{margin-top:.9rem;color:var(--ink-2);font-size:1.08rem}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:1.25rem}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);padding:1.7rem 1.6rem;transition:var(--t)}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;background:#eaf4ee;margin-bottom:1.1rem}
+.svc .ic svg{width:23px;height:23px;stroke:var(--accent-d)}
+.svc h3{margin-bottom:.4rem}
+.svc p{font-size:.96rem;color:var(--ink-2);max-width:38ch}
+.svc .tag{display:inline-block;margin-top:.9rem;font-size:.8rem;font-weight:600;color:var(--brand);background:var(--bg-2);padding:.25rem .7rem;border-radius:var(--r-pill)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1rem}
+.gal figure{position:relative;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1);aspect-ratio:4/3;background:var(--bg-2)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform 400ms cubic-bezier(.2,.6,.2,1)}
+.gal figure:hover img{transform:scale(1.05)}
+
+/* why band */
+.why{background:var(--brand-d);color:#fff}
+.why h2{color:#fff}
+.why .eyebrow{color:#8fd6a6}
+.why .eyebrow::before{background:#8fd6a6}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1.4rem 2rem;margin-top:var(--s5)}
+.why-item{display:flex;gap:1rem}
+.why-item .ic{flex:none;width:44px;height:44px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.1)}
+.why-item .ic svg{width:22px;height:22px;stroke:#8fd6a6}
+.why-item h3{color:#fff;font-size:1.12rem;margin-bottom:.3rem}
+.why-item p{color:rgba(255,255,255,.78);font-size:.95rem;max-width:34ch}
+
+/* reviews */
+.rev{text-align:center}
+.rev .big{font-family:"Fraunces";font-size:clamp(3.5rem,9vw,5.5rem);font-weight:600;color:var(--brand);line-height:1}
+.rev .stars{margin:.6rem 0 .3rem}
+.rev .stars svg{width:26px;height:26px}
+.rev .count{color:var(--ink-2);font-size:1.05rem}
+.rev .quote{max-width:44ch;margin:1.6rem auto 0;font-family:"Fraunces";font-size:1.35rem;font-style:italic;color:var(--ink);line-height:1.45}
+.rev .btn{margin-top:1.8rem}
+
+/* service area */
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.area-map{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line)}
+.area-map iframe{display:block;width:100%;height:340px;border:0}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.3rem 0 1.8rem}
+.town{display:inline-flex;align-items:center;gap:.45rem;font-size:.92rem;font-weight:600;color:var(--brand);background:var(--bg-2);border:1px solid var(--line);padding:.5rem .9rem;border-radius:var(--r-pill)}
+.town svg{width:15px;height:15px;stroke:var(--accent)}
+.hours{border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;max-width:360px}
+.hours .h-head{background:var(--bg-2);padding:.8rem 1.1rem;font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;color:var(--brand)}
+.hours .h-head svg{width:17px;height:17px;stroke:var(--brand)}
+.hours .h-row{display:flex;justify-content:space-between;padding:.62rem 1.1rem;font-size:.92rem;border-top:1px solid var(--line)}
+.hours .h-row span:first-child{color:var(--ink-2)}
+.hours .h-row span:last-child{font-weight:600}
+.hours .h-row.closed span:last-child{color:var(--ink-3);font-weight:500}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-d) 100%);color:#fff;text-align:center}
+.cta h2{color:#fff;max-width:20ch;margin-inline:auto}
+.cta p{color:rgba(255,255,255,.85);max-width:50ch;margin:1rem auto 0;font-size:1.08rem}
+.cta-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:2rem}
+.cta .note{margin-top:1.4rem;font-size:.9rem;color:rgba(255,255,255,.72)}
+
+/* footer */
+footer{background:#141438;color:rgba(255,255,255,.72);padding-block:var(--s6) var(--s4);font-size:.92rem}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.4rem}
+.f-brand{font-family:"Fraunces";font-weight:700;font-size:1.3rem;color:#fff;display:flex;align-items:center;gap:.55rem;margin-bottom:.9rem}
+.f-brand .mark{width:32px;height:32px;background:var(--brand-2);border-radius:8px;display:grid;place-items:center}
+.f-brand .mark svg{width:18px;height:18px;stroke:#fff}
+footer p{max-width:38ch;line-height:1.6}
+.f-col h4{font-family:"Inter";color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;font-weight:700}
+.f-col a,.f-col div{display:block;color:rgba(255,255,255,.72);margin-bottom:.6rem;transition:var(--t)}
+.f-col a:hover{color:#fff}
+.f-contact a{display:flex;align-items:center;gap:.55rem}
+.f-contact svg{width:16px;height:16px;stroke:#8fd6a6;flex:none}
+.f-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:var(--s5);padding-top:var(--s3);display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between;font-size:.85rem;color:rgba(255,255,255,.55)}
+.f-bottom a{color:rgba(255,255,255,.7)}
+
+@media(max-width:860px){
+  .nav-links{display:none}
+  .area-grid{grid-template-columns:1fr;gap:1.8rem}
+  .f-grid{grid-template-columns:1fr;gap:2rem}
+  .hero-scrim{background:linear-gradient(180deg,rgba(20,20,60,.25) 0%,rgba(18,18,54,.78) 100%)}
+}
+@media(max-width:520px){
+  .btn{width:100%}
+  .hero-actions .btn,.cta-actions .btn{width:100%}
+  .trust .row{gap:.6rem 1.4rem}
+}
+@media(max-width:400px){
+  .brand{font-size:1.08rem;gap:.45rem}
+  .brand .mark{width:30px;height:30px}
+  .brand .mark svg{width:17px;height:17px}
+  .nav-cta{font-size:.82rem;padding:.5rem .8rem;gap:.35rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Dale Landscaping home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+      </span>
+      Dale Landscaping
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#why">Why Dale</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tel:+18134798284">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      (813) 479-8284
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero.jpg" alt="Freshly landscaped front-yard garden bed and manicured lawn at a Zephyrhills, Florida home by Dale Landscaping" width="1600" height="1200" fetchpriority="high">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-inner">
+    <div class="rating-chip">
+      <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></span>
+      5.0 · 74 Google reviews
+    </div>
+    <h1>Zephyrhills landscaping, done the way it should be.</h1>
+    <p class="sub">Full-service landscaping and lawn care for homes and businesses across Pasco County — garden design, mulching, tree work and land clearing, backed by 28 years of experience.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+        Get a free quote
+      </a>
+      <a class="btn btn-ghost" href="tel:+18134798284">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        (813) 479-8284
+      </a>
+    </div>
+    <div class="hero-meta">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Licensed &amp; insured</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 28 years of experience</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Zephyrhills · Wesley Chapel · Dade City</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap row">
+    <span class="item"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></span><strong>5.0</strong>&nbsp;· 74 Google reviews</span>
+    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg><strong>Licensed &amp; insured</strong></span>
+    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><strong>28 yrs</strong>&nbsp;experience</span>
+    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 21h18M6 21V9l6-4 6 4v12"/><path d="M10 21v-5h4v5"/></svg>Residential &amp; commercial</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">What we do</span>
+      <h2>Everything your yard needs, from one crew you can count on.</h2>
+      <p>Custom-tailored landscaping and maintenance for Pasco County homes and properties — big projects or a standing schedule, we handle the whole outdoors.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 20h16M4 20c0-5 3-9 8-9s8 4 8 9M12 11V3M12 3c-2 0-3 1.5-3 3M12 3c2 0 3 1.5 3 3"/></svg></span>
+        <h3>Monthly Lawn Maintenance</h3>
+        <p>Regular mowing, edging and trimming that keeps your lawn crisp all season long.</p>
+        <span class="tag">Starts at $205 / month</span>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 2C7 6 5 10 5 14a7 7 0 0 0 14 0c0-4-2-8-7-12Z"/><path d="M12 22V12"/></svg></span>
+        <h3>Monthly Garden Maintenance</h3>
+        <p>Ongoing care for your beds — pruning, shaping and seasonal upkeep so planting stays healthy and full.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 20V8"/><path d="M12 8c0-3 2-5 5-5 0 3-2 5-5 5Z"/><path d="M12 12c0-3-2-5-5-5 0 3 2 5 5 5Z"/><path d="M6 20h12"/></svg></span>
+        <h3>New &amp; Custom Gardens</h3>
+        <p>Fresh garden design and installation — new beds, plant selection and layout built around your home.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 17h18M5 17l2-5h10l2 5M8 12V9a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>Mulching &amp; De-weeding</h3>
+        <p>Clean, freshly mulched beds and thorough weeding that make the whole yard look finished.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22V13"/><path d="M12 13l4.5-3.5A4 4 0 1 0 12 4a4 4 0 1 0-4.5 5.5L12 13Z"/></svg></span>
+        <h3>Tree Work</h3>
+        <p>Trimming, shaping and tree services to keep your property safe, healthy and looking its best.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 18h18M7 18V9l3-3 3 3v9M17 18v-5"/><path d="M2 21h20"/></svg></span>
+        <h3>Land Clearing &amp; Clean-Up</h3>
+        <p>Overgrowth, brush and debris removed — clearing lots and reclaiming yards that have gotten away from you.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg></span>
+        <h3>Commercial Property Care</h3>
+        <p>Dependable grounds maintenance for commercial properties, keeping your business looking sharp year-round.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><path d="M9 16l2 2 4-4"/></svg></span>
+        <h3>In-Person Consultations</h3>
+        <p>We meet you at your property to plan the work — by appointment, so every quote fits what you actually need.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-tint" id="work">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Our work</span>
+      <h2>Real Pasco County yards we've planted, mulched and maintained.</h2>
+      <p>Every photo here is our own work across Zephyrhills and Wesley Chapel — no stock, just the results our neighbors see.</p>
+    </div>
+    <div class="gal">
+      <figure><img src="assets/g1.jpg" alt="Paver walkway with tropical plantings and palms at a Florida home landscaped by Dale Landscaping" width="900" height="675" loading="lazy"></figure>
+      <figure><img src="assets/g2.jpg" alt="Mature front-yard landscaping with hedges and shade trees on a Zephyrhills property" width="900" height="675" loading="lazy"></figure>
+      <figure><img src="assets/g3.jpg" alt="Freshly mowed lawn with clean mowing stripes in a Wesley Chapel neighborhood" width="900" height="675" loading="lazy"></figure>
+      <figure><img src="assets/g4.jpg" alt="Newly mulched garden bed with shrubs along a home's foundation" width="900" height="675" loading="lazy"></figure>
+      <figure><img src="assets/g5.jpg" alt="Neatly trimmed hedge and flowering shrubs along a lush green lawn" width="900" height="675" loading="lazy"></figure>
+      <figure><img src="assets/g6.jpg" alt="Fresh mulch installation and new plantings along the side of a Florida house" width="900" height="675" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <div class="shead" style="margin-bottom:0">
+      <span class="eyebrow">Why Dale</span>
+      <h2>A 5.0-star reputation, built one property at a time.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div><h3>Licensed &amp; insured</h3><p>Fully licensed and insured, so your property and your project are protected from day one.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <div><h3>28 years of experience</h3><p>Nearly three decades in landscaping — 16 of them right here in Pasco County, Florida.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 2l2.4 5 5.6.6-4 4 1 5.4L12 19l-5 3 1-5.4-4-4 5.6-.6L12 2Z"/></svg></span>
+        <div><h3>Discounts for those who serve</h3><p>We offer a standing discount for first responders, military and educators — just show a current or retired ID.</p></div>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 7h-9M14 17H5M17 3l4 4-4 4M7 21l-4-4 4-4"/></svg></span>
+        <div><h3>Custom-tailored service</h3><p>Every yard is different. We plan the work around your property and your budget — never a one-size template.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+  <div class="wrap rev">
+    <span class="eyebrow" style="display:inline-flex;margin-bottom:.4rem">Reputation</span>
+    <div class="big">5.0</div>
+    <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
+    <div class="count">Rated 5.0 across <strong>74 Google reviews</strong></div>
+    <p class="quote">A perfect score from 74 Pasco County neighbors — the kind of reputation you only earn by getting the details right, every single visit.</p>
+    <a class="btn btn-ghost-ink" href="https://maps.google.com/?cid=2500102656809050375" target="_blank" rel="noopener">
+      Read our Google reviews
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section section-tint" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div>
+        <span class="eyebrow">Service area</span>
+        <h2 style="margin-top:.7rem">Proudly serving Pasco County, Florida.</h2>
+        <p class="lead" style="margin-top:.9rem;font-size:1.05rem">From Zephyrhills to Wesley Chapel and Dade City, we keep residential and commercial properties across the area healthy, tidy and looking their best.</p>
+        <div class="towns">
+          <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Zephyrhills</span>
+          <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Wesley Chapel</span>
+          <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Dade City</span>
+        </div>
+        <div class="hours">
+          <div class="h-head"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Office hours</div>
+          <div class="h-row"><span>Monday – Thursday</span><span>9:00 AM – 4:00 PM</span></div>
+          <div class="h-row closed"><span>Friday</span><span>Closed</span></div>
+          <div class="h-row closed"><span>Saturday – Sunday</span><span>Closed</span></div>
+        </div>
+        <p style="margin-top:1rem;font-size:.9rem;color:var(--ink-3)">In-person consultations available by appointment.</p>
+      </div>
+      <div class="area-map">
+        <iframe title="Map of Dale Landscaping service area in Zephyrhills, FL" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-82.34%2C28.15%2C-82.03%2C28.33&layer=mapnik&marker=28.2410836%2C-82.1833744"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#8fd6a6;display:inline-flex">Get started</span>
+    <h2 style="margin-top:.7rem">Let's make your yard the best one on the block.</h2>
+    <p>Tell us what you're picturing and we'll put together a free, no-pressure quote. Spring and summer book up early, so reach out to get on the schedule.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" style="background:#fff;color:var(--brand)" href="tel:+18134798284">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Call (813) 479-8284
+      </a>
+      <a class="btn btn-ghost" href="mailto:Dalelandscaping@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        Email us
+      </a>
+    </div>
+    <p class="note">Prefer email? Reach us any time at Dalelandscaping@gmail.com</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></span>Dale Landscaping</div>
+        <p>Full-service landscaping and lawn care for homes and businesses across Zephyrhills, Wesley Chapel and Dade City, Florida. Licensed &amp; insured, 5.0 stars across 74 reviews.</p>
+      </div>
+      <div class="f-col f-contact">
+        <h4>Contact</h4>
+        <a href="tel:+18134798284"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>(813) 479-8284</a>
+        <a href="mailto:Dalelandscaping@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Dalelandscaping@gmail.com</a>
+        <div style="display:flex;gap:.55rem;align-items:flex-start"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#8fd6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>5730 8th St<br>Zephyrhills, FL 33542</span></div>
+      </div>
+      <div class="f-col">
+        <h4>Services</h4>
+        <a href="#services">Lawn Maintenance</a>
+        <a href="#services">Garden Design &amp; Care</a>
+        <a href="#services">Mulching &amp; De-weeding</a>
+        <a href="#services">Tree Work</a>
+        <a href="#services">Land Clearing</a>
+        <a href="#services">Commercial Property Care</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 Dale Landscaping · Licensed &amp; Insured · Zephyrhills, FL</span>
+      <span>Website by <a href="https://falconwebstudio.com" target="_blank" rel="noopener">Falcon Web Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"GeneralContractor",
+  "name":"Dale Landscaping",
+  "image":"https://savcab.github.io/websites/dale-landscaping/assets/hero.jpg",
+  "url":"https://savcab.github.io/websites/dale-landscaping/",
+  "telephone":"+18134798284",
+  "email":"Dalelandscaping@gmail.com",
+  "priceRange":"$$",
+  "address":{"@type":"PostalAddress","streetAddress":"5730 8th St","addressLocality":"Zephyrhills","addressRegion":"FL","postalCode":"33542","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":28.2410836,"longitude":-82.1833744},
+  "areaServed":[{"@type":"City","name":"Zephyrhills"},{"@type":"City","name":"Wesley Chapel"},{"@type":"City","name":"Dade City"}],
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"16:00"}],
+  "knowsAbout":["Landscaping","Lawn Care","Garden Maintenance","Mulching","Tree Work","Land Clearing"]
+}
+</script>
+
+</body>
+</html>

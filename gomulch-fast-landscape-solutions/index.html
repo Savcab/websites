@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landscape Supply &amp; Mulch Delivery in Lakeland, FL | GoMulch</title>
+<meta name="description" content="GoMulch Fast Landscape Solutions delivers bulk mulch, decorative rock, soil, sand and pavers across Lakeland, FL — or pick up at our yard on US-92. Call (863) 667-1114.">
+<link rel="canonical" href="https://savcab.github.io/websites/gomulch-fast-landscape-solutions/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="GoMulch Fast Landscape Solutions — Lakeland, FL">
+<meta property="og:description" content="Bulk mulch, decorative rock, soil, sand and pavers — delivered across Lakeland or pick up at our yard on US-92.">
+<meta property="og:url" content="https://savcab.github.io/websites/gomulch-fast-landscape-solutions/">
+<meta property="og:image" content="https://savcab.github.io/websites/gomulch-fast-landscape-solutions/assets/hero-delivery.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-900:#04361e; --green-800:#05451f; --green:#007934; --green-600:#0a8a44;
+    --orange:#ff8300; --orange-600:#e6720a;
+    --ink:#1a1a1a; --slate:#515b56; --muted:#6b746f;
+    --cream:#f7f5ef; --sand:#efe9dc; --line:#e4ddce; --white:#ffffff;
+    --maxw:1200px;
+    --sp-sec:clamp(3.75rem,8vw,7rem);
+    --r-sm:8px; --r-md:14px; --r-lg:22px;
+    --sh-sm:0 1px 2px rgba(20,30,24,.06),0 2px 8px rgba(20,30,24,.05);
+    --sh-md:0 6px 22px rgba(16,44,26,.10);
+    --sh-lg:0 22px 60px rgba(11,44,24,.20);
+    --f-disp:"Barlow Condensed",system-ui,sans-serif;
+    --f-body:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--f-body);color:var(--ink);background:var(--white);
+       font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:var(--f-disp);font-weight:800;line-height:1.02;
+           letter-spacing:.01em;text-transform:uppercase;margin:0}
+  h1{font-size:clamp(2.6rem,6.2vw,4.5rem)}
+  h2{font-size:clamp(2rem,4.2vw,3.1rem)}
+  h3{font-size:1.28rem;letter-spacing:.02em}
+  p{margin:0 0 1rem}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.25rem)}
+  .eyebrow{font-family:var(--f-disp);font-weight:700;text-transform:uppercase;
+           letter-spacing:.22em;font-size:.86rem;color:var(--green);margin:0 0 .9rem}
+  .lede{font-size:1.12rem;color:var(--slate);max-width:60ch}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--f-disp);
+       font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:1.02rem;
+       padding:.92rem 1.6rem;border-radius:var(--r-sm);transition:.16s ease;cursor:pointer;
+       border:2px solid transparent}
+  .btn .i{width:19px;height:19px;stroke-width:2.4}
+  .btn-primary{background:var(--orange);color:#3a1c00}
+  .btn-primary:hover{background:var(--orange-600);transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.5)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+  .btn-dark{background:var(--green);color:#fff}
+  .btn-dark:hover{background:var(--green-600);transform:translateY(-1px)}
+  .i{stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
+         backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+       height:74px}
+  .brand img{height:40px;width:auto}
+  .nav-links{display:flex;gap:1.9rem;align-items:center}
+  .nav-links a{font-weight:600;font-size:.96rem;color:var(--slate);transition:.15s}
+  .nav-links a:hover{color:var(--green)}
+  .nav-cta{display:flex;align-items:center;gap:1.1rem}
+  .nav-phone{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f-disp);
+             font-weight:700;font-size:1.18rem;letter-spacing:.02em;color:var(--green)}
+  .nav-phone .i{width:18px;height:18px;stroke:var(--orange)}
+  .menu-btn{display:none;background:none;border:0;padding:.35rem;color:var(--ink);cursor:pointer}
+  .menu-btn .i{width:28px;height:28px;stroke:var(--ink)}
+
+  /* Hero */
+  .hero{background:
+        radial-gradient(120% 130% at 85% 0%,rgba(0,121,52,.12),transparent 60%),
+        var(--cream)}
+  .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(1.5rem,4vw,3.5rem);
+             align-items:center;padding:clamp(3rem,6vw,5rem) 0 clamp(3rem,5vw,4.5rem)}
+  .hero h1{color:var(--ink)}
+  .hero h1 .accent{color:var(--green)}
+  .hero .lede{margin:1.4rem 0 1.9rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.85rem}
+  .hero-trust{display:flex;align-items:center;gap:.7rem;margin-top:1.7rem;
+              font-size:.98rem;color:var(--slate)}
+  .stars{color:var(--orange);letter-spacing:.06em;font-size:1.05rem}
+  .hero-media{position:relative}
+  .hero-media img{width:100%;height:100%;max-height:520px;object-fit:cover;
+                  border-radius:var(--r-lg);box-shadow:var(--sh-lg)}
+  .hero-badge{position:absolute;left:-14px;bottom:26px;background:var(--green-800);
+              color:#fff;padding:.85rem 1.15rem;border-radius:var(--r-md);
+              box-shadow:var(--sh-md);max-width:220px}
+  .hero-badge strong{font-family:var(--f-disp);font-size:1.35rem;letter-spacing:.03em;
+                     text-transform:uppercase;display:block;color:var(--orange)}
+  .hero-badge span{font-size:.82rem;color:#d7e6dc;line-height:1.35;display:block;margin-top:.1rem}
+
+  /* Stat strip */
+  .strip{background:var(--green-800);color:#fff}
+  .strip-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 2.8rem;
+              padding:1.15rem 0}
+  .strip-item{display:flex;align-items:center;gap:.6rem;font-weight:600;font-size:.98rem;
+              color:#e4f0e8}
+  .strip-item .i{width:20px;height:20px;stroke:var(--orange)}
+  .strip-item b{font-family:var(--f-disp);font-size:1.18rem;letter-spacing:.02em;color:#fff;
+                text-transform:uppercase}
+
+  /* Sections */
+  section{padding:var(--sp-sec) 0}
+  .sec-head{max-width:64ch;margin-bottom:2.6rem}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{color:var(--ink)}
+  .sec-head p{margin-top:.9rem;color:var(--slate);font-size:1.08rem}
+  .bg-cream{background:var(--cream)}
+
+  /* Materials gallery */
+  .mat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:1.4rem}
+  .mat{position:relative;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm);
+       background:#1a1a1a;aspect-ratio:1/1}
+  .mat img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .mat:hover img{transform:scale(1.06)}
+  .mat figcaption{position:absolute;inset:auto 0 0 0;
+                  background:linear-gradient(to top,rgba(4,40,22,.92),rgba(4,40,22,0));
+                  color:#fff;padding:1.4rem 1.1rem .95rem;font-family:var(--f-disp);
+                  font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:1.16rem}
+  .mat figcaption small{display:block;font-family:var(--f-body);font-weight:500;
+                        text-transform:none;letter-spacing:0;font-size:.82rem;color:#c8dccf;
+                        margin-top:.15rem}
+  .mat-note{margin-top:1.7rem;color:var(--muted);font-size:.96rem}
+
+  /* Delivery cards */
+  .deliver-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}
+  .dcard{background:var(--white);border:1px solid var(--line);border-radius:var(--r-md);
+         padding:1.9rem 1.7rem;box-shadow:var(--sh-sm)}
+  .dcard .ic{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;
+             border-radius:var(--r-sm);background:rgba(0,121,52,.10);margin-bottom:1.15rem}
+  .dcard .ic .i{width:26px;height:26px;stroke:var(--green)}
+  .dcard h3{color:var(--ink);margin-bottom:.5rem}
+  .dcard p{color:var(--slate);font-size:.99rem;margin:0}
+
+  /* Services split */
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem}
+  .svc li{list-style:none;display:flex;gap:.9rem;align-items:flex-start;
+          background:var(--cream);border:1px solid var(--line);border-radius:var(--r-md);
+          padding:1.4rem 1.4rem}
+  .svc .ic{flex:none;width:44px;height:44px;border-radius:var(--r-sm);background:var(--green-800);
+           display:flex;align-items:center;justify-content:center}
+  .svc .ic .i{width:23px;height:23px;stroke:var(--orange)}
+  .svc h3{font-size:1.12rem;color:var(--ink);margin-bottom:.3rem}
+  .svc p{margin:0;font-size:.95rem;color:var(--slate)}
+  .svc ul{margin:0;padding:0}
+
+  /* Reviews band */
+  .rev{background:
+       linear-gradient(rgba(4,54,30,.9),rgba(4,54,30,.92)),
+       url('assets/material-pine-bark-mulch.jpg') center/cover fixed;
+       color:#fff;text-align:center}
+  .rev .big{font-family:var(--f-disp);font-weight:800;text-transform:uppercase;
+            font-size:clamp(3.4rem,9vw,6rem);color:var(--orange);line-height:1}
+  .rev .stars{font-size:1.7rem;color:var(--orange);letter-spacing:.14em;display:block;margin:.4rem 0 .3rem}
+  .rev p{color:#d7e6dc;max-width:52ch;margin:.4rem auto 1.9rem;font-size:1.08rem}
+
+  /* Visit */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem);align-items:stretch}
+  .visit-info h2{color:var(--ink)}
+  .nap{margin:1.6rem 0 0;padding:0;list-style:none}
+  .nap li{display:flex;gap:.85rem;align-items:flex-start;padding:.7rem 0;border-bottom:1px solid var(--line)}
+  .nap li .i{flex:none;width:22px;height:22px;stroke:var(--green);margin-top:.15rem}
+  .nap b{font-family:var(--f-disp);text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;
+         color:var(--muted);display:block;font-weight:700}
+  .nap span{font-size:1.05rem;color:var(--ink)}
+  .nap a{color:var(--green);font-weight:600}
+  .hours{margin:1.5rem 0 0;width:100%;border-collapse:collapse;font-size:.99rem}
+  .hours th{font-family:var(--f-disp);text-transform:uppercase;letter-spacing:.05em;
+            text-align:left;color:var(--muted);font-size:.9rem;font-weight:700;padding:.4rem 0}
+  .hours td{padding:.42rem 0;border-top:1px solid var(--line);color:var(--slate)}
+  .hours td:last-child{text-align:right;color:var(--ink);font-weight:500}
+  .hours tr.today td{color:var(--green);font-weight:700}
+  .map-card{border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-md);min-height:340px;
+            border:1px solid var(--line)}
+  .map-card iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+  .yard-photo{margin-top:1.4rem;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--sh-sm)}
+  .yard-photo img{width:100%;height:auto}
+
+  /* CTA band */
+  .cta{background:var(--green-800);color:#fff;text-align:center}
+  .cta h2{color:#fff}
+  .cta p{color:#cfe4d6;max-width:50ch;margin:.9rem auto 1.9rem;font-size:1.1rem}
+  .cta .hero-cta{justify-content:center}
+
+  /* Footer */
+  footer{background:var(--green-900);color:#bcd2c3;padding:3rem 0 2rem;font-size:.94rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+  footer img{height:38px;margin-bottom:1rem;filter:brightness(1.06)}
+  footer h4{font-family:var(--f-disp);text-transform:uppercase;letter-spacing:.08em;
+            color:#fff;font-size:1rem;margin:0 0 .9rem}
+  footer a{color:#bcd2c3}
+  footer a:hover{color:var(--orange)}
+  .foot-links{list-style:none;padding:0;margin:0;line-height:2}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.4rem;padding-top:1.4rem;
+               display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;
+               font-size:.86rem;color:#8fae99}
+
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;padding-top:2.4rem}
+    .hero-media{order:-1}
+    .hero-media img{max-height:360px}
+    .hero-badge{left:auto;right:14px;bottom:14px}
+    .visit-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+    .nav-phone span{display:none}
+    .menu-btn{display:inline-flex}
+  }
+  @media(max-width:560px){
+    body{font-size:16px}
+    .strip-grid{gap:.5rem 1.6rem}
+    .hero-cta .btn{flex:1 1 100%;justify-content:center}
+    .foot-grid{grid-template-columns:1fr}
+    .rev{background-attachment:scroll}
+  }
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="GoMulch Fast Landscape Solutions home">
+      <img src="assets/logo-gomulch.png" alt="GoMulch Fast Landscape Solutions logo" width="440" height="120" style="height:40px;width:auto">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#materials">Materials</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+18636671114">
+        <svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(863) 667-1114</span>
+      </a>
+      <button class="menu-btn" aria-label="Menu" onclick="var n=document.querySelector('.nav-links');n.style.display=n.style.display==='flex'?'none':'flex'">
+        <svg class="i" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Lakeland's Landscape Supply Yard</p>
+        <h1>Bulk Mulch, Rock &amp; Soil<br><span class="accent">Delivered Across Lakeland</span></h1>
+        <p class="lede">GoMulch manufactures, delivers, and installs premium landscape materials — mulch, decorative rock, topsoil, sand and pavers. Order a load to your job site, or pull up to our yard on US-92 and load up.</p>
+        <div class="hero-cta">
+          <a class="btn btn-dark" href="tel:+18636671114">
+            <svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call for a Quote
+          </a>
+          <a class="btn btn-primary" href="#materials">
+            <svg class="i" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            Browse Materials
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span class="stars">★★★★★</span>
+          <span><strong>4.6</strong> from <strong>41 Google reviews</strong> in Lakeland, FL</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero-delivery.jpg" alt="GoMulch loader filling a delivery trailer with bulk landscape material at the Lakeland yard" width="1120" height="1400" fetchpriority="high">
+        <div class="hero-badge">
+          <strong>We Deliver<br>or You Pick Up</strong>
+          <span>Pallet, bulk &amp; local delivery across greater Lakeland</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT STRIP -->
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-item"><svg class="i" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><b>4.6</b> Google rating</div>
+      <div class="strip-item"><svg class="i" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><b>41</b> customer reviews</div>
+      <div class="strip-item"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><b>Open</b> Mon&ndash;Sat</div>
+      <div class="strip-item"><svg class="i" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg><b>Delivery</b> &amp; pickup</div>
+    </div>
+  </div>
+
+  <!-- MATERIALS -->
+  <section id="materials">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">What we carry</p>
+        <h2>Landscape Materials, Sold by the Yard</h2>
+        <p>From fresh-ground mulch to decorative stone, every material is stocked and screened at our Lakeland yard. Order any quantity — a few bags for the weekend or a full trailer for the crew.</p>
+      </div>
+      <div class="mat-grid">
+        <figure class="mat"><img src="assets/material-pine-bark-mulch.jpg" alt="Pile of natural pine bark mulch at the GoMulch Lakeland yard" width="760" height="760" loading="lazy"><figcaption>Pine Bark Mulch<small>Natural, long-lasting ground cover</small></figcaption></figure>
+        <figure class="mat"><img src="assets/material-red-mulch.jpg" alt="Rich red-brown hardwood mulch" width="760" height="760" loading="lazy"><figcaption>Colored Mulch<small>Red &amp; brown hardwood blends</small></figcaption></figure>
+        <figure class="mat"><img src="assets/material-crushed-granite.jpg" alt="Grey crushed granite decorative rock" width="760" height="760" loading="lazy"><figcaption>Crushed Granite<small>Driveways, paths &amp; drainage</small></figcaption></figure>
+        <figure class="mat"><img src="assets/material-river-rock.jpg" alt="Mixed river rock and decorative gravel" width="760" height="760" loading="lazy"><figcaption>River Rock<small>Decorative gravel &amp; stone</small></figcaption></figure>
+        <figure class="mat"><img src="assets/material-screened-sand.jpg" alt="Handful of clean screened sand" width="760" height="760" loading="lazy"><figcaption>Screened Sand<small>Paver base, fill &amp; leveling</small></figcaption></figure>
+        <figure class="mat"><img src="assets/material-pavers-stone.jpg" alt="Paver and stone sample display pad at the yard" width="760" height="760" loading="lazy"><figcaption>Pavers &amp; Stone<small>Samples on display at the yard</small></figcaption></figure>
+      </div>
+      <p class="mat-note">Also stocked: topsoil, garden &amp; potting soil, compost, lime rock and paver base. Not sure how much you need? Tell us the square footage and we'll size the load — call <a href="tel:+18636671114" style="color:var(--green);font-weight:600">(863) 667-1114</a>.</p>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section id="delivery" class="bg-cream">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">How you get it</p>
+        <h2>Delivery or Pickup — Your Call</h2>
+        <p>We built the business around fast turnaround. Have it dropped where you need it, or swing by the yard and we'll load you up.</p>
+      </div>
+      <div class="deliver-grid">
+        <div class="dcard">
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+          <h3>Bulk Delivery</h3>
+          <p>Full loads of mulch, rock or soil delivered by the cubic yard, dumped clean and ready to spread.</p>
+        </div>
+        <div class="dcard">
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+          <h3>Pallet Delivery</h3>
+          <p>Bagged mulch, soil and stone shipped by the pallet — ideal for contractors staging multiple job sites.</p>
+        </div>
+        <div class="dcard">
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+          <h3>Local Same-Area Runs</h3>
+          <p>Live in or around Lakeland? We run local deliveries throughout the week — call to check today's schedule.</p>
+        </div>
+        <div class="dcard">
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg></span>
+          <h3>Yard Pickup</h3>
+          <p>Bring your truck or trailer to 2365 US-92. Our loader operator fills you up so you're in and out fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Turnkey solutions</p>
+        <h2>More Than a Supply Yard</h2>
+        <p>GoMulch is a competitive turnkey solution for any professional beautifying landscape areas — and for homeowners who just want the job done right.</p>
+      </div>
+      <ul class="svc">
+        <li>
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M14 4l6 6"/><path d="M3 21l3-1 11-11-2-2L4 18l-1 3z"/><path d="M14.5 5.5l4 4"/></svg></span>
+          <div><h3>Material Supply</h3><p>Mulch we manufacture on-site, plus rock, soil, sand and pavers stocked year-round.</p></div>
+        </li>
+        <li>
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span>
+          <div><h3>Delivery &amp; Pickup</h3><p>Bulk, pallet and local delivery — or load up at the yard. Fast turnaround either way.</p></div>
+        </li>
+        <li>
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M2 22l1-1h18l1 1"/><path d="M6 18V9a6 6 0 0 1 12 0v9"/><path d="M12 3v3"/></svg></span>
+          <div><h3>Install &amp; Spread</h3><p>We deliver and install — mulch spread and beds finished so your landscape is done, not just dropped.</p></div>
+        </li>
+        <li>
+          <span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+          <div><h3>Authorized EGO Dealer</h3><p>Shop and service EGO battery-powered outdoor power equipment right at our Lakeland location.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="rev">
+    <div class="wrap">
+      <div class="big">4.6</div>
+      <span class="stars">★★★★★</span>
+      <p>Rated 4.6 across 41 Google reviews by Lakeland homeowners and contractors who count on GoMulch for the right material, delivered on time.</p>
+      <a class="btn btn-primary" href="https://search.google.com/local/writereview?placeid=ChIJO5ev6RY_3YgRFKexVupY0hQ" target="_blank" rel="noopener">
+        <svg class="i" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Read &amp; Leave a Google Review
+      </a>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" class="bg-cream">
+    <div class="wrap">
+      <div class="visit-grid">
+        <div class="visit-info">
+          <p class="eyebrow">Find the yard</p>
+          <h2>Visit Us on US-92</h2>
+          <ul class="nap">
+            <li>
+              <svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><b>Address</b>2365 US-92, Lakeland, FL 33801</span>
+            </li>
+            <li>
+              <svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span><b>Phone</b><a href="tel:+18636671114">(863) 667-1114</a></span>
+            </li>
+            <li>
+              <svg class="i" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              <span><b>Directions</b><a href="https://maps.google.com/?cid=1500359389367871252" target="_blank" rel="noopener">Open in Google Maps</a></span>
+            </li>
+          </ul>
+          <table class="hours">
+            <thead><tr><th>Yard Hours</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Monday</td><td>7:00 AM – 5:00 PM</td></tr>
+              <tr><td>Tuesday</td><td>7:00 AM – 5:00 PM</td></tr>
+              <tr><td>Wednesday</td><td>7:00 AM – 5:00 PM</td></tr>
+              <tr><td>Thursday</td><td>7:00 AM – 5:00 PM</td></tr>
+              <tr><td>Friday</td><td>7:00 AM – 5:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM – 12:00 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <figure class="yard-photo">
+            <img src="assets/yard-sign.jpg" alt="GoMulch / Lakeland Landscape Supply yard sign on US-92 listing decorative rock, pine bark, mulch, topsoil and sand" width="900" height="900" loading="lazy">
+          </figure>
+        </div>
+        <div class="map-card">
+          <iframe title="Map to GoMulch at 2365 US-92, Lakeland, FL" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.9237%2C28.0377%2C-81.9037%2C28.0577&layer=mapnik&marker=28.0476665%2C-81.913742"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>Need a Load This Week?</h2>
+      <p>Tell us the material and the quantity — we'll get it on a truck to your site or have it ready for pickup.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+18636671114">
+          <svg class="i" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (863) 667-1114
+        </a>
+        <a class="btn btn-ghost" href="https://maps.google.com/?cid=1500359389367871252" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/logo-gomulch.png" alt="GoMulch Fast Landscape Solutions" width="440" height="120" style="height:38px;width:auto">
+        <p>Manufacturing, delivering and installing premium landscape materials across Lakeland, FL and the surrounding Polk County area.</p>
+        <p style="margin:0"><a href="tel:+18636671114" style="font-family:var(--f-disp);font-size:1.3rem;color:#fff;letter-spacing:.02em">(863) 667-1114</a></p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="foot-links">
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#delivery">Delivery &amp; Pickup</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#visit">Visit the Yard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Yard</h4>
+        <ul class="foot-links">
+          <li>2365 US-92</li>
+          <li>Lakeland, FL 33801</li>
+          <li>Mon–Fri: 7am – 5pm</li>
+          <li>Sat: 8am – 12pm</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 GoMulch Fast Landscape Solutions. All rights reserved.</span>
+      <span>Landscape supply, delivery &amp; install · Lakeland, Florida</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"GoMulch Fast Landscape Solutions",
+  "image":"https://savcab.github.io/websites/gomulch-fast-landscape-solutions/assets/hero-delivery.jpg",
+  "url":"https://savcab.github.io/websites/gomulch-fast-landscape-solutions/",
+  "telephone":"+1-863-667-1114",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"2365 US-92",
+    "addressLocality":"Lakeland",
+    "addressRegion":"FL",
+    "postalCode":"33801",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":28.0476665,"longitude":-81.913742},
+  "areaServed":[
+    {"@type":"City","name":"Lakeland"},
+    {"@type":"City","name":"Auburndale"},
+    {"@type":"City","name":"Winter Haven"},
+    {"@type":"City","name":"Plant City"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00"}
+  ],
+  "sameAs":["http://gomulch.com/","https://maps.google.com/?cid=1500359389367871252"]
+}
+</script>
+
+</body>
+</html>

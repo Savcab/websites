@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/green-leafs-landscaping-raleigh/sitemap.xml

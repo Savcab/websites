@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/luciano-and-son-landscaping-yonkers/sitemap.xml

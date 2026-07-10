@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/ny-cheektowaga-pristine-green/sitemap.xml

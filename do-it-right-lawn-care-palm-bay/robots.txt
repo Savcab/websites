@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/do-it-right-lawn-care-palm-bay/sitemap.xml

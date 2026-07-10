@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/tilley-sprinklers-landscaping/sitemap.xml

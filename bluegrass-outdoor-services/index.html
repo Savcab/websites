@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Snow Removal in Burnsville, MN | Bluegrass</title>
+<meta name="description" content="Local lawn care and snow &amp; ice removal in Burnsville, MN. Mowing, fertilization and winter plowing for the south Twin Cities metro. 4.9 stars, 57 reviews.">
+<link rel="canonical" href="https://savcab.github.io/websites/bluegrass-outdoor-services/">
+<meta name="theme-color" content="#1e5631">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Bluegrass Outdoor Services — Burnsville, MN">
+<meta property="og:description" content="Year-round property care for the south Twin Cities: lawn care &amp; cleanups in summer, commercial snow &amp; ice removal in winter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/bluegrass-outdoor-services/">
+<meta property="og:image" content="https://savcab.github.io/websites/bluegrass-outdoor-services/assets/hero-striped-lawn-trailer.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e5631'/%3E%3Cpath d='M16 25c-5-1.4-8.2-6.2-6-12.4 2 4.4 4 5.6 6 5.6s4-1.2 6-5.6c2.2 6.2-1 11-6 12.4Z' fill='%23f5f6f3'/%3E%3Ccircle cx='23' cy='9' r='2' fill='%233b6f8a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* SPACING — 4/8 grid */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  /* TYPE */
+  --h1:clamp(2.25rem,5.2vw,3.65rem);
+  --h2:clamp(1.7rem,3.4vw,2.6rem);
+  --h3:1.3rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.1; --track-head:-.015em; --track-eye:.16em;
+  /* COLOR — Minnesota four-season: deep grass green (summer) + cool steel-blue (winter). Never pure black. */
+  --ink:#1b2420;
+  --ink-2:#57625c;
+  --ink-3:#8a938c;
+  --line:#dde3dc;
+  --paper:#f5f6f3;
+  --paper-2:#e9ece7;
+  --bg:#ffffff;
+  --grass:#1e5631;    /* brand green — deep Minnesota grass, year-round base (the 30%) */
+  --grass-d:#123c22;  /* dark green sections / hovers */
+  --sage:#567a5f;     /* mid green secondary */
+  --sage-tint:#dbe8dd;
+  --steel:#3b6f8a;    /* winter accent (the 10%) — cool steel-blue, CTAs */
+  --steel-d:#2b5266;  /* hover */
+  --steel-deep:#1c3540; /* snow-band dark ground */
+  --steel-tint:#d9e6ea;
+  --gold:#c79a3e;     /* star glyphs only */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted, 4 tiers */
+  --sh-1:0 1px 2px rgba(20,30,26,.06);
+  --sh-2:0 2px 5px rgba(20,30,26,.07),0 4px 10px rgba(20,30,26,.05);
+  --sh-3:0 6px 14px rgba(20,30,26,.08),0 16px 30px rgba(20,30,26,.09);
+  --sh-4:0 12px 24px rgba(20,30,26,.10),0 28px 56px rgba(20,30,26,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Newsreader",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:700;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--steel);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow.on-dark{color:#a9d3e0}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* responsive copy — condensed text on phones, full copy on laptop */
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--steel);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--steel-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-green{background:var(--grass);color:#fff;box-shadow:var(--sh-2)}
+.btn-green:hover{background:var(--grass-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--grass);color:var(--grass)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-white{background:#fff;color:var(--steel-deep);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Newsreader",serif;font-weight:700;font-size:1.18rem;color:#fff;letter-spacing:-.01em;transition:color var(--t)}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--grass);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .logo svg{width:23px;height:23px}
+.brand b{font-weight:800}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#a9d3e0;display:block;margin-top:1px}
+.nav{display:flex;align-items:center;gap:.4rem}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.solid{background:rgba(245,246,243,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .brand{color:var(--ink)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--grass);background:var(--sage-tint)}
+.hdr.solid .call-pill{color:var(--grass);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill:hover{background:rgba(255,255,255,.12)}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.14);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
+.hdr.solid .burger{background:var(--sage-tint);color:var(--grass)}
+.burger svg{width:24px;height:24px}
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--grass-d);display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand{color:#fff}
+.drawer a.dlink{font-family:"Newsreader",serif;font-size:1.5rem;font-weight:600;color:#eaf2ec;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,92vh,820px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,26,22,.62) 0%,rgba(14,26,22,.16) 32%,rgba(14,26,22,.28) 62%,rgba(11,20,18,.82) 100%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero .eyebrow{color:#bfe0ce}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:17ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;font-weight:600;color:#bfe0ce}
+.hero .sub{margin-top:1.15rem;font-size:1.15rem;color:rgba(255,255,255,.92);max-width:54ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+/* dual-season strip — the signature */
+.season-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);max-width:680px}
+.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:center;gap:.85rem;color:#fff}
+.season-cell.summer{background:linear-gradient(135deg,var(--grass) 0%,#2c5a48 100%)}
+.season-cell.winter{background:linear-gradient(135deg,var(--steel) 0%,var(--steel-d) 100%)}
+.season-cell .ci{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
+.season-cell .ci svg{width:23px;height:23px}
+.season-cell .sk{font-family:"Mulish";font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;opacity:.82;display:block}
+.season-cell .sv{font-family:"Newsreader";font-weight:600;font-size:1.02rem;line-height:1.25;margin-top:2px}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15.5rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--grass);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:700}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+.svc a{color:var(--steel);font-weight:700}
+/* ===== SNOW BAND — the differentiator ===== */
+.snow{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--steel-deep)}
+.snow-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(160deg,rgba(20,45,55,.55) 0%,rgba(17,40,50,.85) 60%,rgba(15,35,44,.96) 100%)}
+.snow .wrap{position:relative;padding-block:clamp(4rem,9vw,8rem)}
+.snow-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.snow h2{font-size:var(--h2);color:#fff;margin-top:.7rem;max-width:20ch}
+.snow .lede{color:rgba(233,244,248,.9);margin-top:1.1rem;max-width:48ch}
+.snow-feats{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.7rem}
+.snow-feat{display:flex;align-items:center;gap:.7rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-m);padding:.85rem 1rem;font-weight:600;font-size:.95rem}
+.snow-feat .icon{color:#a9d3e0;width:1.35rem;height:1.35rem}
+.snow-cta{margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.snow-note{font-size:.85rem;color:rgba(210,230,236,.75);max-width:42ch;margin-top:1rem}
+.snow-trust{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-3);text-align:center}
+.snow-trust .stars{justify-content:center;color:var(--gold)}
+.snow-trust .stars .icon{width:1.3em;height:1.3em}
+.snow-trust .big{font-family:"Newsreader",serif;font-weight:700;font-size:2.4rem;color:#fff;margin-top:.6rem}
+.snow-trust .cnt{font-weight:700;color:#eef6f9;margin-top:.15rem}
+.snow-trust p{color:rgba(225,240,244,.88);font-size:.98rem;margin:1.1rem auto 0;max-width:30ch}
+.snow-trust a.gl{display:inline-block;margin-top:1.1rem;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;font-size:.92rem}
+/* snowfall */
+.flakes{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.flake{position:absolute;top:-8%;width:6px;height:6px;border-radius:50%;background:#eaf6fa;opacity:0;animation:fall linear infinite;filter:blur(.3px)}
+@keyframes fall{0%{transform:translateY(-10%) translateX(0);opacity:0}10%{opacity:.5}90%{opacity:.45}100%{transform:translateY(115vh) translateX(26px);opacity:0}}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;width:100%;font:inherit;color:inherit;text-align:left}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.05)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(15,26,22,.8));color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--steel);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center}
+/* ===== TESTIMONIALS ===== */
+.testi{background:var(--grass-d);color:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1.15rem;margin-top:var(--s5);max-width:52rem;margin-inline:auto}
+.t-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:var(--r-l);padding:1.8rem 1.7rem;display:flex;flex-direction:column}
+.t-card .stars{margin-bottom:.85rem}
+.t-card blockquote{font-family:"Newsreader",serif;font-size:1.08rem;line-height:1.56;color:#eaf2ec;font-weight:500;font-style:italic}
+.t-card .by{margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12);font-family:"Mulish";font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.t-card .by .mt{color:rgba(190,214,200,.72);font-weight:600;font-size:.82rem}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap}
+.t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* ===== WHY (solo, no photo) ===== */
+.why-solo{max-width:46rem;border-left:4px solid var(--steel);padding-left:clamp(1.4rem,4vw,2.6rem)}
+.why-solo h2{font-size:var(--h2);margin-top:.7rem}
+.why-solo p{margin-top:1.1rem;color:var(--ink-2)}
+.why-pts{list-style:none;margin-top:1.5rem;display:grid;gap:.7rem}
+.why-pts li{display:flex;align-items:center;gap:.7rem;font-weight:600;color:var(--ink)}
+.why-pts .icon{color:var(--steel);width:1.3rem;height:1.3rem;flex:none}
+/* ===== AREA ===== */
+.area{background:var(--paper-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;margin-top:var(--s5)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--sage)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.92)}
+/* ===== CONTACT ===== */
+.ct-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:1.2rem;margin-top:var(--s5)}
+.ct-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.ct-card.call{display:flex;flex-direction:column}
+.ct-card .big-phone{font-family:"Newsreader",serif;font-weight:700;font-size:clamp(1.9rem,5vw,2.6rem);color:var(--grass);letter-spacing:-.01em;margin:.6rem 0 .3rem;display:inline-flex;align-items:center;gap:.6rem}
+.ct-card .big-phone .icon{width:1.5rem;height:1.5rem;color:var(--steel)}
+.ct-sub{color:var(--ink-2);font-size:.98rem}
+.ct-actions{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.5rem}
+.ct-actions .btn{padding:.95rem 1rem}
+.review-btn{margin-top:.8rem}
+.review-btn .btn{width:100%;background:var(--paper-2);color:var(--grass);border-color:var(--line)}
+.review-btn .btn:hover{background:var(--sage-tint)}
+.nap{margin-top:1.4rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.92rem;color:var(--ink-2);line-height:1.6}
+.nap b{color:var(--ink)}
+/* form card */
+.form-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.form-card h3{font-size:1.3rem;color:var(--ink)}
+.form-card>p{color:var(--ink-2);font-size:.95rem;margin-top:.5rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.fcol-2{grid-column:1/-1}
+.flabel{font-family:"Mulish",sans-serif;font-weight:700;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:.4rem}
+.req{color:var(--steel)}
+.field{width:100%;padding:.85rem 1rem;font-size:.96rem;font-family:"Mulish",sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-m);transition:border-color var(--t)}
+.field:focus{outline:none;border-color:var(--steel)}
+.field.err{border-color:#b8452c}
+textarea.field{resize:vertical;min-height:5rem}
+.ferr{display:none;margin-top:.4rem;font-size:.82rem;font-weight:600;color:#b8452c}
+.ferr.show{display:block}
+.form-submit{margin-top:.4rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem}
+.form-submit .btn{width:100%}
+@media (min-width:480px){.form-submit .btn{width:auto}}
+.form-note{font-size:.82rem;color:var(--ink-3)}
+.success-panel{display:none;margin-top:1.6rem;background:var(--grass);color:#fff;border-radius:var(--r-l);padding:2rem;text-align:center}
+.success-panel.show{display:block}
+.success-panel .ci{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.14);color:var(--gold);display:grid;place-items:center;margin:0 auto}
+.success-panel h4{color:#fff;font-size:1.4rem;margin-top:.9rem}
+.success-panel p{color:rgba(255,255,255,.82);font-size:.92rem;margin:.5rem auto 0;max-width:32ch}
+.success-panel .btn{margin-top:1.1rem}
+.send-fallback{margin-top:1rem;font-size:.86rem;background:#fbeee9;color:#a83b22;border-radius:var(--r-m);padding:.9rem 1.1rem}
+.send-fallback a{font-weight:700;text-decoration:underline}
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#c4cdc7}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9aa49f;max-width:34ch;line-height:1.6}
+.foot-col h4{font-family:"Mulish";font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7f8c86;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c4cdc7;padding:.28rem 0;line-height:1.5}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#828c87}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(245,246,243,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(20,30,26,.1);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(11,18,16,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#eaf2ec;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(22px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:920px){
+  .snow-grid,.area-grid,.ct-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav .link,.nav .btn,.call-pill{display:none}
+  .burger{display:grid}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:5.5rem}
+  /* compact wordmark so it never wraps past the bar / overlaps content */
+  .hdr-in{height:64px}
+  .hdr-in .brand{font-size:1.06rem;line-height:1.1}
+  .hdr-in .brand .logo{width:34px;height:34px}
+  .hdr-in .brand .logo svg{width:20px;height:20px}
+  .hdr-in .brand .yr{display:none}
+  /* hero flows from just below the fixed header — no flex-end overflow under it */
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:540px){
+  .season-strip{grid-template-columns:1fr}
+  .snow-feats{grid-template-columns:1fr}
+  .ct-actions{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></symbol>
+<symbol id="i-snow" viewBox="0 0 24 24"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></symbol>
+<symbol id="i-mower" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.4"/><circle cx="17" cy="18" r="2.4"/><path d="M8.3 18h6.4"/><path d="M10 18V9.5A2.5 2.5 0 0 1 12.5 7H14"/><path d="M14 5.5h3.5L20 11h-8"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2.69s5.66 5.67 5.66 9.66a5.66 5.66 0 1 1-11.32 0c0-4 5.66-9.66 5.66-9.66Z"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.25 3.5 9.74 8 11 4.5-1.26 8-5.75 8-11V5Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 18.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-shovel" viewBox="0 0 24 24"><path d="M2 22v-5l5.5-5.5 5 5L7 22z"/><path d="M9.5 9.5 16 3"/><path d="M14 3h7v7"/><path d="M14 10 21 3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Bluegrass Outdoor Services home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 25c-5-1.4-8.2-6.2-6-12.4 2 4.4 4 5.6 6 5.6s4-1.2 6-5.6c2.2 6.2-1 11-6 12.4Z" style="fill:#f5f6f3"/><circle cx="23" cy="9" r="2" style="fill:#7fb0c4"/></svg></span>
+      <span>Bluegrass <b>Outdoor</b><span class="yr">Services &middot; Burnsville, MN</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#snow">Snow &amp; Ice</a>
+      <a class="link" href="#work">Our Work</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>(612) 807-2528</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 25c-5-1.4-8.2-6.2-6-12.4 2 4.4 4 5.6 6 5.6s4-1.2 6-5.6c2.2 6.2-1 11-6 12.4Z" style="fill:#f5f6f3"/></svg></span>Bluegrass</span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#snow">Snow &amp; Ice</a>
+  <a class="dlink" href="#work">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>Call (612) 807-2528</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="assets/hero-striped-lawn-trailer.jpg" alt="Freshly striped, mowed lawn with the Bluegrass Outdoor Services truck and trailer at a Burnsville, Minnesota home" width="1200" height="674" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow"><span class="tick"></span>Lawn care &amp; snow management &middot; Burnsville, MN</span>
+    <h1>Lawn care &amp; snow management for Burnsville, <em>all year round</em>.</h1>
+    <p class="sub"><span class="only-lap">From weekly mowing, fertilization and seasonal cleanups to parking lots and drives cleared before sunrise &mdash; one local crew keeps your property looking sharp through every Minnesota season.</span><span class="only-mob">One local crew for your lawn, beds and snow &mdash; every Minnesota season.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost on-dark" href="#work">See our work</a>
+    </div>
+    <a class="rate-badge" href="https://www.google.com/maps/place/?q=place_id:ChIJP8UUDqAx9ocRzH3IlnO-Y5w" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+      <span><b>4.9</b> &middot; 57 reviews on Google</span>
+    </a>
+    <div class="season-strip" role="presentation">
+      <div class="season-cell summer">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-sun"/></svg></span>
+        <span><span class="sk">Spring &ndash; Fall</span><span class="sv">Mowing, fertilization &amp; cleanups</span></span>
+      </div>
+      <div class="season-cell winter">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <span><span class="sk">First snow &ndash; Spring thaw</span><span class="sv">Commercial snow &amp; ice removal</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>What we do</span>
+      <h2>Property care that keeps up with every Minnesota season.</h2>
+      <p class="lede">A straightforward list of the work we actually do &mdash; the mowing, feeding and cleanup that keeps south-metro lawns sharp, plus the plowing that keeps commercial lots and drives open all winter.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-mower"/></svg></span>
+        <h3>Weekly Mowing</h3>
+        <p>Weekly mowing, edging and trimming that keeps your lawn striped and even from the first cut of spring through the last of fall.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        <h3>Spring &amp; Fall Cleanup</h3>
+        <p>Full spring and fall cleanups &mdash; leaves, debris and beds reset &mdash; so your property starts and ends the season looking its best.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-droplet"/></svg></span>
+        <h3>Fertilization</h3>
+        <p>A seasonal fertilization program built for Minnesota lawns, timed to feed the grass when it actually needs it.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-layers"/></svg></span>
+        <h3>Dethatching</h3>
+        <p>Power dethatching to clear the built-up layer choking your lawn&rsquo;s roots, so water, air and nutrients can actually reach them.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+        <h3>Weed Control</h3>
+        <p>Targeted weed control that keeps dandelions and crabgrass out without stressing the rest of your lawn.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <h3>Commercial Snow &amp; Ice Removal</h3>
+        <p>Parking lots, drives and walkways plowed and treated all winter, per-storm or on a full-season contract. <a href="#snow">See winter services &rarr;</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SNOW BAND — the differentiator (no winter photo on file — honest text band, never stock) -->
+<section class="snow" id="snow">
+  <div class="snow-scrim"></div>
+  <div class="flakes" aria-hidden="true" id="flakes"></div>
+  <div class="wrap">
+    <div class="snow-grid">
+      <div class="snow-copy rv">
+        <span class="eyebrow on-dark"><span class="tick"></span>When the snow flies</span>
+        <h2>Commercial snow &amp; ice removal, all winter long.</h2>
+        <p class="lede">Winter doesn&rsquo;t wait, and neither do we. When a system rolls through the south metro we plow parking lots and drives, clear walkways, and apply ice treatment early &mdash; so your property is open when people need it to be.</p>
+        <div class="snow-feats">
+          <div class="snow-feat"><svg class="icon"><use href="#i-truck"/></svg>Parking lots &amp; drives</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-shovel"/></svg>Walkways &amp; entrances cleared</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-snow"/></svg>Per-storm or full-season contracts</div>
+          <div class="snow-feat"><svg class="icon"><use href="#i-clock"/></svg>Early, before-hours response</div>
+        </div>
+        <div class="snow-cta">
+          <a class="btn btn-white" href="#contact">Get a snow quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost on-dark" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>Call now</a>
+        </div>
+        <p class="snow-note">Sign on for the whole season, or call for a one-time push after the next storm.</p>
+      </div>
+      <div class="snow-trust rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <div class="big">4.9</div>
+        <div class="cnt">57 reviews</div>
+        <p>One crew for your lawn and your snow &mdash; no second company to call.</p>
+        <a class="gl" href="https://www.google.com/maps/place/?q=place_id:ChIJP8UUDqAx9ocRzH3IlnO-Y5w" target="_blank" rel="noopener">See our reviews on Google &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Recent work</span>
+      <h2>A look at what we&rsquo;ve been up to.</h2>
+      <p class="lede">Real lawns, beds and hardscapes from around Burnsville and the south metro.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="gal-item rv" type="button"><img src="assets/stand-on-mower-stripes.jpg" alt="Stand-on mower cutting crisp stripes into a Burnsville, Minnesota lawn" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Weekly mowing &amp; striping</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/lawn-from-patio.jpg" alt="Manicured striped lawn viewed from a paver patio in Burnsville, MN" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Manicured lawn care</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/paver-driveway-boulders.jpg" alt="Paver driveway with boulder retaining edging at a Burnsville, Minnesota home" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Paver driveway &amp; boulder edging</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/hydrangea-garden-bed.jpg" alt="White hydrangea and perennial garden bed maintained in Burnsville, MN" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Garden bed care &amp; plantings</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/lawn-weigela-border.jpg" alt="Striped lawn bordered by flowering weigela shrubs in Burnsville, Minnesota" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Lawn care &amp; shrub borders</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/concrete-bed-edging.jpg" alt="Decorative concrete edging and mulch bed detail in Burnsville, MN" width="1000" height="749" loading="lazy" decoding="async"><span class="gal-cap">Bed edging &amp; mulch detail</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/annual-planter.jpg" alt="Colorful annual planter maintained for a south metro property" width="1000" height="749" loading="lazy" decoding="async"><span class="gal-cap">Seasonal planters</span></button>
+    </div>
+    <p class="gal-note">Photos straight from Bluegrass&rsquo;s Google Business listing.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testi" id="reviews">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow on-dark"><span class="tick"></span>In our customers&rsquo; words</span>
+      <h2>Real reviews from Bluegrass customers.</h2>
+    </div>
+    <div class="t-grid">
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>I&rsquo;ve been using Bluegrass for over 5 years now. I contract them for residential mowing, fertilizing, and spring cleanup. Nazary (the owner) is one of the most dependable and hardworking people I&rsquo;ve met.</blockquote>
+        <figcaption class="by">Parker Schlank <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>Bluegrass (Nazary) has been amazing to work with over the past few years, always reliable, professional, and stress-free.</blockquote>
+        <figcaption class="by">Kel Kroll <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+    </div>
+    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.9</b> out of 5 &middot; 57 reviews &middot; <a href="https://www.google.com/maps/place/?q=place_id:ChIJP8UUDqAx9ocRzH3IlnO-Y5w" target="_blank" rel="noopener">Read them on Google</a></p>
+  </div>
+</section>
+
+<!-- WHY (no crew photo on file — honest text-only section) -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="why-solo rv">
+      <span class="eyebrow"><span class="tick"></span>One local crew</span>
+      <h2>One crew, one number, every season.</h2>
+      <p>Bluegrass Outdoor Services is owner-operated by Nazary Balun, with the same small crew handling your mowing, beds and cleanups all summer and your parking lot or drive all winter. One number to call, not a rotating cast of subcontractors.</p>
+      <ul class="why-pts">
+        <li><svg class="icon"><use href="#i-check"/></svg>One crew, spring through snow</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Fast to respond, easy to reach</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Free quotes &mdash; call or request one online</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:1.7rem">
+        <a class="btn btn-green" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>Where we work</span>
+      <h2>Serving Burnsville &amp; the south metro.</h2>
+    </div>
+    <div class="area-grid">
+      <div class="rv">
+        <p class="lede">Based in Burnsville, we take care of properties throughout the south Twin Cities metro for both lawn care and winter snow removal:</p>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Burnsville</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Apple Valley</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Eagan</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Lakeville</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Savage</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Prior Lake</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Bloomington</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Rosemount</span>
+        </div>
+        <p class="note">Not sure if you&rsquo;re in range? Reach out &mdash; we cover most of the south metro and the towns around it.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Bluegrass Outdoor Services&rsquo; service area in Burnsville, Minnesota" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-93.2965%2C44.7533%2C-93.2845%2C44.7653&amp;layer=mapnik&amp;marker=44.7593%2C-93.2905"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Get a free quote</span>
+      <h2>Tell us about your property.</h2>
+      <p class="lede">Call, or send a few details below, and we&rsquo;ll follow up with a free quote &mdash; for lawn care, a one-time job, or your winter snow plan.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-card call rv">
+        <span class="eyebrow"><span class="tick"></span>Call us</span>
+        <a class="big-phone" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>(612) 807-2528</a>
+        <p class="ct-sub">Reach Bluegrass directly &mdash; we&rsquo;re quick to answer and happy to give a free estimate.</p>
+        <div class="ct-actions">
+          <a class="btn btn-primary" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-green" href="mailto:bluegrassmn@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Email us</a>
+        </div>
+        <div class="review-btn">
+          <a class="btn" href="https://www.google.com/maps/place/?q=place_id:ChIJP8UUDqAx9ocRzH3IlnO-Y5w" target="_blank" rel="noopener"><svg class="icon fill" style="color:var(--gold)"><use href="#i-star"/></svg>Leave us a Google review</a>
+        </div>
+        <div class="nap">
+          <b>Bluegrass Outdoor Services LLC</b><br>
+          12241 24th Ave S, Burnsville, MN 55337<br>
+          <a href="tel:+16128072528" style="color:var(--grass);font-weight:700">(612) 807-2528</a>
+        </div>
+      </div>
+      <div class="form-card rv">
+        <h3>Request a free quote</h3>
+        <p>Share a few details and we&rsquo;ll get back to you &mdash; usually the same day.</p>
+        <form id="quoteform" class="form-grid" novalidate>
+          <div class="fcol-2">
+            <label class="flabel" for="q-name">Name <span class="req">*</span></label>
+            <input id="q-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="q-name-err" class="field" placeholder="Jane Doe">
+            <p id="q-name-err" class="ferr">Please tell us your name.</p>
+          </div>
+          <div>
+            <label class="flabel" for="q-phone">Phone</label>
+            <input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err" class="field" placeholder="(612) 000-0000">
+            <p id="q-phone-err" class="ferr">Please enter a valid phone number.</p>
+          </div>
+          <div>
+            <label class="flabel" for="q-email">Email</label>
+            <input id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err" class="field" placeholder="you@email.com">
+            <p id="q-email-err" class="ferr">Please enter a valid email address.</p>
+          </div>
+          <div class="fcol-2">
+            <p id="q-contact-err" class="ferr">Please add a phone or email so we can reach you.</p>
+          </div>
+          <div>
+            <label class="flabel" for="q-service">Service <span style="color:var(--ink-3);font-weight:500;text-transform:none;letter-spacing:0">(optional)</span></label>
+            <select id="q-service" name="service" class="field">
+              <option>Weekly Mowing</option>
+              <option>Spring &amp; Fall Cleanup</option>
+              <option>Fertilization</option>
+              <option>Dethatching</option>
+              <option>Weed Control</option>
+              <option>Commercial Snow &amp; Ice Removal</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label class="flabel" for="q-address">Property address <span class="req">*</span></label>
+            <input id="q-address" name="address" type="text" autocomplete="street-address" required aria-required="true" aria-describedby="q-address-err" class="field" placeholder="Street, City, ZIP">
+            <p id="q-address-err" class="ferr">Please add the property address.</p>
+          </div>
+          <div class="fcol-2">
+            <label class="flabel" for="q-message">What are you looking for? <span style="color:var(--ink-3);font-weight:500;text-transform:none;letter-spacing:0">(optional)</span></label>
+            <textarea id="q-message" name="message" rows="4" class="field" placeholder="Lawn size, what you need, timing — anything helps."></textarea>
+          </div>
+          <div class="fcol-2 form-submit">
+            <button type="submit" class="btn btn-primary">Send my request <svg class="icon"><use href="#i-arrow"/></svg></button>
+            <p class="form-note">Prefer to talk? Call <a href="tel:+16128072528" style="color:var(--steel);font-weight:700">(612) 807-2528</a></p>
+          </div>
+        </form>
+        <div id="quotesuccess" class="success-panel">
+          <div class="ci" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
+          <h4>Thank you &mdash; request received.</h4>
+          <p id="successmsg">We&rsquo;ll follow up shortly with your free quote. For anything urgent, call (612) 807-2528.</p>
+          <a class="btn btn-white" href="tel:+16128072528">Call (612) 807-2528</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 25c-5-1.4-8.2-6.2-6-12.4 2 4.4 4 5.6 6 5.6s4-1.2 6-5.6c2.2 6.2-1 11-6 12.4Z" style="fill:#f5f6f3"/></svg></span>Bluegrass <b style="font-weight:800;margin-left:.25rem">Outdoor</b></span>
+      <p>Lawn care all summer, snow and ice management all winter &mdash; one local crew for your Burnsville, Minnesota property, every season of the year.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="#services">Services</a>
+      <a href="#snow">Snow &amp; Ice</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </div>
+    <div class="foot-col">
+      <h4>Get in touch</h4>
+      <a href="tel:+16128072528">(612) 807-2528</a>
+      <a href="mailto:bluegrassmn@gmail.com">bluegrassmn@gmail.com</a>
+      <p>12241 24th Ave S<br>Burnsville, MN 55337</p>
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJP8UUDqAx9ocRzH3IlnO-Y5w" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Bluegrass Outdoor Services LLC &middot; Burnsville, MN</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 4.9 &middot; 57 reviews</span>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+16128072528"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-green" href="mailto:bluegrassmn@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Email</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-cl"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Bluegrass Outdoor Services LLC",
+  "description":"Lawn care and commercial snow & ice management serving Burnsville, Minnesota and the south Twin Cities metro.",
+  "image":"https://savcab.github.io/websites/bluegrass-outdoor-services/assets/hero-striped-lawn-trailer.jpg",
+  "url":"https://savcab.github.io/websites/bluegrass-outdoor-services/",
+  "telephone":"+16128072528",
+  "email":"bluegrassmn@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"12241 24th Ave S","addressLocality":"Burnsville","addressRegion":"MN","postalCode":"55337","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":44.7593,"longitude":-93.2905},
+  "areaServed":[
+    {"@type":"City","name":"Burnsville"},
+    {"@type":"City","name":"Apple Valley"},
+    {"@type":"City","name":"Eagan"},
+    {"@type":"City","name":"Lakeville"},
+    {"@type":"City","name":"Savage"},
+    {"@type":"City","name":"Prior Lake"},
+    {"@type":"City","name":"Bloomington"},
+    {"@type":"City","name":"Rosemount"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // drawer
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});
+
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  // snowfall (subtle; auto-disabled under reduced-motion via CSS)
+  var fl=document.getElementById('flakes');
+  if(fl&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    for(var f=0;f<9;f++){
+      var s=document.createElement('span');s.className='flake';
+      s.style.left=(Math.random()*100)+'%';
+      var sz=(4+Math.random()*5);s.style.width=sz+'px';s.style.height=sz+'px';
+      s.style.animationDuration=(11+Math.random()*9)+'s';
+      s.style.animationDelay=(-Math.random()*16)+'s';
+      s.style.opacity=(.22+Math.random()*.3);
+      fl.appendChild(s);
+    }
+  }
+
+  // lightbox
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function open(i){idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;open(i);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')open(idx+1);else if(e.key==='ArrowLeft')open(idx-1);});
+
+  // quote form — name + property address required, plus at least one contact method (phone OR email)
+  var form=document.getElementById('quoteform'),success=document.getElementById('quotesuccess');
+  function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+  function digits(v){return (v.match(/\d/g)||[]).length;}
+  var qName=document.getElementById('q-name'),qNameErr=document.getElementById('q-name-err');
+  var qPhone=document.getElementById('q-phone'),qPhoneErr=document.getElementById('q-phone-err');
+  var qEmail=document.getElementById('q-email'),qEmailErr=document.getElementById('q-email-err');
+  var qAddress=document.getElementById('q-address'),qAddressErr=document.getElementById('q-address-err');
+  var qContactErr=document.getElementById('q-contact-err');
+  function setErr(el,err,bad){
+    if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err){err.setAttribute('role','alert');err.classList.add('show');}}
+    else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.remove('show');}
+  }
+  function validateQuote(){
+    var ok=true;
+    var nameOk=qName.value.trim().length>=2;setErr(qName,qNameErr,!nameOk);if(!nameOk)ok=false;
+    var addressOk=qAddress.value.trim().length>=4;setErr(qAddress,qAddressErr,!addressOk);if(!addressOk)ok=false;
+    var phoneVal=qPhone.value.trim(),emailVal=qEmail.value.trim();
+    var phoneBad=phoneVal.length>0&&digits(phoneVal)<10;setErr(qPhone,qPhoneErr,phoneBad);if(phoneBad)ok=false;
+    var emailBad=emailVal.length>0&&!validEmail(emailVal);setErr(qEmail,qEmailErr,emailBad);if(emailBad)ok=false;
+    var hasContact=(phoneVal.length>0&&!phoneBad)||(emailVal.length>0&&!emailBad);
+    if(!hasContact){qContactErr.setAttribute('role','alert');qContactErr.classList.add('show');if(!phoneBad&&!emailBad){qPhone.classList.add('err');qPhone.setAttribute('aria-invalid','true');qEmail.classList.add('err');qEmail.setAttribute('aria-invalid','true');}ok=false;}
+    else{qContactErr.classList.remove('show');}
+    return ok;
+  }
+  [qName,qAddress,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
+  var FS_URL='https://formsubmit.co/ajax/bluegrassmn@gmail.com';
+  function sendForm(payload){
+    return fetch(FS_URL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){return r.json().catch(function(){return{};}).then(function(j){
+        if(r.ok&&(j.success===undefined||j.success===true||j.success==='true'))return true;
+        throw new Error((j&&j.message)||'send failed');
+      });});
+  }
+  function setBusy(btn,on){if(btn){btn.disabled=!!on;if(on)btn.setAttribute('aria-busy','true');else btn.removeAttribute('aria-busy');}}
+  function sendFail(formEl,btn){
+    setBusy(btn,false);
+    var b=formEl.querySelector('.send-fallback');
+    if(!b){b=document.createElement('p');b.className='send-fallback';b.setAttribute('role','alert');formEl.appendChild(b);}
+    b.innerHTML='That didn&rsquo;t go through. Please call <a href="tel:+16128072528">(612) 807-2528</a> or email <a href="mailto:bluegrassmn@gmail.com">bluegrassmn@gmail.com</a> &mdash; we&rsquo;ll get right back to you.';
+    b.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    form.dataset.tried='1';
+    if(!validateQuote()){
+      var firstBad=form.querySelector('.err');if(firstBad)firstBad.focus();
+      return;
+    }
+    var data={};new FormData(form).forEach(function(v,k){data[k]=v;});
+    var name=(data.name||'').trim().split(' ')[0];
+    document.getElementById('successmsg').textContent=(name?'Thanks, '+name+' — ':'Thanks — ')+"we'll follow up with your free quote shortly, usually the same day. For anything urgent, call (612) 807-2528.";
+    var btn=form.querySelector('button[type=submit]');setBusy(btn,true);
+    sendForm({_subject:'New quote request from your website',_template:'table',Name:data.name||'',Email:data.email||'',Phone:data.phone||'',Service:data.service||'',Address:data.address||'',Message:data.message||''})
+      .then(function(){form.style.display='none';success.classList.add('show');success.scrollIntoView({behavior:'smooth',block:'center'});})
+      .catch(function(){sendFail(form,btn);});
+  });
+})();
+</script>
+</body>
+</html>

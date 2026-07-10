@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/a-adrians-landscaping-prescott-valley/sitemap.xml

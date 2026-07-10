@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://falconwebstudio.com/websites/oasis-lawn-care-kalamazoo/sitemap.xml

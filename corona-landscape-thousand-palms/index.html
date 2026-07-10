@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desert Landscaping in Thousand Palms, CA | Corona Landscape</title>
+<meta name="description" content="Water-smart desert landscaping in Thousand Palms, CA — decorative rock, hardscape, drip irrigation, landscape lighting & weekly garden care. Family-owned, 5.0 stars on Google. Call for a free quote." />
+<link rel="canonical" href="https://savcab.github.io/websites/corona-landscape-thousand-palms/" />
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Desert Landscaping in Thousand Palms, CA | Corona Landscape" />
+<meta property="og:description" content="Water-smart desert yards across Thousand Palms & the Coachella Valley — decorative rock, hardscape, irrigation, landscape lighting & garden care. 5.0 stars · 51 reviews on Google. Family-owned." />
+<meta property="og:url" content="https://savcab.github.io/websites/corona-landscape-thousand-palms/" />
+<meta property="og:image" content="https://savcab.github.io/websites/corona-landscape-thousand-palms/assets/night-landscape-lighting.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="899" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://savcab.github.io/websites/corona-landscape-thousand-palms/assets/night-landscape-lighting.jpg" />
+<meta name="theme-color" content="#202c45" />
+
+<!-- Favicon: desert sun over mountains (echoes their brand logo) on brand navy -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23202c45'/%3E%3Ccircle cx='16' cy='13' r='5' fill='%23cf9a4a'/%3E%3Cpath d='M2 27l7-9 5 6 4-5 12 8z' fill='%23f0e3cf'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- LocalBusiness JSON-LD — HomeAndConstructionBusiness (no Landscaper type exists); NO aggregateRating/review markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Corona Landscape Management",
+  "url": "https://savcab.github.io/websites/corona-landscape-thousand-palms/",
+  "image": "https://savcab.github.io/websites/corona-landscape-thousand-palms/assets/night-landscape-lighting.jpg",
+  "telephone": "+17609698903",
+  "email": "coronalandscapemgt@yahoo.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "31187 Vía Pared",
+    "addressLocality": "Thousand Palms",
+    "addressRegion": "CA",
+    "postalCode": "92276",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 33.8224801, "longitude": -116.396275 },
+  "areaServed": [
+    { "@type": "City", "name": "Thousand Palms" },
+    { "@type": "City", "name": "Palm Desert" },
+    { "@type": "City", "name": "Rancho Mirage" },
+    { "@type": "City", "name": "Palm Springs" },
+    { "@type": "City", "name": "Cathedral City" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING — 4/8 grid, ~1.5x */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,10rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --h1:clamp(2.15rem,5.2vw,3.5rem);
+  --h2:clamp(1.6rem,3.4vw,2.35rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.06;
+  --track-head:-.015em;
+  /* COLOR — arid Coachella Valley sand + terracotta, brand NAVY as the deep/dark accent */
+  --ink:#2b2722;       /* warm basalt ink (not pure black) */
+  --ink-2:#5f574e;     /* taupe secondary text */
+  --ink-3:#897f72;     /* tertiary (large/decorative only) */
+  --line:#e6dcc9;      /* sand hairline */
+  --line-2:#d9ccb3;
+  --bg:#f7f1e6;        /* sand paper ground */
+  --bg-2:#efe4d1;      /* deeper sand alt-section */
+  --bg-card:#fffaf0;   /* warm card white */
+  --dark:#202c45;      /* their brand NAVY — deep bands (reviews / info panel) */
+  --dark-2:#2b3a5c;    /* lifted navy — footer + review cards */
+  --clay:#a84a27;      /* terracotta brand + accent — CTAs/highlights only */
+  --clay-d:#83381c;    /* burnt sienna hover/darker */
+  --clay-soft:#e9d3c2; /* clay tint surface */
+  --agave:#5f7350;     /* sage-agave green secondary */
+  --agave-d:#465540;   /* dark agave for small text */
+  --agave-soft:#e2e6da;/* agave tint surface */
+  --sky:#6f8aa0;       /* dusty desert-sky blue (tertiary detail / focus) */
+  --gold:#cf9a4a;      /* sun gold — stars/detail (their logo sun) */
+  /* RADIUS — by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-pill:999px;
+  /* SHADOW — soft layered, warm-tinted */
+  --sh-1:0 1px 2px rgba(40,34,24,.08);
+  --sh-2:0 2px 5px rgba(40,34,24,.08),0 5px 14px rgba(40,34,24,.06);
+  --sh-3:0 6px 14px rgba(40,34,24,.09),0 16px 34px rgba(40,34,24,.11);
+  --sh-4:0 12px 28px rgba(32,44,69,.16),0 30px 60px rgba(32,44,69,.18);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Zilla Slab",Georgia,serif;line-height:var(--lh-head);font-weight:700;letter-spacing:var(--track-head)}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.container{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.svc-grid>*,.water-grid>*,.rev-grid>*,.area-grid>*,.gal-grid>*,.ct-grid>*,.ft-grid>*{min-width:0}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);display:inline-flex;align-items:center;gap:.5rem}
+.eyebrow.sage{color:var(--agave-d)}
+.h2{font-size:var(--h2);margin-top:.6rem;max-width:20ch}
+.lead{color:var(--ink-2);font-size:1.075rem;margin-top:1rem;max-width:56ch}
+.icn{width:24px;height:24px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.skip{position:absolute;left:-999px;top:0;background:var(--clay);color:#fff;padding:.6rem 1rem;border-radius:0 0 var(--r-s) 0;z-index:200}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:3px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:.95rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--clay);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--clay-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--clay);color:var(--clay);transform:translateY(-2px)}
+.btn-ghost.on-photo{color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost.on-photo:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
+
+/* Header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(247,241,230,.85);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:box-shadow var(--t),border-color var(--t)}
+.hdr.scrolled{box-shadow:var(--sh-1);border-bottom-color:var(--line)}
+.hdr-in{display:flex;align-items:center;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem}
+.brand img{height:44px;width:auto}
+.brand .mark{width:34px;height:34px;flex:none;border-radius:9px;background:var(--clay);display:grid;place-items:center}
+.brand .mark svg{width:22px;height:22px}
+.brand small{display:block;font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);line-height:1;margin-top:2px}
+.nav{display:none;margin-left:auto;align-items:center;gap:1.7rem}
+.nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a:hover{color:var(--clay)}
+.hdr-cta{display:none;align-items:center;gap:.7rem}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;color:var(--ink);font-size:.95rem}
+.call-pill svg{width:18px;height:18px;stroke:var(--clay);fill:none;stroke-width:1.8}
+.burger{margin-left:auto;display:inline-grid;place-items:center;width:46px;height:46px;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--bg-card)}
+.burger svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round}
+@media(min-width:960px){.nav{display:flex}.hdr-cta{display:flex}.burger{display:none}}
+
+/* Mobile drawer */
+.drawer{position:fixed;inset:0;z-index:130;background:rgba(32,44,69,.5);opacity:0;visibility:hidden;overflow:hidden;transition:opacity var(--t),visibility var(--t)}
+.drawer.open{opacity:1;visibility:visible}
+.drawer-panel{position:absolute;top:0;right:0;width:min(86vw,340px);height:100%;background:var(--bg);box-shadow:var(--sh-4);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.4rem;transform:translateX(100%);transition:transform var(--t)}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.drawer-top img{height:34px;width:auto}
+.drawer-close{width:44px;height:44px;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--bg-card);display:grid;place-items:center}
+.drawer-close svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round}
+.drawer-panel a.dl{padding:.85rem .5rem;font-weight:600;font-size:1.1rem;border-bottom:1px solid var(--line);color:var(--ink)}
+.drawer-panel .btn{margin-top:1.1rem}
+.drawer-panel .btn+.btn{margin-top:.6rem}
+
+/* Hero */
+.hero{position:relative;min-height:clamp(560px,86vh,820px);display:flex;align-items:flex-end;padding-top:calc(72px + var(--s4));padding-bottom:var(--hero-y);overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(76deg,rgba(18,22,34,.88) 0%,rgba(22,28,42,.66) 42%,rgba(22,28,42,.30) 72%,rgba(22,28,42,.12) 100%),linear-gradient(0deg,rgba(16,20,30,.55),rgba(16,20,30,0) 38%)}
+.hero-in{max-width:680px;color:#fdf6e9}
+.hero .eyebrow{color:#f0c79e}
+.hero h1{font-size:var(--h1);color:#fff;margin-top:.9rem;text-shadow:0 2px 18px rgba(10,12,20,.5);font-weight:700}
+.hero h1 em{font-style:normal;color:#f0a875}
+.hero-sub{margin-top:1.15rem;font-size:1.12rem;line-height:1.55;color:#f3e7d6;max-width:50ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero-badges{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem 1.3rem;margin-top:1.9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.18)}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.95rem;color:#f3e7d6}
+.hbadge .stars{display:inline-flex;gap:1px;color:var(--gold)}
+.hbadge .stars svg{width:17px;height:17px;fill:var(--gold);stroke:none}
+.hbadge b{color:#fff;font-weight:800}
+.hbadge .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+
+/* topo divider */
+.topo{display:block;width:100%;height:34px;color:var(--line-2)}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.6rem}
+@media(min-width:620px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{position:relative;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:var(--line-2)}
+.svc .num{font-family:"Zilla Slab",serif;font-weight:600;font-size:.95rem;color:var(--clay);letter-spacing:.04em}
+.svc .ic{width:46px;height:46px;border-radius:var(--r-m);display:grid;place-items:center;background:var(--agave-soft);color:var(--agave-d);margin:1rem 0 1.1rem}
+.svc:nth-child(3n+2) .ic{background:#dde4ec;color:#2f4360}
+.svc:nth-child(3n) .ic{background:var(--clay-soft);color:var(--clay-d)}
+.svc .ic svg{width:25px;height:25px}
+.svc h3{font-size:1.22rem}
+.svc p{color:var(--ink-2);margin-top:.55rem;font-size:.98rem}
+.svc ul{list-style:none;margin-top:1rem;display:flex;flex-wrap:wrap;gap:.45rem}
+.svc li{font-size:.8rem;font-weight:600;color:var(--agave-d);background:var(--agave-soft);border-radius:var(--r-pill);padding:.3rem .7rem}
+
+/* Water-smart band */
+.water{background:var(--bg-2)}
+.water-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.4rem}
+@media(min-width:760px){.water-grid{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+.wcard{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.8rem 1.6rem;box-shadow:var(--sh-1)}
+.wcard .ic{width:52px;height:52px;border-radius:var(--r-m);display:grid;place-items:center;background:var(--agave-soft);color:var(--agave-d);margin-bottom:1.1rem}
+.wcard:nth-child(2) .ic{background:#dde4ec;color:#2f4360}
+.wcard:nth-child(3) .ic{background:var(--clay-soft);color:var(--clay-d)}
+.wcard .ic svg{width:26px;height:26px}
+.wcard h3{font-size:var(--h3)}
+.wcard p{color:var(--ink-2);margin-top:.5rem;font-size:.98rem}
+
+/* Gallery */
+.work{background:var(--bg)}
+.gal-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.5rem}
+@media(min-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.tile{position:relative;border-radius:var(--r-m);overflow:hidden;aspect-ratio:4/3;background:var(--line-2);cursor:pointer;border:0;padding:0;box-shadow:var(--sh-1)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 420ms cubic-bezier(.2,.6,.2,1)}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.06)}
+.tile figcaption{position:absolute;inset:auto 0 0 0;padding:1.4rem .95rem .8rem;font-weight:600;font-size:.9rem;color:#fff;text-align:left;background:linear-gradient(0deg,rgba(16,20,30,.84),rgba(16,20,30,0));opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.tile:hover figcaption,.tile:focus-visible figcaption{opacity:1;transform:none}
+
+/* Reviews */
+.reviews{background:var(--dark);color:#f3e7d6;position:relative;overflow:hidden}
+.reviews .eyebrow{color:#f0c79e}
+.reviews h2{color:#fff}
+.rev-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.5rem}
+@media(min-width:760px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+.rcard{background:var(--dark-2);border:1px solid rgba(255,255,255,.09);border-radius:var(--r-l);padding:1.7rem 1.6rem;display:flex;flex-direction:column}
+.rcard .stars{display:inline-flex;gap:2px;color:var(--gold);margin-bottom:.9rem}
+.rcard .stars svg{width:18px;height:18px;fill:var(--gold);stroke:none}
+.rcard blockquote{font-family:"Zilla Slab",serif;font-size:1.1rem;line-height:1.5;color:#fbf2e3;font-weight:500}
+.rcard .who{margin-top:1.2rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);font-weight:700;color:#fff;font-size:.95rem}
+.rcard .who span{display:block;font-weight:500;font-size:.82rem;color:#c3cbdb;margin-top:1px}
+.rev-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.2rem;margin-top:2.4rem;padding-top:1.8rem;border-top:1px solid rgba(255,255,255,.13)}
+.rev-score{display:flex;align-items:center;gap:.8rem}
+.rev-score b{font-family:"Zilla Slab",serif;font-size:2.5rem;font-weight:700;color:#fff;line-height:1}
+.rev-score .meta .stars{display:inline-flex;gap:1px;color:var(--gold)}
+.rev-score .meta .stars svg{width:16px;height:16px;fill:var(--gold);stroke:none}
+.rev-score .meta span{display:block;font-size:.9rem;color:#c3cbdb;margin-top:2px}
+.btn-onlight{background:#fbf2e3;color:var(--dark)}
+.btn-onlight:hover{background:#fff;transform:translateY(-2px);box-shadow:var(--sh-3)}
+
+/* Service area */
+.area-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;margin-top:2.4rem;align-items:center}
+@media(min-width:880px){.area-grid{grid-template-columns:1fr 1fr;gap:3rem}}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;font-weight:600;font-size:.92rem;color:var(--ink);background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem}
+.chip svg{width:15px;height:15px;stroke:var(--clay);fill:none;stroke-width:1.9}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;border:1px solid var(--line-2);box-shadow:var(--sh-2);aspect-ratio:4/3;background:var(--bg-2)}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+
+/* Contact */
+.contact{background:var(--bg-2)}
+.ct-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2.5rem}
+@media(min-width:880px){.ct-grid{grid-template-columns:1.05fr .95fr;gap:2rem}}
+.form-card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-2)}
+.form-card h3{font-size:1.35rem}
+.form-card .fc-sub{color:var(--ink-2);font-size:.96rem;margin-top:.35rem}
+.field{margin-top:1.1rem}
+.field label{display:block;font-weight:700;font-size:.85rem;margin-bottom:.4rem;color:var(--ink)}
+.field input,.field textarea{width:100%;min-width:0;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line-2);border-radius:var(--r-m);padding:.8rem .9rem;transition:border-color var(--t),box-shadow var(--t)}
+.field textarea{resize:vertical;min-height:110px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--clay);box-shadow:0 0 0 3px rgba(168,74,39,.14)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#b3261e;box-shadow:0 0 0 3px rgba(179,38,30,.13)}
+.err{display:none;color:#9a241c;font-size:.8rem;font-weight:600;margin-top:.35rem}
+.field.bad .err{display:block}
+.form-card .btn{width:100%;margin-top:1.4rem}
+.form-note{font-size:.78rem;color:var(--ink-3);margin-top:.9rem;text-align:center}
+.form-ok{display:none;text-align:center;padding:2rem 1rem}
+.form-ok.show{display:block}
+.form-ok .ok-ic{width:60px;height:60px;border-radius:50%;background:var(--agave-soft);color:var(--agave-d);display:grid;place-items:center;margin:0 auto 1rem}
+.form-ok .ok-ic svg{width:32px;height:32px}
+.form-ok h3{font-size:1.4rem}
+.form-ok p{color:var(--ink-2);margin:.5rem auto 0}
+form.sent .fc-body{display:none}
+
+/* Contact info panel */
+.info-card{background:var(--dark);color:#f3e7d6;border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-2)}
+.info-card h3{color:#fff;font-size:1.3rem}
+.info-list{margin-top:1.3rem;display:flex;flex-direction:column;gap:1.1rem}
+.info-row{display:flex;gap:.85rem;align-items:flex-start}
+.info-row>div{min-width:0}
+.info-row a,.info-row .v,.ft .nap{overflow-wrap:anywhere}
+.info-row .ic{width:42px;height:42px;border-radius:var(--r-m);flex:none;display:grid;place-items:center;background:rgba(240,199,158,.16);color:#f0c79e}
+.info-row .ic svg{width:21px;height:21px}
+.info-row .lbl{font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#c3cbdb}
+.info-row a,.info-row .v{display:block;color:#fbf2e3;font-weight:700;font-size:1.04rem;margin-top:2px}
+.info-row a:hover{color:#f0c79e}
+.info-row .v.small{font-weight:500;font-size:.92rem;color:#e7d8c2;line-height:1.45}
+.info-card .btn{width:100%;margin-top:1.5rem}
+.info-card .small-line{font-size:.78rem;color:#b7c0d2;margin-top:.9rem;text-align:center}
+
+/* Footer */
+.ft{background:var(--dark-2);color:#d9c9b3}
+.ft-in{padding-block:var(--s7) var(--s5)}
+.ft-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:720px){.ft-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.ft .brand{color:#fff;font-family:"Zilla Slab",serif;font-weight:700;font-size:1.18rem}
+.ft .brand .mark{background:var(--clay)}
+.ft .brand small{color:#f0c79e}
+.ft p{color:#c2cbdb;font-size:.95rem;margin-top:1rem;max-width:44ch}
+.ft h4{font-family:"Mulish",sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#f0c79e;margin-bottom:.9rem}
+.ft a{color:#d3dae7;font-size:.95rem;display:block;padding:.25rem 0}
+.ft a:hover{color:#fff}
+.ft .nap{font-size:.95rem;color:#c2cbdb;line-height:1.7}
+.ft .nap a{display:inline;padding:0}
+.ft-bot{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;justify-content:space-between;font-size:.82rem;color:#9aa6bd}
+
+/* Sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:.6rem;padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(247,241,230,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(120%);transition:transform var(--t)}
+.sticky.show{transform:none}
+.sticky .btn{flex:1;padding:.8rem 1rem;font-size:.95rem;min-height:46px}
+.sticky .btn-ghost{background:var(--bg-card)}
+@media(min-width:960px){.sticky{display:none}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:160;background:rgba(12,15,22,.93);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:94vw;max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:max(1.1rem,env(safe-area-inset-bottom));text-align:center;color:#f3e7d6;font-weight:600;font-size:.95rem}
+.lb-btn{position:absolute;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;display:grid;place-items:center;cursor:pointer}
+.lb-btn svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.lb-close{top:1.1rem;right:1.1rem}
+.lb-prev{left:1rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1rem;top:50%;transform:translateY(-50%)}
+
+/* Responsive copy — full sentence on laptop, tighter honest paraphrase on phone (no JS) */
+.only-mob{display:none}
+
+/* Mobile refinements */
+@media(max-width:600px){
+  .info-row a{padding-block:.55rem}
+  .info-list{gap:.7rem}
+  .only-lap{display:none}
+  .only-mob{display:inline}
+  .hero{align-items:flex-start;min-height:auto}
+}
+@media(max-width:360px){
+  .hbadge{font-size:.86rem;gap:.4rem}
+  .hbadge .stars svg{width:15px;height:15px}
+  .hero-cta .btn{flex:1 1 100%}
+}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#services">Skip to content</a>
+
+<!-- HEADER -->
+<header class="hdr" id="top">
+  <div class="container hdr-in">
+    <a class="brand" href="#top" aria-label="Corona Landscape Management home">
+      <img src="assets/corona-landscape-logo.png" alt="Corona Landscape Management" width="148" height="44" />
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="call-pill" href="tel:+17609698903"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(760) 969-8903</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-top">
+      <img src="assets/corona-landscape-logo.png" alt="Corona Landscape Management" width="115" height="34" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <a class="dl" href="#services">Services</a>
+    <a class="dl" href="#work">Our work</a>
+    <a class="dl" href="#reviews">Reviews</a>
+    <a class="dl" href="#area">Service area</a>
+    <a class="dl" href="#contact">Contact</a>
+    <a class="btn btn-primary" href="#contact">Get a free quote</a>
+    <a class="btn btn-ghost" href="tel:+17609698903">Call (760) 969-8903</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Intro">
+  <img class="hero-img" src="assets/night-landscape-lighting.jpg" alt="Desert yard at dusk with low-voltage landscape lighting on palms, hedges and a paver patio in the Coachella Valley" width="1600" height="899" fetchpriority="high" decoding="async" />
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="container hero-in">
+    <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:#f0c79e" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>Thousand Palms, CA · Coachella Valley</span>
+    <h1>Water-smart desert landscapes for the <em>Coachella Valley</em></h1>
+    <p class="hero-sub"><span class="only-lap">Corona Landscape Management designs and builds low-water desert yards across Thousand Palms — decorative rock and hardscape, drip irrigation, landscape lighting and weekly garden care, backed by 35 years of quality service.</span><span class="only-mob">Low-water desert yards across the Coachella Valley — rock, hardscape, irrigation, lighting and garden care.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote</a>
+      <a class="btn btn-ghost on-photo" href="#work">See our work</a>
+    </div>
+    <div class="hero-badges">
+      <span class="hbadge"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><b>5.0</b> · 51 reviews on Google</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="hbadge"><svg class="icn" style="width:18px;height:18px;stroke:#f0c79e" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Family-owned · second generation</span>
+    </div>
+  </div>
+</section>
+
+<svg class="topo" viewBox="0 0 1440 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24 Q180 8 360 18 T720 16 T1080 22 T1440 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+
+<!-- SERVICES -->
+<section class="section" id="services" aria-labelledby="svc-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h6M9 13h6"/></svg>What we do</span>
+      <h2 class="h2" id="svc-h">Full-service desert landscaping</h2>
+      <p class="lead">From decorative rock and hardscape to irrigation, lighting and the weekly care that keeps it sharp — the full range Corona Landscape Management has delivered across the valley over 35 years of quality service.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="num">01</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 22V12"/><path d="M12 14c-2-3.2-5-5-9-5.4"/><path d="M12 14c2-3.2 5-5 9-5.4"/><path d="M12 12c-1.2-3.4-1.2-6.2 0-9"/></svg></div>
+        <h3>Desert-scape &amp; decorative rock</h3>
+        <p>Low-water desert makeovers: decorative rock, gravel and dry-creek beds with cactus, agave and native plantings, laid out to fit your property.</p>
+        <ul><li>Decorative rock</li><li>Gravel &amp; DG</li><li>Desert plantings</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">02</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M8 4v16M14 4v16"/></svg></div>
+        <h3>Hardscape &amp; stone work</h3>
+        <p>Pavers, walkways, stone borders and planters that give a desert yard clean structure — built to last through the seasons.</p>
+        <ul><li>Pavers</li><li>Walkways</li><li>Stonework</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">03</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5-2-1.6-3.5-3.6-4-6.5-.5 2.9-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></div>
+        <h3>Irrigation &amp; drip systems</h3>
+        <p>Efficient drip irrigation and watering systems that keep desert plantings healthy on a fraction of the water — plus repairs when a line gives out.</p>
+        <ul><li>Drip systems</li><li>Repairs</li><li>Watering</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">04</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></div>
+        <h3>Landscape lighting</h3>
+        <p>Low-voltage landscape lighting that brings palms, plantings and hardscape to life after sunset — safe paths and a yard that shows off at night.</p>
+        <ul><li>Path lighting</li><li>Uplighting</li><li>Accent</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">05</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+        <h3>Weekly garden maintenance</h3>
+        <p>Regular garden and yard maintenance that keeps beds, plants and hardscape looking sharp all year — the standing service most clients start with.</p>
+        <ul><li>Weekly service</li><li>Bed care</li><li>Cleanups</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">06</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 8.1 20 20"/><path d="M8.1 15.9 20 4"/></svg></div>
+        <h3>Palm &amp; tree trimming</h3>
+        <p>Palm skinning, tree trimming and hedge shaping to keep your yard clean, healthy and tidy — the finishing touch on a sharp desert property.</p>
+        <ul><li>Palm trimming</li><li>Tree care</li><li>Hedge shaping</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WATER-SMART -->
+<section class="section water" id="water-smart" aria-labelledby="water-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow sage"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5-2-1.6-3.5-3.6-4-6.5-.5 2.9-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>Why desert landscaping</span>
+      <h2 class="h2" id="water-h">Beautiful here means built for the heat — and the water bill</h2>
+      <p class="lead"><span class="only-lap">In the Coachella Valley, a thirsty green lawn is a losing battle. We build yards that look sharp year-round on a fraction of the water, so you spend less keeping them alive.</span><span class="only-mob">In the desert, a thirsty lawn is a losing battle. We build yards that stay sharp on a fraction of the water.</span></p>
+    </div>
+    <div class="water-grid">
+      <div class="wcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4 12H1.5M22.5 12H20M5.2 5.2 6.9 6.9M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/></svg></div>
+        <h3>Drought-tolerant by design</h3>
+        <p>Native and low-water desert plants, cactus and agave set in rock and decomposed granite — chosen to thrive in full Coachella Valley sun.</p>
+      </div>
+      <div class="wcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5-2-1.6-3.5-3.6-4-6.5-.5 2.9-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/><path d="M4 4l16 16"/></svg></div>
+        <h3>Lower water bills</h3>
+        <p>Swap thirsty turf for smart desert beds, rock and efficient drip irrigation. Your yard stops drinking through the meter every summer.</p>
+      </div>
+      <div class="wcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M12 20V9"/><path d="M12 12C9.5 9.5 6.5 9 4 9c0 3 2.5 5.5 8 3z"/><path d="M12 11c1.8-2.4 4.3-3.4 7-3.4-.2 2.7-2.3 4.8-7 3.9z"/></svg></div>
+        <h3>Low-maintenance, year-round</h3>
+        <p>No weekly mow, no reseeding. A rock-and-desert yard holds its look through every season with simple seasonal care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section work" id="work" aria-labelledby="work-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow sage"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4.5-4.5L7 20"/></svg>Recent work</span>
+      <h2 class="h2" id="work-h">Real desert yards across the valley</h2>
+      <p class="lead">Every photo is our own work in and around Thousand Palms and the Coachella Valley. Tap any image to see it bigger.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="tile reveal" data-cap="Artificial turf, paver strip and agave bed at a modern desert home">
+        <img src="assets/modern-turf-paver-agave.jpg" alt="Artificial turf lawn with a concrete paver strip and agave planting beside a modern Thousand Palms home" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Turf, pavers &amp; agave bed</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Decorative river-rock dry-creek bed across a desert front yard">
+        <img src="assets/desert-rock-dry-creek-front.jpg" alt="Decorative river-rock dry-creek bed with palms across a desert front yard in the Coachella Valley" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Decorative rock dry-creek</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Stone fountain water feature set in a paver patio">
+        <img src="assets/desert-fountain-patio.jpg" alt="Round stone fountain water feature set in a paver patio with a desert mountain backdrop" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Fountain &amp; paver patio</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Raised planter of succulents, agave and trailing desert plants">
+        <img src="assets/succulent-agave-planter.jpg" alt="White raised planter filled with succulents, agave and trailing desert plants on a paver patio" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Raised succulent planter</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Paver stepping-stone walkway across a gravel desert backyard">
+        <img src="assets/paver-stepping-walkway.jpg" alt="Concrete paver stepping-stone walkway across a gravel desert backyard with a shade structure" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Paver walkway &amp; gravel yard</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Large shaped ficus over a gravel and desert-plant front yard">
+        <img src="assets/shaped-ficus-gravel-front.jpg" alt="Large shaped ficus tree over a gravel and desert-plant front yard, trimmed clean, in Thousand Palms" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Shaped ficus &amp; gravel front</figcaption>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:#f0c79e" viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>What clients say</span>
+      <h2 class="h2" id="rev-h">Reviewed 5.0 out of 5 on Google</h2>
+    </div>
+    <div class="rev-grid">
+      <figure class="rcard reveal">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <blockquote>"I worked with Moe on a landscape redesign involving building two permanent planters, a pony wall to hide trash bins, cutting concrete, two cactus gardens, herb garden, 3 regular planters, a fountain relocation, artificial turf replacement, adding irrigation, a walkway, stones and landscape lighting on two different projects."</blockquote>
+        <figcaption class="who">Paul Charron<span>Google review</span></figcaption>
+      </figure>
+      <figure class="rcard reveal">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <blockquote>"My guy, Moises is crushing it Corona landscape keeps adding new services. In a presentation today. He got in-depth about lighting for landscape and showed some very dramatic photos."</blockquote>
+        <figcaption class="who">Joe Deisenroth<span>Google review</span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-foot reveal">
+      <div class="rev-score">
+        <b>5.0</b>
+        <div class="meta"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><span>across 51 reviews on Google</span></div>
+      </div>
+      <a class="btn btn-onlight" href="https://search.google.com/local/writereview?placeid=ChIJgZy7HUHj2oARTg15AoEViXE" target="_blank" rel="noopener">Leave us a Google review</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area" aria-labelledby="area-h">
+  <div class="container">
+    <div class="area-grid">
+      <div class="reveal">
+        <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Where we work</span>
+        <h2 class="h2" id="area-h">Serving Thousand Palms &amp; the Coachella Valley</h2>
+        <p class="lead">Based in Thousand Palms, we care for desert yards across the Coachella Valley — from Palm Springs to Palm Desert and everywhere between. If you're nearby, just ask.</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Thousand Palms</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Palm Desert</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Rancho Mirage</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Palm Springs</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Cathedral City</span>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="Map of Corona Landscape Management service area in Thousand Palms, CA" src="https://www.openstreetmap.org/export/embed.html?bbox=-116.48%2C33.76%2C-116.31%2C33.885&amp;layer=mapnik&amp;marker=33.8224801%2C-116.396275" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" aria-labelledby="ct-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Free quote</span>
+      <h2 class="h2" id="ct-h">Tell us about your yard</h2>
+      <p class="lead">Send a few details and we'll get back to you with a free quote — or just give us a call. Family-owned, so you'll talk to the people doing the work.</p>
+    </div>
+    <div class="ct-grid">
+      <form class="form-card" id="quoteForm" action="https://formsubmit.co/ajax/coronalandscapemgt@yahoo.com" method="POST" novalidate>
+        <div class="fc-body">
+          <h3>Request a free quote</h3>
+          <p class="fc-sub">We read every message. No obligation.</p>
+          <input type="hidden" name="_subject" value="New quote request — Corona Landscape Management website" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="field" id="f-name">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            <span class="err">Please enter a phone number we can reach you at.</span>
+          </div>
+          <div class="field" id="f-email">
+            <label for="email">Email <span style="font-weight:500;color:var(--ink-3)">(optional)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <span class="err">Please check your email address.</span>
+          </div>
+          <div class="field" id="f-msg">
+            <label for="message">What do you need done?</label>
+            <textarea id="message" name="message" required placeholder="e.g. front yard desert-scape, drip irrigation, landscape lighting, weekly maintenance…"></textarea>
+            <span class="err">Tell us a little about the work.</span>
+          </div>
+          <button class="btn btn-primary" type="submit" id="submitBtn">Send my request</button>
+          <p class="form-note">Prefer to talk? Call <a href="tel:+17609698903" style="color:var(--clay);font-weight:700">(760) 969-8903</a>.</p>
+        </div>
+        <div class="form-ok" id="formOk" role="status" aria-live="polite">
+          <div class="ok-ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Thanks — message sent!</h3>
+          <p>We'll get back to you soon. For anything urgent, call (760) 969-8903.</p>
+        </div>
+      </form>
+
+      <aside class="info-card reveal">
+        <h3>Reach Corona Landscape</h3>
+        <div class="info-list">
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><span class="lbl">Call us</span><a href="tel:+17609698903">(760) 969-8903</a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></div>
+            <div><span class="lbl">Email</span><a href="mailto:coronalandscapemgt@yahoo.com">coronalandscapemgt@yahoo.com</a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><span class="lbl">Based in</span><span class="v small">31187 Vía Pared<br/>Thousand Palms, CA 92276</span></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><span class="lbl">Hours</span><span class="v small">Call for hours</span></div>
+          </div>
+        </div>
+        <a class="btn btn-onlight" href="https://search.google.com/local/writereview?placeid=ChIJgZy7HUHj2oARTg15AoEViXE" target="_blank" rel="noopener">Leave us a Google review</a>
+        <p class="small-line">Family-owned &amp; second-generation in the Coachella Valley.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="container ft-in">
+    <div class="ft-grid">
+      <div>
+        <span class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="4" fill="#cf9a4a" stroke="none"/><path d="M3 20l6-7 4 5 3-4 5 6z" fill="#f0e3cf" stroke="none"/></svg></span>Corona Landscape<small>Desert Landscaping</small></span>
+        <p>Family-owned, second-generation desert landscaping in Thousand Palms, CA — water-smart desert-scape, decorative rock, hardscape, irrigation, lighting and tree care across the Coachella Valley. 35 years of quality service.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Desert-scape &amp; decorative rock</a>
+        <a href="#services">Hardscape &amp; stone work</a>
+        <a href="#services">Irrigation &amp; drip systems</a>
+        <a href="#services">Landscape lighting</a>
+        <a href="#services">Weekly garden maintenance</a>
+        <a href="#services">Palm &amp; tree trimming</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <div class="nap">
+          Corona Landscape MGMT<br/>
+          31187 Vía Pared<br/>
+          Thousand Palms, CA 92276<br/>
+          <a href="tel:+17609698903">(760) 969-8903</a><br/>
+          <a href="mailto:coronalandscapemgt@yahoo.com">coronalandscapemgt@yahoo.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© <span id="yr">2026</span> Corona Landscape Management · Thousand Palms, CA</span>
+      <span>Built for the Coachella Valley.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky" id="sticky">
+  <a class="btn btn-ghost" href="tel:+17609698903">Call</a>
+  <a class="btn btn-primary" href="#contact">Free quote</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+  <img id="lbImg" src="" alt="" />
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+
+  // Header shadow + sticky reveal
+  var hdr=document.getElementById('top');
+  var sticky=document.getElementById('sticky');
+  function onScroll(){
+    var y=window.scrollY||0;
+    if(hdr) hdr.classList.toggle('scrolled', y>8);
+    if(sticky) sticky.classList.toggle('show', y>620);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // Drawer
+  var drawer=document.getElementById('drawer');
+  var burger=document.getElementById('burger');
+  var dClose=document.getElementById('drawerClose');
+  function openD(){drawer.classList.add('open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeD(){drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  if(burger) burger.addEventListener('click',openD);
+  if(dClose) dClose.addEventListener('click',closeD);
+  if(drawer) drawer.addEventListener('click',function(e){if(e.target===drawer)closeD();});
+  Array.prototype.forEach.call(document.querySelectorAll('.drawer-panel a'),function(a){a.addEventListener('click',closeD);});
+
+  // Reveal on scroll (first-view only; failsafe shows all)
+  var items=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.06});
+    items.forEach(function(el){io.observe(el);});
+    setTimeout(function(){items.forEach(function(el){el.classList.add('in');});},2600); // failsafe
+  } else { items.forEach(function(el){el.classList.add('in');}); }
+
+  // Lightbox
+  var tiles=[].slice.call(document.querySelectorAll('.tile'));
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'), lbClose=document.getElementById('lbClose'),
+      lbPrev=document.getElementById('lbPrev'), lbNext=document.getElementById('lbNext');
+  var idx=0, lastFocus=null;
+  function show(i){
+    idx=(i+tiles.length)%tiles.length;
+    var im=tiles[idx].querySelector('img');
+    lbImg.src=im.src; lbImg.alt=im.alt; lbCap.textContent=tiles[idx].getAttribute('data-cap')||im.alt;
+  }
+  function openLB(i){lastFocus=document.activeElement;show(i);lb.classList.add('open');document.body.style.overflow='hidden';lbClose.focus();}
+  function closeLB(){lb.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+  tiles.forEach(function(t,i){t.addEventListener('click',function(){openLB(i);});});
+  if(lbClose) lbClose.addEventListener('click',closeLB);
+  if(lbPrev) lbPrev.addEventListener('click',function(){show(idx-1);});
+  if(lbNext) lbNext.addEventListener('click',function(){show(idx+1);});
+  if(lb) lb.addEventListener('click',function(e){if(e.target===lb)closeLB();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')closeLB(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);
+  });
+
+  // Form validation + AJAX submit
+  var form=document.getElementById('quoteForm');
+  function setBad(id,bad){var f=document.getElementById(id);if(!f)return;f.classList.toggle('bad',bad);var inp=f.querySelector('input,textarea');if(inp)inp.setAttribute('aria-invalid',bad?'true':'false');}
+  function emailOk(v){return v===''||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.name.value.trim(), phone=form.phone.value.trim(),
+          email=form.email.value.trim(), msg=form.message.value.trim();
+      var bad=false;
+      setBad('f-name',!name); bad=bad|| !name;
+      setBad('f-phone',phone.replace(/[^0-9]/g,'').length<7); bad=bad||phone.replace(/[^0-9]/g,'').length<7;
+      setBad('f-email',!emailOk(email)); bad=bad|| !emailOk(email);
+      setBad('f-msg',!msg); bad=bad|| !msg;
+      if(bad){var fb=form.querySelector('.field.bad input,.field.bad textarea');if(fb)fb.focus();return;}
+      var btn=document.getElementById('submitBtn'); btn.textContent='Sending…'; btn.disabled=true;
+      fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+        .then(function(r){return r.ok?r.json():Promise.reject(r);})
+        .then(function(){form.classList.add('sent');document.getElementById('formOk').classList.add('show');})
+        .catch(function(){
+          btn.textContent='Send my request'; btn.disabled=false;
+          var note=form.querySelector('.form-note');
+          if(note) note.innerHTML='Something went wrong sending the form. Please call <a href="tel:+17609698903" style="color:var(--clay);font-weight:700">(760) 969-8903</a>.';
+        });
+    });
+    ['name','phone','email','message'].forEach(function(n){
+      var inp=form[n]; if(inp) inp.addEventListener('input',function(){var f=inp.closest('.field');if(f&&f.classList.contains('bad')){f.classList.remove('bad');inp.setAttribute('aria-invalid','false');}});
+    });
+  }
+})();
+</script>
+</body>
+</html>

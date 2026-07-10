@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lawn Care &amp; Landscaping in Londonderry, NH | Grass Gobblers</title>
+<meta name="description" content="Grass Gobblers is a family-owned lawn care &amp; landscaping crew serving Londonderry, Derry, Salem, Windham &amp; Chester, NH since 2012 — mowing, beds &amp; mulch, fertilization, cleanups and snow removal. 4.6 stars on Google. Free estimates." />
+<link rel="canonical" href="https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lawn Care &amp; Landscaping in Londonderry, NH | Grass Gobblers" />
+<meta property="og:description" content="Family-owned lawn care &amp; landscaping across Londonderry, Derry, Salem, Windham &amp; Chester since 2012. Mowing, beds, mulch, fertilization, cleanups &amp; snow. 4.6 stars on Google." />
+<meta property="og:url" content="https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/" />
+<meta property="og:image" content="https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/assets/striped-lawn-londonderry.jpg" />
+<meta property="og:image:width" content="1125" />
+<meta property="og:image:height" content="1500" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/assets/striped-lawn-londonderry.jpg" />
+<meta name="theme-color" content="#1f5c33" />
+
+<!-- Favicon: grass blade on forest green -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5c33'/%3E%3Cg fill='none' stroke='%23eaf3e6' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 26c0-6 0-9-4-13'/%3E%3Cpath d='M16 26c0-6 0-9 4-13'/%3E%3Cpath d='M16 26c0-7 0-11 0-16'/%3E%3C/g%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- LocalBusiness JSON-LD — HomeAndConstructionBusiness (no Landscaper type exists); NO aggregateRating/review markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Grass Gobblers Lawn Care & Landscaping",
+  "url": "https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/",
+  "image": "https://savcab.github.io/websites/grass-gobblers-landscaping-londonderry/assets/striped-lawn-londonderry.jpg",
+  "telephone": "+16034342237",
+  "email": "Mike@grassgobblerslawncare.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Reo Ln",
+    "addressLocality": "Londonderry",
+    "addressRegion": "NH",
+    "postalCode": "03053",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 42.8754387, "longitude": -71.3403376 },
+  "areaServed": [
+    { "@type": "City", "name": "Londonderry" },
+    { "@type": "City", "name": "Derry" },
+    { "@type": "City", "name": "Salem" },
+    { "@type": "City", "name": "Windham" },
+    { "@type": "City", "name": "Chester" }
+  ],
+  "foundingDate": "2012"
+}
+</script>
+
+<style>
+:root{
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5rem,11vw,9rem);
+  --container:75rem;
+  --measure:63ch;
+  --h1:clamp(2.15rem,5.2vw,3.5rem);
+  --h2:clamp(1.6rem,3.4vw,2.3rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.62;
+  --lh-head:1.08;
+  --track-head:-.017em;
+  /* COLOR — verdant New England */
+  --ink:#182018;       /* deep warm green-charcoal, not pure black */
+  --ink-2:#4b564c;     /* secondary */
+  --ink-3:#7d887e;     /* tertiary */
+  --line:#e4ebe2;      /* hairline */
+  --line-2:#d5ded2;
+  --bg:#ffffff;
+  --bg-2:#f1f6ee;      /* cool green-tinted alt section */
+  --bg-card:#ffffff;
+  --dark:#153019;      /* deep forest dark band */
+  --dark-2:#0f2413;
+  --brand:#1f5c33;     /* forest green brand */
+  --brand-d:#164426;   /* darker forest */
+  --grass:#4f9e4a;     /* fresh grass green — icons/secondary */
+  --grass-d:#3a7b39;
+  --grass-soft:#e6f1e2;/* grass tint surface */
+  --accent:#a5641a;    /* harvest amber — CTAs/highlights only (the 10%) */
+  --accent-d:#824e12;
+  --gold:#d99a2a;      /* review stars */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(24,32,24,.06);
+  --sh-2:0 2px 5px rgba(24,32,24,.07),0 5px 14px rgba(24,32,24,.06);
+  --sh-3:0 6px 14px rgba(24,32,24,.08),0 16px 34px rgba(24,32,24,.10);
+  --sh-4:0 12px 28px rgba(24,32,24,.12),0 30px 60px rgba(24,32,24,.14);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);font-weight:600;letter-spacing:var(--track-head)}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.container{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+.section{padding-block:var(--section-y)}
+.eyebrow{font-family:"Hanken Grotesk",sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;color:var(--brand);display:inline-flex;align-items:center;gap:.5rem}
+.eyebrow.amber{color:var(--accent-d)}
+.h2{font-size:var(--h2);margin-top:.6rem;max-width:20ch;font-weight:600}
+.lead{color:var(--ink-2);font-size:1.075rem;margin-top:1rem;max-width:56ch}
+.icn{width:24px;height:24px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.skip{position:absolute;left:-999px;top:0;background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:0 0 var(--r-s) 0;z-index:200}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--grass);outline-offset:2px;border-radius:3px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:"Hanken Grotesk",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:.95rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-2px)}
+.btn-ghost.on-photo{color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost.on-photo:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
+.btn-onlight{background:#eaf3e6;color:var(--dark)}
+.btn-onlight:hover{background:#fff;transform:translateY(-2px);box-shadow:var(--sh-3)}
+
+/* Header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:box-shadow var(--t),border-color var(--t)}
+.hdr.scrolled{box-shadow:var(--sh-1);border-bottom-color:var(--line)}
+.hdr-in{display:flex;align-items:center;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:var(--ink);letter-spacing:-.01em}
+.brand .mark{width:36px;height:36px;flex:none;border-radius:10px;background:var(--brand);display:grid;place-items:center}
+.brand .mark svg{width:22px;height:22px;stroke:#eaf3e6;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.brand small{display:block;font-family:"Hanken Grotesk",sans-serif;font-weight:700;font-size:.58rem;letter-spacing:.19em;text-transform:uppercase;color:var(--grass-d);line-height:1;margin-top:2px}
+.nav{display:none;margin-left:auto;align-items:center;gap:1.7rem}
+.nav a{font-weight:600;font-size:.95rem;color:var(--ink-2);transition:color var(--t)}
+.nav a:hover{color:var(--brand)}
+.hdr-cta{display:none;align-items:center;gap:.8rem}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;color:var(--ink);font-size:.95rem}
+.call-pill svg{width:18px;height:18px;stroke:var(--brand);fill:none;stroke-width:1.8}
+.burger{margin-left:auto;display:inline-grid;place-items:center;width:46px;height:46px;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--bg-card)}
+.burger svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round}
+@media(min-width:960px){.nav{display:flex}.hdr-cta{display:flex}.burger{display:none}}
+
+/* Drawer */
+.drawer{position:fixed;inset:0;z-index:130;background:rgba(21,48,25,.5);opacity:0;visibility:hidden;overflow:hidden;transition:opacity var(--t),visibility var(--t)}
+.drawer.open{opacity:1;visibility:visible}
+.drawer-panel{position:absolute;top:0;right:0;width:min(86vw,340px);height:100%;background:var(--bg);box-shadow:var(--sh-4);padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.4rem;transform:translateX(100%);transition:transform var(--t)}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.drawer-close{width:44px;height:44px;border:1px solid var(--line-2);border-radius:var(--r-s);background:var(--bg-card);display:grid;place-items:center}
+.drawer-close svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round}
+.drawer-panel a.dl{padding:.85rem .5rem;font-weight:600;font-size:1.1rem;border-bottom:1px solid var(--line);color:var(--ink)}
+.drawer-panel .btn{margin-top:1.1rem}
+.drawer-panel .btn+.btn{margin-top:.6rem}
+
+/* Hero */
+.hero{position:relative;min-height:clamp(560px,84vh,780px);display:flex;align-items:flex-end;padding-top:calc(72px + var(--s4));padding-bottom:var(--hero-y);overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(78deg,rgba(15,30,18,.86) 0%,rgba(17,35,20,.62) 42%,rgba(17,35,20,.26) 74%,rgba(17,35,20,.08) 100%),linear-gradient(0deg,rgba(13,27,16,.55),rgba(13,27,16,0) 40%)}
+.hero-in{max-width:640px;color:#f4f9f0}
+.hero .eyebrow{color:#bfe3ac}
+.hero h1{font-size:var(--h1);color:#fff;margin-top:.9rem;text-shadow:0 2px 18px rgba(8,18,10,.4);font-weight:600}
+.hero h1 em{font-style:normal;color:#a9d98f}
+.hero-sub{margin-top:1.15rem;font-size:1.12rem;line-height:1.55;color:#e7f1df;max-width:50ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.hero-badges{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem 1.3rem;margin-top:1.9rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.18)}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.95rem;color:#e7f1df}
+.hbadge .stars{display:inline-flex;gap:1px;color:var(--gold)}
+.hbadge .stars svg{width:17px;height:17px;fill:var(--gold);stroke:none}
+.hbadge b{color:#fff;font-weight:800}
+.hbadge .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+
+/* Value band */
+.value{background:var(--bg-2)}
+.val-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.4rem}
+@media(min-width:760px){.val-grid{grid-template-columns:repeat(3,1fr);gap:1.4rem}}
+.vcard{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.8rem 1.6rem;box-shadow:var(--sh-1)}
+.vcard .ic{width:52px;height:52px;border-radius:var(--r-m);display:grid;place-items:center;background:var(--grass-soft);color:var(--grass-d);margin-bottom:1.1rem}
+.vcard:nth-child(2) .ic{background:#eef4e9;color:var(--brand)}
+.vcard:nth-child(3) .ic{background:#f4ead9;color:var(--accent-d)}
+.vcard .ic svg{width:26px;height:26px}
+.vcard h3{font-size:var(--h3);font-weight:600}
+.vcard p{color:var(--ink-2);margin-top:.5rem;font-size:.98rem}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.6rem}
+@media(min-width:620px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{position:relative;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:var(--line-2)}
+.svc .num{font-family:"Fraunces",serif;font-weight:600;font-size:.95rem;color:var(--accent-d);letter-spacing:.04em}
+.svc .ic{width:46px;height:46px;border-radius:var(--r-m);display:grid;place-items:center;background:var(--grass-soft);color:var(--grass-d);margin:1rem 0 1.1rem}
+.svc .ic svg{width:25px;height:25px}
+.svc h3{font-size:1.22rem;font-weight:600}
+.svc p{color:var(--ink-2);margin-top:.55rem;font-size:.98rem}
+.svc ul{list-style:none;margin-top:1rem;display:flex;flex-wrap:wrap;gap:.45rem}
+.svc li{font-size:.8rem;font-weight:600;color:var(--grass-d);background:var(--grass-soft);border-radius:var(--r-pill);padding:.3rem .7rem}
+
+/* Work */
+.work{background:var(--bg-2)}
+.gal-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.5rem}
+@media(min-width:620px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+.tile{position:relative;border-radius:var(--r-m);overflow:hidden;aspect-ratio:4/3;background:var(--line-2);cursor:pointer;border:0;padding:0;box-shadow:var(--sh-1)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 420ms cubic-bezier(.2,.6,.2,1)}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.06)}
+.tile figcaption{position:absolute;inset:auto 0 0 0;padding:1.4rem .95rem .8rem;font-weight:600;font-size:.9rem;color:#fff;text-align:left;background:linear-gradient(0deg,rgba(13,27,16,.82),rgba(13,27,16,0));opacity:0;transform:translateY(8px);transition:opacity var(--t),transform var(--t)}
+.tile:hover figcaption,.tile:focus-visible figcaption{opacity:1;transform:none}
+
+/* Review feature */
+.proof{background:var(--dark);color:#e7f1df;position:relative;overflow:hidden}
+.proof .eyebrow{color:#bfe3ac}
+.proof-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;margin-top:2.4rem;align-items:center}
+@media(min-width:880px){.proof-grid{grid-template-columns:1.15fr .85fr;gap:3.2rem}}
+.proof h2{color:#fff}
+.pquote{margin-top:1.6rem}
+.pquote .stars{display:inline-flex;gap:2px;color:var(--gold);margin-bottom:1rem}
+.pquote .stars svg{width:20px;height:20px;fill:var(--gold);stroke:none}
+.pquote blockquote{font-family:"Fraunces",serif;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.45;color:#f4f9f0;font-weight:500}
+.pquote .who{margin-top:1.3rem;font-weight:700;color:#fff;font-size:.98rem}
+.pquote .who span{display:block;font-weight:500;font-size:.85rem;color:#adc6a0;margin-top:2px}
+.score-card{background:var(--dark-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-l);padding:2rem 1.8rem;text-align:center}
+.score-card .big{font-family:"Fraunces",serif;font-size:3.6rem;font-weight:700;color:#fff;line-height:1}
+.score-card .stars{display:inline-flex;gap:2px;color:var(--gold);margin:.7rem 0 .5rem}
+.score-card .stars svg{width:20px;height:20px;fill:var(--gold);stroke:none}
+.score-card .sub{color:#adc6a0;font-size:.95rem}
+.score-card .btn{width:100%;margin-top:1.5rem}
+
+/* Service area */
+.area-grid{display:grid;grid-template-columns:1fr;gap:2.4rem;margin-top:2.4rem;align-items:center}
+@media(min-width:880px){.area-grid{grid-template-columns:1fr 1fr;gap:3rem}}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.5rem}
+.chip{display:inline-flex;align-items:center;gap:.45rem;font-weight:600;font-size:.92rem;color:var(--ink);background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem}
+.chip svg{width:15px;height:15px;stroke:var(--grass-d);fill:none;stroke-width:1.9}
+.map-wrap{border-radius:var(--r-l);overflow:hidden;border:1px solid var(--line-2);box-shadow:var(--sh-2);aspect-ratio:4/3;background:var(--bg-2)}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+
+/* Contact */
+.contact{background:var(--bg-2)}
+.ct-grid{display:grid;grid-template-columns:1fr;gap:1.4rem;margin-top:2.5rem}
+@media(min-width:880px){.ct-grid{grid-template-columns:1.05fr .95fr;gap:2rem}}
+.ct-grid>*{min-width:0}
+.form-card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-2)}
+.form-card h3{font-size:1.35rem;font-weight:600}
+.form-card .fc-sub{color:var(--ink-2);font-size:.96rem;margin-top:.35rem}
+.field{margin-top:1.1rem}
+.field label{display:block;font-weight:700;font-size:.85rem;margin-bottom:.4rem;color:var(--ink)}
+.field input,.field textarea{width:100%;min-width:0;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line-2);border-radius:var(--r-m);padding:.8rem .9rem;transition:border-color var(--t),box-shadow var(--t)}
+.field textarea{resize:vertical;min-height:110px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(31,92,51,.14)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#b3261e;box-shadow:0 0 0 3px rgba(179,38,30,.13)}
+.err{display:none;color:#9a241c;font-size:.8rem;font-weight:600;margin-top:.35rem}
+.field.bad .err{display:block}
+.form-card .btn{width:100%;margin-top:1.4rem}
+.form-note{font-size:.78rem;color:var(--ink-3);margin-top:.9rem;text-align:center}
+.form-ok{display:none;text-align:center;padding:2rem 1rem}
+.form-ok.show{display:block}
+.form-ok .ok-ic{width:60px;height:60px;border-radius:50%;background:var(--grass-soft);color:var(--grass-d);display:grid;place-items:center;margin:0 auto 1rem}
+.form-ok .ok-ic svg{width:32px;height:32px}
+.form-ok h3{font-size:1.4rem;font-weight:600}
+.form-ok p{color:var(--ink-2);margin:.5rem auto 0}
+form.sent .fc-body{display:none}
+
+.info-card{background:var(--dark);color:#e7f1df;border-radius:var(--r-l);padding:1.9rem 1.7rem;box-shadow:var(--sh-2)}
+.info-card h3{color:#fff;font-size:1.3rem;font-weight:600}
+.info-list{margin-top:1.3rem;display:flex;flex-direction:column;gap:1.1rem}
+.info-row{display:flex;gap:.85rem;align-items:flex-start}
+.info-row>div{min-width:0}
+.info-row a,.info-row .v,.ft .nap{overflow-wrap:anywhere}
+.info-row .ic{width:42px;height:42px;border-radius:var(--r-m);flex:none;display:grid;place-items:center;background:rgba(191,227,172,.14);color:#bfe3ac}
+.info-row .ic svg{width:21px;height:21px}
+.info-row .lbl{font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#adc6a0}
+.info-row a,.info-row .v{display:block;color:#f4f9f0;font-weight:700;font-size:1.04rem;margin-top:2px}
+.info-row a:hover{color:#bfe3ac}
+.info-row .v.small{font-weight:500;font-size:.92rem;color:#dcebd3;line-height:1.45}
+.info-card .btn{width:100%;margin-top:1.5rem}
+.info-card .small-line{font-size:.78rem;color:#93ac86;margin-top:.9rem;text-align:center}
+
+/* Footer */
+.ft{background:var(--dark-2);color:#c9dabf}
+.ft-in{padding-block:var(--s7) var(--s5)}
+.ft-grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media(min-width:720px){.ft-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.ft .brand{color:#fff}
+.ft .brand small{color:#bfe3ac}
+.ft p{color:#a7bd9c;font-size:.95rem;margin-top:1rem;max-width:42ch}
+.ft h4{font-family:"Hanken Grotesk",sans-serif;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#bfe3ac;margin-bottom:.9rem}
+.ft a{color:#c9dabf;font-size:.95rem;display:block;padding:.25rem 0}
+.ft a:hover{color:#fff}
+.ft .nap{font-size:.95rem;color:#a7bd9c;line-height:1.7}
+.ft .nap a{display:inline;padding:0}
+.ft-bot{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding-top:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;justify-content:space-between;font-size:.82rem;color:#8ba37f}
+
+/* Sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:.6rem;padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(120%);transition:transform var(--t)}
+.sticky.show{transform:none}
+.sticky .btn{flex:1;padding:.8rem 1rem;font-size:.95rem;min-height:46px}
+.sticky .btn-ghost{background:var(--bg-card)}
+@media(min-width:960px){.sticky{display:none}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:160;background:rgba(10,20,12,.93);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:94vw;max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:max(1.1rem,env(safe-area-inset-bottom));text-align:center;color:#e7f1df;font-weight:600;font-size:.95rem}
+.lb-btn{position:absolute;width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;display:grid;place-items:center;cursor:pointer}
+.lb-btn svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
+.lb-close{top:1.1rem;right:1.1rem}
+.lb-prev{left:1rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1rem;top:50%;transform:translateY(-50%)}
+
+.only-mob{display:none}
+@media(max-width:600px){
+  .info-row a{padding-block:.55rem}
+  .info-list{gap:.7rem}
+  .only-lap{display:none}
+  .only-mob{display:inline}
+  .hero{align-items:flex-start;min-height:auto}
+}
+@media(max-width:360px){
+  .hbadge{font-size:.86rem;gap:.4rem}
+  .hbadge .stars svg{width:15px;height:15px}
+  .hero-cta .btn{flex:1 1 100%}
+}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#services">Skip to content</a>
+
+<!-- HEADER -->
+<header class="hdr" id="top">
+  <div class="container hdr-in">
+    <a class="brand" href="#top" aria-label="Grass Gobblers home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 22c0-6 0-9-4-13"/><path d="M12 22c0-6 0-9 4-13"/><path d="M12 22V4"/></svg>
+      </span>
+      <span>Grass Gobblers<small>Lawn Care · Landscaping</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="call-pill" href="tel:+16034342237"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(603) 434-2237</a>
+      <a class="btn btn-primary" href="#contact">Free estimate</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-top">
+      <span class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c0-6 0-9-4-13"/><path d="M12 22c0-6 0-9 4-13"/><path d="M12 22V4"/></svg></span>Grass Gobblers</span>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    </div>
+    <a class="dl" href="#services">Services</a>
+    <a class="dl" href="#work">Our work</a>
+    <a class="dl" href="#reviews">Reviews</a>
+    <a class="dl" href="#area">Service area</a>
+    <a class="dl" href="#contact">Contact</a>
+    <a class="btn btn-primary" href="#contact">Get a free estimate</a>
+    <a class="btn btn-ghost" href="tel:+16034342237">Call (603) 434-2237</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Intro">
+  <img class="hero-img" src="assets/striped-lawn-londonderry.jpg" alt="Freshly striped, mowed green lawn in front of a New Hampshire home maintained by Grass Gobblers in Londonderry" width="1125" height="1500" fetchpriority="high" decoding="async" />
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="container hero-in">
+    <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:#bfe3ac" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Londonderry, NH · Family-owned since 2012</span>
+    <h1>Full-service lawn care &amp; landscaping in <em>Londonderry, NH</em></h1>
+    <p class="hero-sub"><span class="only-lap">One local crew for the whole yard — mowing and cleanups, garden beds and mulch, fertilization, and snow when winter comes. Same care your neighbors have trusted since 2012.</span><span class="only-mob">One local crew for mowing, beds &amp; mulch, fertilization and snow — trusted here since 2012.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free estimate</a>
+      <a class="btn btn-ghost on-photo" href="#work">See our work</a>
+    </div>
+    <div class="hero-badges">
+      <span class="hbadge"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><b>4.6</b> · 48 reviews on Google</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="hbadge"><svg class="icn" style="width:18px;height:18px;stroke:#bfe3ac" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Family-owned &amp; operated</span>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE BAND -->
+<section class="section value" aria-labelledby="value-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M12 22c0-6 0-9-4-13"/><path d="M12 22c0-6 0-9 4-13"/><path d="M12 22V4"/></svg>Why Grass Gobblers</span>
+      <h2 class="h2" id="value-h">Neighbors have trusted the same crew for over a decade</h2>
+      <p class="lead">Grass Gobblers has kept Londonderry-area yards sharp since 2012 — the kind of steady, hands-on work that turns a one-time cleanup into years of standing appointments.</p>
+    </div>
+    <div class="val-grid">
+      <div class="vcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Family-owned since 2012</h3>
+        <p>A local, family-run crew — the same people who quote your yard are the ones who show up to work it.</p>
+      </div>
+      <div class="vcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M19 5l-2.5 2.5M7.5 16.5 5 19"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <h3>The whole yard, year-round</h3>
+        <p>Mowing, beds and mulch, fertilization, cleanups and winter snow removal — one crew instead of four.</p>
+      </div>
+      <div class="vcard reveal">
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M4 20s2-7 8-7 8 7 8 7"/><path d="M12 13V3"/><path d="M9 6l3-3 3 3"/></svg></div>
+        <h3>Free, no-pressure estimates</h3>
+        <p>We walk your property, talk through what it actually needs, and give you a straight quote — no obligation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" aria-labelledby="svc-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 9h6M9 13h6"/></svg>What we do</span>
+      <h2 class="h2" id="svc-h">Full-service lawn care &amp; landscaping</h2>
+      <p class="lead">Everything it takes to keep a New England property looking its best — the real services we run every week across the Londonderry area.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="num">01</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M3 17h18"/><path d="M5 17c0-4 3-7 7-7s7 3 7 7"/><path d="M12 10V4"/><path d="M12 4c-1.5 0-2.5 1-2.5 1M12 4c1.5 0 2.5 1 2.5 1"/></svg></div>
+        <h3>Lawn mowing &amp; maintenance</h3>
+        <p>Clean, striped weekly or biweekly mowing, string-trimming and edging that keeps your lawn tidy all season long.</p>
+        <ul><li>Mowing</li><li>Edging</li><li>Trimming</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">02</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 22c4-2 7-5 7-10a7 7 0 0 0-14 0c0 5 3 8 7 10z"/><path d="M12 12c1.5-1.5 2-3 2-3M12 12c-1.5-1.5-2-3-2-3"/></svg></div>
+        <h3>Garden beds, mulch &amp; plantings</h3>
+        <p>Flower-bed enhancement, fresh mulch, shrub trimming and seasonal plantings that give the whole yard a finished look.</p>
+        <ul><li>Mulching</li><li>Bed design</li><li>Shrub trimming</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">03</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M12 8c-3 0-5 2-5 5 0 4 5 9 5 9s5-5 5-9c0-3-2-5-5-5z"/><path d="M9 13h6"/></svg></div>
+        <h3>Fertilization &amp; aeration</h3>
+        <p>Fertilization programs and core aeration that thicken the turf, crowd out weeds and green the lawn up from the roots.</p>
+        <ul><li>Fertilization</li><li>Aeration</li><li>Weed control</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">04</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M19 4 8 15"/><path d="M14 4h5v5"/><path d="M5 13l-2 7 7-2"/><path d="M5 13l3 3"/></svg></div>
+        <h3>Cleanups, junk &amp; dumpster rentals</h3>
+        <p>Spring and fall cleanups, overgrowth and debris haul-off, junk removal and dumpster rentals when a project needs one.</p>
+        <ul><li>Seasonal cleanups</li><li>Junk removal</li><li>Dumpsters</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">05</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></svg></div>
+        <h3>Snow removal, res &amp; commercial</h3>
+        <p>Reliable residential and commercial snow removal all winter, so your driveway and lot are clear when you need them.</p>
+        <ul><li>Driveways</li><li>Commercial lots</li><li>Seasonal</li></ul>
+      </article>
+      <article class="svc reveal">
+        <span class="num">06</span>
+        <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M4 12h3M17 12h3"/><circle cx="12" cy="12" r="4"/><path d="M12 8c-2 2-2 6 0 8"/></svg></div>
+        <h3>Landscape maintenance</h3>
+        <p>Standing residential maintenance that keeps beds, borders and turf sharp week after week — set it and forget it.</p>
+        <ul><li>Recurring visits</li><li>Bed upkeep</li><li>Property care</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section work" id="work" aria-labelledby="work-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow amber"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4.5-4.5L7 20"/></svg>Recent work</span>
+      <h2 class="h2" id="work-h">A few jobs from around the neighborhood</h2>
+      <p class="lead">Every photo is our own work in and around Londonderry. Tap any image to see it bigger.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="tile reveal" data-cap="Paver patio and stone fire pit built into a backyard">
+        <img src="assets/paver-patio-firepit.jpg" alt="Paver patio with a curved stone seating wall and fire pit surrounded by autumn trees in Londonderry, NH" width="1200" height="900" loading="lazy" decoding="async" />
+        <figcaption>Paver patio &amp; fire pit</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Shaped shrub in a clean mulch and stone bed">
+        <img src="assets/shaped-shrub-mulch-bed.jpg" alt="Neatly shaped boxwood shrub in a fresh mulch bed with a river-rock border against a home" width="900" height="1200" loading="lazy" decoding="async" />
+        <figcaption>Shaped beds &amp; mulch</figcaption>
+      </button>
+      <button class="tile reveal" data-cap="Maintained front lawn and landscaping at a New Hampshire home">
+        <img src="assets/lawn-care-front-yard-londonderry.jpg" alt="Well-kept front lawn and driveway landscaping at a New Hampshire home maintained by Grass Gobblers" width="1400" height="647" loading="lazy" decoding="async" />
+        <figcaption>Front-yard lawn care</figcaption>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section proof" id="reviews" aria-labelledby="rev-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:#bfe3ac" viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg>What neighbors say</span>
+      <h2 class="h2" id="rev-h">Rated 4.6 out of 5 across 48 Google reviews</h2>
+    </div>
+    <div class="proof-grid">
+      <figure class="pquote reveal">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <blockquote>&ldquo;He did an initial site visit and spent time browsing plants at the nursery with me making sure the plan was solid before I made any commitments. When it came time to do the work Mike and his team were great! Two day job that has my house looking 100x better than before!&rdquo;</blockquote>
+        <figcaption class="who">Alex Critch Roundy<span>Google review</span></figcaption>
+      </figure>
+      <div class="score-card reveal">
+        <div class="big">4.6</div>
+        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <p class="sub">across 48 reviews on Google</p>
+        <a class="btn btn-onlight" href="https://search.google.com/local/writereview?placeid=ChIJrWIkGeFS4okRsyodY-tOw6w" target="_blank" rel="noopener">Leave us a Google review</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area" aria-labelledby="area-h">
+  <div class="container">
+    <div class="area-grid">
+      <div class="reveal">
+        <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Where we work</span>
+        <h2 class="h2" id="area-h">Serving Londonderry &amp; the surrounding towns</h2>
+        <p class="lead">Based in Londonderry, we take care of lawns and landscapes across southern New Hampshire. If you're nearby, just ask.</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Londonderry</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Derry</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Salem</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Windham</span>
+          <span class="chip"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/></svg>Chester</span>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="Map of the Grass Gobblers service area in Londonderry, NH" src="https://www.openstreetmap.org/export/embed.html?bbox=-71.44%2C42.82%2C-71.24%2C42.93&amp;layer=mapnik&amp;marker=42.8754387%2C-71.3403376" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" aria-labelledby="ct-h">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="icn" style="width:16px;height:16px;stroke:currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Free estimate</span>
+      <h2 class="h2" id="ct-h">Tell us about your yard</h2>
+      <p class="lead">Send a few details and we'll get back to you with a free estimate — or just call. Family-owned, so you'll talk to the people doing the work.</p>
+    </div>
+    <div class="ct-grid">
+      <form class="form-card" id="quoteForm" action="https://formsubmit.co/ajax/Mike@grassgobblerslawncare.com" method="POST" novalidate>
+        <div class="fc-body">
+          <h3>Request a free estimate</h3>
+          <p class="fc-sub">We read every message. No obligation.</p>
+          <input type="hidden" name="_subject" value="New estimate request — Grass Gobblers website" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="field" id="f-name">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+            <span class="err">Please enter a phone number we can reach you at.</span>
+          </div>
+          <div class="field" id="f-email">
+            <label for="email">Email <span style="font-weight:500;color:var(--ink-3)">(optional)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+            <span class="err">Please check your email address.</span>
+          </div>
+          <div class="field" id="f-msg">
+            <label for="message">What do you need done?</label>
+            <textarea id="message" name="message" required placeholder="e.g. weekly mowing, mulch &amp; bed cleanup, snow removal…"></textarea>
+            <span class="err">Tell us a little about the work.</span>
+          </div>
+          <button class="btn btn-primary" type="submit" id="submitBtn">Send my request</button>
+          <p class="form-note">Prefer to talk? Call <a href="tel:+16034342237" style="color:var(--accent-d);font-weight:700">(603) 434-2237</a>.</p>
+        </div>
+        <div class="form-ok" id="formOk" role="status" aria-live="polite">
+          <div class="ok-ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Thanks — message sent!</h3>
+          <p>We'll get back to you soon. For anything urgent, call (603) 434-2237.</p>
+        </div>
+      </form>
+
+      <aside class="info-card reveal">
+        <h3>Reach Grass Gobblers</h3>
+        <div class="info-list">
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><span class="lbl">Call</span><a href="tel:+16034342237">(603) 434-2237</a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></div>
+            <div><span class="lbl">Email</span><a href="mailto:Mike@grassgobblerslawncare.com">Mike@grassgobblerslawncare.com</a></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><span class="lbl">Based in</span><span class="v small">1 Reo Ln<br/>Londonderry, NH 03053</span></div>
+          </div>
+          <div class="info-row">
+            <div class="ic" aria-hidden="true"><svg class="icn" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+            <div><span class="lbl">Family-owned since</span><span class="v small">2012 — run by Mike and his crew</span></div>
+          </div>
+        </div>
+        <a class="btn btn-onlight" href="https://search.google.com/local/writereview?placeid=ChIJrWIkGeFS4okRsyodY-tOw6w" target="_blank" rel="noopener">Leave us a Google review</a>
+        <p class="small-line">Serving Londonderry &amp; southern New Hampshire.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="container ft-in">
+    <div class="ft-grid">
+      <div>
+        <span class="brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c0-6 0-9-4-13"/><path d="M12 22c0-6 0-9 4-13"/><path d="M12 22V4"/></svg></span>Grass Gobblers<small>Lawn Care · Landscaping</small></span>
+        <p>Family-owned lawn care &amp; landscaping in Londonderry, NH since 2012 — mowing, beds &amp; mulch, fertilization, cleanups and snow removal across southern New Hampshire.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Lawn mowing &amp; maintenance</a>
+        <a href="#services">Beds, mulch &amp; plantings</a>
+        <a href="#services">Fertilization &amp; aeration</a>
+        <a href="#services">Cleanups &amp; snow removal</a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <div class="nap">
+          Grass Gobblers Lawn Care &amp; Landscaping<br/>
+          1 Reo Ln<br/>
+          Londonderry, NH 03053<br/>
+          <a href="tel:+16034342237">(603) 434-2237</a><br/>
+          <a href="mailto:Mike@grassgobblerslawncare.com">Mike@grassgobblerslawncare.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© <span id="yr">2026</span> Grass Gobblers Lawn Care &amp; Landscaping · Londonderry, NH</span>
+      <span>Family-owned since 2012.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky" id="sticky">
+  <a class="btn btn-ghost" href="tel:+16034342237">Call</a>
+  <a class="btn btn-primary" href="#contact">Free estimate</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+  <img id="lbImg" src="" alt="" />
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var yr=document.getElementById('yr'); if(yr) yr.textContent=new Date().getFullYear();
+  var hdr=document.getElementById('top');
+  var sticky=document.getElementById('sticky');
+  function onScroll(){
+    var y=window.scrollY||0;
+    if(hdr) hdr.classList.toggle('scrolled', y>8);
+    if(sticky) sticky.classList.toggle('show', y>620);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  var drawer=document.getElementById('drawer');
+  var burger=document.getElementById('burger');
+  var dClose=document.getElementById('drawerClose');
+  function openD(){drawer.classList.add('open');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeD(){drawer.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  if(burger) burger.addEventListener('click',openD);
+  if(dClose) dClose.addEventListener('click',closeD);
+  if(drawer) drawer.addEventListener('click',function(e){if(e.target===drawer)closeD();});
+  Array.prototype.forEach.call(document.querySelectorAll('.drawer-panel a'),function(a){a.addEventListener('click',closeD);});
+
+  var items=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px',threshold:0.06});
+    items.forEach(function(el){io.observe(el);});
+    setTimeout(function(){items.forEach(function(el){el.classList.add('in');});},2600);
+  } else { items.forEach(function(el){el.classList.add('in');}); }
+
+  var tiles=[].slice.call(document.querySelectorAll('.tile'));
+  var lb=document.getElementById('lb'), lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'), lbClose=document.getElementById('lbClose'),
+      lbPrev=document.getElementById('lbPrev'), lbNext=document.getElementById('lbNext');
+  var idx=0, lastFocus=null;
+  function show(i){
+    idx=(i+tiles.length)%tiles.length;
+    var im=tiles[idx].querySelector('img');
+    lbImg.src=im.src; lbImg.alt=im.alt; lbCap.textContent=tiles[idx].getAttribute('data-cap')||im.alt;
+  }
+  function openLB(i){lastFocus=document.activeElement;show(i);lb.classList.add('open');document.body.style.overflow='hidden';lbClose.focus();}
+  function closeLB(){lb.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+  tiles.forEach(function(t,i){t.addEventListener('click',function(){openLB(i);});});
+  if(lbClose) lbClose.addEventListener('click',closeLB);
+  if(lbPrev) lbPrev.addEventListener('click',function(){show(idx-1);});
+  if(lbNext) lbNext.addEventListener('click',function(){show(idx+1);});
+  if(lb) lb.addEventListener('click',function(e){if(e.target===lb)closeLB();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')closeLB(); else if(e.key==='ArrowLeft')show(idx-1); else if(e.key==='ArrowRight')show(idx+1);
+  });
+
+  var form=document.getElementById('quoteForm');
+  function setBad(id,bad){var f=document.getElementById(id);if(!f)return;f.classList.toggle('bad',bad);var inp=f.querySelector('input,textarea');if(inp)inp.setAttribute('aria-invalid',bad?'true':'false');}
+  function emailOk(v){return v===''||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+  if(form){
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=form.name.value.trim(), phone=form.phone.value.trim(),
+          email=form.email.value.trim(), msg=form.message.value.trim();
+      var bad=false;
+      setBad('f-name',!name); bad=bad|| !name;
+      setBad('f-phone',phone.replace(/[^0-9]/g,'').length<7); bad=bad||phone.replace(/[^0-9]/g,'').length<7;
+      setBad('f-email',!emailOk(email)); bad=bad|| !emailOk(email);
+      setBad('f-msg',!msg); bad=bad|| !msg;
+      if(bad){var fb=form.querySelector('.field.bad input,.field.bad textarea');if(fb)fb.focus();return;}
+      var btn=document.getElementById('submitBtn'); btn.textContent='Sending…'; btn.disabled=true;
+      fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+        .then(function(r){return r.ok?r.json():Promise.reject(r);})
+        .then(function(){form.classList.add('sent');document.getElementById('formOk').classList.add('show');})
+        .catch(function(){
+          btn.textContent='Send my request'; btn.disabled=false;
+          var note=form.querySelector('.form-note');
+          if(note) note.innerHTML='Something went wrong sending the form. Please call <a href="tel:+16034342237" style="color:var(--accent-d);font-weight:700">(603) 434-2237</a>.';
+        });
+    });
+    ['name','phone','email','message'].forEach(function(n){
+      var inp=form[n]; if(inp) inp.addEventListener('input',function(){var f=inp.closest('.field');if(f&&f.classList.contains('bad')){f.classList.remove('bad');inp.setAttribute('aria-invalid','false');}});
+    });
+  }
+})();
+</script>
+</body>
+</html>

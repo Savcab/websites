@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/saratoga-scapes-ballston-spa/sitemap.xml

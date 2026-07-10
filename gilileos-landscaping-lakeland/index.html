@@ -1,424 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gilileo's Landscaping Service — Landscaping & Lawn Care in Lakeland, FL</title>
-<meta name="description" content="Gilileo's Landscaping Service keeps residential and commercial properties across South Lakeland, FL looking their best — landscape design, lawn maintenance, irrigation, mulch & rock, and tree trimming. 4.7 stars across 50 Google reviews. Call (863) 254-1147.">
-<link rel="canonical" href="https://savcab.github.io/websites/gilileos-landscaping-lakeland/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Landscaping in Lakeland, FL | Gilileo's Landscaping Service</title>
+<meta name="description" content="Gilileo's Landscaping Service — commercial and residential grounds care across Lakeland and Polk County. Design, lawn maintenance, irrigation, mulch and rock, tree trimming, pressure washing. 4.7 stars, 50 Google reviews.">
+<link rel="canonical" href="https://falconwebstudio.com/websites/gilileos-landscaping-lakeland/">
+<meta name="theme-color" content="#14453b">
 <meta property="og:title" content="Gilileo's Landscaping Service — Lakeland, FL">
-<meta property="og:description" content="Landscaping, lawn maintenance, irrigation, mulch & tree work across South Lakeland. Experience that shows.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://savcab.github.io/websites/gilileos-landscaping-lakeland/assets/img/hero.jpg">
+<meta property="og:url" content="https://falconwebstudio.com/websites/gilileos-landscaping-lakeland/">
+<meta property="og:image" content="https://falconwebstudio.com/websites/gilileos-landscaping-lakeland/assets/hero-estate-entrance.jpg">
+<meta property="og:description" content="Property-grade landscaping for HOAs, communities, estates, and homeowners across Polk County. 4.7 stars, 50 Google reviews.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        ink: '#0d0d0f',
-        panel: '#131316',
-        brand: { DEFAULT: '#d81f2a', bright: '#ef3b45', deep: '#a5161f' }
-      },
-      fontFamily: {
-        display: ['Archivo', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif']
-      }
-    }
-  }
-}
-</script>
-<style>
-  html { scroll-behavior: smooth; }
-  body { background: #0d0d0f; }
-  .hero-scrim {
-    background:
-      linear-gradient(90deg, rgba(13,13,15,.92) 0%, rgba(13,13,15,.72) 42%, rgba(13,13,15,.30) 100%),
-      linear-gradient(0deg, rgba(13,13,15,1) 2%, rgba(13,13,15,0) 45%);
-  }
-  .eyebrow-rule::after {
-    content: ""; display: block; width: 38px; height: 2px;
-    background: #d81f2a; margin-top: 10px;
-  }
-  .lift { transition: transform .25s ease, border-color .25s ease, background-color .25s ease; }
-  .lift:hover { transform: translateY(-6px); border-color: rgba(216,31,42,.55); background-color: #17171b; }
-  .stars { position: relative; display: inline-block; line-height: 0; }
-  .stars .base { color: #3a3a40; }
-  .stars .fill { position: absolute; top: 0; left: 0; overflow: hidden; white-space: nowrap; color: #d81f2a; }
-  .navlink { position: relative; }
-  .navlink::after { content:""; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:#d81f2a; transition:width .25s ease; }
-  .navlink:hover::after { width:100%; }
-  @media (max-width: 920px) {
-    .hero-scrim { background:
-      linear-gradient(0deg, rgba(13,13,15,1) 6%, rgba(13,13,15,.55) 55%, rgba(13,13,15,.65) 100%); }
-  }
-</style>
-</head>
-<body class="bg-ink text-zinc-200 font-sans antialiased overflow-x-clip">
-
-<!-- ================= HEADER ================= -->
-<header class="fixed top-0 inset-x-0 z-50 border-b border-white/10 bg-ink/85 backdrop-blur-md">
-  <div class="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between gap-4">
-    <a href="#top" class="flex items-center gap-2 shrink-0" aria-label="Gilileo's Landscaping Service home">
-      <img src="assets/img/logo.png" width="400" height="99" alt="Gilileo's Landscaping Service" class="h-8 w-auto">
-    </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-300">
-      <a href="#services" class="navlink">Services</a>
-      <a href="#work" class="navlink">Our Work</a>
-      <a href="#commercial" class="navlink">Commercial</a>
-      <a href="#area" class="navlink">Service Area</a>
-      <a href="#contact" class="navlink">Contact</a>
-    </nav>
-    <div class="flex items-center gap-3 shrink-0">
-      <a href="tel:+18632541147" class="hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-zinc-100 hover:text-white">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        (863) 254-1147
-      </a>
-      <a href="#contact" class="inline-flex items-center rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-bright transition-colors">Get a Quote</a>
-    </div>
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section id="top" class="relative min-h-[90vh] flex items-end">
-  <img src="assets/img/hero.jpg" width="1600" height="1200" fetchpriority="high" alt="Paver driveway, stone columns and manicured landscaping at a South Lakeland home by Gilileo's Landscaping Service" class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0 hero-scrim"></div>
-  <div class="relative mx-auto max-w-6xl w-full px-5 pb-16 pt-28">
-    <p class="eyebrow-rule text-xs sm:text-sm font-semibold tracking-[0.18em] uppercase text-brand">Lakeland, Florida · Landscaping &amp; Lawn</p>
-    <h1 class="mt-6 font-display font-black text-white text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-7xl max-w-3xl tracking-tight">
-      Landscaping with <span class="text-brand">experience that shows.</span>
-    </h1>
-    <p class="mt-6 max-w-xl text-base sm:text-lg text-zinc-300 leading-relaxed">
-      Gilileo's Landscaping Service keeps residential and commercial properties across South Lakeland green, tidy and looking their best — from landscape design and installation to weekly lawn maintenance, irrigation, mulch and tree work.
-    </p>
-    <!-- rating -->
-    <div class="mt-7 flex items-center gap-3">
-      <span class="stars text-lg" aria-hidden="true">
-        <span class="base">★★★★★</span>
-        <span class="fill" style="width:94%">★★★★★</span>
-      </span>
-      <span class="text-sm text-zinc-300"><span class="font-bold text-white">4.7</span> · 50 Google reviews</span>
-    </div>
-    <div class="mt-8 flex flex-col sm:flex-row gap-3">
-      <a href="tel:+18632541147" class="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 font-semibold text-white hover:bg-brand-bright transition-colors">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Call (863) 254-1147
-      </a>
-      <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3.5 font-semibold text-white hover:bg-white/10 transition-colors">
-        Get a free quote
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUST STRIP ================= -->
-<section class="border-y border-white/10 bg-panel">
-  <div class="mx-auto max-w-6xl px-5 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-center">
-    <div class="flex items-center gap-2.5">
-      <span class="stars text-base" aria-hidden="true"><span class="base">★★★★★</span><span class="fill" style="width:94%">★★★★★</span></span>
-      <span class="text-sm text-zinc-300"><span class="font-bold text-white">4.7</span> rating · 50 Google reviews</span>
-    </div>
-    <div class="hidden sm:block h-5 w-px bg-white/15"></div>
-    <div class="flex items-center gap-2 text-sm text-zinc-300">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-      Serving South Lakeland, FL
-    </div>
-    <div class="hidden sm:block h-5 w-px bg-white/15"></div>
-    <div class="flex items-center gap-2 text-sm text-zinc-300">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
-      Residential &amp; commercial
-    </div>
-  </div>
-</section>
-
-<!-- ================= PILLARS ================= -->
-<section class="mx-auto max-w-6xl px-5 py-20 sm:py-24">
-  <div class="max-w-2xl">
-    <p class="eyebrow-rule text-xs font-semibold tracking-[0.18em] uppercase text-brand">Why Gilileo's</p>
-    <h2 class="mt-5 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">A name deserving of trust in South Lakeland.</h2>
-  </div>
-  <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
-    <div class="lift rounded-2xl border border-white/10 bg-panel p-7">
-      <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-      </div>
-      <h3 class="mt-5 font-display font-bold text-white text-xl">Relationship</h3>
-      <p class="mt-3 text-zinc-400 leading-relaxed">We build long-lasting relationships with our clients and our city, and we've proven ourselves with commercial and residential clients across Lakeland.</p>
-    </div>
-    <div class="lift rounded-2xl border border-white/10 bg-panel p-7">
-      <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6.5 7 .9-5 4.8 1.3 7L12 18l-6.6 3.2L6.7 14l-5-4.8 7-.9L12 2Z"/></svg>
-      </div>
-      <h3 class="mt-5 font-display font-bold text-white text-xl">Reputation</h3>
-      <p class="mt-3 text-zinc-400 leading-relaxed">Our reputation across the South Lakeland area stands above our competitors — residential and commercial alike. Gilileo's is a name deserving of trust.</p>
-    </div>
-    <div class="lift rounded-2xl border border-white/10 bg-panel p-7">
-      <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m6.34 7.34-2.83-2.83"/><path d="M2 12h4"/><path d="M20 12h2"/><path d="m17.66 7.34 2.83-2.83"/><path d="M12 22a7 7 0 0 0 5-11.9c-1.5-1.5-3-2.6-3-4.6a2 2 0 0 0-4 0c0 2-1.5 3.1-3 4.6A7 7 0 0 0 12 22Z"/></svg>
-      </div>
-      <h3 class="mt-5 font-display font-bold text-white text-xl">Experience</h3>
-      <p class="mt-3 text-zinc-400 leading-relaxed">Years of experience transforming and restoring residential and commercial properties — we bring your dream yard to life on your timeline.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services" class="border-t border-white/10 bg-panel">
-  <div class="mx-auto max-w-6xl px-5 py-20 sm:py-24">
-    <div class="max-w-2xl">
-      <p class="eyebrow-rule text-xs font-semibold tracking-[0.18em] uppercase text-brand">What we do</p>
-      <h2 class="mt-5 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">Full-service landscaping, start to finish.</h2>
-      <p class="mt-4 text-zinc-400 leading-relaxed">One local crew for the whole yard — design and installation, ongoing maintenance, water, and the details that keep a property sharp all year.</p>
-    </div>
-    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- Landscaping -->
-      <div class="lift rounded-2xl border border-white/10 bg-ink p-7">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg>
-        </div>
-        <h3 class="mt-5 font-display font-bold text-white text-lg">Landscaping</h3>
-        <p class="mt-2.5 text-sm text-zinc-400 leading-relaxed">Design and installation that makes your property one of a kind — plantings, beds, fresh sod, and clean paver work.</p>
-      </div>
-      <!-- Lawn Maintenance -->
-      <div class="lift rounded-2xl border border-white/10 bg-ink p-7">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M12 20V8"/><path d="M12 8a4 4 0 0 0-4-4c0 2.5 1.8 4 4 4Z"/><path d="M12 8a4 4 0 0 1 4-4c0 2.5-1.8 4-4 4Z"/></svg>
-        </div>
-        <h3 class="mt-5 font-display font-bold text-white text-lg">Lawn Maintenance</h3>
-        <p class="mt-2.5 text-sm text-zinc-400 leading-relaxed">Regular mowing, edging and cleanup that keeps your yard something to be proud of, week after week.</p>
-      </div>
-      <!-- Irrigation -->
-      <div class="lift rounded-2xl border border-white/10 bg-ink p-7">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5S5 13 5 15a7 7 0 0 0 7 7Z"/></svg>
-        </div>
-        <h3 class="mt-5 font-display font-bold text-white text-lg">Irrigation</h3>
-        <p class="mt-2.5 text-sm text-zinc-400 leading-relaxed">Sprinkler installation and repair to keep every zone green through the Florida heat — no dry patches, no waste.</p>
-      </div>
-      <!-- Mulch & Rock -->
-      <div class="lift rounded-2xl border border-white/10 bg-ink p-7">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
-        </div>
-        <h3 class="mt-5 font-display font-bold text-white text-lg">Mulch &amp; Rock Installation</h3>
-        <p class="mt-2.5 text-sm text-zinc-400 leading-relaxed">Fresh mulch and decorative rock that finishes beds cleanly, holds up, and sets off the whole property.</p>
-      </div>
-      <!-- Tree Trimming -->
-      <div class="lift rounded-2xl border border-white/10 bg-ink p-7">
-        <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand/15 text-brand">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 15h6"/><path d="m12 2 4 6h-2l3 5H7l3-5H8l4-6Z"/></svg>
-        </div>
-        <h3 class="mt-5 font-display font-bold text-white text-lg">Tree Trimming</h3>
-        <p class="mt-2.5 text-sm text-zinc-400 leading-relaxed">Trimming and shaping to keep trees healthy and safe — before a branch becomes a problem.</p>
-      </div>
-      <!-- CTA card -->
-      <div class="rounded-2xl border border-brand/40 bg-gradient-to-br from-brand/15 to-brand/5 p-7 flex flex-col justify-between">
-        <div>
-          <h3 class="font-display font-bold text-white text-lg">Not sure what you need?</h3>
-          <p class="mt-2.5 text-sm text-zinc-300 leading-relaxed">Tell us about your property and we'll put together a plan and a free quote.</p>
-        </div>
-        <a href="tel:+18632541147" class="mt-5 inline-flex items-center gap-2 font-semibold text-white">
-          Call (863) 254-1147
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WORK / GALLERY ================= -->
-<section id="work" class="mx-auto max-w-6xl px-5 py-20 sm:py-24">
-  <div class="max-w-2xl">
-    <p class="eyebrow-rule text-xs font-semibold tracking-[0.18em] uppercase text-brand">Our work</p>
-    <h2 class="mt-5 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">Real Lakeland properties, real results.</h2>
-    <p class="mt-4 text-zinc-400 leading-relaxed">A look at recent landscaping, lawn and installation work around South Lakeland.</p>
-  </div>
-  <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-home-beds.jpg" width="1200" height="900" loading="lazy" alt="Home with fresh mulch beds, brick edging and a restored green lawn in Lakeland" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Fresh mulch beds &amp; lawn restoration</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-lawn-curve.jpg" width="1200" height="900" loading="lazy" alt="Manicured, edged residential lawn along a South Lakeland street" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Maintained lawn, South Lakeland</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-mulch-edge.jpg" width="1200" height="900" loading="lazy" alt="Bed edging and rock work in progress at a Lakeland home" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Bed edging &amp; rock work</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-sod-home.jpg" width="1200" height="900" loading="lazy" alt="New sod, palms and mulch bed installed at a Lakeland home" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">New sod &amp; bed install</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-poolrock.jpg" width="900" height="1200" loading="lazy" alt="Poolside landscaping with palms and river-rock bed under a screen enclosure" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Poolside landscape &amp; river rock</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-irrigation.jpg" width="1200" height="900" loading="lazy" alt="Irrigation sprinklers running at dusk along a landscaped commercial property in Lakeland" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Irrigation running at dusk</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-poollawn.jpg" width="1200" height="900" loading="lazy" alt="Freshly installed lawn beside a screened pool enclosure in Lakeland" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Pool-area lawn installation</figcaption>
-    </figure>
-    <figure class="group relative overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-design3d.jpg" width="1200" height="598" loading="lazy" alt="3D landscape design rendering of a backyard plan by Gilileo's Landscaping Service" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
-      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-ink to-transparent p-4 text-sm font-medium text-zinc-100">Landscape design &amp; 3D planning</figcaption>
-    </figure>
-    <div class="rounded-2xl border border-brand/40 bg-gradient-to-br from-brand/15 to-transparent p-6 flex flex-col justify-center items-start h-64">
-      <p class="font-display font-bold text-white text-xl leading-snug">Want your yard to look like this?</p>
-      <a href="tel:+18632541147" class="mt-4 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-bright transition-colors">
-        Get a free quote
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= COMMERCIAL ================= -->
-<section id="commercial" class="border-y border-white/10 bg-panel">
-  <div class="mx-auto max-w-6xl px-5 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <p class="eyebrow-rule text-xs font-semibold tracking-[0.18em] uppercase text-brand">Commercial grounds</p>
-      <h2 class="mt-5 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">Trusted with commercial properties across South Lakeland.</h2>
-      <p class="mt-5 text-zinc-400 leading-relaxed">Our commercial experience has grown with years of knowledge and expertise. We're a forerunner for servicing property management companies throughout Lakeland — with an office and work shop based right here in South Lakeland, so business owners and property managers get a local, brick-and-mortar crew that handles things quickly.</p>
-      <ul class="mt-7 space-y-3 text-zinc-300">
-        <li class="flex items-start gap-3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><path d="M20 6 9 17l-5-5"/></svg><span>Property management &amp; multi-lot accounts</span></li>
-        <li class="flex items-start gap-3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><path d="M20 6 9 17l-5-5"/></svg><span>Reliable, scheduled grounds maintenance</span></li>
-        <li class="flex items-start gap-3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><path d="M20 6 9 17l-5-5"/></svg><span>Local South Lakeland office &amp; work shop</span></li>
-      </ul>
-      <a href="tel:+18632541147" class="mt-8 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3.5 font-semibold text-white hover:bg-brand-bright transition-colors">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Talk to us about your property
-      </a>
-    </div>
-    <figure class="overflow-hidden rounded-2xl border border-white/10">
-      <img src="assets/img/g-irrigation.jpg" width="1200" height="900" loading="lazy" alt="Irrigation running at dusk on a landscaped commercial property in Lakeland" class="w-full h-full object-cover aspect-[4/3]">
-    </figure>
-  </div>
-</section>
-
-<!-- ================= REVIEWS ================= -->
-<section class="mx-auto max-w-6xl px-5 py-20 sm:py-24 text-center">
-  <span class="stars text-3xl" aria-hidden="true"><span class="base">★★★★★</span><span class="fill" style="width:94%">★★★★★</span></span>
-  <h2 class="mt-6 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">Rated 4.7 across 50 Google reviews.</h2>
-  <p class="mt-4 max-w-xl mx-auto text-zinc-400 leading-relaxed">Client happiness is our utmost priority — and South Lakeland homeowners and property managers have made Gilileo's a name they recommend. Don't just take our word for it.</p>
-  <a href="https://maps.google.com/?cid=4358118034810429749" target="_blank" rel="noopener" class="mt-8 inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3.5 font-semibold text-white hover:bg-white/10 transition-colors">
-    Read our reviews on Google
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-  </a>
-</section>
-
-<!-- ================= SERVICE AREA + MAP ================= -->
-<section id="area" class="border-t border-white/10 bg-panel">
-  <div class="mx-auto max-w-6xl px-5 py-20 sm:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
-    <div>
-      <p class="eyebrow-rule text-xs font-semibold tracking-[0.18em] uppercase text-brand">Service area</p>
-      <h2 class="mt-5 font-display font-extrabold text-white text-3xl sm:text-4xl tracking-tight">Proudly serving South Lakeland &amp; beyond.</h2>
-      <p class="mt-4 text-zinc-400 leading-relaxed">We service homes and commercial properties throughout the South Lakeland area, including:</p>
-      <div class="mt-6 flex flex-wrap gap-2.5">
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">South Lake Morton Historic District</span>
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">Lake Hollingsworth</span>
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">Lakeland Highlands</span>
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">Cleveland Heights</span>
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">Cumberland</span>
-        <span class="rounded-full border border-white/15 bg-ink px-4 py-2 text-sm text-zinc-300">Imperial Lakes</span>
-      </div>
-      <div class="mt-8 rounded-2xl border border-white/10 bg-ink p-6">
-        <div class="flex items-start gap-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          <div>
-            <p class="font-semibold text-white">409 Oak Trail, Lakeland, FL 33813</p>
-            <p class="mt-1 text-sm text-zinc-400">Office &amp; work shop in South Lakeland</p>
-          </div>
-        </div>
-        <div class="mt-4 flex items-start gap-3">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <div>
-            <p class="font-semibold text-white">Call for current hours</p>
-            <a href="tel:+18632541147" class="mt-1 inline-block text-sm text-brand hover:text-brand-bright font-medium">(863) 254-1147</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-2xl overflow-hidden border border-white/10 min-h-[340px]">
-      <iframe title="Map of Gilileo's Landscaping Service, Lakeland FL" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.9706626%2C27.9463523%2C-81.9506626%2C27.9623523&amp;layer=mapnik&amp;marker=27.9543523%2C-81.9606626" class="w-full h-full min-h-[340px]" loading="lazy" style="border:0"></iframe>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FINAL CTA ================= -->
-<section id="contact" class="relative">
-  <div class="bg-brand">
-    <div class="mx-auto max-w-6xl px-5 py-16 sm:py-20 text-center">
-      <h2 class="font-display font-black text-white text-3xl sm:text-5xl tracking-tight">Ready for a yard that shows?</h2>
-      <p class="mt-4 max-w-xl mx-auto text-white/90 leading-relaxed">Get a free quote from a local Lakeland crew that treats your property like their own. Call today and let's talk about what you have in mind.</p>
-      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-        <a href="tel:+18632541147" class="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-4 font-semibold text-white hover:bg-black transition-colors">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call (863) 254-1147
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="bg-ink border-t border-white/10">
-  <div class="mx-auto max-w-6xl px-5 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    <div class="sm:col-span-2 lg:col-span-1">
-      <img src="assets/img/logo.png" width="400" height="99" alt="Gilileo's Landscaping Service" class="h-9 w-auto">
-      <p class="mt-4 text-sm text-zinc-400 leading-relaxed max-w-xs">Experience that shows — full-service landscaping, lawn care and grounds maintenance across South Lakeland, FL.</p>
-    </div>
-    <div>
-      <h3 class="text-sm font-semibold text-white uppercase tracking-wide">Services</h3>
-      <ul class="mt-4 space-y-2 text-sm text-zinc-400">
-        <li><a href="#services" class="hover:text-white">Landscaping</a></li>
-        <li><a href="#services" class="hover:text-white">Lawn Maintenance</a></li>
-        <li><a href="#services" class="hover:text-white">Irrigation</a></li>
-        <li><a href="#services" class="hover:text-white">Mulch &amp; Rock Installation</a></li>
-        <li><a href="#services" class="hover:text-white">Tree Trimming</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-sm font-semibold text-white uppercase tracking-wide">Service Area</h3>
-      <ul class="mt-4 space-y-2 text-sm text-zinc-400">
-        <li>South Lakeland, FL</li>
-        <li>Lakeland Highlands</li>
-        <li>Cleveland Heights</li>
-        <li>Lake Hollingsworth</li>
-        <li>Imperial Lakes</li>
-      </ul>
-    </div>
-    <div>
-      <h3 class="text-sm font-semibold text-white uppercase tracking-wide">Contact</h3>
-      <ul class="mt-4 space-y-3 text-sm text-zinc-400">
-        <li><a href="tel:+18632541147" class="flex items-center gap-2 hover:text-white"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(863) 254-1147</a></li>
-        <li class="flex items-start gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand mt-0.5 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>409 Oak Trail, Lakeland, FL 33813</li>
-      </ul>
-    </div>
-  </div>
-  <div class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-5 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-500">
-      <p>© 2026 Gilileo's Landscaping Service. All rights reserved.</p>
-      <p>Lakeland, Florida</p>
-    </div>
-  </div>
-</footer>
-
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://savcab.github.io/websites/gilileos-landscaping-lakeland/",
+  "@type": "HomeAndConstructionBusiness",
   "name": "Gilileo's Landscaping Service",
-  "image": "https://savcab.github.io/websites/gilileos-landscaping-lakeland/assets/img/hero.jpg",
-  "url": "https://savcab.github.io/websites/gilileos-landscaping-lakeland/",
+  "image": "https://falconwebstudio.com/websites/gilileos-landscaping-lakeland/assets/hero-estate-entrance.jpg",
+  "url": "https://falconwebstudio.com/websites/gilileos-landscaping-lakeland/",
   "telephone": "+18632541147",
+  "email": "gilileolandscapingservice@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "409 Oak Trail",
@@ -427,21 +34,521 @@ tailwind.config = {
     "postalCode": "33813",
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 27.9543523,
-    "longitude": -81.9606626
-  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.9543523, "longitude": -81.9606626 },
   "areaServed": [
     { "@type": "City", "name": "Lakeland" },
-    { "@type": "Place", "name": "South Lakeland" },
-    { "@type": "Place", "name": "Lakeland Highlands" },
-    { "@type": "Place", "name": "Cleveland Heights" },
-    { "@type": "Place", "name": "Lake Hollingsworth" },
-    { "@type": "Place", "name": "Imperial Lakes" }
-  ],
-  "knowsAbout": ["Landscaping", "Lawn maintenance", "Irrigation", "Mulch and rock installation", "Tree trimming"]
+    { "@type": "City", "name": "Mulberry" },
+    { "@type": "City", "name": "Bartow" },
+    { "@type": "City", "name": "Auburndale" },
+    { "@type": "City", "name": "Winter Haven" },
+    { "@type": "City", "name": "Plant City" },
+    { "@type": "City", "name": "Highland City" },
+    { "@type": "City", "name": "Lakeland Highlands" }
+  ]
 }
+</script>
+<style>
+:root{
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;--s7:6rem;--s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);--hero-y:clamp(5rem,12vw,11rem);
+  --container:76rem;--measure:64ch;
+  --h1:clamp(2.1rem,5vw,3.3rem);--h2:clamp(1.6rem,3.2vw,2.3rem);--h3:1.3rem;
+  --body:1.0625rem;--small:.875rem;--lh-body:1.6;--lh-head:1.08;--track-head:-.025em;
+  --ink:#171d1a;--ink-2:#525d58;--ink-3:#87918c;--line:#e1e7e3;
+  --bg:#ffffff;--bg-2:#eef2ef;--bg-3:#10302a;
+  --brand:#14453b;--brand-d:#0d2e28;--brand-soft:#e2ede9;
+  --accent:#c58a2c;--accent-d:#a26e1c;
+  --r-s:6px;--r-m:12px;--r-l:20px;--r-pill:999px;
+  --sh-1:0 1px 2px rgba(16,30,26,.06);
+  --sh-2:0 2px 4px rgba(16,30,26,.06),0 4px 10px rgba(16,30,26,.05);
+  --sh-3:0 6px 14px rgba(16,30,26,.07),0 14px 30px rgba(16,30,26,.09);
+  --sh-4:0 10px 20px rgba(16,30,26,.09),0 28px 56px rgba(16,30,26,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Inter",sans-serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700;color:var(--ink)}
+h1{font-size:var(--h1);font-weight:800}h2{font-size:var(--h2)}h3{font-size:var(--h3);font-weight:600;letter-spacing:-.01em}
+p{max-width:var(--measure)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:76rem;max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
+section{padding-block:var(--section-y)}
+.eyebrow{font-family:"Inter";font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-d)}
+.lead{font-size:clamp(1.05rem,1.8vw,1.2rem);color:var(--ink-2);line-height:1.65}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:"Inter";font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.7rem;border-radius:var(--r-m);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t)}
+.btn-primary{background:var(--accent);color:#1a1204;box-shadow:var(--sh-2)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--sh-3);background:var(--accent-d);color:#fff}
+.btn-ghost{background:transparent;color:var(--brand);border-color:rgba(20,69,59,.28)}
+.btn-ghost:hover{border-color:var(--brand);background:var(--brand-soft)}
+.btn-onhero{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.5);backdrop-filter:blur(4px)}
+.btn-onhero:hover{background:rgba(255,255,255,.22)}
+.ic{width:20px;height:20px;flex:none;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);padding-block:.8rem}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.42rem;letter-spacing:-.02em;color:var(--brand)}
+.brand span{font-family:"Inter";font-size:.64rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-top:.25rem}
+.navlinks{display:flex;gap:var(--s4);align-items:center}
+.navlinks a{font-size:.94rem;font-weight:500;color:var(--ink-2)}
+.navlinks a:hover{color:var(--brand)}
+.nav-cta{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;color:#fff;background:var(--brand);padding:.62rem 1.1rem;border-radius:var(--r-m)}
+.nav-cta:hover{background:var(--brand-d)}
+.menu-btn{display:none;background:none;border:none;color:var(--brand);cursor:pointer;padding:.35rem}
+/* hero */
+.hero{position:relative;min-height:min(90vh,780px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,28,24,.32) 0%,rgba(10,28,24,.30) 40%,rgba(8,22,18,.85) 100%);z-index:1}
+.hero .wrap{position:relative;z-index:2;padding-block:var(--hero-y)}
+.hero-inner{max-width:46rem}
+.hero .eyebrow{color:#e6b978}
+.rating-chip{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);border-radius:var(--r-pill);padding:.4rem .9rem;font-size:.86rem;font-weight:600;backdrop-filter:blur(4px);margin-bottom:var(--s3)}
+.rating-chip .stars{color:#f2c25e;letter-spacing:.05em}
+.hero h1{color:#fff;margin:.9rem 0 var(--s3)}
+.hero p{color:rgba(255,255,255,.9);font-size:clamp(1.05rem,2vw,1.22rem);max-width:40rem;margin-bottom:var(--s4)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--s2)}
+/* proof bar */
+.proofbar{background:var(--brand);color:#fff}
+.proofbar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(1rem,4vw,3.5rem);padding-block:1.75rem}
+.proofbar .pb{display:flex;align-items:center;gap:.7rem;font-size:.98rem}
+.proofbar .pb b{font-family:"Bricolage Grotesque";font-size:1.6rem;font-weight:700;color:#fff;line-height:1}
+.proofbar .pb .sub{color:rgba(255,255,255,.72);font-weight:500}
+.proofbar .stars{color:#f2c25e}
+.proofbar .sep{width:1px;height:34px;background:rgba(255,255,255,.2)}
+/* credibility band */
+.cred{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.cred figure{margin:0;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3)}
+.cred figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.cred .hoa-quote{border-left:3px solid var(--accent);padding-left:1.4rem;margin:var(--s4) 0}
+.cred .hoa-quote blockquote{font-family:"Bricolage Grotesque";font-weight:500;font-size:1.3rem;line-height:1.45;color:var(--ink);max-width:none}
+.cred .hoa-quote cite{display:block;margin-top:.8rem;font-style:normal;font-size:.9rem;color:var(--ink-2);font-weight:600}
+.owner-row{display:flex;align-items:center;gap:.8rem;margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line)}
+.owner-row .ic-badge{width:44px;height:44px;flex:none;border-radius:var(--r-pill);background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.owner-row .txt b{display:block;font-family:"Bricolage Grotesque";font-size:1.02rem;color:var(--ink)}
+.owner-row .txt span{font-size:.88rem;color:var(--ink-2)}
+/* section heading */
+.sec-head{max-width:42rem;margin-bottom:var(--s5)}
+.sec-head.center{margin-inline:auto;text-align:center}
+.sec-head h2{margin-top:.6rem}
+.sec-head p{margin-top:var(--s2);color:var(--ink-2)}
+.sec-head.center p{margin-inline:auto}
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,1.5rem)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.4rem,2.5vw,1.9rem);box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--sh-3);border-color:var(--brand-soft)}
+.svc .svc-ic{width:48px;height:48px;border-radius:var(--r-m);background:var(--brand);color:#fff;display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .svc-ic .ic{width:24px;height:24px;stroke-width:1.7}
+.svc h3{margin-bottom:.45rem}
+.svc p{color:var(--ink-2);font-size:.96rem}
+/* segments */
+#segments{background:var(--bg-2)}
+.segments{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.25rem,3vw,2rem)}
+.seg{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.75rem,3vw,2.5rem);box-shadow:var(--sh-2)}
+.seg.dark{background:var(--brand);color:#fff}
+.seg .tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .8rem;border-radius:var(--r-pill);margin-bottom:var(--s3)}
+.seg .tag{background:var(--brand-soft);color:var(--brand)}
+.seg.dark .tag{background:rgba(255,255,255,.14);color:#fff}
+.seg h3{font-size:1.4rem;margin-bottom:var(--s2)}
+.seg.dark h3{color:#fff}
+.seg p{font-size:1rem;margin-bottom:var(--s3)}
+.seg.dark p{color:rgba(255,255,255,.85)}
+.seg ul{list-style:none;display:grid;gap:.7rem}
+.seg li{display:flex;gap:.65rem;align-items:flex-start;font-size:.96rem;color:var(--ink-2)}
+.seg.dark li{color:rgba(255,255,255,.9)}
+.seg li .ic{color:var(--accent);margin-top:2px}
+.seg.dark li .ic{color:#8fd3a8}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.75rem,1.6vw,1.1rem)}
+.gallery figure{margin:0;border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-2);background:var(--bg-2)}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 400ms ease}
+.gallery figure:hover img{transform:scale(1.05)}
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.25rem,3vw,2rem)}
+.review{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.6rem,3vw,2.2rem);box-shadow:var(--sh-1)}
+.review .stars{color:#e0a92f;font-size:1.05rem;letter-spacing:.1em;margin-bottom:var(--s2)}
+.review blockquote{font-family:"Bricolage Grotesque";font-weight:500;font-size:1.14rem;line-height:1.5;color:var(--ink);margin-bottom:var(--s3);max-width:none}
+.review .who{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:var(--ink-2)}
+.review .who b{color:var(--ink);font-weight:600}
+.review .who .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.reviews-foot{margin-top:var(--s5);text-align:center}
+.reviews-foot a{display:inline-flex;align-items:center;gap:.55rem;color:var(--brand);font-weight:700;border-bottom:2px solid var(--accent);padding-bottom:.2rem}
+/* service area */
+#area{background:var(--bg-2)}
+.area{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.map-embed{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);border:1px solid var(--line)}
+.map-embed iframe{display:block;width:100%;height:360px;border:0}
+.towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s4)}
+.towns span{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem 1rem;font-size:.9rem;font-weight:600;color:var(--brand)}
+/* contact */
+#contact{background:var(--bg-3);color:#eef3f0}
+#contact h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact-info .eyebrow{color:#e6b978}
+.contact-info .lead{color:rgba(255,255,255,.8);margin:var(--s3) 0 var(--s4)}
+.cinfo-row{display:flex;gap:.9rem;align-items:flex-start;margin-bottom:var(--s3)}
+.cinfo-row .ic-badge{width:42px;height:42px;flex:none;border-radius:var(--r-m);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:#8fd3a8}
+.cinfo-row .txt b{display:block;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:.15rem}
+.cinfo-row .txt{min-width:0}
+.cinfo-row .txt a,.cinfo-row .txt p{font-size:1.02rem;color:#fff;font-weight:500;overflow-wrap:anywhere}
+footer address a{overflow-wrap:anywhere}
+.cinfo-row .txt a:hover{color:#e6b978}
+.foot-review{display:inline-flex;align-items:center;gap:.5rem;margin-top:var(--s2);color:#fff;font-weight:600;font-size:.92rem;border:1px solid rgba(255,255,255,.25);border-radius:var(--r-pill);padding:.55rem 1rem}
+.foot-review:hover{background:rgba(255,255,255,.1)}
+form{background:#fff;border-radius:var(--r-l);padding:clamp(1.5rem,3vw,2.2rem);box-shadow:var(--sh-4)}
+form h3{margin-bottom:var(--s3);color:var(--ink)}
+.field{margin-bottom:var(--s3)}
+.field label{display:block;font-size:.85rem;font-weight:600;color:var(--ink-2);margin-bottom:.4rem}
+.field input,.field textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:var(--r-m);padding:.8rem 1rem;transition:border var(--t),box-shadow var(--t)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(20,69,59,.12)}
+.field textarea{resize:vertical;min-height:110px}
+form .btn-primary{width:100%;justify-content:center}
+.form-note{font-size:.8rem;color:var(--ink-3);text-align:center;margin-top:var(--s2)}
+/* footer */
+footer{background:var(--brand-d);color:rgba(255,255,255,.72);padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:var(--s5)}
+.foot-brand b{font-family:"Bricolage Grotesque";font-weight:800;font-size:1.4rem;color:#fff;display:block;margin-bottom:.5rem}
+.foot-brand p{font-size:.92rem;max-width:32ch}
+footer h4{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:var(--s2)}
+footer address{font-style:normal;font-size:.94rem;line-height:1.7}
+footer a:hover{color:#fff}
+.foot-bottom{margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s2);font-size:.82rem;color:rgba(255,255,255,.55)}
+.foot-bottom a{color:rgba(255,255,255,.7)}
+.callbar{display:none}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .navlinks{display:none}
+  .menu-btn{display:inline-flex}
+  .cred,.area,.contact-grid{grid-template-columns:1fr}
+  .cred .order-img{order:-1}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .reviews,.segments{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .nav-cta{display:none}
+  .services{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .proofbar .sep{display:none}
+  .foot-grid{grid-template-columns:1fr}
+  .hero{min-height:auto;padding-top:2rem}
+  .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08);padding:.6rem .9rem;gap:.6rem}
+  .callbar a{flex:1;justify-content:center;padding:.85rem 1rem}
+  body{padding-bottom:4.5rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><b>Gilileo's</b><span>Landscaping Service</span></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#segments">Commercial</a>
+      <a href="#work">Portfolio</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+18632541147" class="nav-cta">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (863) 254-1147
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <svg class="ic" style="width:26px;height:26px" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <img class="bg" src="assets/hero-estate-entrance.jpg" width="1500" height="844" fetchpriority="high" alt="Grand paver driveway entrance with stone columns and palms at a Lakeland, FL estate landscaped by Gilileo's Landscaping Service">
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="rating-chip"><span class="stars">★★★★★</span> 4.7 · 50 Google reviews</span>
+      <span class="eyebrow">Commercial &amp; Residential · Lakeland, FL</span>
+      <h1>Grounds care for Lakeland communities, estates, and homes</h1>
+      <p>From HOA common areas most mowers can't reach to a single front yard — full-service landscaping done right, by a crew Polk County property owners keep calling back.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Request a quote
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#work" class="btn btn-onhero">See our work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAR -->
+<div class="proofbar">
+  <div class="wrap">
+    <div class="pb"><span class="stars">★★★★★</span><b>4.7</b><span class="sub">Google rating · 50 reviews</span></div>
+    <div class="sep" aria-hidden="true"></div>
+    <div class="pb"><b>Commercial</b><span class="sub">HOAs &amp; property managers</span></div>
+    <div class="sep" aria-hidden="true"></div>
+    <div class="pb"><b>Residential</b><span class="sub">homeowners across Polk County</span></div>
+  </div>
+</div>
+
+<!-- CREDIBILITY BAND -->
+<section id="about">
+  <div class="wrap cred">
+    <div class="rv">
+      <span class="eyebrow">Trusted by the properties that can't look anything but sharp</span>
+      <h2 style="margin-top:.6rem">The kind of grounds work property managers notice</h2>
+      <div class="hoa-quote">
+        <blockquote>"We are a small lakefront HOA with a lot of challenging topography. Many areas are not accessible with a mower. Since we hired Gilileo's Landscaping two years ago, our community looks so much better."</blockquote>
+        <cite>— jdh Alkire, lakefront HOA · Google review</cite>
+      </div>
+      <p class="lead">Difficult terrain, community common areas, commercial frontage, or a single backyard — Gilileo's brings the same attention to all of it, and shows up when they say they will.</p>
+      <div class="owner-row">
+        <span class="ic-badge"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <div class="txt"><b>Owner-operated by Trenton Gilileo</b><span>Founder — on the crew, on your property</span></div>
+      </div>
+    </div>
+    <figure class="rv order-img"><img src="assets/community-lawn-edging.jpg" width="900" height="675" loading="lazy" alt="Crisply edged curved lawn along a Lakeland community road maintained by Gilileo's Landscaping"></figure>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service landscaping &amp; grounds care</h2>
+      <p>One crew for the whole property — design and installation through recurring upkeep and seasonal cleanup.</p>
+    </div>
+    <div class="services">
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c0-4 4-6 8-6s8 2 8 6M12 12V5M12 5c0-2 2-3 4-3M12 5c0-2-2-3-4-3"/></svg></div>
+        <h3>Landscape Design &amp; Installation</h3>
+        <p>Planning and building out beds, plantings, and full landscapes — transforming worn-out yards into finished, cohesive grounds.</p>
+      </article>
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V10l8-6 8 6v10M9 20v-5h6v5"/></svg></div>
+        <h3>Lawn Maintenance</h3>
+        <p>Mowing, edging, and cleanups on a dependable schedule that keeps communities and homes looking their best week after week.</p>
+      </article>
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></div>
+        <h3>Irrigation</h3>
+        <p>Sprinkler and irrigation work that gets water to every corner — including the hard-to-reach areas other crews skip.</p>
+      </article>
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M5 17c0-3 3-5 7-5s7 2 7 5M8 12l1.5-3M16 12l-1.5-3"/></svg></div>
+        <h3>Mulch &amp; Rock Installation</h3>
+        <p>Fresh mulch and decorative rock, installed clean and edged — the finish that frames beds and cuts down on upkeep.</p>
+      </article>
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V12M12 12l4-4M12 12L8 8M12 8V3M8 8 5 5M16 8l3-3"/></svg></div>
+        <h3>Tree Trimming</h3>
+        <p>Trimming and shaping to keep trees healthy, safe, and off structures — cleanup hauled away when we're done.</p>
+      </article>
+      <article class="svc rv">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14l1-5M11 14l1-8M15 14l1-5M4 14h16l-1 7H5z"/></svg></div>
+        <h3>Pressure Washing &amp; Roof Cleaning</h3>
+        <p>Driveways, walkways, and roofs washed back to clean — the exterior details that lift the whole property's curb appeal.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENTS -->
+<section id="segments">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Who we work with</span>
+      <h2>Built for two kinds of property</h2>
+      <p>The same standard, scaled to what the property needs.</p>
+    </div>
+    <div class="segments">
+      <div class="seg dark rv">
+        <span class="tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> Communities &amp; Commercial</span>
+        <h3>HOAs, property managers &amp; commercial grounds</h3>
+        <p>Common areas, lakefront and challenging terrain, frontage, and multi-property maintenance — handled by a crew that shows up on schedule and keeps a community looking cared-for.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Reliable recurring maintenance contracts</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Equipment for hard-to-mow, uneven areas</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>One point of contact — the owner</span></li>
+        </ul>
+      </div>
+      <div class="seg rv">
+        <span class="tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:15px;height:15px"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg> Homeowners</span>
+        <h3>Full-yard care for Lakeland homes</h3>
+        <p>Whether you want a standing maintenance schedule or a one-time transformation, Gilileo's handles the whole yard — lawn, beds, trees, and the details in between.</p>
+        <ul>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Landscape refreshes and full installs</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Mulch, rock, trimming, and cleanups</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Pressure washing to finish the exterior</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Portfolio</span>
+      <h2>Recent work across Polk County</h2>
+      <p>Real properties Gilileo's maintains and installs — every photo is our own work.</p>
+    </div>
+    <div class="gallery rv">
+      <figure><img src="assets/commercial-irrigation.jpg" width="900" height="600" loading="lazy" alt="Irrigation running along a commercial frontage in Lakeland, FL"></figure>
+      <figure><img src="assets/pool-hedge-estate.jpg" width="900" height="600" loading="lazy" alt="Manicured hedge row beside an estate pool landscaped by Gilileo's"></figure>
+      <figure><img src="assets/rock-installation.jpg" width="900" height="600" loading="lazy" alt="Decorative rock being installed in a Lakeland front yard bed"></figure>
+      <figure><img src="assets/pool-tropical-plantings.jpg" width="900" height="600" loading="lazy" alt="Tropical plantings and rock bed around a screened pool enclosure"></figure>
+      <figure><img src="assets/residential-beds-lawn.jpg" width="900" height="600" loading="lazy" alt="Brick home with fresh landscape beds and a wide green lawn in Lakeland"></figure>
+      <figure><img src="assets/lawn-aeration-crew.jpg" width="900" height="600" loading="lazy" alt="Gilileo's crew aerating a large residential lawn in Lakeland, FL"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow">Reviews</span>
+      <h2>4.7 stars across 50 Google reviews</h2>
+      <p>Communities and homeowners, in their own words.</p>
+    </div>
+    <div class="reviews">
+      <article class="review rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>"We are a small lakefront HOA with a lot of challenging topography. Many areas are not accessible with a mower. Since we hired Gilileo's Landscaping two years ago, our community looks so much better."</blockquote>
+        <div class="who"><b>jdh Alkire</b><span class="dot"></span><span>Google review · lakefront HOA</span></div>
+      </article>
+      <article class="review rv">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Recently had Trenton and his crew replace some landscaping that was old and worn out in our yard. Excellent service."</blockquote>
+        <div class="who"><b>Mike Faulkner</b><span class="dot"></span><span>Google review</span></div>
+      </article>
+    </div>
+    <div class="reviews-foot rv">
+      <a href="https://search.google.com/local/writereview?placeid=ChIJD5If4gI43YgRNWEZKkMlezw" target="_blank" rel="noopener">
+        Read all 50 reviews on Google
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="area">
+  <div class="wrap area">
+    <div class="map-embed rv">
+      <iframe title="Gilileo's Landscaping Service service area in Lakeland, FL" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.9726%2C27.9453%2C-81.9486%2C27.9633&amp;layer=mapnik&amp;marker=27.9543523%2C-81.9606626"></iframe>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Where we work</span>
+      <h2 style="margin-top:.6rem">Serving Lakeland &amp; Polk County</h2>
+      <p class="lead" style="margin-top:var(--s3)">Based in Lakeland, Gilileo's maintains communities, commercial grounds, and homes across the surrounding towns.</p>
+      <div class="towns">
+        <span>Lakeland</span><span>Mulberry</span><span>Bartow</span><span>Auburndale</span><span>Winter Haven</span><span>Plant City</span><span>Highland City</span><span>Lakeland Highlands</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info rv">
+      <span class="eyebrow">Get a quote</span>
+      <h2 style="margin-top:.6rem">Tell us about your property</h2>
+      <p class="lead">Commercial contract, HOA common areas, or a single yard — send the details and Gilileo's will get back to you with a quote.</p>
+      <div class="cinfo-row">
+        <span class="ic-badge"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <div class="txt"><b>Call</b><a href="tel:+18632541147">(863) 254-1147</a></div>
+      </div>
+      <div class="cinfo-row">
+        <span class="ic-badge"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 6l8 6 8-6"/></svg></span>
+        <div class="txt"><b>Email</b><a href="mailto:gilileolandscapingservice@gmail.com">gilileolandscapingservice@gmail.com</a></div>
+      </div>
+      <div class="cinfo-row">
+        <span class="ic-badge"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div class="txt"><b>Based in</b><p>409 Oak Trail, Lakeland, FL 33813</p></div>
+      </div>
+      <a class="foot-review" href="https://search.google.com/local/writereview?placeid=ChIJD5If4gI43YgRNWEZKkMlezw" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        Leave us a Google review
+      </a>
+    </div>
+    <form class="rv" id="quoteForm">
+      <h3>Request a free quote</h3>
+      <div class="field"><label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="pt">Property type</label><input id="pt" name="property" type="text" placeholder="HOA / commercial / home"></div>
+      <div class="field"><label for="m">What do you need?</label><textarea id="m" name="message" placeholder="e.g. recurring maintenance for our community common areas…"></textarea></div>
+      <button type="submit" class="btn btn-primary">Send request
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+      </button>
+      <p class="form-note">Opens your email to Gilileo's — or just call (863) 254-1147.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>Gilileo's Landscaping Service</b>
+        <p>Commercial and residential landscaping and grounds care across Lakeland and Polk County, Florida. Owner-operated by Trenton Gilileo.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>
+          <a href="tel:+18632541147">(863) 254-1147</a><br>
+          <a href="mailto:gilileolandscapingservice@gmail.com">gilileolandscapingservice@gmail.com</a><br>
+          409 Oak Trail<br>Lakeland, FL 33813
+        </address>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <address>
+          Landscape Design &amp; Installation<br>
+          Lawn Maintenance · Irrigation<br>
+          Mulch &amp; Rock Installation<br>
+          Tree Trimming<br>
+          Pressure Washing &amp; Roof Cleaning
+        </address>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Gilileo's Landscaping Service · Lakeland, FL</span>
+      <span>Website by <a href="https://falconwebstudio.com" target="_blank" rel="noopener">Falcon Web Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+18632541147" class="btn btn-primary">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call
+  </a>
+  <a href="#contact" class="btn btn-ghost" style="background:#fff">Get a quote</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('contact').scrollIntoView({behavior:'smooth'});});
+document.getElementById('quoteForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var f=ev.target;
+  var body='Name: '+f.name.value+'%0D%0APhone: '+f.phone.value+'%0D%0AEmail: '+f.email.value+'%0D%0AProperty: '+f.property.value+'%0D%0A%0D%0A'+f.message.value;
+  window.location.href='mailto:gilileolandscapingservice@gmail.com?subject='+encodeURIComponent('Quote request from '+(f.name.value||'website'))+'&body='+body;
+});
 </script>
 </body>
 </html>

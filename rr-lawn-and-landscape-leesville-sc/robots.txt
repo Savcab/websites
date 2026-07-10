@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/rr-lawn-and-landscape-leesville-sc/sitemap.xml

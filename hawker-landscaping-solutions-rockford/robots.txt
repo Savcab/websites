@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/hawker-landscaping-solutions-rockford/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://falconwebstudio.com/websites/sogreen-irrigation-mitchell/sitemap.xml

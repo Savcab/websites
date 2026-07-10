@@ -1,0 +1,837 @@
+<!--
+  Mowtivated Lawn Care Services — Spokane, WA. Built on the four-season-snow-landscaper skin.
+  Dual-season lawn care + snow plowing. Snow band kept but photo-less (no winter photo on file):
+  .snow-img dropped (ice-deep ground), snow review card removed, honest first-person snow copy.
+  Phone/form-first (email gate passes) — no text-message links anywhere (textable unconfirmed).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Snow Plowing in Spokane, WA | Mowtivated</title>
+<meta name="description" content="Spokane, WA lawn care and snow plowing: weekly mowing, beds and cleanups in summer, driveway plowing in winter. 5.0&#9733; from 44 Google reviews. Call for a free quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/mowtivated-lawn-care-spokane/">
+<meta name="theme-color" content="#244b3d">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Mowtivated Lawn Care Services — Spokane, WA">
+<meta property="og:description" content="One local crew for every season in Spokane: lawn care &amp; beds in summer, driveway plowing &amp; snow removal in winter.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/mowtivated-lawn-care-spokane/">
+<meta property="og:image" content="https://savcab.github.io/websites/mowtivated-lawn-care-spokane/assets/hero-front-lawn-beds-spokane.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23244b3d'/%3E%3Cpath d='M16 5l5 8h-3l4 7h-4l3 5h-16l3-5h-4l4-7h-3z' fill='%23eef4f0'/%3E%3Ccircle cx='16' cy='27' r='1.6' fill='%237fb0c4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* SPACING — 4/8 grid */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  /* TYPE */
+  --h1:clamp(2.25rem,5.2vw,3.65rem);
+  --h2:clamp(1.7rem,3.4vw,2.6rem);
+  --h3:1.3rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.08; --track-head:-.018em; --track-eye:.16em;
+  /* COLOR — cool New England four-season; never pure black. */
+  --ink:#19272a;      /* cool charcoal-spruce ink ~88% */
+  --ink-2:#54616a;
+  --ink-3:#8a959c;
+  --line:#dde4e1;
+  --paper:#f2f5f3;    /* cool frost paper ground */
+  --paper-2:#e6ece9;  /* tinted alt section */
+  --bg:#ffffff;
+  --spruce:#244b3d;   /* brand green — spruce, year-round base (the 30%) */
+  --spruce-d:#163026; /* dark green sections / hovers */
+  --sage:#5d7d68;     /* mid green secondary */
+  --sage-tint:#dde9e0;
+  --ice:#2c6e88;      /* winter accent (the 10%) — glacier teal-blue, CTAs */
+  --ice-d:#1f5066;    /* hover */
+  --ice-deep:#163b4c; /* snow-band dark ground */
+  --ice-tint:#d6e6ec; /* frost chip / panel */
+  --gold:#c79a3e;     /* star glyphs only */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted, 4 tiers */
+  --sh-1:0 1px 2px rgba(20,35,40,.06);
+  --sh-2:0 2px 5px rgba(20,35,40,.07),0 4px 10px rgba(20,35,40,.05);
+  --sh-3:0 6px 14px rgba(20,35,40,.08),0 16px 30px rgba(20,35,40,.09);
+  --sh-4:0 12px 24px rgba(20,35,40,.10),0 28px 56px rgba(20,35,40,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Spectral",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:700;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--ice);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow.on-dark{color:#9fd0e0}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* responsive copy — condensed text on phones, full copy on laptop */
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--ice);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--ice-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-green{background:var(--spruce);color:#fff;box-shadow:var(--sh-2)}
+.btn-green:hover{background:var(--spruce-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--spruce);color:var(--spruce)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-white{background:#fff;color:var(--ice-deep);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Spectral",serif;font-weight:700;font-size:1.18rem;color:#fff;letter-spacing:-.01em;transition:color var(--t)}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--spruce);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .logo svg{width:23px;height:23px}
+.brand b{font-weight:800}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#9fd0e0;display:block;margin-top:1px}
+.nav{display:flex;align-items:center;gap:.4rem}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.solid{background:rgba(242,245,243,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .brand{color:var(--ink)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--spruce);background:var(--sage-tint)}
+.hdr.solid .call-pill{color:var(--spruce);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill:hover{background:rgba(255,255,255,.12)}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.14);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
+.hdr.solid .burger{background:var(--sage-tint);color:var(--spruce)}
+.burger svg{width:24px;height:24px}
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--spruce-d);display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand{color:#fff}
+.drawer a.dlink{font-family:"Spectral",serif;font-size:1.5rem;font-weight:600;color:#eaf2ec;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,92vh,820px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,30,28,.62) 0%,rgba(15,30,28,.18) 32%,rgba(15,30,28,.30) 62%,rgba(12,25,23,.82) 100%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero .eyebrow{color:#bfe0ce}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:16ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;font-weight:600;color:#bfe0ce}
+.hero .sub{margin-top:1.15rem;font-size:1.15rem;color:rgba(255,255,255,.92);max-width:54ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+/* dual-season strip — the signature */
+.season-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);max-width:680px}
+.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:center;gap:.85rem;color:#fff}
+.season-cell.summer{background:linear-gradient(135deg,var(--spruce) 0%,#2c5a48 100%)}
+.season-cell.winter{background:linear-gradient(135deg,var(--ice) 0%,var(--ice-d) 100%)}
+.season-cell .ci{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
+.season-cell .ci svg{width:23px;height:23px}
+.season-cell .sk{font-family:"Mulish";font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;opacity:.82;display:block}
+.season-cell .sv{font-family:"Spectral";font-weight:600;font-size:1.02rem;line-height:1.25;margin-top:2px}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15.5rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--spruce);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:700}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+/* ===== SNOW BAND — the differentiator ===== */
+.snow{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--ice-deep)}
+.snow-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(15,40,52,.93) 0%,rgba(17,46,60,.82) 42%,rgba(20,55,70,.50) 100%)}
+.snow .wrap{position:relative;padding-block:clamp(4rem,9vw,8rem)}
+.snow h2{font-size:var(--h2);color:#fff;margin-top:.7rem;max-width:18ch}
+.snow .lede{color:rgba(233,244,248,.9);margin-top:1.1rem;max-width:52ch}
+.snow-feats{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.7rem;max-width:560px}
+.snow-feat{display:flex;align-items:center;gap:.7rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-m);padding:.85rem 1rem;font-weight:600;font-size:.95rem}
+.snow-feat .icon{color:#9fd0e0;width:1.35rem;height:1.35rem}
+.snow-cta{margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.snow-note{font-size:.85rem;color:rgba(210,230,236,.75);max-width:42ch;margin-top:1rem}
+/* snowfall */
+.flakes{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.flake{position:absolute;top:-8%;width:6px;height:6px;border-radius:50%;background:#eaf6fa;opacity:0;animation:fall linear infinite;filter:blur(.3px)}
+@keyframes fall{0%{transform:translateY(-10%) translateX(0);opacity:0}10%{opacity:.5}90%{opacity:.45}100%{transform:translateY(115vh) translateX(26px);opacity:0}}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;width:100%;font:inherit;color:inherit;text-align:left}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.05)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(15,30,28,.8));color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center}
+/* ===== TESTIMONIALS ===== */
+.testi{background:var(--spruce-d);color:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.t-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:var(--r-l);padding:1.6rem 1.5rem;display:flex;flex-direction:column}
+.t-card .stars{margin-bottom:.85rem}
+.t-card blockquote{font-family:"Spectral",serif;font-size:1.04rem;line-height:1.56;color:#eaf2ec;font-weight:500;font-style:italic}
+.t-card .by{margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12);font-family:"Mulish";font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.t-card .by .mt{color:rgba(190,214,200,.72);font-weight:600;font-size:.82rem}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap}
+.t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* ===== WHY / CREW ===== */
+.why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(1.6rem,4vw,3.5rem);align-items:center}
+.why-photo{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-3);position:relative;background:var(--paper-2)}
+.why-photo img{aspect-ratio:16/10;width:100%;object-fit:cover}
+.why-photo figcaption{padding:.75rem 1rem;font-size:.82rem;font-weight:600;color:var(--ink-2);background:var(--paper-2);text-align:center}
+.why h2{font-size:var(--h2);margin-top:.7rem}
+.why p{margin-top:1.1rem;color:var(--ink-2)}
+.why-pts{list-style:none;margin-top:1.5rem;display:grid;gap:.7rem}
+.why-pts li{display:flex;align-items:center;gap:.7rem;font-weight:600;color:var(--ink)}
+.why-pts .icon{color:var(--ice);width:1.3rem;height:1.3rem;flex:none}
+/* ===== AREA ===== */
+.area{background:var(--paper-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;margin-top:var(--s5)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--sage)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:380px;border:0;filter:saturate(.92)}
+/* ===== CONTACT ===== */
+.ct-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem;margin-top:var(--s5)}
+.ct-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.ct-sub{color:var(--ink-2);font-size:.98rem}
+/* quote form */
+.qform{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.qform .fld{display:flex;flex-direction:column;min-width:0}
+.qform .full{grid-column:1/-1}
+.qform label{font-family:"Mulish",sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin-bottom:.45rem}
+.qform label .req{color:var(--ice)}
+.qform label .opt{font-weight:600;text-transform:none;letter-spacing:0;color:var(--ink-3);font-size:.8rem}
+.field{font-family:"Mulish",sans-serif;font-size:.98rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:.85rem 1rem;width:100%;transition:border-color var(--t),box-shadow var(--t)}
+.field::placeholder{color:var(--ink-3)}
+.field:focus{outline:none;border-color:var(--ice);box-shadow:0 0 0 3px rgba(44,110,136,.16)}
+.field.err{border-color:#c0492f;box-shadow:0 0 0 3px rgba(192,73,47,.14)}
+textarea.field{resize:vertical;min-height:110px}
+select.field{-webkit-appearance:none;-moz-appearance:none;appearance:none;cursor:pointer;padding-right:2.5rem;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235d7d68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.05rem}
+select.field::-ms-expand{display:none}
+.err-msg{display:none;margin-top:.4rem;font-size:.8rem;font-weight:600;color:#c0492f}
+.err-msg.show{display:block}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:.35rem}
+.form-foot .note{font-size:.88rem;color:var(--ink-2)}
+.send-fallback{grid-column:1/-1;margin-top:.35rem;font-size:.9rem;background:#fbeee9;color:#a83b22;border-radius:var(--r-m);padding:.85rem 1rem}
+.send-fallback a{font-weight:700;text-decoration:underline}
+.qsuccess{display:none;margin-top:1.5rem;background:var(--spruce);color:#fff;border-radius:var(--r-l);padding:2rem 1.7rem;text-align:center;box-shadow:var(--sh-2)}
+.qsuccess.show{display:block}
+.qsuccess .ok{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.12);color:#bfe0ce;display:grid;place-items:center;margin:0 auto}
+.qsuccess .ok svg{width:28px;height:28px}
+.qsuccess h3{color:#fff;font-size:1.4rem;margin-top:1rem}
+.qsuccess p{color:rgba(255,255,255,.8);margin:.6rem auto 0;font-size:.95rem;max-width:38ch}
+.qsuccess .btn{margin-top:1.3rem}
+.hours-panel{background:var(--spruce);color:#fff;border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.hours-panel h3{color:#fff;font-size:1.3rem;display:flex;align-items:center;gap:.6rem}
+.hours-panel h3 .icon{color:#bfe0ce}
+.hours-panel .call-note{margin-top:1.1rem;color:#dceae0;font-size:.98rem;line-height:1.6}
+.hours-panel .call-big{margin-top:1.4rem;width:100%}
+.review-btn{margin-top:.8rem}
+.review-btn .btn{width:100%;background:var(--paper-2);color:var(--spruce);border-color:var(--line)}
+.review-btn .btn:hover{background:var(--sage-tint)}
+.nap{margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#dceae0;line-height:1.6}
+.nap b{color:#fff}
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#c4cdcf}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9aa4a7;max-width:34ch;line-height:1.6}
+.foot-col h4{font-family:"Mulish";font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#7f898c;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c4cdcf;padding:.28rem 0;line-height:1.5}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#828c8f}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(242,245,243,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(20,35,40,.1);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,22,20,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#eaf2ec;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(22px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:920px){
+  .why-grid,.area-grid,.ct-grid{grid-template-columns:1fr}
+  .why-photo{order:-1}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav .link,.nav .btn,.call-pill{display:none}
+  .burger{display:grid}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:5.5rem}
+  /* compact wordmark so it never wraps past the bar / overlaps content */
+  .hdr-in{height:64px}
+  .hdr-in .brand{font-size:1.06rem;line-height:1.1}
+  .hdr-in .brand .logo{width:34px;height:34px}
+  .hdr-in .brand .logo svg{width:20px;height:20px}
+  .hdr-in .brand .yr{display:none}
+  /* hero flows from just below the fixed header — no flex-end overflow under it */
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:540px){
+  .season-strip{grid-template-columns:1fr}
+  .snow-feats{grid-template-columns:1fr}
+  .qform{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-snow" viewBox="0 0 24 24"><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/><path d="m20 16-4-4 4-4"/><path d="m4 8 4 4-4 4"/><path d="m16 4-4 4-4-4"/><path d="m8 20 4-4 4 4"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-trees" viewBox="0 0 24 24"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 18.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-shovel" viewBox="0 0 24 24"><path d="M2 22v-5l5.5-5.5 5 5L7 22z"/><path d="M9.5 9.5 16 3"/><path d="M14 3h7v7"/><path d="M14 10 21 3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Mowtivated Lawn Care Services home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/><circle cx="16" cy="28" r="1.5" style="fill:#7fb0c4"/></svg></span>
+      <span>Mowtivated <b>Lawn Care</b><span class="yr">Lawn &amp; Snow &middot; Spokane, WA</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#snow">Snow &amp; Ice</a>
+      <a class="link" href="#work">Our Work</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>(509) 306-4277</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Mowtivated</span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#snow">Snow &amp; Ice</a>
+  <a class="dlink" href="#work">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>Call (509) 306-4277</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="assets/hero-front-lawn-beds-spokane.webp" alt="Finished front yard in Spokane with a striped lawn, mulch beds and blue spruces" width="1200" height="675" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow"><span class="tick"></span>Lawn care &amp; snow management &middot; Spokane, WA</span>
+    <h1>Lawn care through summer, snow cleared through winter &mdash; <em>one Spokane crew</em>.</h1>
+    <p class="sub"><span class="only-lap">From weekly mowing, fresh beds and fall cleanups to driveways plowed before you head out &mdash; one local crew looks after your Spokane property through every season.</span><span class="only-mob">One local crew for your lawn, beds and snow &mdash; every Spokane season.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost on-dark" href="#work">See our work</a>
+    </div>
+    <a class="rate-badge" href="https://maps.google.com/?cid=11993950265017180923" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+      <span><b>5.0</b> &middot; 44 Google reviews</span>
+    </a>
+    <div class="season-strip" role="presentation">
+      <div class="season-cell summer">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-sun"/></svg></span>
+        <span><span class="sk">Spring &ndash; Fall</span><span class="sv">Lawn care, beds &amp; cleanups</span></span>
+      </div>
+      <div class="season-cell winter">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <span><span class="sk">First snow &ndash; Spring</span><span class="sv">Plowing &amp; storm response</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>What we do</span>
+      <h2>Property care that keeps up with the seasons.</h2>
+      <p class="lede">A short, honest list of the work we actually do &mdash; the lawns, beds, cleanups and snow that keep Spokane yards looking sharp from the first mow to the last storm.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-sprout"/></svg></span>
+        <h3>Lawn care &amp; mowing</h3>
+        <p>Weekly mowing, edging and aeration that keep your lawn striped, even and healthy &mdash; from the first cut of spring to the last of fall.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        <h3>Beds, mulch &amp; sod</h3>
+        <p>Bark and rock install, fresh mulch and new sod &mdash; the groundwork that makes a yard read cared-for instead of overgrown.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-trees"/></svg></span>
+        <h3>Cleanups &amp; weed control</h3>
+        <p>Fall cleanups, leaf removal and weed control that reset the whole property and keep beds and turf clean through the season.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-snow"/></svg></span>
+        <h3>Snow &amp; ice management</h3>
+        <p>Driveways and walkways plowed and cleared through Spokane winters &mdash; per-storm or for the whole season. <a href="#snow" style="color:var(--ice);font-weight:700">See winter services &rarr;</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SNOW BAND — the differentiator (photo-less: no winter photo on file; ice-deep ground) -->
+<section class="snow" id="snow">
+  <div class="snow-scrim"></div>
+  <div class="flakes" aria-hidden="true" id="flakes"></div>
+  <div class="wrap">
+    <div class="snow-copy rv" style="max-width:640px">
+      <span class="eyebrow on-dark"><span class="tick"></span>Winter service</span>
+      <h2>Snow &amp; ice management, all winter long.</h2>
+      <p class="lede">When a storm rolls through, we plow driveways and clear walkways so you can get out the door. It&rsquo;s the same local crew that cuts your lawn in summer &mdash; one number, both seasons.</p>
+      <div class="snow-feats">
+        <div class="snow-feat"><svg class="icon"><use href="#i-truck"/></svg>Driveway plowing</div>
+        <div class="snow-feat"><svg class="icon"><use href="#i-shovel"/></svg>Walkway &amp; sidewalk clearing</div>
+        <div class="snow-feat"><svg class="icon"><use href="#i-snow"/></svg>Per-storm or seasonal</div>
+        <div class="snow-feat"><svg class="icon"><use href="#i-clock"/></svg>Storm-response</div>
+      </div>
+      <div class="snow-cta">
+        <a class="btn btn-white" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>Reserve your winter spot</a>
+        <a class="btn btn-ghost on-dark" href="#contact">Get a free quote</a>
+      </div>
+      <p class="snow-note">Take us on for the whole season, or call for a one-time plow after the next storm.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Recent work</span>
+      <h2>A look at what we&rsquo;ve been up to.</h2>
+      <p class="lede">Real lawns, beds and finished yards from around Spokane and the surrounding area.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="gal-item rv" type="button"><img src="assets/garden-bed-spruce-lavender.webp" alt="Planting bed with a blue spruce and lavender beside a striped lawn" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Planting bed with spruce &amp; lavender</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/park-like-striped-lawn.webp" alt="Park-like striped lawn with mature trees and planting beds" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Park-like striped lawn &amp; mature trees</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/fresh-mowed-lawn-home.webp" alt="Freshly mowed residential lawn with a driveway and pine trees" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Freshly mowed residential lawn</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/cottage-garden-plantings.webp" alt="Cottage garden plantings with a pair of Adirondack chairs" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Cottage garden plantings</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/shaped-boxwood-hedges.webp" alt="Neatly shaped boxwood spheres on a trimmed lawn" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Shaped boxwood &amp; shrubs</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/striped-lawn-country-view.webp" alt="Striped lawn framed by a porch overlooking open country" width="1000" height="750" loading="lazy" decoding="async"><span class="gal-cap">Striped lawn with a country view</span></button>
+    </div>
+    <p class="gal-note">Photos straight from our Google Business listing.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testi" id="reviews">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow on-dark"><span class="tick"></span>In our neighbors&rsquo; words</span>
+      <h2>What Spokane neighbors say.</h2>
+    </div>
+    <div class="t-grid">
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>I called several places and my yard was already taken care of before the other places even called me back.</blockquote>
+        <figcaption class="by">Tracy Clark <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>Alex was on it in no time. He sent the estimate, scheduled the work, and he and his crew showed up right on time.</blockquote>
+        <figcaption class="by">Becky <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+    </div>
+    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>5.0</b> out of 5 &middot; 44 Google reviews &middot; <a href="https://maps.google.com/?cid=11993950265017180923" target="_blank" rel="noopener">Read them on Google</a></p>
+  </div>
+</section>
+
+<!-- WHY / CREW -->
+<section class="section" id="why">
+  <div class="wrap why-grid">
+    <figure class="why-photo rv">
+      <img src="assets/crew-mowing-zero-turn.webp" alt="Our crew mowing a backyard lawn with a zero-turn mower in Spokane" width="1200" height="750" loading="lazy" decoding="async">
+      <figcaption>Our crew keeps Spokane lawns cut all season.</figcaption>
+    </figure>
+    <div class="why rv">
+      <span class="eyebrow"><span class="tick"></span>One local crew</span>
+      <h2>One crew, one number, all year.</h2>
+      <p>We&rsquo;re a small crew based right here in Spokane. The same people who stripe your lawn in summer plow your driveway in winter &mdash; so you&rsquo;ve got one number to call all year, and someone who already knows your property.</p>
+      <ul class="why-pts">
+        <li><svg class="icon"><use href="#i-check"/></svg>Lawn care &amp; snow plowing under one local crew</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Quick to answer, quick to show up</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Free quotes &mdash; just give us a call</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:1.7rem">
+        <a class="btn btn-green" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>Where we work</span>
+      <h2>Serving Spokane &amp; the surrounding area.</h2>
+    </div>
+    <div class="area-grid">
+      <div class="rv">
+        <p class="lede">Based off Bigelow Gulch Road, we cover Spokane and the towns around us for both lawn care and winter snow removal:</p>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Spokane</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Spokane Valley</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Mead</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Millwood</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Liberty Lake</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Otis Orchards</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Colbert</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Veradale</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Newman Lake</span>
+        </div>
+        <p class="note">Not sure if you&rsquo;re in range? Give us a call &mdash; we cover most of the Spokane area and the nearby towns.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Mowtivated Lawn Care Services service area in Spokane, Washington" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-117.2907137%2C47.7156655%2C-117.2787137%2C47.7276655&amp;layer=mapnik&amp;marker=47.7216655%2C-117.2847137"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Get a free quote</span>
+      <h2>Tell us about your property.</h2>
+      <p class="lede">Send a few details and we&rsquo;ll get back to you &mdash; usually the same day &mdash; with a free, no-pressure quote. Prefer to talk? Give us a call.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-card rv">
+        <span class="eyebrow"><span class="tick"></span>Send a request</span>
+        <p class="ct-sub" style="margin:.7rem 0 0">Just your name and one way to reach you is enough &mdash; the rest helps us quote faster.</p>
+        <form id="quoteform" class="qform" novalidate>
+          <div class="fld">
+            <label for="q-name">Name <span class="req">*</span></label>
+            <input id="q-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="q-name-err" class="field" placeholder="Jane Doe">
+            <p id="q-name-err" class="err-msg">Please tell us your name.</p>
+          </div>
+          <div class="fld">
+            <label for="q-phone">Phone</label>
+            <input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err" class="field" placeholder="(509) 000-0000">
+            <p id="q-phone-err" class="err-msg">Please enter a valid phone number.</p>
+          </div>
+          <div class="fld">
+            <label for="q-email">Email</label>
+            <input id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err" class="field" placeholder="you@email.com">
+            <p id="q-email-err" class="err-msg">Please enter a valid email address.</p>
+          </div>
+          <div class="fld">
+            <label for="q-service">Service <span class="opt">(optional)</span></label>
+            <select id="q-service" name="service" class="field">
+              <option>Lawn care &amp; mowing</option>
+              <option>Beds, mulch &amp; sod</option>
+              <option>Cleanups &amp; weed control</option>
+              <option>Snow &amp; ice management</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="full">
+            <p id="q-contact-err" class="err-msg">Please add a phone or email so we can reach you.</p>
+          </div>
+          <div class="fld full">
+            <label for="q-address">Property address <span class="req">*</span></label>
+            <input id="q-address" name="address" type="text" autocomplete="street-address" required aria-required="true" aria-describedby="q-address-err" class="field" placeholder="Street, City, ZIP">
+            <p id="q-address-err" class="err-msg">Please add the property address.</p>
+          </div>
+          <div class="fld full">
+            <label for="q-message">What are you looking for? <span class="opt">(optional)</span></label>
+            <textarea id="q-message" name="message" rows="4" class="field" placeholder="Lawn size, the look you're after, timing — anything helps."></textarea>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary">Send my request <svg class="icon"><use href="#i-arrow"/></svg></button>
+            <p class="note">Prefer to call? <a href="tel:+15093064277" style="color:var(--ice);font-weight:700">(509) 306-4277</a></p>
+          </div>
+        </form>
+        <div id="quotesuccess" class="qsuccess">
+          <div class="ok" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
+          <h3>Thank you &mdash; request received.</h3>
+          <p id="successmsg">We&rsquo;ll reach out shortly with your free quote. For anything urgent, call (509) 306-4277.</p>
+          <a class="btn btn-white" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>Call (509) 306-4277</a>
+        </div>
+      </div>
+      <div class="hours-panel rv">
+        <h3><svg class="icon"><use href="#i-clock"/></svg>Hours</h3>
+        <p class="call-note">We don&rsquo;t keep set office hours &mdash; give us a call and we&rsquo;ll pick up or get right back to you.</p>
+        <a class="btn btn-white call-big" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>Call (509) 306-4277</a>
+        <div class="review-btn">
+          <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJFUb86YofnlQR-yINKDgSc6Y" target="_blank" rel="noopener"><svg class="icon fill" style="color:var(--gold)"><use href="#i-star"/></svg>Leave us a Google review</a>
+        </div>
+        <div class="nap">
+          <b>Mowtivated Lawn Care Services</b><br>
+          8904 E Bigelow Gulch Rd, Spokane, WA 99217<br>
+          <a href="tel:+15093064277" style="color:#fff;font-weight:700">(509) 306-4277</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Mowtivated <b style="font-weight:800;margin-left:.25rem">Lawn Care</b></span>
+      <p>Lawn care through summer and snow plowing through winter &mdash; one local crew for your Spokane, Washington property, all year.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="#services">Services</a>
+      <a href="#snow">Snow &amp; Ice</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </div>
+    <div class="foot-col">
+      <h4>Get in touch</h4>
+      <a href="tel:+15093064277">(509) 306-4277</a>
+      <a href="mailto:mowtivatedlawncareservices@gmail.com">Email us</a>
+      <p>8904 E Bigelow Gulch Rd<br>Spokane, WA 99217</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJFUb86YofnlQR-yINKDgSc6Y" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Mowtivated Lawn Care Services &middot; Spokane, WA</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 5.0 &middot; 44 Google reviews</span>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+15093064277"><svg class="icon"><use href="#i-phone"/></svg>Call (509) 306-4277</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-cl"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Mowtivated Lawn Care Services",
+  "description":"Lawn care, mowing and snow & ice management serving Spokane, Washington and the surrounding area.",
+  "image":"https://savcab.github.io/websites/mowtivated-lawn-care-spokane/assets/hero-front-lawn-beds-spokane.webp",
+  "url":"https://savcab.github.io/websites/mowtivated-lawn-care-spokane/",
+  "telephone":"+15093064277",
+  "email":"mowtivatedlawncareservices@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"8904 E Bigelow Gulch Rd","addressLocality":"Spokane","addressRegion":"WA","postalCode":"99217","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":47.7216655,"longitude":-117.2847137},
+  "areaServed":[
+    {"@type":"City","name":"Spokane"},
+    {"@type":"City","name":"Spokane Valley"},
+    {"@type":"City","name":"Mead"},
+    {"@type":"City","name":"Millwood"},
+    {"@type":"City","name":"Liberty Lake"},
+    {"@type":"City","name":"Otis Orchards"},
+    {"@type":"City","name":"Colbert"},
+    {"@type":"City","name":"Veradale"},
+    {"@type":"City","name":"Newman Lake"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // drawer
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});
+
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  // snowfall (subtle; auto-disabled under reduced-motion via CSS)
+  var fl=document.getElementById('flakes');
+  if(fl&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+    for(var f=0;f<9;f++){
+      var s=document.createElement('span');s.className='flake';
+      s.style.left=(Math.random()*100)+'%';
+      var sz=(4+Math.random()*5);s.style.width=sz+'px';s.style.height=sz+'px';
+      s.style.animationDuration=(11+Math.random()*9)+'s';
+      s.style.animationDelay=(-Math.random()*16)+'s';
+      s.style.opacity=(.22+Math.random()*.3);
+      fl.appendChild(s);
+    }
+  }
+
+  // lightbox
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function open(i){idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;open(i);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')open(idx+1);else if(e.key==='ArrowLeft')open(idx-1);});
+
+  // quote form — name + address required, at least one valid contact method
+  var form=document.getElementById('quoteform'),success=document.getElementById('quotesuccess');
+  if(form){
+    function validEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+    function digits(v){return (v.match(/\d/g)||[]).length;}
+    var qName=document.getElementById('q-name'),qNameErr=document.getElementById('q-name-err');
+    var qPhone=document.getElementById('q-phone'),qPhoneErr=document.getElementById('q-phone-err');
+    var qEmail=document.getElementById('q-email'),qEmailErr=document.getElementById('q-email-err');
+    var qAddress=document.getElementById('q-address'),qAddressErr=document.getElementById('q-address-err');
+    var qContactErr=document.getElementById('q-contact-err');
+    function setErr(el,err,bad){
+      if(bad){el.classList.add('err');el.setAttribute('aria-invalid','true');if(err){err.setAttribute('role','alert');err.classList.add('show');}}
+      else{el.classList.remove('err');el.removeAttribute('aria-invalid');if(err)err.classList.remove('show');}
+    }
+    function validateQuote(){
+      var ok=true;
+      var nameOk=qName.value.trim().length>=2;setErr(qName,qNameErr,!nameOk);if(!nameOk)ok=false;
+      var addressOk=qAddress.value.trim().length>=4;setErr(qAddress,qAddressErr,!addressOk);if(!addressOk)ok=false;
+      var phoneVal=qPhone.value.trim(),emailVal=qEmail.value.trim();
+      var phoneBad=phoneVal.length>0&&digits(phoneVal)<10;setErr(qPhone,qPhoneErr,phoneBad);if(phoneBad)ok=false;
+      var emailBad=emailVal.length>0&&!validEmail(emailVal);setErr(qEmail,qEmailErr,emailBad);if(emailBad)ok=false;
+      var hasContact=(phoneVal.length>0&&!phoneBad)||(emailVal.length>0&&!emailBad);
+      if(!hasContact){qContactErr.setAttribute('role','alert');qContactErr.classList.add('show');if(!phoneBad&&!emailBad){qPhone.classList.add('err');qPhone.setAttribute('aria-invalid','true');qEmail.classList.add('err');qEmail.setAttribute('aria-invalid','true');}ok=false;}
+      else{qContactErr.classList.remove('show');}
+      return ok;
+    }
+    [qName,qAddress,qPhone,qEmail].forEach(function(el){el.addEventListener('input',function(){if(!form.dataset.tried)return;validateQuote();});});
+    var FS_URL='https://formsubmit.co/ajax/mowtivatedlawncareservices@gmail.com';
+    function sendForm(payload){
+      return fetch(FS_URL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)})
+        .then(function(r){return r.json().catch(function(){return{};}).then(function(j){
+          if(r.ok&&(j.success===undefined||j.success===true||j.success==='true'))return true;
+          throw new Error((j&&j.message)||'send failed');
+        });});
+    }
+    function setBusy(btn,on){if(btn){btn.disabled=!!on;if(on)btn.setAttribute('aria-busy','true');else btn.removeAttribute('aria-busy');}}
+    function sendFail(formEl,btn){
+      setBusy(btn,false);
+      var b=formEl.querySelector('.send-fallback');
+      if(!b){b=document.createElement('p');b.className='send-fallback';b.setAttribute('role','alert');formEl.appendChild(b);}
+      b.innerHTML='That didn’t go through. Please call <a href="tel:+15093064277">(509) 306-4277</a> or email <a href="mailto:mowtivatedlawncareservices@gmail.com">mowtivatedlawncareservices@gmail.com</a> — we’ll get right back to you.';
+      b.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      form.dataset.tried='1';
+      if(!validateQuote()){var firstBad=form.querySelector('.err');if(firstBad)firstBad.focus();return;}
+      var data={};new FormData(form).forEach(function(v,k){data[k]=v;});
+      var name=(data.name||'').trim().split(' ')[0];
+      document.getElementById('successmsg').textContent=(name?'Thanks, '+name+' — ':'Thanks — ')+"we'll be in touch shortly with your free quote, usually the same day. For anything urgent, call (509) 306-4277.";
+      var btn=form.querySelector('button[type=submit]');setBusy(btn,true);
+      sendForm({_subject:'New quote request from your website',_template:'table',Name:data.name||'',Email:data.email||'',Phone:data.phone||'',Service:data.service||'',Address:data.address||'',Message:data.message||''})
+        .then(function(){form.style.display='none';success.classList.add('show');success.scrollIntoView({behavior:'smooth',block:'center'});})
+        .catch(function(){sendFail(form,btn);});
+    });
+  }
+})();
+</script>
+</body>
+</html>

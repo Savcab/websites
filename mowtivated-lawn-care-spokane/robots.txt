@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/mowtivated-lawn-care-spokane/sitemap.xml

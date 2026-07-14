@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/falzone-landscaping-design-st-james/sitemap.xml

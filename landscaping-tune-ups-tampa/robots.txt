@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/landscaping-tune-ups-tampa/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/2js-lawn-care-hudson-fl/sitemap.xml

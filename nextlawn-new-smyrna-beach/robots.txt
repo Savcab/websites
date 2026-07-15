@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/nextlawn-new-smyrna-beach/sitemap.xml

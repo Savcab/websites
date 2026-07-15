@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/zapetas-lawn-fort-pierce/sitemap.xml

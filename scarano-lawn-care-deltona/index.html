@@ -1,0 +1,590 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Care & Revitalization in Deltona, FL | Scarano Lawn Care</title>
+<meta name="description" content="Scarano Lawn Care revitalizes and maintains lawns in Deltona and Central Florida. We assess your lawn, build a custom treatment plan, and keep it thriving. Call (386) 232-6089.">
+<meta name="theme-color" content="#16A34A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A; --slate:#475569; --muted:#64748B; --line:#E2E8F0;
+    --bg:#FFFFFF; --panel:#F7F8FA; --tint:#F0FDF4; --tint2:#DCFCE7;
+    --green:#16A34A; --green-d:#15803D; --green-dd:#166534;
+    --shadow:0 10px 30px rgba(15,23,42,.06); --shadow-lg:0 20px 45px rgba(15,23,42,.10);
+    --star:#22C55E;
+    --r-lg:1rem; --r-xl:1.25rem; --r-2xl:1.5rem;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased;
+    overflow-x:clip;
+  }
+  h1,h2,h3{font-family:'Manrope','Inter',sans-serif; line-height:1.12; letter-spacing:-.02em; margin:0}
+  p{margin:0}
+  a{color:inherit; text-decoration:none}
+  img{max-width:100%; display:block}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-family:'Manrope',sans-serif;
+    font-weight:600; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--green-d); background:var(--tint); border:1px solid var(--tint2);
+    padding:6px 12px; border-radius:999px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    font-family:'Manrope',sans-serif; font-weight:700; font-size:1rem;
+    padding:14px 22px; border-radius:999px; border:1px solid transparent;
+    cursor:pointer; transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn svg{width:19px; height:19px}
+  .btn-primary{background:var(--green); color:#fff; box-shadow:0 8px 20px rgba(22,163,74,.28)}
+  .btn-primary:hover{background:var(--green-d); transform:translateY(-1px)}
+  .btn-ghost{background:#fff; color:var(--ink); border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--green); color:var(--green-d); transform:translateY(-1px)}
+  .btn-white{background:#fff; color:var(--green-dd)}
+  .btn-white:hover{transform:translateY(-1px); box-shadow:var(--shadow-lg)}
+  .btn-outline-w{background:transparent; color:#fff; border-color:rgba(255,255,255,.55)}
+  .btn-outline-w:hover{background:rgba(255,255,255,.12)}
+
+  /* header */
+  header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.86);
+    backdrop-filter:saturate(160%) blur(10px); border-bottom:1px solid var(--line)}
+  .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; height:70px}
+  .brand{display:flex; align-items:center; gap:10px}
+  .brand img{height:40px; width:auto}
+  .brand .sr{position:absolute; left:-9999px}
+  .nav-links{display:none; align-items:center; gap:28px}
+  .nav-links a{font-family:'Manrope',sans-serif; font-weight:600; font-size:.95rem; color:var(--slate)}
+  .nav-links a:hover{color:var(--green-d)}
+  .nav-cta{display:flex; align-items:center; gap:10px}
+  .nav-phone{display:none; align-items:center; gap:7px; font-family:'Manrope',sans-serif;
+    font-weight:700; color:var(--ink)}
+  .nav-phone svg{width:18px; height:18px; color:var(--green)}
+
+  /* hero */
+  .hero{padding:56px 0 40px}
+  .hero-grid{display:grid; grid-template-columns:1fr; gap:34px; align-items:center}
+  .hero h1{font-size:2.25rem; font-weight:800; margin:18px 0 0}
+  .hero .lead{margin-top:16px; font-size:1.1rem; color:var(--slate); max-width:38ch}
+  .rating-inline{display:flex; align-items:center; gap:10px; margin-top:22px; flex-wrap:wrap}
+  .stars{display:inline-flex; gap:2px}
+  .stars svg{width:19px; height:19px; color:var(--star); fill:var(--star)}
+  .rating-inline b{font-family:'Manrope',sans-serif}
+  .rating-inline span{color:var(--muted); font-size:.95rem}
+  .hero-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+  .since{margin-top:18px; display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:.92rem}
+  .since svg{width:16px; height:16px; color:var(--green)}
+  .hero-media{position:relative}
+  .hero-media img{width:100%; height:auto; border-radius:var(--r-2xl); box-shadow:var(--shadow-lg)}
+  .hero-badge{position:absolute; left:16px; bottom:16px; background:rgba(255,255,255,.94);
+    backdrop-filter:blur(4px); border:1px solid var(--line); border-radius:var(--r-lg);
+    padding:11px 15px; box-shadow:var(--shadow); display:flex; align-items:center; gap:11px}
+  .hero-badge svg{width:26px; height:26px; color:var(--green)}
+  .hero-badge .t{font-family:'Manrope',sans-serif; font-weight:700; font-size:.95rem; line-height:1.15}
+  .hero-badge .s{font-size:.78rem; color:var(--muted)}
+
+  /* trust strip */
+  .trust{background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .trust-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line)}
+  .trust-cell{background:var(--panel); padding:26px 18px; text-align:center}
+  .trust-cell .n{font-family:'Manrope',sans-serif; font-weight:800; font-size:1.7rem; color:var(--green-d)}
+  .trust-cell .l{font-size:.86rem; color:var(--muted); margin-top:3px}
+
+  /* section shells */
+  section{scroll-margin-top:82px}
+  .band{padding:66px 0}
+  .band.alt{background:var(--panel)}
+  .sec-head{max-width:620px; margin:0 auto 44px; text-align:center}
+  .sec-head h2{font-size:1.85rem; font-weight:800; margin-top:12px}
+  .sec-head p{margin-top:14px; color:var(--slate); font-size:1.05rem}
+
+  /* how it works */
+  .steps{display:grid; grid-template-columns:1fr; gap:22px}
+  .step{position:relative; background:#fff; border:1px solid var(--line); border-radius:var(--r-2xl);
+    padding:30px 26px; box-shadow:var(--shadow)}
+  .step .num{position:absolute; top:-16px; left:26px; width:38px; height:38px; border-radius:12px;
+    background:var(--green); color:#fff; font-family:'Manrope',sans-serif; font-weight:800;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(22,163,74,.3)}
+  .step .ic{width:46px; height:46px; border-radius:14px; background:var(--tint);
+    display:flex; align-items:center; justify-content:center; margin:10px 0 16px}
+  .step .ic svg{width:24px; height:24px; color:var(--green-d)}
+  .step h3{font-size:1.2rem; font-weight:700}
+  .step p{margin-top:9px; color:var(--slate); font-size:.98rem}
+
+  /* services */
+  .svc{display:grid; grid-template-columns:1fr; gap:20px}
+  .card{background:#fff; border:1px solid var(--line); border-radius:var(--r-xl);
+    padding:26px 24px; box-shadow:var(--shadow); transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease}
+  .card:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg); border-color:var(--tint2)}
+  .card .ic{width:48px; height:48px; border-radius:14px; background:var(--tint);
+    display:flex; align-items:center; justify-content:center; margin-bottom:15px}
+  .card .ic svg{width:25px; height:25px; color:var(--green-d)}
+  .card h3{font-size:1.14rem; font-weight:700}
+  .card p{margin-top:8px; color:var(--slate); font-size:.96rem}
+
+  /* gallery */
+  .gal{display:grid; grid-template-columns:repeat(2,1fr); gap:14px}
+  .gfig{margin:0; position:relative; border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--shadow); background:var(--panel)}
+  .gfig .ph{width:100%; aspect-ratio:4/5; overflow:hidden}
+  .gfig img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease}
+  .gfig:hover img{transform:scale(1.04)}
+  .gcap{position:absolute; left:0; right:0; bottom:0; padding:16px 14px 11px;
+    background:linear-gradient(to top, rgba(15,23,42,.72), transparent);
+    color:#fff; font-family:'Manrope',sans-serif; font-weight:600; font-size:.83rem}
+
+  /* reviews */
+  .rev-top{text-align:center; margin-bottom:38px}
+  .rev-agg{display:inline-flex; align-items:center; gap:12px; background:#fff; border:1px solid var(--line);
+    border-radius:999px; padding:12px 22px; box-shadow:var(--shadow); flex-wrap:wrap; justify-content:center}
+  .rev-agg b{font-family:'Manrope',sans-serif; font-size:1.25rem}
+  .rev-agg span{color:var(--muted); font-size:.95rem}
+  .revs{display:grid; grid-template-columns:1fr; gap:22px}
+  .quote{background:#fff; border:1px solid var(--line); border-radius:var(--r-2xl); padding:30px 28px; box-shadow:var(--shadow)}
+  .quote .qi{width:34px; height:34px; color:var(--tint2)}
+  .quote .qi svg{width:34px; height:34px; color:var(--green); opacity:.32}
+  .quote p{margin-top:8px; font-size:1.05rem; color:var(--ink); line-height:1.6}
+  .quote .who{display:flex; align-items:center; gap:12px; margin-top:20px}
+  .quote .av{width:42px; height:42px; border-radius:999px; background:var(--tint); color:var(--green-dd);
+    display:flex; align-items:center; justify-content:center; font-family:'Manrope',sans-serif; font-weight:800}
+  .quote .who .nm{font-family:'Manrope',sans-serif; font-weight:700; font-size:.98rem}
+  .quote .who .pl{display:flex; align-items:center; gap:5px; color:var(--muted); font-size:.82rem; margin-top:1px}
+  .quote .who .pl svg{width:13px; height:13px; color:var(--star); fill:var(--star)}
+
+  /* contact */
+  .contact{display:grid; grid-template-columns:1fr; gap:30px}
+  .info h3{font-size:1.5rem; font-weight:800}
+  .rows{margin-top:22px; display:flex; flex-direction:column; gap:2px}
+  .row{display:flex; gap:14px; align-items:flex-start; padding:15px 0; border-top:1px solid var(--line)}
+  .row:first-child{border-top:0}
+  .row .ic{flex:0 0 auto; width:40px; height:40px; border-radius:12px; background:var(--tint);
+    display:flex; align-items:center; justify-content:center}
+  .row .ic svg{width:20px; height:20px; color:var(--green-d)}
+  .row .k{font-family:'Manrope',sans-serif; font-weight:700; font-size:.95rem}
+  .row .v{color:var(--slate); font-size:.96rem}
+  .row a.v:hover{color:var(--green-d)}
+  .hours{margin-top:6px; width:100%}
+  .hours .hr{display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px dashed var(--line); font-size:.95rem}
+  .hours .hr:last-child{border-bottom:0}
+  .hours .hr .d{color:var(--slate)}
+  .hours .hr .h{font-family:'Manrope',sans-serif; font-weight:600}
+  .hours .hr .closed{color:var(--muted); font-weight:600}
+  .contact-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+  .map{border-radius:var(--r-2xl); overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); min-height:340px}
+  .map iframe{width:100%; height:100%; min-height:340px; border:0; display:block}
+
+  /* cta band */
+  .cta-band{background:linear-gradient(135deg,var(--green-d),var(--green-dd)); color:#fff}
+  .cta-inner{text-align:center; padding:60px 0}
+  .cta-inner h2{font-size:2rem; font-weight:800; color:#fff}
+  .cta-inner p{margin:14px auto 0; max-width:46ch; color:rgba(255,255,255,.9); font-size:1.08rem}
+  .cta-btns{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:28px}
+
+  /* footer */
+  footer{background:#0B1220; color:#CBD5E1; padding:52px 0 30px}
+  .foot-grid{display:grid; grid-template-columns:1fr; gap:30px}
+  .foot img{height:44px; width:auto; background:#fff; padding:8px 12px; border-radius:12px}
+  .foot p{color:#94A3B8; font-size:.93rem; margin-top:14px; max-width:34ch}
+  .foot h4{font-family:'Manrope',sans-serif; color:#fff; font-size:.95rem; font-weight:700; margin:0 0 12px; letter-spacing:.02em}
+  .foot a{color:#CBD5E1}
+  .foot a:hover{color:#fff}
+  .foot ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; font-size:.93rem}
+  .foot .area{color:#94A3B8; font-size:.9rem; line-height:1.7}
+  .foot-bottom{border-top:1px solid #1E293B; margin-top:38px; padding-top:22px;
+    display:flex; flex-wrap:wrap; gap:8px; justify-content:space-between; color:#64748B; font-size:.85rem}
+
+  /* responsive */
+  @media(min-width:640px){
+    .trust-grid{grid-template-columns:repeat(4,1fr)}
+    .svc{grid-template-columns:repeat(2,1fr)}
+    .gal{grid-template-columns:repeat(3,1fr)}
+    .revs{grid-template-columns:repeat(2,1fr)}
+    .cta-inner h2{font-size:2.4rem}
+  }
+  @media(min-width:820px){
+    .steps{grid-template-columns:repeat(3,1fr)}
+    .contact{grid-template-columns:1fr 1fr; align-items:stretch}
+  }
+  @media(min-width:960px){
+    .nav-links{display:flex}
+    .nav-phone{display:inline-flex}
+    .hero{padding:76px 0 56px}
+    .hero-grid{grid-template-columns:1.05fr .95fr; gap:48px}
+    .hero h1{font-size:3.1rem}
+    .sec-head h2{font-size:2.3rem}
+    .svc{grid-template-columns:repeat(3,1fr)}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1.2fr}
+  }
+</style>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Scarano Lawn Care home">
+      <img src="assets/logo.jpg" width="640" height="369" alt="Scarano Lawn Care logo">
+      <span class="sr">Scarano Lawn Care</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+13862326089">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (386) 232-6089
+      </a>
+      <a class="btn btn-primary" href="tel:+13862326089">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call now
+      </a>
+    </div>
+  </div>
+</header>
+
+<a id="top"></a>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M12 20v-8"/><path d="M12 12c0-3 2-5 5-5 0 3-2 5-5 5Z"/><path d="M12 12c0-3-2-5-5-5 0 3 2 5 5 5Z"/></svg>
+          Lawn revitalization &amp; care · Deltona, FL
+        </span>
+        <h1>A greener, healthier lawn &mdash; explained every step of the way.</h1>
+        <p class="lead">We assess what your lawn actually needs, build a custom treatment plan, and keep it thriving all year. No guesswork &mdash; just a clear plan and consistent care.</p>
+        <div class="rating-inline">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+          <b>5.0</b><span>· 36 reviews on Google</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+13862326089">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (386) 232-6089
+          </a>
+          <a class="btn btn-ghost" href="sms:+13862326089">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text us
+          </a>
+        </div>
+        <span class="since">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Serving Deltona &amp; Central Florida since 2019
+        </span>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero.jpg" width="1600" height="1200" fetchpriority="high" decoding="async" alt="Lush, freshly cared-for green front lawn at a Deltona home maintained by Scarano Lawn Care">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div>
+            <div class="t">Custom treatment plans</div>
+            <div class="s">Built for your lawn, not a template</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-grid">
+        <div class="trust-cell"><div class="n">5.0</div><div class="l">Average Google rating</div></div>
+        <div class="trust-cell"><div class="n">36</div><div class="l">Google reviews</div></div>
+        <div class="trust-cell"><div class="n">Since 2019</div><div class="l">Serving Central Florida</div></div>
+        <div class="trust-cell"><div class="n">6</div><div class="l">Towns served</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">How it works</span>
+        <h2>A clear plan, from first look to lasting green</h2>
+        <p>Lawn revitalization is our specialty &mdash; and we treat it like one. Here's exactly how we bring a tired lawn back and keep it that way.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>Assessment</h3>
+          <p>We walk your property, look at soil and turf health, and pinpoint what's holding your lawn back &mdash; not just what's on the surface.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+          <h3>Custom plan</h3>
+          <p>You get a straightforward treatment plan &mdash; fertilization, weed control, and timing &mdash; built around your lawn's real needs.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></div>
+          <h3>Ongoing care</h3>
+          <p>We show up on schedule and cover every inch, adjusting the plan as your lawn improves through the seasons.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="band alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Lawn care services in Deltona</h2>
+        <p>Everything a Central Florida lawn needs to go from thin and tired to full, even, and green.</p>
+      </div>
+      <div class="svc">
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9Z"/><path d="M12 22c0-4.97-4.03-9-9-9 0 4.97 4.03 9 9 9Z"/><path d="M12 13V2"/><path d="M9 5l3-3 3 3"/></svg></div>
+          <h3>Lawn Fertilization</h3>
+          <p>Targeted nutrients that feed the soil and bring color and density back to your turf.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21c1.5-3 3-5 5-6"/><path d="M14 3s3 2 3 6-3 5-3 5-3-1-3-5 3-6 3-6Z"/><path d="M18 8c2 0 3 1.5 3 3s-2 3-4 3"/></svg></div>
+          <h3>Weed Control</h3>
+          <p>We treat and prevent weeds so your grass &mdash; not the weeds &mdash; gets the light and nutrients.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+          <h3>Lawn Revitalization</h3>
+          <p>Our specialty: a staged plan that brings a thinning, run-down lawn back to full, even green.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></div>
+          <h3>Mowing &amp; Maintenance</h3>
+          <p>Clean, consistent mowing at the right height to keep your lawn healthy between treatments.</p>
+        </div>
+        <div class="card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.4 2.4 0 0 1 0-3.4l2.6-2.6a2.4 2.4 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg></div>
+          <h3>Edging &amp; Detailing</h3>
+          <p>Crisp edges along drives, walkways, and beds for a finished, cared-for look.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / GALLERY -->
+  <section id="work" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Our work</span>
+        <h2>Lawns we care for around Deltona</h2>
+        <p>Real Central Florida lawns kept full, even, and green &mdash; no stock photos.</p>
+      </div>
+      <div class="gal">
+        <figure class="gfig"><div class="ph"><img src="assets/g1.jpg" width="842" height="1000" loading="lazy" decoding="async" alt="Freshly maintained green lawn edge along a residential driveway"></div><figcaption class="gcap">Maintained lawn edge along the drive</figcaption></figure>
+        <figure class="gfig"><div class="ph"><img src="assets/g2.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Lush green side-yard lawn beside a covered porch in Deltona"></div><figcaption class="gcap">Lush side-yard turf, Deltona</figcaption></figure>
+        <figure class="gfig"><div class="ph"><img src="assets/g3.jpg" width="750" height="1000" loading="lazy" decoding="async" alt="Revitalized, freshly cut front lawn at a Central Florida home"></div><figcaption class="gcap">Revitalized front lawn</figcaption></figure>
+        <figure class="gfig"><div class="ph"><img src="assets/g4.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Full, even front-yard lawn along a quiet residential street"></div><figcaption class="gcap">Full front-yard lawn</figcaption></figure>
+        <figure class="gfig"><div class="ph"><img src="assets/g5.jpg" width="750" height="1000" loading="lazy" decoding="async" alt="Manicured backyard lawn with a trimmed hedge line"></div><figcaption class="gcap">Manicured backyard &amp; hedge line</figcaption></figure>
+        <figure class="gfig"><div class="ph"><img src="assets/g6.jpg" width="750" height="1000" loading="lazy" decoding="async" alt="Healthy, even green front lawn with a Scarano Lawn Care yard sign"></div><figcaption class="gcap">Healthy, even front lawn</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="band alt">
+    <div class="wrap">
+      <div class="rev-top">
+        <span class="eyebrow">Reviews</span>
+        <div style="margin-top:16px">
+          <span class="rev-agg">
+            <span class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            <b>5.0</b><span>· 36 reviews on Google</span>
+          </span>
+        </div>
+      </div>
+      <div class="revs">
+        <blockquote class="quote">
+          <svg class="qi" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 6C6.46 6 4 8.46 4 11.5V18h6v-6H7.5c0-1.66 1.34-3 3-3V6h-1Zm9 0C15.46 6 13 8.46 13 11.5V18h6v-6h-2.5c0-1.66 1.34-3 3-3V6h-1Z"/></svg>
+          <p>&ldquo;Richie showed up this morning as promised and my surveillance cameras captured him really doing a thorough and complete job! Unlike other lawn service providers, he literally covered every inch of my lawn with the fertilizing nutrients and weed control&rdquo;</p>
+          <div class="who">
+            <div class="av">LW</div>
+            <div>
+              <div class="nm">Linda Williams</div>
+              <div class="pl"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Google review</div>
+            </div>
+          </div>
+        </blockquote>
+        <blockquote class="quote">
+          <svg class="qi" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 6C6.46 6 4 8.46 4 11.5V18h6v-6H7.5c0-1.66 1.34-3 3-3V6h-1Zm9 0C15.46 6 13 8.46 13 11.5V18h6v-6h-2.5c0-1.66 1.34-3 3-3V6h-1Z"/></svg>
+          <p>&ldquo;I began using Scarano Lawn Care one year ago. Richard reviewed my property and set up a plan to revitalize the lawn. The lawn had deteriorated due to poor care from my previous lawn care provider. Richard said it would take around four months&rdquo;</p>
+          <div class="who">
+            <div class="av">RB</div>
+            <div>
+              <div class="nm">Robert Baal</div>
+              <div class="pl"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> Google review</div>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT + MAP -->
+  <section id="contact" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Book your lawn assessment</h2>
+        <p>Call or text and we'll take a look at your lawn, then put together a plan that fits it.</p>
+      </div>
+      <div class="contact">
+        <div class="info">
+          <h3>Scarano Lawn Care</h3>
+          <div class="rows">
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div class="k">Service area</div><div class="v">2626 Treehaven Dr, Deltona, FL 32738</div></div>
+            </div>
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><div class="k">Phone</div><a class="v" href="tel:+13862326089">(386) 232-6089</a></div>
+            </div>
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div><div class="k">Email</div><a class="v" href="mailto:service@scaranolawncare.com">service@scaranolawncare.com</a></div>
+            </div>
+            <div class="row">
+              <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div style="flex:1 1 auto">
+                <div class="k">Hours</div>
+                <div class="hours">
+                  <div class="hr"><span class="d">Mon &ndash; Wed</span><span class="h">8:00 AM &ndash; 5:00 PM</span></div>
+                  <div class="hr"><span class="d">Thu &ndash; Fri</span><span class="h">9:00 AM &ndash; 5:00 PM</span></div>
+                  <div class="hr"><span class="d">Sat &amp; Sun</span><span class="closed">Closed</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-cta">
+            <a class="btn btn-primary" href="tel:+13862326089">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call now
+            </a>
+            <a class="btn btn-ghost" href="sms:+13862326089">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text us
+            </a>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Map of Scarano Lawn Care service area in Deltona, FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-81.2052%2C28.8990%2C-81.1852%2C28.9150&layer=mapnik&marker=28.9070017%2C-81.1952205"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <h2>Ready for the best lawn on the block?</h2>
+      <p>Tell us about your lawn and we'll build a plan to bring it back &mdash; and keep it green all year.</p>
+      <div class="cta-btns">
+        <a class="btn btn-white" href="tel:+13862326089">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (386) 232-6089
+        </a>
+        <a class="btn btn-outline-w" href="sms:+13862326089">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Text us
+        </a>
+        <a class="btn btn-outline-w" href="mailto:service@scaranolawncare.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email us
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="assets/logo.jpg" width="640" height="369" alt="Scarano Lawn Care logo">
+        <p>Lawn revitalization, fertilization, and maintenance for Deltona &amp; Central Florida. Serving the area since 2019.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+13862326089">(386) 232-6089</a></li>
+          <li><a href="mailto:service@scaranolawncare.com">service@scaranolawncare.com</a></li>
+          <li>2626 Treehaven Dr,<br>Deltona, FL 32738</li>
+          <li>Mon&ndash;Wed 8&ndash;5 · Thu&ndash;Fri 9&ndash;5</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <p class="area">Deltona · DeBary · Orange City · Lake Helen · DeLand · Sanford</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2019&ndash;2026 Scarano Lawn Care. All rights reserved.</span>
+      <span>Deltona, Florida</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Scarano Lawn Care",
+  "image":"https://savcab.github.io/websites/scarano-lawn-care-deltona/assets/hero.jpg",
+  "url":"https://savcab.github.io/websites/scarano-lawn-care-deltona/",
+  "telephone":"+13862326089",
+  "email":"service@scaranolawncare.com",
+  "priceRange":"$$",
+  "foundingDate":"2019",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"2626 Treehaven Dr",
+    "addressLocality":"Deltona",
+    "addressRegion":"FL",
+    "postalCode":"32738",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":28.9070017,"longitude":-81.1952205},
+  "areaServed":[
+    {"@type":"City","name":"Deltona"},
+    {"@type":"City","name":"DeBary"},
+    {"@type":"City","name":"Orange City"},
+    {"@type":"City","name":"Lake Helen"},
+    {"@type":"City","name":"DeLand"},
+    {"@type":"City","name":"Sanford"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday"],"opens":"08:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"09:00","closes":"17:00"}
+  ],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn Fertilization"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Weed Control"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn Revitalization"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mowing & Maintenance"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Edging & Detailing"}}
+  ]
+}
+</script>

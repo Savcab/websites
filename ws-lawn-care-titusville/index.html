@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WS Lawn Care Services | Lawn Care & Tree Pruning in Titusville, FL</title>
+  <meta name="description" content="WS Lawn Care Services, LLC — dependable lawn mowing, tree & shrub pruning, and lawn maintenance for homes in Titusville, FL. Rated 4.9 across 48 Google reviews. Call (321) 209-0668." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FBF7F0',
+            'cream-deep': '#F3ECDF',
+            charcoal: '#23201B',
+            'charcoal-soft': '#4A4640',
+            forest: '#2F5D44',
+            'forest-dark': '#244A36',
+            'forest-deep': '#1C3A2A',
+            sage: '#E7EDE3',
+            gold: '#C08A2D'
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-padding-top: 76px; }
+    body { -webkit-font-smoothing: antialiased; }
+    .nav-link.active { color: #2F5D44; }
+    .nav-link.active::after { transform: scaleX(1); }
+    .nav-link::after {
+      content: ""; display: block; height: 2px; background: #2F5D44;
+      transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+    }
+    .grain { background-image: radial-gradient(#23201B 0.5px, transparent 0.5px); background-size: 22px 22px; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased overflow-x-clip">
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-cream/90 backdrop-blur border-b border-charcoal/10">
+    <div class="mx-auto max-w-6xl px-5 h-[68px] flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2.5 shrink-0">
+        <span class="grid place-items-center h-9 w-9 rounded-full bg-forest text-cream">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8Z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2Z"/></svg>
+        </span>
+        <span class="font-serif text-lg font-600 leading-none tracking-tight">WS Lawn Care</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-500 text-charcoal-soft">
+        <a href="#services" class="nav-link hover:text-forest transition-colors">Services</a>
+        <a href="#work" class="nav-link hover:text-forest transition-colors">Our Work</a>
+        <a href="#reviews" class="nav-link hover:text-forest transition-colors">Reviews</a>
+        <a href="#about" class="nav-link hover:text-forest transition-colors">About</a>
+        <a href="#contact" class="nav-link hover:text-forest transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="tel:+13212090668" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-forest px-4 py-2 text-sm font-600 text-cream hover:bg-forest-dark transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (321) 209-0668
+        </a>
+        <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="md:hidden grid place-items-center h-10 w-10 rounded-full border border-charcoal/15 text-charcoal">
+          <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-charcoal/10 bg-cream">
+      <nav class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#services" class="mobile-link py-2.5 border-b border-charcoal/5">Services</a>
+        <a href="#work" class="mobile-link py-2.5 border-b border-charcoal/5">Our Work</a>
+        <a href="#reviews" class="mobile-link py-2.5 border-b border-charcoal/5">Reviews</a>
+        <a href="#about" class="mobile-link py-2.5 border-b border-charcoal/5">About</a>
+        <a href="#contact" class="mobile-link py-2.5">Contact</a>
+        <div class="flex gap-2 pt-3">
+          <a href="tel:+13212090668" class="flex-1 text-center rounded-full bg-forest px-4 py-2.5 text-sm font-600 text-cream">Call now</a>
+          <a href="sms:+13212090668" class="flex-1 text-center rounded-full border border-forest px-4 py-2.5 text-sm font-600 text-forest">Text us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="pt-[68px]">
+
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 grain opacity-[0.05]"></div>
+      <div class="mx-auto max-w-6xl px-5 py-14 sm:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center relative">
+        <div>
+          <p class="inline-flex items-center gap-2 text-xs sm:text-sm font-600 uppercase tracking-[0.18em] text-forest">
+            <span class="h-px w-6 bg-forest"></span> Titusville, Florida
+          </p>
+          <h1 class="mt-4 font-serif text-[2.35rem] leading-[1.05] sm:text-5xl lg:text-[3.4rem] font-600 text-charcoal">
+            Dependable lawn care &amp; tree pruning in Titusville, FL
+          </h1>
+          <p class="mt-3 font-serif italic text-xl sm:text-2xl text-forest">You grow it, we mow it.</p>
+          <p class="mt-5 max-w-xl text-[15px] sm:text-base leading-relaxed text-charcoal-soft">
+            WS Lawn Care Services keeps Titusville yards sharp — weekly mowing, careful tree &amp; shrub
+            pruning, and season-long lawn maintenance, done by a crew that shows up and does it right.
+          </p>
+
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <a href="tel:+13212090668" class="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-600 text-cream shadow-sm hover:bg-forest-dark transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call (321) 209-0668
+            </a>
+            <a href="sms:+13212090668" class="inline-flex items-center gap-2 rounded-full border border-forest/40 bg-cream px-6 py-3.5 text-[15px] font-600 text-forest hover:bg-sage transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text for a quote
+            </a>
+          </div>
+
+          <div class="mt-7 flex items-center gap-3">
+            <div class="flex items-center gap-0.5 text-gold" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-sm font-600 text-charcoal">4.9 · 48 reviews <span class="font-400 text-charcoal-soft">on Google</span></p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -inset-3 rounded-[2rem] bg-sage/70 -rotate-2"></div>
+          <img src="assets/hero.jpg" width="903" height="1200" fetchpriority="high" decoding="async"
+               alt="WS Lawn Care Services branded truck, trailer and commercial mower parked on a Titusville, Florida residential street"
+               class="relative rounded-[1.75rem] shadow-xl object-cover w-full h-[380px] sm:h-[460px] md:h-[520px]" />
+          <div class="absolute -bottom-4 left-4 sm:left-6 rounded-2xl bg-charcoal text-cream px-4 py-3 shadow-lg flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C08A2D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="leading-tight">
+              <p class="text-[11px] uppercase tracking-wider text-cream/60">Serving</p>
+              <p class="text-sm font-600">Titusville &amp; Brevard County</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY NEIGHBORS ============ -->
+    <section class="bg-forest-deep text-cream">
+      <div class="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+        <div class="max-w-2xl">
+          <p class="text-xs font-600 uppercase tracking-[0.18em] text-cream/60">Why neighbors call us back</p>
+          <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight">
+            The kind of lawn crew you can set your week by.
+          </h2>
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+          <div class="flex gap-4">
+            <span class="shrink-0 grid place-items-center h-11 w-11 rounded-xl bg-cream/10 text-cream">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3 class="font-serif text-lg font-600">Right here in Titusville</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-cream/70">Based on Plantation Drive and serving homes across Titusville and greater Brevard County — a quick call away, not a franchise line.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="shrink-0 grid place-items-center h-11 w-11 rounded-xl bg-cream/10 text-cream">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <h3 class="font-serif text-lg font-600">On schedule, every visit</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-cream/70">Dependable weekly mowing you can count on — and a local crew that's easy to reach when you need us.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="shrink-0 grid place-items-center h-11 w-11 rounded-xl bg-cream/10 text-cream">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-7"/><path d="M9 9a3 3 0 1 1 6 0c0 1.7-1.5 2.5-3 4-1.5-1.5-3-2.3-3-4Z"/><path d="M5 15a4 4 0 0 0 5-1"/><path d="M19 15a4 4 0 0 1-5-1"/></svg>
+            </span>
+            <div>
+              <h3 class="font-serif text-lg font-600">Careful, detail-minded work</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-cream/70">From tidy mowing lines to shaping live oaks and shrubs a little at a time, we take the time to do it properly.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="shrink-0 grid place-items-center h-11 w-11 rounded-xl bg-cream/10 text-cream">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            <div>
+              <h3 class="font-serif text-lg font-600">Rated 4.9 by neighbors</h3>
+              <p class="mt-1.5 text-sm leading-relaxed text-cream/70">A 4.9-star average across 48 Google reviews from Titusville-area homeowners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+      <div class="max-w-2xl">
+        <p class="text-xs font-600 uppercase tracking-[0.18em] text-forest">What we do</p>
+        <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight text-charcoal">Three things, done well.</h2>
+        <p class="mt-4 text-charcoal-soft leading-relaxed">No upsell menu — just the lawn work Titusville homes actually need, handled by the same crew each visit.</p>
+      </div>
+
+      <div class="mt-11 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <article class="group rounded-2xl border border-charcoal/10 bg-white/40 p-7 hover:border-forest/40 hover:shadow-md transition-all">
+          <span class="grid place-items-center h-13 w-13 rounded-2xl bg-sage text-forest p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+          </span>
+          <h3 class="mt-5 font-serif text-xl font-600 text-charcoal">Lawn Mowing</h3>
+          <p class="mt-2 text-sm leading-relaxed text-charcoal-soft">Clean, even cuts with crisp edges and blown-off walks — weekly or on the schedule your yard needs to stay sharp through the Florida growing season.</p>
+        </article>
+
+        <article class="group rounded-2xl border border-charcoal/10 bg-white/40 p-7 hover:border-forest/40 hover:shadow-md transition-all">
+          <span class="grid place-items-center h-13 w-13 rounded-2xl bg-sage text-forest p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-8"/><path d="M12 14 8.5 10.5"/><path d="M12 12l3.5-3.5"/><path d="M12 14a6 6 0 0 0 6-6c0-2-1-4-3-6-1.5 1.5-2.4 2.6-3 3.7C11.4 4.6 10.5 3.5 9 2 7 4 6 6 6 8a6 6 0 0 0 6 6Z"/></svg>
+          </span>
+          <h3 class="mt-5 font-serif text-xl font-600 text-charcoal">Tree &amp; Shrub Pruning</h3>
+          <p class="mt-2 text-sm leading-relaxed text-charcoal-soft">Thoughtful pruning of live oaks, palms and shrubs — shaped back a little at a time so plants stay healthy and your property looks its best.</p>
+        </article>
+
+        <article class="group rounded-2xl border border-charcoal/10 bg-white/40 p-7 hover:border-forest/40 hover:shadow-md transition-all">
+          <span class="grid place-items-center h-13 w-13 rounded-2xl bg-sage text-forest p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22s4-2 6-8c1.5 4 4 6 4 6s2-2 3-6c2 6 7 8 7 8"/><path d="M12 12V2"/><path d="M9 5l3-3 3 3"/></svg>
+          </span>
+          <h3 class="mt-5 font-serif text-xl font-600 text-charcoal">Lawn Maintenance</h3>
+          <p class="mt-2 text-sm leading-relaxed text-charcoal-soft">Season-long upkeep that keeps the whole yard tidy — edging, trimming and cleanup so your lawn stays neat between the big jobs.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ OUR WORK ============ -->
+    <section id="work" class="bg-cream-deep/60">
+      <div class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div class="max-w-xl">
+            <p class="text-xs font-600 uppercase tracking-[0.18em] text-forest">Our work</p>
+            <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight text-charcoal">Recent yards around Titusville.</h2>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-600 text-forest hover:gap-2.5 transition-all">
+            Get yours on the list
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <figure class="relative overflow-hidden rounded-2xl shadow-sm">
+            <img src="assets/work-lawn-edge.jpg" width="903" height="1200" loading="lazy" decoding="async"
+                 alt="Freshly mowed and crisply edged front lawn along a sidewalk lined with palm trees in Titusville"
+                 class="w-full h-72 sm:h-80 object-cover hover:scale-[1.03] transition-transform duration-500" />
+            <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/70 to-transparent px-4 py-3 text-cream text-sm font-500">Mow &amp; edge — front lawn</figcaption>
+          </figure>
+          <figure class="relative overflow-hidden rounded-2xl shadow-sm">
+            <img src="assets/work-lawn-fence.jpg" width="1200" height="675" loading="lazy" decoding="async"
+                 alt="Wide freshly mowed lawn beside a brick and wrought-iron fence under mossy oak trees"
+                 class="w-full h-72 sm:h-80 object-cover hover:scale-[1.03] transition-transform duration-500" />
+            <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/70 to-transparent px-4 py-3 text-cream text-sm font-500">Full-property mowing</figcaption>
+          </figure>
+          <figure class="relative overflow-hidden rounded-2xl shadow-sm">
+            <img src="assets/work-vinyl-fence.jpg" width="903" height="1200" loading="lazy" decoding="async"
+                 alt="Neatly maintained backyard lawn along a clean white vinyl privacy fence"
+                 class="w-full h-72 sm:h-80 object-cover hover:scale-[1.03] transition-transform duration-500" />
+            <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-charcoal/70 to-transparent px-4 py-3 text-cream text-sm font-500">Backyard upkeep</figcaption>
+          </figure>
+        </div>
+        <p class="mt-4 text-xs text-charcoal-soft/80">Photos from WS Lawn Care Services jobs around Titusville, FL.</p>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section id="reviews" class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start">
+        <div>
+          <p class="text-xs font-600 uppercase tracking-[0.18em] text-forest">In their words</p>
+          <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight text-charcoal">Trusted by Titusville homeowners.</h2>
+          <div class="mt-6 inline-flex items-center gap-4 rounded-2xl border border-charcoal/10 bg-white/50 px-5 py-4">
+            <p class="font-serif text-4xl font-700 text-forest leading-none">4.9</p>
+            <div>
+              <div class="flex items-center gap-0.5 text-gold" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="mt-1 text-sm font-600 text-charcoal">48 reviews on Google</p>
+            </div>
+          </div>
+          <p class="mt-6 text-sm leading-relaxed text-charcoal-soft max-w-md">Homeowners who tried a single cut and stayed on for the season — the reviews say it best.</p>
+        </div>
+
+        <div class="space-y-5">
+          <figure class="rounded-2xl border border-charcoal/10 bg-white/50 p-6 shadow-sm">
+            <div class="flex items-center gap-0.5 text-gold" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="mt-3 font-serif text-lg leading-snug text-charcoal">
+              &ldquo;They pruned three live oak trees and a large ligustrum shrub on my property. They spent many hours meticulously pruning back a little at a time to form a beautiful shape for each tree&rdquo;
+            </blockquote>
+            <figcaption class="mt-4 flex items-center gap-2 text-sm">
+              <span class="grid place-items-center h-8 w-8 rounded-full bg-forest/10 text-forest font-700">K</span>
+              <span><span class="font-600 text-charcoal">Karen Posey</span><span class="text-charcoal-soft"> · Google review</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-2xl border border-charcoal/10 bg-white/50 p-6 shadow-sm">
+            <div class="flex items-center gap-0.5 text-gold" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="mt-3 font-serif text-lg leading-snug text-charcoal">
+              &ldquo;I tested the waters by purchasing a single lawn cut, but, before they left I was convinced I wanted an annual contract with them.&rdquo;
+            </blockquote>
+            <figcaption class="mt-4 flex items-center gap-2 text-sm">
+              <span class="grid place-items-center h-8 w-8 rounded-full bg-forest/10 text-forest font-700">J</span>
+              <span><span class="font-600 text-charcoal">j.k.j.</span><span class="text-charcoal-soft"> · Google review</span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST BAND ============ -->
+    <section class="bg-forest text-cream">
+      <div class="mx-auto max-w-6xl px-5 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+          <div>
+            <p class="font-serif text-4xl font-700">4.9</p>
+            <p class="mt-1 text-sm text-cream/70">Average Google rating</p>
+          </div>
+          <div class="sm:border-x border-cream/15">
+            <p class="font-serif text-4xl font-700">48</p>
+            <p class="mt-1 text-sm text-cream/70">Google reviews</p>
+          </div>
+          <div>
+            <p class="font-serif text-4xl font-700">Titusville</p>
+            <p class="mt-1 text-sm text-cream/70">&amp; greater Brevard County</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+        <div class="relative order-last md:order-first">
+          <div class="absolute -inset-3 rounded-[2rem] bg-sage/70 rotate-2"></div>
+          <img src="assets/rig-dusk.jpg" width="903" height="1200" loading="lazy" decoding="async"
+               alt="WS Lawn Care Services truck and enclosed trailer parked on a Titusville street at dusk"
+               class="relative rounded-[1.75rem] shadow-xl object-cover w-full h-[360px] sm:h-[440px]" />
+        </div>
+        <div>
+          <p class="text-xs font-600 uppercase tracking-[0.18em] text-forest">About us</p>
+          <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight text-charcoal">A local lawn crew, and the truck you'll get to know.</h2>
+          <p class="mt-5 text-charcoal-soft leading-relaxed">
+            WS Lawn Care Services, LLC is a Titusville-based lawn care company serving homes across
+            Brevard County. We cover the everyday outdoor work a Florida yard needs — lawn mowing,
+            tree and shrub pruning, and ongoing lawn maintenance.
+          </p>
+          <p class="mt-4 text-charcoal-soft leading-relaxed">
+            You'll recognize the green mower on the trailer around the neighborhood. Whether it's a
+            standing lawn on the calendar or a one-time tidy-up, we'll get your yard looking sharp —
+            then keep it that way.
+          </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="tel:+13212090668" class="inline-flex items-center gap-2 rounded-full bg-forest px-6 py-3 text-sm font-600 text-cream hover:bg-forest-dark transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call us
+            </a>
+            <a href="mailto:info@wslawncareservicesllc.com" class="inline-flex items-center gap-2 rounded-full border border-forest/40 px-6 py-3 text-sm font-600 text-forest hover:bg-sage transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT + MAP ============ -->
+    <section id="contact" class="bg-cream-deep/60">
+      <div class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+          <div>
+            <p class="text-xs font-600 uppercase tracking-[0.18em] text-forest">Get in touch</p>
+            <h2 class="mt-3 font-serif text-3xl sm:text-4xl font-600 leading-tight text-charcoal">Let's get your yard on the schedule.</h2>
+            <p class="mt-4 text-charcoal-soft leading-relaxed max-w-md">Call or text for a free estimate on mowing, pruning, or season-long maintenance. We'll get right back to you.</p>
+
+            <div class="mt-8 space-y-4">
+              <a href="tel:+13212090668" class="flex items-center gap-4 rounded-2xl border border-charcoal/10 bg-white/50 px-5 py-4 hover:border-forest/40 transition-colors">
+                <span class="grid place-items-center h-11 w-11 rounded-xl bg-forest text-cream shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <span><span class="block text-xs uppercase tracking-wider text-charcoal-soft">Call or text</span><span class="font-600 text-charcoal">(321) 209-0668</span></span>
+              </a>
+              <a href="mailto:info@wslawncareservicesllc.com" class="flex items-center gap-4 rounded-2xl border border-charcoal/10 bg-white/50 px-5 py-4 hover:border-forest/40 transition-colors">
+                <span class="grid place-items-center h-11 w-11 rounded-xl bg-forest text-cream shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </span>
+                <span class="min-w-0"><span class="block text-xs uppercase tracking-wider text-charcoal-soft">Email</span><span class="font-600 text-charcoal break-all">info@wslawncareservicesllc.com</span></span>
+              </a>
+              <div class="flex items-center gap-4 rounded-2xl border border-charcoal/10 bg-white/50 px-5 py-4">
+                <span class="grid place-items-center h-11 w-11 rounded-xl bg-forest text-cream shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <span><span class="block text-xs uppercase tracking-wider text-charcoal-soft">Service area</span><span class="font-600 text-charcoal">Titusville, FL 32780 &amp; Brevard County</span></span>
+              </div>
+              <div class="flex items-center gap-4 rounded-2xl border border-charcoal/10 bg-white/50 px-5 py-4">
+                <span class="grid place-items-center h-11 w-11 rounded-xl bg-forest text-cream shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                </span>
+                <span><span class="block text-xs uppercase tracking-wider text-charcoal-soft">Hours</span><a href="tel:+13212090668" class="font-600 text-charcoal hover:text-forest">Call for hours</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-charcoal/10 shadow-sm min-h-[360px]">
+            <iframe
+              title="Map showing WS Lawn Care Services service area in Titusville, FL"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-80.8775502%2C28.5093072%2C-80.8575502%2C28.5193072&amp;layer=mapnik&amp;marker=28.5143072%2C-80.8675502"
+              class="w-full h-full min-h-[360px]" loading="lazy" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="bg-forest-deep text-cream">
+      <div class="mx-auto max-w-4xl px-5 py-16 sm:py-20 text-center">
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-600 leading-tight">You grow it — we'll mow it.</h2>
+        <p class="mt-4 text-cream/70 max-w-xl mx-auto">Ready for a sharper yard in Titusville? Call or text WS Lawn Care Services for a free, no-pressure estimate.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="tel:+13212090668" class="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3.5 text-[15px] font-700 text-forest-deep hover:bg-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (321) 209-0668
+          </a>
+          <a href="sms:+13212090668" class="inline-flex items-center gap-2 rounded-full border border-cream/40 px-7 py-3.5 text-[15px] font-700 text-cream hover:bg-cream/10 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-charcoal text-cream/80">
+      <div class="mx-auto max-w-6xl px-5 py-12">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+          <div class="flex items-center gap-2.5">
+            <span class="grid place-items-center h-9 w-9 rounded-full bg-forest text-cream">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8Z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2Z"/></svg>
+            </span>
+            <div>
+              <p class="font-serif text-lg font-600 text-cream leading-none">WS Lawn Care Services, LLC</p>
+              <p class="mt-1 text-sm text-cream/60">Lawn care &amp; tree pruning in Titusville, Florida</p>
+            </div>
+          </div>
+          <div class="text-sm space-y-1 sm:text-right">
+            <p><a href="tel:+13212090668" class="hover:text-cream">(321) 209-0668</a></p>
+            <p><a href="mailto:info@wslawncareservicesllc.com" class="hover:text-cream break-all">info@wslawncareservicesllc.com</a></p>
+            <p class="text-cream/60">305 Plantation Dr, Titusville, FL 32780</p>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-cream/10 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/50">
+          <p>&copy; 2026 WS Lawn Care Services, LLC. All rights reserved.</p>
+          <p>Proudly caring for lawns across Titusville &amp; Brevard County.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============ JSON-LD ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "WS Lawn Care Services, LLC",
+    "description": "Lawn mowing, tree and shrub pruning, and lawn maintenance for homes in Titusville, FL and greater Brevard County.",
+    "image": "assets/hero.jpg",
+    "url": "https://wslawncareservicesllc.com/",
+    "telephone": "+13212090668",
+    "email": "info@wslawncareservicesllc.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "305 Plantation Dr",
+      "addressLocality": "Titusville",
+      "addressRegion": "FL",
+      "postalCode": "32780",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.5143072,
+      "longitude": -80.8675502
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Titusville" },
+      { "@type": "City", "name": "Mims" },
+      { "@type": "City", "name": "Port St. John" },
+      { "@type": "AdministrativeArea", "name": "Brevard County" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Lawn Care Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Mowing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tree & Shrub Pruning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lawn Maintenance" } }
+      ]
+    }
+  }
+  </script>
+
+  <script>
+    // Mobile menu toggle
+    (function () {
+      var btn = document.getElementById('menuBtn');
+      var menu = document.getElementById('mobileMenu');
+      if (btn && menu) {
+        btn.addEventListener('click', function () {
+          var open = menu.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        menu.querySelectorAll('.mobile-link').forEach(function (a) {
+          a.addEventListener('click', function () {
+            menu.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+
+    // Active-section highlight
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+      var map = {};
+      links.forEach(function (l) { map[l.getAttribute('href').slice(1)] = l; });
+      var sections = ['services', 'work', 'reviews', 'about', 'contact']
+        .map(function (id) { return document.getElementById(id); })
+        .filter(Boolean);
+      if (!('IntersectionObserver' in window) || !sections.length) return;
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            links.forEach(function (l) { l.classList.remove('active'); });
+            if (map[e.target.id]) map[e.target.id].classList.add('active');
+          }
+        });
+      }, { rootMargin: '-240px 0px -320px 0px' });
+      sections.forEach(function (s) { obs.observe(s); });
+    })();
+  </script>
+</body>
+</html>

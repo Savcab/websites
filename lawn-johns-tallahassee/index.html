@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lawn Care &amp; Landscaping in Tallahassee, FL | The Lawn Johns</title>
+<meta name="description" content="The Lawn Johns — lawn care, landscaping, pressure washing, fencing and weed control serving Tallahassee, FL and surrounding areas. Call (850) 322-2567 for a free estimate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          retro: '#C1272D',
+          retrodark: '#9E1B20',
+          cream: '#F3E9D2',
+          creamdark: '#E7D8B4',
+          navy: '#1B2A41',
+          navylite: '#24374F',
+          gold: '#C8A24B',
+        },
+        fontFamily: {
+          badge: ['"Bebas Neue"', 'sans-serif'],
+          cond: ['Oswald', 'sans-serif'],
+          body: ['"Work Sans"', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Work Sans', system-ui, sans-serif; }
+  .font-badge { letter-spacing: .03em; }
+  /* halftone dot texture */
+  .halftone {
+    background-image: radial-gradient(rgba(27,42,65,.14) 1.1px, transparent 1.3px);
+    background-size: 7px 7px;
+  }
+  .halftone-cream {
+    background-image: radial-gradient(rgba(243,233,210,.10) 1.1px, transparent 1.3px);
+    background-size: 7px 7px;
+  }
+  /* aged-paper wash on cream sections */
+  .paper {
+    background-color: #F3E9D2;
+    background-image:
+      radial-gradient(rgba(200,162,75,.06) 1px, transparent 1.4px),
+      linear-gradient(180deg, rgba(158,27,32,.03), rgba(27,42,65,.03));
+    background-size: 9px 9px, 100% 100%;
+  }
+  .rule-gold { border-color: #C8A24B; }
+  .starburst {
+    background: repeating-conic-gradient(#C8A24B 0deg 9deg, transparent 9deg 18deg);
+  }
+  .menu-leader { border-bottom: 2px dotted rgba(200,162,75,.55); }
+  a.navlink { position: relative; }
+  a.navlink::after {
+    content: ""; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+    background: #C8A24B; transition: width .2s ease;
+  }
+  a.navlink:hover::after { width: 100%; }
+</style>
+</head>
+<body class="bg-cream text-navy overflow-x-clip antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="sticky top-0 z-50 bg-navy text-cream border-b-4 border-gold shadow-lg">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <!-- brand -->
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <span class="shrink-0 text-gold">
+          <!-- compact shield mark -->
+          <svg width="38" height="38" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 3 6 9v13c0 11 8 18 18 23 10-5 18-12 18-23V9L24 3Z" fill="#C1272D" stroke="#C8A24B" stroke-width="2"/>
+            <path d="M24 7 10 12v10c0 9 6.4 14.6 14 18.8C31.6 36.6 38 31 38 22V12L24 7Z" fill="none" stroke="#F3E9D2" stroke-width="1.2" opacity=".7"/>
+            <path d="M24 30c-5 0-9-3.4-9-9 0 0 4.5 1 6.5 3.4C21.5 21 24 15 24 15s2.5 6 2.5 9.4C28.5 22 33 21 33 21c0 5.6-4 9-9 9Z" fill="#F3E9D2"/>
+            <path d="M24 30v4" stroke="#F3E9D2" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="font-badge text-2xl sm:text-[26px] leading-none text-cream truncate">The Lawn Johns</span>
+      </a>
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-7 font-cond uppercase text-sm tracking-wide">
+        <a href="#services" class="navlink hover:text-gold">Services</a>
+        <a href="#work" class="navlink hover:text-gold">Our Work</a>
+        <a href="#reviews" class="navlink hover:text-gold">Reviews</a>
+        <a href="#contact" class="navlink hover:text-gold">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="tel:+18503222567" class="hidden sm:inline-flex items-center gap-2 bg-retro hover:bg-retrodark text-cream font-cond uppercase tracking-wide text-sm px-4 py-2 rounded-sm border border-gold/60 transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (850) 322-2567
+        </a>
+        <a href="tel:+18503222567" class="sm:hidden inline-flex items-center justify-center bg-retro text-cream w-10 h-10 rounded-sm border border-gold/60" aria-label="Call The Lawn Johns at (850) 322-2567">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </a>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-sm border border-gold/50 text-cream" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- mobile dropdown -->
+  <nav id="mobileNav" class="md:hidden hidden bg-navylite border-t border-gold/30 font-cond uppercase tracking-wide">
+    <a href="#services" class="block px-6 py-3 border-b border-white/10 hover:text-gold">Services</a>
+    <a href="#work" class="block px-6 py-3 border-b border-white/10 hover:text-gold">Our Work</a>
+    <a href="#reviews" class="block px-6 py-3 border-b border-white/10 hover:text-gold">Reviews</a>
+    <a href="#contact" class="block px-6 py-3 hover:text-gold">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="relative isolate bg-navy text-cream overflow-hidden">
+  <!-- photo behind -->
+  <img src="assets/hero.jpg" alt="Fresh mulch beds and a manicured front lawn maintained by The Lawn Johns in Tallahassee, FL" width="1050" height="1400" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover object-center opacity-40" />
+  <div class="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/80 to-navy"></div>
+  <div class="absolute inset-0 halftone-cream opacity-60"></div>
+
+  <div class="relative mx-auto max-w-4xl px-4 sm:px-6 py-16 sm:py-20 lg:py-24 text-center">
+    <!-- big circular seal -->
+    <div class="flex justify-center mb-8">
+      <svg viewBox="0 0 220 220" class="w-40 h-40 sm:w-48 sm:h-48" role="img" aria-label="The Lawn Johns — Tallahassee, Florida seal">
+        <defs>
+          <path id="arcTop" d="M110 110 m-78,0 a78,78 0 1,1 156,0" />
+          <path id="arcBot" d="M110 110 m-78,0 a78,78 0 1,0 156,0" />
+        </defs>
+        <circle cx="110" cy="110" r="104" fill="#1B2A41" stroke="#C8A24B" stroke-width="3"/>
+        <circle cx="110" cy="110" r="96" fill="none" stroke="#C1272D" stroke-width="6"/>
+        <circle cx="110" cy="110" r="86" fill="none" stroke="#C8A24B" stroke-width="1.5"/>
+        <text fill="#F3E9D2" font-family="'Bebas Neue',sans-serif" font-size="20" letter-spacing="3">
+          <textPath href="#arcTop" startOffset="50%" text-anchor="middle">THE LAWN JOHNS</textPath>
+        </text>
+        <text fill="#C8A24B" font-family="'Bebas Neue',sans-serif" font-size="15" letter-spacing="4">
+          <textPath href="#arcBot" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">TALLAHASSEE · FLORIDA</textPath>
+        </text>
+        <!-- center emblem -->
+        <path d="M110 133c-15 0-27-10-27-27 0 0 13.5 3 19.5 10.2C104.5 108 110 90 110 90s5.5 18 7.5 26.2C123.5 109 137 106 137 106c0 17-12 27-27 27Z" fill="#F3E9D2"/>
+        <path d="M110 133v11" stroke="#F3E9D2" stroke-width="3" stroke-linecap="round"/>
+        <path d="M78 150h64" stroke="#C8A24B" stroke-width="2"/>
+        <text x="110" y="167" fill="#C8A24B" font-family="'Bebas Neue',sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">LAWN &amp; LANDSCAPE</text>
+      </svg>
+    </div>
+
+    <p class="font-badge text-gold text-lg sm:text-xl tracking-[0.25em] mb-3">Full-Service Yard Care · Tallahassee, FL</p>
+    <h1 class="font-cond font-700 uppercase leading-[0.95] text-4xl sm:text-6xl lg:text-7xl text-cream">
+      Lawn &amp; Landscape<br class="hidden sm:block" /> Care Done Right
+    </h1>
+    <p class="mt-6 text-cream/85 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+      From weekly mowing to fresh beds, pressure washing and fencing — we keep yards across
+      Tallahassee sharp all season long.
+    </p>
+
+    <!-- rating -->
+    <div class="mt-7 inline-flex items-center gap-3 bg-navylite/80 border border-gold/40 rounded-sm px-4 py-2">
+      <span class="relative inline-block leading-none" aria-hidden="true">
+        <span class="flex text-cream/25">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+        </span>
+        <span class="flex text-gold absolute inset-0 overflow-hidden" style="width:92%">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+        </span>
+      </span>
+      <span class="font-cond text-sm sm:text-base text-cream"><strong class="text-gold">4.6</strong> · 51 reviews on Google</span>
+    </div>
+
+    <!-- CTAs -->
+    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="tel:+18503222567" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-retro hover:bg-retrodark text-cream font-cond uppercase tracking-wide text-lg px-7 py-3 rounded-sm border-2 border-gold shadow-[4px_4px_0_#C8A24B] hover:shadow-[2px_2px_0_#C8A24B] transition-all">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Call (850) 322-2567
+      </a>
+      <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent hover:bg-cream/10 text-cream font-cond uppercase tracking-wide text-lg px-7 py-3 rounded-sm border-2 border-cream/60 transition-colors">
+        Get a Free Estimate
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (menu board) ============ -->
+<section id="services" class="paper py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="font-badge text-retro text-lg tracking-[0.25em]">What We Do</p>
+      <h2 class="font-cond font-700 uppercase text-3xl sm:text-5xl text-navy leading-tight">The Service Menu</h2>
+      <div class="mt-4 flex items-center justify-center gap-3">
+        <span class="h-[2px] w-10 bg-gold"></span>
+        <span class="w-2 h-2 rotate-45 bg-retro"></span>
+        <span class="h-[2px] w-10 bg-gold"></span>
+      </div>
+    </div>
+
+    <div class="bg-navy text-cream rounded-sm border-4 border-double border-gold shadow-[6px_6px_0_rgba(27,42,65,0.25)] p-6 sm:p-10">
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-7">
+        <!-- lawn care -->
+        <li class="flex items-start gap-4">
+          <span class="shrink-0 text-gold mt-1">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20"/><path d="M4 20v-4"/><path d="M8 20v-6"/><path d="M12 20v-4"/><path d="M16 20v-7"/><path d="M20 20v-5"/><path d="M4 12c0-3 2-5 5-5"/><path d="M16 8c2 0 4 1 4 4"/></svg>
+          </span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <h3 class="font-cond uppercase text-xl text-cream">Lawn Care</h3>
+              <span class="flex-1 menu-leader translate-y-[-4px]"></span>
+            </div>
+            <p class="mt-1 text-cream/70 text-sm leading-relaxed">Mowing, edging and trimming that keep the whole yard looking clean and even.</p>
+          </div>
+        </li>
+        <!-- landscaping -->
+        <li class="flex items-start gap-4">
+          <span class="shrink-0 text-gold mt-1">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M12 12c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6Z"/><path d="M12 14c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6Z"/><path d="M6 22h12"/></svg>
+          </span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <h3 class="font-cond uppercase text-xl text-cream">Landscaping</h3>
+              <span class="flex-1 menu-leader translate-y-[-4px]"></span>
+            </div>
+            <p class="mt-1 text-cream/70 text-sm leading-relaxed">Fresh mulch, pine straw, plantings and bed work that give the yard real curb appeal.</p>
+          </div>
+        </li>
+        <!-- pressure washing -->
+        <li class="flex items-start gap-4">
+          <span class="shrink-0 text-gold mt-1">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h6v-3a3 3 0 0 0-6 0v3Z"/><path d="M6 15V8a2 2 0 0 1 2-2h3"/><path d="M11 6V4h4l3 2"/><path d="M18 8l2-1M18 11l3 0M18 14l2 1"/></svg>
+          </span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <h3 class="font-cond uppercase text-xl text-cream">Pressure Washing</h3>
+              <span class="flex-1 menu-leader translate-y-[-4px]"></span>
+            </div>
+            <p class="mt-1 text-cream/70 text-sm leading-relaxed">Driveways, walkways, fences and siding rinsed back to a bright, clean finish.</p>
+          </div>
+        </li>
+        <!-- fencing -->
+        <li class="flex items-start gap-4">
+          <span class="shrink-0 text-gold mt-1">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l2-3 2 3v13M16 21V8l2-3 2 3v13"/><path d="M2 11h20M2 16h20"/></svg>
+          </span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <h3 class="font-cond uppercase text-xl text-cream">Fencing</h3>
+              <span class="flex-1 menu-leader translate-y-[-4px]"></span>
+            </div>
+            <p class="mt-1 text-cream/70 text-sm leading-relaxed">New fence lines and repairs to frame the yard and keep the property secure.</p>
+          </div>
+        </li>
+        <!-- weed control -->
+        <li class="flex items-start gap-4 md:col-span-2 md:justify-self-center md:max-w-md">
+          <span class="shrink-0 text-gold mt-1">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c0-6 0-9 0-12"/><path d="M12 10c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4Z"/><path d="M12 13c2.2 0 3.5-1.3 3.5-3.5C13.3 9.5 12 10.8 12 13Z"/><path d="M9 22h6"/><path d="M5 6l1.5-1.5M18 5l-1.2-1.2"/></svg>
+          </span>
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <h3 class="font-cond uppercase text-xl text-cream">Weed Control</h3>
+              <span class="flex-1 menu-leader translate-y-[-4px]"></span>
+            </div>
+            <p class="mt-1 text-cream/70 text-sm leading-relaxed">Targeted treatments that knock back weeds and keep beds and turf tidy.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <p class="text-center mt-8 text-navy/70 text-sm">
+      Not sure what your yard needs? <a href="tel:+18503222567" class="text-retro font-semibold underline decoration-gold underline-offset-2">Call us</a> and we'll take a look.
+    </p>
+  </div>
+</section>
+
+<!-- ============ TRUST STAMP ROW ============ -->
+<section class="bg-retro text-cream halftone-cream border-y-4 border-gold">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+      <div class="flex flex-col items-center">
+        <span class="font-badge text-5xl text-cream leading-none">4.6</span>
+        <span class="font-cond uppercase tracking-wide text-sm text-cream/85 mt-2">Star Rating</span>
+      </div>
+      <div class="flex flex-col items-center sm:border-x border-cream/25">
+        <span class="font-badge text-5xl text-cream leading-none">51</span>
+        <span class="font-cond uppercase tracking-wide text-sm text-cream/85 mt-2">Google Reviews</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="font-badge text-5xl text-cream leading-none">Tallahassee</span>
+        <span class="font-cond uppercase tracking-wide text-sm text-cream/85 mt-2">&amp; Surrounding Areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR WORK (gallery) ============ -->
+<section id="work" class="paper py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="font-badge text-retro text-lg tracking-[0.25em]">From the Yard</p>
+      <h2 class="font-cond font-700 uppercase text-3xl sm:text-5xl text-navy leading-tight">Recent Work</h2>
+      <p class="mt-3 text-navy/70 max-w-xl mx-auto">A few jobs from around Tallahassee — beds, cleanups, exteriors and fresh yards.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <figure class="group relative overflow-hidden rounded-sm border-4 border-navy bg-navy shadow-[5px_5px_0_rgba(200,162,75,0.35)]">
+        <img src="assets/work-mulch.jpg" alt="Fresh red mulch beds and trimmed shrubs along the front of a brick home" width="1050" height="1400" loading="lazy" decoding="async" class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-navy/85 text-cream font-cond uppercase tracking-wide text-sm px-3 py-2">Fresh Mulch &amp; Beds</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-sm border-4 border-navy bg-navy shadow-[5px_5px_0_rgba(200,162,75,0.35)]">
+        <img src="assets/work-cleanup.jpg" alt="Before-and-after of a leaf-covered yard cleaned up to a tidy green lawn" width="930" height="1400" loading="lazy" decoding="async" class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-navy/85 text-cream font-cond uppercase tracking-wide text-sm px-3 py-2">Yard Cleanup</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-sm border-4 border-navy bg-navy shadow-[5px_5px_0_rgba(200,162,75,0.35)]">
+        <img src="assets/work-fence.jpg" alt="Freshly cleaned wood privacy fence and paver deck beside a pool" width="1400" height="1050" loading="lazy" decoding="async" class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-navy/85 text-cream font-cond uppercase tracking-wide text-sm px-3 py-2">Fence &amp; Exterior Wash</figcaption>
+      </figure>
+      <figure class="group relative overflow-hidden rounded-sm border-4 border-navy bg-navy shadow-[5px_5px_0_rgba(200,162,75,0.35)]">
+        <img src="assets/work-pinestraw.jpg" alt="Freshly laid pine straw beds framing a shaded backyard seating area" width="1400" height="787" loading="lazy" decoding="async" class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-navy/85 text-cream font-cond uppercase tracking-wide text-sm px-3 py-2">Pine Straw &amp; Bed Work</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="bg-navy text-cream halftone-cream py-16 sm:py-20">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="font-badge text-gold text-lg tracking-[0.25em]">Word Around Town</p>
+      <h2 class="font-cond font-700 uppercase text-3xl sm:text-5xl text-cream leading-tight">What Neighbors Say</h2>
+      <div class="mt-4 inline-flex items-center gap-3">
+        <span class="relative inline-block leading-none" aria-hidden="true">
+          <span class="flex text-cream/25">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          </span>
+          <span class="flex text-gold absolute inset-0 overflow-hidden" style="width:92%">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 23.3 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2z"/></svg>
+          </span>
+        </span>
+        <span class="font-cond text-cream"><strong class="text-gold">4.6</strong> · 51 reviews on Google</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <figure class="bg-cream text-navy rounded-sm border-2 border-gold p-6 shadow-[5px_5px_0_rgba(200,162,75,0.4)]">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#C1272D" aria-hidden="true" class="mb-3"><path d="M7.5 6C5 6 3 8 3 10.5S5 15 7.5 15c0 2-1.2 3.2-3 3.8L5 21c3.6-1 5.5-3.6 5.5-7.5V10C10.5 7.8 9.2 6 7.5 6Zm10 0C15 6 13 8 13 10.5S15 15 17.5 15c0 2-1.2 3.2-3 3.8L15 21c3.6-1 5.5-3.6 5.5-7.5V10C20.5 7.8 19.2 6 17.5 6Z"/></svg>
+        <blockquote class="text-lg leading-relaxed">"We've been using The Lawn Johns for over a decade for our yard maintenance and they've always done an excellent job."</blockquote>
+        <figcaption class="mt-4 flex items-center gap-3 border-t border-gold/40 pt-4">
+          <span class="w-9 h-9 rounded-full bg-navy text-cream font-cond flex items-center justify-center text-sm">IA</span>
+          <span>
+            <span class="block font-cond uppercase tracking-wide text-sm text-navy">Ian Anderson</span>
+            <span class="block text-xs text-navy/60">Google review</span>
+          </span>
+        </figcaption>
+      </figure>
+      <figure class="bg-cream text-navy rounded-sm border-2 border-gold p-6 shadow-[5px_5px_0_rgba(200,162,75,0.4)]">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="#C1272D" aria-hidden="true" class="mb-3"><path d="M7.5 6C5 6 3 8 3 10.5S5 15 7.5 15c0 2-1.2 3.2-3 3.8L5 21c3.6-1 5.5-3.6 5.5-7.5V10C10.5 7.8 9.2 6 7.5 6Zm10 0C15 6 13 8 13 10.5S15 15 17.5 15c0 2-1.2 3.2-3 3.8L15 21c3.6-1 5.5-3.6 5.5-7.5V10C20.5 7.8 19.2 6 17.5 6Z"/></svg>
+        <blockquote class="text-lg leading-relaxed">"I've been using Lawn Johns Yard Care for the past 3 years, and they've been consistently excellent."</blockquote>
+        <figcaption class="mt-4 flex items-center gap-3 border-t border-gold/40 pt-4">
+          <span class="w-9 h-9 rounded-full bg-navy text-cream font-cond flex items-center justify-center text-sm">LK</span>
+          <span>
+            <span class="block font-cond uppercase tracking-wide text-sm text-navy">lance kildron</span>
+            <span class="block text-xs text-navy/60">Google review</span>
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT + MAP ============ -->
+<section id="contact" class="paper py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="font-badge text-retro text-lg tracking-[0.25em]">Get in Touch</p>
+      <h2 class="font-cond font-700 uppercase text-3xl sm:text-5xl text-navy leading-tight">Ready for a Free Estimate?</h2>
+      <p class="mt-3 text-navy/70 max-w-xl mx-auto">Give us a call or send an email and we'll get your yard on the schedule.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      <!-- contact card -->
+      <div class="bg-navy text-cream rounded-sm border-4 border-double border-gold p-7 sm:p-9 flex flex-col justify-center">
+        <ul class="space-y-6">
+          <li class="flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-sm bg-retro flex items-center justify-center text-cream">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </span>
+            <div>
+              <p class="font-cond uppercase tracking-wide text-xs text-gold">Call for a Free Quote</p>
+              <a href="tel:+18503222567" class="text-xl font-cond text-cream hover:text-gold">(850) 322-2567</a>
+              <p class="text-cream/60 text-sm mt-1">Call for hours</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-sm bg-retro flex items-center justify-center text-cream">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            <div>
+              <p class="font-cond uppercase tracking-wide text-xs text-gold">Email</p>
+              <a href="mailto:marc@thelawnjohns.com" class="text-xl font-cond text-cream hover:text-gold break-all">marc@thelawnjohns.com</a>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="shrink-0 w-11 h-11 rounded-sm bg-retro flex items-center justify-center text-cream">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <p class="font-cond uppercase tracking-wide text-xs text-gold">Service Area</p>
+              <p class="text-xl font-cond text-cream">Serving Tallahassee, FL</p>
+              <p class="text-cream/60 text-sm mt-1">&amp; surrounding areas</p>
+            </div>
+          </li>
+        </ul>
+        <a href="tel:+18503222567" class="mt-8 inline-flex items-center justify-center gap-2 bg-retro hover:bg-retrodark text-cream font-cond uppercase tracking-wide text-lg px-6 py-3 rounded-sm border-2 border-gold shadow-[4px_4px_0_#C8A24B] hover:shadow-[2px_2px_0_#C8A24B] transition-all">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          Call for a Free Estimate
+        </a>
+      </div>
+
+      <!-- map -->
+      <div class="rounded-sm border-4 border-navy overflow-hidden shadow-[6px_6px_0_rgba(27,42,65,0.25)] min-h-[340px]">
+        <iframe title="Service area map centered on Tallahassee, FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-84.3459477%2C30.477426%2C-84.3059477%2C30.517426&amp;layer=mapnik&amp;marker=30.497426%2C-84.3259477"
+          class="w-full h-full min-h-[340px] border-0"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy text-cream border-t-4 border-gold">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12">
+    <div class="flex flex-col items-center text-center gap-4">
+      <svg width="54" height="54" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 3 6 9v13c0 11 8 18 18 23 10-5 18-12 18-23V9L24 3Z" fill="#C1272D" stroke="#C8A24B" stroke-width="2"/>
+        <path d="M24 30c-5 0-9-3.4-9-9 0 0 4.5 1 6.5 3.4C21.5 21 24 15 24 15s2.5 6 2.5 9.4C28.5 22 33 21 33 21c0 5.6-4 9-9 9Z" fill="#F3E9D2"/>
+        <path d="M24 30v4" stroke="#F3E9D2" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <p class="font-badge text-3xl tracking-wide text-cream">The Lawn Johns</p>
+      <p class="text-cream/70 text-sm max-w-md">Lawn care, landscaping, pressure washing, fencing and weed control — serving Tallahassee, FL &amp; surrounding areas.</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-cond uppercase tracking-wide text-sm mt-2">
+        <a href="tel:+18503222567" class="hover:text-gold">(850) 322-2567</a>
+        <span class="text-cream/30 hidden sm:inline">·</span>
+        <a href="mailto:marc@thelawnjohns.com" class="hover:text-gold">marc@thelawnjohns.com</a>
+        <span class="text-cream/30 hidden sm:inline">·</span>
+        <span class="text-cream/70">4.6 · 51 reviews</span>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t border-cream/15 text-center text-cream/45 text-xs">
+      <p>&copy; 2026 The Lawn Johns. Serving Tallahassee, FL &amp; surrounding areas.</p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "The Lawn Johns",
+  "description": "Lawn care, landscaping, pressure washing, fencing and weed control serving Tallahassee, FL and surrounding areas.",
+  "image": "assets/hero.jpg",
+  "telephone": "+1-850-322-2567",
+  "email": "marc@thelawnjohns.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tallahassee",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.497426,
+    "longitude": -84.3259477
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Tallahassee, FL"
+  },
+  "knowsAbout": ["Lawn Care", "Landscaping", "Pressure Washing", "Fencing", "Weed Control"]
+}
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('menuBtn');
+    var nav = document.getElementById('mobileNav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

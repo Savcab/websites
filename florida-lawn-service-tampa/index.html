@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Florida Lawn Service — Lawn Care & Property Cleanups in South Tampa, FL</title>
+<meta name="description" content="Florida Lawn Service handles weekly mowing, edging, and property cleanups for homes and businesses around South Tampa and the greater Tampa Bay area. Rated 4.9 from 28 Google reviews. Call (813) 369-0783 for a free estimate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+        colors: {
+          ink: '#0D0D0D',
+          panel: '#161616',
+          panel2: '#1D1D1D',
+          accent: { DEFAULT: '#84CC16', bright: '#A3E635', deep: '#3F6212' }
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html, body { background:#0D0D0D; }
+  /* decorative abstract "mown stripes" motif — NOT a photo, never implied as real work */
+  .turf-stripes{
+    background-image:repeating-linear-gradient(115deg, rgba(132,204,22,0.05) 0px, rgba(132,204,22,0.05) 34px, rgba(132,204,22,0.015) 34px, rgba(132,204,22,0.015) 68px);
+  }
+  .hero-vignette{
+    background:
+      radial-gradient(120% 90% at 78% 8%, rgba(132,204,22,0.16) 0%, rgba(132,204,22,0) 46%),
+      linear-gradient(180deg, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.72) 55%, #0D0D0D 100%);
+  }
+  .card-lift{ transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+  .card-lift:hover{ transform:translateY(-4px); border-color:rgba(163,230,53,0.55); box-shadow:0 18px 40px -22px rgba(132,204,22,0.5); }
+  .eyebrow-rule::after{ content:""; display:block; width:44px; height:2px; margin-top:10px; background:#84CC16; }
+  .eyebrow-rule.center::after{ margin-left:auto; margin-right:auto; }
+  iframe{ border:0; }
+</style>
+</head>
+<body class="bg-ink text-neutral-100 font-sans antialiased overflow-x-clip">
+
+  <!-- STICKY CALL BAR -->
+  <header class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-white/10">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <a href="#top" class="flex items-center gap-2.5 min-w-0">
+        <span class="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-accent text-ink font-black text-sm tracking-tight">FLS</span>
+        <span class="font-extrabold tracking-tight text-[15px] sm:text-base truncate">Florida Lawn Service</span>
+      </a>
+      <a href="tel:+18133690783" class="inline-flex items-center gap-2 rounded-lg bg-accent px-3.5 py-2 text-sm font-bold text-ink hover:bg-accent-bright transition-colors">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        <span class="hidden xs:inline sm:inline">(813) 369-0783</span>
+        <span class="xs:hidden sm:hidden">Call</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10 turf-stripes"></div>
+    <div class="absolute inset-0 -z-10 hero-vignette"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
+      <p class="eyebrow-rule text-accent-bright font-bold uppercase tracking-[0.22em] text-xs sm:text-sm">South Tampa · Lawn &amp; Property Care</p>
+      <h1 class="mt-6 font-black tracking-tight leading-[0.95] text-4xl sm:text-6xl lg:text-7xl max-w-4xl">
+        Clean-cut lawns, kept on schedule across <span class="text-accent-bright">Tampa Bay.</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-base sm:text-lg text-neutral-300 leading-relaxed">
+        We handle weekly mowing, crisp edging, and full property cleanups for homes and businesses around South Tampa — dependable crews, tidy results, and none of the runaround.
+      </p>
+
+      <!-- star row -->
+      <div class="mt-7 flex items-center gap-3">
+        <div class="flex items-center gap-0.5 text-accent-bright" aria-hidden="true">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+        </div>
+        <p class="text-sm text-neutral-300"><span class="font-bold text-white">4.9</span> · 28 reviews on Google</p>
+      </div>
+
+      <!-- dual CTA -->
+      <div class="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 font-bold text-ink hover:bg-accent-bright transition-colors">
+          Get a free estimate
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+18133690783" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-6 py-3.5 font-bold text-white hover:border-accent-bright hover:text-accent-bright transition-colors">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (813) 369-0783
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STAT ROW (real-data only: rating + review count) -->
+  <section class="border-y border-white/10 bg-panel">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-7 flex flex-wrap items-center justify-center gap-x-10 gap-y-5 text-center">
+      <div class="flex items-center gap-3">
+        <span class="text-3xl font-black text-accent-bright">4.9</span>
+        <div class="text-left leading-tight">
+          <div class="flex text-accent-bright" aria-hidden="true">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+          </div>
+          <p class="text-xs text-neutral-400 mt-0.5">Google rating</p>
+        </div>
+      </div>
+      <div class="h-8 w-px bg-white/10 hidden sm:block"></div>
+      <div class="text-left leading-tight">
+        <span class="text-3xl font-black text-white">28</span>
+        <p class="text-xs text-neutral-400 mt-0.5">reviews on Google</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20">
+    <p class="eyebrow-rule text-accent-bright font-bold uppercase tracking-[0.2em] text-xs">Why homeowners keep us</p>
+    <h2 class="mt-5 text-3xl sm:text-4xl font-black tracking-tight max-w-2xl">A lawn you don't have to think about.</h2>
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div class="card-lift rounded-2xl border border-white/10 bg-panel p-6">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 text-accent-bright">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </span>
+        <h3 class="mt-5 text-lg font-bold">On your schedule</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed">Weekly or biweekly service you can set your watch by. We show up, we cut, we clean up after ourselves — every visit.</p>
+      </div>
+      <div class="card-lift rounded-2xl border border-white/10 bg-panel p-6">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 text-accent-bright">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V7l6-4 6 4v14M10 21v-6h4v6"/></svg>
+        </span>
+        <h3 class="mt-5 text-lg font-bold">Homes &amp; businesses</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed">Residential yards and commercial properties alike — the same sharp edges and even cut, whatever the size of the lot.</p>
+      </div>
+      <div class="card-lift rounded-2xl border border-white/10 bg-panel p-6">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 text-accent-bright">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <h3 class="mt-5 text-lg font-bold">Local to South Tampa</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed">Based on W Napoleon Ave in 33611, so we're never far from your curb and easy to reach when you need us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="border-y border-white/10 bg-gradient-to-b from-panel to-ink">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20">
+      <p class="eyebrow-rule text-accent-bright font-bold uppercase tracking-[0.2em] text-xs">What we do</p>
+      <h2 class="mt-5 text-3xl sm:text-4xl font-black tracking-tight max-w-2xl">Straightforward lawn &amp; property care.</h2>
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div class="card-lift rounded-2xl border border-white/10 bg-panel2 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent text-ink">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+          </span>
+          <h3 class="mt-5 text-xl font-bold">Lawn Mowing &amp; Maintenance</h3>
+          <p class="mt-2.5 text-sm text-neutral-400 leading-relaxed">Residential and commercial mowing on a schedule that keeps your turf even, healthy, and always presentable.</p>
+        </div>
+        <div class="card-lift rounded-2xl border border-white/10 bg-panel2 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent text-ink">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg>
+          </span>
+          <h3 class="mt-5 text-xl font-bold">Edging &amp; Trimming</h3>
+          <p class="mt-2.5 text-sm text-neutral-400 leading-relaxed">Crisp edges along walks, drives, and beds, plus trimming that frames the whole yard and finishes every cut.</p>
+        </div>
+        <div class="card-lift rounded-2xl border border-white/10 bg-panel2 p-7">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent text-ink">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6M10 11v6M14 11v6"/></svg>
+          </span>
+          <h3 class="mt-5 text-xl font-bold">Lot &amp; Property Cleanups</h3>
+          <p class="mt-2.5 text-sm text-neutral-400 leading-relaxed">Overgrown lots and post-project messes cleared out and hauled off so the property looks cared-for again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS (CSS/SVG diagram — decorative) -->
+  <section class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20">
+    <p class="eyebrow-rule center text-accent-bright font-bold uppercase tracking-[0.2em] text-xs text-center">How it works</p>
+    <h2 class="mt-5 text-3xl sm:text-4xl font-black tracking-tight text-center">Three steps to a handled lawn.</h2>
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+      <div class="relative text-center">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-accent/40 bg-accent/10 text-accent-bright">
+          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </span>
+        <div class="mt-4 text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">Step 01</div>
+        <h3 class="mt-1.5 text-lg font-bold">Call or text</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed mx-auto max-w-xs">Tell us your address and what the property needs. We'll take it from there.</p>
+      </div>
+      <div class="relative text-center">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-accent/40 bg-accent/10 text-accent-bright">
+          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+        </span>
+        <div class="mt-4 text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">Step 02</div>
+        <h3 class="mt-1.5 text-lg font-bold">Free estimate</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed mx-auto max-w-xs">We look it over and price it honestly — no pressure, no surprise add-ons.</p>
+      </div>
+      <div class="relative text-center">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-accent/40 bg-accent/10 text-accent-bright">
+          <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <div class="mt-4 text-[11px] font-bold uppercase tracking-[0.2em] text-accent-bright">Step 03</div>
+        <h3 class="mt-1.5 text-lg font-bold">Kept cut</h3>
+        <p class="mt-2 text-sm text-neutral-400 leading-relaxed mx-auto max-w-xs">Recurring service on your schedule, tidy every visit, so you never think about the yard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGGREGATE REVIEWS (no testimonial cards) -->
+  <section class="border-y border-white/10 bg-panel">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <div class="flex justify-center text-accent-bright" aria-hidden="true">
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z"/></svg>
+      </div>
+      <p class="mt-5 text-4xl sm:text-5xl font-black tracking-tight">Rated <span class="text-accent-bright">4.9</span> from 28 reviews on Google</p>
+      <p class="mt-4 text-neutral-300 leading-relaxed max-w-xl mx-auto">Tampa Bay homeowners and property managers keep us on the calendar for one reason: the lawn always looks handled. We'd like to earn a spot on yours.</p>
+      <a href="#contact" class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 font-bold text-ink hover:bg-accent-bright transition-colors">
+        Get your free estimate
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT + MAP -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-start">
+      <div>
+        <p class="eyebrow-rule text-accent-bright font-bold uppercase tracking-[0.2em] text-xs">Get in touch</p>
+        <h2 class="mt-5 text-3xl sm:text-4xl font-black tracking-tight">Free estimate, no runaround.</h2>
+        <p class="mt-4 text-neutral-300 leading-relaxed max-w-md">Call or text for a quick, honest quote on mowing, edging, or a property cleanup anywhere around South Tampa.</p>
+
+        <div class="mt-8 space-y-3">
+          <a href="tel:+18133690783" class="flex items-center gap-4 rounded-xl border border-white/10 bg-panel p-4 hover:border-accent-bright transition-colors">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent/15 text-accent-bright">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </span>
+            <span class="min-w-0">
+              <span class="block text-xs uppercase tracking-wider text-neutral-500">Call</span>
+              <span class="block font-bold">(813) 369-0783</span>
+            </span>
+          </a>
+          <a href="sms:+18133690783" class="flex items-center gap-4 rounded-xl border border-white/10 bg-panel p-4 hover:border-accent-bright transition-colors">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent/15 text-accent-bright">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <span class="min-w-0">
+              <span class="block text-xs uppercase tracking-wider text-neutral-500">Text</span>
+              <span class="block font-bold">(813) 369-0783</span>
+            </span>
+          </a>
+          <a href="mailto:flsavingyoumoney@gmail.com" class="flex items-center gap-4 rounded-xl border border-white/10 bg-panel p-4 hover:border-accent-bright transition-colors">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent/15 text-accent-bright">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </span>
+            <span class="min-w-0">
+              <span class="block text-xs uppercase tracking-wider text-neutral-500">Email</span>
+              <span class="block font-bold break-all">flsavingyoumoney@gmail.com</span>
+            </span>
+          </a>
+          <div class="flex items-center gap-4 rounded-xl border border-white/10 bg-panel p-4">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent/15 text-accent-bright">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span class="min-w-0">
+              <span class="block text-xs uppercase tracking-wider text-neutral-500">Visit / mail</span>
+              <span class="block font-bold">3115 W Napoleon Ave, Tampa, FL 33611</span>
+            </span>
+          </div>
+          <div class="flex items-center gap-4 rounded-xl border border-white/10 bg-panel p-4">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent/15 text-accent-bright">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <span class="min-w-0">
+              <span class="block text-xs uppercase tracking-wider text-neutral-500">Hours</span>
+              <span class="block font-bold">Call for hours</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- OSM service-area map -->
+      <div>
+        <div class="overflow-hidden rounded-2xl border border-white/10 bg-panel">
+          <iframe
+            title="Florida Lawn Service service area — 3115 W Napoleon Ave, Tampa, FL 33611"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-82.5069607%2C27.8637003%2C-82.4849607%2C27.8797003&layer=mapnik&marker=27.8717003%2C-82.4959607"
+            width="600" height="420" loading="lazy" class="w-full h-[360px] sm:h-[420px] block grayscale-[0.15]"></iframe>
+          <div class="flex items-center justify-between gap-3 p-4 border-t border-white/10">
+            <p class="text-sm text-neutral-300">Serving South Tampa &amp; the greater Tampa Bay area.</p>
+            <a href="https://www.openstreetmap.org/?mlat=27.8717003&amp;mlon=-82.4959607#map=15/27.8717/-82.4960" target="_blank" rel="noopener" class="shrink-0 text-sm font-bold text-accent-bright hover:underline">Open map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="relative isolate overflow-hidden border-t border-white/10">
+    <div class="absolute inset-0 -z-10 turf-stripes"></div>
+    <div class="absolute inset-0 -z-10" style="background:radial-gradient(120% 120% at 50% 0%, rgba(132,204,22,0.14) 0%, rgba(13,13,13,0.9) 55%, #0D0D0D 100%);"></div>
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 py-20 sm:py-24 text-center">
+      <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.03]">Ready for a lawn you don't<br class="hidden sm:block" /> have to think about?</h2>
+      <p class="mt-5 text-neutral-300 max-w-xl mx-auto">Get a free, no-pressure estimate for mowing, edging, or a full property cleanup in South Tampa today.</p>
+      <div class="mt-9 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+        <a href="tel:+18133690783" class="inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-7 py-4 font-bold text-ink hover:bg-accent-bright transition-colors">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          Call (813) 369-0783
+        </a>
+        <a href="mailto:flsavingyoumoney@gmail.com" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/25 px-7 py-4 font-bold text-white hover:border-accent-bright hover:text-accent-bright transition-colors">
+          Email us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 bg-ink">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 py-12">
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-8">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="grid h-9 w-9 place-items-center rounded-lg bg-accent text-ink font-black text-sm tracking-tight">FLS</span>
+            <span class="font-extrabold tracking-tight">Florida Lawn Service</span>
+          </div>
+          <p class="mt-4 text-sm text-neutral-400 max-w-xs leading-relaxed">Lawn mowing, edging, and property cleanups for homes and businesses across South Tampa and the greater Tampa Bay area.</p>
+        </div>
+        <div class="text-sm text-neutral-300 space-y-2">
+          <p class="text-xs uppercase tracking-[0.2em] text-neutral-500 font-bold">Contact</p>
+          <p>3115 W Napoleon Ave, Tampa, FL 33611</p>
+          <p><a href="tel:+18133690783" class="hover:text-accent-bright transition-colors">(813) 369-0783</a></p>
+          <p><a href="mailto:flsavingyoumoney@gmail.com" class="hover:text-accent-bright transition-colors break-all">flsavingyoumoney@gmail.com</a></p>
+          <p class="text-neutral-500">Call for hours</p>
+        </div>
+      </div>
+      <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-xs text-neutral-500">
+        <p>© 2026 Florida Lawn Service. All rights reserved.</p>
+        <p>Serving South Tampa &amp; the greater Tampa Bay area, Florida.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Florida Lawn Service",
+    "description": "Lawn mowing and maintenance, edging and trimming, and lot and property cleanups for residential and commercial clients in South Tampa and the greater Tampa Bay area.",
+    "telephone": "+1-813-369-0783",
+    "email": "flsavingyoumoney@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3115 W Napoleon Ave",
+      "addressLocality": "Tampa",
+      "addressRegion": "FL",
+      "postalCode": "33611",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.8717003,
+      "longitude": -82.4959607
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Tampa, FL" },
+      { "@type": "Place", "name": "South Tampa" },
+      { "@type": "Place", "name": "Tampa Bay area" }
+    ],
+    "knowsAbout": ["Lawn mowing", "Lawn maintenance", "Edging and trimming", "Property cleanups"]
+  }
+  </script>
+</body>
+</html>

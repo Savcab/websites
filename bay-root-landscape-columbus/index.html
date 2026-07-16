@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bay Root Landscape &amp; Contracting — Design–Build &amp; Site Work in Columbus, GA</title>
+<meta name="description" content="Bay Root Landscape & Contracting grades, drains, clears, and builds outdoor spaces across Columbus, GA and the Chattahoochee Valley — sod installation, retaining walls, drainage & stormwater control, and brush & tree clearing. Rated 5.0 on Google. Call (706) 457-8672.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0A0A;
+    --paper:#F4F4F0;
+    --paper-2:#E9E9E2;
+    --orange:#FF5A1F;
+    --white:#FFFFFF;
+    --line:#0A0A0A;
+    --shadow:6px 6px 0 var(--ink);
+    --shadow-sm:4px 4px 0 var(--ink);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Archivo',system-ui,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:0.95;letter-spacing:0.01em}
+  .mono{font-family:'Space Mono',monospace}
+  .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+  .eyebrow{
+    font-family:'Space Mono',monospace;font-weight:700;font-size:0.72rem;
+    letter-spacing:0.22em;text-transform:uppercase;
+  }
+  /* ---- skip link ---- */
+  .skip{position:absolute;left:-999px;top:0;background:var(--orange);color:var(--ink);
+    padding:10px 16px;font-weight:800;z-index:200}
+  .skip:focus{left:8px;top:8px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+  /* ---- buttons ---- */
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;justify-content:center;
+    font-family:'Archivo',sans-serif;font-weight:800;text-transform:uppercase;
+    letter-spacing:0.04em;font-size:0.9rem;
+    padding:15px 22px;border:3px solid var(--ink);border-radius:0;
+    background:var(--orange);color:var(--ink);cursor:pointer;
+    box-shadow:var(--shadow-sm);transition:transform .08s ease,box-shadow .08s ease;
+    line-height:1;
+  }
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+  .btn--ghost{background:var(--paper);color:var(--ink)}
+  .btn--dark{background:var(--ink);color:var(--paper)}
+  .btn svg{width:18px;height:18px;flex:0 0 auto}
+
+  /* ---- header ---- */
+  header{position:sticky;top:0;z-index:100;background:var(--ink);border-bottom:3px solid var(--ink)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand b{font-family:'Anton',sans-serif;color:var(--paper);font-size:1.5rem;letter-spacing:0.02em;text-transform:uppercase}
+  .brand b span{color:var(--orange)}
+  .brand small{font-family:'Space Mono',monospace;color:#B9B9B0;font-size:0.6rem;letter-spacing:0.2em;margin-top:3px;text-transform:uppercase}
+  .navlinks{display:none;gap:26px;align-items:center}
+  .navlinks a{font-family:'Space Mono',monospace;font-weight:700;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--paper);padding:6px 0;border-bottom:2px solid transparent}
+  .navlinks a:hover{border-bottom-color:var(--orange);color:#fff}
+  .nav .btn{padding:11px 16px;font-size:0.78rem;box-shadow:3px 3px 0 var(--orange)}
+  .nav .btn:hover{box-shadow:4px 4px 0 var(--orange)}
+  @media(min-width:900px){.navlinks{display:flex}}
+
+  /* ---- hero ---- */
+  .hero{border-bottom:3px solid var(--ink);background:
+     repeating-linear-gradient(45deg,transparent,transparent 22px,rgba(10,10,10,0.03) 22px,rgba(10,10,10,0.03) 24px),var(--paper)}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:0}
+  .hero-copy{padding:44px 20px 40px}
+  .hero-copy .eyebrow{color:var(--ink);display:inline-flex;align-items:center;gap:10px;background:var(--orange);border:3px solid var(--ink);padding:8px 12px;box-shadow:var(--shadow-sm)}
+  h1{font-size:clamp(2.4rem,10vw,5.4rem);margin:22px 0 0;overflow-wrap:anywhere}
+  h1 .hl{background:var(--orange);color:var(--ink);padding:0 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .lede{font-size:clamp(1rem,2.4vw,1.18rem);max-width:44ch;margin:22px 0 0;font-weight:500}
+  .rating{display:inline-flex;align-items:center;gap:10px;margin-top:24px;border:3px solid var(--ink);background:var(--white);padding:9px 14px;box-shadow:var(--shadow-sm);font-family:'Space Mono',monospace;font-weight:700;font-size:0.85rem;letter-spacing:0.06em}
+  .stars{color:var(--orange);letter-spacing:2px;font-size:1rem}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+  .hero-media{position:relative;border-top:3px solid var(--ink)}
+  .hero-media img{width:100%;height:100%;min-height:300px;max-height:560px;object-fit:cover;filter:grayscale(0.06) contrast(1.03)}
+  .hero-tag{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--paper);font-family:'Space Mono',monospace;font-weight:700;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;padding:9px 14px;border-top:3px solid var(--orange);border-right:3px solid var(--orange)}
+  @media(min-width:900px){
+    .hero-grid{grid-template-columns:1.05fr 0.95fr;align-items:stretch}
+    .hero-copy{padding:70px 40px 66px;display:flex;flex-direction:column;justify-content:center}
+    .hero-media{border-top:none;border-left:3px solid var(--ink)}
+    .hero-media img{max-height:none}
+  }
+
+  /* ---- marquee ---- */
+  .marquee{background:var(--ink);color:var(--paper);overflow:hidden;border-bottom:3px solid var(--ink);white-space:nowrap;padding:14px 0}
+  .marquee-track{display:inline-block;white-space:nowrap;animation:scroll 26s linear infinite;will-change:transform}
+  .marquee-track span{font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.35rem;letter-spacing:0.03em;padding:0 4px}
+  .marquee-track .dot{color:var(--orange);padding:0 22px}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;white-space:normal;display:block;text-align:center;padding:0 16px}}
+
+  /* ---- section scaffolding ---- */
+  section{padding:70px 0}
+  .sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:40px}
+  .sec-head .eyebrow{color:var(--orange);display:inline-flex;align-items:center;gap:10px}
+  .sec-head .eyebrow::before{content:"";width:34px;height:3px;background:var(--orange);display:inline-block}
+  .sec-head h2{font-size:clamp(2rem,6vw,3.6rem)}
+  .sec-head p{max-width:56ch;font-weight:500;font-size:1.02rem}
+
+  /* ---- services ---- */
+  .grid3{display:grid;grid-template-columns:1fr;gap:18px}
+  @media(min-width:640px){.grid3{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.grid3{grid-template-columns:1fr 1fr 1fr}}
+  .svc{border:3px solid var(--ink);background:var(--white);padding:26px 22px 28px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:230px;transition:transform .1s ease,box-shadow .1s ease}
+  .svc:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+  .svc-num{font-family:'Space Mono',monospace;font-weight:700;font-size:0.72rem;letter-spacing:0.18em;color:var(--orange)}
+  .svc-ico{width:46px;height:46px;margin:14px 0 16px;border:3px solid var(--ink);background:var(--orange);display:flex;align-items:center;justify-content:center}
+  .svc-ico svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .svc h3{font-size:1.32rem;letter-spacing:0.01em}
+  .svc p{margin-top:10px;font-size:0.95rem;font-weight:500;color:#2a2a26}
+  .svc--cta{background:var(--ink);color:var(--paper);justify-content:center;align-items:flex-start;gap:10px}
+  .svc--cta .svc-num{color:var(--orange)}
+  .svc--cta h3{color:var(--paper);font-size:1.5rem}
+  .svc--cta p{color:#c9c9c1}
+  .svc--cta .btn{margin-top:16px}
+
+  /* ---- work gallery ---- */
+  .work{background:var(--ink);color:var(--paper);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+  .work .sec-head h2{color:var(--paper)}
+  .work .sec-head p{color:#c9c9c1}
+  .work .sec-head .eyebrow{color:var(--orange)}
+  .gal{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:640px){.gal{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.gal{grid-template-columns:1fr 1fr 1fr}}
+  .tile{border:3px solid var(--paper);background:#151510;overflow:hidden;position:relative}
+  .tile img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .35s ease}
+  .tile:hover img{transform:scale(1.05)}
+  .tile figcaption{font-family:'Space Mono',monospace;font-weight:700;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;padding:11px 13px;background:var(--paper);color:var(--ink);border-top:3px solid var(--orange)}
+
+  /* ---- stat band ---- */
+  .stats{background:var(--orange);border-bottom:3px solid var(--ink)}
+  .stat-grid{display:grid;grid-template-columns:1fr 1fr}
+  .stat{padding:38px 18px;text-align:center;border-right:3px solid var(--ink)}
+  .stat:last-child{border-right:none}
+  .stat b{display:block;font-family:'Anton',sans-serif;font-size:clamp(2.8rem,9vw,4.6rem);line-height:0.9;color:var(--ink)}
+  .stat span{display:block;margin-top:8px;font-family:'Space Mono',monospace;font-weight:700;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink)}
+
+  /* ---- area ---- */
+  .area-list{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+  .chip{border:3px solid var(--ink);background:var(--white);padding:11px 16px;font-family:'Space Mono',monospace;font-weight:700;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;box-shadow:var(--shadow-sm)}
+  .area-note{margin-top:24px;font-weight:600;font-size:0.98rem}
+  .area-note b{font-family:'Space Mono',monospace}
+
+  /* ---- contact ---- */
+  .contact{background:var(--paper-2);border-top:3px solid var(--ink)}
+  .cgrid{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:900px){.cgrid{grid-template-columns:1fr 1fr;gap:26px}}
+  .cbox{border:3px solid var(--ink);background:var(--white);box-shadow:var(--shadow)}
+  .cbox-inner{padding:30px 26px}
+  .cbox h3{font-size:1.7rem}
+  .cline{display:flex;gap:14px;align-items:flex-start;margin-top:20px}
+  .cline .ci{width:42px;height:42px;flex:0 0 auto;border:3px solid var(--ink);background:var(--orange);display:flex;align-items:center;justify-content:center}
+  .cline .ci svg{width:22px;height:22px;stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .cline .lbl{font-family:'Space Mono',monospace;font-weight:700;font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;color:#5a5a52}
+  .cline .val{font-weight:700;font-size:1.06rem;margin-top:2px;word-break:break-word}
+  .cline a.val:hover{color:var(--orange)}
+  .cbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .mapbox{border:3px solid var(--ink);background:var(--white);box-shadow:var(--shadow);overflow:hidden;min-height:340px;display:flex;flex-direction:column}
+  .mapbox iframe{width:100%;flex:1 1 auto;min-height:340px;border:0;filter:grayscale(0.15) contrast(1.05)}
+
+  /* ---- final cta ---- */
+  .final{background:var(--ink);color:var(--paper);text-align:center;border-top:3px solid var(--ink)}
+  .final h2{font-size:clamp(2.2rem,7vw,4.4rem);color:var(--paper)}
+  .final h2 .hl{background:var(--orange);color:var(--ink);padding:0 10px}
+  .final p{max-width:48ch;margin:18px auto 0;font-weight:500;color:#c9c9c1;font-size:1.05rem}
+  .final .cta-row{justify-content:center;margin-top:32px}
+
+  /* ---- footer ---- */
+  footer{background:#050505;color:#c9c9c1;padding:52px 0 40px;border-top:3px solid var(--orange)}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:26px}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  .foot .brand b{font-size:1.7rem}
+  .foot p,.foot a{font-size:0.92rem;line-height:1.7}
+  .foot a:hover{color:var(--orange)}
+  .foot h4{font-family:'Space Mono',monospace;font-weight:700;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--paper);margin-bottom:12px}
+  .foot-list a{display:block}
+  .foot-bottom{border-top:1px solid #2a2a26;margin-top:38px;padding-top:22px;font-family:'Space Mono',monospace;font-size:0.7rem;letter-spacing:0.06em;color:#6a6a62;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+</style>
+</head>
+<body>
+<a href="#services" class="skip">Skip to content</a>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Bay Root Landscape and Contracting home">
+      <b>BAY<span>·</span>ROOT</b>
+      <small>Landscape &amp; Contracting · Columbus, GA</small>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="tel:+17064578672" aria-label="Call Bay Root at 706 457 8672">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Now
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0" aria-label="Introduction">
+    <div class="wrap" style="padding:0">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Design–Build &amp; Site Work · Columbus, GA</span>
+          <h1>Landscape <span class="hl">Design–Build</span> &amp; Site Work in Columbus, GA</h1>
+          <p class="lede">Bay Root grades, drains, clears, and builds outdoor spaces across the Chattahoochee Valley — from fresh sod and retaining walls to stormwater control and lot clearing.</p>
+          <div class="rating" aria-label="Rated 5.0 out of 5 from 10 Google reviews">
+            <span class="stars" aria-hidden="true">★★★★★</span> 5.0 · 10 REVIEWS · GOOGLE
+          </div>
+          <div class="cta-row">
+            <a class="btn" href="tel:+17064578672">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (706) 457-8672
+            </a>
+            <a class="btn btn--ghost" href="sms:+17064578672">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text Us
+            </a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/hero.jpg" width="1600" height="1200" fetchpriority="high" decoding="async" alt="A newly built farmhouse in Columbus, GA with fresh sod lawn, pine-straw beds, and young trees installed by Bay Root Landscape & Contracting.">
+          <figcaption class="hero-tag">Full front-yard install · Columbus, GA</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Grading</span><span class="dot">✦</span><span>Drainage &amp; Stormwater</span><span class="dot">✦</span><span>Sod Installation</span><span class="dot">✦</span><span>Brush &amp; Tree Clearing</span><span class="dot">✦</span><span>Landscape Design–Build</span><span class="dot">✦</span><span>Retaining Walls</span><span class="dot">✦</span><span>Grading</span><span class="dot">✦</span><span>Drainage &amp; Stormwater</span><span class="dot">✦</span><span>Sod Installation</span><span class="dot">✦</span><span>Brush &amp; Tree Clearing</span><span class="dot">✦</span><span>Landscape Design–Build</span><span class="dot">✦</span><span>Retaining Walls</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">What We Build</span>
+        <h2 id="services-h">Ground-up outdoor work,<br>done to spec.</h2>
+        <p>One crew for the whole job — we move the dirt, solve the water, clear the lot, and finish the ground. Every service below is work Bay Root does across Columbus and the Valley.</p>
+      </div>
+      <div class="grid3">
+        <div class="svc">
+          <div class="svc-num">SERVICE 01</div>
+          <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M4 21V10l8-5 8 5v11"/><path d="M9 21v-6h6v6"/></svg></div>
+          <h3>Landscape Design–Build</h3>
+          <p>Full outdoor builds — planning the layout, planting beds and trees, and installing the hardscape that ties it together.</p>
+        </div>
+        <div class="svc">
+          <div class="svc-num">SERVICE 02</div>
+          <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 18h20"/><path d="M2 18 8 8l4 4 4-6 6 12"/></svg></div>
+          <h3>Grading &amp; Site Prep</h3>
+          <p>Shaping and leveling the ground so a lot drains right and builds right — pads, slopes, and rough-to-finish grade.</p>
+        </div>
+        <div class="svc">
+          <div class="svc-num">SERVICE 03</div>
+          <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="7"/><rect x="13" y="4" width="8" height="7"/><rect x="3" y="14" width="8" height="6"/><rect x="13" y="14" width="8" height="6"/></svg></div>
+          <h3>Sod Installation</h3>
+          <p>Fresh, rolled sod laid over prepped ground for an instant, established lawn — front yards to full properties.</p>
+        </div>
+        <div class="svc">
+          <div class="svc-num">SERVICE 04</div>
+          <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9 14a3 3 0 0 0 6 0"/></svg></div>
+          <h3>Drainage &amp; Stormwater Control</h3>
+          <p>Moving water off the property with graded swales, river-rock beds, and drainage lines that keep yards from washing out.</p>
+        </div>
+        <div class="svc">
+          <div class="svc-num">SERVICE 05</div>
+          <div class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M12 10 7 5"/><path d="M12 13l5-4"/><path d="M12 2a3 3 0 0 0-3 3 3 3 0 0 0 6 0 3 3 0 0 0-3-3z"/></svg></div>
+          <h3>Brush &amp; Tree Clearing</h3>
+          <p>Clearing overgrowth, brush, and trees to open a lot up — the first step on cleanup, expansion, and new-build sites.</p>
+        </div>
+        <div class="svc svc--cta">
+          <div class="svc-num">GOT A PROJECT?</div>
+          <h3>Tell us what you need moved, built, or cleared.</h3>
+          <p>We'll walk the site and give you a straight quote.</p>
+          <a class="btn" href="tel:+17064578672">Call (706) 457-8672</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Recent Work</span>
+        <h2 id="work-h">On the job around the Valley.</h2>
+        <p>A look at recent Bay Root projects — sod, grading, retaining walls, drainage, and clearing. Real jobs, photographed on site.</p>
+      </div>
+      <div class="gal">
+        <figure class="tile"><img src="assets/work-p2.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Fresh green sod lawn installed around a brick ranch home surrounded by pine woods."><figcaption>Sod install · new lawn</figcaption></figure>
+        <figure class="tile"><img src="assets/work-p4.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Newly built timber retaining wall holding back a graded, cleared backyard slope."><figcaption>Timber retaining wall</figcaption></figure>
+        <figure class="tile"><img src="assets/work-p1.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Bay Root crew member in an orange shirt laying rolled sod beside a river-rock drainage bed and walkway."><figcaption>Sod &amp; river-rock drainage</figcaption></figure>
+        <figure class="tile"><img src="assets/work-p6.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Freshly planted arborvitae and shrubs set into a pine-straw covered slope for erosion control."><figcaption>Slope planting &amp; pine straw</figcaption></figure>
+        <figure class="tile"><img src="assets/work-p8.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Fresh sod laid over freshly graded red-clay ground in front of a new farmhouse."><figcaption>Grading &amp; fresh sod</figcaption></figure>
+        <figure class="tile"><img src="assets/work-p7.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="A freshly poured concrete slab with wood forms on a cleared and graded backyard site."><figcaption>Concrete pad &amp; site work</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats" aria-label="Reputation">
+    <div class="wrap" style="padding:0">
+      <div class="stat-grid">
+        <div class="stat"><b>5.0</b><span>★ Google Rating</span></div>
+        <div class="stat"><b>10</b><span>5-Star Reviews</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AREA -->
+  <section id="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Where We Work</span>
+        <h2 id="area-h">Serving Columbus &amp; the Chattahoochee Valley.</h2>
+        <p>Based in Columbus and working across the surrounding towns. If you're near one of these, we can get out and walk your site.</p>
+      </div>
+      <div class="area-list">
+        <span class="chip">Columbus</span>
+        <span class="chip">Fortson</span>
+        <span class="chip">Midland</span>
+        <span class="chip">Cataula</span>
+        <span class="chip">Upatoi</span>
+        <span class="chip">Phenix City</span>
+      </div>
+      <p class="area-note">Based at <b>3469 Macon Rd #6903, Columbus, GA 31917</b></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 id="contact-h">Let's break ground.</h2>
+        <p>Call or text to talk through your project, or send an email and we'll get back to you. Call for current hours and scheduling.</p>
+      </div>
+      <div class="cgrid">
+        <div class="cbox">
+          <div class="cbox-inner">
+            <h3>Bay Root Landscape &amp; Contracting</h3>
+            <div class="cline">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <span><span class="lbl">Call</span><a class="val" href="tel:+17064578672">(706) 457-8672</a></span>
+            </div>
+            <div class="cline">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <span><span class="lbl">Text</span><a class="val" href="sms:+17064578672">(706) 457-8672</a></span>
+            </div>
+            <div class="cline">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16"/><path d="m2 7 10 6 10-6"/></svg></span>
+              <span><span class="lbl">Email</span><a class="val" href="mailto:bayrootcontracting@gmail.com">bayrootcontracting@gmail.com</a></span>
+            </div>
+            <div class="cline">
+              <span class="ci" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span class="lbl">Based In</span><span class="val">3469 Macon Rd #6903<br>Columbus, GA 31917</span></span>
+            </div>
+            <div class="cbtns">
+              <a class="btn" href="tel:+17064578672">Call Now</a>
+              <a class="btn btn--dark" href="sms:+17064578672">Text Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="mapbox">
+          <iframe title="Map showing Bay Root Landscape & Contracting in Columbus, GA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.9483984%2C32.4765998%2C-84.9283984%2C32.4925998&amp;layer=mapnik&amp;marker=32.4845998%2C-84.9383984"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final" aria-labelledby="final-h">
+    <div class="wrap">
+      <h2 id="final-h">Ready to <span class="hl">break ground?</span></h2>
+      <p>From the first grade to the last roll of sod, Bay Root handles the whole job. Call or text for a straight quote.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17064578672">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (706) 457-8672
+        </a>
+        <a class="btn btn--ghost" href="mailto:bayrootcontracting@gmail.com">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><b style="color:var(--paper)">BAY<span style="color:var(--orange)">·</span>ROOT</b></div>
+        <p style="margin-top:12px;max-width:34ch">Landscape design–build, grading, drainage, sod, and clearing across Columbus, GA and the Chattahoochee Valley.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="foot-list">
+          <a href="tel:+17064578672">(706) 457-8672 · Call</a>
+          <a href="sms:+17064578672">(706) 457-8672 · Text</a>
+          <a href="mailto:bayrootcontracting@gmail.com">bayrootcontracting@gmail.com</a>
+          <p>3469 Macon Rd #6903<br>Columbus, GA 31917</p>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <div class="foot-list">
+          <a href="#services">Landscape Design–Build</a>
+          <a href="#services">Grading &amp; Site Prep</a>
+          <a href="#services">Sod Installation</a>
+          <a href="#services">Drainage &amp; Stormwater</a>
+          <a href="#services">Brush &amp; Tree Clearing</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Bay Root Landscape &amp; Contracting</span>
+      <span>Columbus, GA · Call for hours</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Bay Root Landscape & Contracting",
+  "image": "assets/hero.jpg",
+  "telephone": "+17064578672",
+  "email": "bayrootcontracting@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3469 Macon Rd #6903",
+    "addressLocality": "Columbus",
+    "addressRegion": "GA",
+    "postalCode": "31917",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.4845998,
+    "longitude": -84.9383984
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Columbus, GA" },
+    { "@type": "City", "name": "Fortson, GA" },
+    { "@type": "City", "name": "Midland, GA" },
+    { "@type": "City", "name": "Cataula, GA" },
+    { "@type": "City", "name": "Upatoi, GA" },
+    { "@type": "City", "name": "Phenix City, AL" }
+  ],
+  "knowsAbout": [
+    "Landscape design-build",
+    "Grading and site preparation",
+    "Sod installation",
+    "Drainage and stormwater control",
+    "Brush and tree clearing"
+  ]
+}
+</script>
+</body>
+</html>

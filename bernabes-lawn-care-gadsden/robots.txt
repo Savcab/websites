@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/bernabes-lawn-care-gadsden/sitemap.xml

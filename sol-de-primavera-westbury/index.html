@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping &amp; Lawn Care in Westbury, NY | Sol De Primavera</title>
+<meta name="description" content="Sol De Primavera Landscaping keeps Westbury and Nassau County lawns healthy all year — mowing, fertilization, cleanups, aeration, tree &amp; shrub care, and snow removal. Rated 5.0 across 69 reviews. Licensed &amp; insured. Call or text (516) 451-9811.">
+<link rel="canonical" href="https://savcab.github.io/websites/sol-de-primavera-westbury/">
+<meta property="og:title" content="Sol De Primavera Landscaping — Westbury, NY">
+<meta property="og:description" content="Reliable lawn care and landscaping for Westbury &amp; Nassau County, all year round. Rated 5.0 across 69 reviews.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://savcab.github.io/websites/sol-de-primavera-westbury/assets/hero-lawn-care-westbury.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#FBFDFB;--surface:#F2F6F1;--surface-2:#E8F2EA;--card:#FFFFFF;
+    --ink:#14211A;--ink-2:#3C4B42;--muted:#5F6F65;--line:#E1E9E2;--line-2:#D3DFD5;
+    --green:#1F7A44;--green-deep:#14532D;--green-dark:#0F3D22;--sun:#E0A32E;--star:#E0A32E;
+    --radius:22px;--radius-sm:14px;
+    --shadow:0 1px 2px rgba(20,33,26,.04),0 18px 40px -22px rgba(20,53,36,.28);
+    --shadow-sm:0 1px 2px rgba(20,33,26,.05),0 10px 24px -18px rgba(20,53,36,.25);
+    --maxw:1200px;--pad-y:clamp(3.75rem,8vw,7.5rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--canvas);color:var(--ink-2);line-height:1.65;font-size:17px;overflow-x:clip;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4,.display{font-family:'Plus Jakarta Sans','Inter',sans-serif;color:var(--ink);line-height:1.1;letter-spacing:-.02em;font-weight:800}
+  h2{font-size:clamp(1.9rem,4vw,2.9rem)}
+  h3{font-size:1.22rem;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+  p{max-width:64ch}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:clamp(1.15rem,4vw,2.5rem)}
+  section{padding-block:var(--pad-y)}
+  .eyebrow{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:.55rem}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--green);border-radius:2px;display:inline-block}
+  .lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2)}
+  .center{text-align:center}.center .eyebrow{justify-content:center}.center p{margin-inline:auto}
+
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.98rem;padding:.85rem 1.4rem;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease,color .15s ease;white-space:nowrap}
+  .btn svg{width:18px;height:18px}
+  .btn-primary{background:var(--green);color:#fff;box-shadow:0 8px 20px -8px rgba(31,122,68,.6)}
+  .btn-primary:hover{background:var(--green-deep);transform:translateY(-2px)}
+  .btn-ghost{background:#fff;color:var(--green-deep);border-color:var(--line-2)}
+  .btn-ghost:hover{border-color:var(--green);transform:translateY(-2px)}
+  .btn-lg{padding:1rem 1.7rem;font-size:1.05rem}
+  a:focus-visible,button:focus-visible,.tile:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:8px}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(251,253,251,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+  .brand{display:flex;align-items:center;gap:.6rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.16rem;color:var(--ink);letter-spacing:-.02em}
+  .brand .mark{width:38px;height:38px;flex:none}
+  .brand small{display:block;font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .nav-links{display:flex;align-items:center;gap:1.7rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:.95rem}
+  .nav-links a{color:var(--ink-2)}.nav-links a:hover{color:var(--green)}
+  .nav-cta{display:flex;align-items:center;gap:.7rem}
+  .nav-phone{display:inline-flex;align-items:center;gap:.45rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:var(--ink)}
+  .nav-phone svg{width:17px;height:17px;color:var(--green)}
+  @media(max-width:900px){.nav-links{display:none}.nav-phone span{display:none}}
+
+  .hero{background:radial-gradient(1100px 420px at 88% -8%,var(--surface-2),transparent 60%),radial-gradient(760px 380px at 6% 108%,#EFF5EE,transparent 62%);padding-top:clamp(2.5rem,5vw,4.25rem);padding-bottom:clamp(2.5rem,5vw,4rem)}
+  .hero-grid{display:grid;grid-template-columns:1fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .hero h1{font-size:clamp(2.35rem,5.4vw,4rem);margin:1.1rem 0 0}
+  .hero .lead{margin-top:1.15rem;max-width:38ch}
+  .rating-inline{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.4rem;font-weight:600;color:var(--ink);font-size:.98rem;flex-wrap:wrap}
+  .stars{display:inline-flex;gap:2px}
+  .stars svg{width:18px;height:18px;fill:var(--star);color:var(--star)}
+  .rating-inline b{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.9rem}
+  .hero-figure{position:relative}
+  .hero-figure .photo{border-radius:calc(var(--radius) + 6px);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--surface)}
+  .hero-figure .photo img{width:100%;height:100%;object-fit:cover}
+  .chip{position:absolute;background:rgba(255,255,255,.96);backdrop-filter:blur(4px);border:1px solid var(--line);border-radius:14px;padding:.6rem .85rem;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:.55rem;font-size:.85rem;font-weight:600;color:var(--ink)}
+  .chip svg{width:20px;height:20px;color:var(--green);flex:none}
+  .chip-rating{left:-14px;bottom:22px}
+  .chip-badge{right:-10px;top:24px}
+  .chip .num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.02rem}
+  @media(max-width:520px){.chip-rating{left:6px}.chip-badge{right:6px}}
+
+  .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+  .trust .wrap{padding-block:1.3rem}
+  .trust-row{display:flex;flex-wrap:wrap;gap:.9rem 1.9rem;align-items:center;justify-content:space-between}
+  .trust-item{display:inline-flex;align-items:center;gap:.6rem;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:.92rem;color:var(--ink)}
+  .trust-item svg{width:19px;height:19px;color:var(--green);flex:none}
+
+  .sec-head h2{margin-top:.7rem}.sec-head p{margin-top:.9rem}
+
+  .steps{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2.6rem}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem 1.6rem;box-shadow:var(--shadow-sm)}
+  .step .idx{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:.82rem;letter-spacing:.1em;color:var(--green);display:flex;align-items:center;gap:.6rem;text-transform:uppercase}
+  .step .idx .dot{width:34px;height:34px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;color:var(--green-deep)}
+  .step .idx .dot svg{width:18px;height:18px}
+  .step h3{margin:1.1rem 0 .5rem}
+  .step p{color:var(--muted);font-size:.98rem}
+
+  #services{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .svc-grid{display:grid;grid-template-columns:1fr;gap:1.05rem;margin-top:2.6rem}
+  @media(min-width:600px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:960px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+  .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.5rem;box-shadow:var(--shadow-sm);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--line-2)}
+  .svc .ic{width:48px;height:48px;border-radius:13px;background:var(--surface-2);display:grid;place-items:center;color:var(--green-deep);margin-bottom:1.05rem}
+  .svc .ic svg{width:24px;height:24px}
+  .svc h3{margin-bottom:.45rem}
+  .svc p{color:var(--muted);font-size:.96rem;max-width:34ch}
+
+  #seasons{background:linear-gradient(180deg,var(--green-dark),var(--green-deep));color:#EAF3EC;position:relative;overflow:hidden}
+  #seasons::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 90% 0%,rgba(224,163,46,.16),transparent 60%);pointer-events:none}
+  #seasons>.wrap{position:relative;z-index:1}
+  #seasons .eyebrow{color:#8FE0AB}#seasons .eyebrow::before{background:#8FE0AB}
+  #seasons h2{color:#fff}#seasons .lead{color:#C7DFCD}
+  .season-track{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:2.7rem}
+  @media(min-width:680px){.season-track{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1000px){.season-track{grid-template-columns:repeat(4,1fr)}}
+  .season{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:1.6rem 1.4rem}
+  .season .s-top{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem}
+  .season .s-ic{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:#fff}
+  .season .s-ic svg{width:21px;height:21px}
+  .season h3{color:#fff;font-size:1.1rem}
+  .season .s-tag{font-family:'Plus Jakarta Sans',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#8FE0AB}
+  .season ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+  .season li{display:flex;align-items:flex-start;gap:.55rem;font-size:.95rem;color:#D8EADD}
+  .season li svg{width:16px;height:16px;color:#8FE0AB;flex:none;margin-top:.28rem}
+  .season-note{margin-top:2rem;font-size:.95rem;color:#B7D2BE;display:inline-flex;align-items:center;gap:.6rem;max-width:60ch}
+  .season-note svg{width:18px;height:18px;color:#8FE0AB;flex:none}
+
+  .gal-grid{display:grid;grid-template-columns:1fr;gap:.9rem;margin-top:2.6rem}
+  @media(min-width:560px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:900px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
+  .tile{position:relative;border:0;padding:0;background:var(--surface);border-radius:var(--radius-sm);overflow:hidden;aspect-ratio:4/3;cursor:pointer;box-shadow:var(--shadow-sm);display:block;width:100%}
+  .tile img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+  .tile:hover img{transform:scale(1.06)}
+  .tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.5rem .9rem .7rem;font-size:.82rem;font-weight:600;color:#fff;background:linear-gradient(180deg,transparent,rgba(15,61,34,.82));text-align:left;font-family:'Plus Jakarta Sans',sans-serif}
+
+  .lb{position:fixed;inset:0;z-index:120;background:rgba(15,33,24,.9);display:none;align-items:center;justify-content:center;padding:1.5rem}
+  .lb.open{display:flex}
+  .lb img{max-width:min(1000px,94vw);max-height:88vh;border-radius:12px;box-shadow:0 30px 80px -20px rgba(0,0,0,.7)}
+  .lb-close{position:absolute;top:1.1rem;right:1.2rem;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;display:grid;place-items:center}
+  .lb-close svg{width:22px;height:22px}
+
+  #reviews{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .rev-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.4rem}
+  .rev-score{display:flex;align-items:center;gap:1rem}
+  .rev-score .big{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:3rem;color:var(--ink);line-height:1}
+  .rev-score .meta{font-size:.9rem;color:var(--muted)}
+  .rev-grid{display:grid;grid-template-columns:1fr;gap:1.2rem;margin-top:2.4rem}
+  @media(min-width:800px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+  .rev{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.8rem;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:1.1rem}
+  .rev .q{font-size:1.08rem;color:var(--ink);line-height:1.6;font-weight:500}
+  .rev .q .mark{color:var(--green);font-family:'Plus Jakarta Sans',sans-serif}
+  .rev .by{display:flex;align-items:center;gap:.75rem;margin-top:auto}
+  .rev .av{width:42px;height:42px;border-radius:50%;background:var(--surface-2);color:var(--green-deep);display:grid;place-items:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.05rem;flex:none}
+  .rev .who{font-weight:700;color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem}
+  .rev .src{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:.35rem}
+  .rev .stars svg{width:15px;height:15px}
+
+  .area-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:2.4rem;align-items:stretch}
+  @media(min-width:900px){.area-grid{grid-template-columns:1fr 1.05fr}}
+  .towns{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0 2rem}
+  .town{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem;font-size:.9rem;font-weight:600;color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;display:inline-flex;align-items:center;gap:.45rem}
+  .town svg{width:14px;height:14px;color:var(--green)}
+  .nap{display:flex;flex-direction:column;gap:1rem;border-top:1px solid var(--line);padding-top:1.7rem}
+  .nap-item{display:flex;align-items:flex-start;gap:.85rem}
+  .nap-item .ic{width:40px;height:40px;border-radius:11px;background:var(--surface-2);display:grid;place-items:center;color:var(--green-deep);flex:none}
+  .nap-item .ic svg{width:19px;height:19px}
+  .nap-item > div{min-width:0}
+  .nap-item .k{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;font-family:'Plus Jakarta Sans',sans-serif}
+  .nap-item .v{font-weight:600;color:var(--ink);font-size:1.02rem;overflow-wrap:anywhere;word-break:break-word}
+  .nap-item a.v:hover{color:var(--green)}
+  .map-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);min-height:340px;background:var(--surface)}
+  .map-card iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+
+  #quote{background:linear-gradient(160deg,var(--green-deep),var(--green-dark));color:#fff;position:relative;overflow:hidden}
+  #quote::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 320px at 12% 0%,rgba(224,163,46,.14),transparent 60%)}
+  #quote>.wrap{position:relative;z-index:1}
+  .quote-grid{display:grid;grid-template-columns:1fr;gap:2.4rem}
+  @media(min-width:920px){.quote-grid{grid-template-columns:1fr 1fr;align-items:start;gap:3.5rem}}
+  #quote h2{color:#fff}#quote .lead{color:#C7DFCD;margin-top:1rem}
+  .quote-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+  .quote-actions .btn-primary{background:#fff;color:var(--green-deep);box-shadow:0 10px 24px -10px rgba(0,0,0,.5)}
+  .quote-actions .btn-primary:hover{background:#EAF3EC}
+  .quote-actions .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+  .quote-actions .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .q-assure{margin-top:1.9rem;display:flex;flex-direction:column;gap:.7rem}
+  .q-assure div{display:flex;align-items:center;gap:.6rem;font-size:.95rem;color:#D8EADD}
+  .q-assure svg{width:18px;height:18px;color:#8FE0AB;flex:none}
+
+  .form-card{background:#fff;border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.2rem);box-shadow:var(--shadow);color:var(--ink-2)}
+  .form-card h3{color:var(--ink);margin-bottom:.35rem}
+  .form-card .fc-sub{font-size:.9rem;color:var(--muted);margin-bottom:1.4rem}
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-size:.82rem;font-weight:700;color:var(--ink);margin-bottom:.4rem;font-family:'Plus Jakarta Sans',sans-serif}
+  .field input,.field select,.field textarea{width:100%;padding:.8rem .9rem;border:1.5px solid var(--line-2);border-radius:12px;font-family:inherit;font-size:1rem;color:var(--ink);background:#fff;transition:border-color .15s ease,box-shadow .15s ease}
+  .field textarea{resize:vertical;min-height:90px}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(31,122,68,.15)}
+  .field input[aria-invalid="true"],.field select[aria-invalid="true"]{border-color:#C0392B;box-shadow:0 0 0 3px rgba(192,57,43,.13)}
+  .field .err{display:none;color:#B23B2E;font-size:.8rem;margin-top:.35rem;font-weight:600}
+  .field.bad .err{display:block}
+  .form-row{display:grid;grid-template-columns:1fr;gap:0 1rem}
+  @media(min-width:560px){.form-row{grid-template-columns:1fr 1fr}}
+  .form-card button[type=submit]{width:100%;justify-content:center;margin-top:.4rem}
+  .form-success{display:none;background:var(--surface-2);border:1px solid var(--line-2);border-radius:14px;padding:1.3rem 1.4rem;color:var(--green-deep)}
+  .form-success.show{display:block}
+  .form-success strong{font-family:'Plus Jakarta Sans',sans-serif;display:flex;align-items:center;gap:.5rem;font-size:1.05rem;margin-bottom:.4rem}
+  .form-success svg{width:20px;height:20px}
+
+  footer{background:var(--ink);color:#B8C6BC;padding-block:clamp(3rem,6vw,4.5rem) 2rem;font-size:.94rem}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:2.2rem}
+  @media(min-width:760px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  .foot-brand .brand{color:#fff}
+  .foot-brand .brand small{color:#8FA396}
+  .foot-brand p{margin-top:1rem;max-width:34ch;color:#9DB0A2;font-size:.92rem}
+  .foot-social{display:flex;gap:.7rem;margin-top:1.3rem}
+  .foot-social a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.07);display:grid;place-items:center;color:#CBD8CD;transition:background .15s ease,color .15s ease}
+  .foot-social a:hover{background:var(--green);color:#fff}
+  .foot-social svg{width:19px;height:19px}
+  .foot-col h4{color:#fff;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.1rem;font-family:'Plus Jakarta Sans',sans-serif}
+  .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+  .foot-col a:hover{color:#fff}
+  .foot-col .line{display:flex;align-items:center;gap:.55rem}
+  .foot-col .line svg{width:16px;height:16px;color:#8FE0AB;flex:none}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:2.6rem;padding-top:1.6rem;display:flex;flex-wrap:wrap;gap:.7rem 1.5rem;justify-content:space-between;font-size:.85rem;color:#839589}
+
+  .mobilebar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:none;gap:.6rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(251,253,251,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mobilebar .btn{flex:1;justify-content:center;padding:.8rem}
+  @media(max-width:640px){.mobilebar{display:flex}body{padding-bottom:78px}}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.tile:hover img{transform:none}}
+</style>
+</head>
+<body>
+
+<a href="#quote" style="position:absolute;left:-999px;top:0;background:#fff;padding:.6rem 1rem;z-index:200" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to get a free estimate</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Sol De Primavera Landscaping home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#EAF3EC"/>
+        <circle cx="20" cy="16.5" r="6.2" fill="#E0A32E"/>
+        <g stroke="#E0A32E" stroke-width="1.7" stroke-linecap="round">
+          <path d="M20 5.5v3"/><path d="M28.5 9.5l-2 2"/><path d="M11.5 9.5l2 2"/>
+        </g>
+        <path d="M10 30c4-6 8.5-8.5 10-14 1.5 5.5 6 8 10 14z" fill="#1F7A44"/>
+        <path d="M20 30V19" stroke="#0F3D22" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span>Sol De Primavera<small>Landscaping · Westbury, NY</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#seasons">Year-round</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15164519811" aria-label="Call (516) 451-9811">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(516) 451-9811</span>
+      </a>
+      <a class="btn btn-primary" href="#quote">Free estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Westbury &amp; Nassau County, NY</span>
+        <h1>Lawn care and landscaping, done right all&nbsp;year.</h1>
+        <p class="lead">For over a decade, Sol De Primavera has kept Long Island lawns and properties healthy through every season — mowing, feeding, cleanups, and snow when winter comes. One dependable crew for the whole year.</p>
+        <div class="rating-inline">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+          <span><b>5.0</b> · 69 Google reviews</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#quote">Get a free estimate</a>
+          <a class="btn btn-ghost btn-lg" href="tel:+15164519811">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call or text
+          </a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <div class="photo">
+          <img src="assets/hero-lawn-care-westbury.jpg" width="1500" height="1125" fetchpriority="high" alt="Sol De Primavera crew member mowing a manicured Westbury lawn beside a freshly mulched planting bed">
+        </div>
+        <div class="chip chip-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span>Licensed &amp;&nbsp;Insured</span>
+        </div>
+        <div class="chip chip-rating">
+          <span class="num">5.0</span>
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" style="width:15px;height:15px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+          <span style="color:var(--muted);font-weight:600">69 reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust">
+    <div class="wrap trust-row">
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>10+ years of experience</span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5.0 · 69 reviews</span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>Residential &amp; commercial</span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; insured</span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Local to Westbury, NY</span>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow">Simple from the first call</span>
+        <h2>Getting started is easy</h2>
+        <p class="lead">No pushy sales, no guesswork. We look at your property, tell you exactly what it needs, and take care of it.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="idx"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg></span>Step 01</span>
+          <h3>Reach out</h3>
+          <p>Call or text us, or send the quick form. Tell us what you're looking for — a one-time cleanup or regular care.</p>
+        </div>
+        <div class="step">
+          <span class="idx"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></span>Step 02</span>
+          <h3>Get a clear estimate</h3>
+          <p>We come out, look things over, and send a straightforward estimate — so you know the scope and the price before we start.</p>
+        </div>
+        <div class="step">
+          <span class="idx"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Step 03</span>
+          <h3>We handle it, season after season</h3>
+          <p>From the first mow to the last snow, the same reliable crew keeps your property looking its best all year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Full-service care for your property</h2>
+        <p class="lead">One local team for the whole list — for homes and commercial properties across Nassau County.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V9l4-2 4 2 4-2 4 2v11"/><path d="M2 13c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg></div>
+          <h3>Lawn care &amp; mowing</h3>
+          <p>Clean, consistent mowing, edging, and trimming that keeps your lawn sharp all season.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9"/><path d="M2 8h20l-2 4H4L2 8z"/><path d="M12 12V3"/><path d="M12 3c-2 1-2 3 0 4 2-1 2-3 0-4z"/></svg></div>
+          <h3>Maintenance &amp; cleanups</h3>
+          <p>Spring and fall property cleanups, bed maintenance, and fresh mulch to reset the whole yard.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6 6 10a6 6 0 0 1-12 0c0-4 6-10 6-10z"/></svg></div>
+          <h3>Fertilization &amp; weed control</h3>
+          <p>Seasonal feeding and weed control programs that build a thicker, greener, healthier lawn.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="7" r="1.6"/><circle cx="12" cy="7" r="1.6"/><circle cx="18" cy="7" r="1.6"/><circle cx="6" cy="13" r="1.6"/><circle cx="12" cy="13" r="1.6"/><circle cx="18" cy="13" r="1.6"/><path d="M4 20c2-2 4-2 4-5M14 20c2-2 4-2 4-5"/></svg></div>
+          <h3>Aeration &amp; overseeding</h3>
+          <p>Core aeration and overseeding to relieve compaction and fill in thin, worn-out turf.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12a5 5 0 1 1 4-8 4 4 0 0 1 2 7 4 4 0 0 1-6 1z"/><path d="M9 16l3-2 3 2"/></svg></div>
+          <h3>Tree &amp; shrub trimming</h3>
+          <p>Careful pruning and shaping that keeps trees and shrubs healthy and your beds tidy.</p>
+        </article>
+        <article class="svc">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></div>
+          <h3>Snow &amp; ice removal</h3>
+          <p>Winter plowing, shoveling, and ice control for homes and commercial lots when the snow arrives.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONS (SIGNATURE) -->
+  <section id="seasons">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Year-round care</span>
+        <h2>We don't disappear after summer</h2>
+        <p class="lead">Most crews mow and vanish. We look after your property through all four seasons — so it's cared for whether it's growing or buried in snow.</p>
+      </div>
+      <div class="season-track">
+        <div class="season">
+          <div class="s-top">
+            <span class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c-2-2-6-1-6-1s0 4 2 5 4-1 4-4z"/><path d="M12 9c0-3 3-5 3-5s2 3 0 5-3 0-3 0z"/></svg></span>
+            <div><span class="s-tag">Spring</span><h3>Wake it up</h3></div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Spring cleanups</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Overseeding</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Fresh mulch &amp; beds</li>
+          </ul>
+        </div>
+        <div class="season">
+          <div class="s-top">
+            <span class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+            <div><span class="s-tag">Summer</span><h3>Keep it sharp</h3></div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Weekly mowing</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Fertilization</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Weed control</li>
+          </ul>
+        </div>
+        <div class="season">
+          <div class="s-top">
+            <span class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 4 4 5 4 9a4 4 0 0 1-8 0c0-4 3-5 4-9z"/><path d="M12 21v-4"/></svg></span>
+            <div><span class="s-tag">Fall</span><h3>Clear it out</h3></div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Leaf cleanup</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Aeration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tree &amp; shrub trimming</li>
+          </ul>
+        </div>
+        <div class="season">
+          <div class="s-top">
+            <span class="s-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span>
+            <div><span class="s-tag">Winter</span><h3>Stay clear</h3></div>
+          </div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Snow removal</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Ice control</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Commercial lots</li>
+          </ul>
+        </div>
+      </div>
+      <p class="season-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Not sure what your property needs right now? Just ask — we'll tell you honestly.</p>
+    </div>
+  </section>
+
+  <!-- WORK / GALLERY -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">On the job</span>
+        <h2>Recent work around Westbury</h2>
+        <p class="lead">Real photos of our crew out on Nassau County properties — not stock images. This is the work you'll get.</p>
+      </div>
+      <div class="gal-grid">
+        <button class="tile" data-full="assets/lawn-mowing-edging.jpg" aria-label="Enlarge photo: mowing and edging a front lawn">
+          <img src="assets/lawn-mowing-edging.jpg" width="1200" height="900" loading="lazy" alt="Sol De Primavera crew member mowing and edging a front lawn beside a paver driveway">
+          <figcaption>Lawn maintenance</figcaption>
+        </button>
+        <button class="tile" data-full="assets/fertilization-treatment.jpg" aria-label="Enlarge photo: applying a fertilizer treatment">
+          <img src="assets/fertilization-treatment.jpg" width="1200" height="900" loading="lazy" alt="Crew member applying a fertilizer treatment with a spreader in front of a Westbury home">
+          <figcaption>Fertilization</figcaption>
+        </button>
+        <button class="tile" data-full="assets/fall-leaf-cleanup.jpg" aria-label="Enlarge photo: fall leaf cleanup">
+          <img src="assets/fall-leaf-cleanup.jpg" width="1200" height="900" loading="lazy" alt="Sol De Primavera crew raking and clearing fall leaves along a fence line">
+          <figcaption>Fall cleanup</figcaption>
+        </button>
+        <button class="tile" data-full="assets/aeration-service.jpg" aria-label="Enlarge photo: aeration service">
+          <img src="assets/aeration-service.jpg" width="1200" height="900" loading="lazy" alt="Crew member running aeration equipment along a lawn strip">
+          <figcaption>Aeration</figcaption>
+        </button>
+        <button class="tile" data-full="assets/sod-install-delivery.jpg" aria-label="Enlarge photo: fresh sod and soil delivery">
+          <img src="assets/sod-install-delivery.jpg" width="1200" height="900" loading="lazy" alt="Company truck delivering soil beside a freshly laid sod lawn at a brick home">
+          <figcaption>New lawn install</figcaption>
+        </button>
+        <button class="tile" data-full="assets/property-cleanup.jpg" aria-label="Enlarge photo: property cleanup">
+          <img src="assets/property-cleanup.jpg" width="1200" height="900" loading="lazy" alt="Crew loading collected leaves during a property cleanup on a paver driveway">
+          <figcaption>Property cleanup</figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="rev-head">
+        <div class="sec-head" style="max-width:34ch">
+          <span class="eyebrow">What neighbors say</span>
+          <h2>A 5.0 rating, earned over years</h2>
+        </div>
+        <div class="rev-score">
+          <span class="big">5.0</span>
+          <div>
+            <span class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            <div class="meta">Based on 69 Google reviews</div>
+          </div>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote class="q"><span class="mark">“</span>Sol de primavera landscaping has provided wonderful care of our lawn and greenery since 2016. We have been very happy with their service.<span class="mark">”</span></blockquote>
+          <figcaption class="by">
+            <span class="av">Z</span>
+            <div><div class="who">Zefie Kanos</div><div class="src">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Google review</div></div>
+          </figcaption>
+        </figure>
+        <figure class="rev">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <blockquote class="q"><span class="mark">“</span>Very professional and efficient service! Came out same day for an estimate and a quick turnback time in sending it out with a video and their findings! A refreshing experience indeed<span class="mark">”</span></blockquote>
+          <figcaption class="by">
+            <span class="av">E</span>
+            <div><div class="who">Esmeralda S</div><div class="src">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Google review</div></div>
+          </figcaption>
+        </figure>
+      </div>
+      <div style="margin-top:2rem">
+        <a class="btn btn-ghost" href="https://maps.google.com/?cid=5508751177785535542" target="_blank" rel="noopener">Read all 69 reviews on Google
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA + MAP -->
+  <section id="area">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Where we work</span>
+        <h2>Proudly serving Nassau County</h2>
+        <p class="lead">Based in Westbury and caring for lawns and properties across the surrounding towns.</p>
+      </div>
+      <div class="area-grid">
+        <div>
+          <div class="towns">
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Westbury</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Carle Place</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Jericho</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Roslyn Heights</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Old Westbury</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Oyster Bay</span>
+            <span class="town"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>New Hyde Park</span>
+          </div>
+          <div class="nap">
+            <div class="nap-item">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><div class="k">Based in</div><div class="v">87 Lexington Ave, Westbury, NY 11590</div></div>
+            </div>
+            <div class="nap-item">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><div class="k">Call or text</div><a class="v" href="tel:+15164519811">(516) 451-9811</a></div>
+            </div>
+            <div class="nap-item">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></span>
+              <div><div class="k">Email</div><a class="v" href="mailto:soldeprimaveralandscapinginc@gmail.com">soldeprimaveralandscapinginc@gmail.com</a></div>
+            </div>
+            <div class="nap-item">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <div><div class="k">Hours</div><div class="v">Call for hours &amp; scheduling</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="map-card">
+          <iframe title="Map showing Sol De Primavera Landscaping in Westbury, NY" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.6047%2C40.7414%2C-73.5747%2C40.7614&layer=mapnik&marker=40.7514419%2C-73.5897207"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / CTA + FORM -->
+  <section id="quote">
+    <div class="wrap quote-grid">
+      <div>
+        <span class="eyebrow" style="color:#8FE0AB">Free, no-pressure estimate</span>
+        <h2>Let's get your property looking its best</h2>
+        <p class="lead">Tell us a little about what you need and we'll follow up with a free estimate. Rather talk it through? Call or text — we're happy to help.</p>
+        <div class="quote-actions">
+          <a class="btn btn-primary btn-lg" href="tel:+15164519811">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (516) 451-9811
+          </a>
+          <a class="btn btn-ghost btn-lg" href="sms:+15164519811">Text us</a>
+        </div>
+        <div class="q-assure">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Over a decade serving Long Island</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Licensed &amp; insured, residential &amp; commercial</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rated 5.0 across 69 Google reviews</div>
+        </div>
+      </div>
+      <div class="form-card">
+        <h3>Request a free estimate</h3>
+        <p class="fc-sub">We'll get back to you as soon as we can.</p>
+        <form id="estimate-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <span class="err">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+              <span class="err">Please enter a phone number.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email">
+            <span class="err">Please enter a valid email.</span>
+          </div>
+          <div class="field">
+            <label for="f-address">Property address</label>
+            <input id="f-address" name="address" type="text" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="f-service">What do you need?</label>
+            <select id="f-service" name="service">
+              <option value="Lawn care &amp; mowing">Lawn care &amp; mowing</option>
+              <option value="Maintenance &amp; cleanups">Maintenance &amp; cleanups</option>
+              <option value="Fertilization &amp; weed control">Fertilization &amp; weed control</option>
+              <option value="Aeration &amp; overseeding">Aeration &amp; overseeding</option>
+              <option value="Tree &amp; shrub trimming">Tree &amp; shrub trimming</option>
+              <option value="Snow &amp; ice removal">Snow &amp; ice removal</option>
+              <option value="Commercial property">Commercial property</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-notes">Anything else? (optional)</label>
+            <textarea id="f-notes" name="notes"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send my request</button>
+        </form>
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <strong><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Your email is ready to send</strong>
+          Your request is set up in your email app — just hit send and it'll come straight to us. Prefer to talk now? Call or text <a href="tel:+15164519811" style="color:var(--green-deep);font-weight:700;text-decoration:underline">(516) 451-9811</a>.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand" style="font-size:1.16rem">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="rgba(255,255,255,.08)"/>
+            <circle cx="20" cy="16.5" r="6.2" fill="#E0A32E"/>
+            <g stroke="#E0A32E" stroke-width="1.7" stroke-linecap="round"><path d="M20 5.5v3"/><path d="M28.5 9.5l-2 2"/><path d="M11.5 9.5l2 2"/></g>
+            <path d="M10 30c4-6 8.5-8.5 10-14 1.5 5.5 6 8 10 14z" fill="#3FA368"/>
+          </svg>
+          <span>Sol De Primavera<small>Landscaping · Westbury, NY</small></span>
+        </span>
+        <p>Reliable lawn care and landscaping for Westbury and Nassau County — every season of the year.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/people/Sol-De-Primavera-Landscaping/100079416406108/" target="_blank" rel="noopener" aria-label="Sol De Primavera on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://instagram.com/SoldePrimaveraLandscaping" target="_blank" rel="noopener" aria-label="Sol De Primavera on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Lawn care &amp; mowing</a></li>
+          <li><a href="#services">Maintenance &amp; cleanups</a></li>
+          <li><a href="#services">Fertilization &amp; weed control</a></li>
+          <li><a href="#services">Aeration &amp; overseeding</a></li>
+          <li><a href="#services">Tree &amp; shrub trimming</a></li>
+          <li><a href="#services">Snow &amp; ice removal</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a class="line" href="tel:+15164519811"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>(516) 451-9811</a></li>
+          <li><a class="line" href="mailto:soldeprimaveralandscapinginc@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>Email us</a></li>
+          <li><span class="line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>87 Lexington Ave, Westbury, NY</span></li>
+          <li><a class="line" href="https://maps.google.com/?cid=5508751177785535542" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Leave us a Google review</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Sol De Primavera Landscaping Inc. · Licensed &amp; insured</span>
+      <span>Westbury · Carle Place · Jericho · Roslyn Heights · Old Westbury · Oyster Bay · New Hyde Park</span>
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky CTA -->
+<div class="mobilebar">
+  <a class="btn btn-ghost" href="sms:+15164519811">Text us</a>
+  <a class="btn btn-primary" href="tel:+15164519811">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.34-1.27a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call now
+  </a>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lb-close" aria-label="Close photo viewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Sol De Primavera Landscaping",
+  "image":"https://savcab.github.io/websites/sol-de-primavera-westbury/assets/hero-lawn-care-westbury.jpg",
+  "url":"https://savcab.github.io/websites/sol-de-primavera-westbury/",
+  "telephone":"+1-516-451-9811",
+  "email":"soldeprimaveralandscapinginc@gmail.com",
+  "address":{"@type":"PostalAddress","streetAddress":"87 Lexington Ave","addressLocality":"Westbury","addressRegion":"NY","postalCode":"11590","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":40.7514419,"longitude":-73.5897207},
+  "areaServed":[
+    {"@type":"City","name":"Westbury"},{"@type":"City","name":"Carle Place"},{"@type":"City","name":"Jericho"},{"@type":"City","name":"Roslyn Heights"},{"@type":"City","name":"Old Westbury"},{"@type":"City","name":"Oyster Bay"},{"@type":"City","name":"New Hyde Park"}
+  ],
+  "knowsAbout":["Lawn care","Landscaping","Fertilization","Aeration","Tree and shrub trimming","Snow and ice removal"]
+}
+</script>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Lightbox
+  var lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbClose = document.getElementById('lb-close');
+  var lastFocus = null;
+  function openLb(src, alt){ lastFocus = document.activeElement; lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); lbClose.focus(); }
+  function closeLb(){ lb.classList.remove('open'); lbImg.src=''; if(lastFocus) lastFocus.focus(); }
+  document.querySelectorAll('.tile').forEach(function(t){
+    t.addEventListener('click', function(){ var img = t.querySelector('img'); openLb(t.getAttribute('data-full'), img ? img.alt : ''); });
+  });
+  lbClose.addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && lb.classList.contains('open')) closeLb(); });
+
+  // Estimate form -> compose an email (honest: it actually opens their mail client)
+  var form = document.getElementById('estimate-form'), ok = document.getElementById('form-success');
+  function setBad(field, bad){ field.classList.toggle('bad', bad); var input = field.querySelector('input,select,textarea'); if(input) input.setAttribute('aria-invalid', bad ? 'true':'false'); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = form.name, phone = form.phone, email = form.email;
+    var valid = true;
+    if(!name.value.trim()){ setBad(name.closest('.field'), true); valid = false; } else setBad(name.closest('.field'), false);
+    if(!phone.value.trim()){ setBad(phone.closest('.field'), true); valid = false; } else setBad(phone.closest('.field'), false);
+    if(email.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){ setBad(email.closest('.field'), true); valid = false; } else setBad(email.closest('.field'), false);
+    if(!valid){ var firstBad = form.querySelector('.field.bad input,.field.bad select'); if(firstBad) firstBad.focus(); return; }
+    var body = 'Name: ' + name.value + '\n'
+      + 'Phone: ' + phone.value + '\n'
+      + 'Email: ' + (email.value || '-') + '\n'
+      + 'Address: ' + (form.address.value || '-') + '\n'
+      + 'Service: ' + form.service.value + '\n'
+      + 'Notes: ' + (form.notes.value || '-');
+    var href = 'mailto:soldeprimaveralandscapinginc@gmail.com'
+      + '?subject=' + encodeURIComponent('Free estimate request — ' + name.value)
+      + '&body=' + encodeURIComponent(body);
+    ok.classList.add('show');
+    ok.scrollIntoView({behavior:'smooth', block:'center'});
+    window.location.href = href;
+  });
+})();
+</script>
+</body>
+</html>

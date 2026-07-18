@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smith Landscape Co. — Landscaping in Waxahachie, TX | Flowerbeds, Mulch & Holiday Lights</title>
+<meta name="description" content="Smith Landscape Co. is a Waxahachie, TX landscaping crew handling flowerbeds, mulch, seasonal cleanups, and Christmas light installation across Ellis County. Rated 4.8 across 65 Google reviews. Call (972) 989-1098 for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/smith-landscape-waxahachie/">
+<meta property="og:title" content="Smith Landscape Co. — Landscaping in Waxahachie, TX">
+<meta property="og:description" content="Flowerbeds, mulch, seasonal cleanups, and holiday lighting for Waxahachie & Ellis County homes. Rated 4.8 across 65 Google reviews.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://savcab.github.io/websites/smith-landscape-waxahachie/assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF7F0;
+    --paper:#F3ECE0;
+    --paper-2:#EFE7D8;
+    --ink:#23201B;
+    --ink-soft:#4A443B;
+    --muted:#6E6659;
+    --forest:#2F5D44;
+    --forest-deep:#264C38;
+    --rust:#B5532A;
+    --mustard:#D6A227;
+    --line:#E3D9C6;
+    --line-soft:#EAE1D1;
+    --shadow:0 18px 40px -22px rgba(35,32,27,.35);
+    --shadow-soft:0 10px 30px -18px rgba(35,32,27,.28);
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Work Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --wrap:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    font-size:17px;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.015em}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-family:var(--sans);font-weight:600;font-size:12.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--forest);display:inline-flex;align-items:center;gap:9px;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--rust);display:inline-block;border-radius:2px}
+  .ico{width:22px;height:22px;stroke:currentColor;stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .ico-fill{width:16px;height:16px;fill:currentColor;stroke:none}
+
+  /* buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-family:var(--sans);font-weight:600;font-size:15.5px;line-height:1;
+    padding:14px 22px;border-radius:999px;cursor:pointer;border:1.5px solid transparent;
+    transition:transform .18s ease, background .2s ease, box-shadow .2s ease, color .2s ease;
+    white-space:nowrap;
+  }
+  .btn .ico{width:18px;height:18px}
+  .btn-primary{background:var(--forest);color:#fff;box-shadow:0 10px 22px -12px rgba(47,93,68,.85)}
+  .btn-primary:hover{background:var(--forest-deep);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream);transform:translateY(-2px)}
+  .btn-cream{background:var(--cream);color:var(--forest-deep)}
+  .btn-cream:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft)}
+  .btn-outline-cream{background:transparent;color:var(--cream);border-color:rgba(251,247,240,.5)}
+  .btn-outline-cream:hover{background:rgba(251,247,240,.12);transform:translateY(-2px)}
+
+  a:focus-visible,button:focus-visible,.tile:focus-visible{outline:3px solid var(--mustard);outline-offset:3px;border-radius:8px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:40;background:rgba(251,247,240,.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
+  .brand .leaf{width:34px;height:34px;flex:none;color:var(--forest)}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-size:15px;font-weight:500;color:var(--ink-soft);position:relative;padding:4px 0}
+  .nav-links a:hover{color:var(--forest)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--forest);transition:width .22s ease}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .nav-phone{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--ink)}
+  .nav-phone .ico{width:18px;height:18px;color:var(--forest)}
+
+  /* hero */
+  .hero{padding:56px 0 66px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,5.4vw,4.15rem);margin:20px 0 0;color:var(--ink)}
+  .hero h1 em{font-style:italic;color:var(--forest);font-weight:500}
+  .hero .sub{font-size:19px;color:var(--ink-soft);margin-top:22px;max-width:33ch}
+  .rating-inline{display:inline-flex;align-items:center;gap:11px;margin-top:26px;flex-wrap:wrap}
+  .stars{display:inline-flex;gap:2px;color:var(--mustard)}
+  .rating-inline .rt{font-weight:600;color:var(--ink)}
+  .rating-inline .rc{color:var(--muted);font-size:15px}
+  .hero-cta{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+  .hero-figure{position:relative}
+  .hero-figure .frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+  .hero-figure .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,32,27,0) 55%,rgba(35,32,27,.16) 100%)}
+  .hero-figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+  .hero-badge{
+    position:absolute;left:-18px;bottom:26px;background:var(--cream);border:1px solid var(--line);
+    border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;max-width:250px;
+  }
+  .hero-badge .ring{width:42px;height:42px;border-radius:50%;background:var(--forest);color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+  .hero-badge .ring .ico{width:22px;height:22px}
+  .hero-badge b{display:block;font-family:var(--serif);font-size:18px;line-height:1.1}
+  .hero-badge span{font-size:13px;color:var(--muted)}
+  .hero-strip{display:flex;gap:26px;margin-top:40px;flex-wrap:wrap;padding-top:26px;border-top:1px solid var(--line)}
+  .hero-strip div{display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink-soft);font-weight:500}
+  .hero-strip .ico{width:19px;height:19px;color:var(--forest)}
+
+  /* section shells */
+  section{padding:78px 0}
+  .sec-head{max-width:640px}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin-top:16px;color:var(--ink)}
+  .sec-head p{color:var(--ink-soft);margin-top:16px;font-size:18px}
+  .center{margin-left:auto;margin-right:auto;text-align:center}
+  .center .eyebrow{justify-content:center}
+
+  /* why */
+  .why{background:var(--paper)}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:46px}
+  .why-card{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;gap:18px;align-items:flex-start;box-shadow:var(--shadow-soft)}
+  .why-card .badge{width:50px;height:50px;border-radius:14px;background:var(--forest);color:var(--cream);display:flex;align-items:center;justify-content:center;flex:none}
+  .why-card h3{font-size:20px;margin-bottom:7px}
+  .why-card p{color:var(--ink-soft);font-size:15.5px}
+
+  /* services */
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+  .svc{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:26px 24px;transition:transform .2s ease, box-shadow .2s ease;position:relative;overflow:hidden}
+  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .svc .top{width:52px;height:52px;border-radius:14px;background:var(--paper-2);color:var(--forest);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  .svc h3{font-size:20px;margin-bottom:9px}
+  .svc p{color:var(--ink-soft);font-size:15px}
+  .svc .rule{width:34px;height:3px;background:var(--rust);border-radius:3px;margin-top:18px}
+
+  /* trust band */
+  .trust{background:var(--forest);color:var(--cream);padding:0}
+  .trust-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:44px 0}
+  .trust-cell{text-align:center;padding:8px 20px;position:relative}
+  .trust-cell + .trust-cell::before{content:"";position:absolute;left:0;top:12%;height:76%;width:1px;background:rgba(251,247,240,.22)}
+  .trust-cell .big{font-family:var(--serif);font-size:30px;font-weight:600;display:inline-flex;align-items:center;gap:9px;justify-content:center}
+  .trust-cell .big .stars{color:var(--mustard)}
+  .trust-cell .lbl{font-size:14.5px;color:rgba(251,247,240,.8);margin-top:6px}
+
+  /* gallery */
+  .gal-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:46px}
+  .tile{position:relative;border:0;padding:0;margin:0;cursor:pointer;border-radius:18px;overflow:hidden;background:var(--paper);box-shadow:var(--shadow-soft);display:block;width:100%}
+  .tile img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;transition:transform .5s ease}
+  .tile:hover img{transform:scale(1.045)}
+  .tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;color:#fff;font-size:14.5px;font-weight:500;background:linear-gradient(0deg,rgba(35,32,27,.72),rgba(35,32,27,0));display:flex;align-items:center;gap:8px}
+  .tile figcaption .ico{width:16px;height:16px}
+
+  dialog.lb{border:0;padding:0;background:transparent;max-width:min(94vw,1000px);overflow:visible}
+  dialog.lb::backdrop{background:rgba(20,18,15,.82);backdrop-filter:blur(2px)}
+  dialog.lb img{width:100%;height:auto;border-radius:14px;box-shadow:0 30px 70px -20px rgba(0,0,0,.6)}
+  dialog.lb .cap{color:var(--cream);text-align:center;margin-top:14px;font-size:15px}
+  dialog.lb .close{position:absolute;top:-16px;right:-16px;width:44px;height:44px;border-radius:50%;background:var(--cream);color:var(--ink);border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+
+  /* testimonials */
+  .reviews{background:var(--paper)}
+  .pull{margin-top:44px;background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:44px 46px;box-shadow:var(--shadow-soft);position:relative}
+  .pull .mark{font-family:var(--serif);font-size:96px;line-height:.6;color:var(--forest);opacity:.22;height:44px;display:block}
+  .pull blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,2.6vw,1.9rem);line-height:1.34;color:var(--ink);margin:8px 0 22px}
+  .pull .who{display:flex;align-items:center;gap:12px;font-size:15px}
+  .pull .who .av{width:44px;height:44px;border-radius:50%;background:var(--forest);color:#fff;font-family:var(--serif);font-weight:600;font-size:19px;display:flex;align-items:center;justify-content:center;flex:none}
+  .pull .who b{font-weight:600}
+  .pull .who span{color:var(--muted);display:block;font-size:13.5px}
+  .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+  .rev{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:26px 28px;box-shadow:var(--shadow-soft)}
+  .rev .stars{margin-bottom:12px}
+  .rev p{font-size:16px;color:var(--ink-soft);line-height:1.6}
+  .rev .who{margin-top:16px;font-size:14px;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:8px}
+  .rev .who span{color:var(--muted);font-weight:400}
+
+  /* hours + map */
+  .visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;margin-top:46px;align-items:stretch}
+  .hours-card{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:34px;box-shadow:var(--shadow-soft)}
+  .hours-card h3{font-size:22px;margin-bottom:20px;display:flex;align-items:center;gap:11px}
+  .hours-card h3 .ico{color:var(--forest)}
+  .hrow{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+  .hrow:last-of-type{border-bottom:0}
+  .hrow .d{color:var(--ink-soft)}
+  .hrow .t{font-weight:600;color:var(--ink)}
+  .hrow.closed .t{color:var(--muted);font-weight:500}
+  .hours-contact{margin-top:24px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+  .hours-contact a{display:flex;align-items:center;gap:12px;font-weight:500;font-size:15.5px}
+  .hours-contact a .ico{width:19px;height:19px;color:var(--forest)}
+  .hours-contact a:hover{color:var(--forest)}
+  .map-card{border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-soft);min-height:380px;position:relative}
+  .map-card iframe{width:100%;height:100%;min-height:380px;border:0;filter:saturate(.92)}
+
+  /* CTA */
+  .cta{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+  .cta::before{content:"";position:absolute;inset:0;background:radial-gradient(1000px 400px at 82% -10%,rgba(47,93,68,.55),transparent 60%),radial-gradient(700px 340px at 6% 120%,rgba(181,83,42,.28),transparent 60%)}
+  .cta-inner{position:relative;text-align:center;max-width:720px;margin:0 auto}
+  .cta h2{font-size:clamp(2rem,4vw,3rem);color:var(--cream)}
+  .cta p{color:rgba(251,247,240,.82);margin-top:16px;font-size:18px}
+  .cta-btns{display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+
+  /* footer */
+  footer{background:var(--cream);border-top:1px solid var(--line);padding:64px 0 30px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+  .foot-brand .brand{margin-bottom:16px}
+  .foot-brand p{color:var(--ink-soft);font-size:15px;max-width:34ch}
+  .foot-col h4{font-family:var(--sans);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:600}
+  .foot-col a,.foot-col p{display:flex;align-items:flex-start;gap:10px;color:var(--ink-soft);font-size:15px;margin-bottom:12px}
+  .foot-col a .ico{width:18px;height:18px;color:var(--forest);margin-top:2px}
+  .foot-col a:hover{color:var(--forest)}
+  .foot-area{font-size:15px;color:var(--ink-soft);line-height:1.9}
+  .foot-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13.5px}
+  .foot-bottom .signoff{font-family:var(--serif);font-style:italic;color:var(--ink-soft);font-size:15px}
+
+  /* reveal */
+  .will-reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .will-reveal.revealed{opacity:1;transform:none}
+
+  /* mobile sticky call */
+  .mcall{display:none}
+
+  @media(max-width:1000px){
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .hero-figure{order:-1}
+    .hero .sub{max-width:none}
+    .why-grid{grid-template-columns:1fr 1fr}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .visit-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:760px){
+    body{font-size:16px}
+    .nav-links{display:none}
+    section{padding:60px 0}
+    .hero{padding:38px 0 48px}
+    .why-grid{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:1fr}
+    .trust-inner{grid-template-columns:1fr;gap:24px;padding:36px 0}
+    .trust-cell + .trust-cell::before{display:none}
+    .trust-cell + .trust-cell{padding-top:24px;border-top:1px solid rgba(251,247,240,.2)}
+    .gal-grid{grid-template-columns:1fr}
+    .rev-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr}
+    .pull{padding:32px 26px}
+    .hours-card{padding:26px}
+    .nav-phone span{display:none}
+    .hero-badge{left:0}
+    .mcall{
+      display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+      background:rgba(251,247,240,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px);
+    }
+    .mcall .btn{flex:1}
+    body{padding-bottom:74px}
+  }
+  @media(max-width:400px){
+    .wrap{padding:0 18px}
+    .hero-cta{flex-direction:column;align-items:stretch}
+    .hero-cta .btn{width:100%}
+    .hero h1{font-size:2.3rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .will-reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Smith Landscape Co. home">
+      <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M10 20c5.5-2.5.8-6.4 3-10" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+      Smith Landscape Co.
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#work">Recent work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; area</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+19729891098" class="nav-phone"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(972) 989-1098</span></a>
+      <a href="#contact" class="btn btn-primary">Free estimate</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Waxahachie &amp; Ellis County landscaping</span>
+      <h1 id="hero-h1">Flowerbeds, mulch, and <em>holiday lights</em> for Waxahachie homes.</h1>
+      <p class="sub">We keep Ellis County yards looking their best — from spring bed refreshes to Christmas light installs, done neatly and on your schedule.</p>
+      <div class="rating-inline">
+        <span class="stars" aria-hidden="true">
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+        </span>
+        <span class="rt">4.8</span>
+        <span class="rc">· 65 Google reviews</span>
+      </div>
+      <div class="hero-cta">
+        <a href="tel:+19729891098" class="btn btn-primary"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (972) 989-1098</a>
+        <a href="#contact" class="btn btn-ghost">Get a free estimate</a>
+      </div>
+      <div class="hero-strip">
+        <div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Serving Waxahachie &amp; Ellis County</div>
+        <div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free, no-pressure estimates</div>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="frame">
+        <img src="assets/hero.jpg" width="1500" height="1125" alt="A freshly landscaped Waxahachie front yard by Smith Landscape Co. with a curved tree bed, stone edging, and neatly maintained turf at golden hour" fetchpriority="high">
+      </div>
+      <div class="hero-badge">
+        <span class="ring"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></span>
+        <div><b>Rated 4.8</b><span>across 65 Google reviews</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section class="why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why neighbors call us back</span>
+      <h2 id="why-h">Yard work that leaves your home looking finished</h2>
+      <p>We handle the beds, mulch, cleanups, and seasonal lighting that keep Waxahachie homes looking sharp all year — no job too small.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card" data-reveal>
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></span>
+        <div><h3>Beds done to match</h3><p>Flowerbed installs, refreshes, and plantings chosen to fit what's already in your yard.</p></div>
+      </div>
+      <div class="why-card" data-reveal>
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg></span>
+        <div><h3>Easy to schedule</h3><p>Quick to answer and flexible around the weather and your calendar.</p></div>
+      </div>
+      <div class="why-card" data-reveal>
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></svg></span>
+        <div><h3>Holidays handled</h3><p>Christmas light installation, takedown, and storage so you can skip the ladder.</p></div>
+      </div>
+      <div class="why-card" data-reveal>
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div><h3>Free estimates</h3><p>Tell us what you're picturing and we'll price it out — no charge, no pressure.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2 id="svc-h">Landscaping services for every season</h2>
+      <p>A local crew for the outdoor work that makes a house feel cared for — spring through the holidays.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc" data-reveal>
+        <div class="top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></div>
+        <h3>Flowerbeds &amp; seasonal color</h3>
+        <p>New beds, refreshes, and plantings picked to suit your home and the season.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="svc" data-reveal>
+        <div class="top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg></div>
+        <h3>Mulch &amp; bed refresh</h3>
+        <p>Fresh mulch and clean edges that make the whole yard look finished.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="svc" data-reveal>
+        <div class="top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></svg></div>
+        <h3>Landscape cleanup</h3>
+        <p>Seasonal cleanups that clear out the old growth and tidy every corner.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="svc" data-reveal>
+        <div class="top"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></svg></div>
+        <h3>Christmas light installation</h3>
+        <p>Design, install, takedown, and storage for a bright, hassle-free season.</p>
+        <div class="rule"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAND ===== -->
+<section class="trust" aria-label="At a glance">
+  <div class="wrap">
+    <div class="trust-inner">
+      <div class="trust-cell">
+        <div class="big"><span class="stars" aria-hidden="true"><svg class="ico-fill" viewBox="0 0 24 24" style="width:22px;height:22px"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg></span>4.8</div>
+        <div class="lbl">across 65 Google reviews</div>
+      </div>
+      <div class="trust-cell">
+        <div class="big">Ellis County</div>
+        <div class="lbl">Waxahachie, Midlothian, Red Oak &amp; nearby</div>
+      </div>
+      <div class="trust-cell">
+        <div class="big">Mon–Sat</div>
+        <div class="lbl">On the schedule by appointment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recent work</span>
+      <h2 id="work-h">A few yards around the neighborhood</h2>
+      <p>Real beds, borders, and installs from homes here in the Waxahachie area. Tap any photo to take a closer look.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="tile" data-reveal data-full="assets/g-p0.jpg" data-cap="Fresh mulch, a stone border, and new boxwoods in a Waxahachie flowerbed" aria-label="Enlarge photo: flowerbed with fresh mulch, stone border and boxwoods">
+        <img src="assets/g-p0.jpg" width="1000" height="750" alt="A finished flowerbed with fresh dark mulch, a natural stone border, boxwood shrubs and a hanging flower basket in front of a brick home" loading="lazy">
+        <figcaption><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/></svg>Flowerbed refresh &amp; mulch</figcaption>
+      </button>
+      <button class="tile" data-reveal data-full="assets/g-p6.jpg" data-cap="A flagstone patio and walkway installed at a home near Waxahachie" aria-label="Enlarge photo: flagstone patio and walkway installation">
+        <img src="assets/g-p6.jpg" width="1000" height="750" alt="A newly installed flagstone patio and stone walkway along the side of a home" loading="lazy">
+        <figcaption><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/></svg>Flagstone patio &amp; walkway</figcaption>
+      </button>
+      <button class="tile" data-reveal data-full="assets/g-p2.jpg" data-cap="A side-yard bed with gravel, mulch and steel edging" aria-label="Enlarge photo: side-yard bed with gravel, mulch and steel edging">
+        <img src="assets/g-p2.jpg" width="1000" height="750" alt="A tidy side-yard planting bed with river gravel, dark mulch and clean steel edging beside a brick wall" loading="lazy">
+        <figcaption><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/></svg>Gravel &amp; mulch bed with edging</figcaption>
+      </button>
+      <button class="tile" data-reveal data-full="assets/g-p5.jpg" data-cap="A stacked-stone raised bed built along a backyard fence line" aria-label="Enlarge photo: stacked-stone raised bed along a fence">
+        <img src="assets/g-p5.jpg" width="750" height="1000" alt="A new stacked natural-stone raised bed filled with decorative gravel running along a wood backyard fence" loading="lazy">
+        <figcaption><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/></svg>Stacked-stone raised bed</figcaption>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews" aria-labelledby="rev-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">From Waxahachie homeowners</span>
+      <h2 id="rev-h">Kind words from the neighbors</h2>
+      <p>A few of the reviews behind our 4.8 rating across 65 Google reviews.</p>
+    </div>
+    <figure class="pull" data-reveal>
+      <span class="mark" aria-hidden="true">&ldquo;</span>
+      <blockquote>Chad and his crew at Smith Lawn came by and cleaned up our flower beds today and added fresh mulch. They also removed two big rose bushes that we've been wanting gone and replaced them with a couple boxwoods to match what we already had. Very happy with the work that was done.</blockquote>
+      <figcaption class="who">
+        <span class="av" aria-hidden="true">P</span>
+        <span><b>Paul Ylda</b><span>Google review · ★★★★★</span></span>
+      </figcaption>
+    </figure>
+    <div class="rev-grid">
+      <figure class="rev" data-reveal>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+        </div>
+        <p>Chad's team was super helpful finishing up my beds and super flexible working with a concrete curb company and weather. Will be using this team again!</p>
+        <figcaption class="who">Carly Herrera <span>· Google review</span></figcaption>
+      </figure>
+      <figure class="rev" data-reveal>
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg><svg class="ico-fill" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.3 21.35a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.05 10.13a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+        </div>
+        <p>Smith Landscape did our Christmas light installation. Their prices were competitive and they were very responsive. They got us on the schedule quickly and our lights looked fantastic!</p>
+        <figcaption class="who">Samantha Helleck <span>· Google review</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VISIT (hours + map) ===== -->
+<section id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Hours &amp; service area</span>
+      <h2 id="visit-h">Based in Waxahachie, working across Ellis County</h2>
+      <p>Give us a call during the hours below and we'll get you on the schedule.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="hours-card">
+        <h3><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Office hours</h3>
+        <div class="hrow"><span class="d">Monday</span><span class="t">7:00 AM – 5:00 PM</span></div>
+        <div class="hrow"><span class="d">Tuesday</span><span class="t">7:00 AM – 5:00 PM</span></div>
+        <div class="hrow"><span class="d">Wednesday</span><span class="t">7:00 AM – 5:00 PM</span></div>
+        <div class="hrow"><span class="d">Thursday</span><span class="t">7:00 AM – 5:00 PM</span></div>
+        <div class="hrow"><span class="d">Friday</span><span class="t">7:00 AM – 5:00 PM</span></div>
+        <div class="hrow"><span class="d">Saturday</span><span class="t">7:00 AM – 12:00 PM</span></div>
+        <div class="hrow closed"><span class="d">Sunday</span><span class="t">Closed</span></div>
+        <div class="hours-contact">
+          <a href="tel:+19729891098"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(972) 989-1098</a>
+          <a href="mailto:smithlandscape@gmail.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>smithlandscape@gmail.com</a>
+          <a href="https://maps.google.com/?cid=2692072830254864070" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>224 Santa Fe Trail, Waxahachie, TX 75165</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <iframe title="Map showing Smith Landscape Co. in Waxahachie, TX" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-96.826209%2C32.412035%2C-96.814209%2C32.420035&amp;layer=mapnik&amp;marker=32.4160346%2C-96.820209"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="contact" aria-labelledby="cta-h">
+  <div class="wrap cta-inner">
+    <h2 id="cta-h">Ready when you are</h2>
+    <p>Whether it's a bed refresh, a mulch job, or a full holiday light install, we'll take a look and get you on the schedule. Estimates are free.</p>
+    <div class="cta-btns">
+      <a href="tel:+19729891098" class="btn btn-cream"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (972) 989-1098</a>
+      <a href="sms:+19729891098" class="btn btn-outline-cream"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Text us</a>
+      <a href="mailto:smithlandscape@gmail.com" class="btn btn-outline-cream"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M10 20c5.5-2.5.8-6.4 3-10" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+          Smith Landscape Co.
+        </a>
+        <p>Flowerbeds, mulch, seasonal cleanups, and holiday lighting for homes across Waxahachie and Ellis County, Texas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="tel:+19729891098"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(972) 989-1098</a>
+        <a href="sms:+19729891098"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>Text (972) 989-1098</a>
+        <a href="mailto:smithlandscape@gmail.com"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>smithlandscape@gmail.com</a>
+        <a href="https://maps.google.com/?cid=2692072830254864070" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>224 Santa Fe Trail, Waxahachie, TX 75165</a>
+      </div>
+      <div class="foot-col">
+        <h4>Service area</h4>
+        <p class="foot-area">Waxahachie · Midlothian · Red Oak · Ovilla · Ennis · Maypearl · and nearby Ellis County</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="signoff">Caring for yards across Waxahachie &amp; Ellis County.</span>
+      <span>&copy; 2026 Smith Landscape Co. · Waxahachie, TX</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<dialog class="lb" id="lightbox" aria-label="Enlarged photo">
+  <button class="close" id="lbClose" aria-label="Close photo">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="">
+  <p class="cap" id="lbCap"></p>
+</dialog>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"GeneralContractor",
+  "name":"Smith Landscape Co.",
+  "description":"Landscaping in Waxahachie, TX — flowerbeds, mulch, seasonal cleanups, and Christmas light installation across Ellis County.",
+  "url":"https://savcab.github.io/websites/smith-landscape-waxahachie/",
+  "telephone":"+19729891098",
+  "email":"smithlandscape@gmail.com",
+  "image":"https://savcab.github.io/websites/smith-landscape-waxahachie/assets/hero.jpg",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"224 Santa Fe Trail",
+    "addressLocality":"Waxahachie",
+    "addressRegion":"TX",
+    "postalCode":"75165",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":32.4160346,"longitude":-96.820209},
+  "areaServed":[
+    {"@type":"City","name":"Waxahachie"},
+    {"@type":"City","name":"Midlothian"},
+    {"@type":"City","name":"Red Oak"},
+    {"@type":"City","name":"Ovilla"},
+    {"@type":"City","name":"Ennis"},
+    {"@type":"City","name":"Maypearl"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"12:00"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  // Reveal-on-scroll with a hard failsafe: content is visible unless JS opts it in.
+  try{
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!reduce && 'IntersectionObserver' in window){
+      var els = document.querySelectorAll('[data-reveal]');
+      els.forEach(function(el){ el.classList.add('will-reveal'); });
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); }
+        });
+      }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+      els.forEach(function(el){ io.observe(el); });
+    }
+  }catch(err){ /* leave content visible */ }
+
+  // Lightbox
+  var dlg = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCap = document.getElementById('lbCap');
+  var lbClose = document.getElementById('lbClose');
+  var lastFocus = null;
+  function open(src, cap, alt){
+    lbImg.src = src; lbImg.alt = alt || ''; lbCap.textContent = cap || '';
+    lastFocus = document.activeElement;
+    if(typeof dlg.showModal === 'function'){ dlg.showModal(); } else { dlg.setAttribute('open',''); }
+    lbClose.focus();
+  }
+  function close(){
+    if(typeof dlg.close === 'function'){ dlg.close(); } else { dlg.removeAttribute('open'); }
+    lbImg.src = '';
+    if(lastFocus && lastFocus.focus){ lastFocus.focus(); }
+  }
+  document.querySelectorAll('.tile').forEach(function(t){
+    t.addEventListener('click', function(){
+      var img = t.querySelector('img');
+      open(t.getAttribute('data-full'), t.getAttribute('data-cap'), img ? img.getAttribute('alt') : '');
+    });
+  });
+  lbClose.addEventListener('click', close);
+  dlg.addEventListener('click', function(e){ if(e.target === dlg){ close(); } });
+  dlg.addEventListener('cancel', function(e){ e.preventDefault(); close(); });
+})();
+</script>
+</body>
+</html>

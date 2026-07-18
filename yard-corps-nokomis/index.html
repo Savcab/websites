@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Landscaping &amp; Grounds Care in Nokomis, FL | Yard Corps</title>
+<meta name="description" content="Yard Corps Lawn Care and Landscape keeps Nokomis-area homes, builder sites and the City of North Port's own grounds sharp year-round — lawn care, landscaping, storm cleanup and heavy vegetation management. 4.5 stars, 10 reviews." />
+<link rel="canonical" href="https://savcab.github.io/websites/yard-corps-nokomis/" />
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Residential &amp; Commercial Grounds Care in Nokomis, FL | Yard Corps" />
+<meta property="og:description" content="Lawn care, landscaping, storm cleanup and heavy vegetation management for homes, builder sites and the City of North Port's own grounds across southern Sarasota County. 4.5 stars · 10 Google reviews." />
+<meta property="og:url" content="https://savcab.github.io/websites/yard-corps-nokomis/" />
+<meta property="og:image" content="https://savcab.github.io/websites/yard-corps-nokomis/assets/garden-bed-tropical-nokomis.jpg" />
+<meta property="og:image:width" content="825" />
+<meta property="og:image:height" content="1100" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://savcab.github.io/websites/yard-corps-nokomis/assets/garden-bed-tropical-nokomis.jpg" />
+<meta name="theme-color" content="#13283f" />
+
+<!-- Favicon: field-rows mark on navy -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d3a5f'/%3E%3Cg stroke='%23ffffff' stroke-width='2' stroke-linecap='round' fill='none'%3E%3Cpath d='M6 24h20'/%3E%3Cpath d='M9 19h14'/%3E%3Cpath d='M12 14h8'/%3E%3Cpath d='M15 9h2'/%3E%3C/g%3E%3Cpath d='M24 21l2 2-2 2' stroke='%2316774c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Yard Corps Lawn Care and Landscape",
+  "url": "https://savcab.github.io/websites/yard-corps-nokomis/",
+  "image": "https://savcab.github.io/websites/yard-corps-nokomis/assets/garden-bed-tropical-nokomis.jpg",
+  "telephone": "+19414858504",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "716 Albee Rd W",
+    "addressLocality": "Nokomis",
+    "addressRegion": "FL",
+    "postalCode": "34275",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.1259521, "longitude": -82.4648067 },
+  "areaServed": [
+    { "@type": "City", "name": "Venice" },
+    { "@type": "City", "name": "Osprey" },
+    { "@type": "City", "name": "Nokomis" },
+    { "@type": "City", "name": "South Venice" },
+    { "@type": "City", "name": "Englewood" },
+    { "@type": "City", "name": "North Port" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:30" }
+  ]
+}
+</script>
+
+<style>
+:root{
+  /* SPACING — 4/8 grid, ~1.5x */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(4rem,8.5vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --container:75rem;
+  --measure:64ch;
+  /* TYPE */
+  --h1:clamp(2.2rem,5.1vw,3.5rem);
+  --h2:clamp(1.65rem,3.3vw,2.4rem);
+  --h3:1.3rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.06;
+  --track-head:-.02em;
+  /* COLOR — commercial-grounds: cool navy/slate ground, slate ink, ONE emerald accent */
+  --bg:#ffffff;
+  --bg-2:#eef2f6;        /* cool light-slate alt section (NOT warm) */
+  --bg-3:#e3e9ef;        /* deeper slate for chips/hairlines on light */
+  --ink:#16202b;         /* slate ink (NOT pure black) */
+  --ink-2:#48586a;       /* secondary text */
+  --ink-3:#76879a;       /* captions/tertiary */
+  --line:#dde4ec;        /* hairline on light */
+  --navy:#1d3a5f;        /* deep corporate navy/slate — brand */
+  --navy-d:#13283f;      /* darker navy (dark sections/hovers/scrims) */
+  --navy-2:#27557f;      /* mid steel-blue */
+  --accent:#16774c;      /* emerald — the 10%, CTAs/highlights (white text passes AA) */
+  --accent-d:#115a39;    /* darker emerald for hover */
+  --accent-tint:#e2efe9; /* pale emerald wash for icon tiles */
+  --mint:#8fd9b2;        /* light mint for accents on dark */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:12px; --r-l:18px; --r-xl:26px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted */
+  --sh-1:0 1px 2px rgba(22,32,43,.06);
+  --sh-2:0 2px 5px rgba(22,32,43,.06),0 6px 14px rgba(22,32,43,.05);
+  --sh-3:0 6px 16px rgba(22,32,43,.08),0 18px 36px rgba(22,32,43,.09);
+  --sh-4:0 12px 28px rgba(22,32,43,.10),0 30px 60px rgba(22,32,43,.12);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  font-family:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  font-size:var(--body); line-height:var(--lh-body); color:var(--ink);
+  background:var(--bg); -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Archivo','Arial Narrow',sans-serif; line-height:var(--lh-head); font-weight:700; color:var(--ink)}
+h1{font-size:var(--h1); letter-spacing:var(--track-head); font-weight:800}
+h2{font-size:var(--h2); letter-spacing:var(--track-head)}
+h3{font-size:var(--h3); font-weight:700}
+p{max-width:var(--measure)}
+a{color:inherit; text-decoration:none}
+img{display:block; max-width:100%; height:auto}
+::selection{background:var(--mint); color:var(--navy-d)}
+
+.wrap{width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem}
+.eyebrow{font-family:'Archivo',sans-serif; font-size:.76rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); display:inline-flex; align-items:center; gap:.55rem}
+.eyebrow .bar{width:24px;height:2px;background:var(--accent);display:inline-block}
+.lede{font-size:1.14rem; color:var(--ink-2); max-width:56ch; line-height:1.62}
+/* responsive copy — phones get a tighter, honest subset of the same line; laptop keeps the full copy */
+.only-mob{display:none}
+@media(max-width:600px){.only-lap{display:none}.only-mob{display:block}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:.55rem; font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:1rem; line-height:1; min-height:52px; padding:.95rem 1.6rem; border-radius:var(--r-m); border:1.5px solid transparent; cursor:pointer; transition:transform var(--t), box-shadow var(--t), background var(--t), color var(--t), border-color var(--t); will-change:transform}
+.btn svg{width:19px;height:19px;flex:0 0 auto}
+.btn-primary{background:var(--accent); color:#fff; box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d); transform:translateY(-2px); box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent; color:var(--navy); border-color:var(--bg-3)}
+.btn-ghost:hover{background:var(--bg-2); border-color:var(--navy-2); transform:translateY(-2px)}
+.btn-ondark{background:rgba(255,255,255,.10); color:#fff; border-color:rgba(255,255,255,.34)}
+.btn-ondark:hover{background:rgba(255,255,255,.18); transform:translateY(-2px)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed; inset:0 0 auto 0; z-index:60; transition:background var(--t), box-shadow var(--t), border-color var(--t); border-bottom:1px solid transparent}
+.hdr.solid{background:rgba(255,255,255,.93); backdrop-filter:saturate(160%) blur(10px); -webkit-backdrop-filter:saturate(160%) blur(10px); box-shadow:var(--sh-1); border-bottom-color:var(--line)}
+.hdr-in{display:flex; align-items:center; justify-content:space-between; gap:var(--s3); min-height:4.6rem}
+.brand{display:inline-flex; align-items:center; gap:.65rem; font-family:'Archivo',sans-serif; font-weight:800; font-size:1.18rem; color:var(--ink); letter-spacing:-.01em}
+.brand .mark{width:40px;height:40px;flex:0 0 auto; border-radius:10px; background:var(--navy); display:grid; place-items:center; box-shadow:var(--sh-1)}
+.brand .mark svg{width:24px;height:24px;color:#fff}
+.brand .sub{display:block;font-family:'IBM Plex Sans',sans-serif;font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-top:1px}
+.nav{display:flex; align-items:center; gap:var(--s4)}
+.nav a.lk{font-family:'IBM Plex Sans',sans-serif; font-weight:500; font-size:.95rem; color:var(--ink-2); position:relative; padding:.3rem 0; transition:color var(--t)}
+.nav a.lk::after{content:""; position:absolute; left:0; right:100%; bottom:-3px; height:2px; background:var(--accent); transition:right var(--t)}
+.nav a.lk:hover{color:var(--ink)} .nav a.lk:hover::after, .nav a.lk.active::after{right:0}
+.nav a.lk.active{color:var(--ink)}
+.hdr .btn{min-height:46px; padding:.7rem 1.3rem; font-size:.94rem}
+.menu-btn{display:none; width:46px;height:46px; border:1px solid var(--line); border-radius:var(--r-s); background:var(--bg); color:var(--ink); align-items:center; justify-content:center; cursor:pointer}
+.menu-btn svg{width:24px;height:24px}
+@media(max-width:900px){
+  .nav .lk{display:none} .nav .btn.callbtn{display:none}
+  .nav .btn-primary{display:none} /* proposal CTA lives in the drawer + sticky bar on mobile */
+  .menu-btn{display:inline-flex}
+}
+/* mobile drawer */
+.drawer{position:fixed; inset:0; z-index:70; background:rgba(19,40,63,.5); opacity:0; visibility:hidden; transition:opacity var(--t)}
+.drawer.open{opacity:1; visibility:visible}
+.drawer-panel{position:absolute; top:0; right:0; height:100%; width:min(82%,340px); background:var(--bg); box-shadow:var(--sh-4); transform:translateX(100%); transition:transform var(--t); padding:1.4rem 1.4rem 2rem; display:flex; flex-direction:column; gap:.3rem}
+.drawer.open .drawer-panel{transform:none}
+.drawer-top{display:flex; align-items:center; justify-content:space-between; margin-bottom:.8rem}
+.drawer a.dlk{font-family:'Archivo',sans-serif; font-weight:600; font-size:1.2rem; color:var(--ink); padding:.75rem 0; border-bottom:1px solid var(--line)}
+.drawer .btn{margin-top:1rem}
+.x-btn{width:44px;height:44px;border:1px solid var(--line);border-radius:var(--r-s);background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--ink)}
+.x-btn svg{width:24px;height:24px}
+
+/* ---------- hero ---------- */
+.hero{position:relative; min-height:clamp(580px,92vh,880px); display:flex; align-items:flex-end; color:#fff; isolation:isolate}
+.hero-img{position:absolute; inset:0; z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover; object-position:center 66%}
+.hero::after{content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(180deg, rgba(19,40,63,.52) 0%, rgba(19,40,63,.30) 36%, rgba(13,26,41,.66) 84%, rgba(13,26,41,.84) 100%)}
+.hero-in{padding-block:var(--hero-y) clamp(2.5rem,5vw,4rem); width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem}
+.hero .eyebrow{color:#bfe6d2}
+.hero .eyebrow .bar{background:var(--mint)}
+.hero h1{color:#fff; max-width:19ch; margin-top:1.1rem; text-shadow:0 2px 24px rgba(10,20,32,.45)}
+.hero h1 em{font-style:normal; color:var(--mint)}
+.hero p.sub{color:#e7edf3; font-size:1.18rem; max-width:50ch; margin-top:1.3rem; text-shadow:0 1px 16px rgba(10,20,32,.5)}
+.hero-cta{display:flex; flex-wrap:wrap; gap:.85rem; margin-top:1.9rem; align-items:center}
+.rating-badge{display:inline-flex; align-items:center; gap:.6rem; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); padding:.6rem 1rem; border-radius:var(--r-pill); font-size:.92rem; color:#fff; font-weight:500}
+.rating-badge .stars{display:inline-flex; color:#ffd479} .rating-badge .stars svg{width:16px;height:16px}
+.rating-badge a{text-decoration:underline; text-underline-offset:2px; text-decoration-color:rgba(255,255,255,.42)}
+.hero-foot{position:absolute; left:0; right:0; bottom:0; z-index:1}
+.hero-strip{width:100%; max-width:75rem; margin-inline:auto; padding-inline:1.4rem; border-top:1px solid rgba(255,255,255,.16); display:flex; flex-wrap:wrap; gap:1rem 2.2rem; padding-top:1rem; padding-bottom:1.3rem; font-size:.9rem; color:#dbe3ea}
+.hero-strip span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-strip svg{width:17px;height:17px;color:var(--mint)}
+
+/* ---------- trust bar ---------- */
+.trust{background:var(--navy-d); color:#fff}
+.trust-in{display:grid; grid-template-columns:1fr; gap:.2rem; padding-block:1.15rem}
+@media(min-width:640px){.trust-in{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.trust-in{grid-template-columns:repeat(4,1fr)}}
+.trust-item{display:flex; align-items:center; gap:.7rem; padding:.55rem .2rem; font-size:.95rem; font-weight:500; color:#eaf0f5}
+.trust-item .ic{width:34px;height:34px;flex:0 0 auto;border-radius:var(--r-s);background:rgba(255,255,255,.08);display:grid;place-items:center;color:var(--mint)}
+.trust-item .ic svg{width:18px;height:18px}
+.trust-item b{font-weight:700;color:#fff}
+
+/* ---------- section scaffold ---------- */
+section{position:relative}
+.sec{padding-block:var(--section-y)}
+.sec-alt{background:var(--bg-2)}
+.sec-head{max-width:62ch}
+.sec-head.center{margin-inline:auto; text-align:center}
+.sec-head h2{margin-top:.9rem}
+.sec-head p{margin-top:1rem}
+.sec-head.center p{margin-inline:auto}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1.2rem; margin-top:var(--s5)}
+@media(min-width:560px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
+.svc-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-l); padding:1.7rem 1.5rem; box-shadow:var(--sh-1); transition:transform var(--t), box-shadow var(--t), border-color var(--t); position:relative; overflow:hidden}
+.svc-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);opacity:0;transition:opacity var(--t)}
+.svc-card:hover{transform:translateY(-4px); box-shadow:var(--sh-3); border-color:var(--bg-3)}
+.svc-card:hover::before{opacity:1}
+.svc-ic{width:52px;height:52px;border-radius:var(--r-m); background:var(--accent-tint); display:grid; place-items:center; margin-bottom:1.05rem}
+.svc-ic svg{width:26px;height:26px;color:var(--accent-d)}
+.svc-card h3{font-weight:700}
+.svc-card p{font-size:.95rem; color:var(--ink-2); margin-top:.5rem; line-height:1.55}
+
+/* ---------- property types ---------- */
+.prop-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1rem; margin-top:var(--s5)}
+@media(min-width:560px){.prop-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.prop-grid{grid-template-columns:repeat(3,1fr)}}
+.prop-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-m); padding:1.45rem 1.4rem; display:flex; gap:1rem; align-items:flex-start; transition:border-color var(--t), box-shadow var(--t), transform var(--t)}
+.sec-alt .prop-card{background:#fff}
+.prop-card:hover{border-color:var(--navy-2); box-shadow:var(--sh-2); transform:translateY(-2px)}
+.prop-ic{width:44px;height:44px;flex:0 0 auto;border-radius:var(--r-s); background:var(--navy); display:grid; place-items:center}
+.prop-ic svg{width:22px;height:22px;color:#fff}
+.prop-card h3{font-size:1.05rem;font-weight:700}
+.prop-card p{font-size:.9rem;color:var(--ink-2);margin-top:.3rem;line-height:1.5}
+
+/* ---------- process (visual-floor: decorative, no photos) ---------- */
+.steps-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1.4rem; margin-top:var(--s5)}
+@media(min-width:640px){.steps-grid{grid-template-columns:repeat(3,1fr)}}
+.step-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-l); padding:1.9rem 1.6rem; box-shadow:var(--sh-1); position:relative}
+.step-idx{font-family:'Archivo',sans-serif; font-weight:800; font-size:2.1rem; color:var(--accent-tint); -webkit-text-stroke:1.5px var(--accent); line-height:1; margin-bottom:.9rem}
+.step-ic{width:46px;height:46px;border-radius:var(--r-m); background:var(--accent-tint); display:grid; place-items:center; margin-bottom:1rem}
+.step-ic svg{width:23px;height:23px;color:var(--accent-d)}
+.step-card h3{font-weight:700}
+.step-card p{font-size:.95rem;color:var(--ink-2);margin-top:.5rem;line-height:1.55}
+
+/* ---------- reviews ---------- */
+.rev{background:var(--navy); color:#fff; position:relative; overflow:hidden}
+.rev .field-bg{position:absolute; pointer-events:none; opacity:.07; color:#fff; right:-30px; top:-20px; width:320px; height:320px}
+.rev .wrap{position:relative; z-index:1}
+.rev .eyebrow{color:var(--mint)}.rev .eyebrow .bar{background:var(--mint)}
+.rev h2{color:#fff; margin-top:.9rem}
+.rev-grid{display:grid; grid-template-columns:1fr; gap:1.2rem; margin-top:var(--s5)}
+@media(min-width:840px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+.quote-card{background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.14); border-radius:var(--r-l); padding:1.8rem 1.6rem; display:flex; flex-direction:column}
+.quote-card .stars{display:inline-flex; color:#ffd479; margin-bottom:1rem}
+.quote-card .stars svg{width:18px;height:18px}
+.quote-card blockquote{font-size:1.02rem; line-height:1.6; color:#eef3f7; font-weight:400}
+.quote-card cite{margin-top:1.3rem; font-style:normal; font-size:.9rem; color:#cddce8; font-weight:600; display:flex; align-items:center; gap:.55rem}
+.quote-card cite .dot{width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.quote-card cite span{font-weight:400; color:#9fb3c5}
+.rev-foot{margin-top:var(--s5); display:flex; flex-wrap:wrap; align-items:center; gap:1rem 1.6rem}
+.rev-foot .score{font-family:'Archivo',sans-serif; font-weight:700; font-size:1.5rem; color:#fff; display:inline-flex; align-items:center; gap:.6rem}
+.rev-foot .score .stars{color:#ffd479} .rev-foot .score .stars svg{width:20px;height:20px}
+.rev-foot a{color:var(--mint); text-decoration:underline; text-underline-offset:3px; font-weight:500; font-size:.95rem}
+
+/* ---------- service area ---------- */
+.area-grid{display:grid; grid-template-columns:1fr; gap:var(--s5); margin-top:var(--s5); align-items:start}
+@media(min-width:900px){.area-grid{grid-template-columns:1fr 1.05fr; gap:var(--s6)}}
+.chips{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.6rem}
+.chip{display:inline-flex; align-items:center; gap:.45rem; background:var(--bg); border:1px solid var(--line); color:var(--ink-2); font-size:.92rem; font-weight:500; padding:.5rem .9rem; border-radius:var(--r-pill)}
+.sec-alt .chip{background:#fff}
+.chip svg{width:14px;height:14px;color:var(--accent)}
+.area-note{margin-top:1.5rem; font-size:.95rem; color:var(--ink-2)}
+.map-frame{border-radius:var(--r-l); overflow:hidden; box-shadow:var(--sh-2); border:1px solid var(--line); background:var(--bg-3)}
+.map-frame iframe{width:100%; height:380px; border:0; display:block}
+
+/* ---------- contact ---------- */
+.contact-card{background:var(--bg); border:1px solid var(--line); border-radius:var(--r-xl); box-shadow:var(--sh-3); overflow:hidden; margin-top:var(--s5); display:grid; grid-template-columns:1fr}
+@media(min-width:860px){.contact-card{grid-template-columns:1.1fr .9fr}}
+.contact-main{padding:clamp(2rem,4vw,3.2rem)}
+.contact-main h2{margin-bottom:1rem}
+.contact-main .lede{margin-bottom:1.8rem}
+.contact-actions{display:flex; flex-wrap:wrap; gap:.8rem; margin-bottom:1.9rem}
+.phone-big{font-family:'Archivo',sans-serif; font-size:clamp(1.7rem,3.6vw,2.25rem); color:var(--navy); font-weight:800; display:inline-flex; align-items:center; gap:.7rem; letter-spacing:-.01em}
+.phone-big svg{width:26px;height:26px;color:var(--accent)}
+.contact-meta{display:grid; gap:1.1rem; margin-top:1.8rem; border-top:1px solid var(--line); padding-top:1.8rem}
+.cmeta-row{display:flex; gap:.85rem; align-items:flex-start; font-size:.97rem; color:var(--ink-2)}
+.cmeta-row .ic{width:38px;height:38px;flex:0 0 auto;border-radius:var(--r-s);background:var(--accent-tint);display:grid;place-items:center}
+.cmeta-row .ic svg{width:19px;height:19px;color:var(--accent-d)}
+.cmeta-row b{display:block;color:var(--ink);font-weight:600;margin-bottom:.15rem}
+.contact-side{background:var(--navy); color:#fff; padding:clamp(2rem,4vw,3rem); display:flex; flex-direction:column; justify-content:center}
+.contact-side h3{color:#fff; font-weight:700; font-size:1.4rem}
+.contact-side p{color:#cddce8; margin-top:.7rem; font-size:.98rem}
+.hours-table{margin-top:1.6rem; width:100%; border-collapse:collapse; font-size:.95rem}
+.hours-table th, .hours-table td{text-align:left; padding:.55rem 0; border-bottom:1px solid rgba(255,255,255,.14); font-weight:400}
+.hours-table th{font-weight:500; color:#fff}
+.hours-table td{text-align:right; color:#c4d4e1}
+.review-cta{margin-top:1.8rem}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-d); color:#c4d4e1; padding-block:var(--s6) var(--s4)}
+.foot-grid{display:grid; grid-template-columns:1fr; gap:var(--s4); padding-bottom:var(--s5); border-bottom:1px solid rgba(255,255,255,.12)}
+@media(min-width:720px){.foot-grid{grid-template-columns:1.5fr 1fr 1fr}}
+.foot-brand{display:inline-flex;align-items:center;gap:.65rem;font-family:'Archivo',sans-serif;font-size:1.2rem;color:#fff;font-weight:800;letter-spacing:-.01em}
+.foot-brand .mark{width:40px;height:40px;border-radius:10px;background:var(--navy-2);display:grid;place-items:center}
+.foot-brand .mark svg{width:24px;height:24px;color:#fff}
+.foot-col h4{color:#fff;font-family:'Archivo',sans-serif;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.foot-col p, .foot-col a{font-size:.95rem;color:#aebfcd;line-height:1.7;display:block}
+.foot-col a:hover{color:#fff}
+.foot-about{margin-top:1.1rem; font-size:.95rem; color:#a4b6c5; line-height:1.7; max-width:40ch}
+.foot-bottom{padding-top:var(--s4);display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;justify-content:space-between;align-items:center;font-size:.85rem;color:#8499a9}
+
+/* ---------- mobile sticky CTA ---------- */
+.sticky-cta{position:fixed; left:0; right:0; bottom:0; z-index:55; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-top:1px solid var(--line); box-shadow:0 -4px 20px rgba(22,32,43,.09); padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom)); display:none; gap:.6rem; transform:translateY(110%); transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1; min-height:50px; font-size:.95rem}
+@media(max-width:900px){.sticky-cta{display:flex}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0; transform:translateY(22px)}
+html.js .rv{will-change:opacity,transform}
+.rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2,.6,.2,1), transform .7s cubic-bezier(.2,.6,.2,1)}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}}
+
+/* ---------- mobile refinements (≤900px): clear the fixed header, kill hero overlaps ---------- */
+@media(max-width:900px){
+  /* hero → normal flow: H1 clears the fixed header; foot strip stacks below the CTAs (no overlap) */
+  .hero{display:block; min-height:auto}
+  .hero-in{padding-block:6rem 1.6rem}
+  .hero h1,.hero p.sub{max-width:none}
+  .hero-cta{flex-direction:column; align-items:stretch; gap:.7rem; margin-top:1.6rem}
+  .hero-cta .btn{width:100%}
+  .rating-badge{justify-content:center; margin-top:.15rem}
+  .hero-foot{position:static}
+  .hero-strip{flex-direction:column; align-items:flex-start; gap:.8rem; padding-block:1.1rem 1.35rem; font-size:.92rem}
+  /* tighten header gap + keep the wordmark on one line; halo keeps it legible over the hero photo */
+  .hdr-in{gap:.85rem}
+  .brand{white-space:nowrap; text-shadow:0 1px 10px rgba(255,255,255,.55)}
+  /* keep page content clear of the fixed sticky CTA bar */
+  footer{padding-bottom:calc(var(--s4) + 4.75rem)}
+}
+@media(max-width:420px){
+  /* narrow phones: drop the decorative sub-line so the wordmark stays compact + centered
+     (full name still appears in the drawer + footer); ease the H1 a touch */
+  .brand{font-size:1.1rem}
+  .brand .sub{display:none}
+  .hero h1{font-size:clamp(1.95rem,8.4vw,2.2rem)}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Yard Corps Lawn Care and Landscape home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg>
+      </span>
+      <span>Yard Corps<span class="sub">Residential &amp; Commercial</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services" class="lk">Services</a>
+      <a href="#properties" class="lk">Properties</a>
+      <a href="#process" class="lk">Process</a>
+      <a href="#reviews" class="lk">Reviews</a>
+      <a href="#area" class="lk">Service area</a>
+      <a href="tel:+19414858504" class="btn btn-ghost callbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(941) 485-8504</a>
+      <a href="#contact" class="btn btn-primary">Request a proposal</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-top">
+      <span class="brand" style="font-size:1.05rem"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg></span><span>Yard Corps</span></span>
+      <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <a href="#services" class="dlk">Services</a>
+    <a href="#properties" class="dlk">Properties we serve</a>
+    <a href="#process" class="dlk">Process</a>
+    <a href="#reviews" class="dlk">Reviews</a>
+    <a href="#area" class="dlk">Service area</a>
+    <a href="#contact" class="dlk">Contact</a>
+    <a href="tel:+19414858504" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(941) 485-8504</a>
+    <a href="#contact" class="btn btn-primary">Request a proposal</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-img">
+    <img src="assets/garden-bed-tropical-nokomis.jpg" alt="Tropical foundation planting bed with palms, croton and ornamental grasses maintained at a home near Nokomis, Florida" width="825" height="1100" fetchpriority="high" decoding="async" />
+  </div>
+  <div class="hero-in">
+    <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Residential &amp; commercial grounds · Nokomis, FL</span>
+    <h1>Grounds care from Nokomis to North Port, <em>City Hall included</em>.</h1>
+    <p class="sub only-lap">From private yards to builder job sites and the City of North Port's own City Hall grounds, we mow, plant, clean up and maintain properties across southern Sarasota County — one crew, one number, year-round.</p>
+    <p class="sub only-mob">Residential, builder and municipal grounds — mowed, planted and maintained, year-round.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="14" y2="17"/></svg>Request a proposal</a>
+      <a href="#services" class="btn btn-ondark">See what we cover</a>
+      <span class="rating-badge">
+        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <span><strong>4.5</strong> · <a href="https://maps.google.com/?cid=16430945894251541231" target="_blank" rel="noopener">10 Google reviews</a></span>
+      </span>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="hero-strip">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Residential &amp; commercial</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10M9 21V10M15 21V10M19 21V10"/><path d="M3 10h18"/><path d="M12 3L4 7h16z"/></svg>Trusted by the City of North Port</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Venice to North Port</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust" aria-label="Why property owners choose us">
+  <div class="wrap trust-in">
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span><span><b>4.5 ★</b> · 10 reviews</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/></svg></span><span><b>Residential</b> &amp; commercial</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10M9 21V10M15 21V10M19 21V10"/><path d="M3 10h18"/><path d="M12 3L4 7h16z"/></svg></span><span><b>City of North Port</b> client</span></div>
+    <div class="trust-item"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><b>Venice</b> to North Port</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>What we cover</span>
+      <h2>One vendor for the grounds, start to finish.</h2>
+      <p class="lede">Instead of juggling a mowing crew, a landscaper and a cleanup service, you get all of it from us — on a schedule, with the same people who know your property.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20c0-3 1.5-5 3-5"/><path d="M8 20c0-4 1.5-6 3-6"/><path d="M12 20c0-3 1.5-5 3-5"/><path d="M16 20c0-4 1.5-6 3-6"/></svg></div>
+        <h3>Lawn &amp; turf maintenance</h3>
+        <p>Mowing, edging and trimming on a set rotation, so lawns, common areas and frontage stay sharp without you having to chase us down.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V11"/><path d="M12 11C12 7 9 5 5 5c0 4 3 6 7 6z"/><path d="M12 13c0-3 3-5 7-5 0 3-3 5-7 5z"/><path d="M8 22h8"/></svg></div>
+        <h3>Landscape &amp; mulch installation</h3>
+        <p>Mulch, plantings, pruning and bed refreshes for entrances, islands and foundation beds — the details that make a property read as cared-for.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></svg></div>
+        <h3>Storm &amp; debris cleanup</h3>
+        <p>Storm cleanup and debris removal so a property is presentable again fast — the in-between work Florida weather makes necessary.</p>
+      </article>
+      <article class="svc-card rv">
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+        <h3>Heavy vegetation management</h3>
+        <p>Overgrowth, palm trims and dense-growth clearing handled without the property sitting untouched for weeks.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPERTY TYPES ============ -->
+<section class="sec sec-alt" id="properties">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Properties we serve</span>
+      <h2>Built for the properties you manage.</h2>
+      <p class="lede only-lap">"Residential and commercial" covers real ground for us — private homes, builder job sites and the City of North Port's own grounds all run through the same crews and equipment.</p>
+      <p class="lede only-mob">Private homes, builder sites and municipal grounds — the same crews and equipment.</p>
+    </div>
+    <div class="prop-grid">
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+        <div><h3>Private homes &amp; residential properties</h3><p>Lawn, landscape and cleanup service for homes across southern Sarasota County.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <div><h3>Builder &amp; new-construction partners</h3><p>A local builder refers their own clients to us for lawn care on new homes.</p></div>
+      </article>
+      <article class="prop-card rv">
+        <span class="prop-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10M9 21V10M15 21V10M19 21V10"/><path d="M3 10h18"/><path d="M12 3L4 7h16z"/></svg></span>
+        <div><h3>Municipal &amp; institutional grounds</h3><p>The City of North Port trusts us to landscape the entrance of City Hall.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS (visual-floor: decorative process diagram, no photos) ============ -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow" style="justify-content:center"><span class="bar" aria-hidden="true"></span>How it works</span>
+      <h2>A straight path from call to cared-for grounds.</h2>
+    </div>
+    <div class="steps-grid">
+      <article class="step-card rv">
+        <div class="step-idx" aria-hidden="true">01</div>
+        <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Call or text</h3>
+        <p>Tell us about the property — size, what it needs, and whether it's a home, a job site or a managed grounds contract.</p>
+      </article>
+      <article class="step-card rv">
+        <div class="step-idx" aria-hidden="true">02</div>
+        <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-4"/><path d="m9 14 2 2 4-4"/></svg></div>
+        <h3>We walk the site</h3>
+        <p>We scope the work in person so the proposal reflects what your property actually needs — no surprises later.</p>
+      </article>
+      <article class="step-card rv">
+        <div class="step-idx" aria-hidden="true">03</div>
+        <div class="step-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <h3>Scheduled care</h3>
+        <p>Mowed, planted and maintained on a set rotation — the same crew every visit.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="sec rev" id="reviews">
+  <svg class="field-bg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 17h12"/><path d="M9 13h6"/><path d="M11 9h2"/></svg>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><span class="bar" aria-hidden="true"></span>What clients say</span>
+      <h2>Sarasota County clients, in their own words.</h2>
+    </div>
+    <div class="rev-grid">
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"Yard Corps, is a valuable asset to our business, we recommend them to most of our clients to tackle their lawn care needs."</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>Beechwood Builders <span>· Google review</span></cite>
+      </figure>
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"Yard Corp has been working with us for years. They've trimmed trees, taken care of our lawn and landscape, all with integrity and respect. I recommend them to friends and family without hesitation. The crew is wonderful. Hats off to Adam for finding such good people."</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>Barbara Murphy <span>· Google review</span></cite>
+      </figure>
+      <figure class="quote-card rv">
+        <span class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>
+        <blockquote>"I've called on Yard Corps four time the past 18 months. The crew does sticky jobs (cactus) easily, removes and replants quickly, and trims palms effortlessly. Yard Corps is responsive, reliable, trustworthy and efficient. I'd recommend them to any of my friends and neighbors. Thanks Adam!"</blockquote>
+        <cite><span class="dot" aria-hidden="true"></span>George Boyd <span>· Google review</span></cite>
+      </figure>
+    </div>
+    <div class="rev-foot rv">
+      <span class="score"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></span>4.5 · 10 Google reviews</span>
+      <a href="https://maps.google.com/?cid=16430945894251541231" target="_blank" rel="noopener">Read every review on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="sec sec-alt" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div class="rv">
+        <span class="eyebrow"><span class="bar" aria-hidden="true"></span>Where we work</span>
+        <h2>Based in Nokomis, out across southern Sarasota County.</h2>
+        <p class="lede">We mow, plant and clean up in:</p>
+        <div class="chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Venice</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Osprey</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Nokomis</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>South Venice</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Englewood</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>North Port</span>
+        </div>
+        <p class="area-note">Managing a property just outside this list? Give us a call — if it's around southern Sarasota County, we can usually cover it.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Yard Corps Lawn Care and Landscape's service area around Nokomis, FL" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-82.60%2C26.90%2C-82.18%2C27.28&amp;layer=mapnik&amp;marker=27.1259521%2C-82.4648067"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow" style="justify-content:center"><span class="bar" aria-hidden="true"></span>Request a proposal</span>
+      <h2>Tell us about your property.</h2>
+    </div>
+    <div class="contact-card rv">
+      <div class="contact-main">
+        <p class="lede only-lap">The fastest way to start is a quick call, text or email — you'll reach us directly. Tell us the property, the scope and the schedule, and we'll put together a straight proposal.</p>
+        <p class="lede only-mob">Call, text or email — tell us the property and we'll put together a straight proposal.</p>
+        <div class="contact-actions">
+          <a href="tel:+19414858504" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call now</a>
+          <a href="sms:+19414858504?&amp;body=Hi%20Yard%20Corps%2C%20I%27d%20like%20a%20proposal%20for%20grounds%20care%20at%20a%20property%20in%20the%20Nokomis%20area." class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Text a proposal request</a>
+          <a href="mailto:jeremy@yardcorpslawns.com" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email us</a>
+        </div>
+        <a href="tel:+19414858504" class="phone-big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(941) 485-8504</a>
+        <div class="contact-meta">
+          <div class="cmeta-row">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><b>Find us</b>716 Albee Rd W, Nokomis, FL 34275</span>
+          </div>
+          <div class="cmeta-row">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20c0-3 1.5-5 3-5"/><path d="M8 20c0-4 1.5-6 3-6"/><path d="M12 20c0-3 1.5-5 3-5"/><path d="M16 20c0-4 1.5-6 3-6"/></svg></span>
+            <span><b>What we cover</b>Lawn &amp; turf, landscape &amp; mulch, storm cleanup, heavy vegetation</span>
+          </div>
+        </div>
+      </div>
+      <aside class="contact-side">
+        <h3>Hours</h3>
+        <p>Call, text or email during business hours and we'll get back to you about scoping your property.</p>
+        <table class="hours-table">
+          <tbody>
+            <tr><th scope="row">Mon – Fri</th><td>8:00 AM – 5:30 PM</td></tr>
+            <tr><th scope="row">Sat – Sun</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJUa6SREdQw4gR77KGZjxyBuQ" target="_blank" rel="noopener" class="btn btn-ondark review-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>Leave us a review</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="foot-brand"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 19h14"/><path d="M7 15h10"/><path d="M9 11h6"/><path d="M11 7h2"/></svg></span>Yard Corps Lawn Care and Landscape</span>
+        <p class="foot-about">Residential and commercial grounds care — lawn, landscape, storm cleanup and heavy vegetation management — for Nokomis and southern Sarasota County.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+19414858504">(941) 485-8504</a>
+        <a href="mailto:jeremy@yardcorpslawns.com">jeremy@yardcorpslawns.com</a>
+        <p>716 Albee Rd W<br/>Nokomis, FL 34275</p>
+        <a href="https://maps.google.com/?cid=16430945894251541231" target="_blank" rel="noopener">Find us on Google →</a>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <p>Mon – Fri: 8am – 5:30pm<br/>Sat – Sun: Closed</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Yard Corps Lawn Care and Landscape · Nokomis, FL</span>
+      <span>Serving Venice to North Port</span>
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="tel:+19414858504" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a href="#contact" class="btn btn-primary">Request a proposal</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var doc=document;
+  var yrEl=doc.getElementById('yr'); if(yrEl) yrEl.textContent=new Date().getFullYear();
+
+  // header solid on scroll + active nav + sticky cta
+  var hdr=doc.getElementById('hdr'), sticky=doc.getElementById('stickyCta');
+  var links=Array.prototype.slice.call(doc.querySelectorAll('.nav a.lk'));
+  var secs=links.map(function(a){return doc.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+  function onScroll(){
+    var y=window.pageYOffset||doc.documentElement.scrollTop;
+    if(hdr) hdr.classList.toggle('solid', y>40);
+    if(sticky) sticky.classList.toggle('show', y>560);
+    var cur=null;
+    for(var i=0;i<secs.length;i++){ if(secs[i].getBoundingClientRect().top<=140) cur=links[i]; }
+    links.forEach(function(l){l.classList.remove('active');});
+    if(cur) cur.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+  onScroll();
+
+  // mobile drawer
+  var drawer=doc.getElementById('drawer'), menuBtn=doc.getElementById('menuBtn'), drawerClose=doc.getElementById('drawerClose');
+  function openD(){drawer.classList.add('open'); menuBtn.setAttribute('aria-expanded','true'); doc.body.style.overflow='hidden';}
+  function closeD(){drawer.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); doc.body.style.overflow='';}
+  if(menuBtn){ menuBtn.addEventListener('click', openD); }
+  if(drawerClose){ drawerClose.addEventListener('click', closeD); }
+  if(drawer){
+    drawer.addEventListener('click', function(e){ if(e.target===drawer) closeD(); });
+    Array.prototype.forEach.call(drawer.querySelectorAll('a'), function(a){ a.addEventListener('click', closeD); });
+  }
+
+  // reveal on scroll (secondary content only; failsafe + reduced-motion safe)
+  var rvs=Array.prototype.slice.call(doc.querySelectorAll('.rv'));
+  function showAll(){ rvs.forEach(function(el){el.classList.add('in');}); }
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ showAll(); }
+  else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }); }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll, 2600); // failsafe: never leave content hidden
+  } else { showAll(); }
+})();
+</script>
+</body>
+</html>

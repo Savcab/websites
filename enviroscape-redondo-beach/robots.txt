@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/enviroscape-redondo-beach/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://falconwebstudio.com/websites/legends-landscape-baton-rouge/sitemap.xml

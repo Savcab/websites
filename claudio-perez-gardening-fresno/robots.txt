@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/claudio-perez-gardening-fresno/sitemap.xml

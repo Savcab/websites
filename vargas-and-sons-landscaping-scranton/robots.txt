@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/vargas-and-sons-landscaping-scranton/sitemap.xml

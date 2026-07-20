@@ -126,8 +126,8 @@ header{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:3p
 /* work */
 .workband{background:#fff;border-block:1px solid var(--rule)}
 .work-grid{display:grid;grid-template-columns:1fr;gap:1.3rem}
-@media(min-width:680px){.work-grid{grid-template-columns:1fr 1fr}.work-grid figure.lead{grid-column:span 2}}
-@media(min-width:1024px){.work-grid{grid-template-columns:repeat(4,1fr)}.work-grid figure.lead img{height:380px}}
+@media(min-width:680px){.work-grid{grid-template-columns:1fr 1fr}.work-grid figure.lead,.work-grid figure.wide{grid-column:span 2}}
+@media(min-width:1024px){.work-grid figure.lead img{height:420px;object-position:center 25%}.work-grid figure.wide img{height:340px;object-position:center 60%}}
 .work-grid figure{background:var(--paper);border:1px solid var(--rule);border-radius:12px;overflow:hidden}
 .work-grid img{width:100%;height:300px;object-fit:cover}
 .work-grid figcaption{padding:.75rem .95rem;font-family:'Sora',sans-serif;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--ink)}
@@ -275,8 +275,8 @@ footer.site{background:#12160F;color:#B7BFAE;padding:2.6rem 22px 7rem;font-size:
         <p>Every photo is from our own jobs — no stock images.</p>
       </div>
       <div class="work-grid">
-        <figure>
-          <img src="assets/hero-front-lawn.jpg" alt="Freshly mowed front lawn at a St. Petersburg home" width="1200" height="900">
+        <figure class="lead">
+          <img src="assets/hero-front-lawn.jpg" alt="Freshly mowed front lawn at a St. Petersburg home" width="1200" height="900" fetchpriority="high">
           <figcaption>Front lawn, freshly cut</figcaption>
         </figure>
         <figure>
@@ -287,7 +287,7 @@ footer.site{background:#12160F;color:#B7BFAE;padding:2.6rem 22px 7rem;font-size:
           <img src="assets/work-corner-lawn.jpg" alt="Mowed corner-lot lawn under a large tree" width="900" height="1200" loading="lazy">
           <figcaption>Corner lot, kept tidy</figcaption>
         </figure>
-        <figure>
+        <figure class="wide">
           <img src="assets/work-striped-hedge.jpg" alt="Striped mowed lawn with a trimmed hedge line" width="900" height="1200" loading="lazy">
           <figcaption>Stripes + trimmed hedge</figcaption>
         </figure>

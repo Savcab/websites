@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rendon Photography | Portrait Photographer in Newberry, SC</title>
+<meta name="description" content="Rendon Photography — portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina. True-to-tone natural light work by Makayla Rendon. See the portfolio and get in touch.">
+<link rel="canonical" href="https://savcab.github.io/websites/rendon-photography/">
+<meta name="theme-color" content="#faf9f5">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rendon Photography">
+<meta property="og:title" content="Rendon Photography | Portrait Photographer in Newberry, SC">
+<meta property="og:description" content="Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina. True-to-tone natural light work by Makayla Rendon.">
+<meta property="og:url" content="https://savcab.github.io/websites/rendon-photography/">
+<meta property="og:image" content="https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A couple walking beneath a live oak canopy at golden hour, photographed by Rendon Photography">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rendon Photography | Portrait Photographer in Newberry, SC">
+<meta name="twitter:description" content="Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina.">
+<meta name="twitter:image" content="https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23faf9f5'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%232b2724' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#faf9f5;
+  --paper-2:#f2efe7;
+  --ink:#2b2724;
+  --ink-soft:#5f5850;
+  --muted:#6f675c;
+  --rule:#e2ddd2;
+  --brass:#8d7a56;
+  --white:#fbf9f5;
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --pad:clamp(20px,5vw,48px);
+  --section:clamp(80px,10vw,132px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:300;
+  font-size:17px;
+  line-height:1.75;
+  overflow-x:clip;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:300;margin:0;line-height:1.14}
+p{margin:0}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:var(--pad)}
+.narrow{max-width:60ch}
+
+/* ---------- header ---------- */
+.site-head{
+  position:sticky;top:0;z-index:40;
+  background:rgba(250,249,245,.94);
+  backdrop-filter:saturate(150%) blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.head-in{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  min-height:62px;
+}
+.mark{
+  font-family:var(--display);font-size:clamp(19px,2.4vw,23px);font-weight:400;
+  letter-spacing:.055em;text-decoration:none;white-space:nowrap;
+}
+.nav{display:flex;align-items:center;gap:clamp(16px,3vw,30px)}
+.nav a{
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink-soft);padding:6px 0;
+  border-bottom:1px solid transparent;transition:color .2s,border-color .2s;
+}
+.nav a:hover,.nav a:focus-visible{color:var(--ink);border-bottom-color:var(--brass)}
+@media (max-width:540px){
+  .head-in{justify-content:center;min-height:54px}
+  .mark{display:none}
+  .nav{gap:22px}
+  .nav a{font-size:11px;letter-spacing:.16em}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:#2b2724}
+.hero img{
+  width:100%;height:min(84svh,880px);object-fit:cover;object-position:center 55%;
+}
+@supports not (height:1svh){.hero img{height:min(84vh,880px)}}
+@media (max-width:700px){
+  .hero img{height:min(76svh,700px);object-position:center 48%}
+  @supports not (height:1svh){.hero img{height:min(76vh,700px)}}
+}
+.hero-veil{
+  position:absolute;inset:auto 0 0 0;height:70%;pointer-events:none;
+  background:linear-gradient(to top,rgba(24,20,16,.74) 0%,rgba(24,20,16,.58) 26%,rgba(24,20,16,.3) 56%,rgba(24,20,16,0) 100%);
+}
+.hero-lock{
+  position:absolute;left:0;right:0;bottom:clamp(74px,8vw,112px);
+  color:var(--white);
+}
+.hero-lock h1{
+  font-size:clamp(38px,7.4vw,80px);font-weight:300;letter-spacing:.02em;
+  text-shadow:0 1px 24px rgba(20,16,12,.28);
+}
+.hero-line{
+  margin-top:14px;font-size:clamp(11px,1.5vw,13.5px);
+  letter-spacing:.24em;text-transform:uppercase;color:rgba(251,249,245,.94);
+  text-shadow:0 1px 3px rgba(20,16,12,.55),0 1px 18px rgba(20,16,12,.4);
+}
+.scroll-cue{
+  position:absolute;bottom:clamp(20px,2.6vw,30px);left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:7px;pointer-events:none;
+}
+.scroll-cue span{
+  display:block;width:1px;height:clamp(22px,4vw,38px);
+  background:linear-gradient(to bottom,rgba(251,249,245,0),rgba(251,249,245,.75));
+}
+.scroll-cue .i{color:rgba(251,249,245,.8);animation:nudge 2.6s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@media (prefers-reduced-motion:reduce){.scroll-cue .i{animation:none}}
+@media (max-width:540px){.scroll-cue{display:none}}
+
+/* ---------- intro ---------- */
+.intro{padding-block:var(--section)}
+.intro-quote{
+  font-family:var(--display);font-style:italic;font-weight:300;
+  font-size:clamp(24px,3.6vw,40px);line-height:1.34;letter-spacing:.005em;
+  max-width:22ch;color:var(--ink);
+}
+.intro-body{margin-top:clamp(26px,4vw,38px);max-width:58ch;color:var(--ink-soft)}
+.intro-body p + p{margin-top:1.05em}
+.rule{width:52px;height:1px;background:var(--brass);margin-bottom:clamp(26px,4vw,36px)}
+.eyebrow{
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:16px;
+}
+
+/* ---------- gallery ---------- */
+.work{padding-bottom:var(--section)}
+.work-head{margin-bottom:clamp(28px,4vw,44px)}
+.work-head h2{font-size:clamp(28px,4vw,44px);letter-spacing:.01em}
+.work-head p:not(.eyebrow){margin-top:12px;color:var(--muted);font-size:15.5px;max-width:52ch}
+.masonry{column-count:1;column-gap:clamp(12px,1.6vw,20px)}
+@media (min-width:620px){.masonry{column-count:2}}
+@media (min-width:1000px){.masonry{column-count:3}}
+.tile{
+  break-inside:avoid;margin:0 0 clamp(12px,1.6vw,20px);
+  display:block;width:100%;padding:0;border:0;background:none;
+  cursor:zoom-in;position:relative;overflow:hidden;line-height:0;
+  border-radius:2px;
+}
+.tile img{width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.7,.3,1),opacity .4s}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.028);opacity:.94}
+.tile:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* ---------- testimonial ---------- */
+.said{background:var(--paper-2);padding-block:var(--section);margin-top:0}
+.said blockquote{margin:0;max-width:64ch}
+.said q{
+  font-family:var(--display);font-weight:300;font-style:italic;
+  font-size:clamp(21px,2.9vw,31px);line-height:1.46;quotes:"\201C" "\201D";
+}
+.said cite{
+  display:block;margin-top:clamp(20px,3vw,28px);font-style:normal;
+  font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ---------- contact ---------- */
+.contact{padding-block:var(--section);text-align:center}
+.contact h2{font-size:clamp(28px,4.4vw,48px)}
+.contact .lede{margin:18px auto 0;color:var(--ink-soft);max-width:44ch}
+.ig-link{
+  display:inline-flex;align-items:center;gap:11px;margin-top:clamp(30px,4.4vw,42px);
+  font-size:clamp(15px,1.9vw,18px);text-decoration:none;color:var(--ink);
+  border-bottom:1px solid var(--rule);padding-bottom:7px;transition:border-color .2s;
+}
+.ig-link:hover,.ig-link:focus-visible{border-bottom-color:var(--brass)}
+.ig-link .i{color:var(--brass);flex:none}
+.btn-row{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+  margin-top:clamp(28px,4vw,38px);
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-width:216px;padding:15px 26px;
+  font-size:13.5px;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink);
+  border:1px solid var(--ink);border-radius:1px;
+  transition:background .25s,color .25s;
+}
+.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--paper)}
+.btn .i{flex:none}
+.soft{margin-top:clamp(24px,3.4vw,32px);font-size:14.5px;color:var(--muted)}
+
+/* ---------- footer ---------- */
+.site-foot{border-top:1px solid var(--rule);padding-block:clamp(38px,5vw,56px);font-size:14px}
+.foot-in{display:flex;flex-wrap:wrap;gap:22px 32px;align-items:baseline;justify-content:space-between}
+.foot-name{font-family:var(--display);font-size:22px;letter-spacing:.05em}
+.foot-place{color:var(--muted);font-size:13.5px;margin-top:5px}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px}
+.foot-links a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s,color .2s}
+.foot-links a:hover,.foot-links a:focus-visible{color:var(--ink);border-bottom-color:var(--brass)}
+.copy{margin-top:clamp(26px,3.6vw,34px);color:var(--muted);font-size:12.5px}
+
+/* ---------- lightbox ---------- */
+.lb{
+  position:fixed;inset:0;z-index:90;display:none;
+  background:rgba(22,19,16,.94);
+  align-items:center;justify-content:center;
+  padding:clamp(14px,3vw,44px);
+}
+.lb[open],.lb.on{display:flex}
+.lb-fig{margin:0;max-width:100%;max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px}
+.lb-fig img{
+  max-width:100%;max-height:calc(100svh - 130px);width:auto;height:auto;object-fit:contain;
+}
+@supports not (height:1svh){.lb-fig img{max-height:calc(100vh - 130px)}}
+.lb-cap{
+  color:rgba(251,249,245,.72);font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;text-align:center;max-width:46ch;line-height:1.7;
+}
+.lb-btn{
+  position:absolute;background:none;border:0;cursor:pointer;
+  color:rgba(251,249,245,.85);padding:12px;line-height:0;
+  border-radius:999px;transition:background .2s,color .2s;
+}
+.lb-btn:hover,.lb-btn:focus-visible{background:rgba(251,249,245,.12);color:#fff}
+.lb-btn:focus-visible{outline:2px solid rgba(251,249,245,.7);outline-offset:2px}
+.lb-close{top:clamp(8px,2vw,20px);right:clamp(8px,2vw,20px)}
+.lb-prev{left:clamp(4px,1.6vw,20px);top:50%;transform:translateY(-50%)}
+.lb-next{right:clamp(4px,1.6vw,20px);top:50%;transform:translateY(-50%)}
+@media (max-width:540px){
+  .lb-prev{left:2px}.lb-next{right:2px}
+  .lb-btn{padding:9px}
+}
+body.lb-open{overflow:hidden}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="mark" href="#top">Rendon Photography</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-label="Introduction">
+    <img src="assets/couple-walking-oak-canopy-color-hero.jpg" width="1336" height="2000"
+         fetchpriority="high" decoding="async"
+         alt="A couple walking hand in hand down a shaded path beneath a live oak canopy at golden hour, photographed by Rendon Photography near Newberry, South Carolina">
+    <div class="hero-veil"></div>
+    <div class="hero-lock">
+      <div class="wrap">
+        <h1>Rendon Photography</h1>
+        <p class="hero-line">Portrait Photography in Newberry, South Carolina</p>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span>
+      <svg class="i" width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="intro wrap" id="about">
+    <div class="rule"></div>
+    <p class="intro-quote">A moment lasts all of a second, but the memory lives on forever.</p>
+    <div class="intro-body">
+      <p>And it is our passion to capture those moments to last a lifetime.</p>
+      <p>I'm Makayla Rendon. I photograph families, couples and milestones in and around Newberry,
+         South Carolina — weddings, studio portraits, newborn and maternity sessions, senior
+         portraits, and the ordinary afternoons worth keeping.</p>
+      <p>Professional, true-to-tone photography you'll cherish for years to come.</p>
+    </div>
+  </section>
+
+  <section class="work wrap" id="work">
+    <div class="work-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>The portfolio</h2>
+      <p>Weddings, families, newborns, seniors and studio sessions — photographed across Newberry
+         County and the surrounding Midlands.</p>
+    </div>
+
+    <div class="masonry" id="masonry">
+
+      <button class="tile" type="button" data-cap="Family session · golden hour">
+        <img src="assets/siblings-golden-hour-field-candid.jpg" width="967" height="1440" loading="lazy" decoding="async"
+             alt="Two young siblings standing in tall sunlit grass at golden hour during a family session in Newberry County, South Carolina">
+      </button>
+
+      <button class="tile" type="button" data-cap="Child portrait · flower field">
+        <img src="assets/girl-flower-field-portrait-01.jpg" width="968" height="1440" loading="lazy" decoding="async"
+             alt="Young girl in a white headband standing among rows of blooming snapdragons in golden-hour backlight during a portrait session">
+      </button>
+
+      <button class="tile" type="button" data-cap="Maternity session">
+        <img src="assets/maternity-outdoor-fence-pink-gown-hero.jpg" width="1440" height="973" loading="lazy" decoding="async"
+             alt="Maternity portrait of an expectant mother in a dusty pink gown with her partner's hand resting on her belly beside a rustic wood fence">
+      </button>
+
+      <button class="tile" type="button" data-cap="Newborn · studio">
+        <img src="assets/newborn-studio-purple-tutu-sleeping.jpg" width="1440" height="964" loading="lazy" decoding="async"
+             alt="Sleeping newborn in a purple lace outfit and matching bow headband resting on a cream faux-fur blanket during a posed studio newborn session">
+      </button>
+
+      <button class="tile" type="button" data-cap="Wedding day">
+        <img src="assets/wedding-couple-venue-golden-hour-hero.jpg" width="967" height="1440" loading="lazy" decoding="async"
+             alt="Bride in a cathedral veil and groom in a black suit walking across a lawn toward a brick wedding venue strung with bistro lights at sunset">
+      </button>
+
+      <button class="tile" type="button" data-cap="Couples session">
+        <img src="assets/couple-military-color-waterfall-dance.jpg" width="1002" height="1500" loading="lazy" decoding="async"
+             alt="Couple dancing on rocks beside a small waterfall, one partner in Navy dress white uniform, during an outdoor couples session">
+      </button>
+
+      <button class="tile" type="button" data-cap="Senior portraits">
+        <img src="assets/senior-guy-fence-portrait-01.jpg" width="1002" height="1500" loading="lazy" decoding="async"
+             alt="High school senior portrait of a young man in a plaid shirt leaning against a rustic split-rail fence in the woods">
+      </button>
+
+      <button class="tile" type="button" data-cap="Youth sports · Newberry County">
+        <img src="assets/kid-baseball-newberry-county-golden-hour.jpg" width="968" height="1440" loading="lazy" decoding="async"
+             alt="Young ballplayer in a Newberry County uniform with a bat across his shoulders, backlit at golden hour behind the backstop">
+      </button>
+
+      <button class="tile" type="button" data-cap="Third birthday · studio">
+        <img src="assets/milestone-birthday-3rd-studio-spotlight.jpg" width="966" height="1440" loading="lazy" decoding="async"
+             alt="Boy in a black suit hugging a large number three balloon under a circular studio spotlight at a third birthday session">
+      </button>
+
+      <button class="tile" type="button" data-cap="Wedding details">
+        <img src="assets/wedding-detail-jewelry-macro-artistic.jpg" width="1440" height="966" loading="lazy" decoding="async"
+             alt="Wedding day detail photograph of an emerald ring, gold bands, a watch and a pearl bracelet arranged with white tulips">
+      </button>
+
+      <button class="tile" type="button" data-cap="Couples · black and white">
+        <img src="assets/couple-bw-lakeside-candid-motion.jpg" width="1500" height="1002" loading="lazy" decoding="async"
+             alt="Black and white candid photograph of a couple resting together beneath a tree at the edge of a lake">
+      </button>
+
+      <button class="tile" type="button" data-cap="Child portrait · flower field">
+        <img src="assets/girl-flower-field-walking-away-02.jpg" width="972" height="1440" loading="lazy" decoding="async"
+             alt="Girl walking away through a field of blooming snapdragons, hair swinging in the golden-hour light">
+      </button>
+
+      <button class="tile" type="button" data-cap="Brand &amp; commercial">
+        <img src="assets/brand-commercial-studio-male-model-01.jpg" width="979" height="1440" loading="lazy" decoding="async"
+             alt="Commercial brand session showing a model in streetwear seated on a stool with window-blind shadows falling across the studio backdrop">
+      </button>
+
+      <button class="tile" type="button" data-cap="Studio portrait">
+        <img src="assets/studio-portrait-moody-red-woman.jpg" width="960" height="960" loading="lazy" decoding="async"
+             alt="Moody studio portrait of a young woman in a black turtleneck against a deep maroon backdrop">
+      </button>
+
+      <button class="tile" type="button" data-cap="Milestone birthday">
+        <img src="assets/milestone-birthday-28-outdoor-balloons.jpg" width="985" height="1440" loading="lazy" decoding="async"
+             alt="Woman in a pale yellow dress holding silver number twenty-eight balloons in front of a metal farm gate at golden hour">
+      </button>
+
+      <button class="tile" type="button" data-cap="Senior portraits">
+        <img src="assets/senior-guy-gate-portrait-03.jpg" width="1002" height="1500" loading="lazy" decoding="async"
+             alt="High school senior sitting cross-legged in the grass in front of a weathered metal gate during an outdoor senior session">
+      </button>
+
+      <button class="tile" type="button" data-cap="Wedding details">
+        <img src="assets/wedding-flatlay-vow-letters-shoes-cologne.jpg" width="968" height="1440" loading="lazy" decoding="async"
+             alt="Wedding flat lay of handwritten vow letters, cufflinks, cologne and brown dress shoes arranged on a wood floor with tulips">
+      </button>
+
+      <button class="tile" type="button" data-cap="Fine art portrait">
+        <img src="assets/fine-art-conceptual-floral-blindfold.jpg" width="965" height="1440" loading="lazy" decoding="async"
+             alt="Fine art conceptual portrait of a woman wearing a wildflower headwrap that covers her eyes, framed against a dark background">
+      </button>
+
+    </div>
+  </section>
+
+  <section class="said">
+    <div class="wrap">
+      <blockquote>
+        <q>I cannot recommend Rendon Photography enough! She has captured so many special moments for
+           our family, including my maternity photos, baby shower, gender reveal, and my daughter's
+           first birthday. Every session has been beautiful, professional, and filled with so much
+           care and attention to detail. Not only are her photos amazing, but she always makes
+           everyone feel comfortable and truly brings your vision to life.</q>
+        <cite>Jessica D. &middot; Facebook review</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <p class="eyebrow">Get in touch</p>
+    <h2>Let's capture it</h2>
+    <p class="lede">The newest work goes up on Instagram first — that's the quickest way to reach me,
+       but email and phone work just as well.</p>
+
+    <a class="ig-link" href="https://www.instagram.com/rendonphotograpghy" target="_blank" rel="noopener">
+      <svg class="i" width="21" height="21" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/>
+        <circle cx="12" cy="12" r="4.1"/>
+        <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
+      </svg>
+      See more on Instagram @rendonphotograpghy
+    </a>
+
+    <div class="btn-row">
+      <a class="btn" href="mailto:Rendonphotograpghy@aol.com">
+        <svg class="i" width="17" height="17" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/>
+          <path d="M3 6.5l9 6 9-6"/>
+        </svg>
+        Email me
+      </a>
+      <a class="btn" href="tel:+18035370030">
+        <svg class="i" width="17" height="17" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6.3 3.5h3l1.5 4-2 1.4a12.5 12.5 0 0 0 6.3 6.3l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.3 5.7a2 2 0 0 1 2-2.2z"/>
+        </svg>
+        (803) 537-0030
+      </a>
+    </div>
+
+    <p class="soft">Message me for current session pricing and availability.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <div class="foot-name">Rendon Photography</div>
+        <div class="foot-place">Newberry, South Carolina</div>
+      </div>
+      <nav class="foot-links" aria-label="Contact and social">
+        <a href="https://www.instagram.com/rendonphotograpghy" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/rendonphotography13/" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:Rendonphotograpghy@aol.com">Rendonphotograpghy@aol.com</a>
+        <a href="tel:+18035370030">(803) 537-0030</a>
+      </nav>
+    </div>
+    <p class="copy">&copy; <span id="yr">2026</span> Rendon Photography. All photographs by Makayla Rendon.</p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photograph viewer">
+  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="Close viewer">
+    <svg class="i" width="22" height="22" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+      <path d="M6 6l12 12M18 6L6 18"/>
+    </svg>
+  </button>
+  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Previous photograph">
+    <svg class="i" width="26" height="26" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M15 5l-7 7 7 7"/>
+    </svg>
+  </button>
+  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Next photograph">
+    <svg class="i" width="26" height="26" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 5l7 7-7 7"/>
+    </svg>
+  </button>
+  <figure class="lb-fig">
+    <img id="lbImg" alt="">
+    <figcaption class="lb-cap" id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  var yr=document.getElementById('yr');
+  if(yr){yr.textContent=new Date().getFullYear();}
+
+  var tiles=[].slice.call(document.querySelectorAll('#masonry .tile'));
+  var lb=document.getElementById('lb'),
+      lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'),
+      lbClose=document.getElementById('lbClose'),
+      lbPrev=document.getElementById('lbPrev'),
+      lbNext=document.getElementById('lbNext');
+  if(!tiles.length||!lb){return;}
+  var idx=0, last=null;
+
+  function show(i){
+    idx=(i+tiles.length)%tiles.length;
+    var img=tiles[idx].querySelector('img');
+    lbImg.src=img.getAttribute('src');
+    lbImg.alt=img.getAttribute('alt')||'';
+    lbCap.textContent=tiles[idx].getAttribute('data-cap')||'';
+  }
+  function open(i){
+    last=document.activeElement;
+    show(i);
+    lb.classList.add('on');
+    document.body.classList.add('lb-open');
+    lbClose.focus();
+  }
+  function close(){
+    lb.classList.remove('on');
+    document.body.classList.remove('lb-open');
+    lbImg.removeAttribute('src');
+    if(last&&last.focus){last.focus();}
+  }
+  tiles.forEach(function(t,i){t.addEventListener('click',function(){open(i);});});
+  lbClose.addEventListener('click',close);
+  lbPrev.addEventListener('click',function(){show(idx-1);});
+  lbNext.addEventListener('click',function(){show(idx+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb){close();}});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('on')){return;}
+    if(e.key==='Escape'){close();}
+    else if(e.key==='ArrowLeft'){show(idx-1);}
+    else if(e.key==='ArrowRight'){show(idx+1);}
+    else if(e.key==='Tab'){
+      var f=[lbClose,lbPrev,lbNext];
+      var p=f.indexOf(document.activeElement);
+      e.preventDefault();
+      f[(p+(e.shiftKey?-1:1)+f.length)%f.length].focus();
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Rendon Photography",
+  "description": "Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina.",
+  "url": "https://savcab.github.io/websites/rendon-photography/",
+  "image": "https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg",
+  "telephone": "+18035370030",
+  "email": "Rendonphotograpghy@aol.com",
+  "founder": {"@type": "Person", "name": "Makayla Rendon"},
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Newberry",
+    "addressRegion": "SC",
+    "postalCode": "29108",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Newberry, South Carolina"},
+    {"@type": "AdministrativeArea", "name": "Newberry County, South Carolina"}
+  ],
+  "sameAs": [
+    "https://www.instagram.com/rendonphotograpghy",
+    "https://www.facebook.com/rendonphotography13/"
+  ]
+}
+</script>
+
+</body>
+</html>

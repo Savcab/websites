@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenSnap Inc. - Seasonal winter and fall cleanup services for Syosset, NY estates.">
+    <title>Winter & Seasonal Cleanup | GreenSnap Inc. | Syosset, NY</title>
+    <link rel="canonical" href="https://savcab.github.io/websites/greensnap-landscaping-design-syosset/winter.html">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FBF7F0;
+            --charcoal: #23201B;
+            --rust: #B5532A;
+            --forest: #2F5D44;
+            --mustard: #D6A227;
+            --light-tan: #E8DCC8;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--charcoal);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            max-width: 65ch;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background-color: var(--cream);
+            border-bottom: 1px solid var(--light-tan);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rust);
+        }
+
+        .cta-button {
+            background-color: var(--rust);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: var(--forest);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--rust);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subhead {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+            max-width: 55ch;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .secondary-button {
+            background-color: transparent;
+            color: var(--rust);
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--rust);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .secondary-button:hover {
+            background-color: var(--rust);
+            color: white;
+        }
+
+        .hero-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(35, 32, 27, 0.15);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            font-family: 'Fraunces', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--rust);
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .step-content h3 {
+            margin-top: 0;
+        }
+
+        .step-content p {
+            margin: 0.5rem 0 0 0;
+            color: var(--charcoal);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 2rem;
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--cream);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--forest);
+            box-shadow: 0 2px 8px rgba(35, 32, 27, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(35, 32, 27, 0.12);
+        }
+
+        .service-card h3 {
+            color: var(--forest);
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background-color: var(--light-tan);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .contact-links a {
+            color: var(--rust);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--forest) 0%, var(--rust) 100%);
+            color: white;
+            text-align: center;
+            max-width: 1200px;
+            margin: 3rem auto;
+            border-radius: 8px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button-light {
+            background-color: white;
+            color: var(--rust);
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .cta-button-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal);
+            color: var(--cream);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            color: var(--cream);
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--mustard);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .nav-links a {
+                display: block;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                gap: 1.5rem;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .cta-button, .secondary-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            .services-grid {
+                gap: 1rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .process-step {
+                gap: 1rem;
+            }
+
+            .step-number {
+                min-width: 50px;
+                font-size: 1.75rem;
+            }
+
+            .step-content h3 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- built with crew -->
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">GreenSnap</a>
+        <ul class="nav-links">
+            <li><a href="/">Main Site</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:+15165105069" class="cta-button">Call us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tagline">Seasonal Care</div>
+            <h1>Winter & Fall Cleanup for Your Estate</h1>
+            <p class="hero-subhead">Professional seasonal preparation and maintenance to keep your landscape thriving year-round on the Gold Coast.</p>
+            <div class="hero-ctas">
+                <a href="tel:+15165105069" class="cta-button">Call (516) 510-5069</a>
+                <a href="sms:+15165105069" class="secondary-button">Text us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/photos/p2.jpg" alt="Estate landscape seasonal maintenance" fetchpriority="high" width="600" height="450">
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2>Our Seasonal Approach</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Fall Assessment</h3>
+                    <p>We evaluate your landscape to identify areas needing attention before winter—debris removal, plant protection, and hardscape preparation.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Cleanup & Preparation</h3>
+                    <p>Leaf removal, bed cleanup, perennial cutback, and protection of sensitive plantings to ensure your garden is ready for cold weather.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Winter Monitoring</h3>
+                    <p>Regular checks during the season to address any storm damage, ice buildup, or other seasonal challenges affecting your property.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Spring Refresh</h3>
+                    <p>As weather warms, we prepare beds for spring planting, remove winter protection, and restore your landscape to full beauty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>What We Offer This Season</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Fall Leaf & Debris Removal</h3>
+                <p>Professional cleanup of leaves, branches, and seasonal debris to keep your estate neat and protect your plantings from damage.</p>
+            </div>
+            <div class="service-card">
+                <h3>Garden Bed Preparation</h3>
+                <p>Perennial cutback, bed cleanup, and mulch refresh to prepare gardens for dormancy while maintaining visual appeal.</p>
+            </div>
+            <div class="service-card">
+                <h3>Plant Protection</h3>
+                <p>Strategic wrapping and protection of sensitive plants and young trees to safeguard them through winter weather.</p>
+            </div>
+            <div class="service-card">
+                <h3>Hardscape Maintenance</h3>
+                <p>Inspection and care of patios, pathways, and stonework to prevent winter damage and ensure longevity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Schedule Your Seasonal Service</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+                <p>Contact us today to discuss your fall and winter landscape needs. We're here to help keep your estate beautiful year-round.</p>
+                <div class="contact-links">
+                    <a href="tel:+15165105069">📞 (516) 510-5069</a>
+                    <a href="sms:+15165105069">💬 Text us</a>
+                    <a href="mailto:greensnapland@gmail.com">✉️ greensnapland@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <h3>Service Areas</h3>
+                <p>We serve the Gold Coast of Nassau County, including:</p>
+                <p style="font-size: 0.95rem; margin-top: 1rem;">Syosset, Muttontown, Brookville, Matinecock, Mill Neck, Locust Valley, and Old Westbury</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Don't let winter surprise you</h2>
+        <p>Call GreenSnap today to schedule your fall and seasonal preparations.</p>
+        <a href="tel:+15165105069" class="cta-button-light">Call (516) 510-5069</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GreenSnap Inc. Landscaping & Design. All rights reserved.</p>
+        <p>Serving Syosset, Muttontown, Brookville, Matinecock, Mill Neck, Locust Valley, and Old Westbury, NY</p>
+        <p><a href="/">Back to main site</a> · <a href="https://www.google.com/maps/place/?q=place_id:ChIJC77lIkKCwokRKfJ0yzhdG2Q" target="_blank">View on Google</a></p>
+    </footer>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GreenSnap Inc. Landscaping & Design",
+        "description": "Seasonal winter and fall cleanup, preparation, and maintenance services for luxury estates.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Syosset",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "telephone": "+15165105069",
+        "email": "greensnapland@gmail.com",
+        "areaServed": [
+            "Syosset",
+            "Muttontown",
+            "Brookville",
+            "Matinecock",
+            "Mill Neck",
+            "Locust Valley",
+            "Old Westbury"
+        ]
+    }
+    </script>
+</body>
+</html>

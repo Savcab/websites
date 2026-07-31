@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenSnap Inc. - Luxury landscape design & installation for high-end estates in Syosset, NY and the Gold Coast.">
+    <title>GreenSnap Inc. | Luxury Landscape Design & Installation | Syosset, NY</title>
+    <link rel="canonical" href="https://savcab.github.io/websites/greensnap-landscaping-design-syosset/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GreenSnap Inc. | Luxury Landscape Design & Installation | Syosset, NY">
+    <meta property="og:description" content="Landscape design and installation for high-end residential properties in Syosset and the Gold Coast. Servicing and designing Gold Coast landscapes since 2014.">
+    <meta property="og:url" content="https://savcab.github.io/websites/greensnap-landscaping-design-syosset/">
+    <meta property="og:image" content="https://savcab.github.io/websites/greensnap-landscaping-design-syosset/assets/photos/p0.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #FBF7F0;
+            --charcoal: #23201B;
+            --rust: #B5532A;
+            --forest: #2F5D44;
+            --mustard: #D6A227;
+            --light-tan: #E8DCC8;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--charcoal);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            max-width: 65ch;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background-color: var(--cream);
+            border-bottom: 1px solid var(--light-tan);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--rust);
+        }
+
+        .cta-button {
+            background-color: var(--rust);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: var(--forest);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--rust);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subhead {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+            max-width: 55ch;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .secondary-button {
+            background-color: transparent;
+            color: var(--rust);
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--rust);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .secondary-button:hover {
+            background-color: var(--rust);
+            color: white;
+        }
+
+        .hero-image {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(35, 32, 27, 0.15);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        .rating-inline {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+        }
+
+        .star {
+            color: var(--mustard);
+            font-size: 1.1rem;
+        }
+
+        /* Trust Section */
+        .trust-band {
+            background-color: var(--light-tan);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-item p {
+            font-size: 0.875rem;
+            color: var(--charcoal);
+            margin: 0;
+        }
+
+        .trust-value {
+            font-family: 'Fraunces', serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--rust);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Why Choose Us Section */
+        .why-us {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-us h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .why-us-item {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--rust);
+            font-size: 1.5rem;
+        }
+
+        .why-us-item h3 {
+            margin-top: 0;
+        }
+
+        .why-us-item p {
+            color: var(--charcoal);
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Services Grid */
+        .services {
+            padding: 4rem 2rem;
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--cream);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--rust);
+            box-shadow: 0 2px 8px rgba(35, 32, 27, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(35, 32, 27, 0.12);
+        }
+
+        .service-card h3 {
+            color: var(--rust);
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--charcoal);
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .map-caption {
+            text-align: center;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .map-frame {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(35, 32, 27, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .map-frame iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            display: block;
+        }
+
+        .hours-contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .hours-card, .contact-card {
+            background-color: var(--light-tan);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .hours-card h3, .contact-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .contact-links a {
+            color: var(--rust);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 2rem;
+            background-color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(35, 32, 27, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--forest) 0%, var(--rust) 100%);
+            color: white;
+            text-align: center;
+            max-width: 1200px;
+            margin: 3rem auto;
+            border-radius: 8px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button-light {
+            background-color: white;
+            color: var(--rust);
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        .cta-button-light:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal);
+            color: var(--cream);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            color: var(--cream);
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--mustard);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .nav-links a {
+                display: block;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .trust-band {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .hours-contact {
+                grid-template-columns: 1fr;
+            }
+
+            .map-frame iframe {
+                height: 300px;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .cta-button, .secondary-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-band {
+                padding: 1.5rem;
+            }
+
+            .trust-value {
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            .services-grid {
+                gap: 1rem;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+
+            .why-us {
+                padding: 2rem 1rem;
+            }
+
+            .why-us-item {
+                gap: 1rem;
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- built with crew -->
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">GreenSnap</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="winter.html">Seasonal Care</a></li>
+            <li><a href="tel:+15165105069" class="cta-button">Call us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tagline">Since 2014</div>
+            <h1>Luxury Landscape Design for the Gold Coast</h1>
+            <p class="hero-subhead">Architectural precision for high-end residential properties in Syosset and the Gold Coast.</p>
+            <div class="rating-inline">
+                <span class="star">★</span>
+                <span><strong>4.6</strong> · 22 Google reviews</span>
+            </div>
+            <div class="hero-ctas">
+                <a href="tel:+15165105069" class="cta-button">Call (516) 510-5069</a>
+                <a href="sms:+15165105069" class="secondary-button">Text us</a>
+            </div>
+            <p style="font-size: 0.9rem; color: #888; margin-top: 1.5rem;">Servicing Syosset, Muttontown, Brookville, Matinecock, Mill Neck, Locust Valley, and Old Westbury</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/photos/p0.jpg" alt="Estate landscape with architectural precision" fetchpriority="high" width="600" height="450">
+        </div>
+    </section>
+
+    <!-- Rating & Trust Band -->
+    <div class="trust-band">
+        <div class="trust-item">
+            <span class="trust-value">4.6 ★</span>
+            <p>Google rating from 22 reviews</p>
+        </div>
+        <div class="trust-item">
+            <span class="trust-value">Since 2014</span>
+            <p>Designing Gold Coast landscapes since 2014</p>
+        </div>
+        <div class="trust-item">
+            <span class="trust-value">7 Towns</span>
+            <p>Serving the Gold Coast</p>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why neighbors choose us</h2>
+        <div class="why-us-grid">
+            <div class="why-us-item">
+                <div class="icon">✓</div>
+                <div>
+                    <h3>High-End Design Focus</h3>
+                    <p>We specialize in architectural precision for luxury estates, bringing sophistication and refinement to every project on the Gold Coast.</p>
+                </div>
+            </div>
+            <div class="why-us-item">
+                <div class="icon">✓</div>
+                <div>
+                    <h3>Twelve Years on the Gold Coast</h3>
+                    <p>We have been designing and building Gold Coast landscapes since 2014. The work shown on this page is ours.</p>
+                </div>
+            </div>
+            <div class="why-us-item">
+                <div class="icon">✓</div>
+                <div>
+                    <h3>Local Knowledge</h3>
+                    <p>Deep knowledge of the Gold Coast landscape, climate, and the specific needs of high-end residential properties in Nassau County.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>What We Offer</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Landscape Design & Installation</h3>
+                <p>From concept to completion, we design and install sophisticated outdoor spaces that complement your home's architecture and your lifestyle.</p>
+            </div>
+            <div class="service-card">
+                <h3>Hardscape & Stonework</h3>
+                <p>Architectural elements including patios, pathways, retaining walls, and specialty stonework crafted with precision and premium materials.</p>
+            </div>
+            <div class="service-card">
+                <h3>Seasonal Maintenance & Cleanup</h3>
+                <p>Professional year-round care to keep your landscape thriving. Spring refresh, summer upkeep, fall cleanup, and winter preparation available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <h2>Our Portfolio</h2>
+        <div class="gallery-grid">
+            <figure class="gallery-item">
+                <img src="assets/photos/p1.jpg" alt="Mature planted borders and garden design" width="800" height="600">
+            </figure>
+            <figure class="gallery-item">
+                <img src="assets/photos/p2.jpg" alt="Estate landscape with integrated lawn and plantings" width="800" height="600">
+            </figure>
+            <figure class="gallery-item">
+                <img src="assets/photos/p3.jpg" alt="Detail of planted borders and refined garden features" width="800" height="600">
+            </figure>
+            <figure class="gallery-item">
+                <img src="assets/photos/p5.jpg" alt="Hardscape integration with luxury plantings" width="800" height="600">
+            </figure>
+            <figure class="gallery-item">
+                <img src="assets/photos/p6.jpg" alt="Architectural landscape design for estates" width="800" height="600">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="contact">
+        <h2>Service Areas We Serve</h2>
+        <p class="map-caption">We proudly serve the Gold Coast of Nassau County</p>
+        <div class="map-frame">
+            <iframe title="Service area map: Gold Coast, Nassau County, New York" src="https://www.openstreetmap.org/export/embed.html?bbox=-73.6,40.75,-73.35,40.95&layer=mapnik" style="border:none;" loading="lazy"></iframe>
+        </div>
+        <div class="hours-contact">
+            <div class="hours-card">
+                <h3>Hours</h3>
+                <p>For current availability and hours, please call us.</p>
+                <p><strong>Call for hours</strong></p>
+            </div>
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+                <div class="contact-links">
+                    <a href="tel:+15165105069">📞 (516) 510-5069</a>
+                    <a href="sms:+15165105069">💬 Text us</a>
+                    <a href="mailto:greensnapland@gmail.com">✉️ greensnapland@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to transform your landscape?</h2>
+        <p>Let's bring architectural precision and luxury design to your estate.</p>
+        <a href="tel:+15165105069" class="cta-button-light">Call (516) 510-5069</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GreenSnap Inc. Landscaping & Design. All rights reserved.</p>
+        <p>Serving Syosset, Muttontown, Brookville, Matinecock, Mill Neck, Locust Valley, and Old Westbury, NY</p>
+        <p><a href="https://www.google.com/maps/place/?q=place_id:ChIJC77lIkKCwokRKfJ0yzhdG2Q" target="_blank">View on Google</a></p>
+    </footer>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GreenSnap Inc. Landscaping & Design",
+        "image": "https://savcab.github.io/websites/greensnap-landscaping-design-syosset/assets/photos/p0.jpg",
+        "description": "Luxury landscape design and installation for high-end residential estates. Architectural precision for the Gold Coast.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Syosset",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "telephone": "+15165105069",
+        "email": "greensnapland@gmail.com",
+        "url": "https://savcab.github.io/websites/greensnap-landscaping-design-syosset/",
+        "foundingDate": "2014",
+        "areaServed": [
+            "Syosset",
+            "Muttontown",
+            "Brookville",
+            "Matinecock",
+            "Mill Neck",
+            "Locust Valley",
+            "Old Westbury"
+        ]
+    }
+    </script>
+</body>
+</html>

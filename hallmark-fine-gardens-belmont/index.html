@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hallmark Fine Gardens | Belmont, CA Landscape Design & Build</title>
+  <meta name="description" content="Design-build landscape company on the San Mateo Peninsula since 2004. Garden design and planting, masonry, retaining walls, pavers and flagstone, decks, outdoor kitchens, water features.">
+  <link rel="canonical" href="https://savcab.github.io/websites/hallmark-fine-gardens-belmont/">
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Hallmark Fine Gardens | Belmont, CA Landscape Design & Build">
+  <meta property="og:description" content="Design-build landscape company on the San Mateo Peninsula since 2004. Garden design and planting, masonry, retaining walls, pavers and flagstone, decks, outdoor kitchens, water features.">
+  <meta property="og:url" content="https://savcab.github.io/websites/hallmark-fine-gardens-belmont/">
+  <meta property="og:image" content="https://savcab.github.io/websites/hallmark-fine-gardens-belmont/assets/p0.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hallmark Fine Gardens | Belmont, CA Landscape Design & Build">
+  <meta name="twitter:description" content="Design-build landscape company on the San Mateo Peninsula since 2004. Garden design and planting, masonry, retaining walls, pavers and flagstone, decks, outdoor kitchens, water features.">
+  <meta name="twitter:image" content="https://savcab.github.io/websites/hallmark-fine-gardens-belmont/assets/p0.jpg">
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: local('Inter'), local('Segoe UI'), local('Roboto'), local('-apple-system'), local('BlinkMacSystemFont');
+      font-display: fallback;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #23201B;
+      background: #FBF7F0;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    nav {
+      background: #FBF7F0;
+      border-bottom: 2px solid #D6A227;
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #23201B;
+      font-family: 'Georgia', serif;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-contact {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-phone {
+      text-decoration: none;
+      color: #23201B;
+      font-weight: 600;
+      transition: color 0.3s;
+      padding: .6rem .75rem;
+      display: inline-block;
+    }
+
+    .nav-phone:hover {
+      color: #B5532A;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 100%;
+      background: linear-gradient(135deg, rgba(181, 83, 42, 0.15) 0%, rgba(214, 162, 39, 0.1) 100%);
+      padding: 4rem 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: #23201B;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #23201B;
+      line-height: 1.7;
+    }
+
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .stars {
+      color: #D6A227;
+      display: inline-flex;
+      gap: 0.15rem;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .cta-button {
+      padding: 0.9rem 1.8rem;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+
+    .cta-primary {
+      background: #B5532A;
+      color: white;
+    }
+
+    .cta-primary:hover {
+      background: #8B3F1F;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(181, 83, 42, 0.3);
+    }
+
+    .cta-secondary {
+      border: 2px solid #B5532A;
+      color: #B5532A;
+      background: transparent;
+    }
+
+    .cta-secondary:hover {
+      background: #B5532A;
+      color: white;
+    }
+
+    .hero-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Why Section */
+    .why-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .why-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #23201B;
+      text-align: center;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .why-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(35, 32, 27, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .why-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(35, 32, 27, 0.15);
+    }
+
+    .why-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #23201B;
+      border-bottom: 3px solid #D6A227;
+      padding-bottom: 0.8rem;
+    }
+
+    .why-card p {
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* Services Section */
+    .services-section {
+      background: white;
+      padding: 4rem 1.5rem;
+      margin: 4rem 0;
+    }
+
+    .services-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #23201B;
+      text-align: center;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-item {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e0ddd8;
+    }
+
+    .service-item:last-child {
+      border-bottom: none;
+    }
+
+    .service-item h3 {
+      font-size: 1.15rem;
+      color: #B5532A;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .service-item p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Portfolio Section */
+    .portfolio-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .portfolio-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #23201B;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(35, 32, 27, 0.15);
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      color: white;
+      padding: 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Testimonial Section */
+    .testimonials-section {
+      background: #F9F6F1;
+      padding: 4rem 1.5rem;
+      margin: 4rem 0;
+    }
+
+    .testimonials-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonials-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #23201B;
+      text-align: center;
+    }
+
+    .testimonial-block {
+      background: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #B5532A;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(35, 32, 27, 0.1);
+    }
+
+    .testimonial-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: #23201B;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      color: #B5532A;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .testimonial-source {
+      color: #999;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Trust Band */
+    .trust-band {
+      background: #FBF7F0;
+      padding: 2rem 1.5rem;
+      border-top: 2px solid #D6A227;
+      border-bottom: 2px solid #D6A227;
+      margin: 4rem 0;
+    }
+
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .trust-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .trust-item h3 {
+      font-size: 2.5rem;
+      color: #B5532A;
+      margin-bottom: 0.5rem;
+    }
+
+    .trust-item:first-child h3 {
+      font-size: 1.5rem;
+    }
+
+    .trust-item p {
+      color: #555;
+      font-size: 0.95rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Hours & Map Section */
+    .info-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hours-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #23201B;
+      border-bottom: 2px solid #D6A227;
+      padding-bottom: 0.8rem;
+    }
+
+    .hours-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e0ddd8;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hours-item:last-child {
+      border-bottom: none;
+    }
+
+    .hours-day {
+      font-weight: 600;
+      color: #23201B;
+    }
+
+    .hours-time {
+      color: #666;
+    }
+
+    .map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(35, 32, 27, 0.15);
+      aspect-ratio: 1;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* CTA Section */
+    .final-cta {
+      background: linear-gradient(135deg, #B5532A 0%, #8B3F1F 100%);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      margin: 4rem 0 0 0;
+    }
+
+    .final-cta-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .final-cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .final-cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .final-cta a {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: #B5532A;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: all 0.3s;
+    }
+
+    .final-cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: #23201B;
+      color: #e0ddd8;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-content {
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-content p {
+      margin: 0.5rem 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #D6A227;
+      text-decoration: none;
+      transition: color 0.3s;
+      padding: .6rem .75rem;
+      display: inline-block;
+    }
+
+    .footer-links a:hover {
+      color: #e0ddd8;
+    }
+
+    .footer-divider {
+      border-top: 1px solid #444;
+      margin: 1.5rem 0;
+    }
+
+    .footer-copyright {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 390px) {
+      .hero-text h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.8rem !important;
+      }
+
+      .nav-inner {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-contact {
+        gap: 1rem;
+      }
+
+      .cta-group {
+        flex-direction: column;
+      }
+
+      .cta-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Built with crew marker -->
+  <!-- built with crew -->
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Hallmark Fine Gardens</div>
+      <div class="nav-contact">
+        <a href="tel:+16502458187" class="nav-phone">(650) 245-8187</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Design-Build Landscape Excellence on the Peninsula</h1>
+        <p>Twenty years of thoughtful garden design and expert craftsmanship. From concept to completion, we partner with you to transform your outdoor space into the landscape you've imagined.</p>
+        <div class="hero-rating">
+          <span class="stars" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.2l7.1-.6z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.2l7.1-.6z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.2l7.1-.6z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.2l7.1-.6z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7L6 21l1.6-7L2.2 9.2l7.1-.6z"/></svg>
+          </span>
+          <span>5.0 · 16 reviews on Google</span>
+        </div>
+        <div class="cta-group">
+          <a href="tel:+16502458187" class="cta-button cta-primary">Call (650) 245-8187</a>
+          <a href="sms:+16502458187" class="cta-button cta-secondary">Text Us</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/p0.jpg" alt="Landscaped garden with flowing water feature, multi-tiered stone retaining walls, and diverse seasonal plantings" fetchpriority="high" width="1600" height="815">
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="why-section">
+    <h2>Why Hallmark Fine Gardens</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Design-Led Process</h3>
+        <p>Our staff landscape architect brings thoughtful design that honors both your vision and the site's natural character. Your dream begins on paper, refined through conversation.</p>
+      </div>
+      <div class="why-card">
+        <h3>Complete Service</h3>
+        <p>From garden design and planting to masonry, retaining walls, decks, pavers and flagstone, and water features—we're a full design-build team. One point of contact, start to finish.</p>
+      </div>
+      <div class="why-card">
+        <h3>Peninsula Specialists</h3>
+        <p>Two decades of work across Belmont and the San Mateo Peninsula. We know the climate, the soil, the light patterns, and the neighborhoods where we build.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="services-inner">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Garden Design & Planting</h3>
+          <p>Tailored landscapes that reflect your style and thrive in our climate, from concept sketches to mature plantings.</p>
+        </div>
+        <div class="service-item">
+          <h3>Masonry & Retaining Walls</h3>
+          <p>Expert stonework that adds structure, beauty, and longevity to your landscape.</p>
+        </div>
+        <div class="service-item">
+          <h3>Pavers & Flagstone</h3>
+          <p>Flagstone and paver installations that create inviting outdoor living spaces.</p>
+        </div>
+        <div class="service-item">
+          <h3>Outdoor Kitchens</h3>
+          <p>Functional and beautiful outdoor cooking and gathering spaces.</p>
+        </div>
+        <div class="service-item">
+          <h3>Decks</h3>
+          <p>Striking architectural elements that extend your home's living space.</p>
+        </div>
+        <div class="service-item">
+          <h3>Water Features & Pool Renovation</h3>
+          <p>Tranquil water installations and pool conversions that refresh your outdoor experience.</p>
+        </div>
+        <div class="service-item">
+          <h3>Synthetic Grass</h3>
+          <p>Low-maintenance grass solutions for busy Peninsula homes.</p>
+        </div>
+        <div class="service-item">
+          <h3>Kids' Play Areas</h3>
+          <p>Thoughtfully designed spaces where children can play and grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <h2>Recent Work</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="assets/p1.jpg" alt="Winding garden pathway with staggered stepping stones and native plantings creating a calm, meandering route through the garden" width="600" height="450" loading="lazy">
+        <div class="gallery-caption">Garden Pathway Design</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/p2.jpg" alt="Backyard patio with tumbled cobble-style concrete pavers, stone fire pit, and built-in stone grill counter" width="600" height="450" loading="lazy">
+        <div class="gallery-caption">Pavers & Flagstone Installation</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/p3.jpg" alt="Tiered stone retaining walls and concrete steps creating functional terracing in a landscape" width="600" height="450" loading="lazy">
+        <div class="gallery-caption">Retaining Walls & Steps</div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/p5.jpg" alt="Elevated redwood pergola with integrated outdoor kitchen, featuring stainless steel appliances and stone base, overlooking Peninsula homes" width="600" height="450" loading="lazy">
+        <div class="gallery-caption">Outdoor Kitchen</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="testimonials-inner">
+      <h2>What Clients Say</h2>
+
+      <div class="testimonial-block">
+        <div class="testimonial-text">"Tyler and Juliana (the landscape architect) did a professional job working with us to design our new backyard, which had a lot of tricky features with the terrain, tree removal, and other challenges.  Juliana's ideas were spot on."</div>
+        <div class="testimonial-author">Dennis V</div>
+        <div class="testimonial-source">Google Reviews</div>
+      </div>
+
+      <div class="testimonial-block">
+        <div class="testimonial-text">"Tyler and his crew at Hallmark Fine Gardens did an excellent job transforming two separate outdoor spaces for us, and we are thrilled with the results! The work was done beautifully, and Tyler&rsquo;s communication throughout the process was top-notch."</div>
+        <div class="testimonial-author">Eric Mellum</div>
+        <div class="testimonial-source">Google Reviews</div>
+      </div>
+
+      <div class="testimonial-block">
+        <div class="testimonial-text">"They did an excellent job designing (Juliana) and implementing our project. Tyler was good at communicating project status and making changes on the fly. He was able to stay on budget and pretty much on schedule."</div>
+        <div class="testimonial-author">Ken Arai</div>
+        <div class="testimonial-source">Google Reviews</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Band -->
+  <div class="trust-band">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <h3>5.0 · 16 reviews on Google</h3>
+      </div>
+      <div class="trust-item">
+        <h3>20+</h3>
+        <p>Years Experience</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hours & Location Section -->
+  <section class="info-section">
+    <div class="info-grid">
+      <div class="hours-box">
+        <h3>Hours</h3>
+        <div class="hours-item">
+          <span class="hours-day">Monday–Friday</span>
+          <span class="hours-time">8:30 AM – 6:00 PM</span>
+        </div>
+        <div class="hours-item">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">Closed</span>
+        </div>
+        <div class="hours-item">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">Closed</span>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.3410882,37.4748278,-122.2890882,37.5348278&layer=mapnik&marker=37.5048278,-122.3150882" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="final-cta-inner">
+      <h2>Ready to Transform Your Outdoor Space?</h2>
+      <p>Reach out to discuss your project. We're here to partner with you through every step of the design and build process.</p>
+      <a href="tel:+16502458187">Call (650) 245-8187</a>
+      <a href="mailto:hallmarkfinegardens@comcast.net">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-content">
+        <h3 style="margin-bottom: 1rem;">Hallmark Fine Gardens</h3>
+        <p>Belmont, CA | San Mateo Peninsula</p>
+        <p>(650) 245-8187</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+16502458187">Call</a>
+        <a href="sms:+16502458187">Text</a>
+        <a href="mailto:hallmarkfinegardens@comcast.net">Email</a>
+        <a href="https://maps.google.com/?cid=10683733186033065894">Google Maps</a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-copyright">
+        &copy; 2026 Hallmark Fine Gardens. Trusted landscape design and build since 2004.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Hallmark Fine Gardens",
+    "description": "Design-build landscape company offering garden design, masonry, retaining walls, pavers and flagstone, outdoor kitchens, water features on the San Mateo Peninsula.",
+    "url": "https://savcab.github.io/websites/hallmark-fine-gardens-belmont/",
+    "telephone": "+1-650-245-8187",
+    "email": "hallmarkfinegardens@comcast.net",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belmont",
+      "addressRegion": "CA",
+      "postalCode": "94002",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.5048278,
+      "longitude": -122.3150882
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Belmont"
+      }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

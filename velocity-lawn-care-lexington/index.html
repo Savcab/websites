@@ -1,0 +1,643 @@
+<!-- built with crew -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Mowing &amp; Care in Lexington, SC | Velocity Lawn Care</title>
+<meta name="description" content="Weekly and biweekly mowing, trimming, edging, and blowing in Lexington, SC, plus mulch, pinestraw, and hedge trimming. Call or email Velocity Lawn Care for a quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/velocity-lawn-care-lexington/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lawn Mowing &amp; Care in Lexington, SC | Velocity Lawn Care">
+<meta property="og:description" content="Weekly and biweekly mowing, trimming, edging, and blowing in Lexington, SC, plus mulch, pinestraw, and hedge trimming.">
+<meta property="og:image" content="https://savcab.github.io/websites/velocity-lawn-care-lexington/assets/waterfront-lawn.jpg">
+<meta property="og:url" content="https://savcab.github.io/websites/velocity-lawn-care-lexington/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Velocity Lawn Care",
+  "image": "https://savcab.github.io/websites/velocity-lawn-care-lexington/assets/waterfront-lawn.jpg",
+  "url": "https://savcab.github.io/websites/velocity-lawn-care-lexington/",
+  "telephone": "+18032690471",
+  "email": "Velocitylawncare@outlook.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lexington",
+    "addressRegion": "SC",
+    "postalCode": "29073",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --cream:#FBF7F0;
+    --cream-2:#F2EADC;
+    --ink:#23201B;
+    --ink-soft:#584F42;
+    --rust:#B5532A;
+    --rust-dark:#8F3F1C;
+    --forest:#2F5D44;
+    --mustard:#C6952A;
+    --line:rgba(35,32,27,0.14);
+    --shadow-sm:0 1px 3px rgba(35,32,27,0.08);
+    --shadow-md:0 10px 28px rgba(35,32,27,0.10);
+    --shadow-lg:0 24px 56px rgba(35,32,27,0.16);
+    --radius-sm:10px;
+    --radius-md:18px;
+    --radius-lg:30px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    overflow-x:clip;
+  }
+  h1,h2,h3,.serif{
+    font-family:'Fraunces',Georgia,serif;
+    color:var(--ink);
+    line-height:1.15;
+    font-weight:600;
+    margin:0;
+  }
+  .wrap{
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    font-size:.72rem;
+    font-weight:700;
+    color:var(--rust);
+    margin:0 0 14px;
+  }
+
+  /* ---- top bar ---- */
+  header.topbar{
+    position:sticky; top:0; z-index:40;
+    background:rgba(251,247,240,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px;
+    gap:12px;
+  }
+  .wordmark{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:1.15rem;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  .wordmark span{color:var(--rust);}
+  nav.toplinks{display:none;}
+  @media (min-width:760px){
+    nav.toplinks{display:flex; gap:28px; font-size:.92rem; font-weight:500;}
+    nav.toplinks a{text-decoration:none; color:var(--ink-soft);}
+    nav.toplinks a:hover{color:var(--rust);}
+  }
+  .call-pill{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--rust); color:#fff;
+    padding:10px 18px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:.92rem;
+    white-space:nowrap;
+    box-shadow:var(--shadow-sm);
+  }
+  .call-pill:hover{background:var(--rust-dark);}
+  .call-pill svg{width:16px;height:16px;flex:none;}
+
+  /* ---- hero ---- */
+  .hero{
+    padding:56px 0 64px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    align-items:center;
+  }
+  @media (min-width:900px){
+    .hero-grid{grid-template-columns:1.05fr .95fr; gap:56px;}
+  }
+  .hero h1{
+    font-size:clamp(2.1rem,5.2vw,3.1rem);
+    max-width:14ch;
+  }
+  .hero p.lede{
+    margin:20px 0 0;
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:46ch;
+  }
+  .rating-row{
+    display:flex; align-items:center; gap:10px;
+    margin:26px 0 0;
+    font-weight:600;
+    font-size:.98rem;
+  }
+  .stars{display:flex; gap:2px;}
+  .stars svg{width:18px;height:18px; fill:var(--mustard);}
+  .cta-row{
+    display:flex; flex-wrap:wrap; gap:14px;
+    margin-top:30px;
+  }
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--rust); color:#fff;
+    padding:14px 26px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:var(--shadow-md);
+  }
+  .btn-primary:hover{background:var(--rust-dark);}
+  .btn-secondary{
+    display:inline-flex; align-items:center; gap:10px;
+    background:transparent; color:var(--ink);
+    padding:14px 26px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    border:1.5px solid var(--line);
+  }
+  .btn-secondary:hover{border-color:var(--rust); color:var(--rust);}
+  .btn-primary svg,.btn-secondary svg{width:17px;height:17px;flex:none;}
+
+  .hero-photo{
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:var(--shadow-lg);
+  }
+  .hero-photo img{width:100%; height:auto; display:block;}
+
+  /* ---- section shell ---- */
+  section{
+    padding:clamp(3.2rem,7vw,6rem) 0;
+  }
+  .section-alt{background:var(--cream-2);}
+  .section-head{max-width:640px; margin:0 auto 44px;}
+  .section-head.center{text-align:center; margin-left:auto; margin-right:auto;}
+  .section-head h2{font-size:clamp(1.7rem,3.6vw,2.3rem);}
+  .section-head p{color:var(--ink-soft); margin-top:14px; font-size:1.02rem;}
+
+  /* ---- quotes ---- */
+  .quote-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  @media (min-width:720px){
+    .quote-grid{grid-template-columns:repeat(3,1fr);}
+  }
+  .quote-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    padding:28px 26px;
+    box-shadow:var(--shadow-sm);
+  }
+  .quote-mark{
+    font-family:'Fraunces',serif;
+    font-size:2.6rem;
+    color:var(--rust);
+    line-height:1;
+    display:block;
+    margin-bottom:6px;
+  }
+  .quote-card p.qtext{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.08rem;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .quote-attr{
+    font-size:.88rem;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  .quote-attr span{font-weight:400; color:var(--ink-soft); opacity:.8;}
+
+  /* ---- services ---- */
+  .svc-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  @media (min-width:640px){
+    .svc-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (min-width:1020px){
+    .svc-grid{grid-template-columns:repeat(4,1fr);}
+  }
+  .svc-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    padding:28px 24px;
+    box-shadow:var(--shadow-sm);
+  }
+  .svc-icon{
+    width:44px; height:44px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--cream-2);
+    border-radius:12px;
+    margin-bottom:18px;
+  }
+  .svc-icon svg{width:22px;height:22px; stroke:var(--forest); fill:none;}
+  .svc-card h3{font-size:1.12rem; margin-bottom:8px;}
+  .svc-card p{color:var(--ink-soft); font-size:.94rem; margin:0;}
+  .svc-price{
+    display:inline-block;
+    margin-top:14px;
+    font-weight:700;
+    color:var(--forest);
+    font-size:.9rem;
+  }
+
+  /* ---- gallery ---- */
+  .gal-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  @media (min-width:640px){
+    .gal-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  figure.gal-item{
+    margin:0;
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    box-shadow:var(--shadow-sm);
+    background:#fff;
+  }
+  figure.gal-item img{
+    width:100%;
+    height:auto;
+    aspect-ratio:4/3;
+    object-fit:cover;
+  }
+  figure.gal-item figcaption{
+    padding:14px 16px;
+    font-size:.88rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---- hours + map ---- */
+  .hm-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+  @media (min-width:860px){
+    .hm-grid{grid-template-columns:.85fr 1.15fr;}
+  }
+  .hours-list{list-style:none; margin:0; padding:0;}
+  .hours-list li{
+    display:flex; justify-content:space-between;
+    padding:11px 0;
+    border-bottom:1px solid var(--line);
+    font-size:.98rem;
+  }
+  .hours-list li:last-child{border-bottom:none;}
+  .hours-list .day{font-weight:600;}
+  .hours-note{
+    margin-top:16px;
+    font-size:.88rem;
+    color:var(--ink-soft);
+  }
+  .map-frame{
+    border-radius:var(--radius-md);
+    overflow:hidden;
+    box-shadow:var(--shadow-sm);
+    border:1px solid var(--line);
+  }
+  .map-frame iframe{width:100%; height:340px; border:0; display:block;}
+  .map-caption{
+    font-size:.84rem;
+    color:var(--ink-soft);
+    margin-top:10px;
+  }
+
+  /* ---- final cta ---- */
+  .cta-band{
+    background:var(--forest);
+    color:#F4EFE4;
+    border-radius:var(--radius-lg);
+    padding:clamp(2.4rem,6vw,3.6rem);
+    text-align:center;
+  }
+  .cta-band h2{color:#fff; font-size:clamp(1.6rem,3.6vw,2.2rem);}
+  .cta-band p{color:#DCE7DF; margin:14px 0 28px; font-size:1.02rem;}
+  .cta-band .cta-row{justify-content:center;}
+  .cta-band .btn-secondary{border-color:rgba(255,255,255,0.4); color:#fff;}
+  .cta-band .btn-secondary:hover{border-color:#fff;}
+
+  /* ---- footer ---- */
+  footer{
+    padding:48px 0 60px;
+    border-top:1px solid var(--line);
+  }
+  .foot-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  @media (min-width:760px){
+    .foot-grid{grid-template-columns:1.2fr 1fr 1fr;}
+  }
+  footer .wordmark{display:block; margin-bottom:10px;}
+  footer address{font-style:normal; color:var(--ink-soft); font-size:.94rem; line-height:1.7;}
+  footer h4{
+    font-family:'Inter',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    font-size:.72rem;
+    font-weight:700;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+  }
+  footer ul{list-style:none; margin:0; padding:0;}
+  footer li{margin-bottom:9px; font-size:.94rem;}
+  footer a.plain{text-decoration:none; color:var(--ink);}
+  footer a.plain:hover{color:var(--rust);}
+  .foot-bottom{
+    margin-top:36px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    font-size:.82rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---- small-phone topbar fit (<480px) ---- */
+  .call-pill .call-txt{display:inline;}
+  @media (max-width:479px){
+    .topbar-inner{padding:14px 14px;}
+    .wordmark{font-size:.98rem;}
+    .call-pill{padding:10px 12px;}
+    .call-pill .call-txt{display:none;}
+  }
+  .visually-hidden{
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#top" class="wordmark">Velocity <span>Lawn Care</span></a>
+    <nav class="toplinks">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-pill" href="tel:+18032690471" aria-label="Call (803) 269-0471">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="call-txt">(803) 269-0471</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Lexington, South Carolina</p>
+        <h1>Lawn Care in Lexington, SC</h1>
+        <p class="lede">Velocity Lawn Care keeps residential lawns mowed, trimmed, edged, and blown clean on a weekly or biweekly schedule — plus mulch, pinestraw, and hedge trimming when a yard needs more than a mow.</p>
+        <div class="rating-row">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 17.8l1.3-6L1.3 7.7l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 17.8l1.3-6L1.3 7.7l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 17.8l1.3-6L1.3 7.7l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 17.8l1.3-6L1.3 7.7l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1L4.6 17.8l1.3-6L1.3 7.7l6.1-.6z"/></svg>
+          </span>
+          4.9 · 35 reviews on Google
+        </div>
+        <div class="cta-row">
+          <a class="btn-primary" href="tel:+18032690471">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (803) 269-0471
+          </a>
+          <a class="btn-secondary" href="mailto:Velocitylawncare@outlook.com">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            Email for a Quote
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/waterfront-lawn.jpg" width="1440" height="810" alt="A mowed lawn leading down to the water, with seating and a dock in the background" fetchpriority="high" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY NEIGHBORS CHOOSE US -->
+  <section class="section-alt" id="reviews">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">In their words</p>
+        <h2>What Lexington homeowners say</h2>
+      </div>
+      <div class="quote-grid">
+        <div class="quote-card">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="qtext">Reliable, professional and good quality! I searched high and low for someone who would show up routinely without me having to chase them down.</p>
+          <p class="quote-attr">Audrey Peter <span>&middot; Google review</span></p>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="qtext">Always shows up as scheduled and does a quick, professional and efficient job. Keeps our lawn looking nice.</p>
+          <p class="quote-attr">Roderick Atkinson <span>&middot; Google review</span></p>
+        </div>
+        <div class="quote-card">
+          <span class="quote-mark">&ldquo;</span>
+          <p class="qtext">I highly recommend velocity, 10/10. Very professional, great work, and good prices. I recently reached out to them for lawn Maintenance I needed done on short notice.</p>
+          <p class="quote-attr">Haeden Owens <span>&middot; Google review</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2>What we do</h2>
+        <p>A straightforward lawn care menu — pick a recurring schedule, add bed work when you need it.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </div>
+          <h3>Mowing &amp; Maintenance</h3>
+          <p>Mowing, trimming, edging, and blowing on a weekly or biweekly schedule.</p>
+          <span class="svc-price">From $45</span>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3>Pinestraw &amp; Mulch Installation</h3>
+          <p>Fresh pinestraw or mulch installed in beds and around trees.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 20c4-8 12-8 16 0M4 14c4-6 12-6 16 0M4 8c4-4 12-4 16 0"/></svg>
+          </div>
+          <h3>Hedge Trimming</h3>
+          <p>Shrubs and hedges shaped and kept tidy along the house line.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Commercial Service</h3>
+          <p>Commercial pricing available upon request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From our Google Business listing</p>
+        <h2>Work around Lexington</h2>
+        <p>A few photos from our Google Business profile.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="gal-item">
+          <img src="assets/mulched-palm-bed.jpg" width="1000" height="750" loading="lazy" alt="A mulched, edged planting bed with two established palm trees">
+          <figcaption>A mulched, freshly-edged bed kept clean around established palms.</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/trimmed-shrub-bed.jpg" width="1000" height="750" loading="lazy" alt="A row of trimmed, rounded ornamental shrubs along a house foundation">
+          <figcaption>Foundation shrubs trimmed into neat, rounded shapes.</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/trimmed-lawn-privacy-fence.jpg" width="1000" height="750" loading="lazy" alt="A mowed backyard lawn with a storage shed and wood privacy fence">
+          <figcaption>A mowed backyard with a privacy fence and storage shed.</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="assets/mowed-yard-lakefront.jpg" width="1000" height="750" loading="lazy" alt="A mowed yard beside a house, with a lake visible in the background">
+          <figcaption>A mowed, tidy yard on a waterfront lot.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + MAP -->
+  <section id="contact">
+    <div class="wrap hm-grid">
+      <div>
+        <p class="eyebrow">Hours</p>
+        <h2 style="font-size:1.6rem; margin-bottom:20px;">When to reach us</h2>
+        <ul class="hours-list">
+          <li><span class="day">Monday</span><span>7:00 AM – 7:00 PM</span></li>
+          <li><span class="day">Tuesday</span><span>7:00 AM – 7:00 PM</span></li>
+          <li><span class="day">Wednesday</span><span>7:00 AM – 7:00 PM</span></li>
+          <li><span class="day">Thursday</span><span>7:00 AM – 7:00 PM</span></li>
+          <li><span class="day">Friday</span><span>7:00 AM – 7:00 PM</span></li>
+          <li><span class="day">Saturday</span><span>Call for hours</span></li>
+          <li><span class="day">Sunday</span><span>Closed</span></li>
+        </ul>
+        <p class="hours-note">Serving Lexington, SC. Call <a class="plain" style="text-decoration:underline;" href="tel:+18032690471">(803) 269-0471</a> or email <a class="plain" style="text-decoration:underline;" href="mailto:Velocitylawncare@outlook.com">Velocitylawncare@outlook.com</a> to check availability.</p>
+      </div>
+      <div>
+        <div class="map-frame">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-81.29%2C33.94%2C-81.19%2C34.03&amp;layer=mapnik" loading="lazy" title="Map of the Lexington, SC service area"></iframe>
+        </div>
+        <p class="map-caption">General service area near Lexington, SC.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Ready for a lawn you don't have to think about?</h2>
+        <p>Call or email Velocity Lawn Care for a Lexington, SC quote.</p>
+        <div class="cta-row">
+          <a class="btn-primary" href="tel:+18032690471">Call (803) 269-0471</a>
+          <a class="btn-secondary" href="mailto:Velocitylawncare@outlook.com">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a href="#top" class="wordmark">Velocity <span style="color:var(--rust);">Lawn Care</span></a>
+      <address>
+        Lexington, SC 29073<br>
+        Residential lawn care &amp; landscaping
+      </address>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a class="plain" href="tel:+18032690471">(803) 269-0471</a></li>
+        <li><a class="plain" href="mailto:Velocitylawncare@outlook.com">Velocitylawncare@outlook.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reviews</h4>
+      <ul>
+        <li>4.9 &middot; 35 reviews on Google</li>
+        <li><a class="plain" style="text-decoration:underline;" href="https://maps.google.com/?cid=13573968457012389144" target="_blank" rel="noopener">View us on Google</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="foot-bottom">Independently built preview site for Velocity Lawn Care, Lexington, SC.</p>
+  </div>
+</footer>
+
+</body>
+</html>

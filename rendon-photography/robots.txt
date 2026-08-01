@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://savcab.github.io/websites/rendon-photography/sitemap.xml
+Sitemap: https://rendonphotography.com/sitemap.xml

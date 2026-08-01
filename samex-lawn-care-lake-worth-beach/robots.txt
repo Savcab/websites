@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/samex-lawn-care-lake-worth-beach/sitemap.xml

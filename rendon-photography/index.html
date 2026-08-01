@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rendon Photography | Portrait Photographer in Newberry, SC</title>
-<meta name="description" content="Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina — true-to-tone natural light work by Makayla Rendon.">
+<title>Rendon Photography | Photographer in Newberry, SC</title>
+<meta name="description" content="Wedding, couples, family, newborn, maternity, senior and studio photography in Newberry, South Carolina — true-to-tone natural light work by Makayla Rendon.">
 <link rel="canonical" href="https://savcab.github.io/websites/rendon-photography/">
 <meta name="theme-color" content="#faf9f5">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rendon Photography">
-<meta property="og:title" content="Rendon Photography | Portrait Photographer in Newberry, SC">
-<meta property="og:description" content="Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina. True-to-tone natural light work by Makayla Rendon.">
+<meta property="og:title" content="Rendon Photography | Photographer in Newberry, SC">
+<meta property="og:description" content="Wedding, couples, family, newborn, maternity, senior and studio photography in Newberry, South Carolina. True-to-tone natural light work by Makayla Rendon.">
 <meta property="og:url" content="https://savcab.github.io/websites/rendon-photography/">
 <meta property="og:image" content="https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="A couple walking beneath a live oak canopy at golden hour, photographed by Rendon Photography">
+<meta property="og:image:alt" content="A couple resting together in a summer pasture at sunset, photographed by Rendon Photography">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Rendon Photography | Portrait Photographer in Newberry, SC">
-<meta name="twitter:description" content="Portrait, wedding, newborn, maternity and family photography in Newberry, South Carolina.">
+<meta name="twitter:title" content="Rendon Photography | Photographer in Newberry, SC">
+<meta name="twitter:description" content="Wedding, couples, family, newborn, maternity, senior and studio photography in Newberry, South Carolina.">
 <meta name="twitter:image" content="https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23faf9f5'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%232b2724' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
@@ -115,7 +115,9 @@ p{margin:0}
 }
 .hero-veil{
   position:absolute;inset:auto 0 0 0;height:70%;pointer-events:none;
-  background:linear-gradient(to top,rgba(24,20,16,.74) 0%,rgba(24,20,16,.58) 26%,rgba(24,20,16,.3) 56%,rgba(24,20,16,0) 100%);
+  /* this hero is a bright, high-key frame (white dress, sunlit grass) — the veil has to
+     carry more weight than a dark image would need for the lock-up to stay legible */
+  background:linear-gradient(to top,rgba(24,20,16,.84) 0%,rgba(24,20,16,.7) 26%,rgba(24,20,16,.42) 56%,rgba(24,20,16,0) 100%);
 }
 .hero-lock{
   position:absolute;left:0;right:0;bottom:clamp(74px,8vw,112px);
@@ -123,7 +125,9 @@ p{margin:0}
 }
 .hero-lock h1{
   font-size:clamp(38px,7.4vw,80px);font-weight:300;letter-spacing:.02em;
-  text-shadow:0 1px 24px rgba(20,16,12,.28);
+  /* the wordmark lands on the bride's white dress at some viewport sizes — a tight
+     shadow plus a wide bloom keeps the serif readable without looking like a drop shadow */
+  text-shadow:0 1px 4px rgba(20,16,12,.5),0 2px 30px rgba(20,16,12,.5);
 }
 .hero-line{
   margin-top:14px;font-size:clamp(11px,1.5vw,13.5px);
@@ -178,6 +182,20 @@ p{margin:0}
 .tile img{width:100%;height:auto;transition:transform .7s cubic-bezier(.2,.7,.3,1),opacity .4s}
 .tile:hover img,.tile:focus-visible img{transform:scale(1.028);opacity:.94}
 .tile:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* ---------- meet the photographer ---------- */
+.meet{padding-bottom:var(--section)}
+.meet-grid{display:grid;gap:clamp(30px,5vw,64px);align-items:start}
+@media (min-width:860px){.meet-grid{grid-template-columns:minmax(0,.82fr) minmax(0,1fr)}}
+.meet-fig{margin:0}
+.meet-fig img{width:100%;border-radius:2px}
+.meet-fig figcaption{
+  margin-top:13px;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);line-height:1.75;max-width:34ch;
+}
+.meet-body h2{font-size:clamp(28px,4vw,44px);letter-spacing:.01em}
+.meet-copy{margin-top:clamp(22px,3.4vw,30px);color:var(--ink-soft);max-width:56ch}
+.meet-copy p + p{margin-top:1.05em}
 
 /* ---------- testimonial ---------- */
 .said{background:var(--paper-2);padding-block:var(--section);margin-top:0}
@@ -296,14 +314,14 @@ body.lb-open{overflow:hidden}
 <main id="top">
 
   <section class="hero" aria-label="Introduction">
-    <img src="assets/couple-walking-oak-canopy-color-hero.jpg" width="1368" height="2048"
+    <img src="assets/hero-couple-field-sunset.jpg" width="2000" height="1336"
          fetchpriority="high" decoding="async"
-         alt="A couple walking hand in hand down a shaded path beneath a live oak canopy at golden hour, photographed by Rendon Photography near Newberry, South Carolina">
+         alt="A couple resting together in tall summer grass beside a wooden fence line at sunset, photographed by Rendon Photography near Newberry, South Carolina">
     <div class="hero-veil"></div>
     <div class="hero-lock">
       <div class="wrap">
         <h1>Rendon Photography</h1>
-        <p class="hero-line">Portrait Photography in Newberry, South Carolina</p>
+        <p class="hero-line">Photography in Newberry, South Carolina</p>
       </div>
     </div>
     <div class="scroll-cue" aria-hidden="true">
@@ -315,7 +333,7 @@ body.lb-open{overflow:hidden}
     </div>
   </section>
 
-  <section class="intro wrap" id="about">
+  <section class="intro wrap">
     <div class="intro-col">
       <div class="rule"></div>
       <p class="intro-quote">A moment lasts all of a second, but the memory lives on forever.</p>
@@ -339,96 +357,137 @@ body.lb-open{overflow:hidden}
 
     <div class="masonry" id="masonry">
 
-      <button class="tile" type="button" data-cap="Family session · golden hour">
-        <img src="assets/siblings-golden-hour-field-candid.jpg" width="967" height="1440" loading="lazy" decoding="async"
-             alt="Two young siblings standing in tall sunlit grass at golden hour during a family session">
-      </button>
-
-      <button class="tile" type="button" data-cap="Child portrait · flower field">
-        <img src="assets/girl-flower-field-portrait-01.jpg" width="968" height="1440" loading="lazy" decoding="async"
-             alt="Young girl in a white headband standing among rows of blooming snapdragons in golden-hour backlight during a portrait session">
-      </button>
-
-      <button class="tile" type="button" data-cap="Maternity session">
-        <img src="assets/maternity-outdoor-fence-pink-gown-hero.jpg" width="1440" height="973" loading="lazy" decoding="async"
-             alt="Maternity portrait of an expectant mother in a dusty pink gown with her partner's hand resting on her belly beside a rustic wood fence">
-      </button>
-
-      <button class="tile" type="button" data-cap="Newborn · studio">
-        <img src="assets/newborn-studio-purple-tutu-sleeping.jpg" width="1440" height="964" loading="lazy" decoding="async"
-             alt="Sleeping newborn in a purple lace outfit and matching bow headband resting on a cream faux-fur blanket during a posed studio newborn session">
-      </button>
-
       <button class="tile" type="button" data-cap="Wedding day">
-        <img src="assets/wedding-couple-venue-golden-hour-hero.jpg" width="967" height="1440" loading="lazy" decoding="async"
-             alt="Bride in a cathedral veil and groom in a black suit walking across a lawn toward a brick wedding venue strung with bistro lights at sunset">
+        <img src="assets/g06.jpg" width="1700" height="1136" loading="lazy" decoding="async"
+             alt="Bride and groom leaning in toward each other beneath her veil as it lifts in the wind by the lake at sunset">
+      </button>
+
+      <button class="tile" type="button" data-cap="Senior portraits">
+        <img src="assets/g04.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="High school senior in a white dress and brown cowboy boots sitting on a green hillside on an overcast afternoon">
       </button>
 
       <button class="tile" type="button" data-cap="Couples session">
-        <img src="assets/couple-military-color-waterfall-dance.jpg" width="1368" height="2048" loading="lazy" decoding="async"
-             alt="Couple dancing on rocks beside a small waterfall, one partner in Navy dress white uniform, during an outdoor couples session">
+        <img src="assets/g13.jpg" width="1150" height="1700" loading="lazy" decoding="async"
+             alt="Close portrait of a couple cheek to cheek in warm evening light, her looking straight into the camera">
       </button>
 
-      <button class="tile" type="button" data-cap="Senior portraits">
-        <img src="assets/senior-guy-fence-portrait-01.jpg" width="1368" height="2048" loading="lazy" decoding="async"
-             alt="High school senior portrait of a young man in a plaid shirt leaning against a rustic split-rail fence in the woods">
+      <button class="tile" type="button" data-cap="Maternity session">
+        <img src="assets/g14.jpg" width="1700" height="1135" loading="lazy" decoding="async"
+             alt="Expectant mother in a cream gown cradling her belly in a sunflower field at dusk">
       </button>
 
-      <button class="tile" type="button" data-cap="Youth sports · Newberry County">
-        <img src="assets/kid-baseball-newberry-county-golden-hour.jpg" width="968" height="1440" loading="lazy" decoding="async"
-             alt="Young ballplayer in a Newberry County uniform with a bat across his shoulders, backlit at golden hour behind the backstop">
+      <button class="tile" type="button" data-cap="Family session &middot; golden hour">
+        <img src="assets/g02.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Two small children wading through tall sunlit grass at golden hour during a family session">
       </button>
 
-      <button class="tile" type="button" data-cap="Third birthday · studio">
-        <img src="assets/milestone-birthday-3rd-studio-spotlight.jpg" width="966" height="1440" loading="lazy" decoding="async"
-             alt="Boy in a black suit hugging a large number three balloon under a circular studio spotlight at a third birthday session">
+      <button class="tile" type="button" data-cap="Engagement session">
+        <img src="assets/g18.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="Couple standing forehead to forehead in a shaft of sunlight against an old brick storefront wall">
       </button>
 
-      <button class="tile" type="button" data-cap="Wedding details">
-        <img src="assets/wedding-detail-jewelry-macro-artistic.jpg" width="1440" height="966" loading="lazy" decoding="async"
-             alt="Wedding day detail photograph of an emerald ring, gold bands, a watch and a pearl bracelet arranged with white tulips">
+      <button class="tile" type="button" data-cap="Newborn">
+        <img src="assets/g09.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="Black and white photograph of a father kissing his newborn's hand, the baby's name embroidered on her hat">
       </button>
 
-      <button class="tile" type="button" data-cap="Couples · black and white">
-        <img src="assets/couple-bw-lakeside-candid-motion.jpg" width="1616" height="1080" loading="lazy" decoding="async"
-             alt="Black and white candid photograph of a couple resting together beneath a tree at the edge of a lake">
+      <button class="tile" type="button" data-cap="Birthday &middot; studio">
+        <img src="assets/g20.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Studio birthday portrait of a woman in a black gown holding a single red rose, rose petals scattered across the floor">
       </button>
 
-      <button class="tile" type="button" data-cap="Child portrait · flower field">
-        <img src="assets/girl-flower-field-walking-away-02.jpg" width="972" height="1440" loading="lazy" decoding="async"
-             alt="Girl walking away through a field of blooming snapdragons, hair swinging in the golden-hour light">
-      </button>
-
-      <button class="tile" type="button" data-cap="Brand &amp; commercial">
-        <img src="assets/brand-commercial-studio-male-model-01.jpg" width="979" height="1440" loading="lazy" decoding="async"
-             alt="Commercial brand session showing a model in streetwear seated on a stool with window-blind shadows falling across the studio backdrop">
+      <button class="tile" type="button" data-cap="Wedding day">
+        <img src="assets/g08.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Bride and groom walking hand in hand through a tunnel of raised arms and bouquets held up by their wedding party">
       </button>
 
       <button class="tile" type="button" data-cap="Studio portrait">
-        <img src="assets/studio-portrait-moody-red-woman.jpg" width="960" height="960" loading="lazy" decoding="async"
-             alt="Moody studio portrait of a young woman in a black turtleneck against a deep maroon backdrop">
+        <img src="assets/g10.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="Studio portrait of a woman in a red knit top leaning on a wooden stool against a black backdrop">
       </button>
 
       <button class="tile" type="button" data-cap="Milestone birthday">
-        <img src="assets/milestone-birthday-28-outdoor-balloons.jpg" width="985" height="1440" loading="lazy" decoding="async"
-             alt="Woman in a pale yellow dress holding silver number twenty-eight balloons in front of a metal farm gate at golden hour">
+        <img src="assets/g05.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Woman in a pale yellow dress holding silver number twenty-eight balloons in front of a farm gate at golden hour">
       </button>
 
       <button class="tile" type="button" data-cap="Senior portraits">
-        <img src="assets/senior-guy-gate-portrait-03.jpg" width="1080" height="1616" loading="lazy" decoding="async"
-             alt="High school senior sitting cross-legged in the grass in front of a weathered metal gate during an outdoor senior session">
-      </button>
-
-      <button class="tile" type="button" data-cap="Wedding details">
-        <img src="assets/wedding-flatlay-vow-letters-shoes-cologne.jpg" width="968" height="1440" loading="lazy" decoding="async"
-             alt="Wedding flat lay of handwritten vow letters, cufflinks, cologne and brown dress shoes arranged on a wood floor with tulips">
+        <img src="assets/g16.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Senior portrait of a young man playing an electric guitar against a painted mural, music notes drifting across the frame">
       </button>
 
       <button class="tile" type="button" data-cap="Fine art portrait">
-        <img src="assets/fine-art-conceptual-floral-blindfold.jpg" width="965" height="1440" loading="lazy" decoding="async"
-             alt="Fine art conceptual portrait of a woman wearing a wildflower headwrap that covers her eyes, framed against a dark background">
+        <img src="assets/g03.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="Fine art portrait of a woman in an antique frame, her eyes bound with gauze and a crown of wildflowers across her face">
       </button>
 
+      <button class="tile" type="button" data-cap="Couples &middot; black and white">
+        <img src="assets/g07.jpg" width="1700" height="1136" loading="lazy" decoding="async"
+             alt="Black and white photograph of a couple sitting together on the grass at the water's edge, backlit by the low sun">
+      </button>
+
+      <button class="tile" type="button" data-cap="Engagement session">
+        <img src="assets/g19.jpg" width="1136" height="1700" loading="lazy" decoding="async"
+             alt="Couple walking hand in hand and laughing beneath old trees in a downtown park, the city skyline behind them">
+      </button>
+
+      <button class="tile" type="button" data-cap="Pet portrait &middot; studio">
+        <img src="assets/g01.jpg" width="1137" height="1700" loading="lazy" decoding="async"
+             alt="Studio portrait of a Dalmatian in a blue spiked collar lying against a bright blue backdrop">
+      </button>
+
+      <button class="tile" type="button" data-cap="Couples &middot; black and white">
+        <img src="assets/g17.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Black and white photograph of a woman leaning down over her partner, cradling the back of his head">
+      </button>
+
+      <button class="tile" type="button" data-cap="Sports &middot; studio">
+        <img src="assets/g12.jpg" width="1700" height="1135" loading="lazy" decoding="async"
+             alt="Overhead portrait of a boxer lying in the ring in pink gloves under blue and pink lights">
+      </button>
+
+      <button class="tile" type="button" data-cap="Graduation details">
+        <img src="assets/g11.jpg" width="1137" height="1700" loading="lazy" decoding="async"
+             alt="Detail photograph of a graduate's cowboy boot soles with the class tassel and year charm hanging between them">
+      </button>
+
+      <button class="tile" type="button" data-cap="Brand &amp; commercial">
+        <img src="assets/g15.jpg" width="1135" height="1700" loading="lazy" decoding="async"
+             alt="Black and white commercial portrait of a man in an oversized white tee seated against a sunlit studio wall">
+      </button>
+    </div>
+  </section>
+
+  <section class="meet wrap" id="about">
+    <div class="meet-grid">
+      <figure class="meet-fig">
+        <img src="assets/makayla-rendon-portrait.jpg" width="999" height="1500" loading="lazy" decoding="async"
+             alt="Makayla Rendon, the photographer behind Rendon Photography, in an emerald gown on a mountain overlook">
+        <figcaption>Not my image &mdash; it was a photoshoot I had done.</figcaption>
+      </figure>
+      <div class="meet-body">
+        <p class="eyebrow">About</p>
+        <div class="rule"></div>
+        <h2>Meet the photographer</h2>
+        <div class="meet-copy">
+          <p>I'm Makayla, the photographer behind Rendon Photography.</p>
+          <p>My journey with photography began long before I ever imagined it would become my career.
+             When I was younger, my aunt introduced me to the world of photography and unknowingly
+             planted a seed that would grow into something so much greater. Her love for the art
+             inspired me, and as I grew older, I found myself drawn back to that same passion.</p>
+          <p>Today, I truly believe photography is part of what God has called me to do. What began as
+             an inspiration has become a purpose &mdash; one that brings me an abundance of joy and
+             allows me to use my creativity to serve others and preserve the moments they never want
+             to forget.</p>
+          <p>I believe there is something incredibly beautiful about a photograph. It can hold a
+             feeling, tell a story, and take you back to a moment long after it has passed. Whether
+             I'm capturing the beginning of a marriage, the joy of a growing family, a milestone, a
+             quiet moment between two people, or simply the beauty of who you are, my goal is always
+             to create images that feel genuine, timeless, and uniquely yours.</p>
+          <p>Thank you for trusting me to capture the moments that become your forever memories.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -462,7 +521,7 @@ body.lb-open{overflow:hidden}
     </a>
 
     <div class="btn-row">
-      <a class="btn" href="mailto:Rendonphotograpghy@aol.com">
+      <a class="btn" href="mailto:rendonphotography@aol.com">
         <svg class="i" width="17" height="17" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/>
@@ -494,7 +553,7 @@ body.lb-open{overflow:hidden}
       <nav class="foot-links" aria-label="Contact and social">
         <a href="https://www.instagram.com/rendonphotograpghy" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/rendonphotography13/" target="_blank" rel="noopener">Facebook</a>
-        <a href="mailto:Rendonphotograpghy@aol.com">Rendonphotograpghy@aol.com</a>
+        <a href="mailto:rendonphotography@aol.com">rendonphotography@aol.com</a>
         <a href="tel:+18035370030">(803) 537-0030</a>
       </nav>
     </div>
@@ -591,7 +650,7 @@ body.lb-open{overflow:hidden}
   "url": "https://savcab.github.io/websites/rendon-photography/",
   "image": "https://savcab.github.io/websites/rendon-photography/assets/og-rendon-photography.jpg",
   "telephone": "+18035370030",
-  "email": "Rendonphotograpghy@aol.com",
+  "email": "rendonphotography@aol.com",
   "founder": {"@type": "Person", "name": "Makayla Rendon"},
   "address": {
     "@type": "PostalAddress",

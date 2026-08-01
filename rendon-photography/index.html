@@ -212,23 +212,27 @@ p{margin:0}
   display:block;margin-top:clamp(20px,3vw,28px);font-style:normal;
   font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
 }
-.said-lead{margin-top:clamp(32px,4.6vw,50px)}
+/* .said blockquote{margin:0} outranks a bare .said-lead, so qualify it or the
+   heading-to-quote gap silently collapses to zero */
+.said blockquote.said-lead{margin-top:clamp(32px,4.6vw,50px)}
 .said-lead q{font-size:clamp(21px,2.9vw,31px);line-height:1.46}
-.said-more{
-  display:grid;gap:clamp(32px,4.4vw,46px);
-  max-width:64ch;margin:clamp(46px,6vw,68px) auto 0;
+/* two balanced columns rather than three: the browser evens the column heights
+   itself (same multi-column mechanic as the gallery), and the wider measure keeps
+   these at a readable line length. Quote lengths are fixed — they're verbatim */
+.said-more{max-width:64ch;margin:clamp(46px,6vw,68px) auto 0}
+.said-more blockquote{
+  border-top:1px solid var(--rule);padding-top:clamp(22px,3vw,28px);
+  margin-bottom:clamp(32px,4.4vw,46px);break-inside:avoid;
 }
-.said-more blockquote{border-top:1px solid var(--rule);padding-top:clamp(22px,3vw,28px)}
+.said-more blockquote:last-child{margin-bottom:0}
 .said-more q{font-size:clamp(17px,1.35vw,19px);line-height:1.62}
-/* stacked credit: at 3-col the platform label won't fit beside the name, so make
-   the second line deliberate instead of letting it wrap mid-phrase */
-.said-more cite{
-  margin-top:clamp(15px,2.2vw,19px);font-size:11.5px;letter-spacing:.16em;
-  line-height:1.55;color:var(--ink-soft);
-}
-.said-more cite .via{display:block;font-size:11px;letter-spacing:.14em;color:var(--muted)}
+.said-more cite{margin-top:clamp(15px,2.2vw,19px);font-size:11.5px}
 @media (min-width:940px){
-  .said-more{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;max-width:1000px}
+  .said-more{max-width:1000px;columns:2;column-gap:clamp(40px,4.6vw,56px)}
+}
+/* below ~400px the full credit line would wrap mid-phrase; tighten it instead */
+@media (max-width:400px){
+  .said-more cite{font-size:11px;letter-spacing:.12em}
 }
 
 /* ---------- contact ---------- */
@@ -533,18 +537,18 @@ body.lb-open{overflow:hidden}
              photo captured the emotion and beauty of the day perfectly. Her talent, attention to
              detail, and calming presence truly made all the difference. We will cherish these
              memories forever and could not recommend her enough!</q>
-          <cite>Audrey V.<span class="via">Facebook recommendation</span></cite>
+          <cite>Audrey V. &middot; Facebook recommendation</cite>
         </blockquote>
 
         <blockquote>
           <q>Not only is Makayla's photography phenomenal &amp; diverse, but she is wonderfully
              passionate about her clients. I recommend her 1,000%!</q>
-          <cite>Alyssa G.<span class="via">Facebook recommendation</span></cite>
+          <cite>Alyssa G. &middot; Facebook recommendation</cite>
         </blockquote>
 
         <blockquote>
           <q>very professional, I love her job, I will recommend Rendon photography 100%.</q>
-          <cite>Mary R.<span class="via">Facebook recommendation</span></cite>
+          <cite>Mary R. &middot; Facebook recommendation</cite>
         </blockquote>
       </div>
     </div>
@@ -603,7 +607,7 @@ body.lb-open{overflow:hidden}
         <a href="tel:+18035370030">(803) 537-0030</a>
       </nav>
     </div>
-    <p class="copy">&copy; <span id="yr">2026</span> Rendon Photography. All photographs by Makayla Rendon.</p>
+    <p class="copy">&copy; <span id="yr">2026</span> Rendon Photography. All photographs by Makayla Rendon except where credited.</p>
   </div>
 </footer>
 

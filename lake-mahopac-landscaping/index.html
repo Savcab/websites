@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lake Mahopac Landscaping & Lawncare | Seasonal Lawn Care & Snow Removal</title>
+  <meta name="description" content="Local landscaping and lawncare serving Mahopac, NY. Lawn mowing, mulching, spring/fall cleanups, and winter snow removal. 5.0 from 59 Google reviews.">
+  <link rel="canonical" href="https://savcab.github.io/websites/lake-mahopac-landscaping/">
+
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Lake Mahopac Landscaping & Lawncare | Seasonal Lawn Care & Snow Removal">
+  <meta property="og:description" content="Local landscaping and lawncare serving Mahopac, NY. Lawn mowing, mulching, spring/fall cleanups, and winter snow removal. 5.0 from 59 Google reviews.">
+  <meta property="og:url" content="https://savcab.github.io/websites/lake-mahopac-landscaping/">
+  <meta property="og:image" content="https://savcab.github.io/websites/lake-mahopac-landscaping/assets/p2.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lake Mahopac Landscaping & Lawncare | Seasonal Lawn Care & Snow Removal">
+  <meta name="twitter:description" content="Local landscaping and lawncare serving Mahopac, NY. Lawn mowing, mulching, spring/fall cleanups, and winter snow removal. 5.0 from 59 Google reviews.">
+  <meta name="twitter:image" content="https://savcab.github.io/websites/lake-mahopac-landscaping/assets/p2.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #FBF7F0;
+      --charcoal: #23201B;
+      --rust: #B5532A;
+      --forest: #2F5D44;
+      --sand: #E8DCC8;
+      --text-light: #6B6159;
+    }
+
+    html, body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin: 2.5rem 0 1.5rem 0;
+      color: var(--charcoal);
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.75rem 0;
+      color: var(--charcoal);
+    }
+
+    h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin: 0 0 0.5rem 0;
+      color: var(--charcoal);
+    }
+
+    a { color: var(--rust); text-decoration: underline; }
+    a:hover { color: var(--forest); }
+
+    /* Header */
+    header {
+      background-color: var(--charcoal);
+      color: var(--cream);
+      padding: 0.75rem 1.25rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (min-width: 768px) {
+      header {
+        padding: 1.25rem;
+      }
+    }
+
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .header-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .header-brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      .header-brand {
+        font-size: 1.4rem;
+      }
+    }
+
+    .header-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 768px) {
+      .header-contact {
+        font-size: 0.95rem;
+      }
+    }
+
+    .header-contact a {
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 500;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem 0 3rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 0 4rem 0;
+      }
+    }
+
+    .hero-text h1 {
+      color: var(--forest);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-subhead {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--charcoal);
+    }
+
+    .rating-stars {
+      display: flex;
+      gap: 0.15rem;
+    }
+
+    .star {
+      color: var(--rust);
+      font-weight: 700;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @media (min-width: 480px) {
+      .cta-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.875rem 1.5rem;
+      background-color: var(--forest);
+      color: var(--cream);
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(47, 93, 68, 0.15);
+    }
+
+    .cta:hover {
+      background-color: var(--rust);
+      box-shadow: 0 6px 16px rgba(181, 83, 42, 0.2);
+      text-decoration: none;
+    }
+
+    .cta:focus {
+      outline: 2px solid var(--rust);
+      outline-offset: 2px;
+    }
+
+    .hero-image {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Why neighbors choose us */
+    .why-section {
+      background-color: var(--sand);
+      padding: 3rem 1.25rem;
+      border-radius: 1rem;
+      margin: 3rem 0;
+    }
+
+    .why-section h2 {
+      margin-top: 0;
+      color: var(--forest);
+    }
+
+    .why-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .why-icon {
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: var(--forest);
+      color: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .why-content h3 {
+      margin-top: 0;
+      color: var(--charcoal);
+    }
+
+    .why-content p {
+      margin: 0;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Services split by season */
+    .services {
+      margin: 3rem 0;
+    }
+
+    .season-group {
+      margin-bottom: 3rem;
+    }
+
+    .season-label {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--rust);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .season-label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: var(--rust);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .service-card {
+      background-color: var(--cream);
+      border: 2px solid var(--sand);
+      padding: 1.75rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+
+    .service-card:hover {
+      border-color: var(--rust);
+      box-shadow: 0 6px 20px rgba(181, 83, 42, 0.12);
+    }
+
+    .service-card h3 {
+      color: var(--forest);
+      margin-top: 0;
+    }
+
+    .service-card p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin: 0.5rem 0 0 0;
+    }
+
+    /* Photo band */
+    .photo-band {
+      margin: 3rem 0;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .photo-band img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Trust band */
+    .trust-band {
+      background-color: var(--charcoal);
+      color: var(--cream);
+      padding: 2.5rem 1.25rem;
+      border-radius: 1rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .trust-band h2 {
+      margin-top: 0;
+      color: var(--cream);
+      font-size: 2rem;
+    }
+
+    .trust-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+      max-width: 420px;
+      margin: 1.5rem auto 0 auto;
+    }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .metric-value {
+      font-family: 'Fraunces', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--rust);
+      line-height: 1;
+    }
+
+    .metric-label {
+      font-size: 0.9rem;
+      color: var(--sand);
+      margin-top: 0.5rem;
+    }
+
+    /* Hours and Map section */
+    .hours-map {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .hours-map {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .hours-card {
+      background-color: var(--sand);
+      padding: 2rem 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .hours-card h3 {
+      margin-top: 0;
+      color: var(--forest);
+    }
+
+    .hours-table {
+      width: 100%;
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid rgba(35, 32, 27, 0.1);
+    }
+
+    .hours-table td {
+      padding: 0.5rem 0;
+      text-align: left;
+    }
+
+    .hours-table td:first-child {
+      font-weight: 500;
+      width: 45%;
+    }
+
+    .map-container {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      height: 300px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Final CTA section */
+    .final-cta {
+      background: linear-gradient(135deg, var(--forest) 0%, #1a4a32 100%);
+      color: var(--cream);
+      padding: 3rem 1.25rem;
+      border-radius: 1rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      color: var(--cream);
+      margin-top: 0;
+    }
+
+    .final-cta p {
+      font-size: 1.1rem;
+      margin: 1.5rem 0 2rem 0;
+      color: var(--sand);
+    }
+
+    .final-cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: var(--rust);
+      color: var(--cream);
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .final-cta-button:hover {
+      background-color: #9a4420;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .final-cta-button:focus {
+      outline: 2px solid var(--cream);
+      outline-offset: 2px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--charcoal);
+      color: var(--sand);
+      padding: 2rem 1.25rem 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .footer-content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-section h4 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      color: var(--cream);
+      margin: 0 0 0.75rem 0;
+      font-size: 1rem;
+    }
+
+    .footer-section a {
+      color: var(--sand);
+      text-decoration: none;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-divider {
+      grid-column: 1 / -1;
+      border-top: 1px solid rgba(232, 220, 200, 0.2);
+      padding-top: 1.5rem;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      color: var(--sand);
+      font-size: 0.85rem;
+    }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--text-light);
+      border-left: 3px solid var(--rust);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .quote-author {
+      font-weight: 600;
+      color: var(--charcoal);
+      font-style: normal;
+      display: block;
+      margin-top: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- built with crew -->
+
+  <header>
+    <div class="header-content">
+      <div class="header-brand">Lake Mahopac Landscaping & Lawncare</div>
+      <div class="header-contact">
+        <a href="tel:+18456285169">(845) 628-5169</a>
+        <a href="mailto:info@lakemahopaclandscaping.com">info@lakemahopaclandscaping.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Your Mahopac Yard, Every Season</h1>
+          <p class="hero-subhead">From spring cleanups and lawn care to winter snow removal, Lake Mahopac Landscaping keeps your property looking great year-round.</p>
+
+          <div class="hero-rating">
+            <div class="rating-stars">
+              <span class="star" aria-label="5.0 out of 5">★★★★★</span>
+            </div>
+            <span>5.0 · 59 reviews on Google</span>
+          </div>
+
+          <div class="cta-group">
+            <a href="tel:+18456285169" class="cta">Call Now</a>
+            <a href="mailto:info@lakemahopaclandscaping.com" class="cta">Send Email</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/p2.jpg" alt="Finished landscape bed with fresh mulch, plantings and shrubs along home foundation" width="1200" height="1600" loading="eager" fetchpriority="high">
+        </div>
+      </section>
+
+      <!-- Why Neighbors Choose Us -->
+      <section class="why-section">
+        <h2>Why Neighbors Choose Us</h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">✓</div>
+            <div class="why-content">
+              <h3>Reliable Year-Round</h3>
+              <p>Spring and fall cleanups, summer lawn care, and winter snow removal keep your property maintained in every season.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">✓</div>
+            <div class="why-content">
+              <h3>Prompt & Professional</h3>
+              <p>Fast response to estimates and reliable execution. Neighbors trust us to get the job done right.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">✓</div>
+            <div class="why-content">
+              <h3>Local Knowledge</h3>
+              <p>Serving the Mahopac area, we understand your climate, terrain, and what works in our community.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Split by Season -->
+      <section class="services">
+        <h2>Services by Season</h2>
+        <div class="season-group">
+          <h3 class="season-label">Spring & Fall</h3>
+          <div class="service-grid">
+            <div class="service-card">
+              <h4>Lawn Mowing</h4>
+              <p>Keeps your grass healthy and your yard looking sharp all season.</p>
+            </div>
+            <div class="service-card">
+              <h4>Mulching & Landscaping</h4>
+              <p>Fresh mulch and planting work to add color and structure to your beds and foundation areas.</p>
+            </div>
+            <div class="service-card">
+              <h4>Spring & Fall Cleanups</h4>
+              <p>Get your yard ready for the season.</p>
+            </div>
+            <div class="service-card">
+              <h4>Yard Transformations</h4>
+              <p>Turn an overgrown area into a beautiful outdoor space.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="season-group">
+          <h3 class="season-label">Winter</h3>
+          <div class="service-grid">
+            <div class="service-card">
+              <h4>Snow Removal</h4>
+              <p>When winter weather hits, we're ready to keep your property clear and safe.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Finished Work Photo -->
+      <section class="photo-band">
+        <img src="assets/p1.jpg" alt="Freshly mulched planting bed with ornamental grasses along a paver walkway beside the home's stone foundation" width="1200" height="1600" loading="lazy">
+      </section>
+
+      <!-- Trust Band -->
+      <section class="trust-band">
+        <h2>Trusted by Neighbors</h2>
+        <div class="trust-metrics">
+          <div class="metric">
+            <div class="metric-value">5.0 rating</div>
+            <div class="metric-label">on Google</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">59 reviews</div>
+            <div class="metric-label">on Google</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Quotes -->
+      <section>
+        <h2 style="text-align: center; color: var(--forest); margin-bottom: 2rem;">What Neighbors Say</h2>
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin: 2rem 0;">
+          <div class="quote">
+            "Mahopac Landscaping did a terrific job mulching our entire yard. We live on a steep hill so it required a lot of trips up and down hills. They were prompt with the estimate and getting the job done"
+            <span class="quote-author">— Mary Froats (Google Reviews)</span>
+          </div>
+          <div class="quote">
+            "Lake Mahopac Landscaping has been maintaining my yard for years. They do an excellent job and are vey reliable. I would recommend them"
+            <span class="quote-author">— Lillian Jones (Google Reviews)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hours and Map -->
+      <section class="hours-map">
+        <div class="hours-card">
+          <h3>Hours</h3>
+          <table class="hours-table">
+            <tr>
+              <td>Monday–Sunday</td>
+              <td>8:00 AM – 6:00 PM</td>
+            </tr>
+          </table>
+          <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">Call anytime to request an estimate or discuss your project needs.</p>
+        </div>
+
+        <div class="map-container">
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-73.8102728,41.3673844,-73.7702728,41.3873844&layer=mapnik&marker=41.3773844,-73.7902728" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="final-cta">
+        <h2>Ready for Professional Landscaping?</h2>
+        <p>Contact Lake Mahopac Landscaping today for an estimate. Let's talk about your yard.</p>
+        <a href="tel:+18456285169" class="final-cta-button">Call (845) 628-5169</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <a href="tel:+18456285169">(845) 628-5169</a>
+        <a href="mailto:info@lakemahopaclandscaping.com">info@lakemahopaclandscaping.com</a>
+      </div>
+      <div class="footer-section">
+        <h4>Address</h4>
+        <p>245 Lake Shore Dr<br>Mahopac, NY 10541</p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p>Lake Mahopac Landscaping & Lawncare</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Lake Mahopac Landscaping & Lawncare",
+    "image": "assets/p2.jpg",
+    "description": "Residential landscaping and lawncare services in Mahopac, NY. Spring and summer lawn mowing, mulching, cleanups, and yard transformations. Winter snow removal.",
+    "telephone": "(845) 628-5169",
+    "email": "info@lakemahopaclandscaping.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "245 Lake Shore Dr",
+      "addressLocality": "Mahopac",
+      "addressRegion": "NY",
+      "postalCode": "10541",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.3773844,
+      "longitude": -73.7902728
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "areaServed": ["Mahopac"]
+  }
+  </script>
+</body>
+</html>

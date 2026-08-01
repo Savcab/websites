@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!-- built with crew -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bentson Landscape — Water-Wise Landscape Design &amp; Build | Claremont · Upland · Inland Empire</title>
+<meta name="description" content="Residential landscape design and build in Claremont, Upland and the wider Inland Empire. Kurapia lawn replacement, drought-tolerant and native planting, walkways, steps and dry stream beds. 5.0 · 35 reviews on Google. CSLB #1144420.">
+<link rel="canonical" href="https://savcab.github.io/websites/bentson-landscape-upland/">
+<meta property="og:title" content="Bentson Landscape — Water-Wise Landscape Design &amp; Build">
+<meta property="og:description" content="Kurapia lawn replacement, drought-tolerant and native planting, and stonework for Claremont, Upland and the Inland Empire.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://savcab.github.io/websites/bentson-landscape-upland/assets/p6.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#F7F4ED;
+    --bone-2:#EFEADF;
+    --ink:#16150F;
+    --muted:#6C6656;
+    --hair:#CFC7B5;
+    --clay:#A8471B;
+    --olive:#22241B;
+    --maxw:1220px;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--bone);
+    color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.62;
+    overflow-x:clip;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;height:auto;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;}
+
+  /* ---------- focus ---------- */
+  a:focus-visible,button:focus-visible,iframe:focus-visible{
+    outline:2px solid var(--clay);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+  .skip{
+    position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--bone);
+    padding:12px 18px;z-index:99;
+  }
+  .skip:focus{left:12px;top:12px;}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,237,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair);
+  }
+  .topbar-in{
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    min-height:60px;padding:8px 20px;max-width:var(--maxw);margin:0 auto;
+  }
+  .wordmark{
+    display:flex;flex-direction:column;justify-content:center;min-height:44px;
+    font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+    font-size:13px;line-height:1.25;text-decoration:none;
+  }
+  .wordmark span{display:block;font-weight:400;letter-spacing:.16em;color:var(--muted);font-size:10px;}
+  .bar-right{display:flex;align-items:center;gap:12px;}
+  .bar-lic{display:none;font-size:11px;letter-spacing:.1em;color:var(--muted);}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:44px;padding:0 16px;
+    background:var(--ink);color:var(--bone);
+    text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.02em;
+  }
+  .callbtn:hover{background:var(--clay);}
+  .callbtn svg{width:15px;height:15px;flex:none;}
+  .callbtn span{white-space:nowrap;}
+  @media (max-width:559px){
+    .wordmark span{display:none;}
+    .wordmark{font-size:12px;letter-spacing:.08em;}
+    .callbtn{padding:0 13px;font-size:13.5px;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{padding:56px 0 0;}
+  .eyebrow{
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);
+    margin:0 0 22px;
+  }
+  h1{
+    font-size:clamp(2.15rem,7.6vw,4.6rem);
+    line-height:1.02;
+    letter-spacing:-.035em;
+    font-weight:600;
+    margin:0 0 26px;
+    max-width:15ch;
+  }
+  h1 em{font-style:normal;color:var(--clay);}
+  .hero-grid{display:block;}
+  .lede{
+    font-size:clamp(1.02rem,2.4vw,1.22rem);
+    color:#3A382E;max-width:56ch;margin:0 0 28px;
+  }
+  .rule{height:1px;background:var(--hair);border:0;margin:34px 0;}
+  .rating-line{
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    margin:0 0 26px;
+  }
+  .rating-line b{color:var(--ink);font-weight:600;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 46px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    min-height:52px;padding:0 22px;text-decoration:none;
+    font-size:15px;font-weight:600;letter-spacing:.01em;
+    border:1px solid var(--ink);
+  }
+  .btn svg{width:16px;height:16px;flex:none;}
+  .btn-solid{background:var(--ink);color:var(--bone);}
+  .btn-solid:hover{background:var(--clay);border-color:var(--clay);}
+  .btn-ghost{background:transparent;color:var(--ink);}
+  .btn-ghost:hover{background:var(--bone-2);}
+
+  .heroshot{margin:0;position:relative;}
+  .heroshot img{width:100%;object-fit:cover;aspect-ratio:16/9;}
+  .heroshot figcaption{
+    font-size:12px;color:var(--muted);padding:10px 0 0;letter-spacing:.02em;
+  }
+  .bleed{max-width:1600px;margin:0 auto;padding:0 20px;}
+  .hero-grid{margin-bottom:12px;}
+
+  /* ---------- section scaffolding ---------- */
+  section{padding:58px 0;scroll-margin-top:74px;}
+  .sec-head{
+    display:grid;grid-template-columns:1fr;gap:6px;
+    border-top:1px solid var(--ink);padding-top:16px;margin-bottom:38px;
+  }
+  .sec-idx{margin:0;line-height:1.1;}
+  .sec-idx .num{
+    display:block;font-size:clamp(1.7rem,5vw,2.6rem);font-weight:400;
+    letter-spacing:-.02em;color:var(--clay);line-height:1;
+  }
+  .sec-idx .lbl{
+    display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--muted);margin-top:8px;
+  }
+  .sec-head h2{
+    font-size:clamp(1.5rem,4.2vw,2.35rem);letter-spacing:-.025em;font-weight:600;
+    margin:0;line-height:1.1;
+  }
+  .sec-head p{margin:8px 0 0;color:var(--muted);max-width:60ch;font-size:15.5px;}
+
+  /* ---------- services ---------- */
+  .svc{border-top:1px solid var(--hair);}
+  .svc-item{
+    display:grid;grid-template-columns:1fr;gap:4px;
+    padding:26px 0;border-bottom:1px solid var(--hair);
+  }
+  .svc-num{font-size:12px;letter-spacing:.18em;color:var(--muted);}
+  .svc-item h3{margin:0;font-size:1.28rem;letter-spacing:-.02em;font-weight:600;line-height:1.22;}
+  .svc-item p{margin:6px 0 0;color:#4A473C;font-size:15.5px;max-width:62ch;}
+
+  /* ---------- gallery ---------- */
+  .gal{display:grid;grid-template-columns:1fr;gap:26px;}
+  .gal figure{margin:0;}
+  .gal img{width:100%;object-fit:cover;aspect-ratio:4/3;background:var(--bone-2);}
+  .gal figcaption{
+    font-size:13.5px;color:var(--muted);padding:10px 0 0;line-height:1.5;
+    border-top:1px solid var(--hair);margin-top:10px;
+  }
+
+  /* ---------- quotes ---------- */
+  .quotes{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--hair);}
+  .quotes figure{
+    margin:0;padding:28px 0;border-bottom:1px solid var(--hair);
+  }
+  .quotes blockquote{
+    margin:0;font-size:1.1rem;line-height:1.5;letter-spacing:-.012em;max-width:64ch;
+  }
+  .quotes figcaption{
+    margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  }
+  .quotes figcaption b{color:var(--ink);font-weight:600;letter-spacing:.1em;}
+
+  /* ---------- facts + hours + map ---------- */
+  .info{display:grid;grid-template-columns:1fr;gap:40px;}
+  dl.facts{margin:0;border-top:1px solid var(--hair);}
+  dl.facts div{
+    display:grid;grid-template-columns:1fr;gap:2px;
+    padding:16px 0;border-bottom:1px solid var(--hair);
+  }
+  dl.facts dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
+  dl.facts dd{margin:0;font-size:16px;}
+  dl.facts dd a{
+    display:inline-flex;align-items:center;min-height:44px;
+    text-decoration:none;border-bottom:1px solid var(--hair);word-break:break-word;
+  }
+  dl.facts dd a:hover{border-color:var(--clay);color:var(--clay);}
+  table.hours{width:100%;border-collapse:collapse;font-size:15px;}
+  table.hours caption{
+    text-align:left;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);padding-bottom:10px;
+  }
+  table.hours th,table.hours td{
+    text-align:left;padding:9px 0;border-bottom:1px solid var(--hair);font-weight:400;
+  }
+  table.hours th{color:#4A473C;}
+  table.hours td{text-align:right;font-variant-numeric:tabular-nums;}
+  table.hours tr.closed td{color:var(--muted);}
+  .mapbox{border:1px solid var(--hair);background:var(--bone-2);}
+  .mapbox iframe{display:block;width:100%;height:330px;border:0;}
+  .maplabel{font-size:12.5px;color:var(--muted);padding:12px 14px;border-top:1px solid var(--hair);}
+
+  /* ---------- cta band ---------- */
+  .band{background:var(--olive);color:#EDE9DC;}
+  .band .wrap{padding-top:64px;padding-bottom:64px;}
+  .band h2{
+    font-size:clamp(1.6rem,5vw,2.7rem);letter-spacing:-.03em;font-weight:600;
+    margin:0 0 16px;line-height:1.08;max-width:20ch;
+  }
+  .band p{color:#B9B3A0;max-width:54ch;margin:0 0 30px;}
+  .band .eyebrow{color:#C98B5F;}
+  .band .btn{border-color:#EDE9DC;}
+  .band .btn-solid{background:#EDE9DC;color:var(--olive);}
+  .band .btn-solid:hover{background:#C98B5F;border-color:#C98B5F;color:var(--olive);}
+  .band .btn-ghost{color:#EDE9DC;}
+  .band .btn-ghost:hover{background:rgba(237,233,220,.12);}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--bone);border-top:1px solid var(--ink);}
+  footer .wrap{padding-top:44px;padding-bottom:52px;}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:26px;}
+  .foot-grid h3{
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+    margin:0 0 10px;font-weight:500;
+  }
+  .foot-grid p{margin:0 0 4px;font-size:15.5px;}
+  .foot-grid a{text-decoration:none;border-bottom:1px solid var(--hair);}
+  .foot-grid a:hover{border-color:var(--clay);color:var(--clay);}
+  .foot-contact a{display:inline-flex;align-items:center;min-height:44px;}
+  .foot-contact p{margin:0;}
+  .colophon{
+    margin-top:38px;padding-top:18px;border-top:1px solid var(--hair);
+    font-size:12px;color:var(--muted);letter-spacing:.04em;
+    display:flex;flex-wrap:wrap;gap:6px 18px;
+  }
+
+  @media (min-width:640px){
+    .gal{grid-template-columns:repeat(2,1fr);}
+    .bar-lic{display:block;}
+    .svc-item{grid-template-columns:64px 1fr;gap:0 20px;}
+    .svc-num{padding-top:6px;}
+    .svc-item h3{grid-column:2;}
+    .svc-item p{grid-column:2;}
+    dl.facts div{grid-template-columns:190px 1fr;gap:0 20px;align-items:baseline;}
+    .foot-grid{grid-template-columns:repeat(2,1fr);gap:34px;}
+  }
+  @media (min-width:900px){
+    body{font-size:18px;}
+    .hero{padding-top:82px;}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .95fr;gap:0 60px;align-items:end;}
+    .hero-grid .col-b{padding-bottom:6px;}
+    section{padding:76px 0;}
+    .sec-head{grid-template-columns:160px 1fr;gap:0 28px;align-items:start;}
+    .sec-idx{padding-top:2px;}
+    .gal{grid-template-columns:repeat(3,1fr);gap:30px;}
+    .quotes{grid-template-columns:repeat(2,1fr);column-gap:52px;}
+    .info{grid-template-columns:1fr 1.05fr;gap:0 60px;}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1fr;}
+    .mapbox iframe{height:400px;}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="wordmark" href="#main">Bentson Landscape<span>Claremont · Upland · Inland Empire</span></a>
+    <div class="bar-right">
+      <span class="bar-lic mono">CSLB #1144420</span>
+      <a class="callbtn" href="tel:+19094809477">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(909) 480-9477</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="col-a">
+          <p class="eyebrow mono">Water-wise landscape design &amp; build</p>
+          <h1>Take the lawn out. Put a <em>landscape</em> in.</h1>
+        </div>
+        <div class="col-b">
+          <p class="lede">Residential design and build for Claremont, Upland and the wider Inland Empire. Kurapia in place of thirsty grass, drought-tolerant and native planting, stonework and dry stream beds. Andrew draws the plan; his crew builds it.</p>
+          <p class="rating-line mono"><b>5.0</b> · 35 reviews on Google</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="tel:+19094809477">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call (909) 480-9477
+            </a>
+            <a class="btn btn-ghost" href="mailto:Andrew@bentsonlandscape.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              Email Andrew
+            </a>
+            <a class="btn btn-ghost" href="sms:+19094809477">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              Text us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bleed">
+      <figure class="heroshot">
+        <img src="assets/p6.jpg" width="1400" height="934" fetchpriority="high" decoding="async"
+             alt="A dry stream bed of pale river cobble and gravel winding past tall rush-like green grasses, alongside a new redwood fence and the corner of a white house.">
+        <figcaption>Dry stream bed in river cobble, planted with rush-like grasses along a redwood fence line.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ============ 01 SERVICES ============ -->
+  <section id="work" aria-labelledby="h-work">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-idx mono"><span class="num">01</span><span class="lbl">What we do</span></p>
+        <div>
+          <h2 id="h-work">Design and build, front yard to back</h2>
+          <p>One team from the drawing to the finished yard. Everything below is work Bentson Landscape has actually done and that clients have described.</p>
+        </div>
+      </div>
+
+      <div class="svc">
+        <article class="svc-item">
+          <p class="svc-num mono">01</p>
+          <h3>Landscape design &amp; build</h3>
+          <p>Front yards, back yards and side yards, planned as one scheme and then built. Reviewers describe a design that "matches the scale of the space" and a side yard reworked so new features blend with what was already there.</p>
+        </article>
+        <article class="svc-item">
+          <p class="svc-num mono">02</p>
+          <h3>Kurapia lawn replacement</h3>
+          <p>Grass pulled out and replaced with kurapia — described by one client as "a low maintenance, drought tolerant alternative much better than artificial turf or grass."</p>
+        </article>
+        <article class="svc-item">
+          <p class="svc-num mono">03</p>
+          <h3>Drought-tolerant &amp; native planting</h3>
+          <p>Species chosen for the Inland Empire climate: native and water-wise plants, ornamental grasses, citrus and other fruit-bearing trees, plus designed planters.</p>
+        </article>
+        <article class="svc-item">
+          <p class="svc-num mono">04</p>
+          <h3>Walkways, steps &amp; dry stream beds</h3>
+          <p>Stone and gravel groundwork — entry walkways, river-rock steps and retaining walls, and dry stream beds that sit naturally inside the planting.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 GALLERY ============ -->
+  <section id="gallery" aria-labelledby="h-gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-idx mono"><span class="num">02</span><span class="lbl">Recent work</span></p>
+        <div>
+          <h2 id="h-gallery">Yards we have built</h2>
+          <p>Photographs from Bentson Landscape's own Google Business Profile.</p>
+        </div>
+      </div>
+
+      <div class="gal">
+        <figure>
+          <img src="assets/p5.jpg" width="1200" height="1200" loading="lazy" decoding="async"
+               alt="Ornamental grasses with pink feathery plumes spilling over granite boulders, backed by low purple-leaved shrubs, pines and a clear blue sky.">
+          <figcaption>Pink-plumed ornamental grasses and low ground cover threaded between granite boulders.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/p7.jpg" width="1200" height="1200" loading="lazy" decoding="async"
+               alt="Broad steps built from rounded river rock set in mortar, rising through decomposed granite toward a cobblestone retaining wall and a modern house, with young agaves planted either side.">
+          <figcaption>River-rock steps and a cobblestone retaining wall climbing to the house terrace, with agave either side.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/p2.jpg" width="1400" height="788" loading="lazy" decoding="async"
+               alt="A rebuilt back yard: concrete stepping stones crossing dark bark mulch and decomposed granite, new low shrubs and grasses, a large turquoise glazed ceramic urn on a stone plinth, block wall behind.">
+          <figcaption>Back yard rebuilt in decomposed granite and mulch, with stepping stones and a glazed ceramic urn.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/p8.jpg" width="1024" height="576" loading="lazy" decoding="async"
+               alt="An evening back yard with a paver patio in the foreground, a band of grey river rock and concrete stepping stones, young grasses and mulch beds against a white house strung with festoon lights.">
+          <figcaption>Paver patio, river-rock band and stepping stones wrapping a back yard.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/p9.jpg" width="1024" height="1024" loading="lazy" decoding="async"
+               alt="A side-yard patio surfaced in grey gravel with a clean curved timber edge, sweeping around a white house to a sliding glass door with a pale stoneware pot beside it.">
+          <figcaption>Side yard resurfaced in grey gravel with a curved timber edge.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 REVIEWS ============ -->
+  <section id="reviews" aria-labelledby="h-reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-idx mono"><span class="num">03</span><span class="lbl">In their words</span></p>
+        <div>
+          <h2 id="h-reviews">5.0 · 35 reviews on Google</h2>
+          <p>Quoted exactly as written by the reviewers.</p>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <figure>
+          <blockquote>“Andrew and his team provided the perfect solution for our backyard replacement of grass by planting kurapia which is a low maintenance, drought tolerant alternative much better than artificial turf or grass.”</blockquote>
+          <figcaption class="mono"><b>Jurgen Suuck</b> — Google review</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“Andrew and team have done a fantastic job transforming our front yard and walkway into a beautiful and inviting water wise landscape.”</blockquote>
+          <figcaption class="mono"><b>Les Brown</b> — Google review</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“Andrew and his team transformed our dead, outdated lawn into an inviting, park-like landscape that reflects our local environment and feels welcoming and alive.”</blockquote>
+          <figcaption class="mono"><b>John Masland</b> — Google review</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“He has an extensive knowledge of plants and had great suggestions on which species to use to that looked good, were drought-tolerant, and some even bear fruit.”</blockquote>
+          <figcaption class="mono"><b>Robert Hoyle</b> — Google review</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 AREA / HOURS / MAP ============ -->
+  <section id="contact" aria-labelledby="h-contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="sec-idx mono"><span class="num">04</span><span class="lbl">Where &amp; when</span></p>
+        <div>
+          <h2 id="h-contact">Based in Upland, working across the Inland Empire</h2>
+          <p>Serving Claremont, Upland and the wider Inland Empire.</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div>
+          <dl class="facts">
+            <div>
+              <dt>Rating</dt>
+              <dd>5.0 · 35 reviews on Google</dd>
+            </div>
+            <div>
+              <dt>Service area</dt>
+              <dd>Claremont · Upland · Inland Empire</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Upland, CA</dd>
+            </div>
+            <div>
+              <dt>CSLB</dt>
+              <dd class="mono">#1144420</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+19094809477">(909) 480-9477</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:Andrew@bentsonlandscape.com">Andrew@bentsonlandscape.com</a></dd>
+            </div>
+          </dl>
+
+          <table class="hours" style="margin-top:36px;">
+            <caption>Hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday</th><td>7:00 AM – 3:30 PM</td></tr>
+              <tr><th scope="row">Tuesday</th><td>7:00 AM – 3:30 PM</td></tr>
+              <tr><th scope="row">Wednesday</th><td>7:00 AM – 3:30 PM</td></tr>
+              <tr><th scope="row">Thursday</th><td>7:00 AM – 3:30 PM</td></tr>
+              <tr><th scope="row">Friday</th><td>7:00 AM – 3:30 PM</td></tr>
+              <tr><th scope="row">Saturday</th><td>9:00 AM – 12:00 PM</td></tr>
+              <tr class="closed"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <div class="mapbox">
+            <iframe
+              title="Map showing the Bentson Landscape service area in Upland, California"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-117.7035547%2C34.1357185%2C-117.6435547%2C34.1657185&amp;layer=mapnik&amp;marker=34.1507185%2C-117.6735547"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="maplabel">Upland, CA — serving Claremont, Upland and the wider Inland Empire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <div class="band">
+    <div class="wrap">
+      <p class="eyebrow mono">Start a project</p>
+      <h2>Tell Andrew what the yard is doing wrong.</h2>
+      <p>Call, text or email and describe the space — front, back or side yard, anywhere in Claremont, Upland or the wider Inland Empire.</p>
+      <div class="cta-row" style="margin-bottom:0;">
+        <a class="btn btn-solid" href="tel:+19094809477">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (909) 480-9477
+        </a>
+        <a class="btn btn-ghost" href="sms:+19094809477">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Send a text
+        </a>
+        <a class="btn btn-ghost" href="mailto:Andrew@bentsonlandscape.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          Email Andrew
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Bentson Landscape LLC</h3>
+        <p>Residential landscape design and build — water-wise front yards, kurapia lawn replacement, drought-tolerant and native planting.</p>
+      </div>
+      <div class="foot-contact">
+        <h3>Contact</h3>
+        <p><a href="tel:+19094809477">(909) 480-9477</a></p>
+        <p><a href="sms:+19094809477">Text (909) 480-9477</a></p>
+        <p><a href="mailto:Andrew@bentsonlandscape.com">Andrew@bentsonlandscape.com</a></p>
+      </div>
+      <div>
+        <h3>Service area</h3>
+        <p>Claremont</p>
+        <p>Upland</p>
+        <p>Inland Empire</p>
+      </div>
+    </div>
+    <div class="colophon mono">
+      <span>Bentson Landscape LLC</span>
+      <span>CSLB #1144420</span>
+      <span>Upland, CA</span>
+      <span>5.0 · 35 reviews on Google</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://bentsonlandscape.com/#business",
+  "name": "Bentson Landscape",
+  "legalName": "Bentson Landscape LLC",
+  "url": "https://bentsonlandscape.com/",
+  "telephone": "+1-909-480-9477",
+  "email": "Andrew@bentsonlandscape.com",
+  "image": "https://savcab.github.io/websites/bentson-landscape-upland/assets/p6.jpg",
+  "description": "Residential landscape design and build for Claremont, Upland and the wider Inland Empire, with a water-wise emphasis: kurapia lawn replacement, drought-tolerant and native planting, walkways, steps and dry stream beds.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Upland",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1507185,
+    "longitude": -117.6735547
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Claremont" },
+    { "@type": "City", "name": "Upland" },
+    { "@type": "AdministrativeArea", "name": "Inland Empire" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "07:00",
+      "closes": "15:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "12:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Landscape services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landscape design and build" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kurapia lawn replacement" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drought-tolerant and native planting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Walkways, steps and dry stream beds" } }
+    ]
+  }
+}
+</script>
+</body>
+</html>

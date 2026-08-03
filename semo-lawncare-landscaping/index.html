@@ -9,13 +9,13 @@
 <meta property="og:title" content="SEMO LawnCare &amp; Landscaping — Sikeston, MO">
 <meta property="og:description" content="Professional mowing &amp; landscaping for Sikeston + 45 miles. Stripe-perfect lawns, custom beds, money-back guarantee. Rated 5.0.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://savcab.github.io/websites/semo-lawncare-landscaping/assets/work-05.jpg">
+<meta property="og:image" content="https://semo-lawn-care.com/assets/work-05.jpg">
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="960">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SEMO LawnCare &amp; Landscaping — Sikeston, MO">
 <meta name="twitter:description" content="Professional mowing &amp; landscaping for Sikeston + 45 miles. Stripe-perfect lawns, custom beds, money-back guarantee. Rated 5.0.">
-<meta name="twitter:image" content="https://savcab.github.io/websites/semo-lawncare-landscaping/assets/work-05.jpg">
+<meta name="twitter:image" content="https://semo-lawn-care.com/assets/work-05.jpg">
 <meta property="og:url" content="https://semo-lawn-care.com/">
 <meta property="og:site_name" content="SEMO LawnCare &amp; Landscaping">
 <meta name="robots" content="index,follow">
@@ -1109,7 +1109,7 @@ tailwind.config={theme:{extend:{
 {
   "@context":"https://schema.org","@type":"LandscapingBusiness",
   "name":"SEMO LawnCare & Landscaping LLC",
-  "image":"https://savcab.github.io/websites/semo-lawncare-landscaping/assets/work-05.jpg",
+  "image":"https://semo-lawn-care.com/assets/work-05.jpg",
   "telephone":"+16156649423","email":"SEMOLandScaping@gmail.com",
   "url":"https://semo-lawn-care.com/",
   "priceRange":"$$","areaServed":"45 mile radius of Sikeston, MO",
@@ -1144,6 +1144,31 @@ tailwind.config={theme:{extend:{
   "directApply":true,
   "url":"https://semo-lawn-care.com/#careers"
 }
+</script>
+<!-- awb-cta-tracking: paste before </body> at go-live; replace semo (see awb-go-live Step 6) -->
+<script>
+(function(){
+  function cls(a){
+    if(a.dataset&&a.dataset.track)return a.dataset.track;
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    if(h.indexOf('tel:')===0)return'call';
+    if(h.indexOf('sms:')===0)return'text';
+    if(h.indexOf('mailto:')===0)return'email';
+    if(h.indexOf('/cdn-cgi/l/email-protection')===0)return'email';
+    if(/instagram\.com|facebook\.com/.test(h))return'social';
+    if(/calendly|booksy|squareup|acuityscheduling|setmore/.test(h))return'book';
+    return'';
+  }
+  addEventListener('click',function(ev){
+    try{
+      var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null;
+      if(!a)return;
+      var e=cls(a);
+      if(!e)return;
+      navigator.sendBeacon('/_t',JSON.stringify({k:'semo',e:e,h:a.getAttribute('href').slice(0,200),p:location.pathname.slice(0,100)}));
+    }catch(x){}
+  },true);
+})();
 </script>
 </body>
 </html>

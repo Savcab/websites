@@ -369,11 +369,10 @@
     </div>
   </footer>
 
-<!-- awb-cta-tracking: paste before </body> at go-live; replace xlawncare (see awb-go-live Step 6) -->
+<!-- awb-cta-tracking v2: paste before </body> at go-live; replace xlawncare (see awb-go-live Step 6) -->
 <script>
 (function(){
   function cls(a){
-    if(a.dataset&&a.dataset.track)return a.dataset.track;
     var h=(a.getAttribute('href')||'').toLowerCase();
     if(h.indexOf('tel:')===0)return'call';
     if(h.indexOf('sms:')===0)return'text';
@@ -383,13 +382,18 @@
     if(/calendly|booksy|squareup|acuityscheduling|setmore/.test(h))return'book';
     return'';
   }
+  function lbl(a){
+    var s=(a.dataset&&a.dataset.track)||'';
+    if(!s)s=(a.textContent||'').replace(/\s+/g,' ').trim()||a.getAttribute('aria-label')||'';
+    return s.toLowerCase().slice(0,40);
+  }
   addEventListener('click',function(ev){
     try{
       var a=ev.target&&ev.target.closest?ev.target.closest('a[href]'):null;
       if(!a)return;
-      var e=cls(a);
-      if(!e)return;
-      navigator.sendBeacon('/_t',JSON.stringify({k:'xlawncare',e:e,h:a.getAttribute('href').slice(0,200),p:location.pathname.slice(0,100)}));
+      var e=cls(a),s=lbl(a);
+      if(!e&&!(a.dataset&&a.dataset.track))return;
+      navigator.sendBeacon('/_t',JSON.stringify({k:'xlawncare',e:e||'other',s:s,h:a.getAttribute('href').slice(0,200),p:location.pathname.slice(0,100)}));
     }catch(x){}
   },true);
 })();

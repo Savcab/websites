@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/green-edge-lawn-care-melissa/sitemap.xml

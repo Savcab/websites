@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://savcab.github.io/websites/amazing-lawn-and-landscape-columbia/sitemap.xml

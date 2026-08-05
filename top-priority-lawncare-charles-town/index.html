@@ -1,0 +1,769 @@
+<!--
+  Top Priority Lawncare & Landscapes — Charles Town, WV  (biz_key wv-charles-town-landscaping-top-priority)
+  Template: four-season-snow-landscaper, instantiated 2026-08-04.
+  SNOW BAND REMOVED per the template's snow-band removal rule - no sourced winter/snow service line exists
+  (their own published service list has none; a single truncated aggregator review mentions plowing,
+  which cannot carry a first-party service band). The band's slot is re-composed as the sourced
+  "Open 7 to 9, seven days" band, so the skin's two-tone logic survives with the ice-blue re-encoded
+  as AVAILABILITY rather than winter. See BRIEF.md §4 and provenance.json.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawn Care &amp; Landscaping in Charles Town, WV | Top Priority Lawncare</title>
+<meta name="description" content="Mowing, weed eating, mulch beds and plantings, hardscape and retaining walls for homes around Charles Town and Jefferson County, WV. 4.8&#9733; from 145 reviews. Open 7 am to 9 pm, seven days &mdash; call or text (304) 261-5840.">
+<link rel="canonical" href="https://savcab.github.io/websites/top-priority-lawncare-charles-town/">
+<meta name="theme-color" content="#244b3d">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Top Priority Lawncare &amp; Landscapes — Charles Town, WV">
+<meta property="og:description" content="Mowing, beds and plantings, retaining walls and design around Charles Town and Jefferson County. Open 7 am to 9 pm, seven days a week.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/top-priority-lawncare-charles-town/">
+<meta property="og:image" content="https://savcab.github.io/websites/top-priority-lawncare-charles-town/assets/hero-striped-lawn-charles-town.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23244b3d'/%3E%3Cpath d='M3.4 26.6h25.2L26.6 22H5.4z' fill='%23eef4f0'/%3E%3Cpath d='M6.2 20.6h19.6L24.4 16H7.6z' fill='%23a9cdb9'/%3E%3Cpath d='M8.4 14.6h15.2L22.6 10H9.4z' fill='%23eef4f0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* SPACING — 4/8 grid */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  /* TYPE */
+  --h1:clamp(2.25rem,5.2vw,3.65rem);
+  --h2:clamp(1.7rem,3.4vw,2.6rem);
+  --h3:1.3rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.08; --track-head:-.018em; --track-eye:.16em;
+  /* COLOR — cool four-season ground; never pure black. */
+  --ink:#19272a;
+  --ink-2:#54616a;
+  --ink-3:#667178;   /* WCAG AA for small text: 5.00:1 on #fff, 4.56:1 on --paper */
+  --line:#dde4e1;
+  --paper:#f2f5f3;
+  --paper-2:#e6ece9;
+  --bg:#ffffff;
+  --spruce:#244b3d;   /* brand green — the work (the 30%) */
+  --spruce-d:#163026;
+  --sage:#5d7d68;
+  --sage-tint:#dde9e0;
+  --ice:#2c6e88;      /* accent (the 10%) — here it encodes AVAILABILITY, not winter */
+  --ice-d:#1f5066;
+  --ice-deep:#163b4c; /* availability-band ground */
+  --ice-tint:#d6e6ec;
+  --gold:#c79a3e;     /* star glyphs only */
+  /* RADIUS — tiers by role */
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  /* SHADOW — soft layered, cool-tinted */
+  --sh-1:0 1px 2px rgba(20,35,40,.06);
+  --sh-2:0 2px 5px rgba(20,35,40,.07),0 4px 10px rgba(20,35,40,.05);
+  --sh-3:0 6px 14px rgba(20,35,40,.08),0 16px 30px rgba(20,35,40,.09);
+  --sh-4:0 12px 24px rgba(20,35,40,.10),0 28px 56px rgba(20,35,40,.12);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Mulish",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper)}
+h1,h2,h3,h4{font-family:"Spectral",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+figure{margin:0}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Mulish",sans-serif;font-weight:700;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--ice);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow.on-dark{color:#9fd0e0}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block;flex:none}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.burger svg,.x-btn svg,.lb-btn svg{stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+/* responsive copy — condensed on phones, full on laptop */
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--ice);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--ice-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-green{background:var(--spruce);color:#fff;box-shadow:var(--sh-2)}
+.btn-green:hover{background:var(--spruce-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--spruce);color:var(--spruce)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-white{background:#fff;color:var(--ice-deep);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+:focus-visible{outline:3px solid var(--ice);outline-offset:3px}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:"Spectral",serif;font-weight:700;font-size:1.14rem;color:#fff;letter-spacing:-.01em;transition:color var(--t);min-width:0}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--spruce);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
+.brand .logo svg{width:24px;height:24px}
+.brand b{font-weight:800}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#9fd0e0;display:block;margin-top:1px}
+.nav{display:flex;align-items:center;gap:.3rem}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.93rem;color:rgba(255,255,255,.92);padding:.55rem .65rem;border-radius:8px;transition:color var(--t),background var(--t);white-space:nowrap}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.solid{background:rgba(242,245,243,.93);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .brand{color:var(--ink)}
+.hdr.solid .brand .yr{color:var(--sage)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--spruce);background:var(--sage-tint)}
+.hdr.solid .call-pill{color:var(--spruce);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.9rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .85rem;border-radius:var(--r-pill);transition:var(--t);white-space:nowrap}
+.call-pill:hover{background:rgba(255,255,255,.12)}
+.nav .btn{padding:.7rem 1.1rem;min-height:42px;font-size:.9rem;white-space:nowrap}
+.burger{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.34);background:rgba(16,34,32,.46);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:11px;color:#fff;place-items:center;cursor:pointer;flex:none}
+.hdr.solid .burger{background:var(--sage-tint);border-color:var(--line);color:var(--spruce)}
+.burger svg{width:24px;height:24px}
+/* drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--spruce-d);display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand{color:#fff}
+.drawer a.dlink{font-family:"Spectral",serif;font-size:1.45rem;font-weight:600;color:#eaf2ec;padding:.62rem 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.12);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,92vh,820px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 45%;z-index:-2}
+/* two-part scrim: vertical for the whole frame, plus a soft left wash that carries the
+   text column. Measured at glyph level so the copy clears AA over the bright lawn. */
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,30,28,.66) 0%,rgba(15,30,28,.28) 30%,rgba(15,30,28,.42) 60%,rgba(12,25,23,.86) 100%),linear-gradient(100deg,rgba(11,24,22,.46) 0%,rgba(11,24,22,.24) 42%,rgba(11,24,22,0) 68%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero .eyebrow{color:#bfe0ce}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:19ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.3)}
+.hero h1 em{font-style:italic;font-weight:600;color:#a9d6e6}
+.hero .sub{margin-top:1.15rem;font-size:1.15rem;color:rgba(255,255,255,.93);max-width:54ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+/* what-we-do / when-we-answer split strip */
+.season-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);max-width:690px}
+.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:center;gap:.85rem;color:#fff}
+.season-cell.work{background:linear-gradient(135deg,var(--spruce) 0%,#2c5a48 100%)}
+.season-cell.hoursc{background:linear-gradient(135deg,var(--ice) 0%,var(--ice-d) 100%);transition:filter var(--t)}
+.season-cell.hoursc:hover{filter:brightness(1.1)}
+.season-cell .ci{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
+.season-cell .ci svg{width:23px;height:23px}
+.season-cell .sk{font-family:"Mulish";font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;opacity:.82;display:block}
+.season-cell .sv{font-family:"Spectral";font-weight:600;font-size:1.02rem;line-height:1.25;margin-top:2px;display:block}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== SERVICES ===== */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15.5rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--spruce);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:700}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+/* ===== AVAILABILITY BAND — the signature (replaces the donor's snow band) ===== */
+.oband{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--ice-deep)}
+.oband-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;z-index:-2;opacity:.72}
+.oband-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(15,40,52,.94) 0%,rgba(17,46,60,.84) 44%,rgba(20,55,70,.58) 100%)}
+/* padding kept tight so the 1440x480 source is not upscaled into a tall frame */
+.oband .wrap{position:relative;padding-block:clamp(2.75rem,5vw,4rem)}
+.oband-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.oband h2{font-size:var(--h2);color:#fff;margin-top:.7rem;max-width:20ch}
+.oband .lede{color:rgba(233,244,248,.9);margin-top:1.1rem;max-width:50ch}
+.oband-cta{margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.oband-note{font-size:.87rem;color:rgba(210,230,236,.78);max-width:44ch;margin-top:1.1rem}
+/* the seven-day rail — every day the same window */
+.rail{display:grid;grid-template-columns:repeat(7,1fr);gap:.4rem;margin-top:1.8rem;max-width:34rem}
+.rail-d{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.17);border-radius:var(--r-s);padding:.6rem .2rem .55rem;text-align:center}
+.rail-d .dd{display:block;font-family:"Mulish";font-weight:800;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#9fd0e0}
+.rail-d .dh{display:block;font-family:"Spectral";font-weight:700;font-size:.95rem;color:#fff;margin-top:.25rem;letter-spacing:-.01em}
+.rail-d .dd.d-s{display:none}
+@media (max-width:520px){.rail-d .dd.d-l{display:none}.rail-d .dd.d-s{display:block}.rail{gap:.3rem}.rail-d{padding:.55rem .1rem .5rem}.rail-d .dh{font-size:.82rem}}
+.oband-quote{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-l);padding:1.7rem 1.6rem;box-shadow:var(--sh-3)}
+.oband-quote .icon{width:30px;height:30px;color:#9fd0e0;margin-bottom:.7rem}
+.oband-quote blockquote{font-family:"Spectral",serif;font-size:1.16rem;line-height:1.5;font-style:italic;color:#eef6f9;font-weight:500}
+.oband-quote .by{margin-top:1rem;font-family:"Mulish";font-weight:700;font-size:.9rem;color:#fff;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.oband-quote .by .stars{color:var(--gold)}
+.oband-quote .by .mt{color:rgba(200,224,232,.7);font-weight:600}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;margin:0;width:100%;font:inherit;color:inherit;text-align:left;display:block}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.05)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(15,30,28,.82));color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--ice);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center;max-width:none}
+/* ===== TESTIMONIALS ===== */
+.testi{background:var(--spruce-d);color:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.t-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:var(--r-l);padding:1.7rem 1.6rem;display:flex;flex-direction:column}
+.t-card .stars{margin-bottom:.85rem}
+.t-card blockquote{font-family:"Spectral",serif;font-size:1.08rem;line-height:1.56;color:#eaf2ec;font-weight:500;font-style:italic}
+.t-card .by{margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12);font-family:"Mulish";font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.t-card .by .mt{color:rgba(190,214,200,.72);font-weight:600;font-size:.82rem}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap;max-width:none;text-align:center}
+.t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.t-extra{margin-top:.9rem;text-align:center;font-size:.9rem;color:#a8c0af;max-width:none}
+/* ===== WHY ===== */
+.why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.8rem,4vw,3.5rem);align-items:center}
+.why h2{font-size:var(--h2);margin-top:.7rem}
+.why p{margin-top:1.1rem;color:var(--ink-2)}
+.why-pts{list-style:none;margin-top:1.5rem;display:grid;gap:.7rem}
+.why-pts li{display:flex;align-items:flex-start;gap:.7rem;font-weight:600;color:var(--ink)}
+.why-pts .icon{color:var(--ice);width:1.3rem;height:1.3rem;flex:none;margin-top:.2rem}
+.stat-panel{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);box-shadow:var(--sh-2);padding:clamp(1.4rem,3vw,2.1rem)}
+.stat-panel .sp-h{font-family:"Mulish";font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);padding-bottom:1rem;border-bottom:1px solid var(--line)}
+.stat{display:flex;align-items:baseline;gap:.8rem;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.stat:last-child{border-bottom:0;padding-bottom:.2rem}
+.stat b{font-family:"Spectral",serif;font-weight:800;font-size:2.3rem;line-height:1;color:var(--spruce);letter-spacing:-.02em;min-width:3.6rem}
+.stat span{font-size:.95rem;color:var(--ink-2);font-weight:600}
+.stat .sub{display:block;font-weight:400;font-size:.85rem;color:var(--ink-3)}
+/* ===== AREA ===== */
+.area{background:var(--paper-2)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:start;margin-top:var(--s4)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--sage)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:360px;border:0;filter:saturate(.92)}
+.map-foot{display:flex;align-items:center;gap:.5rem;padding:.85rem 1.1rem;border-top:1px solid var(--line);background:var(--bg);font-size:.9rem;font-weight:700;color:var(--spruce)}
+.map-foot .icon{width:1.05rem;height:1.05rem;color:var(--ice)}
+/* ===== CONTACT ===== */
+.ct-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1.2rem;margin-top:var(--s5);align-items:start}
+.ct-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.ct-card.call{display:flex;flex-direction:column}
+.ct-card .big-phone{font-family:"Spectral",serif;font-weight:700;font-size:clamp(1.75rem,5vw,2.6rem);color:var(--spruce);letter-spacing:-.01em;margin:.6rem 0 .3rem;display:inline-flex;align-items:center;gap:.6rem}
+.ct-card .big-phone .icon{width:1.5rem;height:1.5rem;color:var(--ice)}
+.ct-sub{color:var(--ink-2);font-size:.98rem}
+.ct-actions{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.5rem}
+.ct-actions .btn{padding:.95rem 1rem}
+.review-btn{margin-top:.8rem}
+.review-btn .btn{width:100%;background:var(--paper-2);color:var(--spruce);border-color:var(--line)}
+.review-btn .btn:hover{background:var(--sage-tint)}
+.hours-panel{background:var(--spruce);color:#fff;border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--sh-2)}
+.hours-panel h3{color:#fff;font-size:1.3rem;display:flex;align-items:center;gap:.6rem}
+.hours-panel h3 .icon{color:#bfe0ce}
+.hours-table{margin-top:1.2rem;width:100%;border-collapse:collapse}
+.hours-table td{padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.95rem}
+.hours-table td:last-child{text-align:right;font-weight:700;color:#eaf2ec;white-space:nowrap}
+.hours-foot{margin-top:1.3rem;font-size:.9rem;color:#cfe0d4;display:flex;align-items:flex-start;gap:.55rem}
+.hours-foot .icon{color:#bfe0ce;width:1.15rem;height:1.15rem;margin-top:3px;flex:none}
+.nap{margin-top:1.3rem;padding-top:1.3rem;border-top:1px solid rgba(255,255,255,.14);font-size:.92rem;color:#dceae0;line-height:1.6}
+.nap b{color:#fff}
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#c4cdcf}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand .brand{color:#fff;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#9aa4a7;max-width:36ch;line-height:1.6}
+.foot-col h4{font-family:"Mulish";font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8f9a9d;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c4cdcf;padding:.28rem 0;line-height:1.5;max-width:none}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.1);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#9aa4a7}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(242,245,243,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(20,35,40,.1);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem;min-width:0}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(12,22,20,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#eaf2ec;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(22px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:1000px){
+  /* Below 1000px the link row + call pill can no longer coexist with the full
+     wordmark — the wordmark's second line ran into the nav. Hand navigation to
+     the drawer, which carries all six links (incl. Reviews and Contact). */
+  .nav .link,.nav .btn{display:none}
+  .burger{display:grid}
+}
+@media (max-width:920px){
+  .oband-grid,.why-grid,.area-grid,.ct-grid{grid-template-columns:1fr}
+  /* stacked band is tall, so this wide crop would zoom ~2x: drop it back to a
+     texture over the ice ground rather than showing a soft, over-scaled photo */
+  .oband-img{opacity:.4}
+  .oband-scrim{background:linear-gradient(180deg,rgba(15,40,52,.9) 0%,rgba(17,46,60,.84) 55%,rgba(20,55,70,.8) 100%)}
+  .oband-quote{max-width:34rem}
+  .stat-panel{max-width:34rem}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:780px){
+  /* phone moves out of the bar into the sticky call/text CTA */
+  .call-pill{display:none}
+  .sticky-cta{display:flex}
+  .hours-foot{margin-top:1rem}
+  footer{padding-bottom:5.5rem}
+  /* compact wordmark so it never wraps past the bar */
+  .hdr-in{height:64px}
+  .hdr-in .brand{font-size:1.02rem;line-height:1.1}
+  .hdr-in .brand .logo{width:34px;height:34px}
+  .hdr-in .brand .logo svg{width:21px;height:21px}
+  .hdr-in .brand .yr{display:none}
+  /* hero flows from just below the fixed header */
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:540px){
+  .season-strip{grid-template-columns:1fr}
+  .ct-actions{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+  .stat b{font-size:2rem;min-width:3.1rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-wall" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 9v6"/><path d="M16 15v6"/><path d="M16 3v6"/><path d="M3 15h18"/><path d="M3 9h18"/><path d="M8 15v6"/><path d="M8 3v6"/></symbol>
+<symbol id="i-spray" viewBox="0 0 24 24"><path d="M3 3h.01"/><path d="M7 5h.01"/><path d="M11 7h.01"/><path d="M3 7h.01"/><path d="M7 9h.01"/><path d="M3 11h.01"/><rect width="4" height="4" x="15" y="5"/><path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2"/><path d="m13 14 8-2"/><path d="m13 19 8-2"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-nav" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+<symbol id="i-mark" viewBox="0 0 32 32"><path d="M3.4 26.6h25.2L26.6 22H5.4z" fill="#eef4f0" stroke="none"/><path d="M6.2 20.6h19.6L24.4 16H7.6z" fill="#a9cdb9" stroke="none"/><path d="M8.4 14.6h15.2L22.6 10H9.4z" fill="#eef4f0" stroke="none"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Top Priority Lawncare &amp; Landscapes home">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#i-mark"/></svg></span>
+      <span>Top Priority <b>Lawncare</b><span class="yr">&amp; Landscapes &middot; Charles Town WV</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#open">Open 7 Days</a>
+      <a class="link" href="#work">Our Work</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>(304) 261-5840</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#i-mark"/></svg></span>Top Priority</span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#open">Open 7 Days</a>
+  <a class="dlink" href="#work">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>Call (304) 261-5840</a>
+    <a class="btn btn-ghost on-dark" href="sms:+13042615840"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+  </div>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="assets/hero-striped-lawn-charles-town.jpg" alt="Freshly mown and striped front lawn at a Charles Town, West Virginia home with flowering trees in bloom" width="1440" height="810" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow"><span class="tick"></span><span class="only-lap">Lawn care &amp; landscaping &middot; Charles Town, WV</span><span class="only-mob">Charles Town, WV</span></span>
+    <h1>Mowing, beds and walls in Charles Town, <em>seven days a week</em>.</h1>
+    <p class="sub"><span class="only-lap">Mowing and weed eating, mulch beds and plantings, retaining walls and design &mdash; for homes around Charles Town and the rest of Jefferson County. Tell us what the yard needs and we&rsquo;ll come look at it.</span><span class="only-mob">Mowing, beds, plantings and walls around Charles Town.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost on-dark" href="#work">See our work</a>
+    </div>
+    <a class="rate-badge" href="https://maps.google.com/?cid=1455476415660974827" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+      <span><b>4.8</b> &middot; 145 Google reviews</span>
+    </a>
+    <div class="season-strip">
+      <div class="season-cell work">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-sprout"/></svg></span>
+        <span><span class="sk">What we handle</span><span class="sv">Lawns, beds, walls &amp; design</span></span>
+      </div>
+      <a class="season-cell hoursc" href="#open">
+        <span class="ci" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span>
+        <span><span class="sk">When we answer</span><span class="sv">7 am &ndash; 9 pm, all seven days</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>Mowing to masonry</span>
+      <h2>The work we get called for.</h2>
+      <p class="lede">Here it is in plain terms &mdash; if what you need isn&rsquo;t on the list, call and ask.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-sprout"/></svg></span>
+        <h3>Mowing &amp; lawn care</h3>
+        <p>Mowing and weed eating on whatever schedule the yard needs, plus grass seeding when a lawn has to be brought back.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        <h3>Shrubs, plantings &amp; mulch beds</h3>
+        <p>Fresh mulch, new bed edges cut in by hand, shrubs and plantings, and the regular trimming that keeps a bed from going back to weeds.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-wall"/></svg></span>
+        <h3>Hardscape, walls &amp; design</h3>
+        <p>Retaining walls, hardscape and landscape design &mdash; the bigger jobs that change how a yard works, not just how it is cut.</p>
+      </article>
+      <article class="svc rv">
+        <span class="ic" aria-hidden="true"><svg class="icon"><use href="#i-spray"/></svg></span>
+        <h3>Cleaning services</h3>
+        <p>We run a cleaning side of the business alongside the outdoor work. Call and ask what we cover &mdash; it depends on the job.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY BAND — the signature -->
+<section class="oband" id="open">
+  <img class="oband-img" src="assets/band-front-lawn-mulch-bed.jpg" alt="Striped front lawn and a stone-edged mulch bed at a home in Charles Town, West Virginia" width="1440" height="480" loading="lazy" decoding="async">
+  <div class="oband-scrim"></div>
+  <div class="wrap">
+    <div class="oband-grid">
+      <div class="oband-copy rv">
+        <span class="eyebrow on-dark"><span class="tick"></span>Open 7 am to 9 pm</span>
+        <h2>The same hours every day, including Sunday.</h2>
+        <p class="lede">It&rsquo;s our mobile number, open from seven in the morning until nine at night, Monday through Sunday. Call it or text it &mdash; the same number does both.</p>
+        <div class="rail" role="group" aria-label="Open 7:00 AM to 9:00 PM, Monday through Sunday">
+          <div class="rail-d"><span class="dd d-l">Mon</span><span class="dd d-s">M</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Tue</span><span class="dd d-s">T</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Wed</span><span class="dd d-s">W</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Thu</span><span class="dd d-s">T</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Fri</span><span class="dd d-s">F</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Sat</span><span class="dd d-s">S</span><span class="dh">7&ndash;9</span></div>
+          <div class="rail-d"><span class="dd d-l">Sun</span><span class="dd d-s">S</span><span class="dh">7&ndash;9</span></div>
+        </div>
+        <div class="oband-cta">
+          <a class="btn btn-white" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>Call (304) 261-5840</a>
+          <a class="btn btn-ghost on-dark" href="sms:+13042615840"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+        </div>
+        <p class="oband-note">If we&rsquo;re out on a mower and miss the ring, a text still gets through.</p>
+      </div>
+      <figure class="oband-quote rv">
+        <svg class="icon"><use href="#i-quote"/></svg>
+        <blockquote>Great service, my lawn was 3 weeks behind and wrote him early this morning and he was able to come same day on short notice with good pricing! Great communication would definitely recommend!</blockquote>
+        <figcaption class="by"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span> Jessica M. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Around Jefferson County</span>
+      <h2>Lawns, beds and the bigger jobs.</h2>
+      <p class="lede">From jobs around Charles Town and the towns next to it.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="gal-item rv" type="button"><img src="assets/gallery-mown-lawn-white-fence.jpg" alt="Striped mown lawn beside a white picket fence in a Jefferson County, West Virginia neighborhood" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">Mown and striped, along the white fence</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/gallery-curved-mulch-bed-plantings.jpg" alt="Curved garden bed filled with fresh mulch and new plantings, edge cut in along the lawn" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">New curved bed, mulched and planted</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/gallery-front-bed-shrubs-mulch.jpg" alt="Front foundation bed re-mulched around trimmed shrubs at a house" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">Front beds re-mulched around the shrubs</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/gallery-bed-edging-along-fence.jpg" alt="Freshly cut bed edge running along a wooden privacy fence, soil turned and ready" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">Fresh bed cut in along the fence line</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/gallery-black-mulch-bed-corner.jpg" alt="New black mulch bed with young plants at the corner of a brick house" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">Black mulch bed at the corner of the house</span></button>
+      <button class="gal-item rv" type="button"><img src="assets/gallery-skid-steer-graded-lot.jpg" alt="Skid-steer loader on a freshly graded bare lot at a job site" width="900" height="675" loading="lazy" decoding="async"><span class="gal-cap">Grading a bare lot with the skid steer</span></button>
+    </div>
+    <p class="gal-note">Photos from our own Facebook page.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section testi" id="reviews">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow on-dark"><span class="tick"></span>145 reviews later</span>
+      <h2>What people said after we left.</h2>
+    </div>
+    <div class="t-grid">
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>Chad came through for us when the first application of grass seed didn&rsquo;t take because we didn&rsquo;t know to water. We are impressed with how professional he is and love the way he stands behind his service.</blockquote>
+        <figcaption class="by">Ann C. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+      <figure class="t-card rv">
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>Very professional and fast service. Job well done every time. Have had them do my lawn for 4 yrs now. Never disappointed. 10/10 would recommend.</blockquote>
+        <figcaption class="by">Robert A. <span class="mt">&middot; Google review</span></figcaption>
+      </figure>
+    </div>
+    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.8</b> out of 5 &middot; 145 Google reviews &middot; <a href="https://maps.google.com/?cid=1455476415660974827" target="_blank" rel="noopener">Read them on Google</a></p>
+    <p class="t-extra">Nextdoor lists us as a Neighborhood Favorite in Bolivar, too.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap why-grid">
+    <div class="why rv">
+      <span class="eyebrow"><span class="tick"></span>One number</span>
+      <h2>Sixteen years, and one number for all of it.</h2>
+      <p>We&rsquo;re based on Summit Point Road in Charles Town, and the same number covers the whole list &mdash; the weekly mow, the bed that needs redoing, the retaining wall you&rsquo;ve been putting off, and the cleaning side too. It rings the people who actually do the work.</p>
+      <ul class="why-pts">
+        <li><svg class="icon"><use href="#i-check"/></svg>Open 7 am to 9 pm, seven days a week</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Free quotes &mdash; call or text and we come look</li>
+        <li><svg class="icon"><use href="#i-check"/></svg>Lawns, beds, walls, design &mdash; and the cleaning side</li>
+      </ul>
+      <div class="hero-cta" style="margin-top:1.7rem">
+        <a class="btn btn-green" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="stat-panel rv">
+      <p class="sp-h">Where we stand today</p>
+      <div class="stat"><b>4.8</b><span>average rating<span class="sub">out of 5 on Google</span></span></div>
+      <div class="stat"><b>145</b><span>reviews<span class="sub">on our Google listing</span></span></div>
+      <div class="stat"><b>16</b><span>years in business<span class="sub">in our own words</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area" id="area">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="eyebrow"><span class="tick"></span>Where we mow</span>
+      <h2>Charles Town and the rest of Jefferson County.</h2>
+    </div>
+    <div class="area-grid">
+      <div class="rv">
+        <p class="lede">From Summit Point Road we cover the towns around us:</p>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Charles Town</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Ranson</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Summit Point</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Rippon</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Middleway</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Kearneysville</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Bolivar</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Harpers Ferry</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Shepherdstown</span>
+        </div>
+        <p class="note">Not sure you&rsquo;re in range? Call or text &mdash; if you&rsquo;re in Jefferson County it&rsquo;s probably a yes.</p>
+      </div>
+      <div class="map-frame rv">
+        <iframe title="Map of Top Priority Lawncare &amp; Landscapes at 4828 Summit Point Rd, Charles Town, West Virginia" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-77.9330952%2C39.2473659%2C-77.9210952%2C39.2593659&amp;layer=mapnik&amp;marker=39.2533659%2C-77.9270952"></iframe>
+        <a class="map-foot" href="https://www.google.com/maps/dir/?api=1&amp;destination=4828%20Summit%20Point%20Rd%2C%20Charles%20Town%2C%20WV%2025414&amp;destination_place_id=ChIJ486_14cHtokR62JurhbkMhQ" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg>Get directions to 4828 Summit Point Rd</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="shead center rv">
+      <span class="eyebrow"><span class="tick"></span>Start here</span>
+      <h2>Tell us what the yard needs.</h2>
+      <p class="lede">Call or text and we&rsquo;ll set up a free quote &mdash; a weekly mow, a one-off cleanup, a wall, or the cleaning side.</p>
+    </div>
+    <div class="ct-grid">
+      <div class="ct-card call rv">
+        <span class="eyebrow"><span class="tick"></span>Call or text</span>
+        <a class="big-phone" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>(304) 261-5840</a>
+        <p class="ct-sub">The same number does both, seven days a week from 7 am to 9 pm.</p>
+        <div class="ct-actions">
+          <a class="btn btn-primary" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>Call now</a>
+          <a class="btn btn-green" href="sms:+13042615840"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+        </div>
+        <div class="review-btn">
+          <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJ486_14cHtokR62JurhbkMhQ" target="_blank" rel="noopener"><svg class="icon fill" style="color:var(--gold)"><use href="#i-star"/></svg>Leave us a Google review</a>
+        </div>
+      </div>
+      <div class="hours-panel rv">
+        <h3><svg class="icon"><use href="#i-clock"/></svg>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Thursday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Friday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Saturday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+          <tr><td>Sunday</td><td>7:00 AM &ndash; 9:00 PM</td></tr>
+        </table>
+        <p class="hours-foot"><svg class="icon"><use href="#i-clock"/></svg>Same window every day of the week, weekends included.</p>
+        <div class="nap">
+          <b>Top Priority Lawncare and Landscapes &amp; cleaning services</b><br>
+          4828 Summit Point Rd, Charles Town, WV 25414<br>
+          <a href="tel:+13042615840" style="color:#fff;font-weight:700">(304) 261-5840</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#i-mark"/></svg></span><span>Top Priority <b style="font-weight:800">Lawncare</b></span></span>
+      <p>Lawn care, landscaping and cleaning services for Charles Town, Ranson and the rest of Jefferson County, West Virginia.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Explore</h4>
+      <a href="#services">Services</a>
+      <a href="#open">Open 7 Days</a>
+      <a href="#work">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+    </div>
+    <div class="foot-col">
+      <h4>Get in touch</h4>
+      <a href="tel:+13042615840">(304) 261-5840</a>
+      <a href="sms:+13042615840">Text us</a>
+      <p>4828 Summit Point Rd<br>Charles Town, WV 25414</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ486_14cHtokR62JurhbkMhQ" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Top Priority Lawncare and Landscapes &amp; cleaning services &middot; Charles Town, WV</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 4.8 &middot; 145 Google reviews</span>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+13042615840"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-green" href="sms:+13042615840"><svg class="icon"><use href="#i-msg"/></svg>Text</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-cl"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Top Priority Lawncare and Landscapes & cleaning services",
+  "description":"Mowing, weed eating, grass seeding, mulch beds and plantings, hardscape, retaining walls and landscape design, plus cleaning services, for Charles Town and Jefferson County, West Virginia.",
+  "image":"https://savcab.github.io/websites/top-priority-lawncare-charles-town/assets/hero-striped-lawn-charles-town.jpg",
+  "url":"https://savcab.github.io/websites/top-priority-lawncare-charles-town/",
+  "telephone":"+13042615840",
+  "address":{"@type":"PostalAddress","streetAddress":"4828 Summit Point Rd","addressLocality":"Charles Town","addressRegion":"WV","postalCode":"25414","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":39.2533659,"longitude":-77.9270952},
+  "areaServed":[
+    {"@type":"City","name":"Charles Town"},
+    {"@type":"City","name":"Ranson"},
+    {"@type":"City","name":"Summit Point"},
+    {"@type":"City","name":"Rippon"},
+    {"@type":"City","name":"Middleway"},
+    {"@type":"City","name":"Kearneysville"},
+    {"@type":"City","name":"Bolivar"},
+    {"@type":"City","name":"Harpers Ferry"},
+    {"@type":"City","name":"Shepherdstown"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    if(hdr) hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // drawer
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){if(!drawer)return;drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');if(burger)burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  if(drawer){drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});}
+
+  // reveal
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  // lightbox
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function openLb(i){if(!items.length)return;idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function closeLb(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  if(lb&&items.length){
+    items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;openLb(i);});});
+    document.getElementById('lbClose').addEventListener('click',closeLb);
+    document.getElementById('lbNext').addEventListener('click',function(){openLb(idx+1);});
+    document.getElementById('lbPrev').addEventListener('click',function(){openLb(idx-1);});
+    lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+    document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();else if(e.key==='ArrowRight')openLb(idx+1);else if(e.key==='ArrowLeft')openLb(idx-1);});
+  }
+})();
+</script>
+</body>
+</html>

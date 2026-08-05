@@ -51,7 +51,7 @@
   --panel-2:#181510;
   --paper:#EDE8DE;
   --paper-dim:rgba(237,232,222,.62);
-  --paper-faint:rgba(237,232,222,.38);
+  --paper-faint:rgba(237,232,222,.52); /* 4.84:1+ on ink/panel/footer — WCAG AA */
   --gold:#C9A24A;
   --gold-soft:rgba(201,162,74,.55);
   --hair:rgba(237,232,222,.12);
@@ -130,8 +130,36 @@ section{padding:clamp(72px,10vw,120px) 0}
 .btn-gold .icon{stroke:#151208}
 .btn-ghost{border:1px solid var(--hair-gold);color:var(--paper)}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
-.btn-bar{padding:10px 18px;font-size:12px}
+.btn-bar{padding:10px 18px;font-size:12px;white-space:nowrap}
+.btn-call{display:none}
 a:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ---------- mobile nav (disclosure, <=920px only) ---------- */
+.m-nav{display:none}
+.m-nav summary{
+  list-style:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border:1px solid var(--hair-gold);flex:none;
+}
+.m-nav summary::-webkit-details-marker{display:none}
+.m-nav summary:hover,.m-nav[open] summary{border-color:var(--gold)}
+.m-nav summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.m-nav .ico-close{display:none}
+.m-nav[open] .ico-close{display:block}
+.m-nav[open] .ico-open{display:none}
+.m-nav-panel{
+  position:absolute;left:0;right:0;top:100%;
+  background:rgba(13,12,10,.97);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--hair-gold);
+}
+.m-nav-panel a{
+  display:block;padding:15px clamp(20px,5vw,48px);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  text-decoration:none;color:var(--paper-dim);
+  border-top:1px solid var(--hair);transition:color .2s;
+}
+.m-nav-panel a:hover{color:var(--gold)}
 
 /* ---------- hero ---------- */
 .hero{
@@ -293,6 +321,7 @@ footer{border-top:1px solid var(--hair);padding:44px 0 40px;background:#0B0A08}
 /* ---------- responsive ---------- */
 @media (max-width:920px){
   .bar-nav{display:none}
+  .m-nav{display:block}
   .about-grid{grid-template-columns:1fr;gap:44px}
   .area-grid{grid-template-columns:1fr}
   .map-box{min-height:340px}
@@ -305,9 +334,15 @@ footer{border-top:1px solid var(--hair);padding:44px 0 40px;background:#0B0A08}
   .quotes{grid-template-columns:1fr}
   .btn-ghost-bar{display:none}
 }
+@media (max-width:480px){
+  .btn-num{display:none}
+  .btn-call{display:inline}
+}
 @media (max-width:400px){
   .wordmark small{display:none}
   .btn{padding:13px 20px}
+  .bar-in{gap:12px}
+  .btn-bar{padding:10px 14px}
 }
 </style>
 </head>
@@ -328,6 +363,8 @@ footer{border-top:1px solid var(--hair);padding:44px 0 40px;background:#0B0A08}
     <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
     <symbol id="i-nav" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
     <!-- decorative fine-line palmetto frond (Lowcountry motif — decorative only) -->
     <symbol id="i-frond" viewBox="0 0 200 200">
       <g fill="none" stroke="#C9A24A" stroke-width="1.1" stroke-linecap="round">
@@ -360,10 +397,22 @@ footer{border-top:1px solid var(--hair);padding:44px 0 40px;background:#0B0A08}
     </nav>
     <div class="bar-cta">
       <a class="btn btn-ghost btn-bar btn-ghost-bar" href="sms:+18432613608">Text us</a>
-      <a class="btn btn-gold btn-bar" href="tel:+18432613608">
+      <a class="btn btn-gold btn-bar" href="tel:+18432613608" aria-label="Call (843) 261-3608">
         <svg class="icon icon-sm" aria-hidden="true"><use href="#i-phone"/></svg>
-        (843) 261-3608
+        <span class="btn-num">(843) 261-3608</span><span class="btn-call">Call</span>
       </a>
+      <details class="m-nav">
+        <summary aria-label="Section menu">
+          <svg class="icon icon-sm ico-open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon-sm ico-close" aria-hidden="true"><use href="#i-x"/></svg>
+        </summary>
+        <nav class="m-nav-panel" aria-label="Sections">
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#area">Service area</a>
+        </nav>
+      </details>
     </div>
   </div>
 </header>
@@ -583,6 +632,12 @@ footer{border-top:1px solid var(--hair);padding:44px 0 40px;background:#0B0A08}
     </div>
   </div>
 </footer>
+
+<script>
+document.querySelectorAll('.m-nav-panel a').forEach(function(a){
+  a.addEventListener('click',function(){document.querySelector('.m-nav').removeAttribute('open')});
+});
+</script>
 
 </body>
 </html>

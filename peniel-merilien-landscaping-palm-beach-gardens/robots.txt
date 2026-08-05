@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/peniel-merilien-landscaping-palm-beach-gardens/sitemap.xml

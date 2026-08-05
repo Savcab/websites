@@ -74,8 +74,7 @@
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
   ],
-  "sameAs": ["https://www.bbb.org/us/ca/roseville/profile/landscape-contractors/flowrite-landscaping-1156-90035458"],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "18" }
+  "sameAs": ["https://www.bbb.org/us/ca/roseville/profile/landscape-contractors/flowrite-landscaping-1156-90035458"]
 }
 </script>
 
@@ -157,7 +156,8 @@ img{display:block; max-width:100%; height:auto}
 /* ---------- header ---------- */
 .hdr{position:fixed; inset:0 0 auto 0; z-index:60; transition:background var(--t), box-shadow var(--t), border-color var(--t); border-bottom:1px solid transparent}
 .hdr.solid{background:rgba(247,243,234,.92); backdrop-filter:saturate(160%) blur(10px); -webkit-backdrop-filter:saturate(160%) blur(10px); box-shadow:var(--sh-1); border-bottom-color:var(--line)}
-.hdr:not(.solid) .brand{color:#fff}
+.hdr:not(.solid) .brand,
+.hdr:not(.solid) .brand .g{color:#fff; text-shadow:0 1px 3px rgba(15,26,18,.6), 0 2px 12px rgba(15,26,18,.4)}
 .hdr:not(.solid) .nav a.lk{color:#ece8dd}
 .hdr:not(.solid) .nav a.lk:hover, .hdr:not(.solid) .nav a.lk.active{color:#fff}
 .hdr:not(.solid) .menu-btn{background:rgba(247,243,234,.14); border-color:rgba(247,243,234,.38); color:#fff}
@@ -168,7 +168,7 @@ img{display:block; max-width:100%; height:auto}
 .brand .mark{width:38px;height:38px;flex:0 0 auto; border-radius:11px; background:var(--forest); display:grid; place-items:center}
 .brand .mark svg{width:23px;height:23px;color:var(--moss)}
 .brand b{font-weight:600}
-.brand .g{color:var(--sage)}
+.brand .g{color:var(--forest)}
 .nav{display:flex; align-items:center; gap:var(--s4)}
 .nav a.lk{font-family:'Hanken Grotesk',sans-serif; font-weight:500; font-size:.96rem; color:var(--ink-2); position:relative; padding:.3rem 0; transition:color var(--t)}
 .nav a.lk::after{content:""; position:absolute; left:0; right:100%; bottom:-2px; height:2px; background:var(--clay); transition:right var(--t)}
@@ -232,6 +232,8 @@ section{position:relative}
 .sec-head h2{margin-top:.9rem}
 .sec-head p{margin-top:1rem}
 .sec-head.center p{margin-inline:auto}
+.sec-deco{position:absolute; top:-1.5rem; right:0; width:min(42vw,480px); height:auto; pointer-events:none; opacity:.09; color:var(--sage); z-index:-1}
+@media(max-width:880px){.sec-deco{display:none}}
 
 /* ---------- trust / stat strip (real-data only — visual_floor c) ---------- */
 .stats{background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
@@ -248,7 +250,7 @@ section{position:relative}
 .tend-grid{display:grid; grid-template-columns:repeat(1,1fr); gap:1.3rem; margin-top:var(--s5)}
 @media(min-width:560px){.tend-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:880px){.tend-grid{grid-template-columns:repeat(4,1fr)}}
-.tend-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--r-l); padding:1.8rem 1.6rem; box-shadow:var(--sh-1); transition:transform var(--t), box-shadow var(--t), border-color var(--t)}
+.tend-card{background:#fffdf9; border:1px solid var(--line); border-radius:var(--r-l); padding:1.8rem 1.6rem; box-shadow:var(--sh-2); transition:transform var(--t), box-shadow var(--t), border-color var(--t)}
 .sec-paper2 .tend-card{background:#fbf8f1}
 .tend-card:hover{transform:translateY(-4px); box-shadow:var(--sh-3); border-color:var(--moss)}
 .tend-ic{width:54px;height:54px;border-radius:var(--r-m); background:var(--moss-tint); display:grid; place-items:center; margin-bottom:1.1rem}
@@ -470,6 +472,7 @@ html.js .rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2
 
 <!-- ============ WHAT WE HANDLE ============ -->
 <section class="sec" id="services">
+  <svg class="sec-deco" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M17 4c-6 0-10 3.2-10 8.4 0 1 .2 2 .5 2.9.9-3 3.2-5.3 6.3-6.4-2.3 1.6-3.8 4-4.3 6.8.8.2 1.6.3 2.5.3 5 0 8-3.8 8-8.6 0-1.7-.5-3.4-1.7-5.1 0 0-.9 1.3-2.1 1.3S17 4 17 4z" fill="currentColor"/></svg>
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow"><svg class="leaf" viewBox="0 0 24 24" fill="none"><path d="M17 4c-6 0-10 3.2-10 8.4 0 1 .2 2 .5 2.9.9-3 3.2-5.3 6.3-6.4-2.3 1.6-3.8 4-4.3 6.8.8.2 1.6.3 2.5.3 5 0 8-3.8 8-8.6 0-1.7-.5-3.4-1.7-5.1 0 0-.9 1.3-2.1 1.3S17 4 17 4z" fill="currentColor"/></svg>What we handle</span>
@@ -586,7 +589,7 @@ html.js .rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow"><svg class="leaf" viewBox="0 0 24 24" fill="none"><path d="M17 4c-6 0-10 3.2-10 8.4 0 1 .2 2 .5 2.9.9-3 3.2-5.3 6.3-6.4-2.3 1.6-3.8 4-4.3 6.8.8.2 1.6.3 2.5.3 5 0 8-3.8 8-8.6 0-1.7-.5-3.4-1.7-5.1 0 0-.9 1.3-2.1 1.3S17 4 17 4z" fill="currentColor"/></svg>What Roseville says</span>
-      <h2>Homeowners on what it's like working with us.</h2>
+      <h2>Word gets around when the drainage actually works.</h2>
     </div>
     <div class="testi-grid">
       <figure class="quote-card rv">
@@ -618,7 +621,7 @@ html.js .rv.in{opacity:1; transform:none; transition:opacity .7s cubic-bezier(.2
     <div class="area-grid">
       <div class="rv">
         <span class="eyebrow"><svg class="leaf" viewBox="0 0 24 24" fill="none"><path d="M17 4c-6 0-10 3.2-10 8.4 0 1 .2 2 .5 2.9.9-3 3.2-5.3 6.3-6.4-2.3 1.6-3.8 4-4.3 6.8.8.2 1.6.3 2.5.3 5 0 8-3.8 8-8.6 0-1.7-.5-3.4-1.7-5.1 0 0-.9 1.3-2.1 1.3S17 4 17 4z" fill="currentColor"/></svg>Close to home</span>
-        <h2>Based in Roseville, out across Placer County.</h2>
+        <h2>Working out of Roseville, not commuting into it.</h2>
         <p class="lede">We're at 105 Sprig Court and keep our routes tight around it, so you get a crew that actually knows the area — not a subcontractor driving in from across the valley. We work in:</p>
         <div class="chips">
           <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Roseville</span>

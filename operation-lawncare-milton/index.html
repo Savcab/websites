@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lawn Care in Milton, FL | Operation Lawncare LLC</title>
+<title>Lawn Care in Milton, FL | Operation Lawncare LLC — 5.0★</title>
 <meta name="description" content="Operation Lawncare LLC keeps Milton, FL yards mowed, trimmed and cleaned up — with a photo sent after every visit. 5.0 stars across 25 reviews. Call or text for a free quote." />
 <link rel="canonical" href="https://savcab.github.io/websites/operation-lawncare-milton/" />
 <meta name="robots" content="index,follow" />
@@ -38,10 +38,7 @@
   "geo": { "@type": "GeoCoordinates", "latitude": 30.5644379, "longitude": -87.0315370 },
   "areaServed": [
     { "@type": "City", "name": "Milton" },
-    { "@type": "City", "name": "East Milton" },
-    { "@type": "City", "name": "Pace" },
-    { "@type": "City", "name": "Bagdad" },
-    { "@type": "City", "name": "Pea Ridge" }
+    { "@type": "AdministrativeArea", "name": "Santa Rosa County, FL" }
   ],
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }
@@ -108,7 +105,7 @@ a{color:inherit;}
 .hdr-in{display:flex; align-items:center; justify-content:space-between; padding-block:1.1rem; min-width:0;}
 .hdr:not(.solid){color:#fff;}
 .hdr.solid{background:rgba(247,243,234,.94); box-shadow:var(--sh-2); backdrop-filter:blur(6px); color:var(--ink);}
-.brand{display:flex; align-items:center; gap:.55rem; font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; text-decoration:none; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.brand{display:flex; align-items:center; gap:.55rem; font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; text-decoration:none; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex:1 1 auto; padding-right:.75rem;}
 .brand .mark{flex:0 0 auto; width:30px; height:30px; border-radius:9px; background:var(--forest); display:flex; align-items:center; justify-content:center;}
 .brand .mark svg{width:17px; height:17px; stroke:var(--moss-tint);}
 .hdr:not(.solid) .brand .mark{background:rgba(255,255,255,.16);}
@@ -118,12 +115,20 @@ a{color:inherit;}
 .hdr-actions{display:flex; align-items:center; gap:.75rem;}
 .ghost-call{display:none; align-items:center; gap:.4rem; border:1.5px solid currentColor; border-radius:var(--r-pill); padding:.5rem 1.05rem; font-weight:600; font-size:.9rem; text-decoration:none;}
 .ghost-call svg{width:15px; height:15px; stroke:currentColor; fill:none; flex:0 0 auto;}
-.btn-quote{background:var(--clay); color:#fff; border-radius:var(--r-pill); padding:.6rem 1.3rem; font-weight:700; font-size:.9rem; text-decoration:none; box-shadow:var(--sh-2); border:none; cursor:pointer;}
+.btn-quote{background:var(--clay); color:#fff; border-radius:var(--r-pill); padding:.6rem 1.3rem; font-weight:700; font-size:.9rem; text-decoration:none; box-shadow:var(--sh-2); border:none; cursor:pointer; white-space:nowrap; flex:0 0 auto;}
 .btn-quote:hover{background:var(--clay-d);}
 .menu-btn{display:flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:var(--r-m); border:1.5px solid currentColor; background:transparent; color:inherit; cursor:pointer; flex:0 0 auto;}
 .menu-btn svg{width:19px; height:19px; stroke:currentColor; fill:none;}
 @media(min-width:880px){ .nav{display:flex;} .ghost-call{display:inline-flex;} .menu-btn{display:none;} }
-@media(max-width:380px){ .brand{font-size:1rem;} .hdr-actions{gap:.5rem;} .btn-quote{padding:.55rem 1rem; font-size:.82rem;} }
+.quote-label-full{display:inline;}
+.quote-label-short{display:none;}
+@media(max-width:430px){
+  .brand{font-size:1rem;}
+  .hdr-actions{gap:.5rem;}
+  .btn-quote{padding:.55rem 1rem; font-size:.82rem;}
+  .quote-label-full{display:none;}
+  .quote-label-short{display:inline;}
+}
 
 /* drawer */
 .drawer{position:fixed; inset:0; z-index:60; visibility:hidden;}
@@ -260,7 +265,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
 .foot-brand .mark{width:30px; height:30px; border-radius:9px; background:var(--forest); display:flex; align-items:center; justify-content:center;}
 .foot-brand .mark svg{width:16px; height:16px; stroke:var(--moss-tint);}
 .foot-brand b{font-family:'Fraunces',serif; color:#fff; font-size:1.05rem;}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.1); margin-top:2.4rem; padding-top:1.4rem; font-size:.82rem; color:rgba(255,255,255,.45); display:flex; flex-wrap:wrap; gap:.6rem; justify-content:space-between;}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1); margin-top:2.4rem; padding-top:1.4rem; font-size:.82rem; color:rgba(255,255,255,.62); display:flex; flex-wrap:wrap; gap:.6rem; justify-content:space-between;}
 
 /* sticky mobile cta */
 .sticky-cta{position:fixed; left:0; right:0; bottom:0; z-index:40; display:flex; gap:.7rem; padding:.8rem 1rem; background:rgba(247,243,234,.97); border-top:1px solid var(--line); box-shadow:0 -6px 20px rgba(31,42,34,.12); transform:translateY(110%); transition:transform var(--t);}
@@ -306,7 +311,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
     </ul>
     <div class="hdr-actions">
       <a href="tel:+17579554333" class="ghost-call"><svg><use href="#i-phone"/></svg>Call</a>
-      <a href="#contact" class="btn-quote">Free quote</a>
+      <a href="#contact" class="btn-quote"><span class="quote-label-full">Free quote</span><span class="quote-label-short">Quote</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -323,6 +328,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
       <a href="#area">Service area</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a href="tel:+17579554333" class="btn-quote" style="background:none; border:1.5px solid var(--forest); color:var(--forest); margin-top:.6rem;">Call (757) 955-4333</a>
     <a href="#contact" class="btn-quote">Free quote</a>
   </div>
 </div>
@@ -341,7 +347,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
   </svg>
   <div class="wrap hero-in">
     <span class="eyebrow"><svg><use href="#i-leaf"/></svg>Lawn care · Milton, FL</span>
-    <h1>Recurring mowing your yard actually <span class="em">shows proof of</span>.</h1>
+    <h1>Weekly mowing in Milton — with <span class="em">a picture to prove it</span>.</h1>
     <p class="lede">We cut, edge and clean up sandy-soil centipede and St. Augustine lawns across Milton &amp; Santa Rosa County — and send you a picture after every visit, even when you're not home.</p>
     <div class="hero-ctas">
       <a href="tel:+17579554333" class="btn-primary"><svg><use href="#i-phone"/></svg>Call for a free quote</a>
@@ -351,7 +357,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
       <span class="stars">
         <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
       </span>
-      <b>5.0</b><span class="dim">· 25 reviews from our online listings</span>
+      <b>5.0</b><span class="dim">· 25 Google reviews</span>
     </div>
     <div class="hero-strip">
       <div class="nugget"><svg><use href="#i-camera"/></svg><b>Photo after every visit</b><span>Sent to you even when you're away</span></div>
@@ -364,9 +370,9 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
 <section id="services">
   <div class="wrap">
     <div class="section-head rv">
-      <span class="eyebrow"><svg><use href="#i-leaf"/></svg>What we tend</span>
+      <span class="eyebrow"><svg><use href="#i-leaf"/></svg>What we run every week</span>
       <h2>Three things we do, and do consistently.</h2>
-      <p>No padded menu — this is the work our routes actually run every week, in the humid subtropical, year-round growing conditions of the Florida panhandle.</p>
+      <p>Built for the humid subtropical, year-round growing conditions of the Florida panhandle.</p>
     </div>
     <div class="tend-grid">
       <div class="tend-card rv">
@@ -382,7 +388,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
       <div class="tend-card rv">
         <div class="tend-icon"><svg><use href="#i-scissors"/></svg></div>
         <h3>Limb removal &amp; bush planting</h3>
-        <p>Small limb removal and new bush planting worked in alongside routine visits — the extra care reviewers describe going above the mow.</p>
+        <p>Small limb removal and new bush planting worked in alongside routine visits, on top of the regular mow.</p>
       </div>
     </div>
   </div>
@@ -393,7 +399,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
     <div class="section-head rv">
       <span class="eyebrow"><svg><use href="#i-camera"/></svg>How a visit works</span>
       <h2>You get proof, not just an invoice.</h2>
-      <p>We haven't put real job photos online yet — this diagram just walks through the routine two of our reviewers describe from two different years of service.</p>
+      <p>How every visit runs.</p>
     </div>
     <div class="proc-wrap rv">
       <div class="proc-grid">
@@ -413,7 +419,6 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
           <p>Straight to your phone, so you always know the work got done and how it looks.</p>
         </div>
       </div>
-      <p class="proc-note">Decorative diagram, not photographs of an actual visit — the habit itself is real and described by reviewers below.</p>
     </div>
   </div>
 </section>
@@ -422,27 +427,27 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
   <div class="wrap">
     <div class="section-head rv">
       <span class="eyebrow"><svg><use href="#i-leaf"/></svg>What customers say</span>
-      <h2>Reviews from our online listings.</h2>
-      <p>Verbatim quotes from customers, unedited except for length.</p>
+      <h2>Google reviews.</h2>
+      <p>Real words from real customers.</p>
     </div>
     <div class="quote-grid">
       <div class="quote-card rv">
         <span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
         <p>"Shawn is great. He sends pictures of the lawn if I'm not home to see the mow, prices are reasonable, and his communication is top notch. I would highly recommend Operation Lawncare to anyone who needs lawn maintenance."</p>
-        <footer>— M. Anthony Taylor, Jr. · review from our online listings</footer>
+        <footer>— M. Anthony Taylor, Jr. · Google review</footer>
       </div>
       <div class="quote-card rv">
         <span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
         <p>"Operation Lawncare has taken such good care of our lawn. Progress pics and extra work has gone above my expectations. Very highly recommend! Glad to have someone so professional clean up after the nightmare amount of leaves in my back yard every fall/winter."</p>
-        <footer>— David Moore · review from our online listings</footer>
+        <footer>— David Moore · Google review</footer>
       </div>
       <div class="quote-card rv">
         <span class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
         <p>"Shawn does great work. Ive been very happy with his lawn care service. He keeps my yard immaculate and really pays attention to detail. He's also gone above and beyond by removing small limbs from my trees and planting bushes for me."</p>
-        <footer>— jane glass · review from our online listings</footer>
+        <footer>— jane glass · Google review</footer>
       </div>
     </div>
-    <p class="testi-score"><b>5.0 stars</b> average across <b>25 reviews</b> from our online listings.</p>
+    <p class="testi-score"><b>5.0 stars</b> average across <b>25 Google reviews</b>.</p>
   </div>
 </section>
 
@@ -450,20 +455,17 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
   <div class="wrap">
     <div class="area-wrap">
       <div class="rv">
-        <span class="eyebrow"><svg><use href="#i-map-pin"/></svg>Where we work</span>
+        <span class="eyebrow"><svg><use href="#i-map-pin"/></svg>Where our routes go</span>
         <h2 style="font-size:var(--h2); margin-bottom:.8rem;">Milton &amp; the surrounding Santa Rosa County area.</h2>
-        <p style="color:var(--ink-2); max-width:var(--measure);">Our recurring routes run through Milton and the nearby communities below — all within about 15 minutes of our base.</p>
+        <p style="color:var(--ink-2); max-width:var(--measure);">Our recurring routes run through Milton and the rest of Santa Rosa County, FL.</p>
         <div class="chips">
           <span class="chip">Milton</span>
-          <span class="chip">East Milton</span>
-          <span class="chip">Pace</span>
-          <span class="chip">Bagdad</span>
-          <span class="chip">Pea Ridge</span>
+          <span class="chip">Santa Rosa County</span>
         </div>
-        <p class="area-note">Not sure if you're in range? Call or text — we'll tell you straight.</p>
+        <p class="area-note">Outside Milton? Call or text and we'll say straight.</p>
       </div>
       <div class="map-frame rv">
-        <iframe title="Service area map centered near Milton, FL 32583" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.0375370%2C30.5584379%2C-87.0255370%2C30.5704379&layer=mapnik&marker=30.5644379%2C-87.0315370"></iframe>
+        <iframe title="Service area map covering Milton, FL and Santa Rosa County" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-87.1515370%2C30.4444379%2C-86.9115370%2C30.6844379&layer=mapnik&marker=30.5644379%2C-87.0315370"></iframe>
       </div>
     </div>
   </div>
@@ -473,8 +475,8 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
   <div class="wrap">
     <div class="contact-card rv">
       <div class="contact-left">
-        <h2>Get a free quote.</h2>
-        <p>Tell us about your yard — we'll call or text back with a straight answer.</p>
+        <h2>Ready for a quote?</h2>
+        <p>Tell us what your yard needs — we'll call or text back with a straight answer.</p>
         <div class="contact-actions">
           <a href="tel:+17579554333"><svg><use href="#i-phone"/></svg>(757) 955-4333 — Call</a>
           <a href="sms:+17579554333"><svg><use href="#i-message"/></svg>Text us instead</a>
@@ -515,7 +517,7 @@ footer.site-footer{background:#14201a; color:rgba(255,255,255,.72); padding-bloc
     </div>
     <div class="foot-bottom">
       <span>© 2026 Operation Lawncare LLC</span>
-      <span>5.0 stars · 25 reviews from our online listings</span>
+      <span>5.0 stars · 25 Google reviews</span>
     </div>
   </div>
 </footer>

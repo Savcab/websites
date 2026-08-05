@@ -95,23 +95,23 @@ p{max-width:var(--measure)}
 .stars .icon{width:1.05em;height:1.05em}
 /* ===== HEADER ===== */
 .hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t),border-color var(--t)}
-.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
 .brand{display:flex;align-items:center;gap:.6rem;font-family:"Spectral",serif;font-weight:700;font-size:1.18rem;color:#fff;letter-spacing:-.01em;transition:color var(--t)}
 .brand .logo{width:38px;height:38px;border-radius:10px;background:var(--spruce);display:grid;place-items:center;flex:none;box-shadow:var(--sh-1)}
 .brand .logo svg{width:23px;height:23px}
 .brand b{font-weight:800}
-.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#9fd0e0;display:block;margin-top:1px}
+.brand .yr{font-family:"Mulish",sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:#9fd0e0;display:block;margin-top:1px;white-space:nowrap}
 .nav{display:flex;align-items:center;gap:.4rem}
-.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link{font-family:"Mulish",sans-serif;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92);padding:.55rem .7rem;border-radius:8px;white-space:nowrap;transition:color var(--t),background var(--t)}
 .nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.12)}
 .hdr.solid{background:rgba(242,245,243,.92);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
 .hdr.solid .brand{color:var(--ink)}
 .hdr.solid .nav a.link{color:var(--ink-2)}
 .hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--spruce);background:var(--sage-tint)}
 .hdr.solid .call-pill{color:var(--spruce);border-color:var(--line)}
-.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-family:"Mulish",sans-serif;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.4);padding:.55rem .9rem;border-radius:var(--r-pill);white-space:nowrap;transition:var(--t)}
 .call-pill:hover{background:rgba(255,255,255,.12)}
-.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem;white-space:nowrap}
 .burger{display:none;width:46px;height:46px;border:0;background:rgba(15,30,28,.5);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
 .hdr.solid .burger{background:var(--sage-tint);color:var(--spruce)}
 .burger svg{width:24px;height:24px}
@@ -130,15 +130,15 @@ p{max-width:var(--measure)}
 .hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,30,28,.66) 0%,rgba(15,30,28,.28) 32%,rgba(15,30,28,.38) 62%,rgba(12,25,23,.85) 100%)}
 .hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
 .hero .eyebrow{color:#bfe0ce}
-.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:17ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.28)}
-.hero h1 em{font-style:italic;font-weight:600;color:#9fd0e0}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:19ch;margin:1rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hero h1 em{font-style:italic;font-weight:600;color:#9fd0e0;display:inline-block}
 .hero .sub{margin-top:1.15rem;font-size:1.15rem;color:rgba(255,255,255,.92);max-width:54ch;line-height:1.55}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.7rem}
 .rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
 .rate-badge b{font-weight:800}
 /* dual-season strip — the signature */
 .season-strip{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:2rem;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-3);max-width:680px}
-.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:center;gap:.85rem;color:#fff}
+.season-cell{padding:1.05rem 1.25rem;display:flex;align-items:flex-start;gap:.85rem;color:#fff}
 .season-cell.summer{background:linear-gradient(135deg,var(--spruce) 0%,#2c5a48 100%)}
 .season-cell.winter{background:linear-gradient(135deg,var(--ice) 0%,var(--ice-d) 100%)}
 .season-cell .ci{width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
@@ -153,7 +153,9 @@ p{max-width:var(--measure)}
 .center .lede{margin-inline:auto}
 .center .eyebrow{justify-content:center}
 /* ===== SERVICES ===== */
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15.5rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.15rem;margin-top:var(--s5)}
+@media (min-width:560px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1150px){.svc-grid{grid-template-columns:repeat(4,1fr)}}
 .svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
 .svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
 .svc .ic{width:52px;height:52px;border-radius:14px;background:var(--sage-tint);color:var(--spruce);display:grid;place-items:center;margin-bottom:1.1rem}
@@ -164,7 +166,7 @@ p{max-width:var(--measure)}
 .snow{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--ice-deep)}
 .snow-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(15,40,52,.55) 0%,rgba(17,46,60,.30) 42%,rgba(20,55,70,.12) 100%)}
 .snow .wrap{position:relative;padding-block:clamp(4rem,9vw,8rem)}
-.snow-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.snow-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,4rem);align-items:start}
 .snow h2{font-size:var(--h2);color:#fff;margin-top:.7rem;max-width:18ch}
 .snow .lede{color:rgba(233,244,248,.9);margin-top:1.1rem;max-width:48ch}
 .snow-feats{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.7rem}
@@ -191,7 +193,7 @@ p{max-width:var(--measure)}
 .t-card .by{margin-top:auto;padding-top:1rem;border-top:1px solid rgba(255,255,255,.12);font-family:"Mulish";font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 .t-card .by .mt{color:rgba(190,214,200,.72);font-weight:600;font-size:.82rem}
 .t-card blockquote{margin-bottom:1.1rem}
-.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#cfe0d4;flex-wrap:wrap;max-width:none;margin-inline:auto}
 .t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 /* ===== WHY (no photo variant — centered) ===== */
 .why{background:var(--bg)}
@@ -260,19 +262,21 @@ html:not(.js) .rv{opacity:1;transform:none}
   .why-pts{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
-@media (max-width:760px){
+@media (max-width:1100px){
   .nav .link,.nav .btn,.call-pill{display:none}
   .burger{display:grid}
+  .hdr-in{min-height:64px}
+  .hdr-in .brand .yr{display:none}
+  html{scroll-padding-top:76px}
+}
+@media (max-width:760px){
   .sticky-cta{display:flex}
   footer{padding-bottom:5.5rem}
-  .hdr-in{height:64px}
   .hdr-in .brand{font-size:1.06rem;line-height:1.1}
   .hdr-in .brand .logo{width:34px;height:34px}
   .hdr-in .brand .logo svg{width:20px;height:20px}
-  .hdr-in .brand .yr{display:none}
   .hero{align-items:flex-start}
   .hero-content{padding-top:calc(64px + 1.7rem)}
-  html{scroll-padding-top:76px}
 }
 @media (max-width:540px){
   .season-strip{grid-template-columns:1fr}
@@ -461,7 +465,7 @@ html:not(.js) .rv{opacity:1;transform:none}
         <figcaption class="by">Michael Hazel <span class="mt">&middot; Google review</span></figcaption>
       </figure>
     </div>
-    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.7</b> out of 5 &middot; 47 Google reviews &middot; <a href="https://www.google.com/maps?cid=4153295853821812784" target="_blank" rel="noopener">Read them on Google</a></p>
+    <p class="t-foot"><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.7</b> out of 5 &middot; 47 Google reviews &middot; <a href="https://www.google.com/maps?cid=4153295853821812784" target="_blank" rel="noopener">Read them on Google</a></p>
   </div>
 </section>
 
@@ -471,7 +475,7 @@ html:not(.js) .rv{opacity:1;transform:none}
     <div class="shead center rv">
       <span class="eyebrow"><span class="tick"></span>Why Buk's</span>
       <h2>Owner-run, year-round.</h2>
-      <p class="lede">Buk's is an owner-operated crew based right in Cortlandt Manor. There&rsquo;s no office between you and the people doing the work &mdash; you reach one number, and the crew that answers is the crew that shows up.</p>
+      <p class="lede">We&rsquo;re an owner-operated crew based right in Cortlandt Manor. There&rsquo;s no office between you and the people doing the work &mdash; you reach one number, and the crew that answers is the crew that shows up.</p>
     </div>
     <ul class="why-pts">
       <li class="rv">
@@ -578,7 +582,7 @@ html:not(.js) .rv{opacity:1;transform:none}
 <footer>
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Buk's <b style="font-weight:800;margin-left:.25rem">Landscaping</b></span>
+      <span class="brand"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4l5 8h-3l4 7h-4l3 5H8l3-5H7l4-7H8z" style="fill:#eef4f0"/></svg></span>Buk's <b style="font-weight:800">Landscaping</b></span>
       <p>Owner-operated lawn care, yard work and snow plowing for Cortlandt Manor and northern Westchester &mdash; lawns in season, driveways in winter.</p>
     </div>
     <div class="foot-col">
@@ -599,7 +603,7 @@ html:not(.js) .rv{opacity:1;transform:none}
   </div>
   <div class="wrap foot-bot">
     <span>&copy; 2026 Buk's Landscaping LLC &middot; Cortlandt Manor, NY</span>
-    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 4.7 &middot; 47 Google reviews</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span> 4.7 &middot; 47 Google reviews</span>
   </div>
 </footer>
 

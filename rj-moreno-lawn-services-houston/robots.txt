@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/rj-moreno-lawn-services-houston/sitemap.xml

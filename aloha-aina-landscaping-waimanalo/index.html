@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<!--
+  Aloha 'Aina Landscaping LLC — Waimanalo, HI (biz_key hi-waimanalo-landscaping-aloha-aina;
+  place_id ChIJwVMBc0YTAHwRKxS5JOIkbpU).
+  BRAND-ELEVATE BUILD, not a library archetype: this lead already runs a real, current,
+  custom-designed site (alohaainalandscapingllc.com) with its own logo, palette, and voice.
+  Per QUALITY_PLAYBOOK.md "match the business's existing brand" rule, this page adopts and
+  upgrades that identity (real logo self-hosted, their olive-green/lime/gold palette, their
+  actual project photography) rather than imposing a style_directions.md archetype skin.
+  Their http:// site's only real gap is the missing TLS ("Not secure" warning) — this build
+  IS the fix: same brand, served over HTTPS, faster, more conversion-focused.
+  Category: landscaping / design-build. Tier A (photo-rich: 10 owned finished-work photos
+  recovered directly from the business's own live site).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landscaping Design &amp; Build in Waimanalo, HI | Aloha 'Aina Landscaping</title>
+<meta name="description" content="Aloha 'Aina Landscaping designs and builds Oahu yards — planting, irrigation, masonry, fencing, lighting and lawns. Licensed &amp; insured, rated 4.9 from 28 reviews. Call for a free estimate.">
+<link rel="canonical" href="https://savcab.github.io/websites/aloha-aina-landscaping-waimanalo/">
+<meta name="theme-color" content="#2c3320">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Landscaping Design &amp; Build in Waimanalo, HI | Aloha 'Aina Landscaping">
+<meta property="og:description" content="Design-build landscaping for Oahu yards — planting, irrigation, masonry, fencing, lighting and lawns. Licensed &amp; insured, rated 4.9 from 28 reviews.">
+<meta property="og:url" content="https://savcab.github.io/websites/aloha-aina-landscaping-waimanalo/">
+<meta property="og:image" content="https://savcab.github.io/websites/aloha-aina-landscaping-waimanalo/images/hero-zen-garden.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232c3320'/%3E%3Cpath d='M16 24V13m0 0c0-4 3-7 7-7 0 4-3 7-7 7Zm0 0c0-4-3-7-7-7 0 4 3 7 7 7Z' fill='none' stroke='%23a4cf4e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Aloha 'Aina Landscaping LLC",
+  "description": "Design-build landscaping contractor in Waimanalo, HI serving Oahu — landscape design and planting, irrigation, lawn installation, drain construction, masonry, fencing, landscape lighting and grounds maintenance.",
+  "url": "https://savcab.github.io/websites/aloha-aina-landscaping-waimanalo/",
+  "telephone": "+18082910143",
+  "email": "stu@alohaainalandscaping.com",
+  "image": "https://savcab.github.io/websites/aloha-aina-landscaping-waimanalo/images/hero-zen-garden.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "41-668 Kakaina St",
+    "addressLocality": "Waimanalo",
+    "addressRegion": "HI",
+    "postalCode": "96795",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 21.3432535, "longitude": -157.7261223 },
+  "areaServed": [
+    { "@type": "City", "name": "Waimanalo" },
+    { "@type": "AdministrativeArea", "name": "Oahu" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "15:00" }
+  ]
+}
+</script>
+<style>
+:root{
+  --s1:.5rem;--s2:1rem;--s3:1.5rem;--s4:2rem;--s5:3rem;--s6:4rem;--s7:6rem;
+  --section-y:clamp(3.75rem,8vw,7rem);
+  --measure:62ch;
+  --h1:clamp(2.35rem,5.2vw,3.75rem);
+  --h2:clamp(1.6rem,3.3vw,2.5rem);
+  --h3:1.28rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.62;
+  --lh-head:1.08;
+
+  --paper:#ffffff;
+  --paper-2:#f6f7f1;
+  --paper-3:#eef1e5;
+  --ink:#20241a;
+  --ink-2:#4b5241;
+  --ink-3:#7c8370;
+  --line:#e3e6da;
+
+  --green-deep:#262b1c;
+  --green-mid:#3a4429;
+  --green-soft:#57633f;
+  --lime:#8bc63e;
+  --lime-d:#6fa62c;
+  --lime-tint:#eef7dd;
+  --gold:#cf9f34;
+  --brown-1:#2c2015;
+  --brown-2:#1c140c;
+
+  --r-s:8px;--r-m:14px;--r-l:22px;--r-xl:30px;--r-pill:999px;
+  --sh-1:0 1px 2px rgba(30,32,20,.07);
+  --sh-2:0 3px 8px rgba(30,32,20,.08),0 1px 2px rgba(30,32,20,.06);
+  --sh-3:0 10px 24px rgba(30,32,20,.12),0 2px 6px rgba(30,32,20,.06);
+  --t:190ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{font-family:"Inter",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Raleway",system-ui,sans-serif;line-height:var(--lh-head);font-weight:800;letter-spacing:-.01em;color:var(--green-deep)}
+p{max-width:var(--measure)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+figure{margin:0}
+svg.i{width:1.15em;height:1.15em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:clamp(1.1rem,4vw,2.5rem)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:"Raleway",sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--lime-d)}
+.eyebrow .rule{width:26px;height:2px;background:var(--gold);display:inline-block;border-radius:2px}
+.section{padding-block:var(--section-y)}
+.section-head{max-width:42rem;margin-bottom:var(--s5)}
+.section-head h2{font-size:var(--h2);margin-top:.6rem}
+.section-head p{color:var(--ink-2);margin-top:.85rem}
+.center{text-align:center;margin-inline:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-family:"Raleway",sans-serif;font-weight:800;font-size:.92rem;letter-spacing:.01em;padding:.85rem 1.5rem;border-radius:var(--r-pill);transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);white-space:nowrap;border:2px solid transparent}
+.btn-primary{background:var(--lime);color:var(--green-deep);box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--lime-d);transform:translateY(-1px);box-shadow:var(--sh-3)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--green-deep);color:#fff}
+.btn-dark:hover{background:var(--green-mid);transform:translateY(-1px)}
+.btn-outline{border-color:var(--green-deep);color:var(--green-deep)}
+.btn-outline:hover{background:var(--green-deep);color:#fff}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:var(--green-deep);transition:box-shadow var(--t)}
+.hdr.solid{box-shadow:var(--sh-2)}
+.hdr-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.85rem}
+.brand{display:flex;align-items:center;gap:.65rem}
+.brand img{height:38px;width:auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.05}
+.brand-text .n1{font-family:"Raleway",sans-serif;font-weight:900;font-size:1.05rem;letter-spacing:.02em;color:#fff}
+.brand-text .n2{font-family:"Raleway",sans-serif;font-weight:600;font-size:.62rem;letter-spacing:.2em;color:var(--lime);text-transform:uppercase}
+.nav-links{display:none}
+.hdr-cta{display:none}
+.hdr-phone{display:flex;align-items:center;gap:.4rem;color:#fff;font-weight:700;font-size:.95rem;white-space:nowrap}
+@media(max-width:479px){.hdr-phone{display:none}.brand-text .n2{display:none}}
+.menu-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:var(--r-s);background:rgba(255,255,255,.12);color:#fff;border:none}
+@media(min-width:960px){
+  .nav-links{display:flex;align-items:center;gap:1.9rem}
+  .nav-links a{color:#f2f3ec;font-weight:600;font-size:.92rem;opacity:.92;transition:opacity var(--t),color var(--t)}
+  .nav-links a:hover{opacity:1;color:var(--lime)}
+  .hdr-cta{display:inline-flex}
+  .hdr-phone{display:none}
+  .menu-btn{display:none}
+}
+
+/* drawer */
+.drawer-scrim{position:fixed;inset:0;background:rgba(20,22,14,.5);opacity:0;pointer-events:none;transition:opacity var(--t);z-index:60}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(84vw,340px);background:var(--green-deep);transform:translateX(100%);transition:transform 240ms cubic-bezier(.2,.7,.2,1);z-index:61;padding:1.5rem 1.5rem 2rem;display:flex;flex-direction:column;gap:1.5rem}
+.drawer.open,.drawer.open + .drawer-scrim{transform:none;opacity:1;pointer-events:auto}
+.drawer-top{display:flex;justify-content:space-between;align-items:center}
+.drawer-top button{width:38px;height:38px;border-radius:var(--r-s);background:rgba(255,255,255,.12);color:#fff;border:none}
+.drawer nav{display:flex;flex-direction:column;gap:.2rem}
+.drawer nav a{color:#fff;font-family:"Raleway",sans-serif;font-weight:700;font-size:1.15rem;padding:.7rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+
+/* hero */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 65%}
+.hero-media::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(100deg,rgba(14,16,9,.88) 0%,rgba(14,16,9,.8) 42%,rgba(14,16,9,.42) 62%,rgba(14,16,9,.12) 80%),
+  linear-gradient(0deg,rgba(14,16,9,.85) 0%,rgba(14,16,9,.55) 42%,rgba(14,16,9,.18) 68%,rgba(14,16,9,.42) 100%);}
+.hero-inner{position:relative;z-index:2;padding-block:clamp(4.5rem,10vw,6.5rem) clamp(3rem,7vw,4.5rem);width:100%}
+.hero .eyebrow{color:#d9ecb2}
+.hero .eyebrow .rule{background:var(--gold)}
+.hero h1{color:#fff;font-size:var(--h1);margin-top:.9rem;max-width:16ch}
+.hero .lede{color:#e9ece0;margin-top:1.2rem;max-width:46ch;font-size:1.08rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.9rem}
+.hero-rating{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.6rem;color:#f3f4ec;font-size:.92rem}
+.stars{display:inline-flex;gap:2px;color:var(--gold)}
+.stars svg{width:16px;height:16px;fill:var(--gold);stroke:none}
+
+/* values / trust band */
+.values{background:var(--paper-3)}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.2rem;margin-top:var(--s5)}
+.value-card{background:var(--paper);border-radius:var(--r-l);padding:1.6rem 1.5rem;box-shadow:var(--sh-1);border:1px solid var(--line)}
+.value-ic{width:44px;height:44px;border-radius:var(--r-m);background:var(--lime-tint);color:var(--lime-d);display:flex;align-items:center;justify-content:center;margin-bottom:.9rem}
+.value-card h3{font-size:1.02rem}
+.value-card p{color:var(--ink-2);font-size:.92rem;margin-top:.4rem}
+
+/* credential strip */
+.cred{background:var(--green-deep);color:#fff}
+.cred-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:3.2rem;padding-block:2.4rem}
+.cred-badges{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+.cred-badges img{height:64px;width:auto;border-radius:6px}
+.cred-copy h3{color:#fff;font-size:1.1rem}
+.cred-copy p{color:#cdd3bd;font-size:.92rem;margin-top:.3rem;max-width:34ch}
+.cred-license{display:flex;align-items:center;gap:.6rem;color:#e5e8d8;font-size:.88rem;margin-top:.9rem}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.1rem;margin-top:var(--s5)}
+.svc-card{border:1px solid var(--line);border-radius:var(--r-l);padding:1.6rem;transition:box-shadow var(--t),transform var(--t),border-color var(--t)}
+.svc-card:hover{box-shadow:var(--sh-2);transform:translateY(-2px);border-color:transparent}
+.svc-ic{width:46px;height:46px;border-radius:var(--r-m);background:var(--green-deep);color:var(--lime);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.svc-card h3{font-size:1.06rem}
+.svc-card p{color:var(--ink-2);font-size:.92rem;margin-top:.45rem}
+
+/* gallery */
+.gallery{background:var(--paper-2)}
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-1);aspect-ratio:4/3}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 420ms ease}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-cap{position:absolute;left:0;right:0;bottom:0;padding:1.9rem 1.1rem .9rem;background:linear-gradient(0deg,rgba(20,22,13,.85),rgba(20,22,13,0));color:#fff;font-family:"Raleway",sans-serif;font-weight:700;font-size:.9rem}
+
+/* reviews */
+.rev-agg{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-bottom:var(--s5)}
+.rev-agg .big{font-family:"Raleway",sans-serif;font-weight:900;font-size:2.6rem;color:var(--green-deep)}
+.rev-agg-meta{display:flex;flex-direction:column;gap:.15rem}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+.rev-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem;box-shadow:var(--sh-1)}
+.rev-card .stars{margin-bottom:.9rem}
+.rev-card p.q{color:var(--ink);font-size:.98rem}
+.rev-who{margin-top:1.1rem;display:flex;flex-direction:column}
+.rev-who .name{font-family:"Raleway",sans-serif;font-weight:800;font-size:.92rem;color:var(--green-deep)}
+.rev-who .proj{font-size:.82rem;color:var(--ink-3)}
+.rev-more{margin-top:var(--s5)}
+
+/* hours + map */
+.hm{background:var(--paper-3)}
+.hm-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:var(--s5)}
+@media(min-width:860px){.hm-grid{grid-template-columns:minmax(280px,.85fr) 1.15fr}}
+.hm-card{background:var(--paper);border-radius:var(--r-l);padding:1.9rem;box-shadow:var(--sh-1);border:1px solid var(--line);min-width:0}
+.hm-card h3{font-size:1.05rem;display:flex;align-items:center;gap:.5rem}
+.hm-rows{margin-top:1rem;display:flex;flex-direction:column;gap:.6rem}
+.hm-rows .row{display:flex;justify-content:space-between;gap:1rem;font-size:.92rem;padding-block:.35rem;border-bottom:1px dashed var(--line)}
+.hm-rows .row span:first-child{color:var(--ink-2)}
+.hm-rows .row span:last-child{font-weight:700}
+.hm-note{margin-top:1rem;font-size:.86rem;color:var(--ink-3)}
+/* long unbroken strings (esp. the mailto address) must be allowed to wrap so this
+   card's own content can never set a min-content floor wider than the viewport —
+   .btn defaults to white-space:nowrap globally, which is fine for short button
+   labels elsewhere but was the actual root cause of the mobile overflow here. */
+.hm-card .btn{white-space:normal;overflow-wrap:anywhere;text-align:center;line-height:1.3}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-1);border:1px solid var(--line);min-height:340px;min-width:0}
+.map-frame iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+
+/* final CTA band */
+.cta-band{position:relative;color:#fff;overflow:hidden}
+.cta-band .bg{position:absolute;inset:0}
+.cta-band .bg img{width:100%;height:100%;object-fit:cover}
+.cta-band .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(28,20,13,.93) 30%,rgba(28,20,13,.55) 100%)}
+.cta-inner{position:relative;z-index:2;padding-block:var(--section-y);max-width:34rem}
+.cta-inner .eyebrow{color:#f0dfa8}
+.cta-inner h2{color:#fff;font-size:var(--h2);margin-top:.7rem}
+.cta-inner p{color:#e9e3d3;margin-top:.9rem}
+.cta-inner .hero-cta{margin-top:1.7rem}
+
+/* footer */
+footer{background:linear-gradient(160deg,var(--brown-1),var(--brown-2));color:#e6e1d4}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.5rem;padding-block:var(--section-y)}
+@media(max-width:760px){.foot-grid{grid-template-columns:1fr;gap:2.2rem}}
+.foot-brand{display:flex;align-items:center;gap:.65rem;margin-bottom:1rem}
+.foot-brand img{height:40px;width:auto}
+.foot-brand .n1{font-family:"Raleway",sans-serif;font-weight:900;color:#fff;font-size:1.05rem}
+footer p{color:#c9c2ae;font-size:.92rem}
+footer h4{color:#fff;font-family:"Raleway",sans-serif;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem}
+footer ul{display:flex;flex-direction:column;gap:.55rem}
+footer ul li a,footer ul li{color:#c9c2ae;font-size:.92rem}
+footer .contact-row{display:flex;align-items:center;gap:.55rem;color:#e6e1d4}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-block:1.4rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.82rem;color:#a89f88}
+
+/* mobile sticky call bar */
+.mcall{position:fixed;left:0;right:0;bottom:0;z-index:55;display:flex;gap:.6rem;padding:.65rem .9rem;background:var(--green-deep);box-shadow:0 -6px 18px rgba(0,0,0,.18)}
+.mcall a{flex:1;justify-content:center}
+@media(min-width:760px){.mcall{display:none}}
+body.has-mcall{padding-bottom:92px}
+@media(min-width:760px){body.has-mcall{padding-bottom:0}}
+
+/* reveal */
+.rv{opacity:1}
+.rv.in{opacity:1;transform:none}
+
+/* misc */
+.pill{display:inline-flex;align-items:center;gap:.4rem;background:var(--lime-tint);color:var(--lime-d);font-family:"Raleway",sans-serif;font-weight:800;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;padding:.4rem .8rem;border-radius:var(--r-pill)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01Z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11L4 12"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-7 7-7s7 3 7 7c-4 0-7-3-7-7"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2.7s6 6.2 6 10.3a6 6 0 0 1-12 0c0-4.1 6-10.3 6-10.3Z"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10M12 20v-9M12 11c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6Zm0 0c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6Z"/></symbol>
+<symbol id="i-drain" viewBox="0 0 24 24"><path d="M12 4v13M6 11l6 6 6-6"/><path d="M4 21h16"/></symbol>
+<symbol id="i-wall" viewBox="0 0 24 24"><path d="M3 5h18M3 5v14M21 5v14M3 19h18M3 12h18M8 5v7M14 5v7M5 12v7M11 12v7M17 12v7"/></symbol>
+<symbol id="i-fence" viewBox="0 0 24 24"><path d="M4 3v18M9 3v18M15 3v18M20 3v18M2 9h20M2 15h20"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 2Z"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.5 15.5M8.5 8.5 20 20M8.9 9.1 14 14"/></symbol>
+</svg>
+
+<script>document.documentElement.className+=" js";</script>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-row">
+    <a class="brand" href="#top" aria-label="Aloha 'Aina Landscaping — home">
+      <img src="images/logo.png" alt="Aloha 'Aina Landscaping LLC logo" width="284" height="90" style="height:38px;width:auto">
+      <span class="brand-text">
+        <span class="n1">ALOHA &#8216;AINA</span>
+        <span class="n2">Landscaping, LLC</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="hdr-phone" href="tel:+18082910143"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>(808) 291-0143</a>
+    <a class="btn btn-primary hdr-cta" href="tel:+18082910143"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call (808) 291-0143</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand-text"><span class="n1" style="color:#fff">Menu</span></span>
+    <button id="drawerX" aria-label="Close menu"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Hours &amp; Location</a>
+  </nav>
+  <a class="btn btn-primary" href="tel:+18082910143" style="justify-content:center"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call (808) 291-0143</a>
+</div>
+<div class="drawer-scrim" id="scrim"></div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/hero-zen-garden.jpg" alt="Japanese-style rock garden with lava boulders, stone bridge and tropical plantings, an Aloha 'Aina Landscaping design-build project on Oahu" width="1600" height="587" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <span class="eyebrow"><span class="rule"></span>Waimanalo, O&#699;ahu &middot; Design-Build Landscaping</span>
+      <h1>Your Yard, Designed and Built Right the First Time</h1>
+      <p class="lede">Aloha &#8216;Aina Landscaping plans, builds and maintains Oahu yards &mdash; planting, irrigation, masonry, fencing, lighting and lawns &mdash; with one crew from first shovel to final walk-through.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+18082910143"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call (808) 291-0143</a>
+        <a class="btn btn-ghost" href="#gallery">See our work<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="hero-rating">
+        <span class="stars">
+          <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+        </span>
+        4.9 out of 5 &middot; 28 reviews
+      </div>
+    </div>
+  </section>
+
+  <section class="values section" id="about">
+    <div class="wrap">
+      <div class="section-head rv">
+        <span class="eyebrow"><span class="rule"></span>Our Approach</span>
+        <h2>Why Neighbors Keep Calling Us Back</h2>
+        <p>Every design-build project runs on the same six commitments &mdash; the same values the crew wears on their shirts every day on site.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></div><h3>Aloha Spirit</h3><p>Love of the &#257;ina guides how our team treats your property, start to finish.</p></div>
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></div><h3>Partnership</h3><p>We work with your vision and budget to find the right cost-effective plan.</p></div>
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></div><h3>Honesty</h3><p>Clear, complete pricing on every job &mdash; no hidden fees or surprises.</p></div>
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-wall"/></svg></div><h3>Integrity</h3><p>If we commit to it, we build it &mdash; exactly as promised.</p></div>
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></div><h3>Reliability</h3><p>Jobs completed on a timely, efficient schedule you can plan around.</p></div>
+        <div class="value-card rv"><div class="value-ic"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></div><h3>Communication</h3><p>Open updates through every phase, so nothing is a surprise.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cred">
+    <div class="wrap cred-row rv">
+      <div class="cred-copy">
+        <span class="pill">Recognized Islandwide</span>
+        <h3 style="margin-top:.7rem">First Place, Hawaii&#8217;s Best &mdash; 2019 &amp; 2020</h3>
+        <p>Honolulu Star-Advertiser Readers&#8217; Choice, with recognition every year from 2017&ndash;2022.</p>
+        <div class="cred-license"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Licensed &amp; Insured &mdash; Hawaii Contractor License C-28336</div>
+      </div>
+      <div class="cred-badges">
+        <img src="images/award-hawaiis-best-2019.jpg" alt="First Place, Hawaii's Best 2019, People's Choice Awards, awarded by the Honolulu Star-Advertiser" width="248" height="240">
+        <img src="images/award-hawaiis-best-2020.jpg" alt="First Place, Hawaii's Best 2020, People's Choice Awards, awarded by the Honolulu Star-Advertiser" width="248" height="240">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-head rv">
+        <span class="eyebrow"><span class="rule"></span>What We Build</span>
+        <h2>One Team, Every Phase of the Yard</h2>
+        <p>From the first planting plan to the last light fixture, Aloha &#8216;Aina handles the full design-build scope &mdash; no subcontractor hand-offs.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg></div><h3>Landscape Design &amp; Planting</h3><p>Custom planting plans built for your yard&#8217;s light and soil &mdash; tropical, Japanese-style, xeriscape or screening.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-droplet"/></svg></div><h3>Irrigation Systems</h3><p>Custom drip, soaker and rotary systems on a timer, so your new landscape takes care of itself.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-sprout"/></svg></div><h3>Lawn Installation</h3><p>Hydroseed, plug, seed or sod &mdash; with full soil prep &mdash; matched to your budget and grass type.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-drain"/></svg></div><h3>Drain Construction</h3><p>Drainage piping and graded swales that redirect standing water and runoff clear of your foundation.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-wall"/></svg></div><h3>Masonry Construction</h3><p>Driveways, stone walls, CMU block, sidewalks, steps and foundations, built to last.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-fence"/></svg></div><h3>Fencing Design &amp; Installation</h3><p>Vinyl, redwood, chain-link and metal fencing in a style to match your home.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-bulb"/></svg></div><h3>Landscape Lighting</h3><p>Accent lighting to show off the finished yard at night, plus motion-sensor security lighting.</p></div>
+        <div class="svc-card rv"><div class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-scissors"/></svg></div><h3>Grounds Maintenance &amp; Yard Care</h3><p>Ongoing upkeep — cutting, edging, weed control, pruning and seasonal feeding — on a schedule that fits your yard.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery section" id="gallery">
+    <div class="wrap">
+      <div class="section-head rv">
+        <span class="eyebrow"><span class="rule"></span>Recent Work</span>
+        <h2>Projects Around O&#699;ahu</h2>
+        <p>A sample of completed design-build work, straight from the Aloha &#8216;Aina project files.</p>
+      </div>
+      <div class="gal-grid">
+        <figure class="gal-item rv"><img src="images/gallery-front-yard-planting.jpg" alt="Front-yard planting bed with lava rock accents and a mature palm, Aloha 'Aina Landscaping design-build project" width="900" height="630"><figcaption class="gal-cap">Front-Yard Design &amp; Planting</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-redwood-fence.jpg" alt="Redwood privacy fence on a CMU block base, Aloha 'Aina Landscaping fencing project" width="900" height="630"><figcaption class="gal-cap">Redwood Fence Build</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-lava-rock-steps.jpg" alt="Lava rock retaining walls flanking new masonry steps, Aloha 'Aina Landscaping masonry project" width="900" height="630"><figcaption class="gal-cap">Lava-Rock Steps &amp; Walls</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-stamped-driveway.jpg" alt="Curved stamped-concrete driveway with a lava boulder water feature, Aloha 'Aina Landscaping masonry project" width="900" height="630"><figcaption class="gal-cap">Stamped Driveway &amp; Water Feature</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-firepit-patio.jpg" alt="Stamped-concrete patio with a fire pit beside a freshly installed lawn, Aloha 'Aina Landscaping project" width="900" height="675"><figcaption class="gal-cap">Fire-Pit Patio &amp; Lawn</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-paver-patio.jpg" alt="Paver patio bordered by colorful croton plantings, Aloha 'Aina Landscaping masonry project" width="900" height="630"><figcaption class="gal-cap">Paver Patio</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-path-lighting.jpg" alt="Low-voltage path lighting along a hedge at night, Aloha 'Aina Landscaping lighting project" width="900" height="630"><figcaption class="gal-cap">Landscape Path Lighting</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-putting-green.jpg" alt="Backyard artificial-turf putting green with lava rock accents, Aloha 'Aina Landscaping lawn installation project" width="900" height="630"><figcaption class="gal-cap">Backyard Putting Green</figcaption></figure>
+        <figure class="gal-item rv"><img src="images/gallery-poolside-gazebo.jpg" alt="Cedar poolside gazebo surrounded by palm trees, Aloha 'Aina Landscaping design-build project" width="900" height="675"><figcaption class="gal-cap">Poolside Gazebo</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="section-head rv">
+        <span class="eyebrow"><span class="rule"></span>Real Reviews</span>
+        <h2>What Homeowners Say</h2>
+      </div>
+      <div class="rev-agg rv">
+        <span class="big">4.9</span>
+        <div class="rev-agg-meta">
+          <span class="stars">
+            <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </span>
+          <span style="color:var(--ink-2);font-size:.92rem">28 reviews</span>
+        </div>
+      </div>
+      <div class="rev-grid">
+        <div class="rev-card rv">
+          <span class="stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+          <p class="q">&ldquo;Stu and his team did a remarkable job with our driveway and walkway&hellip; I never had to stress about the quality of work being done. He was able to incorporate changes as we went and was forthcoming about costs the whole way through.&rdquo;</p>
+          <div class="rev-who"><span class="name">Chris Murphy</span><span class="proj">Driveway &amp; Walkway Project</span></div>
+        </div>
+        <div class="rev-card rv">
+          <span class="stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+          <p class="q">&ldquo;Transformed dirt area&hellip; to something that will grow into colorful plantings. Stu gave great advice on jade stones&hellip; and listened to our needs, preferences and deadlines. Will use again for sure!&rdquo;</p>
+          <div class="rev-who"><span class="name">Diane DeSantis</span><span class="proj">Carport Transformation</span></div>
+        </div>
+        <div class="rev-card rv">
+          <span class="stars"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+          <p class="q">&ldquo;We are totally thrilled with how it came out! The crew came out and cleared all the junk&hellip; laid down a bed of gravel, weed barrier, pavers, which they leveled, and river rock&hellip; We will be calling Aloha Aina to bring [our next project] to life!&rdquo;</p>
+          <div class="rev-who"><span class="name">Shannon Hechinger</span><span class="proj">Side Yard &amp; Pavers</span></div>
+        </div>
+      </div>
+      <div class="rev-more rv">
+        <a class="btn btn-outline" href="https://maps.google.com/?cid=10767584312786752555" target="_blank" rel="noopener">Read more reviews on Google<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hm section" id="contact">
+    <div class="wrap">
+      <div class="section-head rv">
+        <span class="eyebrow"><span class="rule"></span>Hours &amp; Location</span>
+        <h2>Visit the Nursery</h2>
+        <p>Stop by, call or email &mdash; we&#8217;re based in Waimanalo and grow our own plant stock for every project.</p>
+      </div>
+      <div class="hm-grid">
+        <div class="hm-card rv">
+          <h3><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>Nursery &amp; Operations</h3>
+          <div class="hm-rows">
+            <div class="row"><span>Mon &ndash; Sat</span><span>7:00 AM &ndash; 3:00 PM</span></div>
+            <div class="row"><span>Sunday</span><span>Closed</span></div>
+          </div>
+          <p class="hm-note"><svg class="i" aria-hidden="true" style="vertical-align:-3px"><use href="#i-pin"/></svg> 41-668 Kakaina St, Waimanalo, HI 96795</p>
+          <div style="margin-top:1.4rem;display:flex;flex-direction:column;gap:.7rem">
+            <a class="btn btn-dark" href="tel:+18082910143" style="justify-content:center"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>(808) 291-0143</a>
+            <a class="btn btn-outline" href="mailto:stu@alohaainalandscaping.com" style="justify-content:center"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>stu@alohaainalandscaping.com</a>
+          </div>
+        </div>
+        <div class="map-frame rv">
+          <iframe title="Map of Aloha 'Aina Landscaping, 41-668 Kakaina St, Waimanalo, HI" width="600" height="340" src="https://www.openstreetmap.org/export/embed.html?bbox=-157.7361223%2C21.3352535%2C-157.7161223%2C21.3512535&amp;layer=mapnik&amp;marker=21.3432535%2C-157.7261223"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="bg"><img src="images/band-plumeria.jpg" alt="" width="1600" height="438"></div>
+    <div class="wrap cta-inner rv">
+      <span class="eyebrow"><span class="rule"></span>Free Estimates</span>
+      <h2>Ready to Start Your Project?</h2>
+      <p>Tell us what you have in mind and we&#8217;ll put together a plan &mdash; from a single planting bed to a full design-build yard.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+18082910143"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call (808) 291-0143</a>
+        <a class="btn btn-ghost" href="mailto:stu@alohaainalandscaping.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Email Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">
+        <img src="images/logo.png" alt="Aloha 'Aina Landscaping LLC logo" width="284" height="90" style="height:40px;width:auto">
+        <span class="n1">ALOHA &#8216;AINA LANDSCAPING</span>
+      </div>
+      <p>Design-build landscaping serving Waimanalo and O&#699;ahu &mdash; planting, irrigation, masonry, fencing, lighting and lawn care, all from one crew.</p>
+    </div>
+    <div>
+      <h4>Our Services</h4>
+      <ul>
+        <li>Landscape Design &amp; Planting</li>
+        <li>Irrigation Systems</li>
+        <li>Lawn Installation</li>
+        <li>Drain Construction</li>
+        <li>Masonry Construction</li>
+        <li>Fencing Design &amp; Installation</li>
+        <li>Landscape Lighting</li>
+        <li>Grounds Maintenance &amp; Yard Care</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get In Touch</h4>
+      <ul>
+        <li class="contact-row"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>41-668 Kakaina St, Waimanalo, HI 96795</li>
+        <li class="contact-row"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+18082910143">(808) 291-0143</a></li>
+        <li class="contact-row"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:stu@alohaainalandscaping.com">stu@alohaainalandscaping.com</a></li>
+        <li class="contact-row"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>Mon&ndash;Sat 7am&ndash;3pm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>&copy; 2026 Aloha &#8216;Aina Landscaping LLC. All rights reserved.</span>
+    <span>Licensed &amp; Insured &mdash; HI Contractor License C-28336</span>
+  </div>
+</footer>
+
+<div class="mcall">
+  <a class="btn btn-primary" href="tel:+18082910143"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-dark" href="#contact"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Directions</a>
+</div>
+
+<script>
+(function(){
+  document.body.classList.add("has-mcall");
+  var hdr=document.getElementById("hdr");
+  var onScroll=function(){ if(hdr) hdr.classList.toggle("solid", window.scrollY>16); };
+  onScroll(); window.addEventListener("scroll",onScroll,{passive:true});
+
+  var drawer=document.getElementById("drawer"),mb=document.getElementById("menuBtn"),dx=document.getElementById("drawerX"),scrim=document.getElementById("scrim");
+  function setDrawer(open){ if(!drawer)return; drawer.classList.toggle("open",open); if(scrim) scrim.style.opacity=open?"1":"0"; if(scrim) scrim.style.pointerEvents=open?"auto":"none"; drawer.setAttribute("aria-hidden",open?"false":"true"); if(mb)mb.setAttribute("aria-expanded",open?"true":"false"); document.body.style.overflow=open?"hidden":""; }
+  if(mb)mb.addEventListener("click",function(){setDrawer(true);});
+  if(dx)dx.addEventListener("click",function(){setDrawer(false);});
+  if(scrim)scrim.addEventListener("click",function(){setDrawer(false);});
+  if(drawer)drawer.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){setDrawer(false);});});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")setDrawer(false);});
+
+  var rvs=[].slice.call(document.querySelectorAll(".rv"));
+  function showAll(){rvs.forEach(function(el){el.classList.add("in");});}
+  if(!window.IntersectionObserver || matchMedia("(prefers-reduced-motion:reduce)").matches){ showAll(); }
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target);} });},{threshold:.1,rootMargin:"0px 0px -8% 0px"});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }
+})();
+</script>
+</body>
+</html>

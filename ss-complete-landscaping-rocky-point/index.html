@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S &amp; S Complete Landscaping | Landscaping, Masonry &amp; Snow Removal — Rocky Point, NY</title>
+<meta name="description" content="Family-owned since 1989. Landscaping, lawn care, masonry, commercial grounds care and snow removal in Rocky Point, Miller Place, Mount Sinai &amp; Sound Beach, NY. Rated 4.8 (20 reviews). Call (631) 821-3355.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          paper: '#f6f4ec',
+          ink: '#1b2420',
+          forest: '#123524',
+          forestlight: '#1f5c3c',
+          sage: '#b9c99a',
+          dusk: '#0b2016',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { background-color: #f6f4ec; }
+  .tnum { font-variant-numeric: tabular-nums; }
+  ::selection { background: #1f5c3c; color: #f6f4ec; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #1f5c3c; outline-offset: 3px; }
+  .season-strip { background: linear-gradient(90deg, #b9c99a 0%, #1f5c3c 45%, #123524 75%, #0b2016 100%); }
+  .season-strip-rev { background: linear-gradient(90deg, #0b2016 0%, #123524 30%, #1f5c3c 65%, #b9c99a 100%); }
+  #mobile-menu { transition: max-height .25s ease, opacity .2s ease; }
+</style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+<!-- ============ SEASON STRIP (signature motif, top) ============ -->
+<div class="h-1.5 season-strip" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-forest/15">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="h-20 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.svg" alt="S &amp; S Complete Landscaping logo" class="h-11 md:h-12 w-auto" width="356" height="138">
+        <span class="hidden lg:flex flex-col leading-none">
+          <span class="font-display font-semibold text-lg text-forest">S &amp; S Complete Landscaping</span>
+          <span class="text-[11px] tracking-[0.16em] uppercase text-ink/50 mt-1">Rocky Point, NY &middot; Since 1989</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-ink/75">
+        <a href="#services" class="hover:text-forestlight transition-colors">Services</a>
+        <a href="#gallery" class="hover:text-forestlight transition-colors">Gallery</a>
+        <a href="#commercial-snow" class="hover:text-forestlight transition-colors">Commercial &amp; Snow</a>
+        <a href="#about" class="hover:text-forestlight transition-colors">About</a>
+        <a href="#reviews" class="hover:text-forestlight transition-colors">Reviews</a>
+        <a href="#contact" class="hover:text-forestlight transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:+16318213355" class="flex items-center gap-2 text-sm font-semibold text-forest hover:text-forestlight transition-colors">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          <span class="tnum">(631) 821-3355</span>
+        </a>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-forest text-paper px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-forestlight transition-colors">
+          Get a Free Quote
+        </a>
+      </div>
+
+      <button id="menu-btn" type="button" class="md:hidden p-2 text-forest" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <svg id="menu-icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menu-icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 opacity-0">
+      <nav class="flex flex-col gap-1 pb-5 text-sm font-medium text-ink/80">
+        <a href="#services" class="py-2.5 border-b border-forest/10">Services</a>
+        <a href="#gallery" class="py-2.5 border-b border-forest/10">Gallery</a>
+        <a href="#commercial-snow" class="py-2.5 border-b border-forest/10">Commercial &amp; Snow</a>
+        <a href="#about" class="py-2.5 border-b border-forest/10">About</a>
+        <a href="#reviews" class="py-2.5 border-b border-forest/10">Reviews</a>
+        <a href="#contact" class="py-2.5 border-b border-forest/10">Contact</a>
+        <a href="tel:+16318213355" class="mt-3 flex items-center gap-2 font-semibold text-forest">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          <span class="tnum">(631) 821-3355</span>
+        </a>
+        <a href="#contact" class="mt-3 inline-flex items-center justify-center gap-2 bg-forest text-paper px-5 py-3 rounded-full font-semibold">Get a Free Quote</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="relative bg-gradient-to-br from-forest via-forest to-forestlight overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-14 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-x-10 gap-y-12 items-center">
+      <div class="md:col-span-6">
+        <p class="text-sage font-semibold text-xs tracking-[0.22em] uppercase mb-5">Family-Owned &amp; Operated Since 1989 &middot; Rocky Point, NY</p>
+        <h1 class="font-display text-[2.4rem] leading-[1.08] sm:text-5xl md:text-[3.4rem] font-semibold text-paper">
+          Your One-Stop Source for All Your Landscaping Desires
+        </h1>
+        <p class="mt-6 text-paper/80 text-lg leading-relaxed max-w-lg">
+          Landscaping, lawn care, masonry, commercial grounds care and snow removal &mdash; one family crew serving Rocky Point, Miller Place, Mount Sinai and Sound Beach for two generations.
+        </p>
+
+        <div class="mt-6 flex items-center gap-2">
+          <div class="flex items-center gap-0.5 text-sage" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </div>
+          <span class="text-paper font-semibold tnum">4.8</span>
+          <span class="text-paper/60 text-sm">(20 reviews)</span>
+        </div>
+
+        <div class="mt-9 flex flex-col sm:flex-row gap-4">
+          <a href="tel:+16318213355" class="inline-flex items-center justify-center gap-2 bg-sage text-forest px-7 py-3.5 rounded-full text-base font-semibold hover:bg-paper transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            Call (631) 821-3355
+          </a>
+          <a href="#contact" class="inline-flex items-center justify-center gap-2 border border-paper/40 text-paper px-7 py-3.5 rounded-full text-base font-semibold hover:bg-paper/10 transition-colors">
+            Get a Free Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-6">
+        <div class="rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border border-paper/10">
+          <img src="assets/hero-paver-patio-firepit.jpg" alt="A circular paver patio and fire pit we designed and built, with a ring of Adirondack chairs, set against a backyard lawn and white vinyl fence." width="1100" height="733" class="w-full h-full object-cover aspect-[3/2]" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST / CREDENTIAL STRIP ============ -->
+<section class="bg-forest border-t border-paper/10">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-5 gap-x-4 text-paper">
+      <div class="flex items-center gap-3">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="text-sage shrink-0" aria-hidden="true"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+        <span class="text-sm leading-tight">Family-owned &amp; operated</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="text-sage shrink-0" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span class="text-sm leading-tight">NYSDEC &amp; Suffolk County licensed</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="text-sage shrink-0" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <span class="text-sm leading-tight tnum">37 years &middot; founded 1989</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" class="text-sage shrink-0" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        <span class="text-sm leading-tight tnum">4.8 rating (20 reviews)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl mb-12 md:mb-16">
+      <p class="text-forestlight font-semibold text-xs tracking-[0.22em] uppercase mb-3">What We Do</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-forest">Five Services, One Crew</h2>
+      <p class="mt-4 text-ink/65 leading-relaxed">From the first bed we dig in spring to the last driveway we plow in winter, S &amp; S handles the full property &mdash; residential and commercial.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white border border-forest/10 rounded-2xl p-7 hover:shadow-lg hover:shadow-forest/5 transition-shadow">
+        <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><path d="M11 20A7 7 0 0 1 4 13c0-4 3-9 9-11 1 4 3 6 5 8 2 2 3 4 3 7a7 7 0 0 1-7 7c-1.5 0-3-.5-3-4"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-forest mb-2">Landscaping</h3>
+        <p class="text-sm text-ink/65 leading-relaxed">Full-property design, planting, beds and mulch, plus irrigation and sprinkler system installation and seasonal start-up.</p>
+      </div>
+
+      <div class="bg-white border border-forest/10 rounded-2xl p-7 hover:shadow-lg hover:shadow-forest/5 transition-shadow">
+        <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-forest mb-2">Lawn Care</h3>
+        <p class="text-sm text-ink/65 leading-relaxed">Weekly mowing, edging and lawn maintenance programs that keep a property looking finished all season.</p>
+      </div>
+
+      <div class="bg-white border border-forest/10 rounded-2xl p-7 hover:shadow-lg hover:shadow-forest/5 transition-shadow">
+        <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M3 15h18M9 3v6M9 15v6M15 9v6"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-forest mb-2">Masonry</h3>
+        <p class="text-sm text-ink/65 leading-relaxed">Paver patios, walkways, steps and retaining walls &mdash; installed to hold up to Long Island winters.</p>
+      </div>
+
+      <div class="bg-white border border-forest/10 rounded-2xl p-7 hover:shadow-lg hover:shadow-forest/5 transition-shadow">
+        <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-forest mb-2">Commercial Services</h3>
+        <p class="text-sm text-ink/65 leading-relaxed">Scheduled grounds maintenance for commercial properties and property managers across the North Shore.</p>
+      </div>
+
+      <div class="bg-white border border-forest/10 rounded-2xl p-7 hover:shadow-lg hover:shadow-forest/5 transition-shadow">
+        <div class="w-11 h-11 rounded-full bg-forest/10 flex items-center justify-center mb-5">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><path d="M12 2v20M4.2 7l15.6 10M4.2 17l15.6-10M8 3l4 4 4-4M8 21l4-4 4 4M2 9l4 3-4 3M22 9l-4 3 4 3"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-semibold text-forest mb-2">Snow Removal</h3>
+        <p class="text-sm text-ink/65 leading-relaxed">Plowing for driveways, lots and commercial properties, so a property stays open through a Long Island winter.</p>
+      </div>
+
+      <div class="bg-forest rounded-2xl p-7 flex flex-col justify-center">
+        <p class="font-display text-lg text-paper font-medium leading-snug mb-4">Not sure which service you need?</p>
+        <a href="#contact" class="inline-flex items-center gap-2 text-sage font-semibold text-sm hover:text-paper transition-colors">
+          Tell us about your property
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="py-16 md:py-24 bg-white border-y border-forest/10">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl mb-12 md:mb-16">
+      <p class="text-forestlight font-semibold text-xs tracking-[0.22em] uppercase mb-3">Recent Work</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-forest">From Our Own Job Sites</h2>
+      <p class="mt-4 text-ink/65 leading-relaxed">A look at real installs and maintenance we&rsquo;ve completed for Long Island properties &mdash; patios, walkways, plantings and everyday lawn care.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-front-walkway-colonial.jpg" alt="A circular paver medallion and walkway leading to the entry of a colonial-style home." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Paver walkway &amp; entry medallion, colonial-style home</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-boxwood-entry-walkway.jpg" alt="A paver walkway framed by tightly clipped boxwood hedges leading to a covered front porch." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Entry walkway framed by boxwood hedges</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-patio-retaining-wall.jpg" alt="A large paver patio with a block retaining wall, built-in steps and a custom stone fire pit." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Paver patio, retaining wall &amp; custom fire pit</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-striped-lawn-mower.jpg" alt="Fresh mower stripes on a healthy lawn beside a stone retaining wall, with a zero-turn mower in the foreground." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Weekly mowing keeps the stripes sharp</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-curved-walkway-retaining.jpg" alt="A curved paver patio and low seat wall softening a front entry, framed with ornamental grasses." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Curved patio &amp; low seat wall</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-paver-steps-planter.jpg" alt="Built-in paver steps beside a raised planter bed with a block retaining wall, part of a multi-level patio." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Multi-level patio, steps &amp; planter wall</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-porch-steps-walkway.jpg" alt="A stamped concrete walkway leading to stone-clad porch columns and entry steps." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Stamped walkway &amp; stone-clad entry steps</figcaption>
+      </figure>
+      <figure class="group relative rounded-xl overflow-hidden">
+        <img src="assets/gallery-privacy-hedge-planting.jpg" alt="A freshly planted row of evergreen privacy trees along a property fence line." width="1100" height="733" loading="lazy" class="w-full h-full object-cover aspect-[3/2] group-hover:scale-105 transition-transform duration-300">
+        <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent text-paper text-xs p-3 opacity-0 group-hover:opacity-100 transition-opacity">Freshly planted privacy hedge line</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEASON STRIP DIVIDER ============ -->
+<div class="h-2 season-strip-rev" aria-hidden="true"></div>
+
+<!-- ============ COMMERCIAL & SNOW REMOVAL (season-strip band) ============ -->
+<section id="commercial-snow" class="relative py-16 md:py-24" style="background: linear-gradient(115deg, #1f5c3c 0%, #123524 45%, #0b2016 100%);">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <p class="text-sage font-semibold text-xs tracking-[0.22em] uppercase mb-3">Two Seasons, One Crew</p>
+    <h2 class="font-display text-3xl md:text-4xl font-semibold text-paper mb-12 md:mb-16 max-w-2xl">Commercial &amp; Snow Removal</h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div class="lg:col-span-5 space-y-10">
+        <div>
+          <div class="w-11 h-11 rounded-full bg-paper/10 flex items-center justify-center mb-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-sage" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-paper mb-2">Commercial Services</h3>
+          <p class="text-paper/70 leading-relaxed">We maintain grounds for commercial accounts and property managers across the North Shore &mdash; scheduled mowing, cleanups and upkeep on a calendar built for a business, not just a homeowner.</p>
+        </div>
+        <div>
+          <div class="w-11 h-11 rounded-full bg-paper/10 flex items-center justify-center mb-4">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="text-sage" aria-hidden="true"><path d="M12 2v20M4.2 7l15.6 10M4.2 17l15.6-10M8 3l4 4 4-4M8 21l4-4 4 4M2 9l4 3-4 3M22 9l-4 3 4 3"/></svg>
+          </div>
+          <h3 class="font-display text-xl font-semibold text-paper mb-2">Snow Removal</h3>
+          <p class="text-paper/70 leading-relaxed">Long Island winters don&rsquo;t stop at the driveway. We plow residential driveways and commercial lots through the snow season, so a property stays open and accessible when it matters most.</p>
+        </div>
+        <a href="mailto:sales@sscompletelandscaping.com" class="inline-flex items-center gap-2 bg-sage text-forest px-6 py-3 rounded-full text-sm font-semibold hover:bg-paper transition-colors">
+          Request a commercial or snow contract
+        </a>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="rounded-2xl overflow-hidden border border-paper/15 shadow-2xl shadow-black/40">
+          <img src="assets/snow-plow-driveway-wide.jpg" alt="Our plow truck clearing a residential driveway after a Long Island snowfall." width="1100" height="300" loading="lazy" class="w-full h-full object-cover aspect-[11/4]">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div class="lg:col-span-6">
+        <p class="text-forestlight font-semibold text-xs tracking-[0.22em] uppercase mb-3">Our Story</p>
+        <h2 class="font-display text-3xl md:text-4xl font-semibold text-forest mb-6">Family-Owned Since 1989</h2>
+        <div class="space-y-4 text-ink/70 leading-relaxed">
+          <p>S &amp; S Complete Landscaping is a family-owned and operated business, started in 1989 and now spanning two generations of the same family.</p>
+          <p>We&rsquo;re fully licensed with the New York State Department of Environmental Conservation, the Suffolk County Department of Consumer Affairs, and the Town of Southampton.</p>
+          <p>We&rsquo;re also a proud member of the Council of Dedicated Merchants, serving Miller Place, Mount Sinai, Rocky Point, and Sound Beach.</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="grid grid-cols-2 gap-4 md:gap-6 h-full content-center">
+          <div class="bg-forest/5 border border-forest/10 rounded-2xl p-6 md:p-7">
+            <p class="font-display text-4xl md:text-5xl font-semibold text-forest tnum">37</p>
+            <p class="mt-2 text-sm text-ink/60 leading-snug">years serving Long Island, since 1989</p>
+          </div>
+          <div class="bg-forest/5 border border-forest/10 rounded-2xl p-6 md:p-7">
+            <p class="font-display text-4xl md:text-5xl font-semibold text-forest tnum">2</p>
+            <p class="mt-2 text-sm text-ink/60 leading-snug">generations of the same family</p>
+          </div>
+          <div class="bg-forest/5 border border-forest/10 rounded-2xl p-6 md:p-7">
+            <p class="font-display text-4xl md:text-5xl font-semibold text-forest tnum">5</p>
+            <p class="mt-2 text-sm text-ink/60 leading-snug">service lines under one crew</p>
+          </div>
+          <div class="bg-forest/5 border border-forest/10 rounded-2xl p-6 md:p-7">
+            <p class="font-display text-4xl md:text-5xl font-semibold text-forest tnum">4.8</p>
+            <p class="mt-2 text-sm text-ink/60 leading-snug">rating &middot; 20 reviews</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="reviews" class="py-16 md:py-24 bg-sage/20 border-y border-forest/10">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl mb-12 md:mb-16">
+      <p class="text-forestlight font-semibold text-xs tracking-[0.22em] uppercase mb-3">In Their Words</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-forest">What Customers Say</h2>
+      <div class="mt-4 flex items-center gap-2">
+        <div class="flex items-center gap-0.5 text-forestlight" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        </div>
+        <span class="text-sm text-ink/60">4.8 rating from 20 reviews across Google and our own site</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">Joe does absolutely amazing work, communicates so well; he just made this whole deck reno experience so great.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Mollie C.</span>
+          <span class="text-ink/45"> &middot; testimonial from our site</span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">The whole experience working with S&amp;S Complete Landscaping was great from start to finish. Estimate was accurate and fair, crew was professional.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Jonathan Y.</span>
+          <span class="text-ink/45"> &middot; testimonial from our site</span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">The guys at S&amp;S redid areas of our deck that were poorly constructed, added a beautiful paver walkway and did some custom fencing.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Jackie S.</span>
+          <span class="text-ink/45"> &middot; testimonial from our site</span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">Great company, quality work. Job completed quickly and neatly. Our property looks fantastic.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Jen H.</span>
+          <span class="text-ink/45"> &middot; testimonial from our site</span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">S &amp; S complete landscaping is the absolute best. I have been using them for 30 years and they never disappoint. Their work is perfection and their honesty is none other than 100%.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Susan Cerullo</span>
+          <span class="text-ink/45"> &middot; Google review</span>
+        </figcaption>
+      </figure>
+
+      <figure class="bg-white rounded-2xl p-7 border border-forest/10">
+        <span class="block font-display text-5xl text-forestlight/40 leading-none mb-2" aria-hidden="true">&ldquo;</span>
+        <blockquote class="text-ink/85 leading-relaxed">An overdue renovation for driveway and back patio. Before and afters. Couldn&rsquo;t be happier. Every detail beyond my own eyeballs were noticed.</blockquote>
+        <figcaption class="mt-5 text-sm">
+          <span class="font-semibold text-forest">Kelly Farrell</span>
+          <span class="text-ink/45"> &middot; Google review</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOURS & LOCATION ============ -->
+<section id="contact" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="max-w-2xl mb-12 md:mb-16">
+      <p class="text-forestlight font-semibold text-xs tracking-[0.22em] uppercase mb-3">Get In Touch</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-forest">Hours &amp; Location</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-2 mb-4">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <h3 class="font-display text-lg font-semibold text-forest">Hours</h3>
+        </div>
+        <dl class="divide-y divide-forest/10 border-y border-forest/10 text-sm md:text-base mb-10">
+          <div class="flex justify-between py-3">
+            <dt class="text-ink/60">Monday &ndash; Friday</dt>
+            <dd class="font-medium tnum">8:00 AM &ndash; 4:30 PM</dd>
+          </div>
+          <div class="flex justify-between py-3">
+            <dt class="text-ink/60">Saturday</dt>
+            <dd class="font-medium tnum">8:00 AM &ndash; 2:00 PM</dd>
+          </div>
+          <div class="flex justify-between py-3">
+            <dt class="text-ink/60">Sunday</dt>
+            <dd class="font-medium">Closed</dd>
+          </div>
+        </dl>
+
+        <div class="flex items-center gap-2 mb-4">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="text-forestlight" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 class="font-display text-lg font-semibold text-forest">Address</h3>
+        </div>
+        <p class="text-ink/70 leading-relaxed mb-2">669 NY-25A<br>Rocky Point, NY 11778</p>
+        <p class="text-ink/70 leading-relaxed mb-8">Proudly serving Rocky Point, Miller Place, Mount Sinai and Sound Beach.</p>
+
+        <div class="space-y-3">
+          <a href="tel:+16318213355" class="flex items-center gap-3 text-forest font-semibold hover:text-forestlight transition-colors">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <span class="tnum">(631) 821-3355</span>
+          </a>
+          <a href="mailto:sales@sscompletelandscaping.com" class="flex items-center gap-3 text-forest font-semibold hover:text-forestlight transition-colors break-all">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="shrink-0" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            sales@sscompletelandscaping.com
+          </a>
+        </div>
+
+        <a href="tel:+16318213355" class="mt-10 inline-flex items-center justify-center gap-2 bg-forest text-paper px-7 py-3.5 rounded-full text-base font-semibold hover:bg-forestlight transition-colors w-full sm:w-auto">
+          Call for a Free Quote
+        </a>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="rounded-2xl overflow-hidden border border-forest/10 aspect-[4/3] sm:aspect-[16/10] w-full">
+          <iframe
+            title="Map showing S &amp; S Complete Landscaping's service area near Rocky Point, NY"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-72.9403261%2C40.930864%2C-72.9003261%2C40.960864&amp;layer=mapnik&amp;marker=40.945864%2C-72.9203261"
+            class="w-full h-full"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="mt-3 text-xs text-ink/45 flex items-center justify-between flex-wrap gap-2">
+          <span>669 NY-25A, Rocky Point, NY 11778</span>
+          <a href="https://www.openstreetmap.org/?mlat=40.945864&amp;mlon=-72.9203261#map=14/40.945864/-72.9203261" target="_blank" rel="noopener noreferrer" class="underline hover:text-forestlight">View larger map</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ SEASON STRIP (signature motif, footer) ============ -->
+<div class="h-1.5 season-strip" aria-hidden="true"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-forest text-paper py-14 md:py-16">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-y-10 gap-x-8">
+      <div class="md:col-span-5">
+        <img src="assets/logo.svg" alt="S &amp; S Complete Landscaping logo" class="h-10 w-auto mb-4" width="356" height="138">
+        <p class="text-paper/60 text-sm leading-relaxed max-w-xs">Landscaping, lawn care, masonry, commercial services and snow removal &mdash; family-owned in Rocky Point, NY since 1989.</p>
+      </div>
+      <div class="md:col-span-3 text-sm text-paper/70 space-y-2">
+        <p class="text-paper/40 text-xs uppercase tracking-[0.18em] mb-3">Contact</p>
+        <p>669 NY-25A</p>
+        <p>Rocky Point, NY 11778</p>
+        <p><a href="tel:+16318213355" class="hover:text-sage transition-colors tnum">(631) 821-3355</a></p>
+        <p><a href="mailto:sales@sscompletelandscaping.com" class="hover:text-sage transition-colors break-all">sales@sscompletelandscaping.com</a></p>
+      </div>
+      <div class="md:col-span-4 text-sm text-paper/70 space-y-2">
+        <p class="text-paper/40 text-xs uppercase tracking-[0.18em] mb-3">Hours</p>
+        <p>Mon&ndash;Fri 8:00 AM&ndash;4:30 PM</p>
+        <p>Sat 8:00 AM&ndash;2:00 PM &middot; Sun Closed</p>
+        <p class="pt-4 text-xs text-paper/45 leading-relaxed">Family-owned and operated. Fully licensed with the New York State Department of Environmental Conservation, the Suffolk County Department of Consumer Affairs, and the Town of Southampton.</p>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-paper/10 text-xs text-paper/40">
+      &copy; 2026 S &amp; S Complete Landscaping. Rocky Point, NY.
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "S & S Complete Landscaping",
+  "telephone": "+16318213355",
+  "email": "sales@sscompletelandscaping.com",
+  "foundingDate": "1989",
+  "image": "assets/hero-paver-patio-firepit.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "669 NY-25A",
+    "addressLocality": "Rocky Point",
+    "addressRegion": "NY",
+    "postalCode": "11778",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.945864,
+    "longitude": -72.9203261
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Miller Place, NY" },
+    { "@type": "City", "name": "Mount Sinai, NY" },
+    { "@type": "City", "name": "Rocky Point, NY" },
+    { "@type": "City", "name": "Sound Beach, NY" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "16:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ]
+}
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var open = document.getElementById('menu-icon-open');
+    var close = document.getElementById('menu-icon-close');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function () {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) {
+        menu.style.maxHeight = '0px';
+        menu.style.opacity = '0';
+        open.classList.remove('hidden');
+        close.classList.add('hidden');
+      } else {
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+        menu.style.opacity = '1';
+        open.classList.add('hidden');
+        close.classList.remove('hidden');
+      }
+    });
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        btn.setAttribute('aria-expanded', 'false');
+        menu.style.maxHeight = '0px';
+        menu.style.opacity = '0';
+        open.classList.remove('hidden');
+        close.classList.add('hidden');
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

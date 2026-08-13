@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boss D Landscape | Erie, PA Landscaping, Lawn Care &amp; Snow Plowing</title>
+<meta name="description" content="Boss D Landscape — mowing, trimming, spring and fall cleanups, mulch, planting, hauling and snow plowing for Erie, Harborcreek, Millcreek, Fairview and North East, PA. 4.7 on Google, 72 reviews. Call or text (814) 440-9092.">
+<link rel="canonical" href="https://savcab.github.io/websites/boss-d-landscape-erie/">
+<meta name="theme-color" content="#0D0D0D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Boss D Landscape | Erie, PA Landscaping &amp; Snow Plowing">
+<meta property="og:description" content="One Erie crew, from spring cleanup through snow. 4.7 on Google, 72 reviews. Call or text (814) 440-9092.">
+<meta property="og:url" content="https://savcab.github.io/websites/boss-d-landscape-erie/">
+<meta property="og:image" content="https://savcab.github.io/websites/boss-d-landscape-erie/assets/hero-front-bed-1600.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://savcab.github.io/websites/boss-d-landscape-erie/assets/hero-front-bed-1600.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D0D0D'/%3E%3Cpath d='M16 25c5-2.6 8-6.5 8-11.6C24 8.2 20.4 5 16 5S8 8.2 8 13.4C8 18.5 11 22.4 16 25z' fill='none' stroke='%23F5A623' stroke-width='2.2'/%3E%3Cpath d='M16 25V10' stroke='%23F5A623' stroke-width='2.2'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/hero-front-bed-800.jpg" imagesrcset="assets/hero-front-bed-800.jpg 800w, assets/hero-front-bed-1600.jpg 1600w" imagesizes="100vw">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth;}
+  html,body{font-family:'Inter',system-ui,sans-serif;background:#0D0D0D;}
+  section[id],div[id]{scroll-margin-top:4.75rem;}
+  figure{margin:0;}
+  .accent{color:#F5A623;}
+  .bg-accent{background-color:#F5A623;}
+  .eyebrow{letter-spacing:.14em;text-transform:uppercase;font-weight:700;font-size:.75rem;}
+  .rule{width:2.5rem;height:2px;background:#F5A623;border-radius:2px;}
+  .card{background:#161616;border:1px solid #262626;transition:transform .25s ease,border-color .25s ease;}
+  .card:hover{border-color:#F5A623;transform:translateY(-4px);}
+  .cta-panel{background:#161616;border:2px solid #F5A623;}
+  .star{fill:#F5A623;}
+  .stat-num{font-weight:900;letter-spacing:-0.02em;}
+  ::selection{background:#F5A623;color:#0D0D0D;}
+  .skip{position:absolute;left:-9999px;}
+  .skip:focus{left:.75rem;top:.75rem;z-index:100;background:#F5A623;color:#0D0D0D;padding:.5rem .9rem;border-radius:.5rem;font-weight:700;}
+  a:focus-visible,summary:focus-visible,details:focus-visible{outline:2px solid #F5A623;outline-offset:3px;border-radius:.35rem;}
+
+  /* ---- HERO ----
+     Mobile: the photo is a real in-flow band ABOVE the copy, so no absolutely
+     positioned text can ever be clipped off the top of a short viewport.
+     >=768px: the same photo becomes the full-bleed archetype hero behind the copy,
+     and .hero-body carries a min-height so the section can only ever GROW to fit. */
+  .hero{position:relative;background:#0D0D0D;}
+  .hero-media{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;}
+  /* 92% x on the narrow band lands the visible window on the juniper mass and the
+     mulch sweep — measured greenest of the candidate windows (29.5% vs 23.4% worst). */
+  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;object-position:92% 50%;}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,.34) 0%,rgba(13,13,13,.12) 40%,rgba(13,13,13,.70) 80%,#0D0D0D 100%);}
+  /* On the narrow band the caption sits bottom-RIGHT so it does not stack directly
+     above the eyebrow chip (two competing micro-labels 47px apart read as clutter). */
+  .hero-cap{position:absolute;left:0;right:0;bottom:.4rem;z-index:2;text-align:right;}
+  /* the caption carries its own scrim so its contrast never depends on how light
+     the hero gradient is at that height */
+  .hero-cap p{display:inline-block;background:rgba(13,13,13,.72);padding:.18rem .5rem;border-radius:.3rem;}
+  .hero-body{position:relative;padding-top:1.5rem;padding-bottom:2.25rem;}
+  @media (min-width:768px){
+    .hero-media{position:absolute;inset:0;aspect-ratio:auto;}
+    /* y=100% drops the stone-veneer/siding strip at the top of the crop */
+    .hero-media img{object-position:50% 100%;}
+    .hero-scrim{background:linear-gradient(180deg,rgba(13,13,13,.30) 0%,rgba(13,13,13,.38) 22%,rgba(13,13,13,.60) 48%,rgba(13,13,13,.84) 76%,#0D0D0D 100%);}
+    .hero-body{min-height:70vh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:5rem;padding-bottom:3.5rem;}
+    .hero-cap{bottom:auto;top:5.2rem;}
+  }
+  .hero-sh{text-shadow:0 2px 10px rgba(0,0,0,.72),0 1px 3px rgba(0,0,0,.85);}
+  .chip{display:inline-block;background:rgba(13,13,13,.92);border:1px solid rgba(245,166,35,.55);padding:.35rem .75rem;border-radius:.4rem;}
+
+  /* menu + FAQ disclosures, no JS */
+  summary{list-style:none;cursor:pointer;}
+  summary::-webkit-details-marker{display:none;}
+  .menu-panel{background:#161616;border:1px solid #2c2c2c;box-shadow:0 18px 40px rgba(0,0,0,.6);}
+  /* belt-and-braces: an absolutely-positioned panel inside a closed <details> must
+     not remain in the layout tree on any engine */
+  header details:not([open]) .menu-panel{display:none;}
+  details[open] .chev{transform:rotate(180deg);}
+  .chev{transition:transform .2s ease;}
+
+  /* Service-area diagram: align-self:start + explicit width keeps aspect-ratio
+     deriving HEIGHT from WIDTH. (Stretched to a taller row, aspect-ratio inverts
+     and derives WIDTH from HEIGHT — that was a real 56px overflow at 768px.) */
+  .area-fig{align-self:start;width:100%;max-width:100%;aspect-ratio:4/3;}
+  .map-box{height:300px;}
+  @media (min-width:1024px){.map-box{height:100%;min-height:340px;}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "Boss D Landscape",
+  "url": "https://savcab.github.io/websites/boss-d-landscape-erie/",
+  "image": "https://savcab.github.io/websites/boss-d-landscape-erie/assets/hero-front-bed-1600.jpg",
+  "telephone": "+18144409092",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "713 Perry St",
+    "addressLocality": "Erie",
+    "addressRegion": "PA",
+    "postalCode": "16503",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.1355953,
+    "longitude": -80.0644674
+  },
+  "areaServed": ["Erie, PA", "Harborcreek, PA", "Millcreek, PA", "Fairview, PA", "North East, PA"],
+  "openingHours": "Mo-Su 07:00-21:00",
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mowing, trimming and edging"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Spring and fall cleanups"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mulch installation"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Planting"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Yard hauling and debris removal"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Snow plowing"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What towns do you cover?","acceptedAnswer":{"@type":"Answer","text":"Erie, plus Harborcreek, Millcreek, Fairview and North East. We work out of 713 Perry St, on Erie's east side."}},
+    {"@type":"Question","name":"Do you plow snow in the winter?","acceptedAnswer":{"@type":"Answer","text":"Yes - we plow. It is a newer branch of the same crew, reached on the same number, (814) 440-9092."}},
+    {"@type":"Question","name":"When can I reach you?","acceptedAnswer":{"@type":"Answer","text":"We are reachable seven days a week, 7:00 AM to 9:00 PM. Call or text (814) 440-9092."}},
+    {"@type":"Question","name":"Do you take on overgrown yards, or only weekly mowing?","acceptedAnswer":{"@type":"Answer","text":"Both. Alongside the mowing rotation we do cleanups, mulch installation, planting and hauling. One reviewer's house was an REO property that hadn't been touched in a while."}},
+    {"@type":"Question","name":"How do I get a price?","acceptedAnswer":{"@type":"Answer","text":"Call or text us the street address and what needs doing. Reviewers describe the pricing as competitive and fair."}}
+  ]
+}
+</script>
+</head>
+<body class="text-white antialiased">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- STICKY CALL BAR -->
+<header class="sticky top-0 z-50 bg-[#0D0D0D]/95 backdrop-blur border-b border-[#262626]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-3 justify-between h-14 sm:h-16">
+    <a href="#top" class="font-black tracking-tight text-base sm:text-lg whitespace-nowrap shrink-0">BOSS D <span class="accent">LANDSCAPE</span></a>
+
+    <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-neutral-300">
+      <a href="#seasons" class="hover:text-white">Seasons</a>
+      <a href="#services" class="hover:text-white">Services</a>
+      <a href="#reviews" class="hover:text-white">Reviews</a>
+      <a href="#area" class="hover:text-white">Area</a>
+      <a href="#hours" class="hover:text-white">Hours</a>
+      <a href="#faq" class="hover:text-white">FAQ</a>
+    </nav>
+
+    <div class="flex items-center gap-2 shrink-0">
+      <a href="tel:+18144409092" class="flex items-center gap-2 bg-accent text-black font-bold text-sm px-3 sm:px-4 py-2 rounded-lg hover:brightness-110 whitespace-nowrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="hidden sm:inline">(814) 440-9092</span><span class="sm:hidden">Call</span>
+      </a>
+      <details class="lg:hidden relative">
+        <summary class="flex items-center justify-center w-10 h-10 rounded-lg border border-[#333] text-neutral-300 hover:text-white hover:border-neutral-500" aria-label="Open the section menu">
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </summary>
+        <nav class="menu-panel absolute right-0 top-[calc(100%+.6rem)] w-52 rounded-xl p-2 text-sm font-medium">
+          <a href="#seasons" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">Two seasons</a>
+          <a href="#services" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">Services</a>
+          <a href="#process" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">How it works</a>
+          <a href="#reviews" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">Reviews</a>
+          <a href="#area" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">Service area</a>
+          <a href="#hours" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">Hours &amp; location</a>
+          <a href="#faq" class="block px-3 py-2 rounded-lg text-neutral-300 hover:bg-[#222] hover:text-white">FAQ</a>
+          <a href="sms:+18144409092" class="block px-3 py-2 mt-1 rounded-lg font-bold text-[#F5A623] hover:bg-[#222]">Text for a quote</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media">
+    <img src="assets/hero-front-bed-1600.jpg"
+         srcset="assets/hero-front-bed-800.jpg 800w, assets/hero-front-bed-1600.jpg 1600w"
+         sizes="100vw" width="1600" height="744" fetchpriority="high" decoding="async"
+         alt="A freshly mulched foundation bed planted with clipped boxwood globes, a low spreading juniper and an arborvitae, edged along a stamped-concrete front walkway on an Erie, Pennsylvania home.">
+    <div class="hero-scrim"></div>
+    <div class="hero-cap">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <p class="text-[11px] sm:text-xs text-neutral-300 hero-sh">Mulch bed &amp; boxwood &mdash; Erie, PA.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-body">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 w-full">
+      <p class="eyebrow accent mb-3 chip hero-sh">Erie, PA &middot; East Side &middot; Residential</p>
+      <h1 class="hero-sh text-[2rem] leading-[1.06] sm:text-5xl md:text-6xl font-black max-w-3xl">One Erie Crew, From Spring Cleanup Through Snow.</h1>
+      <p class="hero-sh text-neutral-200 text-base sm:text-lg mt-4 max-w-xl">Mowing, trimming, cleanups, mulch, planting and hauling for Erie, Harborcreek, Millcreek, Fairview and North East &mdash; plus a newer snow-plowing branch on the same crew.</p>
+      <div class="hero-sh flex flex-wrap items-center gap-x-2 gap-y-1 mt-5">
+        <div class="flex gap-0.5" aria-hidden="true">
+          <svg class="star" width="18" height="18" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279L0 9.306l8.332-1.151z"/></svg>
+          <svg class="star" width="18" height="18" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279L0 9.306l8.332-1.151z"/></svg>
+          <svg class="star" width="18" height="18" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279L0 9.306l8.332-1.151z"/></svg>
+          <svg class="star" width="18" height="18" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279L0 9.306l8.332-1.151z"/></svg>
+          <svg class="star" width="18" height="18" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279L12 19.771l-7.416 3.642 1.48-8.279L0 9.306l8.332-1.151z" fill-opacity=".55"/></svg>
+        </div>
+        <span class="font-bold">4.7 on Google</span>
+        <span class="text-neutral-300 text-sm">&middot; 72 reviews</span>
+      </div>
+      <div class="flex flex-wrap gap-3 mt-6">
+        <a href="tel:+18144409092" class="bg-accent text-black font-bold px-5 py-3 rounded-lg hover:brightness-110">Call (814) 440-9092</a>
+        <a href="sms:+18144409092" class="border border-neutral-400 text-white font-bold px-5 py-3 rounded-lg hover:border-white hover:bg-white/5">Text for a Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STAT ROW -->
+<section class="border-y border-[#262626] bg-[#111]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+    <div class="flex items-center gap-4">
+      <span class="stat-num text-4xl accent shrink-0">4.7</span>
+      <span class="text-neutral-300 text-sm leading-tight">average rating<br>on Google</span>
+    </div>
+    <div class="flex items-center gap-4 sm:border-l sm:border-[#262626] sm:pl-8">
+      <span class="stat-num text-4xl accent shrink-0">72</span>
+      <span class="text-neutral-300 text-sm leading-tight">reviews on<br>our Google listing</span>
+    </div>
+    <div class="flex items-center gap-4 sm:border-l sm:border-[#262626] sm:pl-8">
+      <span class="stat-num text-4xl accent shrink-0">5</span>
+      <span class="text-neutral-300 text-sm leading-tight">towns covered<br>across Erie County</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+  <p class="eyebrow accent mb-3">Why Neighbors Call Back</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-10 leading-tight">One crew, four seasons, one phone number.</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="card rounded-2xl p-6">
+      <div class="rule mb-4"></div>
+      <h3 class="font-bold text-lg mb-2">Four Seasons, One Number</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">We mow and run cleanups from spring through fall, then plow once the snow starts. It is the same crew and the same line either way &mdash; (814) 440-9092 &mdash; so you are not hunting for a new contractor in January.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <div class="rule mb-4"></div>
+      <h3 class="font-bold text-lg mb-2">Based On Perry St</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">We work out of 713 Perry St, on Erie's east side, and run from there out through Harborcreek, Millcreek, Fairview and North East &mdash; five towns, all inside Erie County.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <div class="rule mb-4"></div>
+      <h3 class="font-bold text-lg mb-2">Reliability, Reviewed</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">4.7 on Google across 72 reviews. Reliability is the word reviewers keep reaching for &mdash; one customer of several years calls us &ldquo;by far the most reliable.&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<!-- TWO SEASONS -->
+<section id="seasons" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <p class="eyebrow accent mb-3">Two Seasons</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-4 leading-tight">Green season, white season.</h2>
+  <p class="text-neutral-400 max-w-2xl mb-10 leading-relaxed">Most Erie yards need two different contractors: one for the growing months and one for the driveway in February. We cover both ends of the calendar &mdash; same crew, same number, spring cleanup through the first plowable snow.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+    <div class="card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center gap-3 mb-5">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c0-6 3-10 9-11-1 7-4 11-9 11z"/><path d="M12 22C12 16 9 12 3 11c1 7 4 11 9 11z"/><path d="M12 22v-6"/></svg>
+        <div>
+          <p class="eyebrow accent">Spring Through Fall</p>
+          <h3 class="font-black text-xl">Landscaping &amp; lawn care</h3>
+        </div>
+      </div>
+      <ul class="space-y-2.5 text-sm text-neutral-300">
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Weekly or biweekly mowing on a set rotation</span></li>
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Trimming and edging with the cut</span></li>
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Spring and fall cleanups</span></li>
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Mulch installation on beds and borders</span></li>
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Planting &mdash; shrubs, perennials, bed edges</span></li>
+        <li class="flex gap-3"><span class="accent font-bold shrink-0">&mdash;</span><span>Hauling overgrowth and yard debris away</span></li>
+      </ul>
+    </div>
+
+    <div class="card rounded-2xl p-6 sm:p-8">
+      <div class="flex items-center gap-3 mb-5">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+        <div>
+          <p class="eyebrow accent">Once The Snow Starts</p>
+          <h3 class="font-black text-xl">Snow plowing</h3>
+        </div>
+      </div>
+      <p class="text-sm text-neutral-300 leading-relaxed mb-4">Plowing is the newest side of what we do &mdash; a branch we added onto the same crew, so you are not finding and vetting a separate outfit in the middle of a storm.</p>
+      <blockquote class="border-l-2 border-[#F5A623] pl-4 text-sm text-neutral-200 leading-relaxed">&ldquo;I'm so glad they've started a plowing branch!&rdquo;
+        <span class="block text-neutral-400 text-xs font-semibold mt-2 not-italic">Sharon Warshaw &middot; Google review</span>
+      </blockquote>
+      <p class="text-neutral-400 text-xs mt-5 leading-relaxed">The driveway goes on the same number as the mowing &mdash; (814) 440-9092, seven days, 7:00 AM to 9:00 PM.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <p class="eyebrow accent mb-3">Services</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-10 leading-tight">What we handle.</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 15V7h6l3 4h3v7"/><path d="M12 7V4h4"/></svg>
+      <h3 class="font-bold text-lg mb-2">Mowing, Trimming &amp; Edging</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">Weekly or biweekly, whichever your lawn actually needs. We trim and edge along walks and beds as part of the cut, not as an add-on you have to ask twice for.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><path d="M4 20s3-7 8-7 8 7 8 7z"/><path d="M12 13V8"/><path d="M9 6l3-3 3 3"/></svg>
+      <h3 class="font-bold text-lg mb-2">Spring &amp; Fall Cleanups</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">The two visits that decide how the rest of the year goes: we cut back and open up the beds in spring, then clear the leaves and dead growth before the snow sits on them.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><path d="M3 17h18"/><path d="M5 17c1-4 3.5-6 7-6s6 2 7 6"/><path d="M12 11V7"/><path d="M12 7c-2 0-3-1-3-3 2 0 3 1 3 3z"/><path d="M12 7c2 0 3-1 3-3-2 0-3 1-3 3z"/></svg>
+      <h3 class="font-bold text-lg mb-2">Mulch Installation</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">We edge, weed and top up the beds, cut clean along the walkway line &mdash; the finish in the photo at the top of this page.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><path d="M12 21V9"/><path d="M12 9C12 5 9 3 5 3c0 4 3 6 7 6z"/><path d="M12 13c0-3 2.5-5 6-5 0 3-2.5 5-6 5z"/><path d="M8 21h8"/></svg>
+      <h3 class="font-bold text-lg mb-2">Planting</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">We work shrubs, perennials and border plantings into the beds you already have, or into a bed we build as part of a cleanup.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><path d="M3 7h13l4 4v6h-4M3 7v10h4"/><circle cx="9" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>
+      <h3 class="font-bold text-lg mb-2">Yard Hauling</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">We load up overgrowth, brush and debris and take it away. This is the reclaim work reviewers describe on properties that had been left alone for a while.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+      <h3 class="font-bold text-lg mb-2">Snow Plowing</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">Our newer branch, run by the same crew on the same number, so your winter contact is one you already have.</p>
+    </div>
+  </div>
+  <p class="text-neutral-400 text-xs mt-6">Not sure which of these your yard needs? Text us a photo at (814) 440-9092 and ask.</p>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <p class="eyebrow accent mb-3">How It Works</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-10 leading-tight">Three steps, no callback queue.</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+    <div class="card rounded-2xl p-6">
+      <p class="stat-num text-3xl text-[#6e6e6e] mb-3">01</p>
+      <h3 class="font-bold text-lg mb-2">Call or text</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">One number reaches us, (814) 440-9092, seven days a week from 7:00 AM to 9:00 PM. It is a mobile line, so a text works as well as a call.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <p class="stat-num text-3xl text-[#6e6e6e] mb-3">02</p>
+      <h3 class="font-bold text-lg mb-2">Say where and what</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">Give us the street address plus the job: a mowing rotation, a spring or fall cleanup, a mulch bed, a haul-away, or the driveway for winter.</p>
+    </div>
+    <div class="card rounded-2xl p-6">
+      <p class="stat-num text-3xl text-[#6e6e6e] mb-3">03</p>
+      <h3 class="font-bold text-lg mb-2">Get on the schedule</h3>
+      <p class="text-neutral-400 text-sm leading-relaxed">Reviewers describe the crew as punctual and quick once the work is booked &mdash; &ldquo;fast and efficient, punctual,&rdquo; in one homeowner's words.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <p class="eyebrow accent mb-3">Reviews</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-4 leading-tight">4.7 on Google, across 72 reviews.</h2>
+  <p class="text-neutral-400 max-w-2xl mb-10 leading-relaxed">Three of them, verbatim from our Google listing. The three below all land on the same things: reliability, pricing, and turning around a yard that had gotten away from its owner.</p>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+    <figure class="card rounded-2xl p-6 flex flex-col">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#F5A623" class="mb-4 opacity-70" aria-hidden="true"><path d="M7 7h4v4H8.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7zm9 0h4v4h-2.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7z"/></svg>
+      <blockquote class="text-neutral-200 text-sm leading-relaxed mb-4 grow">&ldquo;Family business that provides quality work! We have been using Boss D Landscape for 3 years. Competitive prices, quality work, clean designs, fast and efficient, punctual, friendly, and experienced!&rdquo;</blockquote>
+      <figcaption class="text-neutral-400 text-xs font-semibold">Tina M &middot; Google review</figcaption>
+    </figure>
+    <figure class="card rounded-2xl p-6 flex flex-col">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#F5A623" class="mb-4 opacity-70" aria-hidden="true"><path d="M7 7h4v4H8.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7zm9 0h4v4h-2.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7z"/></svg>
+      <blockquote class="text-neutral-200 text-sm leading-relaxed mb-4 grow">&ldquo;I've been a customer of Boss Landscaping for several years now. They are fast, efficient, and fair in their pricing. I'm so glad they've started a plowing branch! They are by far the most reliable&hellip;&rdquo;</blockquote>
+      <figcaption class="text-neutral-400 text-xs font-semibold">Sharon Warshaw &middot; Google review</figcaption>
+    </figure>
+    <figure class="card rounded-2xl p-6 flex flex-col">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#F5A623" class="mb-4 opacity-70" aria-hidden="true"><path d="M7 7h4v4H8.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7zm9 0h4v4h-2.5c0 2 1 3 2.5 3v3c-3 0-5-2.5-5-6V7z"/></svg>
+      <blockquote class="text-neutral-200 text-sm leading-relaxed mb-4 grow">&ldquo;Boss D brought life back to our home. Everything was over grown and in need of major help. This house was an REO property and hadn't been touched in a while.&rdquo;</blockquote>
+      <figcaption class="text-neutral-400 text-xs font-semibold">Victoria Reynolds &middot; Google review</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="area" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <p class="eyebrow accent mb-3">Where We Work</p>
+  <h2 class="text-3xl sm:text-4xl font-black max-w-2xl mb-10 leading-tight">Erie's east side, block by block.</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+    <div>
+      <p class="text-neutral-300 leading-relaxed mb-5">We work out of the Perry St corridor on Erie's east side, covering residential yards from downtown Erie out through Harborcreek, Millcreek, Fairview and North East. Five towns, all within Erie County &mdash; close enough that we can keep a weekly mowing rotation and still get to a driveway after a storm.</p>
+      <p class="text-neutral-400 text-sm leading-relaxed mb-5">If your street is on the edge of that list, call anyway &mdash; we will give you a yes or a no in one conversation, not a form and a wait.</p>
+      <div class="flex flex-wrap gap-2">
+        <span class="border border-[#333] rounded-full px-3 py-1 text-xs text-neutral-300">Erie</span>
+        <span class="border border-[#333] rounded-full px-3 py-1 text-xs text-neutral-300">Harborcreek</span>
+        <span class="border border-[#333] rounded-full px-3 py-1 text-xs text-neutral-300">Millcreek</span>
+        <span class="border border-[#333] rounded-full px-3 py-1 text-xs text-neutral-300">Fairview</span>
+        <span class="border border-[#333] rounded-full px-3 py-1 text-xs text-neutral-300">North East</span>
+      </div>
+    </div>
+    <figure class="area-fig rounded-2xl overflow-hidden border border-[#262626]">
+      <svg viewBox="0 0 400 300" class="block w-full h-full" role="img" aria-label="Decorative diagram showing the Perry St base with the five service towns around it">
+        <rect width="400" height="300" fill="#141712"/>
+        <g stroke="#2a2f26" stroke-width="1.5">
+          <path d="M0 60 H400 M0 130 H400 M0 200 H400 M0 260 H400"/>
+          <path d="M70 0 V300 M160 0 V300 M250 0 V300 M330 0 V300"/>
+        </g>
+        <circle cx="160" cy="130" r="7" fill="#F5A623"/>
+        <circle cx="160" cy="130" r="16" fill="none" stroke="#F5A623" stroke-width="1.5" opacity=".5"/>
+        <circle cx="160" cy="130" r="26" fill="none" stroke="#F5A623" stroke-width="1" opacity=".3"/>
+        <circle cx="160" cy="130" r="40" fill="none" stroke="#F5A623" stroke-width="1" opacity=".16"/>
+        <text x="160" y="168" fill="#F5A623" font-size="11" font-family="Inter, sans-serif" text-anchor="middle" font-weight="700">PERRY ST BASE</text>
+        <g fill="#8a8f82" font-size="10" font-family="Inter, sans-serif">
+          <text x="26" y="45">FAIRVIEW</text>
+          <text x="26" y="232">MILLCREEK</text>
+          <text x="252" y="52">HARBORCREEK</text>
+          <text x="286" y="248">NORTH EAST</text>
+          <text x="120" y="286">ERIE</text>
+        </g>
+      </svg>
+      <figcaption class="sr-only">Decorative service-area diagram, not a literal map of routes.</figcaption>
+    </figure>
+  </div>
+  <p class="text-neutral-400 text-xs mt-4">Decorative service-area diagram, not a literal map of routes.</p>
+</section>
+
+<!-- HOURS + MAP -->
+<section id="hours" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div>
+      <p class="eyebrow accent mb-3">Hours &amp; Location</p>
+      <h2 class="text-3xl sm:text-4xl font-black mb-6 leading-tight">Seven days a week.</h2>
+      <div class="card rounded-2xl p-5 sm:p-6 divide-y divide-[#262626]">
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Monday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Tuesday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Wednesday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Thursday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Friday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Saturday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+        <div class="flex justify-between gap-3 py-2 text-sm"><span class="text-neutral-400">Sunday</span><span class="font-semibold whitespace-nowrap">7:00 AM &ndash; 9:00 PM</span></div>
+      </div>
+      <p class="text-neutral-300 text-sm mt-5 font-semibold">713 Perry St, Erie, PA 16503</p>
+      <p class="text-neutral-400 text-xs mt-1">We keep the same hours year-round &mdash; 7:00 AM to 9:00 PM, seven days, growing season and storm season both.</p>
+      <div class="flex flex-wrap gap-3 mt-5">
+        <a href="tel:+18144409092" class="bg-accent text-black font-bold px-5 py-3 rounded-lg hover:brightness-110">Call (814) 440-9092</a>
+        <a href="sms:+18144409092" class="border border-neutral-400 text-white font-bold px-5 py-3 rounded-lg hover:border-white hover:bg-white/5">Text Us</a>
+      </div>
+    </div>
+    <div class="map-box rounded-2xl overflow-hidden border border-[#262626]">
+      <iframe title="Map showing Boss D Landscape at 713 Perry St, Erie, PA" width="100%" height="100%" style="border:0;filter:invert(92%) hue-rotate(180deg) saturate(.85);" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.0774674%2C42.1225953%2C-80.0514674%2C42.1485953&amp;layer=mapnik&amp;marker=42.1355953%2C-80.0644674"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-8 lg:gap-12 items-start">
+
+  <div>
+    <p class="eyebrow accent mb-3">Questions</p>
+    <h2 class="text-3xl sm:text-4xl font-black mb-4 leading-tight">Before the truck rolls.</h2>
+    <p class="text-neutral-400 leading-relaxed mb-6">Five quick answers. Anything that is not here is a one-minute conversation.</p>
+    <div class="card rounded-2xl p-6">
+      <p class="font-bold mb-1">Not sure what to ask for?</p>
+      <p class="text-neutral-400 text-sm leading-relaxed mb-5">Send us a photo of the yard with a line about what is bothering you &mdash; the overgrown side bed, the leaves, the driveway. That is enough for us to start.</p>
+      <a href="sms:+18144409092" class="inline-block bg-accent text-black font-bold px-5 py-3 rounded-lg hover:brightness-110">Text (814) 440-9092</a>
+    </div>
+  </div>
+
+  <div class="space-y-3">
+
+    <details class="card rounded-2xl px-5 sm:px-6">
+      <summary class="flex items-start justify-between gap-4 py-5 font-bold text-base sm:text-lg">
+        <span>What towns do you cover?</span>
+        <svg class="chev shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <p class="text-neutral-400 text-sm leading-relaxed pb-5">Erie, plus Harborcreek, Millcreek, Fairview and North East. We work out of 713 Perry St, on Erie's east side.</p>
+    </details>
+
+    <details class="card rounded-2xl px-5 sm:px-6">
+      <summary class="flex items-start justify-between gap-4 py-5 font-bold text-base sm:text-lg">
+        <span>Do you plow snow in the winter?</span>
+        <svg class="chev shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <p class="text-neutral-400 text-sm leading-relaxed pb-5">Yes &mdash; we plow. It is a newer branch of the same crew, reached on the same number, (814) 440-9092.</p>
+    </details>
+
+    <details class="card rounded-2xl px-5 sm:px-6">
+      <summary class="flex items-start justify-between gap-4 py-5 font-bold text-base sm:text-lg">
+        <span>When can I reach you?</span>
+        <svg class="chev shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <p class="text-neutral-400 text-sm leading-relaxed pb-5">We are reachable seven days a week, 7:00 AM to 9:00 PM. Call or text (814) 440-9092.</p>
+    </details>
+
+    <details class="card rounded-2xl px-5 sm:px-6">
+      <summary class="flex items-start justify-between gap-4 py-5 font-bold text-base sm:text-lg">
+        <span>Do you take on overgrown yards, or only weekly mowing?</span>
+        <svg class="chev shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <p class="text-neutral-400 text-sm leading-relaxed pb-5">Both. Alongside the mowing rotation we do cleanups, mulch installation, planting and hauling. One reviewer's house was an REO property that &ldquo;hadn't been touched in a while.&rdquo;</p>
+    </details>
+
+    <details class="card rounded-2xl px-5 sm:px-6">
+      <summary class="flex items-start justify-between gap-4 py-5 font-bold text-base sm:text-lg">
+        <span>How do I get a price?</span>
+        <svg class="chev shrink-0 mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      <p class="text-neutral-400 text-sm leading-relaxed pb-5">Call or text us the street address and what needs doing. Reviewers describe the pricing as competitive and fair &mdash; &ldquo;fair in their pricing,&rdquo; as one review puts it.</p>
+    </details>
+
+  </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16 border-t border-[#262626]">
+  <div class="cta-panel rounded-2xl p-8 sm:p-12 text-center">
+    <p class="eyebrow accent mb-3">Erie &middot; Harborcreek &middot; Millcreek &middot; Fairview &middot; North East</p>
+    <h2 class="text-3xl sm:text-4xl font-black mb-3 leading-tight">Get the yard on the list.</h2>
+    <p class="text-neutral-300 max-w-lg mx-auto mb-7">Call or text us directly, seven days a week, 7:00 AM to 9:00 PM. One number covers our mowing season and our plowing season both.</p>
+    <div class="flex flex-wrap gap-3 justify-center">
+      <a href="tel:+18144409092" class="bg-accent text-black font-bold px-6 py-3 rounded-lg hover:brightness-110">Call (814) 440-9092</a>
+      <a href="sms:+18144409092" class="border border-neutral-400 text-white font-bold px-6 py-3 rounded-lg hover:border-white hover:bg-white/5">Text Us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-[#262626] py-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-neutral-400">
+    <div>
+      <p class="font-black text-white mb-2">BOSS D <span class="accent">LANDSCAPE</span></p>
+      <p>713 Perry St, Erie, PA 16503</p>
+      <p class="mt-1"><a href="tel:+18144409092" class="hover:text-white">(814) 440-9092</a> &middot; <a href="sms:+18144409092" class="hover:text-white">text</a></p>
+      <p class="mt-1">Open 7:00 AM &ndash; 9:00 PM, seven days</p>
+    </div>
+    <div class="sm:text-right">
+      <p>Landscaping, lawn care &amp; snow plowing</p>
+      <p class="mt-1">Serving Erie, Harborcreek, Millcreek, Fairview &amp; North East</p>
+      <p class="mt-1">4.7 on Google &middot; 72 reviews</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* The mobile section menu is a <details> inside a position:sticky header. Without this it
+   stays open after a section link is tapped and the panel rides down the page on top of
+   whatever the visitor just navigated to. Close it on navigate, on outside click, on Escape. */
+(function(){
+  var d = document.querySelector('header details');
+  if (!d) return;
+  d.addEventListener('click', function(e){
+    if (e.target.closest('.menu-panel a')) d.open = false;
+  });
+  document.addEventListener('click', function(e){
+    if (d.open && !d.contains(e.target)) d.open = false;
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); }
+  });
+})();
+</script>
+
+</body>
+</html>

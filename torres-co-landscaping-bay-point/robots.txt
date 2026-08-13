@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://savcab.github.io/websites/torres-and-co-landscaping-bay-point/sitemap.xml

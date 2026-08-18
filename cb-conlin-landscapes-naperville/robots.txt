@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/cb-conlin-landscapes-naperville/sitemap.xml

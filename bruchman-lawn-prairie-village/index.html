@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lawn Care &amp; Landscaping in Prairie Village, KS | Since 2002</title>
+<meta name="description" content="Bruchman Lawn Service has cared for lawns in Prairie Village, Leawood, Mission Hills, Fairway &amp; Overland Park, KS since 2002. Mowing, fertilizing, landscape design — call today." />
+<link rel="canonical" href="https://savcab.github.io/websites/bruchman-lawn-prairie-village/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lawn Care &amp; Landscaping in Prairie Village, KS | Bruchman Lawn Service" />
+<meta property="og:description" content="Family-owned lawn care serving Prairie Village, Leawood, Mission Hills, Fairway &amp; Overland Park, KS since 2002. Mowing, fertilizing, landscape design." />
+<meta property="og:image" content="https://savcab.github.io/websites/bruchman-lawn-prairie-village/assets/og-image.jpg" />
+<meta property="og:url" content="https://savcab.github.io/websites/bruchman-lawn-prairie-village/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2321501A'/%3E%3Cpath d='M7 19h10M10 19c0-6 2-8 2-8M12 11c0-3-2-5-6-5 0 4 2 6 6 6M12 11c0-4 2-7 7-7 0 5-3 8-7 7' fill='none' stroke='%237AAA36' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Bruchman Lawn Service, LLC",
+  "telephone": "+19132623746",
+  "email": "customersupport@bruchmanlawn.com",
+  "url": "https://savcab.github.io/websites/bruchman-lawn-prairie-village/",
+  "image": "https://savcab.github.io/websites/bruchman-lawn-prairie-village/assets/og-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5223 W 71st Terrace",
+    "addressLocality": "Prairie Village",
+    "addressRegion": "KS",
+    "postalCode": "66208",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.999321,
+    "longitude": -94.6467817
+  },
+  "areaServed": [
+    {"@type": "City", "name": "Prairie Village, KS"},
+    {"@type": "City", "name": "Leawood, KS"},
+    {"@type": "City", "name": "Mission Hills, KS"},
+    {"@type": "City", "name": "Fairway, KS"},
+    {"@type": "City", "name": "Overland Park, KS"}
+  ],
+  "sameAs": ["https://www.facebook.com/BruchmanLawn/"]
+}
+</script>
+
+<style>
+:root{
+  /* spacing */
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.5rem,8vw,7.5rem);
+  --hero-y:clamp(4rem,10vw,9rem);
+  --container:75rem;
+  --measure:62ch;
+  /* type */
+  --h1:clamp(2.35rem,5.2vw,3.75rem);
+  --h2:clamp(1.7rem,3.4vw,2.5rem);
+  --h3:1.375rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6;
+  --lh-head:1.08;
+  --disp:'Fraunces',serif;
+  --sans:'Hanken Grotesk',system-ui,sans-serif;
+  /* color — sourced from bruchmanlawn.com's own logo/banner pixels */
+  --paper:#F7F5EC;
+  --paper-2:#EEF0E2;
+  --ink:#1B2A17;
+  --ink-2:#54604B;
+  --ink-3:#889077;
+  --line:#DCE0CE;
+  --forest:#21501A;
+  --forest-deep:#122A0E;
+  --forest-mid:#2E5E23;
+  --moss:#7AAA36;
+  --moss-deep:#587A26;
+  --gold:#C79A3C;
+  /* radius / shadow */
+  --r-s:8px; --r-m:14px; --r-l:26px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(18,30,12,.07);
+  --sh-2:0 3px 8px rgba(18,30,12,.09),0 1px 2px rgba(18,30,12,.06);
+  --sh-3:0 10px 28px rgba(18,30,12,.14),0 2px 6px rgba(18,30,12,.08);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+html,body{overflow-x:clip}
+h1,h2,h3,h4{font-family:var(--disp);line-height:var(--lh-head);margin:0;font-weight:600;color:var(--forest-deep)}
+p{margin:0 0 1em;max-width:var(--measure)}
+p:last-child{margin-bottom:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2.5rem)}
+.eyebrow{font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--moss-deep)}
+.eyebrow.on-dark{color:#C7DE9C}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+::selection{background:var(--moss);color:#fff}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.55em;padding:.95em 1.6em;border-radius:var(--r-pill);font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid transparent;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);cursor:pointer;white-space:nowrap}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+.btn-primary{background:var(--moss);color:#132608;box-shadow:var(--sh-2)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--sh-3);background:#86B640}
+.btn-ghost-light{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.35)}
+.btn-ghost-light:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--forest-deep);border-color:var(--line)}
+.btn-outline:hover{border-color:var(--moss-deep);background:var(--paper-2)}
+
+/* ---------- header ---------- */
+.callbar{background:var(--forest-deep);color:#EAF0DD;font-size:.8rem}
+.callbar .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.5rem;flex-wrap:wrap}
+.callbar a{text-decoration:none;display:inline-flex;align-items:center;gap:.4em;color:#EAF0DD;font-weight:600}
+.callbar a:hover{color:#fff}
+.callbar svg{width:1em;height:1em}
+.callbar .cb-links{display:flex;gap:1.25rem;flex-wrap:wrap}
+
+header.site{position:sticky;top:0;z-index:40;background:rgba(247,245,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .container{display:flex;align-items:center;justify-content:space-between;padding-block:.85rem;gap:1rem}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--forest-deep)}
+.brand-mark{width:2.35rem;height:2.35rem;color:var(--forest);flex:none}
+.brand-mark svg{width:100%;height:100%}
+.brand-word{font-family:var(--disp);font-weight:600;font-size:1.18rem;line-height:1.1;color:var(--forest-deep)}
+.brand-word small{display:block;font-family:var(--sans);font-weight:600;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin-top:.15em}
+
+nav.primary{display:flex;align-items:center;gap:2rem}
+nav.primary ul{list-style:none;display:flex;gap:1.6rem;margin:0;padding:0}
+nav.primary a{text-decoration:none;font-weight:600;font-size:.92rem;color:var(--ink-2);position:relative;padding-block:.25rem;transition:color var(--t)}
+nav.primary a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--moss);transition:right var(--t)}
+nav.primary a:hover,nav.primary a.active{color:var(--forest-deep)}
+nav.primary a:hover::after,nav.primary a.active::after{right:0}
+.nav-cta{display:flex;align-items:center;gap:.75rem}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);border-radius:var(--r-s);padding:.5rem;color:var(--forest-deep)}
+.menu-toggle svg{width:1.4rem;height:1.4rem;display:block}
+
+section{scroll-margin-top:5.2rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(120% 140% at 82% 0%,var(--forest-mid) 0%,var(--forest) 42%,var(--forest-deep) 100%);color:#F4F3EA;overflow:hidden}
+.hero .container{position:relative;z-index:2;padding-block:var(--hero-y);display:grid;grid-template-columns:1fr;gap:3rem;align-items:center}
+.hero-copy h1{font-size:var(--h1);color:#fff;margin-block:.5rem 1.1rem;letter-spacing:-.01em}
+.hero-copy h1 em{font-style:italic;font-weight:500;color:#CBE49A}
+.hero-copy p.lede{color:#DCE6C8;font-size:1.08rem;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.9rem}
+.hero-proof{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.6rem;padding-top:1.8rem;border-top:1px solid rgba(255,255,255,.16)}
+.hero-proof .item{display:flex;align-items:center;gap:.6rem;font-size:.9rem;color:#DCE6C8}
+.hero-proof svg{width:1.1rem;height:1.1rem;color:var(--gold);flex:none}
+.hero-proof strong{color:#fff;font-family:var(--disp);font-weight:600}
+
+.sprout-wrap{position:relative;width:100%;max-width:26rem;justify-self:center;aspect-ratio:1/1}
+.sprout-wrap svg{width:100%;height:100%;overflow:visible}
+.sprout-wrap .ring{fill:none;stroke:rgba(255,255,255,.14);stroke-width:1}
+.sprout-grow path{fill:none;stroke:#CBE49A;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:400;stroke-dashoffset:400;animation:draw 1.6s cubic-bezier(.3,.7,.2,1) forwards}
+.sprout-grow path.p2{animation-delay:.35s}
+.sprout-grow path.p3{animation-delay:.7s}
+.sprout-grow .ground{stroke:rgba(255,255,255,.3);stroke-dasharray:300;animation-delay:0s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.sprout-grow path{animation:none;stroke-dashoffset:0}}
+
+/* ---------- stat band ---------- */
+.stats{background:var(--paper-2);border-bottom:1px solid var(--line)}
+.stats .container{padding-block:2.4rem}
+.stat-grid{display:grid;grid-template-columns:1fr;gap:1.75rem;text-align:center}
+.stat-grid .n{font-family:var(--disp);font-size:clamp(1.9rem,4vw,2.6rem);color:var(--forest-deep);font-weight:600;display:flex;align-items:center;justify-content:center;gap:.35rem}
+.stat-grid .n svg{width:.85em;height:.85em;color:var(--gold)}
+.stat-grid .lbl{font-size:.82rem;color:var(--ink-2);margin-top:.3rem;font-weight:600}
+
+/* ---------- generic section ---------- */
+.section{padding-block:var(--section-y)}
+.section-head{max-width:42rem;margin-bottom:3rem}
+.section-head h2{margin-top:.6rem}
+.section-head p{color:var(--ink-2);margin-top:.9rem}
+.section.alt{background:var(--paper-2)}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:2rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc-card.featured{background:linear-gradient(155deg,#fff 0%,var(--paper-2) 100%);border-color:var(--moss);position:relative}
+.svc-card.featured::before{content:"Design & Build";position:absolute;top:-.7rem;left:2rem;background:var(--moss);color:#132608;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.3em .8em;border-radius:var(--r-pill)}
+@media (min-width:640px){.svc-card.featured{grid-column:span 2}.svc-card.featured .svc-list{max-width:34rem}}
+.svc-icon{width:3rem;height:3rem;border-radius:var(--r-m);background:var(--forest);color:#CBE49A;display:grid;place-items:center;margin-bottom:1.3rem}
+.svc-icon svg{width:1.5rem;height:1.5rem}
+.svc-card h3{font-size:1.2rem;margin-bottom:.6rem}
+.svc-card p{color:var(--ink-2);font-size:.96rem;margin-bottom:1rem}
+.svc-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem}
+.svc-list li{font-size:.76rem;font-weight:600;color:var(--moss-deep);background:#EEF3E2;border-radius:var(--r-pill);padding:.3em .75em}
+
+/* ---------- process ---------- */
+.process{display:grid;grid-template-columns:1fr;gap:2.5rem;counter-reset:step}
+.p-step{position:relative;padding-left:3.6rem}
+.p-step .num{position:absolute;left:0;top:0;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--forest);color:#CBE49A;font-family:var(--disp);font-weight:600;display:grid;place-items:center;font-size:1.05rem}
+.p-step h3{font-size:1.1rem;margin-bottom:.5rem}
+.p-step p{color:var(--ink-2);font-size:.95rem}
+.p-line{display:none}
+
+/* ---------- about / dark band ---------- */
+.about-band{background:var(--forest-deep);color:#EAF0DD}
+.about-band .container{display:grid;grid-template-columns:1fr;gap:2.5rem;padding-block:var(--section-y);align-items:start}
+.about-band h2{color:#fff}
+.about-band p{color:#CBD8B7}
+.about-badges{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-pill);padding:.55em 1.1em;font-size:.82rem;font-weight:600;color:#EAF0DD}
+.badge svg{width:1rem;height:1rem;color:var(--gold)}
+
+/* ---------- service area ---------- */
+.area-wrap{display:grid;grid-template-columns:1fr;gap:2rem}
+.town-list{list-style:none;margin:1.5rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.town-list li{background:#fff;border:1px solid var(--line);border-radius:var(--r-pill);padding:.5em 1.05em;font-size:.88rem;font-weight:600;color:var(--forest-deep);display:flex;align-items:center;gap:.4em}
+.town-list svg{width:.9em;height:.9em;color:var(--moss-deep)}
+.map-card{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:#fff}
+.map-card iframe{width:100%;height:340px;border:0;display:block}
+.map-card .mc-foot{padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.86rem}
+.map-card .mc-foot a{font-weight:700;color:var(--moss-deep);text-decoration:none;display:inline-flex;align-items:center;gap:.35em}
+
+/* ---------- form ---------- */
+.form-wrap{display:grid;grid-template-columns:1fr;gap:2.5rem}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(1.5rem,4vw,2.5rem);box-shadow:var(--sh-2)}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-size:.82rem;font-weight:700;color:var(--forest-deep);margin-bottom:.4rem}
+.field .req{color:var(--moss-deep)}
+.field input,.field select,.field textarea{width:100%;padding:.85em 1em;border:1.5px solid var(--line);border-radius:var(--r-m);font:inherit;color:var(--ink);background:var(--paper);transition:border-color var(--t),box-shadow var(--t)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--moss-deep);box-shadow:0 0 0 3px rgba(122,170,54,.22)}
+.field textarea{resize:vertical;min-height:6.5rem}
+.field.bad input,.field.bad select,.field.bad textarea{border-color:#B4432B}
+.field .err{display:none;color:#B4432B;font-size:.78rem;margin-top:.35rem;font-weight:600}
+.field.bad .err{display:block}
+.form-grid{display:grid;grid-template-columns:1fr;gap:0 1.1rem}
+.form-note{font-size:.8rem;color:var(--ink-2);margin-top:.5rem}
+.form-success{display:none;text-align:center;padding:2.5rem 1rem}
+.form-success.show{display:block}
+.form-card.sent form{display:none}
+.form-success svg{width:3rem;height:3rem;color:var(--moss-deep);margin:0 auto 1rem}
+.contact-mini{display:flex;flex-direction:column;gap:1.1rem}
+.contact-mini a{display:flex;align-items:center;gap:.85rem;text-decoration:none;color:var(--forest-deep);font-weight:600;padding:1rem 1.1rem;background:#fff;border:1px solid var(--line);border-radius:var(--r-m);transition:border-color var(--t),transform var(--t)}
+.contact-mini a:hover{border-color:var(--moss-deep);transform:translateX(3px)}
+.contact-mini svg{width:1.3rem;height:1.3rem;color:var(--moss-deep);flex:none}
+.contact-mini .sub{display:block;font-size:.76rem;font-weight:500;color:var(--ink-2)}
+
+/* ---------- final cta ---------- */
+.final-cta{background:linear-gradient(120deg,var(--forest) 0%,var(--forest-mid) 100%);color:#fff;text-align:center}
+.final-cta .container{padding-block:var(--section-y)}
+.final-cta h2{color:#fff;max-width:36rem;margin-inline:auto}
+.final-cta p{color:#DCE6C8;max-width:36rem;margin-inline:auto;margin-top:1rem}
+.final-cta .hero-cta{justify-content:center;margin-top:2rem}
+
+/* ---------- footer ---------- */
+footer.site{background:var(--forest-deep);color:#B9C7A4;padding-bottom:6.5rem}
+footer.site .container{padding-block:3.5rem 2rem;display:grid;grid-template-columns:1fr;gap:2.5rem}
+.foot-brand{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none}
+.foot-brand .brand-mark{color:#CBE49A;width:2rem;height:2rem}
+.foot-brand span{font-family:var(--disp);font-weight:600;font-size:1.1rem}
+.foot-nap{margin-top:1.1rem;font-size:.88rem;line-height:1.75}
+.foot-nap a{color:#DCE6C8;text-decoration:none}
+.foot-nap a:hover{color:#fff}
+.foot-cols{display:grid;grid-template-columns:1fr;gap:2rem}
+.foot-col h4{color:#fff;font-family:var(--sans);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;font-weight:700}
+.foot-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem}
+.foot-col a{color:#B9C7A4;text-decoration:none;font-size:.9rem}
+.foot-col a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:1rem;padding-top:1.6rem;font-size:.78rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;color:#8FA179}
+
+/* ---------- sticky mobile cta bar ---------- */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--forest-deep);border-top:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -6px 18px rgba(0,0,0,.18)}
+.sticky-cta a{display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem .5rem;color:#fff;text-decoration:none;font-weight:700;font-size:.92rem}
+.sticky-cta a:first-child{background:var(--moss);color:#132608}
+.sticky-cta svg{width:1.15rem;height:1.15rem}
+
+/* ================= responsive ================= */
+@media (min-width:640px){
+  .stat-grid{grid-template-columns:repeat(3,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .form-grid{grid-template-columns:1fr 1fr}
+  .form-grid .full{grid-column:1/-1}
+  .foot-cols{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:860px){
+  .hero .container{grid-template-columns:1.15fr .85fr}
+  .hero-copy{order:1}
+  .sprout-wrap{order:2;max-width:none}
+  .process{grid-template-columns:repeat(3,1fr)}
+  .p-step{padding-left:0;padding-top:3.4rem}
+  .p-step .num{left:0;top:0}
+  .about-band .container{grid-template-columns:1.1fr .9fr}
+  .area-wrap{grid-template-columns:1fr 1fr}
+  .form-wrap{grid-template-columns:1.1fr .8fr}
+}
+@media (min-width:900px){
+  nav.primary ul{display:flex}
+  .menu-toggle{display:none}
+}
+@media (max-width:899.98px){
+  nav.primary ul{position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:0;border-bottom:1px solid var(--line);box-shadow:var(--sh-2);padding:.5rem 0;display:none}
+  nav.primary.open ul{display:flex}
+  nav.primary ul li{width:100%}
+  nav.primary ul a{display:block;padding:.9rem clamp(1.25rem,4vw,2.5rem)}
+  nav.primary{position:relative;width:100%;justify-content:flex-end}
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center}
+  .nav-cta .btn span.long{display:none}
+}
+@media (min-width:1024px){
+  footer.site{padding-bottom:2rem}
+  .sticky-cta{display:none}
+  .foot-cols{grid-template-columns:repeat(3,1fr)}
+  footer.site .container{grid-template-columns:1.2fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="container">
+    <div class="cb-links">
+      <a href="tel:+19132623746">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+        (913) 262-3746
+      </a>
+      <a href="mailto:customersupport@bruchmanlawn.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        customersupport@bruchmanlawn.com
+      </a>
+    </div>
+    <div>Serving Prairie Village &amp; Johnson County, KS since 2002</div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-6 2-8 2-8"/><path d="M12 12c0-3-2-5-6-5 0 4 2 6 6 6"/><path d="M12 12c0-4 2-7 7-7 0 5-3 8-7 7"/></svg>
+      </span>
+      <span class="brand-word">Bruchman Lawn Service<small>Est. 2002 &middot; Prairie Village, KS</small></span>
+    </a>
+    <nav class="primary" id="primaryNav">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#areas">Service Area</a></li>
+        <li><a href="#quote">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="tel:+19132623746">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+        <span class="long">Call Now</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="eyebrow on-dark">Family-Owned &middot; Johnson County, KS &middot; Since 2002</p>
+        <h1>Reliable Lawn Care, <em>Grown</em> Over Two Decades</h1>
+        <p class="lede">Mowing, fertilizing, landscape design, and clean-ups for Prairie Village, Leawood, Mission Hills, Fairway, and Overland Park — from a crew that's cared for Johnson County lawns since 2002.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+19132623746">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            Call (913) 262-3746
+          </a>
+          <a class="btn btn-ghost-light" href="#quote">
+            Get a Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="hero-proof">
+          <div class="item">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+            <span><strong>4.8</strong> &middot; 24 reviews on Google</span>
+          </div>
+          <div class="item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-6 2-8 2-8"/><path d="M12 12c0-3-2-5-6-5 0 4 2 6 6 6"/><path d="M12 12c0-4 2-7 7-7 0 5-3 8-7 7"/></svg>
+            <span><strong>20+ years</strong> in Johnson County</span>
+          </div>
+          <div class="item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M8 16h5M8 8h4"/></svg>
+            <span>Family-owned crew</span>
+          </div>
+        </div>
+      </div>
+      <div class="sprout-wrap" aria-hidden="true">
+        <svg viewBox="0 0 300 300">
+          <circle class="ring" cx="150" cy="150" r="128"/>
+          <circle class="ring" cx="150" cy="150" r="95"/>
+          <g class="sprout-grow" transform="translate(60,40)">
+            <path class="ground" d="M20 220h140" pathLength="300"/>
+            <path class="stem" d="M90 220c0-70 5-95 5-140" pathLength="400"/>
+            <path class="p2" d="M95 120c0-42-28-62-72-62 5 46 28 68 72 62Z" pathLength="400"/>
+            <path class="p3" d="M95 100c0-48 26-72 84-76-3 52-32 82-84 76Z" pathLength="400"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <section class="stats" aria-label="Trust stats">
+    <div class="container">
+      <div class="stat-grid">
+        <div>
+          <div class="n"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>4.8</div>
+          <div class="lbl">Average rating &middot; 24 reviews on Google</div>
+        </div>
+        <div>
+          <div class="n">2002</div>
+          <div class="lbl">Family-owned &amp; caring for local lawns since</div>
+        </div>
+        <div>
+          <div class="n">5</div>
+          <div class="lbl">Johnson County communities served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What We Do</p>
+        <h2>Lawn care and landscaping, done right the first time</h2>
+        <p>Real services we actually offer — no upsells, no filler. Weekly maintenance or a full landscape redesign, we scope it to your property.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+          </div>
+          <h3>Lawn Care &amp; Mowing</h3>
+          <p>Weekly or custom mowing schedules with clean edging, so your lawn looks cared-for every week, not just after a service call.</p>
+          <ul class="svc-list"><li>Lawn mowing</li><li>Custom schedules</li></ul>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05Z"/><path d="M12.56 6.6A18.5 18.5 0 0 1 17 21"/></svg>
+          </div>
+          <h3>Fertilizing &amp; Aeration</h3>
+          <p>Balanced fertilizer programs plus aeration and overseeding, built around what Kansas soil and turf actually need each season.</p>
+          <ul class="svc-list"><li>Fertilizer programs</li><li>Aeration</li><li>Seeding</li><li>Sod replacement</li><li>Fall renovation</li></ul>
+        </article>
+        <article class="svc-card featured">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v2M9 8a3 3 0 1 0 3 3M15 8a3 3 0 1 1-3 3m0 0v9"/></svg>
+          </div>
+          <h3>Landscape Design &amp; Hardscape</h3>
+          <p>Foundation plantings, garden beds, retaining walls, stone walkways, and fire features — designed to fit your home, not a catalog.</p>
+          <ul class="svc-list"><li>Landscape design</li><li>Foundation plants</li><li>Hardscape</li><li>Fire features</li><li>Retaining walls</li><li>Stone walkways</li><li>Gardening</li></ul>
+        </article>
+        <article class="svc-card">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/><path d="M11 20v-2M7 20v-2M15 20v-2"/></svg>
+          </div>
+          <h3>Seasonal Clean-Up</h3>
+          <p>Leaf clean-up and fresh mulch installation to reset your property between seasons and keep beds looking sharp.</p>
+          <ul class="svc-list"><li>Leaf clean-up</li><li>Mulch installation</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How It Works</p>
+        <h2>Three steps to a lawn you don't think about</h2>
+      </div>
+      <div class="process">
+        <div class="p-step">
+          <div class="num">1</div>
+          <h3>Call or request a quote</h3>
+          <p>Reach a real person at (913) 262-3746, or send your property details through the form below.</p>
+        </div>
+        <div class="p-step">
+          <div class="num">2</div>
+          <h3>We assess your property</h3>
+          <p>We walk the lot, note the work it actually needs, and send back a straightforward quote — no pressure, no upsells.</p>
+        </div>
+        <div class="p-step">
+          <div class="num">3</div>
+          <h3>Reliable, scheduled care</h3>
+          <p>Your lawn gets mowed, fed, and maintained on a schedule, with the same crew who knows your property.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / DARK BAND -->
+  <section class="about-band" id="about">
+    <div class="container">
+      <div>
+        <p class="eyebrow on-dark">Since 2002</p>
+        <h2>More than two decades caring for Johnson County lawns</h2>
+        <p>For more than two decades, we've been making Johnson County homeowners' lawn expectations a reality. We're a family-owned crew based in Prairie Village — call us and you'll talk to someone who actually knows your yard, not a call center.</p>
+        <p>Whether you need full-time lawn care or occasional help after a long week, we customize our maintenance plans to your property.</p>
+        <div class="about-badges">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Family-owned</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Johnson County, KS since 2002</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>4.8★ on Google</span>
+        </div>
+      </div>
+      <div>
+        <blockquote style="border-left:3px solid var(--moss);padding-left:1.5rem;font-family:var(--disp);font-style:italic;font-size:1.2rem;color:#EAF0DD;font-weight:500">
+          "We deliver results you can see, and service you can trust."
+        </blockquote>
+        <p style="margin-top:1rem;color:#93A67C;font-size:.85rem">— Bruchman Lawn Service, from our own site</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="section" id="areas">
+    <div class="container">
+      <div class="area-wrap">
+        <div>
+          <p class="eyebrow">Service Area</p>
+          <h2>Serving Prairie Village &amp; Johnson County</h2>
+          <p>We provide lawn care and landscaping for homeowners across these communities. Not sure if you're in range? Just call — it's a quick answer.</p>
+          <ul class="town-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Prairie Village</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Leawood</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Mission Hills</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Fairway</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Overland Park</li>
+          </ul>
+        </div>
+        <div class="map-card">
+          <iframe title="Map of Bruchman Lawn Service, LLC service area" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-94.6527817%2C38.993321%2C-94.6407817%2C39.005321&amp;layer=mapnik&amp;marker=38.999321%2C-94.6467817"></iframe>
+          <div class="mc-foot">
+            <span>5223 W 71st Terrace, Prairie Village, KS 66208</span>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=5223+W+71st+Terrace%2C+Prairie+Village%2C+KS+66208" target="_blank" rel="noopener">
+              Get Directions
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="section alt" id="quote">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Request your free estimate</h2>
+        <p>Tell us a little about your property and what you need. We read every message and call back — no robo-quotes.</p>
+      </div>
+      <div class="form-wrap">
+        <div class="form-card" id="formCard">
+          <form id="quoteForm" action="https://formsubmit.co/ajax/customersupport@bruchmanlawn.com" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New quote request — Bruchman Lawn Service website" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div class="form-grid">
+              <div class="field" id="f-name">
+                <label for="q-name">Name <span class="req">*</span></label>
+                <input id="q-name" name="name" type="text" autocomplete="name" required />
+                <p class="err">Please tell us your name.</p>
+              </div>
+              <div class="field" id="f-phone">
+                <label for="q-phone">Phone <span class="req">*</span></label>
+                <input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required />
+                <p class="err">Please enter a phone number we can reach you at.</p>
+              </div>
+              <div class="field full" id="f-email">
+                <label for="q-email">Email <span style="font-weight:500;color:var(--ink-3)">(optional)</span></label>
+                <input id="q-email" name="email" type="email" autocomplete="email" />
+                <p class="err">Please check your email address.</p>
+              </div>
+              <div class="field full">
+                <label for="q-service">Service you're interested in</label>
+                <select id="q-service" name="service">
+                  <option>Lawn mowing</option>
+                  <option>Fertilizing / aeration</option>
+                  <option>Landscape design / hardscape</option>
+                  <option>Seasonal clean-up / mulch</option>
+                  <option>Not sure — help me figure it out</option>
+                </select>
+              </div>
+              <div class="field full" id="f-msg">
+                <label for="q-msg">A bit about your property</label>
+                <textarea id="q-msg" name="message" placeholder="Lot size, current condition, anything you'd like fixed…"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" id="submitBtn" style="width:100%;justify-content:center;margin-top:.5rem">
+              Send my request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note">We'll get back to you within one business day. Prefer to talk now? Call <a href="tel:+19132623746" style="color:var(--moss-deep);font-weight:700">(913) 262-3746</a>.</p>
+          </form>
+          <div class="form-success" id="formOk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <h3>Request sent</h3>
+            <p style="color:var(--ink-2);margin-top:.5rem">Thanks — we've got your details and will call you back shortly. Need us sooner? Call <a href="tel:+19132623746" style="color:var(--moss-deep);font-weight:700">(913) 262-3746</a>.</p>
+          </div>
+        </div>
+        <div class="contact-mini">
+          <a href="tel:+19132623746">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <span>Call<span class="sub">(913) 262-3746</span></span>
+          </a>
+          <a href="sms:+19132623746">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Text Us<span class="sub">(913) 262-3746</span></span>
+          </a>
+          <a href="mailto:customersupport@bruchmanlawn.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>Email<span class="sub">customersupport@bruchmanlawn.com</span></span>
+          </a>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJHb_VwrruwIcRvXzWkkBIVKA" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8L5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+            <span>Leave a Google Review<span class="sub">Tell others about your experience</span></span>
+          </a>
+          <p style="font-size:.8rem;color:var(--ink-2);padding:0 .2rem">Hours vary by season — call for current availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Twenty-plus years of Johnson County lawns. Yours could be next.</h2>
+      <p>Call, text, or send a quote request — a real person answers.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" style="background:#fff;color:var(--forest-deep)" href="tel:+19132623746">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          Call (913) 262-3746
+        </a>
+        <a class="btn btn-ghost-light" href="#quote">Get a Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div>
+      <a class="foot-brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-6 2-8 2-8"/><path d="M12 12c0-3-2-5-6-5 0 4 2 6 6 6"/><path d="M12 12c0-4 2-7 7-7 0 5-3 8-7 7"/></svg>
+        </span>
+        <span>Bruchman Lawn Service, LLC</span>
+      </a>
+      <div class="foot-nap">
+        5223 W 71st Terrace<br />
+        Prairie Village, KS 66208<br />
+        <a href="tel:+19132623746">(913) 262-3746</a><br />
+        <a href="mailto:customersupport@bruchmanlawn.com">customersupport@bruchmanlawn.com</a>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Lawn Care &amp; Mowing</a></li>
+          <li><a href="#services">Fertilizing &amp; Aeration</a></li>
+          <li><a href="#services">Landscape Design</a></li>
+          <li><a href="#services">Seasonal Clean-Up</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#areas">Service Area</a></li>
+          <li><a href="#quote">Get a Quote</a></li>
+          <li><a href="https://search.google.com/local/writereview?placeid=ChIJHb_VwrruwIcRvXzWkkBIVKA" target="_blank" rel="noopener">Leave a Review</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/BruchmanLawn/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://maps.google.com/?cid=11552938386290801853" target="_blank" rel="noopener">Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="foot-bottom">
+      <span>&copy; 2026 Bruchman Lawn Service, LLC. All rights reserved.</span>
+      <span>Family-owned &middot; Prairie Village, KS &middot; Since 2002</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+19132623746">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+    Call Now
+  </a>
+  <a href="#quote">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+    Get a Quote
+  </a>
+</div>
+
+<script>
+(function(){
+  // mobile menu toggle
+  var nav = document.getElementById('primaryNav');
+  var toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // active-section highlight
+  var links = Array.from(document.querySelectorAll('nav.primary a'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var id = '#' + e.target.id;
+          links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === id); });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  // quote form
+  var form = document.getElementById('quoteForm');
+  function setBad(id, bad){ var el = document.getElementById(id); if(!el) return; el.classList.toggle('bad', !!bad); var inp = el.querySelector('input,select,textarea'); if(inp) inp.setAttribute('aria-invalid', bad ? 'true' : 'false'); }
+  function emailOk(v){ return v === '' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = form.name.value.trim(), phone = form.phone.value.trim(), email = form.email.value.trim();
+      var bad = false;
+      setBad('f-name', !name); bad = bad || !name;
+      setBad('f-phone', phone.replace(/[^0-9]/g,'').length < 7); bad = bad || phone.replace(/[^0-9]/g,'').length < 7;
+      setBad('f-email', !emailOk(email)); bad = bad || !emailOk(email);
+      if(bad){ var fb = form.querySelector('.field.bad input,.field.bad select'); if(fb) fb.focus(); return; }
+      var btn = document.getElementById('submitBtn'); var orig = btn.innerHTML; btn.textContent = 'Sending…'; btn.disabled = true;
+      fetch(form.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)})
+        .then(function(r){ return r.ok ? r.json() : Promise.reject(r); })
+        .then(function(){
+          document.getElementById('formCard').classList.add('sent');
+          document.getElementById('formOk').classList.add('show');
+        })
+        .catch(function(){
+          btn.innerHTML = orig; btn.disabled = false;
+          var note = form.querySelector('.form-note');
+          if(note) note.innerHTML = 'Something went wrong sending the form. Please call or text <a href="tel:+19132623746" style="color:var(--moss-deep);font-weight:700">(913) 262-3746</a>.';
+        });
+    });
+    ['name','phone','email'].forEach(function(n){
+      var inp = form[n];
+      if(inp) inp.addEventListener('input', function(){
+        var f = inp.closest('.field');
+        if(f && f.classList.contains('bad')){ f.classList.remove('bad'); inp.setAttribute('aria-invalid','false'); }
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+<!--
+  Four Seasons Groundworks, LLC — Luling, LA (biz_key la-luling-landscaping-four-seasons-groundworks)
+  Existing-brand-match rebuild: real logo, real palette (#F23D00 / #bc2800 accent sourced from their
+  own live site CSS), real project photos (fourseasonsgw.com/choporgeb/*), real Google reviews
+  (maps.google.com, cid 17658817679811859). Hand-written CSS off DESIGN_RULES.md §0 tokens — no
+  Tailwind CDN. Display font Fraunces + body Hanken Grotesk. See BRIEF.md for full provenance.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscaping in Luling, LA | Four Seasons Groundworks</title>
+<meta name="description" content="Family-owned landscaping, hardscaping, drainage &amp; lawn care in Luling, LA. Licensed &amp; insured, 20+ years&rsquo; experience, 4.7&#9733; from 118 reviews. Call for a free quote.">
+<link rel="canonical" href="https://savcab.github.io/websites/four-seasons-groundworks-luling/">
+<meta name="theme-color" content="#20140d">
+<meta name="robots" content="index,follow">
+<!-- Open Graph -->
+<meta property="og:title" content="Four Seasons Groundworks &mdash; Luling, LA">
+<meta property="og:description" content="Family-owned landscaping, hardscaping, drainage &amp; lawn care serving Luling and the River Parishes. Licensed &amp; insured, 20+ years&rsquo; experience, 4.7&#9733; from 118 reviews.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://savcab.github.io/websites/four-seasons-groundworks-luling/">
+<meta property="og:image" content="https://savcab.github.io/websites/four-seasons-groundworks-luling/assets/hero-aerial-backyard-landscape-luling.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon-four-seasons.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2rem; --s5:3rem; --s6:4rem; --s7:6rem; --s8:8rem;
+  --section-y:clamp(3.75rem,8vw,7.5rem);
+  --hero-y:clamp(5.5rem,12vw,11rem);
+  --gutter:clamp(1.1rem,4vw,2.5rem);
+  --measure:65ch;
+  --h1:clamp(2.15rem,5vw,3.4rem);
+  --h2:clamp(1.6rem,3.2vw,2.35rem);
+  --h3:1.28rem;
+  --eyebrow:.78rem;
+  --body:1.0625rem;
+  --small:.875rem;
+  --lh-body:1.6; --lh-head:1.1; --track-head:-.015em; --track-eye:.15em;
+  /* COLOR — sourced from fourseasonsgw.com's own live CSS (theme_accent_color:#f23d00, hover #bc2800)
+     and their wordmark green; warm neutral base (never pure black) */
+  --ink:#241d15;
+  --ink-2:#5c5347;
+  --ink-3:#8f8576;
+  --line:#e6ddce;
+  --paper:#fbf8f2;
+  --paper-2:#f3ecdd;
+  --bg:#ffffff;
+  --brand:#2f6b30;     /* their wordmark green — secondary/icon accent, the 30% */
+  --brand-d:#1f4a20;
+  --brand-tint:#e4efe0;
+  --accent:#F23D00;    /* their OWN live-site accent orange — CTAs/eyebrows/stars, the 10% */
+  --accent-d:#bc2800;  /* their OWN hover shade, sourced from live CSS */
+  --accent-tint:#fde7db;
+  --gold:#c99a2e;
+  --r-s:7px; --r-m:13px; --r-l:22px; --r-xl:30px; --r-pill:999px;
+  --sh-1:0 1px 2px rgba(30,20,10,.07);
+  --sh-2:0 2px 5px rgba(30,20,10,.07),0 4px 10px rgba(30,20,10,.05);
+  --sh-3:0 6px 14px rgba(30,20,10,.09),0 16px 30px rgba(30,20,10,.10);
+  --sh-4:0 12px 24px rgba(30,20,10,.11),0 28px 56px rgba(30,20,10,.13);
+  --t:200ms cubic-bezier(.2,.6,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:var(--body);line-height:var(--lh-body);color:var(--ink);background:var(--paper);overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;line-height:var(--lh-head);letter-spacing:var(--track-head);font-weight:700}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{max-width:var(--measure)}
+figure{margin:0}
+button{font-family:inherit}
+.wrap{width:100%;max-width:75rem;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:"Hanken Grotesk",sans-serif;font-weight:700;font-size:var(--eyebrow);letter-spacing:var(--track-eye);text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow.on-dark{color:#f7b592;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.eyebrow .tick{width:26px;height:1px;background:currentColor;display:inline-block}
+.icon{width:1.25em;height:1.25em;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.icon.fill{fill:currentColor;stroke:none}
+.section{padding-block:var(--section-y)}
+.lede{font-size:1.125rem;color:var(--ink-2);max-width:60ch}
+.only-mob{display:none}
+@media (max-width:600px){.only-lap{display:none}.only-mob{display:inline}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-family:"Hanken Grotesk",sans-serif;font-weight:700;font-size:1rem;line-height:1;padding:1rem 1.6rem;border-radius:var(--r-pill);border:1.5px solid transparent;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),color var(--t);min-height:48px}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:var(--sh-2)}
+.btn-primary:hover{background:var(--accent-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-green{background:var(--brand);color:#fff;box-shadow:var(--sh-2)}
+.btn-green:hover{background:var(--brand-d);transform:translateY(-2px);box-shadow:var(--sh-3)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.45)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.btn-white{background:#fff;color:var(--accent-d);box-shadow:var(--sh-2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--sh-3)}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars .icon{width:1.05em;height:1.05em}
+/* ===== HEADER ===== */
+.hdr{position:fixed;inset:0 0 auto;z-index:60;transition:background var(--t),box-shadow var(--t)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:76px}
+.brand{display:flex;align-items:center;gap:.55rem}
+.brand img{height:38px;width:auto;display:block}
+.brand .logo-dark{display:none}
+.hdr.solid .brand .logo-dark{display:block}
+.hdr.solid .brand .logo-light{display:none}
+.nav{display:flex;align-items:center;gap:.3rem}
+.nav a.link{font-weight:600;font-size:.95rem;color:#fdf7ee;padding:.55rem .68rem;border-radius:8px;transition:color var(--t),background var(--t)}
+.nav a.link:hover,.nav a.link.active{color:#fff;background:rgba(255,255,255,.14)}
+.hdr.solid{background:rgba(251,248,242,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line),var(--sh-1)}
+.hdr.solid .nav a.link{color:var(--ink-2)}
+.hdr.solid .nav a.link:hover,.hdr.solid .nav a.link.active{color:var(--brand-d);background:var(--brand-tint)}
+.hdr.solid .call-pill{color:var(--accent-d);border-color:var(--line)}
+.call-pill{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;font-size:.92rem;color:#fff;border:1.5px solid rgba(255,255,255,.45);padding:.55rem .9rem;border-radius:var(--r-pill);transition:var(--t)}
+.call-pill:hover{background:rgba(255,255,255,.14)}
+.nav .btn{padding:.7rem 1.15rem;min-height:42px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border:0;background:rgba(255,255,255,.16);border-radius:11px;color:#fff;place-items:center;cursor:pointer}
+.hdr.solid .burger{background:var(--brand-tint);color:var(--brand-d)}
+.burger svg{width:24px;height:24px}
+.drawer{position:fixed;inset:0;z-index:80;background:#1c130c;display:flex;flex-direction:column;padding:1.4rem var(--gutter) 2rem;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.4rem}
+.drawer .brand img{height:32px}
+.drawer a.dlink{font-family:"Fraunces",serif;font-size:1.5rem;font-weight:600;color:#f6efe4;padding:.65rem 0;border-bottom:1px solid rgba(255,255,255,.13);display:block}
+.drawer-cta{margin-top:auto;display:grid;gap:.7rem;padding-top:1.4rem}
+.x-btn{width:46px;height:46px;border:0;background:rgba(255,255,255,.13);border-radius:11px;color:#fff;display:grid;place-items:center;cursor:pointer}
+.x-btn svg{width:24px;height:24px}
+/* ===== HERO ===== */
+.hero{position:relative;min-height:clamp(560px,90vh,800px);display:flex;align-items:flex-end;isolation:isolate;overflow:hidden}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-2}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,14,8,.66) 0%,rgba(20,14,8,.20) 30%,rgba(20,14,8,.32) 60%,rgba(14,10,6,.86) 100%)}
+.hero-content{padding-block:var(--hero-y) var(--s5);color:#fff}
+.hero h1{font-size:var(--h1);font-weight:800;color:#fff;max-width:19ch;margin:1rem 0 0;text-shadow:0 2px 22px rgba(0,0,0,.32)}
+.hero .sub{margin-top:1.1rem;font-size:1.15rem;color:rgba(255,255,255,.93);max-width:52ch;line-height:1.55}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.rate-badge{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.4rem;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.9rem;font-weight:600;color:#fff}
+.rate-badge b{font-weight:800}
+.trust-chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.3rem}
+.tchip{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-pill);padding:.42rem .85rem .42rem .65rem;font-size:.85rem;font-weight:600;color:#f2ece0}
+.tchip .icon{width:1rem;height:1rem;color:#f7b592}
+/* ===== SECTION HEADS ===== */
+.shead{max-width:60ch}
+.shead h2{font-size:var(--h2);margin-top:.7rem}
+.shead .lede{margin-top:1rem}
+.center{text-align:center;margin-inline:auto}
+.center .lede{margin-inline:auto}
+.center .eyebrow{justify-content:center}
+/* ===== ABOUT / TRUST BAND ===== */
+.about{background:var(--bg)}
+.about-inner{max-width:52rem;margin-inline:auto;text-align:center}
+.about p{margin-inline:auto;color:var(--ink-2);font-size:1.06rem}
+.about-pts{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:var(--s5);text-align:left}
+.apt{display:flex;align-items:flex-start;gap:.75rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-l);padding:1.3rem 1.2rem}
+.apt .ic{width:42px;height:42px;border-radius:11px;background:var(--brand-tint);color:var(--brand-d);display:grid;place-items:center;flex:none}
+.apt .ic svg{width:22px;height:22px}
+.apt b{display:block;font-family:"Fraunces",serif;font-weight:700;font-size:1.02rem;color:var(--ink)}
+.apt span{display:block;font-size:.88rem;color:var(--ink-2);margin-top:.2rem;line-height:1.5}
+/* ===== SERVICES ===== */
+.services{background:var(--paper-2)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.svc{background:var(--bg);border:1px solid var(--line);border-radius:var(--r-l);padding:1.7rem 1.55rem;box-shadow:var(--sh-1);transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--sh-3);border-color:transparent}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:var(--accent-tint);color:var(--accent-d);display:grid;place-items:center;margin-bottom:1.1rem}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:var(--h3);font-weight:700}
+.svc p{font-size:.96rem;color:var(--ink-2);margin-top:.55rem;line-height:1.58}
+.svc-note{margin-top:var(--s4);text-align:center;color:var(--ink-2);font-size:.96rem;background:var(--bg);border:1px dashed var(--line);border-radius:var(--r-m);padding:1rem 1.3rem}
+.svc-note b{color:var(--ink)}
+/* ===== GALLERY ===== */
+.gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,16.5rem),1fr));gap:1rem;margin-top:var(--s5)}
+.gal-item{position:relative;border-radius:var(--r-l);overflow:hidden;cursor:pointer;background:var(--paper-2);box-shadow:var(--sh-1);border:0;padding:0;width:100%;font:inherit;color:inherit;text-align:left}
+.gal-item img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.6,.2,1)}
+.gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.06)}
+.gal-cap{position:absolute;inset:auto 0 0;padding:1.4rem .95rem .8rem;background:linear-gradient(180deg,transparent,rgba(20,14,8,.82));color:#fff;font-weight:600;font-size:.88rem;opacity:0;transform:translateY(8px);transition:var(--t)}
+.gal-item:hover .gal-cap,.gal-item:focus-visible .gal-cap{opacity:1;transform:none}
+.gal-item:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--ink-3);text-align:center}
+/* ===== TESTIMONIALS ===== */
+.testi{background:#1c130c;color:#fff}
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1.15rem;margin-top:var(--s5)}
+.t-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:var(--r-l);padding:1.6rem 1.5rem;display:flex;flex-direction:column}
+.t-card .icon.quote-ic{width:26px;height:26px;color:#f7b592;margin-bottom:.7rem}
+.t-card .stars{margin-bottom:.7rem}
+.t-card blockquote{font-family:"Fraunces",serif;font-size:1.04rem;line-height:1.56;color:#f6efe4;font-weight:500;font-style:italic}
+.t-card .by{margin-top:1.1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.13);font-weight:700;font-size:.9rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.t-card .by .mt{color:rgba(238,220,200,.72);font-weight:600;font-size:.82rem}
+.t-foot{display:flex;align-items:center;justify-content:center;gap:.7rem;margin-top:var(--s4);font-weight:600;color:#e7d9c6;flex-wrap:wrap;text-align:center}
+.t-foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* ===== AREA ===== */
+.area{background:var(--bg)}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,4vw,3rem);align-items:center;margin-top:var(--s5)}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-pill);padding:.5rem .95rem;font-weight:600;font-size:.9rem;color:var(--ink)}
+.chip .icon{width:1rem;height:1rem;color:var(--brand)}
+.area .note{margin-top:1.3rem;color:var(--ink-2);font-size:.96rem}
+.addr-block{margin-top:1.4rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.95rem;color:var(--ink-2);line-height:1.7}
+.addr-block b{color:var(--ink)}
+.addr-block a{color:var(--accent-d);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.map-frame{border-radius:var(--r-l);overflow:hidden;box-shadow:var(--sh-2);border:1px solid var(--line);background:var(--paper)}
+.map-frame iframe{display:block;width:100%;height:400px;border:0;filter:saturate(.92)}
+/* ===== CONTACT / FINAL CTA ===== */
+.cta-band{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:linear-gradient(135deg,#20140d 0%,#3a2415 100%)}
+.cta-band .wrap{padding-block:clamp(3.75rem,8vw,6.5rem);text-align:center}
+.cta-band h2{font-size:var(--h2);color:#fff;max-width:22ch;margin-inline:auto}
+.cta-band .lede{color:#e7d9c6;margin-inline:auto;margin-top:1rem}
+.cta-actions{display:flex;flex-wrap:wrap;gap:.85rem;justify-content:center;margin-top:1.9rem}
+.cta-band .big-phone{display:block;margin-top:1.6rem;font-family:"Fraunces",serif;font-weight:700;font-size:clamp(1.7rem,4.2vw,2.3rem);color:#fff}
+.cta-band .big-phone a{color:#fff}
+/* ===== FOOTER ===== */
+footer{background:#160e08;color:#c9bfae}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.2rem;padding-block:var(--s6) var(--s5)}
+.foot-brand img{height:34px;margin-bottom:1rem}
+.foot-brand p{font-size:.92rem;color:#a89c87;max-width:34ch;line-height:1.6}
+.foot-social{display:flex;gap:.6rem;margin-top:1.1rem}
+.foot-social a{width:38px;height:38px;border-radius:var(--r-pill);background:rgba(255,255,255,.09);display:grid;place-items:center;color:#e7dcc9;transition:var(--t)}
+.foot-social a:hover{background:var(--accent)}
+.foot-social svg{width:18px;height:18px}
+.foot-col h4{font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#8f8471;margin-bottom:1rem}
+.foot-col a,.foot-col p{display:block;font-size:.94rem;color:#c9bfae;padding:.28rem 0;line-height:1.55}
+.foot-col a:hover{color:#fff}
+.foot-bot{border-top:1px solid rgba(255,255,255,.09);padding-block:1.4rem;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;font-size:.84rem;color:#8f8471}
+.foot-bot .stars{color:var(--gold)}
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-cta{position:fixed;inset:auto 0 0;z-index:55;display:none;gap:.6rem;padding:.7rem var(--gutter) calc(.7rem + env(safe-area-inset-bottom));background:rgba(251,248,242,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(30,20,10,.12);transform:translateY(120%);transition:transform var(--t)}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{flex:1;padding:.85rem}
+/* ===== LIGHTBOX ===== */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(14,10,6,.94);display:none;align-items:center;justify-content:center;padding:1.2rem}
+.lb.open{display:flex}
+.lb img{max-width:min(94vw,1100px);max-height:84vh;border-radius:var(--r-m);box-shadow:var(--sh-4)}
+.lb-cap{position:absolute;left:0;right:0;bottom:1.4rem;text-align:center;color:#f6efe4;font-size:.95rem;font-weight:600;padding-inline:1rem}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;cursor:pointer;transition:background var(--t)}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:26px;height:26px}
+.lb-close{top:1.2rem;right:1.2rem}
+.lb-prev{left:1.2rem;top:50%;transform:translateY(-50%)}
+.lb-next{right:1.2rem;top:50%;transform:translateY(-50%)}
+/* ===== REVEAL ===== */
+.rv{opacity:0;transform:translateY(20px)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.6,.2,1)}
+html:not(.js) .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1!important;transform:none!important}*{animation:none!important;transition:none!important}}
+/* ===== RESPONSIVE ===== */
+@media (max-width:920px){
+  .area-grid,.foot-grid{grid-template-columns:1fr}
+  .about-pts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .nav .link,.nav .btn,.call-pill{display:none}
+  .burger{display:grid}
+  .sticky-cta{display:flex}
+  footer{padding-bottom:5.5rem}
+  .hdr-in{height:64px}
+  .hdr-in .brand img{height:30px}
+  .hero{align-items:flex-start}
+  .hero-content{padding-top:calc(64px + 1.7rem)}
+  html{scroll-padding-top:76px}
+  .about-pts{grid-template-columns:1fr}
+}
+@media (max-width:540px){
+  .foot-grid{grid-template-columns:1fr}
+  .lb-prev{left:.5rem}.lb-next{right:.5rem}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
+<symbol id="i-cr" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 2.69 17.66 8.35a8 8 0 1 1-11.31 0z"/></symbol>
+<symbol id="i-house" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 18.52 8H14"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M15 3h-2a5 5 0 0 0-5 5v3H6v4h2v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Four Seasons Groundworks home">
+      <img class="logo-light" src="assets/logo-four-seasons-groundworks-white.png" alt="Four Seasons Groundworks" width="235" height="58">
+      <img class="logo-dark" src="assets/logo-four-seasons-groundworks.png" alt="Four Seasons Groundworks" width="235" height="58">
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#gallery">Our Work</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="link" href="#area">Service Area</a>
+      <a class="call-pill" href="tel:+15043198727"><svg class="icon"><use href="#i-phone"/></svg>(504) 319-8727</a>
+      <a class="btn btn-primary" href="#contact">Free quote</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="icon"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- DRAWER -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="brand"><img src="assets/logo-four-seasons-groundworks-white.png" alt="Four Seasons Groundworks" width="150" height="37"></span>
+    <button class="x-btn" id="drawerClose" aria-label="Close menu"><svg class="icon"><use href="#i-x"/></svg></button>
+  </div>
+  <a class="dlink" href="#services">Services</a>
+  <a class="dlink" href="#gallery">Our Work</a>
+  <a class="dlink" href="#reviews">Reviews</a>
+  <a class="dlink" href="#area">Service Area</a>
+  <a class="dlink" href="#contact">Contact</a>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="tel:+15043198727"><svg class="icon"><use href="#i-phone"/></svg>Call (504) 319-8727</a>
+    <a class="btn btn-ghost on-dark" href="sms:+15043198727"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<main id="top">
+<section class="hero">
+  <img class="hero-img" src="assets/hero-aerial-backyard-landscape-luling.jpg" alt="Aerial view of a finished backyard landscape renovation with pool and freshly striped lawn by Four Seasons Groundworks near Luling, Louisiana" width="1600" height="1067" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-content">
+    <span class="eyebrow on-dark"><span class="tick"></span>Luling, LA &middot; Family&#8209;owned &amp; operated</span>
+    <h1>Landscaping &amp; groundworks for Luling and the River Parishes.</h1>
+    <p class="sub"><span class="only-lap">From full landscape installs and brick hardscaping to drainage, grading and year&#8209;round maintenance &mdash; one local crew handles the outdoor work, done right.</span><span class="only-mob">Landscaping, hardscaping, drainage &amp; maintenance &mdash; one local Luling crew.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contact">Get a free quote <svg class="icon"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost on-dark" href="#gallery">See our work</a>
+    </div>
+    <a class="rate-badge" href="https://maps.google.com/?cid=17658817679811859" target="_blank" rel="noopener">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+      <span><b>4.7</b> &middot; 118 Google reviews</span>
+    </a>
+    <div class="trust-chips">
+      <span class="tchip"><svg class="icon"><use href="#i-shield"/></svg>Licensed &amp; insured</span>
+      <span class="tchip"><svg class="icon"><use href="#i-clock"/></svg>20+ years&rsquo; experience</span>
+      <span class="tchip"><svg class="icon"><use href="#i-leaf"/></svg>Family&#8209;owned</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / TRUST -->
+<section class="section about rv" id="about">
+  <div class="wrap about-inner">
+    <span class="eyebrow"><span class="tick"></span>Who we are</span>
+    <h2 style="font-size:var(--h2);margin-top:.7rem">Twenty years of Louisiana groundwork, done by people who live here.</h2>
+    <p style="margin-top:1.1rem">We&rsquo;re a family&#8209;owned landscaping and groundworks crew serving Laplace, Destrehan, Luling, Metairie, New Orleans, and the surrounding area. We&rsquo;re fully licensed and insured, and our approach to every yard is grounded in real horticultural know&#8209;how &mdash; not just mowing, but planning outdoor spaces that hold up through Louisiana&rsquo;s heat, storms, and clay soil.</p>
+    <ul class="about-pts">
+      <li class="apt"><span class="ic"><svg class="icon"><use href="#i-shield"/></svg></span><span><b>Licensed &amp; insured</b><span>Every job, every crew, every time.</span></span></li>
+      <li class="apt"><span class="ic"><svg class="icon"><use href="#i-clock"/></svg></span><span><b>20+ years&rsquo; experience</b><span>One crew, two decades in the River Parishes.</span></span></li>
+      <li class="apt"><span class="ic"><svg class="icon"><use href="#i-leaf"/></svg></span><span><b>Family&#8209;owned &amp; operated</b><span>Local, accountable, and easy to reach.</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services rv" id="services">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow"><span class="tick"></span>What we do</span>
+      <h2>Real groundwork, start to finish.</h2>
+      <p class="lede">Six core services &mdash; the same work we&rsquo;ve been doing across the River Parishes for two decades.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-leaf"/></svg></span>
+        <h3>Landscape</h3>
+        <p>Design&#8209;forward planting, beds, and full&#8209;property landscapes tailored to your yard and grounded in real horticultural experience.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-grid"/></svg></span>
+        <h3>Hardscaping</h3>
+        <p>Brick and paver patios, walkways, and raised planters built to handle Louisiana weather and last for years.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-sprout"/></svg></span>
+        <h3>Grading &amp; sod</h3>
+        <p>Site grading and sod installs &mdash; from full solid&#8209;sod yards to checkerboard installs &mdash; for a smooth, healthy lawn.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-droplet"/></svg></span>
+        <h3>Drainage</h3>
+        <p>Trenching and drainage solutions that keep water moving away from your home instead of pooling in your yard.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-house"/></svg></span>
+        <h3>New construction</h3>
+        <p>Complete landscape installs for new&#8209;build properties &mdash; sod, beds, and drainage&#8209;ready groundwork from day one.</p>
+      </div>
+      <div class="svc">
+        <span class="ic"><svg class="icon"><use href="#i-scissors"/></svg></span>
+        <h3>Maintenance</h3>
+        <p>Reliable mowing, trimming, edging, and bed upkeep on a schedule that keeps your property sharp year&#8209;round.</p>
+      </div>
+    </div>
+    <p class="svc-note"><b>Also available:</b> bobcat &amp; tractor site work, debris removal, landscape lighting, and pressure washing &mdash; just ask when you call.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section rv" id="gallery" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow"><span class="tick"></span>Our work</span>
+      <h2>Real jobs, around Luling and the River Parishes.</h2>
+      <p class="lede">A look at recent landscape, hardscape, and grounds work &mdash; every photo is our own, from our own job sites.</p>
+    </div>
+    <div class="gal-grid">
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-front-yard-landscape-bed-install.jpg" alt="Finished front-yard landscape bed with fresh mulch and new plantings at a Luling-area home" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Front&#8209;yard landscape bed install</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-brick-paver-patio-install.jpg" alt="Finished herringbone brick paver patio installed at a home's rear exterior" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Brick paver patio install</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-brick-planter-landscape-lighting.jpg" alt="Brick raised planter with landscape lighting fixtures around a palm tree on a flagstone patio" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Brick planter &amp; landscape lighting</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-garden-bed-shrub-install.jpg" alt="Finished garden bed with mulch, shrubs, and seasonal color along a home's entry walk" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Garden bed &amp; shrub install</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-new-construction-landscape-luling.jpg" alt="Finished landscape at a new-construction home with mulch beds, young trees, and manicured lawn" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">New&#8209;construction landscape</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-estate-landscape-bed-redo.jpg" alt="Finished red-mulch landscape bed renovation with new trees and shrubs at a large property entrance" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Full landscape bed renovation</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-striped-lawn-maintenance.jpg" alt="Freshly mowed and striped commercial lawn maintained by Four Seasons Groundworks" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Striped lawn maintenance</span>
+      </button>
+      <button class="gal-item" type="button">
+        <img src="assets/gallery-palm-tree-install-poolside.jpg" alt="Finished palm tree installation with fresh mulch bed beside a residential pool" width="1000" height="750" loading="lazy" decoding="async">
+        <span class="gal-cap">Palm tree install, poolside</span>
+      </button>
+    </div>
+    <p class="gal-note">All photos are our own completed work &mdash; no stock images.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testi rv" id="reviews">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow on-dark"><span class="tick"></span>Reviews</span>
+      <h2 style="color:#fff">What our customers say.</h2>
+      <p class="lede" style="color:#e7d9c6">Real, verified reviews from Google &mdash; unedited.</p>
+    </div>
+    <div class="t-grid">
+      <div class="t-card">
+        <svg class="icon quote-ic" aria-hidden="true"><use href="#i-quote"/></svg>
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>&ldquo;Absolutely love it!!! Highly recommend Four Seasons Groundworks!!! They came out and 3 days later they were done.&rdquo;</blockquote>
+        <div class="by">Jose Villarreal <span class="mt">&middot; Google review</span></div>
+      </div>
+      <div class="t-card">
+        <svg class="icon quote-ic" aria-hidden="true"><use href="#i-quote"/></svg>
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>&ldquo;I have used Four Seasons for 6 years and they have installed trees and flower beds for me. They are always prompt and do a really good job of explaining how to take care of the plants I buy.&rdquo;</blockquote>
+        <div class="by">Austin Beast mode <span class="mt">&middot; Google review</span></div>
+      </div>
+      <div class="t-card">
+        <svg class="icon quote-ic" aria-hidden="true"><use href="#i-quote"/></svg>
+        <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg><svg class="icon fill"><use href="#i-star"/></svg></span>
+        <blockquote>&ldquo;Great service at a fair price. They went the extra mile to make sure I was pleased. First time I used them but definitely won&rsquo;t be the last.&rdquo;</blockquote>
+        <div class="by">Stephen Cottrell <span class="mt">&middot; Google review</span></div>
+      </div>
+    </div>
+    <div class="t-foot">
+      <span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> <b>4.7</b> out of 5 &middot; 118 Google reviews &middot; <a href="https://maps.google.com/?cid=17658817679811859" target="_blank" rel="noopener">Read them on Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section area rv" id="area">
+  <div class="wrap">
+    <div class="area-grid">
+      <div>
+        <span class="eyebrow"><span class="tick"></span>Service area</span>
+        <h2 style="font-size:var(--h2);margin-top:.7rem">Serving Luling and the River Parishes.</h2>
+        <p class="lede" style="margin-top:1rem">We work throughout Laplace, Destrehan, Luling, Metairie, New Orleans, and the surrounding areas.</p>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Luling</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Destrehan</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Laplace</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>Metairie</span>
+          <span class="chip"><svg class="icon"><use href="#i-pin"/></svg>New Orleans</span>
+        </div>
+        <div class="addr-block">
+          <b>Four Seasons Groundworks, LLC</b><br>
+          300 Paul Maillard Rd, Luling, LA 70070<br>
+          <a href="tel:+15043198727">(504) 319-8727</a> &middot; <a href="https://www.google.com/maps/dir/?api=1&amp;destination=300+Paul+Maillard+Rd%2C+Luling%2C+LA+70070" target="_blank" rel="noopener">Get directions</a><br>
+          Hours: <a href="tel:+15043198727">Call for hours</a>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-90.3719062%2C29.9266395%2C-90.3599062%2C29.9386395&amp;layer=mapnik&amp;marker=29.9326395%2C-90.3659062" loading="lazy" title="Map showing Four Seasons Groundworks at 300 Paul Maillard Rd, Luling, LA"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-band rv" id="contact">
+  <div class="wrap">
+    <span class="eyebrow on-dark"><span class="tick"></span>Get in touch</span>
+    <h2 style="margin-top:.7rem">Ready to get your yard taken care of?</h2>
+    <p class="lede">Call, text, or email us for a free quote &mdash; family&#8209;owned, licensed &amp; insured, and local to Luling.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="tel:+15043198727"><svg class="icon"><use href="#i-phone"/></svg>Call (504) 319-8727</a>
+      <a class="btn btn-ghost on-dark" href="sms:+15043198727"><svg class="icon"><use href="#i-msg"/></svg>Text us</a>
+      <a class="btn btn-ghost on-dark" href="mailto:contact@fourseasonsgw.com"><svg class="icon"><use href="#i-mail"/></svg>Email us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo-four-seasons-groundworks-white.png" alt="Four Seasons Groundworks" width="180" height="44">
+      <p>Family&#8209;owned landscaping and groundworks serving Luling and the River Parishes for over 20 years.</p>
+      <div class="foot-social">
+        <a href="https://www.facebook.com/fourseasonsgw/" target="_blank" rel="noopener" aria-label="Four Seasons Groundworks on Facebook"><svg class="icon fill"><use href="#i-facebook"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h4>Quick links</h4>
+      <a href="#services">Services</a>
+      <a href="#gallery">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="tel:+15043198727">(504) 319-8727</a>
+      <a href="mailto:contact@fourseasonsgw.com">contact@fourseasonsgw.com</a>
+      <p>300 Paul Maillard Rd<br>Luling, LA 70070</p>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ66AzDTTQIIYRE2X14pm8PgA" target="_blank" rel="noopener">Leave us a Google review</a>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>&copy; 2026 Four Seasons Groundworks, LLC &middot; Luling, LA</span>
+    <span><span class="stars" aria-hidden="true"><svg class="icon fill"><use href="#i-star"/></svg></span> 4.7 &middot; 118 Google reviews</span>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a class="btn btn-primary" href="tel:+15043198727"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+  <a class="btn btn-green" href="sms:+15043198727"><svg class="icon"><use href="#i-msg"/></svg>Text</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg class="icon"><use href="#i-cl"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg class="icon"><use href="#i-cr"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Four Seasons Groundworks, LLC",
+  "description":"Family-owned landscaping, hardscaping, drainage, grading, new-construction and lawn maintenance company serving Luling, Louisiana and the River Parishes.",
+  "image":"https://savcab.github.io/websites/four-seasons-groundworks-luling/assets/hero-aerial-backyard-landscape-luling.jpg",
+  "url":"https://savcab.github.io/websites/four-seasons-groundworks-luling/",
+  "telephone":"+15043198727",
+  "email":"contact@fourseasonsgw.com",
+  "address":{"@type":"PostalAddress","streetAddress":"300 Paul Maillard Rd","addressLocality":"Luling","addressRegion":"LA","postalCode":"70070","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":29.9326395,"longitude":-90.3659062},
+  "areaServed":[
+    {"@type":"City","name":"Luling"},
+    {"@type":"City","name":"Destrehan"},
+    {"@type":"City","name":"Laplace"},
+    {"@type":"City","name":"Metairie"},
+    {"@type":"City","name":"New Orleans"}
+  ],
+  "sameAs":["https://www.facebook.com/fourseasonsgw/","http://www.fourseasonsgw.com/"]
+}
+</script>
+
+<script>
+(function(){
+  var hdr=document.getElementById('hdr'),sticky=document.getElementById('stickyCta');
+  var links=[].slice.call(document.querySelectorAll('.nav a.link'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function onScroll(){
+    var y=window.pageYOffset;
+    hdr.classList.toggle('solid',y>40);
+    if(sticky) sticky.classList.toggle('show',y>620);
+    var pos=y+120,act=-1;
+    for(var i=0;i<secs.length;i++){if(secs[i]&&secs[i].offsetTop<=pos)act=i;}
+    links.forEach(function(a,i){a.classList.toggle('active',i===act);});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var drawer=document.getElementById('drawer'),burger=document.getElementById('burger'),dc=document.getElementById('drawerClose');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',o?'false':'true');burger.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':'';}
+  if(burger){burger.addEventListener('click',function(){setDrawer(true);});}
+  if(dc){dc.addEventListener('click',function(){setDrawer(false);});}
+  drawer.addEventListener('click',function(e){if(e.target===drawer||e.target.classList.contains('dlink'))setDrawer(false);});
+
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function showAll(){rvs.forEach(function(el){el.classList.add('in');});}
+  if('IntersectionObserver'in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+    setTimeout(showAll,2600);
+  }else{showAll();}
+
+  var items=[].slice.call(document.querySelectorAll('.gal-item'));
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  var idx=0,opener=null;
+  function open(i){idx=(i+items.length)%items.length;var im=items[idx].querySelector('img');var cap=items[idx].querySelector('.gal-cap');lbImg.src=im.src;lbImg.alt=im.alt;lbCap.textContent=cap?cap.textContent:'';lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  items.forEach(function(it,i){it.addEventListener('click',function(){opener=it;open(i);});});
+  document.getElementById('lbClose').addEventListener('click',close);
+  document.getElementById('lbNext').addEventListener('click',function(){open(idx+1);});
+  document.getElementById('lbPrev').addEventListener('click',function(){open(idx-1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')open(idx+1);else if(e.key==='ArrowLeft')open(idx-1);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acadia Lawn Care LLC | Lawn Care in Rayne, LA</title>
+<meta name="description" content="Acadia Lawn Care LLC provides mowing, seasonal cleanups, and lawn care for homes around Rayne, Louisiana. Rated 5.0 from 29 reviews. Call or text (337) 207-7990.">
+<link rel="canonical" href="https://savcab.github.io/websites/acadia-lawn-care-rayne/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Acadia Lawn Care LLC | Lawn Care in Rayne, LA">
+<meta property="og:description" content="Mowing, seasonal cleanups, and lawn care for homes around Rayne, Louisiana. Rated 5.0 from 29 reviews.">
+<meta property="og:url" content="https://savcab.github.io/websites/acadia-lawn-care-rayne/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Acadia Lawn Care LLC | Lawn Care in Rayne, LA">
+<meta name="twitter:description" content="Mowing, seasonal cleanups, and lawn care for homes around Rayne, Louisiana. Rated 5.0 from 29 reviews.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23B5532A'/%3E%3Cpath d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z' fill='none' stroke='%23FBF7F0' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        cream:   '#FBF7F0',
+        paper:   '#F3EDE0',
+        charcoal:'#23201B',
+        rust:    '#B5532A',
+        rustink: '#9A4522',
+        forest:  '#2F5D44',
+        mustard: '#D6A227',
+      },
+      fontFamily: {
+        serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+        sans:  ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  :root{
+    --cream:#FBF7F0; --paper:#F3EDE0; --charcoal:#23201B;
+    --rust:#B5532A; --rust-ink:#9A4522; --forest:#2F5D44; --mustard:#D6A227;
+  }
+  html{scroll-behavior:smooth; scroll-padding-top:76px;}
+  body{background:var(--cream); color:var(--charcoal); font-family:'Inter',ui-sans-serif,system-ui,sans-serif;}
+  h1,h2,h3,.font-serif{font-family:'Fraunces',ui-serif,Georgia,serif;}
+  html, body{overflow-x:clip;}
+
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline: 3px solid var(--rust); outline-offset: 2px; border-radius: 2px;
+  }
+
+  .ic{width:1.15em;height:1.15em;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:inline-block;vertical-align:-0.18em;}
+
+  .eyebrow{
+    font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--rust-ink); display:inline-flex; align-items:center; gap:.5rem;
+  }
+  .eyebrow::after{content:""; display:block; width:2rem; height:2px; background:var(--rust);}
+
+  /* ---- Postcard hero map ---- */
+  .postcard-wrap{position:relative; padding-top:1.75rem; padding-right:1rem;}
+  .postcard{
+    background:var(--cream);
+    border:1px solid rgba(35,32,27,.12);
+    border-radius:6px;
+    padding:.85rem;
+    box-shadow:0 22px 45px -18px rgba(35,32,27,.35), 0 4px 12px -4px rgba(35,32,27,.15);
+    transform:rotate(-2deg);
+  }
+  .postcard iframe{
+    display:block; width:100%; height:100%; border:0; border-radius:2px;
+    filter:sepia(.08) saturate(1.05);
+  }
+  .tape{
+    position:absolute; top:-14px; left:14%;
+    width:110px; height:34px;
+    background:linear-gradient(180deg, rgba(214,162,39,.55), rgba(214,162,39,.35));
+    border:1px solid rgba(214,162,39,.5);
+    transform:rotate(-5deg);
+    box-shadow:0 2px 6px rgba(35,32,27,.15);
+  }
+  .postmark{
+    position:absolute; right:-14px; bottom:-18px;
+    width:104px; height:104px; border-radius:9999px;
+    background:var(--cream);
+    border:2px dashed rgba(35,32,27,.4);
+    transform:rotate(9deg);
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px;
+    box-shadow:0 10px 24px -8px rgba(35,32,27,.35);
+  }
+  .postmark span{
+    font-size:.58rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--rust);
+    line-height:1.15; text-align:center;
+  }
+
+  .quote-mark{font-family:'Fraunces',serif; font-weight:600; line-height:.6;}
+
+  @media (prefers-reduced-motion: no-preference){
+    .fade-up{opacity:0; transform:translateY(14px); animation:fadeUp .7s ease-out forwards;}
+    .fade-up-d1{animation-delay:.08s;}
+    .fade-up-d2{animation-delay:.16s;}
+    .fade-up-d3{animation-delay:.24s;}
+    @keyframes fadeUp{to{opacity:1; transform:translateY(0);}}
+  }
+
+  .card-lift{transition:transform .25s ease, box-shadow .25s ease;}
+  .card-lift:hover{transform:translateY(-4px); box-shadow:0 18px 32px -14px rgba(35,32,27,.28);}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10M10 20c5.5-2.5.8-6.4 3-10M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-1.5.5-3 .4-4.3-.4-1.1-.8-1.8-2.2-2.3-3.7 1.5-.5 3-.4 4.3.4ZM14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4-1.9.1-3.3.6-4.9 1.4Z"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12M20 4 8.12 15.88M14.8 14.8 20 20M6 18a3 3 0 1 0 0 .01"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+<symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-navigation" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+</defs>
+</svg>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Acadia Lawn Care LLC",
+  "telephone": "+13372077990",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Standard Mill Rd",
+    "addressLocality": "Rayne",
+    "addressRegion": "LA",
+    "postalCode": "70578",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 30.2155123, "longitude": -92.2665838 },
+  "url": "https://savcab.github.io/websites/acadia-lawn-care-rayne/",
+  "areaServed": { "@type": "City", "name": "Rayne, LA" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "07:00", "closes": "17:00" }
+  ]
+}
+</script>
+</head>
+<body class="antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-2 focus:left-2 focus:bg-charcoal focus:text-cream focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+<!-- Sticky top bar -->
+<header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-charcoal/10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-[64px] flex items-center justify-between gap-3">
+    <a href="#top" class="font-serif text-lg sm:text-xl font-semibold tracking-tight text-charcoal shrink-0">
+      Acadia <span class="text-rust italic">Lawn Care</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-charcoal/75">
+      <a href="#services" class="hover:text-rust transition-colors">Services</a>
+      <a href="#reviews" class="hover:text-rust transition-colors">Reviews</a>
+      <a href="#hours" class="hover:text-rust transition-colors">Hours &amp; Location</a>
+    </nav>
+    <div class="flex items-center gap-2 shrink-0">
+      <button type="button" id="mobileNavToggle" aria-expanded="false" aria-controls="mobileNavPanel" aria-label="Open menu" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-charcoal/25 text-charcoal hover:border-charcoal/50 transition-colors">
+        <svg class="ic" id="iconMenuOpen"><use href="#i-menu"></use></svg>
+        <svg class="ic hidden" id="iconMenuClose"><use href="#i-x"></use></svg>
+      </button>
+      <a href="sms:+13372077990" aria-label="Text Acadia Lawn Care" class="inline-flex items-center gap-2 rounded-full border border-charcoal/25 text-charcoal font-semibold text-sm px-3.5 py-2.5 hover:border-charcoal/50 transition-colors">
+        <svg class="ic"><use href="#i-message-circle"></use></svg><span class="hidden sm:inline">Text</span>
+      </a>
+      <a href="tel:+13372077990" aria-label="Call Acadia Lawn Care at (337) 207-7990" class="inline-flex items-center gap-2 rounded-full bg-rust text-cream font-semibold text-sm px-4 py-2.5 shadow-sm hover:bg-rust/90 transition-colors">
+        <svg class="ic"><use href="#i-phone"></use></svg><span class="hidden sm:inline">(337) 207-7990</span><span class="sm:hidden">Call</span>
+      </a>
+    </div>
+  </div>
+  <div id="mobileNavPanel" class="md:hidden hidden absolute inset-x-0 top-full bg-cream border-b border-charcoal/10 shadow-lg">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-2 flex flex-col text-base font-medium text-charcoal/80">
+      <a href="#services" class="py-3 border-b border-charcoal/10 hover:text-rust transition-colors">Services</a>
+      <a href="#reviews" class="py-3 border-b border-charcoal/10 hover:text-rust transition-colors">Reviews</a>
+      <a href="#hours" class="py-3 hover:text-rust transition-colors">Hours &amp; Location</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10" style="background:radial-gradient(120% 100% at 15% 0%, #FDF9F3 0%, #FBF7F0 45%, #F3E9D8 100%);"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-14 pb-16 sm:pt-20 sm:pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] items-center gap-12 lg:gap-16">
+
+        <div class="fade-up">
+          <p class="eyebrow">Standard Mill Rd &middot; Rayne, Louisiana</p>
+          <h1 class="mt-5 text-[2.6rem] leading-[1.05] sm:text-6xl sm:leading-[1.03] font-semibold text-charcoal tracking-tight">
+            Lawn care,<br><em class="italic text-forest">right here</em> in Rayne.
+          </h1>
+          <p class="mt-6 text-lg text-charcoal/75 max-w-md leading-relaxed">
+            Mowing, seasonal cleanups, and lawn care for homes around Rayne &mdash; call or text and we&rsquo;ll get you on the schedule.
+          </p>
+
+          <div class="mt-6 inline-flex items-center gap-2 bg-paper border border-charcoal/10 rounded-full pl-3 pr-4 py-1.5">
+            <svg class="ic text-mustard" style="fill:currentColor;stroke:none;width:1rem;height:1rem"><use href="#i-star"></use></svg>
+            <span class="text-sm font-semibold text-charcoal">5.0</span>
+            <span class="text-sm text-charcoal/70">&middot; 29 reviews</span>
+          </div>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="tel:+13372077990" class="inline-flex items-center gap-2.5 rounded-full bg-rust text-cream font-semibold px-6 py-3.5 shadow-lg shadow-rust/20 hover:bg-rust/90 transition-colors">
+              <svg class="ic"><use href="#i-phone"></use></svg> Call (337) 207-7990
+            </a>
+            <a href="sms:+13372077990" class="inline-flex items-center gap-2.5 rounded-full border-2 border-charcoal/20 text-charcoal font-semibold px-6 py-3.5 hover:border-charcoal/40 transition-colors">
+              <svg class="ic"><use href="#i-message-circle"></use></svg> Text Us
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-up fade-up-d2">
+          <div class="postcard-wrap max-w-md mx-auto lg:mx-0">
+            <div class="tape" aria-hidden="true"></div>
+            <div class="postcard">
+              <div style="aspect-ratio:4/3.1;">
+                <iframe
+                  title="Map showing Acadia Lawn Care's service area around Rayne, Louisiana"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-92.3165838%2C30.1655123%2C-92.2165838%2C30.2655123&amp;layer=mapnik&amp;marker=30.2155123%2C-92.2665838"
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+            <div class="postmark" aria-hidden="true">
+              <svg class="ic text-rust" style="width:1.3rem;height:1.3rem"><use href="#i-map-pin"></use></svg>
+              <span>Rayne<br>LA</span>
+            </div>
+            <p class="mt-8 text-center font-serif italic text-charcoal/70 text-sm">Right here in Rayne, Louisiana.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why neighbors choose us -->
+  <section class="py-16 sm:py-24 border-t border-charcoal/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <p class="eyebrow">Why folks call us</p>
+      <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-charcoal max-w-xl">A crew that shows up around Rayne.</h2>
+
+      <div class="mt-12 space-y-9">
+        <div class="flex items-start gap-5">
+          <span class="w-11 h-11 shrink-0 rounded-full bg-mustard/15 text-mustard grid place-items-center">
+            <svg class="ic" style="fill:currentColor;stroke:none"><use href="#i-star"></use></svg>
+          </span>
+          <div>
+            <h3 class="font-serif text-lg font-semibold text-charcoal">Rated 5.0 from 29 reviews</h3>
+            <p class="mt-1.5 text-charcoal/70 leading-relaxed">Twenty-nine reviews on our online listings, every one of them five stars &mdash; real ratings from people we&rsquo;ve worked for around Rayne.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span class="w-11 h-11 shrink-0 rounded-full bg-forest/10 text-forest grid place-items-center">
+            <svg class="ic"><use href="#i-map-pin"></use></svg>
+          </span>
+          <div>
+            <h3 class="font-serif text-lg font-semibold text-charcoal">Based right here in Rayne</h3>
+            <p class="mt-1.5 text-charcoal/70 leading-relaxed">We&rsquo;re not dispatched from out of town. When you call or text, you&rsquo;re talking to the crew that shows up at your address.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span class="w-11 h-11 shrink-0 rounded-full bg-rust/10 text-rust grid place-items-center">
+            <svg class="ic"><use href="#i-sprout"></use></svg>
+          </span>
+          <div>
+            <h3 class="font-serif text-lg font-semibold text-charcoal">Full-service lawn care</h3>
+            <p class="mt-1.5 text-charcoal/70 leading-relaxed">From weekly mowing to seasonal cleanups and lawn treatment, we handle the yard work so you don&rsquo;t have to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 sm:py-24 bg-paper border-t border-charcoal/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="eyebrow">What we do</p>
+      <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-charcoal max-w-xl">Lawn care, handled.</h2>
+
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="card-lift bg-cream border border-charcoal/10 rounded-2xl p-7">
+          <span class="w-12 h-12 rounded-xl bg-rust text-cream grid place-items-center">
+            <svg class="ic"><use href="#i-scissors"></use></svg>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-charcoal mt-5">Mowing &amp; Maintenance</h3>
+          <p class="mt-2.5 text-sm text-charcoal/70 leading-relaxed">Regular mowing, edging, and trimming to keep your yard looking sharp all season long.</p>
+        </div>
+        <div class="card-lift bg-cream border border-charcoal/10 rounded-2xl p-7">
+          <span class="w-12 h-12 rounded-xl bg-forest text-cream grid place-items-center">
+            <svg class="ic"><use href="#i-leaf"></use></svg>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-charcoal mt-5">Seasonal Cleanups</h3>
+          <p class="mt-2.5 text-sm text-charcoal/70 leading-relaxed">Spring and fall cleanups to clear debris and get your yard ready for the season ahead.</p>
+        </div>
+        <div class="card-lift bg-cream border border-charcoal/10 rounded-2xl p-7">
+          <span class="w-12 h-12 rounded-xl bg-mustard text-charcoal grid place-items-center">
+            <svg class="ic"><use href="#i-droplet"></use></svg>
+          </span>
+          <h3 class="font-serif text-xl font-semibold text-charcoal mt-5">Lawn Treatment</h3>
+          <p class="mt-2.5 text-sm text-charcoal/70 leading-relaxed">Treatment and care to help your lawn stay healthy and green year-round.</p>
+        </div>
+      </div>
+
+      <p class="mt-10 text-charcoal/70">
+        Not sure what your yard needs? <a href="tel:+13372077990" class="text-rustink font-semibold underline decoration-2 underline-offset-2 hover:text-rust">Call</a> or
+        <a href="sms:+13372077990" class="text-rustink font-semibold underline decoration-2 underline-offset-2 hover:text-rust">text us</a> and we&rsquo;ll talk it through.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pull-quote -->
+  <section id="reviews" class="py-16 sm:py-24 bg-forest text-cream">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <p class="eyebrow" style="color:#E8C767">In their words</p>
+      <div class="mt-6">
+        <span class="quote-mark block text-6xl sm:text-7xl" style="color:#E8C767" aria-hidden="true">&ldquo;</span>
+        <p class="-mt-6 font-serif italic text-xl sm:text-[1.7rem] leading-snug sm:leading-snug text-cream/95">
+          This year (August 2025) will be 3 years since we chose Acadia Lawn Care for our landscaping needs. Joseph and his crew have always done a professional job&hellip;&rdquo;
+        </p>
+        <p class="mt-6 text-sm text-cream/80 tracking-wide">&mdash; Mike Ezekiel, a review from our online listings</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat band -->
+  <section class="py-14 sm:py-16 border-t border-charcoal/10">
+    <div class="max-w-md mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 gap-4 text-center divide-x divide-charcoal/10">
+        <div class="px-4">
+          <p class="font-serif text-4xl sm:text-5xl font-semibold text-rust">5.0</p>
+          <p class="mt-1 text-xs sm:text-sm uppercase tracking-wide text-charcoal/70">Average rating</p>
+        </div>
+        <div class="px-4">
+          <p class="font-serif text-4xl sm:text-5xl font-semibold text-rust">29</p>
+          <p class="mt-1 text-xs sm:text-sm uppercase tracking-wide text-charcoal/70">Reviews from our online listings</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours + map -->
+  <section id="hours" class="py-16 sm:py-24 bg-paper border-t border-charcoal/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="eyebrow">Hours &amp; location</p>
+      <h2 class="mt-4 text-3xl sm:text-4xl font-semibold text-charcoal max-w-xl">Stop by, or give us a call.</h2>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div class="bg-cream border border-charcoal/10 rounded-2xl p-7 sm:p-8">
+          <h3 class="font-serif text-lg font-semibold text-charcoal flex items-center gap-2.5">
+            <svg class="ic text-rust"><use href="#i-clock"></use></svg> Hours
+          </h3>
+          <dl class="mt-5 divide-y divide-charcoal/10 text-sm">
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Monday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 7:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Tuesday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 7:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Wednesday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 7:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Thursday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 7:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Friday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 7:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Saturday</dt><dd class="font-medium text-charcoal">7:00 AM &ndash; 5:00 PM</dd></div>
+            <div class="flex justify-between py-2.5"><dt class="text-charcoal/70">Sunday</dt><dd class="font-medium text-charcoal/70">Closed</dd></div>
+          </dl>
+          <p class="mt-6 text-sm text-charcoal/70">Standard Mill Rd, Rayne, LA 70578</p>
+          <a href="https://maps.google.com/?cid=2751543112833487420&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+             target="_blank" rel="noopener"
+             class="mt-3 inline-flex items-center gap-2 text-rust font-semibold text-sm underline decoration-2 underline-offset-2 hover:text-rust/80">
+            <svg class="ic" style="width:1rem;height:1rem"><use href="#i-navigation"></use></svg> Get directions
+          </a>
+        </div>
+
+        <div class="bg-cream border border-charcoal/10 rounded-2xl overflow-hidden">
+          <div style="aspect-ratio:4/3.4;">
+            <iframe
+              title="Map showing Acadia Lawn Care's location on Standard Mill Rd, Rayne, LA"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-92.2725838%2C30.2095123%2C-92.2605838%2C30.2215123&amp;layer=mapnik&amp;marker=30.2155123%2C-92.2665838"
+              loading="lazy" style="display:block; width:100%; height:100%; border:0;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="py-16 sm:py-20 bg-rust text-cream">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-semibold">Ready when you are.</h2>
+      <p class="mt-4 text-cream text-lg">Call or text us and we&rsquo;ll get your yard taken care of.</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <a href="tel:+13372077990" class="inline-flex items-center gap-2.5 rounded-full bg-cream text-rust font-semibold px-6 py-3.5 shadow-lg hover:bg-cream/90 transition-colors">
+          <svg class="ic"><use href="#i-phone"></use></svg> Call (337) 207-7990
+        </a>
+        <a href="sms:+13372077990" class="inline-flex items-center gap-2.5 rounded-full border-2 border-cream/70 text-cream font-semibold px-6 py-3.5 hover:border-cream transition-colors">
+          <svg class="ic"><use href="#i-message-circle"></use></svg> Text Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-charcoal text-cream/90 py-14">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      <div>
+        <p class="font-serif text-xl font-semibold text-cream">Acadia <span class="italic text-mustard">Lawn Care</span></p>
+        <p class="mt-3 text-sm text-cream/60 leading-relaxed">Standard Mill Rd<br>Rayne, LA 70578</p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="tel:+13372077990" class="inline-flex items-center gap-2 text-sm font-medium text-cream/85 hover:text-cream">
+            <svg class="ic" style="width:1rem;height:1rem"><use href="#i-phone"></use></svg> (337) 207-7990
+          </a>
+          <a href="sms:+13372077990" class="inline-flex items-center gap-2 text-sm font-medium text-cream/85 hover:text-cream">
+            <svg class="ic" style="width:1rem;height:1rem"><use href="#i-message-circle"></use></svg> Text us
+          </a>
+        </div>
+      </div>
+      <div class="sm:text-right">
+        <p class="text-sm text-cream/60">Mon&ndash;Fri 7am&ndash;7pm &middot; Sat 7am&ndash;5pm &middot; Closed Sun</p>
+        <p class="mt-4 font-serif italic text-cream/70">&mdash; the Acadia Lawn Care crew</p>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-cream/10 text-xs text-cream/60">
+      &copy; 2026 Acadia Lawn Care LLC. Serving Rayne, Louisiana.
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('mobileNavToggle');
+  var panel = document.getElementById('mobileNavPanel');
+  var iconOpen = document.getElementById('iconMenuOpen');
+  var iconClose = document.getElementById('iconMenuClose');
+  if(!btn || !panel) return;
+  function closeMenu(){
+    panel.classList.add('hidden');
+    btn.setAttribute('aria-expanded','false');
+    iconOpen.classList.remove('hidden'); iconClose.classList.add('hidden');
+  }
+  function openMenu(){
+    panel.classList.remove('hidden');
+    btn.setAttribute('aria-expanded','true');
+    iconOpen.classList.add('hidden'); iconClose.classList.remove('hidden');
+  }
+  btn.addEventListener('click', function(){
+    (btn.getAttribute('aria-expanded') === 'true') ? closeMenu() : openMenu();
+  });
+  panel.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
+})();
+</script>
+</body>
+</html>

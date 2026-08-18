@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/desert-eagle-landscaping-las-vegas/sitemap.xml

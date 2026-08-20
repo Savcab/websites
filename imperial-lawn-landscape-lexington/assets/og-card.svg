@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none" role="img" aria-label="Imperial Lawn & Landscape — Lawn Care & Landscaping, Lexington KY">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#212624"/>
+      <stop offset="1" stop-color="#161918"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="#b23a2b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#b23a2b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="72" width="76" height="76" rx="18" fill="#1d2220"/>
+  <path d="M118 92v36M100 110h36" stroke="#b23a2b" stroke-width="8" stroke-linecap="round"/>
+  <text x="80" y="238" font-family="Georgia, 'Times New Roman', serif" font-size="66" fill="#f4f1ea" font-weight="500">Imperial Lawn</text>
+  <text x="80" y="308" font-family="Georgia, 'Times New Roman', serif" font-size="66" fill="#f4f1ea" font-weight="500">&amp; <tspan font-style="italic" fill="#c1594b">Landscape</tspan></text>
+  <text x="80" y="366" font-family="Arial, sans-serif" font-size="27" letter-spacing="2" fill="#b9c0ba">LEXINGTON, KENTUCKY</text>
+  <rect x="80" y="410" width="332" height="72" rx="36" fill="#2b322e" stroke="#3b443e"/>
+  <path d="M112 447l7 8 15-17" stroke="#e8b04a" stroke-width="0" fill="none"/>
+  <text x="104" y="456" font-family="Georgia, serif" font-size="30" fill="#ffffff" font-weight="600">4.9</text>
+  <g fill="#e8b04a">
+    <polygon points="150,436 152.5,442 159,442 154,446 156,452.5 150,448.5 144,452.5 146,446 141,442 147.5,442"/>
+    <polygon points="170,436 172.5,442 179,442 174,446 176,452.5 170,448.5 164,452.5 166,446 161,442 167.5,442"/>
+    <polygon points="190,436 192.5,442 199,442 194,446 196,452.5 190,448.5 184,452.5 186,446 181,442 187.5,442"/>
+    <polygon points="210,436 212.5,442 219,442 214,446 216,452.5 210,448.5 204,452.5 206,446 201,442 207.5,442"/>
+    <polygon points="230,436 232.5,442 239,442 234,446 236,452.5 230,448.5 224,452.5 226,446 221,442 227.5,442"/>
+  </g>
+  <text x="255" y="456" font-family="Arial, sans-serif" font-size="23" fill="#cdd2cb">261 Google reviews</text>
+  <text x="80" y="560" font-family="Arial, sans-serif" font-size="25" fill="#9bc0a6" font-weight="700">30 years serving Lexington &amp; Fayette County</text>
+</svg>

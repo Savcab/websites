@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://savcab.github.io/websites/highlands-lawn-guy-avon-park/sitemap.xml

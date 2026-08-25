@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--
+  G.O.A.T. Get'em Lawn Care LLC — Vero Beach, FL (fl-vero-beach-landscaping-goat-getem)
+  REBUILD 2026-08-25: archetype switched review-led-landscaper -> luxe-noir (monochrome luxury,
+  gold on near-black) to resolve a batch archetype collision with another lead that also shipped
+  review-led-landscaper. Built from scratch per style_directions.md section 7 (NOT a reskin of the
+  prior template). Facts/photo/quote/hours/geo carried forward from the prior verified build — see
+  BRIEF.md / contract.md / provenance.json in this site dir for full sourcing.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lawn Care in Vero Beach, FL | G.O.A.T. Get'em Lawn Care</title>
+<meta name="description" content="We keep Vero Beach yards sharp — mowing, hedge trimming, palm tree work and sod. Rated 4.8 across 10 Google reviews. Free estimates, call today.">
+<link rel="canonical" href="https://savcab.github.io/websites/goat-getem-lawn-care-vero-beach/">
+<meta name="theme-color" content="#0c0c0c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lawn Care in Vero Beach, FL | G.O.A.T. Get'em Lawn Care">
+<meta property="og:description" content="We handle mowing, edging, hedge trimming, palm work and sod for Vero Beach & Vero Lake Estates. Rated 4.8 across 10 Google reviews. Free estimates, call today.">
+<meta property="og:url" content="https://savcab.github.io/websites/goat-getem-lawn-care-vero-beach/">
+<meta property="og:image" content="https://savcab.github.io/websites/goat-getem-lawn-care-vero-beach/assets/goat-getem-trailer-mower-verobeach.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c0c0c'/%3E%3Cpath d='M9 21.5 16 9l7 12.5' stroke='%23c9a24a' stroke-width='2' fill='none' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LandscapingBusiness","LocalBusiness"],
+  "name": "G.O.A.T. Get'em Lawn Care LLC",
+  "description": "Lawn mowing, hedge trimming, palm tree work and sod installation serving Vero Beach, FL and Vero Lake Estates.",
+  "url": "https://savcab.github.io/websites/goat-getem-lawn-care-vero-beach/",
+  "telephone": "+17726633331",
+  "email": "Goatgetemlawncare@gmail.com",
+  "image": "https://savcab.github.io/websites/goat-getem-lawn-care-vero-beach/assets/goat-getem-trailer-mower-verobeach.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "935 28th Ave",
+    "addressLocality": "Vero Beach",
+    "addressRegion": "FL",
+    "postalCode": "32960",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.6192689, "longitude": -80.4156343 },
+  "areaServed": [
+    { "@type": "City", "name": "Vero Beach" },
+    { "@type": "City", "name": "Vero Lake Estates" }
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "16:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "15:00" }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#EDE8E0;
+  --ink-dim:rgba(237,232,224,.66);
+  --ink-faint:rgba(237,232,224,.42);
+  --bg:#0C0C0C;
+  --bg-raised:#141311;
+  --gold:#C9A24A;
+  --gold-soft:rgba(201,162,74,.16);
+  --line:rgba(237,232,224,.14);
+  --line-gold:rgba(201,162,74,.35);
+  --serif:'Cormorant Garamond',ui-serif,Georgia,'Times New Roman',serif;
+  --sans:'Jost',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:76rem;
+  --section-y:clamp(4rem,9vw,7.5rem);
+  --h1:clamp(2.5rem,6vw,4.4rem);
+  --h2:clamp(1.9rem,3.6vw,2.75rem);
+  --body:1.0625rem;
+  --small:.8125rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{
+  margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;
+  font-size:var(--body);line-height:1.65;-webkit-font-smoothing:antialiased;
+  padding-bottom:76px; /* room for the fixed mobile CTA bar — gate 21 */
+}
+@media(min-width:801px){ body{padding-bottom:0} }
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--gold);font-weight:500;display:inline-flex;align-items:center;gap:.75em;
+}
+.eyebrow::before{content:'';width:2rem;height:1px;background:var(--gold)}
+.eyebrow.center{justify-content:center}
+.rule-gold{width:3rem;height:1px;background:var(--gold);margin:0 auto 1.5rem}
+svg.ic{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- header ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;background:rgba(12,12,12,.88);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.addr-line{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--ink-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.addr-line svg{color:var(--gold);flex:0 0 auto}
+.addr-full{display:none}
+.addr-short{display:inline}
+@media(min-width:640px){ .addr-full{display:inline} .addr-short{display:none} }
+.tb-right{display:flex;align-items:center;gap:.9rem}
+.tel-link{display:flex;align-items:center;gap:.5rem;font-size:.9rem;color:var(--ink);font-weight:400}
+.tel-link svg{color:var(--gold)}
+.btn-gold{
+  display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#141311;
+  padding:.7rem 1.4rem;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;
+  border:1px solid var(--gold);border-radius:2px;white-space:nowrap;
+}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--ink);
+  padding:.68rem 1.3rem;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500;
+  border:1px solid var(--line);border-radius:2px;white-space:nowrap;
+}
+.btn-gold svg,.btn-ghost svg{width:1em;height:1em}
+.book-cta{display:none}
+@media(min-width:640px){ .book-cta{display:inline-flex} }
+.menu-btn{display:flex;background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink);padding:.55rem;cursor:pointer}
+@media(min-width:640px){ .menu-btn{display:none} }
+
+.drawer{
+  position:fixed;inset:0;z-index:60;visibility:hidden;pointer-events:none;
+}
+.drawer.open{visibility:visible;pointer-events:auto}
+.drawer-veil{position:absolute;inset:0;background:rgba(0,0,0,.6);opacity:0;transition:opacity .25s}
+.drawer.open .drawer-veil{opacity:1}
+.drawer-panel{
+  position:absolute;top:0;right:0;bottom:0;width:min(20rem,86vw);background:var(--bg-raised);
+  border-left:1px solid var(--line);padding:1.75rem 1.5rem;transform:translateX(100%);transition:transform .3s ease;
+  display:flex;flex-direction:column;gap:1.75rem;
+}
+.drawer.open .drawer-panel{transform:translateX(0)}
+.drawer-top{display:flex;justify-content:flex-end}
+.drawer-close{background:none;border:1px solid var(--line);border-radius:2px;color:var(--ink);padding:.5rem;cursor:pointer}
+.drawer-nav{display:flex;flex-direction:column;gap:1.25rem}
+.drawer-nav a{font-family:var(--serif);font-size:1.3rem;color:var(--ink)}
+.drawer-actions{display:flex;flex-direction:column;gap:.75rem;margin-top:auto}
+.drawer-actions a{justify-content:center}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:min(92vh,880px);display:flex;align-items:center;justify-content:center;
+  padding:6rem 0 4rem;isolation:isolate;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:-2;background-image:url('assets/goat-getem-trailer-mower-verobeach.jpg');
+  background-size:cover;background-position:center 62%;
+}
+.hero-scrim{
+  position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(8,8,8,.86) 0%,rgba(8,8,8,.80) 26%,rgba(8,8,8,.84) 55%,rgba(6,6,6,.96) 100%),
+    radial-gradient(ellipse at center 38%,rgba(0,0,0,.25),rgba(0,0,0,.6) 78%);
+}
+.hero-in{max-width:44rem;margin:0 auto;text-align:center;padding:0 1.5rem}
+.hero-in .eyebrow{margin-bottom:1.5rem}
+.hero-in h1{color:var(--ink);margin-bottom:1.4rem;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.hero-in h1 em{color:var(--gold);font-style:italic}
+.hero-sub{font-size:1.05rem;color:var(--ink-dim);max-width:34rem;margin:0 auto 2rem;line-height:1.7}
+.stars{display:inline-flex;gap:.2rem;color:var(--gold)}
+.stars svg{width:1.05rem;height:1.05rem;fill:var(--gold);stroke:none}
+.rating-row{display:flex;align-items:center;justify-content:center;gap:.65rem;margin-bottom:2.1rem;font-size:.9rem;color:var(--ink-dim)}
+.rating-row b{color:var(--ink);font-weight:500}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+
+/* ---------- sections generic ---------- */
+section{padding:var(--section-y) 0}
+.sec-head{text-align:center;max-width:38rem;margin:0 auto clamp(2.5rem,5vw,3.75rem)}
+.sec-head h2{margin-top:1rem}
+.on-raised{background:var(--bg-raised)}
+
+/* ---------- services ---------- */
+.svc-grid{
+  display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);
+  border:1px solid var(--line);
+}
+@media(min-width:640px){ .svc-grid{grid-template-columns:1fr 1fr} }
+@media(min-width:1024px){ .svc-grid{grid-template-columns:repeat(4,1fr)} }
+.svc-card{background:var(--bg);padding:2.25rem 1.75rem;text-align:center}
+.svc-ic{
+  width:3rem;height:3rem;border:1px solid var(--line-gold);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;color:var(--gold)
+}
+.svc-ic svg{width:1.35rem;height:1.35rem}
+.svc-card h3{font-size:1.2rem;color:var(--ink);margin-bottom:.6rem;font-weight:500}
+.svc-card p{font-size:.9rem;color:var(--ink-dim);margin:0;line-height:1.6}
+
+/* ---------- about / rating band ---------- */
+.about-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:start}
+@media(min-width:840px){ .about-grid{grid-template-columns:1.05fr .95fr;gap:4rem} }
+.about-copy .eyebrow{margin-bottom:1.25rem}
+.about-copy h2{margin-bottom:1.25rem}
+.about-copy p{color:var(--ink-dim);max-width:36ch;margin:0 0 1.5rem}
+.area-list{display:flex;flex-wrap:wrap;gap:.6rem 1rem;padding:0;margin:0;list-style:none}
+.area-list li{font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);display:flex;align-items:center;gap:.4rem}
+.area-list svg{color:var(--gold);width:.85em;height:.85em}
+
+.rating-card{border:1px solid var(--line-gold);padding:clamp(1.75rem,4vw,2.75rem);background:linear-gradient(160deg,rgba(201,162,74,.06),transparent 60%)}
+.rc-top{display:flex;align-items:baseline;gap:1.1rem;margin-bottom:.5rem}
+.rc-num{font-family:var(--serif);font-size:3.2rem;color:var(--gold);line-height:1}
+.rc-meta{display:flex;flex-direction:column;gap:.3rem}
+.rc-count{font-size:.85rem;color:var(--ink-dim)}
+.rating-card hr{border:none;border-top:1px solid var(--line);margin:1.5rem 0}
+blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--ink);line-height:1.55}
+blockquote::before{content:'\201C';color:var(--gold);font-size:1.6rem;line-height:0;vertical-align:-.15em}
+.qmore{font-size:.92rem;color:var(--ink-dim);font-family:var(--sans);margin-top:.85rem;line-height:1.6}
+.q-attr{margin-top:1.1rem;font-size:.8rem;color:var(--ink-faint);letter-spacing:.04em}
+.q-attr a{color:var(--gold);border-bottom:1px solid var(--line-gold)}
+
+/* ---------- hours + map ---------- */
+.hm-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media(min-width:820px){ .hm-grid{grid-template-columns:1fr 1.15fr} }
+.hm-box{border:1px solid var(--line);padding:clamp(1.75rem,4vw,2.5rem)}
+.hm-box h3{color:var(--ink);font-size:1.4rem;margin-bottom:1.25rem}
+.hours-tbl{width:100%;border-collapse:collapse;font-size:.92rem}
+.hours-tbl td{padding:.55rem 0;border-bottom:1px solid var(--line);color:var(--ink-dim)}
+.hours-tbl td:last-child{text-align:right;color:var(--ink)}
+.hours-tbl tr:last-child td{border-bottom:none}
+.hm-note{display:flex;align-items:center;gap:.6rem;margin-top:1.5rem;font-size:.85rem;color:var(--gold)}
+.map-box{border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.map-frame{width:100%;height:19rem;filter:grayscale(.15) invert(.92) hue-rotate(180deg) contrast(.9) brightness(.96);border:0;background:#141311}
+.map-addr{padding:1.25rem clamp(1.75rem,4vw,2.5rem);display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.map-addr span{font-size:.88rem;color:var(--ink-dim)}
+.map-addr a{font-size:.8rem;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.4rem}
+
+/* ---------- final CTA ---------- */
+.cta-band{text-align:center}
+.cta-band h2{margin-bottom:1rem}
+.cta-band .hero-sub{margin-bottom:2.25rem}
+.cta-phone{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--gold);display:block;margin-bottom:2rem}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:3.5rem 0 6.5rem}
+@media(min-width:801px){ footer{padding-bottom:3.5rem} }
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2.5rem}
+@media(min-width:640px){ .foot-grid{grid-template-columns:1.2fr 1fr 1fr} }
+.foot-brand{font-family:var(--serif);font-size:1.35rem;color:var(--ink);margin-bottom:.85rem}
+.foot-brand em{color:var(--gold);font-style:italic}
+.foot-col p,.foot-col a{font-size:.86rem;color:var(--ink-dim);line-height:1.9;display:block}
+.foot-col h4{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+.foot-bottom{margin-top:3rem;padding-top:1.75rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:.76rem;color:var(--ink-faint)}
+
+/* ---------- mobile sticky CTA ---------- */
+.mcta{
+  position:fixed;left:0;right:0;bottom:0;z-index:55;display:flex;background:var(--bg-raised);
+  border-top:1px solid var(--line-gold);
+}
+@media(min-width:801px){ .mcta{display:none} }
+.mcta a{flex:1;display:flex;align-items:center;justify-content:center;gap:.55rem;padding:1rem;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase}
+.mcta a:first-child{color:#141311;background:var(--gold);font-weight:600}
+.mcta a:last-child{color:var(--ink);border-left:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+<symbol id="i-palm" viewBox="0 0 24 24"><path d="M12 22V11"/><path d="M12 11c-1.8-3.6-5.6-4.6-8.4-2.7 1.8 2.9 5.6 3.6 8.4 2.7Z"/><path d="M12 11c1.8-3.6 5.6-4.6 8.4-2.7-1.8 2.9-5.6 3.6-8.4 2.7Z"/><path d="M12 11c-.7-2.8-.2-5.4 1.6-7.8 1.6 2.6 1.4 5.2-.4 7.8Z"/><path d="M12 11c.7-2.8.2-5.4-1.6-7.8-1.6 2.6-1.4 5.2.4 7.8Z"/></symbol>
+<symbol id="i-mower" viewBox="0 0 24 24"><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M9 18h6"/><path d="M5 18a2 2 0 0 1-2-2v-2a3 3 0 0 1 3-3h7l4-3"/><path d="M13 11V6a2 2 0 0 1 2-2h1"/></symbol>
+<symbol id="i-directions" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+</svg>
+
+<a id="top"></a>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a href="#top" class="addr-line" aria-label="G.O.A.T. Get'em Lawn Care — home">
+      <svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+      <span class="addr-full">935 28th Ave, Vero Beach, FL</span>
+      <span class="addr-short">Vero Beach, FL</span>
+    </a>
+    <div class="tb-right">
+      <a class="tel-link" href="tel:+17726633331"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg><span>(772) 663-3331</span></a>
+      <a class="btn-gold book-cta" href="tel:+17726633331">Call Now</a>
+      <button class="menu-btn" id="menuOpen" aria-label="Open menu"><svg class="ic" viewBox="0 0 24 24" width="20" height="20"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-veil" id="drawerVeil"></div>
+  <nav class="drawer-panel">
+    <div class="drawer-top"><button class="drawer-close" id="menuClose" aria-label="Close menu"><svg class="ic" viewBox="0 0 24 24" width="18" height="18"><use href="#i-x"/></svg></button></div>
+    <div class="drawer-nav">
+      <a href="#services" class="dlink">Services</a>
+      <a href="#about" class="dlink">Reviews</a>
+      <a href="#hours" class="dlink">Hours &amp; Area</a>
+      <a href="#contact" class="dlink">Contact</a>
+    </div>
+    <div class="drawer-actions">
+      <a class="btn-gold" href="tel:+17726633331"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Call (772) 663-3331</a>
+      <a class="btn-ghost" href="mailto:Goatgetemlawncare@gmail.com"><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Email Us</a>
+    </div>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-in">
+    <span class="eyebrow center">Lawn &amp; Landscape Care · Vero Beach, FL</span>
+    <h1>Meticulous Lawn Care<br>for Vero Beach Properties</h1>
+    <p class="hero-sub">Mowing, hedge work, palm trimming and sod — handled carefully, with a free estimate before anything starts.</p>
+    <div class="rating-row">
+      <span class="stars">
+        <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+      </span>
+      <span><b>4.8</b> · 10 reviews on Google</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn-gold" href="tel:+17726633331"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Call (772) 663-3331</a>
+      <a class="btn-ghost" href="mailto:Goatgetemlawncare@gmail.com"><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Email for a Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow center">What We Do</span>
+      <h2>Our Services</h2>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-mower"/></svg></div>
+        <h3>Lawn Mowing &amp; Edging</h3>
+        <p>Fresh cuts, precise edging, and full blower cleanup — every visit.</p>
+      </article>
+      <article class="svc-card">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-scissors"/></svg></div>
+        <h3>Hedge &amp; Shrub Trimming</h3>
+        <p>Formal or informal shaping, kept tidy on a schedule that suits you.</p>
+      </article>
+      <article class="svc-card">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-palm"/></svg></div>
+        <h3>Palm Tree Trimming</h3>
+        <p>Clean, careful pruning for a healthier, better-shaped canopy.</p>
+      </article>
+      <article class="svc-card">
+        <div class="svc-ic"><svg class="ic" viewBox="0 0 24 24"><use href="#i-sprout"/></svg></div>
+        <h3>Sod Installation</h3>
+        <p>Fresh sod, properly prepped and laid, for a lawn that takes hold.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="on-raised">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <span class="eyebrow">Serving Indian River County</span>
+        <h2>Straightforward Lawn Care, Done Right</h2>
+        <p>We handle mowing, trimming, palm work and sod for homes across the Vero Beach area — call or email us for a free estimate.</p>
+        <ul class="area-list">
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>Vero Beach</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>Vero Lake Estates</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>Indian River County</li>
+        </ul>
+      </div>
+      <div class="rating-card">
+        <div class="rc-top">
+          <span class="rc-num">4.8</span>
+          <div class="rc-meta">
+            <span class="stars">
+              <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+            </span>
+            <span class="rc-count">10 reviews on Google</span>
+          </div>
+        </div>
+        <hr>
+        <blockquote>I inquired about trimming palm trees and received a response very quickly with a few openings for free estimate. The price was very reasonable.</blockquote>
+        <p class="qmore">"Nicolas, one of the owners did a great job trimming 18 palm trees on my property."</p>
+        <p class="q-attr">— Inna Basanets, <a href="https://maps.google.com/?cid=8539224299501281770" target="_blank" rel="noopener">Google review</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow center">Hours &amp; Service Area</span>
+      <h2>When &amp; Where We Work</h2>
+    </div>
+    <div class="hm-grid">
+      <div class="hm-box">
+        <h3>Hours</h3>
+        <table class="hours-tbl">
+          <tr><td>Monday – Thursday</td><td>9:00am – 4:00pm</td></tr>
+          <tr><td>Friday</td><td>9:00am – 3:00pm</td></tr>
+          <tr><td>Saturday – Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="hm-note"><svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>Free estimates — call or email anytime</div>
+      </div>
+      <div class="map-box">
+        <iframe class="map-frame" loading="lazy" title="G.O.A.T. Get'em Lawn Care service map — Vero Beach, FL" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.4216343%2C27.6132689%2C-80.4096343%2C27.6252689&amp;layer=mapnik&amp;marker=27.6192689%2C-80.4156343"></iframe>
+        <div class="map-addr">
+          <span>935 28th Ave, Vero Beach, FL 32960</span>
+          <a href="https://maps.google.com/?cid=8539224299501281770" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><use href="#i-directions"/></svg>Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band on-raised">
+  <div class="wrap">
+    <span class="eyebrow center">Get in Touch</span>
+    <div class="rule-gold" style="margin-top:1.5rem"></div>
+    <h2>Ready for Lawn Care Done Right?</h2>
+    <p class="hero-sub" style="margin-left:auto;margin-right:auto">Call or email us for a free estimate — we serve Vero Beach and Vero Lake Estates.</p>
+    <a class="cta-phone" href="tel:+17726633331">(772) 663-3331</a>
+    <div class="hero-cta">
+      <a class="btn-gold" href="tel:+17726633331"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Call Now</a>
+      <a class="btn-ghost" href="mailto:Goatgetemlawncare@gmail.com"><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Email Us</a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand">G.O.A.T. <em>Get'em</em> Lawn Care</div>
+        <p>935 28th Ave<br>Vero Beach, FL 32960</p>
+        <p style="margin-top:.6rem;display:flex;align-items:center;gap:.4rem">4.8 <svg class="ic" viewBox="0 0 24 24" style="width:.85em;height:.85em;fill:var(--gold);stroke:none;color:var(--gold)"><use href="#i-star"/></svg> · 10 reviews on Google</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+17726633331">(772) 663-3331</a>
+        <a href="mailto:Goatgetemlawncare@gmail.com">Goatgetemlawncare@gmail.com</a>
+        <a href="https://maps.google.com/?cid=8539224299501281770" target="_blank" rel="noopener">View on Google Maps</a>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <p>Mon – Thu: 9am – 4pm</p>
+        <p>Fri: 9am – 3pm</p>
+        <p>Sat – Sun: Closed</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 G.O.A.T. Get'em Lawn Care LLC</span>
+      <span>Vero Beach · Vero Lake Estates · Indian River County</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta">
+  <a href="tel:+17726633331"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Call</a>
+  <a href="mailto:Goatgetemlawncare@gmail.com"><svg class="ic" viewBox="0 0 24 24"><use href="#i-mail"/></svg>Email</a>
+</div>
+
+<script>
+(function(){
+  var drawer=document.getElementById('drawer');
+  var open=document.getElementById('menuOpen');
+  var close=document.getElementById('menuClose');
+  var veil=document.getElementById('drawerVeil');
+  function show(){drawer.classList.add('open')}
+  function hide(){drawer.classList.remove('open')}
+  open.addEventListener('click',show);
+  close.addEventListener('click',hide);
+  veil.addEventListener('click',hide);
+  document.querySelectorAll('.dlink').forEach(function(a){a.addEventListener('click',hide)});
+})();
+</script>
+
+</body>
+</html>
